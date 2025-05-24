@@ -16,35 +16,25 @@ func ControlIDsLowBaseline() []string {
 }
 
 func ControlIDsHighUplift() []string {
-	h := ControlIDsHighBaseline()
-	m := ControlIDsModerateBaseline()
-	prev := map[string]int{}
-	var hu []string
-	for _, id := range m {
-		prev[id] = 1
-	}
-	for _, id := range h {
-		if _, ok := prev[id]; !ok {
-			hu = append(hu, id)
-		}
-	}
-	return hu
+	return firstOnly(ControlIDsHighBaseline(), ControlIDsModerateBaseline())
 }
 
 func ControlIDsModerateUplift() []string {
-	m := ControlIDsModerateBaseline()
-	l := ControlIDsLowBaseline()
+	return firstOnly(ControlIDsModerateBaseline(), ControlIDsLowBaseline())
+}
+
+func firstOnly(s1, s2 []string) []string {
+	var out []string
 	prev := map[string]int{}
-	var hu []string
-	for _, id := range l {
-		prev[id] = 1
+	for _, s := range s2 {
+		prev[s] = 1
 	}
-	for _, id := range m {
-		if _, ok := prev[id]; !ok {
-			hu = append(hu, id)
+	for _, s1 := range s1 {
+		if _, ok := prev[s1]; !ok {
+			out = append(out, s1)
 		}
 	}
-	return hu
+	return out
 }
 
 func ControlIDCounts() map[string]int {
