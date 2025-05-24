@@ -10,19 +10,31 @@ import (
 //go:embed src/oscal_json_20240213_941c978/NIST_SP-800-53_rev5_catalog-min.json
 var rev5Catalog []byte
 
+//go:embed src/oscal_json_20240213_941c978/NIST_SP-800-53_rev5_HIGH-baseline-resolved-profile_catalog-min.json
+var rev5CatalogHighBaseline []byte
+
+//go:embed src/oscal_json_20240213_941c978/NIST_SP-800-53_rev5_MODERATE-baseline-resolved-profile_catalog-min.json
+var rev5CatalogModerateBaseline []byte
+
+//go:embed src/oscal_json_20240213_941c978/NIST_SP-800-53_rev5_LOW-baseline-resolved-profile_catalog-min.json
+var rev5CatalogLowBaseline []byte
+
 //go:embed src/oscal_json_20240213_941c978/NIST_SP-800-53_rev5_HIGH-baseline_profile-min.json
-var rev5HighBaseline []byte
+var rev5ProfileHighBaseline []byte
 
 //go:embed src/oscal_json_20240213_941c978/NIST_SP-800-53_rev5_MODERATE-baseline_profile-min.json
-var rev5ModerateBaseline []byte
+var rev5ProfileModerateBaseline []byte
 
 //go:embed src/oscal_json_20240213_941c978/NIST_SP-800-53_rev5_LOW-baseline_profile-min.json
-var rev5LowBaseline []byte
+var rev5ProfileLowBaseline []byte
 
 func Rev5Catalog() *Catalog                 { return MustParseCatalogJSON(rev5Catalog) }
-func Rev5ProfileHighBaseline() *Profile     { return MustParseProfileJSON(rev5HighBaseline) }
-func Rev5ProfileModerateBaseline() *Profile { return MustParseProfileJSON(rev5ModerateBaseline) }
-func Rev5ProfileLowBaseline() *Profile      { return MustParseProfileJSON(rev5LowBaseline) }
+func Rev5CatalogHighBaseline() *Catalog     { return MustParseCatalogJSON(rev5CatalogHighBaseline) }
+func Rev5CatalogModerateBaseline() *Catalog { return MustParseCatalogJSON(rev5CatalogModerateBaseline) }
+func Rev5CatalogLowBaseline() *Catalog      { return MustParseCatalogJSON(rev5CatalogLowBaseline) }
+func Rev5ProfileHighBaseline() *Profile     { return MustParseProfileJSON(rev5ProfileHighBaseline) }
+func Rev5ProfileModerateBaseline() *Profile { return MustParseProfileJSON(rev5ProfileModerateBaseline) }
+func Rev5ProfileLowBaseline() *Profile      { return MustParseProfileJSON(rev5ProfileLowBaseline) }
 
 // catalogWrapper embeds oscalTypes.Catalog for extension or additional methods.
 type catalogWrapper struct {
