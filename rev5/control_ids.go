@@ -1,19 +1,8 @@
 package rev5
 
-func ControlIDsHighBaseline() []string {
-	c := Rev5ProfileHighBaseline()
-	return c.ControlIDs()
-}
-
-func ControlIDsModerateBaseline() []string {
-	c := Rev5ProfileModerateBaseline()
-	return c.ControlIDs()
-}
-
-func ControlIDsLowBaseline() []string {
-	c := Rev5ProfileLowBaseline()
-	return c.ControlIDs()
-}
+func ControlIDsHighBaseline() []string     { return Rev5ProfileHighBaseline().ControlIDs() }
+func ControlIDsModerateBaseline() []string { return Rev5ProfileModerateBaseline().ControlIDs() }
+func ControlIDsLowBaseline() []string      { return Rev5ProfileLowBaseline().ControlIDs() }
 
 func ControlIDsHighUplift() []string {
 	return firstOnly(ControlIDsHighBaseline(), ControlIDsModerateBaseline())
