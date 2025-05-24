@@ -31,8 +31,7 @@ type catalogWrapper struct {
 
 func MustParseCatalogJSON(b []byte) *Catalog {
 	w := catalogWrapper{}
-	err := json.Unmarshal(b, &w)
-	if err != nil {
+	if err := json.Unmarshal(b, &w); err != nil {
 		panic(err)
 	}
 	c := Catalog(w.Catalog)
@@ -46,8 +45,7 @@ type profileWrapper struct {
 
 func MustParseProfileJSON(b []byte) *Profile {
 	w := profileWrapper{}
-	err := json.Unmarshal(b, &w)
-	if err != nil {
+	if err := json.Unmarshal(b, &w); err != nil {
 		panic(err)
 	}
 	p := Profile(w.Profile)
