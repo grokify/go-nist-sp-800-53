@@ -4,11 +4,9 @@
 [![Lint Status][lint-status-svg]][lint-status-url]
 [![Go Report Card][goreport-svg]][goreport-url]
 [![Docs][docs-godoc-svg]][docs-godoc-url]
-[![SLOC][loc-svg]][repo-url]
 [![License][license-svg]][license-url]
 
 Go SDK for NIST SP 800-53.
-
 
  [build-status-svg]: https://github.com/grokify/nist-sp-800-53/actions/workflows/ci.yaml/badge.svg?branch=master
  [build-status-url]: https://github.com/grokify/nist-sp-800-53/actions/workflows/ci.yaml
