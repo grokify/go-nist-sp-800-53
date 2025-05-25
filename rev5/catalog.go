@@ -1,7 +1,6 @@
 package rev5
 
 import (
-	"fmt"
 	"sort"
 	"strings"
 
@@ -9,15 +8,6 @@ import (
 )
 
 type Catalog oscalTypes.Catalog
-
-type IDType string
-
-const (
-	IDTypeOSCAL     IDType = "id"
-	IDTypeOSCALSort IDType = "sort-id"
-	IDTypeNIST      IDType = "label"
-	IDTypeNISTSort  IDType = "sp800-53a"
-)
 
 func (c *Catalog) MustEnhancementIDs(idtype IDType, emptyOnError bool) []string {
 	if ids, err := c.EnhancementIDs(idtype); err == nil {
@@ -41,33 +31,11 @@ func (c *Catalog) EnhancementIDs(idtype IDType) ([]string, error) {
 					if controlw.Controls != nil {
 						for _, control := range *controlw.Controls {
 							if control.Class == ClassSP80053Enhancement {
-								switch idtype {
-								case IDTypeOSCAL:
-									out = append(out, control.ID)
-								default:
-									for _, prop := range *control.Props {
-										if idtype == IDTypeOSCALSort {
-											if prop.Name == string(idtype) {
-												if v := strings.TrimSpace(prop.Value); v != "" {
-													out = append(out, v)
-												}
-											}
-										} else if idtype == IDTypeNISTSort {
-											if prop.Name == PropNameLabel && prop.Class == string(idtype) {
-												if v := strings.TrimSpace(prop.Value); v != "" {
-													out = append(out, v)
-												}
-											}
-										} else if idtype == IDTypeNIST {
-											if prop.Name == PropNameLabel && prop.Class == "" {
-												if v := strings.TrimSpace(prop.Value); v != "" {
-													out = append(out, v)
-												}
-											}
-										} else {
-											return []string{}, fmt.Errorf("idtype not supported (%s)", idtype)
-										}
-									}
+								c2 := Control(control)
+								if idval, err := c2.IDForType(idtype); err != nil {
+									return []string{}, err
+								} else {
+									out = append(out, idval)
 								}
 							}
 						}
