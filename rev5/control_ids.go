@@ -1,5 +1,7 @@
 package rev5
 
+import "fmt"
+
 type ControlIDs struct{}
 
 func (ids ControlIDs) HighBaseline() []string     { return Rev5ProfileHighBaseline().ControlIDs() }
@@ -30,10 +32,27 @@ func uplift(s1, s2 []string) []string {
 
 func (ids ControlIDs) Counts() map[string]int {
 	return map[string]int{
-		"all":               len(Rev5Catalog().MustEnhancementIDs(IDTypeOSCAL, false)),
-		"high_baseline":     len(ids.HighBaseline()),
-		"high_uplift":       len(ids.HighUplift()),
-		"moderate_baseline": len(ids.ModerateBaseline()),
-		"moderate_uplift":   len(ids.ModerateUplift()),
-		"low_baseline":      len(ids.LowBaseline())}
+		"all":                len(Rev5Catalog().MustEnhancementIDs(IDTypeOSCAL, false)),
+		TierHighBaseline:     len(ids.HighBaseline()),
+		TierHighUplift:       len(ids.HighUplift()),
+		TierModerateBaseline: len(ids.ModerateBaseline()),
+		TierModerateUplift:   len(ids.ModerateUplift()),
+		TierLowBaseline:      len(ids.LowBaseline())}
+}
+
+func (ids ControlIDs) Tier(tierName string) ([]string, error) {
+	switch tierName {
+	case TierHighBaseline:
+		return ids.HighBaseline(), nil
+	case TierHighUplift:
+		return ids.HighUplift(), nil
+	case TierModerateBaseline:
+		return ids.ModerateBaseline(), nil
+	case TierModerateUplift:
+		return ids.ModerateUplift(), nil
+	case TierLowBaseline:
+		return ids.LowBaseline(), nil
+	default:
+		return []string{}, fmt.Errorf("tier not found (%s)", tierName)
+	}
 }

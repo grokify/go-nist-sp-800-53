@@ -1,22 +1,23 @@
 package rev5
 
 import (
-	"fmt"
 	"testing"
 )
 
 func TestCatalogControls(t *testing.T) {
 	cat := Rev5Catalog()
 	ids := ControlIDs{}
-	testCatalogControls(t, cat, ids.HighBaseline())
-	testCatalogControls(t, cat, ids.HighUplift())
-	testCatalogControls(t, cat, ids.ModerateBaseline())
-	testCatalogControls(t, cat, ids.ModerateUplift())
-	testCatalogControls(t, cat, ids.LowBaseline())
+	for _, tierName := range Tiers() {
+		if tierIDs, err := ids.Tier(tierName); err != nil {
+			t.Errorf("tier not found(\"%s\") error: (%s)", tierName, err.Error())
+		} else {
+			testCatalogControls(t, cat, tierName, tierIDs)
+		}
+	}
 }
 
-func testCatalogControls(t *testing.T, cat *Catalog, ctrIDs []string) {
-	fmt.Printf("TESTING (%d)\n", len(ctrIDs))
+func testCatalogControls(t *testing.T, cat *Catalog, label string, ctrIDs []string) {
+	t.Logf("testing existence of (%d) (%s) controls", len(ctrIDs), label)
 	for _, ctrID := range ctrIDs {
 		ctr, err := cat.Control(ctrID)
 		if err != nil {
