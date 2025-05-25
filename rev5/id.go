@@ -79,7 +79,7 @@ func ParseIDFromOSCAL(s string) (ID, error) {
 			id.EnhancementNumber = enhNum
 		}
 	}
-	_, _, _, err = id.idPartsVerified()
+	_, _, _, err = id.idPartsVerified() //nolint:dogsled
 	return id, err
 }
 
