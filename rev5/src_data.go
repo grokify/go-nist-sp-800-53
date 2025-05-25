@@ -7,6 +7,19 @@ import (
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
 )
 
+func CatalogAll() *Catalog                    { return MustParseCatalogJSON(rev5Catalog) }
+func CatalogHighBaseline() *Catalog           { return MustParseCatalogJSON(rev5CatalogHighBaseline) }
+func CatalogModerateBaseline() *Catalog       { return MustParseCatalogJSON(rev5CatalogModerateBaseline) }
+func CatalogLowBaseline() *Catalog            { return MustParseCatalogJSON(rev5CatalogLowBaseline) }
+func ControlSetHighBaseline() *ControlSet     { return mustControlSetTierName(TierHighBaseline) }
+func ControlSetHighUplift() *ControlSet       { return mustControlSetTierName(TierHighUplift) }
+func ControlSetModerateBaseline() *ControlSet { return mustControlSetTierName(TierModerateBaseline) }
+func ControlSetModerateUplift() *ControlSet   { return mustControlSetTierName(TierModerateUplift) }
+func ControlSetLowBaseline() *ControlSet      { return mustControlSetTierName(TierLowBaseline) }
+func ProfileHighBaseline() *Profile           { return MustParseProfileJSON(rev5ProfileHighBaseline) }
+func ProfileModerateBaseline() *Profile       { return MustParseProfileJSON(rev5ProfileModerateBaseline) }
+func ProfileLowBaseline() *Profile            { return MustParseProfileJSON(rev5ProfileLowBaseline) }
+
 //go:embed src/oscal_json_20240213_941c978/NIST_SP-800-53_rev5_catalog-min.json
 var rev5Catalog []byte
 
@@ -27,14 +40,6 @@ var rev5ProfileModerateBaseline []byte
 
 //go:embed src/oscal_json_20240213_941c978/NIST_SP-800-53_rev5_LOW-baseline_profile-min.json
 var rev5ProfileLowBaseline []byte
-
-func CatalogAll() *Catalog              { return MustParseCatalogJSON(rev5Catalog) }
-func CatalogHighBaseline() *Catalog     { return MustParseCatalogJSON(rev5CatalogHighBaseline) }
-func CatalogModerateBaseline() *Catalog { return MustParseCatalogJSON(rev5CatalogModerateBaseline) }
-func CatalogLowBaseline() *Catalog      { return MustParseCatalogJSON(rev5CatalogLowBaseline) }
-func ProfileHighBaseline() *Profile     { return MustParseProfileJSON(rev5ProfileHighBaseline) }
-func ProfileModerateBaseline() *Profile { return MustParseProfileJSON(rev5ProfileModerateBaseline) }
-func ProfileLowBaseline() *Profile      { return MustParseProfileJSON(rev5ProfileLowBaseline) }
 
 // catalogWrapper embeds oscalTypes.Catalog for extension or additional methods.
 type catalogWrapper struct {
@@ -63,12 +68,6 @@ func MustParseProfileJSON(b []byte) *Profile {
 	p := Profile(w.Profile)
 	return &p
 }
-
-func ControlSetHighBaseline() *ControlSet     { return mustControlSetTierName(TierHighBaseline) }
-func ControlSetHighUplift() *ControlSet       { return mustControlSetTierName(TierHighUplift) }
-func ControlSetModerateBaseline() *ControlSet { return mustControlSetTierName(TierModerateBaseline) }
-func ControlSetModerateUplift() *ControlSet   { return mustControlSetTierName(TierModerateUplift) }
-func ControlSetLowBaseline() *ControlSet      { return mustControlSetTierName(TierLowBaseline) }
 
 func mustControlSetTierName(tierName string) *ControlSet {
 	cat := CatalogAll()
