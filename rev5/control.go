@@ -14,38 +14,60 @@ const (
 	IDTypeOSCALSort IDType = "sort-id"
 	IDTypeNIST      IDType = "label"
 	IDTypeNISTSort  IDType = "sp800-53a"
+
+	PropNameStatus  = "status"
+	StatusWithdrawn = "withdrawn"
 )
 
 type Control oscalTypes.Control
 
+func (ctr Control) Status() *string {
+	if ctr.Props == nil {
+		return nil
+	}
+	for _, prop := range *ctr.Props {
+		if prop.Name == PropNameStatus {
+			return &prop.Value
+		}
+	}
+	return nil
+}
+
+// IDForType returns the control id for a requested status type.
 func (ctr Control) IDForType(idtype IDType) (string, error) {
-	switch idtype {
-	case IDTypeOSCAL:
+	if idtype == IDTypeOSCAL || strings.TrimSpace(string(idtype)) == "" {
 		return ctr.ID, nil
-	default:
-		for _, prop := range *ctr.Props {
-			if idtype == IDTypeOSCALSort {
-				if prop.Name == string(idtype) {
-					if v := strings.TrimSpace(prop.Value); v != "" {
-						return v, nil
-					}
+	} else if ctr.Props == nil {
+		return "", fmt.Errorf("no data found for found idtype (%s)", string(idtype))
+	}
+	for _, prop := range *ctr.Props {
+		switch idtype {
+		case IDTypeOSCALSort:
+			if prop.Name == string(IDTypeOSCALSort) {
+				if v := strings.TrimSpace(prop.Value); v != "" {
+					return v, nil
+				} else {
+					return "", fmt.Errorf("no data found for found idtype (%s) for id (%s)", string(idtype), ctr.ID)
 				}
-			} else if idtype == IDTypeNISTSort {
-				if prop.Name == PropNameLabel && prop.Class == string(idtype) {
-					if v := strings.TrimSpace(prop.Value); v != "" {
-						return v, nil
-					}
+			}
+		case IDTypeNIST:
+			fmt.Println("checking.NIST NO SORT")
+			if prop.Name == PropNameLabel && strings.TrimSpace(prop.Class) == "" {
+				if v := strings.TrimSpace(prop.Value); v != "" {
+					return v, nil
+				} else {
+					return "", fmt.Errorf("no data found for found idtype (%s) for id (%s)", string(idtype), ctr.ID)
 				}
-			} else if idtype == IDTypeNIST {
-				if prop.Name == PropNameLabel && prop.Class == "" {
-					if v := strings.TrimSpace(prop.Value); v != "" {
-						return v, nil
-					}
+			}
+		case IDTypeNISTSort:
+			if prop.Name == PropNameLabel && prop.Class == string(IDTypeNISTSort) {
+				if v := strings.TrimSpace(prop.Value); v != "" {
+					return v, nil
+				} else {
+					return "", fmt.Errorf("no data found for found idtype (%s) for id (%s)", string(idtype), ctr.ID)
 				}
-			} else {
-				return "", fmt.Errorf("idtype not supported (%s)", idtype)
 			}
 		}
 	}
-	return "", fmt.Errorf("idtype not supported (%s)", idtype)
+	return "", fmt.Errorf("no key found for found idtype (%s)", string(idtype))
 }
