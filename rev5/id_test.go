@@ -12,8 +12,11 @@ var idTests = []struct {
 }{
 	{IDTypeOSCAL, "ac-1", "AC-1", "AC-01", "ac-1", "ac-01"},
 	{IDTypeOSCAL, "AC-1", "AC-1", "AC-01", "ac-1", "ac-01"},
+	{IDTypeOSCAL, "ac-01", "AC-1", "AC-01", "ac-1", "ac-01"},
 	{IDTypeOSCAL, "ac-1.1", "AC-1 (1)", "AC-01 (01)", "ac-1.1", "ac-01.01"},
+	{IDTypeOSCAL, "ac-01.01", "AC-1 (1)", "AC-01 (01)", "ac-1.1", "ac-01.01"},
 	{IDTypeOSCAL, "ac-1.2", "AC-1 (2)", "AC-01 (02)", "ac-1.2", "ac-01.02"},
+	{IDTypeOSCAL, "ac-1.12", "AC-1 (12)", "AC-01 (12)", "ac-1.12", "ac-01.12"},
 	{IDTypeOSCAL, "pe-3", "PE-3", "PE-03", "pe-3", "pe-03"},
 	{IDTypeOSCAL, "pe-3.1", "PE-3 (1)", "PE-03 (01)", "pe-3.1", "pe-03.01"},
 
