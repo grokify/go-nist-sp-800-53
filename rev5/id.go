@@ -3,6 +3,7 @@ package rev5
 import (
 	"errors"
 	"fmt"
+	"regexp"
 	"strconv"
 	"strings"
 )
@@ -11,6 +12,38 @@ type ID struct {
 	ControlFamilyAbbrivation string
 	BaseControlNumber        int
 	EnhancementNumber        int
+}
+
+var rxControlBaseOnly = regexp.MustCompile(`^([a-zA-Z]{2})\-([0-9]{1,2})\s*(\(([0-9]{1,2})\))?$`)
+
+func ParseIDFromNIST(s string) (ID, error) {
+	id := ID{}
+	s = strings.ToUpper(strings.TrimSpace(s))
+	if s == "" {
+		return id, errors.New("cannot parse empty string")
+	}
+	m := rxControlBaseOnly.FindStringSubmatch(s)
+	if len(m) == 0 {
+		return id, fmt.Errorf("cannot parse id format for input (%s)", s)
+	}
+	if cfAbbr := strings.ToUpper(m[1]); !IsControlFamilyAbbreviation(cfAbbr) {
+		return id, fmt.Errorf("id family is unknown (%s)", cfAbbr)
+	} else {
+		id.ControlFamilyAbbrivation = cfAbbr
+	}
+	if intval, err := strconv.Atoi(m[2]); err != nil {
+		return id, err
+	} else {
+		id.BaseControlNumber = intval
+	}
+	if m[4] != "" {
+		if intval, err := strconv.Atoi(m[4]); err != nil {
+			return id, err
+		} else {
+			id.EnhancementNumber = intval
+		}
+	}
+	return id, nil
 }
 
 func ParseIDFromOSCAL(s string) (ID, error) {
@@ -23,8 +56,7 @@ func ParseIDFromOSCAL(s string) (ID, error) {
 	if len(parts) != 2 {
 		return id, fmt.Errorf("id has wrong format with (%d) hypen parts", len(parts))
 	}
-	cfAbbr := strings.ToUpper(parts[0])
-	if !IsControlFamilyAbbreviation(cfAbbr) {
+	if cfAbbr := strings.ToUpper(parts[0]); !IsControlFamilyAbbreviation(cfAbbr) {
 		return id, fmt.Errorf("id family is unknown (%s)", cfAbbr)
 	} else {
 		id.ControlFamilyAbbrivation = cfAbbr
@@ -47,7 +79,8 @@ func ParseIDFromOSCAL(s string) (ID, error) {
 			id.EnhancementNumber = enhNum
 		}
 	}
-	return id, nil
+	_, _, _, err = id.idPartsVerified()
+	return id, err
 }
 
 const (
