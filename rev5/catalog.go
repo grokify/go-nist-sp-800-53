@@ -1,6 +1,8 @@
 package rev5
 
 import (
+	"errors"
+	"fmt"
 	"sort"
 	"strings"
 
@@ -17,6 +19,44 @@ func (c *Catalog) MustEnhancementIDs(idtype IDType, emptyOnError bool) []string 
 	} else {
 		panic(err)
 	}
+}
+
+func (c *Catalog) Control(controlID string) (*Control, error) {
+	controlID = strings.TrimSpace(controlID)
+	if controlID == "" {
+		return nil, errors.New("controlid cannot be empty)")
+	}
+	if c.Controls != nil {
+		for _, ctr := range *c.Controls {
+			if ctr.ID == controlID {
+				c2 := Control(ctr)
+				return &c2, nil
+			}
+		}
+	}
+	if c.Groups != nil {
+		for _, grp := range *c.Groups {
+			if grp.Controls != nil {
+				for _, ctr := range *grp.Controls {
+					if ctr.ID == controlID {
+						c2 := Control(ctr)
+						return &c2, nil
+					}
+					// Control appears most likely to be here, though check above for
+					// consistency.
+					if ctr.Controls != nil {
+						for _, ctr2 := range *ctr.Controls {
+							if ctr2.ID == controlID {
+								c2 := Control(ctr2)
+								return &c2, nil
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	return nil, fmt.Errorf("control not found for id (%s)", controlID)
 }
 
 func (c *Catalog) EnhancementIDs(idtype IDType) ([]string, error) {
