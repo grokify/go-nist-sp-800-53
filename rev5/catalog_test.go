@@ -5,7 +5,7 @@ import (
 )
 
 func TestCatalogControls(t *testing.T) {
-	cat := Rev5Catalog()
+	cat := CatalogAll()
 	ids := ControlIDs{}
 	for _, tierName := range Tiers() {
 		if tierIDs, err := ids.Tier(tierName); err != nil {

@@ -4,9 +4,9 @@ import "fmt"
 
 type ControlIDs struct{}
 
-func (ids ControlIDs) HighBaseline() []string     { return Rev5ProfileHighBaseline().ControlIDs() }
-func (ids ControlIDs) ModerateBaseline() []string { return Rev5ProfileModerateBaseline().ControlIDs() }
-func (ids ControlIDs) LowBaseline() []string      { return Rev5ProfileLowBaseline().ControlIDs() }
+func (ids ControlIDs) HighBaseline() []string     { return ProfileHighBaseline().ControlIDs() }
+func (ids ControlIDs) ModerateBaseline() []string { return ProfileModerateBaseline().ControlIDs() }
+func (ids ControlIDs) LowBaseline() []string      { return ProfileLowBaseline().ControlIDs() }
 
 func (ids ControlIDs) HighUplift() []string {
 	return uplift(ids.HighBaseline(), ids.ModerateBaseline())
@@ -32,7 +32,7 @@ func uplift(s1, s2 []string) []string {
 
 func (ids ControlIDs) Counts() map[string]int {
 	return map[string]int{
-		"all":                len(Rev5Catalog().MustEnhancementIDs(IDTypeOSCAL, false)),
+		"all":                len(CatalogAll().MustEnhancementIDs(IDTypeOSCAL, false)),
 		TierHighBaseline:     len(ids.HighBaseline()),
 		TierHighUplift:       len(ids.HighUplift()),
 		TierModerateBaseline: len(ids.ModerateBaseline()),

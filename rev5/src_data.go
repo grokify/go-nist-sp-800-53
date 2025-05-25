@@ -28,13 +28,13 @@ var rev5ProfileModerateBaseline []byte
 //go:embed src/oscal_json_20240213_941c978/NIST_SP-800-53_rev5_LOW-baseline_profile-min.json
 var rev5ProfileLowBaseline []byte
 
-func Rev5Catalog() *Catalog                 { return MustParseCatalogJSON(rev5Catalog) }
-func Rev5CatalogHighBaseline() *Catalog     { return MustParseCatalogJSON(rev5CatalogHighBaseline) }
-func Rev5CatalogModerateBaseline() *Catalog { return MustParseCatalogJSON(rev5CatalogModerateBaseline) }
-func Rev5CatalogLowBaseline() *Catalog      { return MustParseCatalogJSON(rev5CatalogLowBaseline) }
-func Rev5ProfileHighBaseline() *Profile     { return MustParseProfileJSON(rev5ProfileHighBaseline) }
-func Rev5ProfileModerateBaseline() *Profile { return MustParseProfileJSON(rev5ProfileModerateBaseline) }
-func Rev5ProfileLowBaseline() *Profile      { return MustParseProfileJSON(rev5ProfileLowBaseline) }
+func CatalogAll() *Catalog              { return MustParseCatalogJSON(rev5Catalog) }
+func CatalogHighBaseline() *Catalog     { return MustParseCatalogJSON(rev5CatalogHighBaseline) }
+func CatalogModerateBaseline() *Catalog { return MustParseCatalogJSON(rev5CatalogModerateBaseline) }
+func CatalogLowBaseline() *Catalog      { return MustParseCatalogJSON(rev5CatalogLowBaseline) }
+func ProfileHighBaseline() *Profile     { return MustParseProfileJSON(rev5ProfileHighBaseline) }
+func ProfileModerateBaseline() *Profile { return MustParseProfileJSON(rev5ProfileModerateBaseline) }
+func ProfileLowBaseline() *Profile      { return MustParseProfileJSON(rev5ProfileLowBaseline) }
 
 // catalogWrapper embeds oscalTypes.Catalog for extension or additional methods.
 type catalogWrapper struct {
