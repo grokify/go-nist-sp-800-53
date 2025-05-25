@@ -32,8 +32,8 @@ func (p *Profile) ControlSet(cat *Catalog) (*ControlSet, error) {
 	for _, id := range p.ControlIDs() {
 		if ctr, err := cat.Control(id); err != nil {
 			return nil, err
-		} else {
-			cs.Add(*ctr)
+		} else if err := cs.Add(*ctr); err != nil {
+			return nil, err
 		}
 	}
 	return &cs, nil

@@ -21,10 +21,13 @@ func (cs *ControlSet) Add(ctr Control) error {
 	}
 }
 
-func (cs *ControlSet) AddAll(ctrls []Control) {
+func (cs *ControlSet) AddAll(ctrls []Control) error {
 	for _, ctr := range ctrls {
-		cs.Add(ctr)
+		if err := cs.Add(ctr); err != nil {
+			return err
+		}
 	}
+	return nil
 }
 
 func (cs *ControlSet) Get(id string) (Control, bool) {
