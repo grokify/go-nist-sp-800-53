@@ -48,6 +48,27 @@ func (c *Catalog) Control(controlID string) (*Control, error) {
 	return nil, fmt.Errorf("control not found for id (%s)", controlID)
 }
 
+func (c *Catalog) ControlSet(controlIDs []string) (*ControlSet, error) {
+	cs := ControlSet{}
+	for _, ctrID := range controlIDs {
+		if ctr, err := c.Control(ctrID); err != nil {
+			return nil, err
+		} else if err := cs.Add(*ctr); err != nil {
+			return nil, err
+		}
+	}
+	return &cs, nil
+}
+
+func (c *Catalog) ControlSetTier(tierName string) (*ControlSet, error) {
+	ids := ControlIDs{}
+	if tierIDs, err := ids.Tier(tierName); err != nil {
+		return nil, err
+	} else {
+		return c.ControlSet(tierIDs)
+	}
+}
+
 /*
 // ControlIDStatusCounts counts the status of controls by ID. It is experimental.
 func (c *Catalog) ControlIDStatusCounts(ids []string) map[string]int {

@@ -63,3 +63,18 @@ func MustParseProfileJSON(b []byte) *Profile {
 	p := Profile(w.Profile)
 	return &p
 }
+
+func ControlSetHighBaseline() *ControlSet     { return mustControlSetTierName(TierHighBaseline) }
+func ControlSetHighUplift() *ControlSet       { return mustControlSetTierName(TierHighUplift) }
+func ControlSetModerateBaseline() *ControlSet { return mustControlSetTierName(TierModerateBaseline) }
+func ControlSetModerateUplift() *ControlSet   { return mustControlSetTierName(TierModerateUplift) }
+func ControlSetLowBaseline() *ControlSet      { return mustControlSetTierName(TierLowBaseline) }
+
+func mustControlSetTierName(tierName string) *ControlSet {
+	cat := CatalogAll()
+	if ctrSet, err := cat.ControlSetTier(tierName); err != nil {
+		panic(err)
+	} else {
+		return ctrSet
+	}
+}

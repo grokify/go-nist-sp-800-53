@@ -27,6 +27,18 @@ func (p *Profile) ControlIDsMap() map[string]string {
 	return out
 }
 
+func (p *Profile) ControlSet(cat *Catalog) (*ControlSet, error) {
+	cs := ControlSet{}
+	for _, id := range p.ControlIDs() {
+		if ctr, err := cat.Control(id); err != nil {
+			return nil, err
+		} else {
+			cs.Add(*ctr)
+		}
+	}
+	return &cs, nil
+}
+
 /*
 
 func (p *Profile) ControlIDStatusCounts(cat *Catalog) (map[string]int, error) {
