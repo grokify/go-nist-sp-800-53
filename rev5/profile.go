@@ -26,3 +26,14 @@ func (p *Profile) ControlIDsMap() map[string]string {
 	}
 	return out
 }
+
+/*
+
+func (p *Profile) ControlIDStatusCounts(cat *Catalog) (map[string]int, error) {
+	if cat == nil {
+		return map[string]int{}, errors.New("catalog cannot be nil")
+	}
+	ids := p.ControlIDs()
+	return cat.ControlIDStatusCounts(ids), nil
+}
+*/

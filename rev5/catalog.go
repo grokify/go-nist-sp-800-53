@@ -11,16 +11,6 @@ import (
 
 type Catalog oscalTypes.Catalog
 
-func (c *Catalog) MustEnhancementIDs(idtype IDType, emptyOnError bool) []string {
-	if ids, err := c.EnhancementIDs(idtype); err == nil {
-		return ids
-	} else if emptyOnError {
-		return []string{}
-	} else {
-		panic(err)
-	}
-}
-
 func (c *Catalog) Control(controlID string) (*Control, error) {
 	controlID = strings.TrimSpace(controlID)
 	if controlID == "" {
@@ -42,8 +32,7 @@ func (c *Catalog) Control(controlID string) (*Control, error) {
 						c2 := Control(ctr)
 						return &c2, nil
 					}
-					// Control appears most likely to be here, though check above for
-					// consistency.
+					// Control appears most likely to be here, though check above for consistency.
 					if ctr.Controls != nil {
 						for _, ctr2 := range *ctr.Controls {
 							if ctr2.ID == controlID {
@@ -58,6 +47,26 @@ func (c *Catalog) Control(controlID string) (*Control, error) {
 	}
 	return nil, fmt.Errorf("control not found for id (%s)", controlID)
 }
+
+/*
+// ControlIDStatusCounts counts the status of controls by ID. It is experimental.
+func (c *Catalog) ControlIDStatusCounts(ids []string) map[string]int {
+	out := map[string]int{}
+	for _, id := range ids {
+		id = strings.TrimSpace(id)
+		if id == "" {
+			out["_ctr_id_empty"]++
+		} else if ctr, err := c.Control(id); err != nil {
+			out["_ctr_id_not_found"]++
+		} else if status := ctr.Status(); status == nil {
+			out["_ctr_id_found_status_not_found"]++
+		} else {
+			out[*status]++
+		}
+	}
+	return out
+}
+*/
 
 func (c *Catalog) EnhancementIDs(idtype IDType) ([]string, error) {
 	if strings.TrimSpace(string(idtype)) == "" {
@@ -86,6 +95,16 @@ func (c *Catalog) EnhancementIDs(idtype IDType) ([]string, error) {
 	}
 	sort.Strings(out)
 	return out, nil
+}
+
+func (c *Catalog) MustEnhancementIDs(idtype IDType, emptyOnError bool) []string {
+	if ids, err := c.EnhancementIDs(idtype); err == nil {
+		return ids
+	} else if emptyOnError {
+		return []string{}
+	} else {
+		panic(err)
+	}
 }
 
 func (c *Catalog) Families(full bool) []oscalTypes.Group {
