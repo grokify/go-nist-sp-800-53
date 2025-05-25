@@ -8,6 +8,8 @@
 
 Go SDK for NIST SP 800-53.
 
+It provides high-level functions to access OSCAL data published by NIST.
+
 The data for this module is sourced from [`github.com/usnistgov/oscal-content`](https://github.com/usnistgov/oscal-content).
 
  [build-status-svg]: https://github.com/grokify/go-nist-sp-800-53/actions/workflows/ci.yaml/badge.svg?branch=main
