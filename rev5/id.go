@@ -9,9 +9,9 @@ import (
 )
 
 type ID struct {
-	ControlFamilyAbbrivation string
-	BaseControlNumber        int
-	EnhancementNumber        int
+	FamilyAbbrivation string
+	BaseControlNumber int
+	EnhancementNumber int
 }
 
 var rxControlBaseOnly = regexp.MustCompile(`^([a-zA-Z]{2})\-([0-9]{1,2})\s*(\(([0-9]{1,2})\))?$`)
@@ -34,10 +34,10 @@ func parseIDFromNIST(s string) (ID, error) {
 	if len(m) == 0 {
 		return id, fmt.Errorf("cannot parse id format for input (%s)", s)
 	}
-	if cfAbbr := strings.ToUpper(m[1]); !IsControlFamilyAbbreviation(cfAbbr) {
+	if cfAbbr := strings.ToLower(m[1]); !IsFamilyAbbreviation(cfAbbr) {
 		return id, fmt.Errorf("id family is unknown (%s)", cfAbbr)
 	} else {
-		id.ControlFamilyAbbrivation = cfAbbr
+		id.FamilyAbbrivation = cfAbbr
 	}
 	if intval, err := strconv.Atoi(m[2]); err != nil {
 		return id, err
@@ -64,10 +64,10 @@ func parseIDFromOSCAL(s string) (ID, error) {
 	if len(parts) != 2 {
 		return id, fmt.Errorf("id has wrong format with (%d) hypen parts", len(parts))
 	}
-	if cfAbbr := strings.ToUpper(parts[0]); !IsControlFamilyAbbreviation(cfAbbr) {
+	if cfAbbr := strings.ToLower(parts[0]); !IsFamilyAbbreviation(cfAbbr) {
 		return id, fmt.Errorf("id family is unknown (%s)", cfAbbr)
 	} else {
-		id.ControlFamilyAbbrivation = cfAbbr
+		id.FamilyAbbrivation = cfAbbr
 	}
 	numParts := strings.Split(parts[1], ".")
 	if len(numParts) < 1 || len(numParts) > 2 {
@@ -87,8 +87,7 @@ func parseIDFromOSCAL(s string) (ID, error) {
 			id.EnhancementNumber = enhNum
 		}
 	}
-	_, _, _, err = id.idPartsVerified() //nolint:dogsled
-	return id, err
+	return id, id.idPartsVerify()
 }
 
 const (
@@ -102,9 +101,17 @@ const (
 	layoutControlIDNISTEnhSort  = "%s-%02d (%02d)"
 )
 
-func (id ID) idPartsVerified() (string, int, int, error) {
-	cfa := strings.ToUpper(strings.TrimSpace(id.ControlFamilyAbbrivation))
-	if !IsControlFamilyAbbreviation(cfa) {
+func (id ID) idPartsVerify() error {
+	if _, _, _, err := id.idParts(); err != nil { //nolint:dogsled
+		return err
+	} else {
+		return nil
+	}
+}
+
+func (id ID) idParts() (string, int, int, error) {
+	cfa := strings.ToLower(strings.TrimSpace(id.FamilyAbbrivation))
+	if !IsFamilyAbbreviation(cfa) {
 		return "", -1, -1, fmt.Errorf("control family abbreviation (%s) not set or is unknown", cfa)
 	}
 	if id.BaseControlNumber < 1 {
@@ -114,7 +121,7 @@ func (id ID) idPartsVerified() (string, int, int, error) {
 }
 
 func (id ID) formatInternal(layoutBase, layoutEnhancement string) (string, error) {
-	if cfa, base, enh, err := id.idPartsVerified(); err != nil {
+	if cfa, base, enh, err := id.idParts(); err != nil {
 		return "", err
 	} else if enh < 1 {
 		return fmt.Sprintf(layoutBase, cfa, base), nil
@@ -124,11 +131,19 @@ func (id ID) formatInternal(layoutBase, layoutEnhancement string) (string, error
 }
 
 func (id ID) FormatNIST() (string, error) {
-	return id.formatInternal(layoutControlIDNISTBase, layoutControlIDNISTEnh)
+	if s, err := id.formatInternal(layoutControlIDNISTBase, layoutControlIDNISTEnh); err != nil {
+		return "", err
+	} else {
+		return strings.ToUpper(s), nil
+	}
 }
 
 func (id ID) FormatNISTSort() (string, error) {
-	return id.formatInternal(layoutControlIDNISTBaseSort, layoutControlIDNISTEnhSort)
+	if s, err := id.formatInternal(layoutControlIDNISTBaseSort, layoutControlIDNISTEnhSort); err != nil {
+		return "", err
+	} else {
+		return strings.ToUpper(s), nil
+	}
 }
 
 func (id ID) FormatOSCAL() (string, error) {
