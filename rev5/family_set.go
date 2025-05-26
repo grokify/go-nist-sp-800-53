@@ -1,43 +1,117 @@
 package rev5
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 type FamilySet struct {
-	Data map[string]string
+	ControlIDs *ControlIDs
+	Data       map[string]Family
 }
 
-func NewFamilySet() FamilySet {
-	return FamilySet{Data: familiesMap()}
+func NewFamilySet(populate bool) *FamilySet {
+	out := FamilySet{
+		ControlIDs: NewControlIDs(),
+		Data:       map[string]Family{},
+	}
+	if populate {
+		out.Data = familiesMapAll()
+	}
+	return &out
 }
 
-func IsControlFamilyAbbreviation(abbr string) bool {
-	abbr = strings.ToUpper(strings.TrimSpace(abbr))
-	m := familiesMap()
+func (set *FamilySet) AddControlID(idAny string, updateFamilyCounts bool) error {
+	ido, err := ParseID(idAny)
+	if err != nil {
+		return err
+	}
+	var fam Family
+	if famTry, ok := set.Data[ido.FamilyAbbrivation]; ok {
+		fam = famTry
+	} else {
+		fam = Family{}
+	}
+	if err := fam.AddControlID(set.ControlIDs, idAny, updateFamilyCounts); err != nil {
+		return err
+	}
+	set.Data[ido.FamilyAbbrivation] = fam
+	return nil
+}
+
+func (set *FamilySet) PopulateDefault() {
+	if set.Data == nil {
+		set.Data = map[string]Family{}
+	}
+	mapAll := familiesMapAll()
+	for k, v := range mapAll {
+		if _, ok := set.Data[k]; !ok {
+			set.Data[k] = v
+		}
+	}
+}
+
+func (set *FamilySet) UpdateCounts() {
+	for abbr, fam := range set.Data {
+		fam.UpdateCounts()
+		set.Data[abbr] = fam
+	}
+}
+
+func IsFamilyAbbreviation(abbr string) bool {
+	abbr = strings.ToLower(abbr)
+	m := familiesMapAllSimple()
 	_, ok := m[abbr]
 	return ok
 }
 
-func familiesMap() map[string]string {
-	return map[string]string{
-		"AC": "Access Control",
-		"AT": "Awareness and Training",
-		"AU": "Audit and Accountability",
-		"CA": "Assessment, Authorization, and Monitoring",
-		"CM": "Configuration Management",
-		"CP": "Contingency Planning",
-		"IA": "Identification and Authentication",
-		"IR": "Incident Response",
-		"MA": "Maintenance",
-		"MP": "Media Protection",
-		"PE": "Physical and Environmental Protection",
-		"PL": "Planning",
-		"PM": "Program Management",
-		"PS": "Personnel Security",
-		"PT": "Personally Identifiable Information Processing and Transparency",
-		"RA": "Risk Assessment",
-		"SA": "System and Services Acquisition",
-		"SC": "System and Communications Protection",
-		"SI": "System and Information Integrity",
-		"SR": "Supply Chain Risk Management",
+func familiesMapAll() map[string]Family {
+	raw := familiesMapAllSimple()
+	out := map[string]Family{}
+	for k, v := range raw {
+		out[k] = Family{
+			Abbreviation: k,
+			Name:         v,
+		}
 	}
+	return out
+}
+
+func familiesMapAllSimple() map[string]string {
+	return map[string]string{
+		"ac": "Access Control",
+		"at": "Awareness and Training",
+		"au": "Audit and Accountability",
+		"ca": "Assessment, Authorization, and Monitoring",
+		"cm": "Configuration Management",
+		"cp": "Contingency Planning",
+		"ia": "Identification and Authentication",
+		"ir": "Incident Response",
+		"ma": "Maintenance",
+		"mp": "Media Protection",
+		"pe": "Physical and Environmental Protection",
+		"pl": "Planning",
+		"pm": "Program Management",
+		"ps": "Personnel Security",
+		"pt": "Personally Identifiable Information Processing and Transparency",
+		"ra": "Risk Assessment",
+		"sa": "System and Services Acquisition",
+		"sc": "System and Communications Protection",
+		"si": "System and Information Integrity",
+		"sr": "Supply Chain Risk Management",
+	}
+}
+
+func FamilyAbbrAndNameCanonical(s string) (string, string, error) {
+	m := familiesMapAllSimple()
+	tryLowerAny := strings.ToLower(strings.TrimSpace(s))
+	if v, ok := m[tryLowerAny]; ok {
+		return tryLowerAny, v, nil
+	}
+	for k, v := range m {
+		if tryLowerAny == strings.ToLower(v) {
+			return k, v, nil
+		}
+	}
+	return "", "", fmt.Errorf("family abbreviation and name not found (%s)", s)
 }
