@@ -1,8 +1,15 @@
 package rev5
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 type ControlIDs struct{}
+
+func NewControlIDs() *ControlIDs {
+	return &ControlIDs{}
+}
 
 func (ids ControlIDs) HighBaseline() []string     { return ProfileHighBaseline().ControlIDs() }
 func (ids ControlIDs) ModerateBaseline() []string { return ProfileModerateBaseline().ControlIDs() }
@@ -38,6 +45,27 @@ func (ids ControlIDs) Counts() map[string]int {
 		TierModerateBaseline: len(ids.ModerateBaseline()),
 		TierModerateUplift:   len(ids.ModerateUplift()),
 		TierLowBaseline:      len(ids.LowBaseline())}
+}
+
+func (ids ControlIDs) ControlProfileStatus(idOSCAL string) ControlProfileStatus {
+	out := ControlProfileStatus{}
+	out.ID = idOSCAL
+	if hb := ids.HighBaseline(); slices.Contains(hb, idOSCAL) {
+		out.HighBaseline = true
+	}
+	if hu := ids.HighUplift(); slices.Contains(hu, idOSCAL) {
+		out.HighUplift = true
+	}
+	if mb := ids.ModerateBaseline(); slices.Contains(mb, idOSCAL) {
+		out.ModerateBaseline = true
+	}
+	if mu := ids.ModerateUplift(); slices.Contains(mu, idOSCAL) {
+		out.ModerateUplift = true
+	}
+	if lb := ids.LowBaseline(); slices.Contains(lb, idOSCAL) {
+		out.LowBaseline = true
+	}
+	return out
 }
 
 func (ids ControlIDs) Tier(tierName string) ([]string, error) {
