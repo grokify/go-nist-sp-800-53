@@ -30,6 +30,18 @@ func (cs *ControlSet) AddAll(ctrls []Control) error {
 	return nil
 }
 
+func (cs *ControlSet) FamilySet(addZeros bool) (*FamilySet, error) {
+	set := NewFamilySet(false)
+	for ctrID := range cs.Data {
+		if err := set.AddControlID(ctrID, false); err != nil {
+			return nil, err
+		}
+	}
+	set.UpdateCounts()
+
+	return set, nil
+}
+
 func (cs *ControlSet) Get(id string) (Control, bool) {
 	ctr, ok := cs.Data[id]
 	return ctr, ok
