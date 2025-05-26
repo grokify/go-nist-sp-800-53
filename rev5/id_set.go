@@ -33,7 +33,7 @@ func (set *IDSet) AddIDString(s ...string) error {
 func (set *IDSet) FamilyCounts() map[string]int {
 	out := map[string]int{}
 	for _, id := range set.Data {
-		out[id.FamilyAbbrivation]++
+		out[id.FamilyAbbreviation]++
 	}
 	return out
 }

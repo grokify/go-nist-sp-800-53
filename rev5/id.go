@@ -9,9 +9,10 @@ import (
 )
 
 type ID struct {
-	FamilyAbbrivation string
-	BaseControlNumber int
-	EnhancementNumber int
+	OSCALSortID        string
+	FamilyAbbreviation string
+	BaseControlNumber  int
+	EnhancementNumber  int
 }
 
 var rxControlBaseOnly = regexp.MustCompile(`^([a-zA-Z]{2})\-([0-9]{1,2})\s*(\(([0-9]{1,2})\))?$`)
@@ -37,7 +38,7 @@ func parseIDFromNIST(s string) (ID, error) {
 	if cfAbbr := strings.ToLower(m[1]); !IsFamilyAbbreviation(cfAbbr) {
 		return id, fmt.Errorf("id family is unknown (%s)", cfAbbr)
 	} else {
-		id.FamilyAbbrivation = cfAbbr
+		id.FamilyAbbreviation = cfAbbr
 	}
 	if intval, err := strconv.Atoi(m[2]); err != nil {
 		return id, err
@@ -51,7 +52,14 @@ func parseIDFromNIST(s string) (ID, error) {
 			id.EnhancementNumber = intval
 		}
 	}
-	return id, nil
+	if err := id.idPartsVerify(); err != nil {
+		return ID{}, err
+	} else if oscalSortID, err := id.FormatOSCALSort(); err != nil {
+		return ID{}, err
+	} else {
+		id.OSCALSortID = oscalSortID
+		return id, nil
+	}
 }
 
 func parseIDFromOSCAL(s string) (ID, error) {
@@ -67,7 +75,7 @@ func parseIDFromOSCAL(s string) (ID, error) {
 	if cfAbbr := strings.ToLower(parts[0]); !IsFamilyAbbreviation(cfAbbr) {
 		return id, fmt.Errorf("id family is unknown (%s)", cfAbbr)
 	} else {
-		id.FamilyAbbrivation = cfAbbr
+		id.FamilyAbbreviation = cfAbbr
 	}
 	numParts := strings.Split(parts[1], ".")
 	if len(numParts) < 1 || len(numParts) > 2 {
@@ -87,7 +95,14 @@ func parseIDFromOSCAL(s string) (ID, error) {
 			id.EnhancementNumber = enhNum
 		}
 	}
-	return id, id.idPartsVerify()
+	if err := id.idPartsVerify(); err != nil {
+		return ID{}, err
+	} else if oscalSortID, err := id.FormatOSCALSort(); err != nil {
+		return ID{}, err
+	} else {
+		id.OSCALSortID = oscalSortID
+		return id, nil
+	}
 }
 
 const (
@@ -110,7 +125,7 @@ func (id ID) idPartsVerify() error {
 }
 
 func (id ID) idParts() (string, int, int, error) {
-	cfa := strings.ToLower(strings.TrimSpace(id.FamilyAbbrivation))
+	cfa := strings.ToLower(strings.TrimSpace(id.FamilyAbbreviation))
 	if !IsFamilyAbbreviation(cfa) {
 		return "", -1, -1, fmt.Errorf("control family abbreviation (%s) not set or is unknown", cfa)
 	}

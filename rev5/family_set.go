@@ -27,7 +27,7 @@ func (set *FamilySet) AddControlID(idAny string, updateFamilyCounts bool) error 
 		return err
 	}
 	var fam Family
-	if famTry, ok := set.Data[ido.FamilyAbbrivation]; ok {
+	if famTry, ok := set.Data[ido.FamilyAbbreviation]; ok {
 		fam = famTry
 	} else {
 		fam = Family{}
@@ -35,7 +35,7 @@ func (set *FamilySet) AddControlID(idAny string, updateFamilyCounts bool) error 
 	if err := fam.AddControlID(set.ControlIDs, idAny, updateFamilyCounts); err != nil {
 		return err
 	}
-	set.Data[ido.FamilyAbbrivation] = fam
+	set.Data[ido.FamilyAbbreviation] = fam
 	return nil
 }
 

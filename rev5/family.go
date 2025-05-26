@@ -43,8 +43,8 @@ func (f *Family) AddControlID(ctrIDs *ControlIDs, idAny string, updateCounts boo
 	if err != nil {
 		return err
 	}
-	if ido.FamilyAbbrivation != f.Abbreviation {
-		return fmt.Errorf("family mismatch: want(%s) have (%s)", f.Abbreviation, ido.FamilyAbbrivation)
+	if ido.FamilyAbbreviation != f.Abbreviation {
+		return fmt.Errorf("family mismatch: want(%s) have (%s)", f.Abbreviation, ido.FamilyAbbreviation)
 	}
 	idOSCAL, err := ido.FormatOSCAL()
 	if err != nil {
