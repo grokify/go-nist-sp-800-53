@@ -27,6 +27,33 @@ func ParseIDs(s []string) (IDs, error) {
 	return ids, nil
 }
 
+func (ids IDs) FilterByTier(tierName string, ctrIDs *ControlIDs) (IDs, error) {
+	if ctrIDs == nil {
+		ctrIDs = NewControlIDs()
+	}
+	inclIDsRaw, err := ctrIDs.Tier(tierName)
+	if err != nil {
+		return IDs{}, err
+	} else if len(inclIDsRaw) == 0 {
+		return IDs{}, nil
+	}
+	inclIDs, err := ParseIDs(inclIDsRaw)
+	if err != nil {
+		return IDs{}, err
+	}
+	inclMap, err := inclIDs.formatOSCALSortMap()
+	if err != nil {
+		return IDs{}, err
+	}
+	var out IDs
+	for _, id := range ids {
+		if _, ok := inclMap[id.OSCALSortID]; ok {
+			out = append(out, id)
+		}
+	}
+	return out, nil
+}
+
 func (ids IDs) Sort() {
 	slices.SortFunc(ids, func(i, j ID) int {
 		if i.OSCALSortID < j.OSCALSortID {
@@ -53,6 +80,18 @@ func (ids IDs) FormatOSCAL() ([]string, error) {
 
 func (ids IDs) FormatOSCALSort() ([]string, error) {
 	return ids.formatFunc(func(id ID) (string, error) { return id.FormatOSCALSort() })
+}
+
+func (ids IDs) formatOSCALSortMap() (map[string]int, error) {
+	ids2, err := ids.FormatOSCALSort()
+	if err != nil {
+		return map[string]int{}, err
+	}
+	out := map[string]int{}
+	for _, id := range ids2 {
+		out[id]++
+	}
+	return out, nil
 }
 
 func (ids IDs) formatFunc(fn func(id ID) (string, error)) ([]string, error) {
