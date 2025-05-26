@@ -2,14 +2,16 @@ package rev5
 
 import "testing"
 
-var idTests = []struct {
+type idTest struct {
 	vType         IDType
 	v             string
 	wantNIST      string
 	wantNISTSort  string
 	wantOSCAL     string
 	wantOSCALSort string
-}{
+}
+
+var idTests = []idTest{
 	{IDTypeOSCAL, "ac-1", "AC-1", "AC-01", "ac-1", "ac-01"},
 	{IDTypeOSCAL, "AC-1", "AC-1", "AC-01", "ac-1", "ac-01"},
 	{IDTypeOSCAL, "ac-01", "AC-1", "AC-01", "ac-1", "ac-01"},
@@ -32,23 +34,7 @@ var idTests = []struct {
 }
 
 func TestID(t *testing.T) {
-	for _, tt := range idTests {
-		var try ID
-		var err error
-		switch tt.vType {
-		case IDTypeNIST:
-			try, err = ParseIDFromNIST(tt.v)
-			if err != nil {
-				t.Errorf("rev5.ParseIDFromOSCAL(\"%s\") error: (%s)", tt.v, err.Error())
-				continue
-			}
-		case IDTypeOSCAL:
-			try, err = ParseIDFromOSCAL(tt.v)
-			if err != nil {
-				t.Errorf("rev5.ParseIDFromOSCAL(\"%s\") error: (%s)", tt.v, err.Error())
-				continue
-			}
-		}
+	testFnID := func(t *testing.T, try ID, tt idTest) {
 		if tryNIST, err := try.FormatNIST(); err != nil {
 			t.Errorf("rev5.FormatNIST() error: on (%s) error (%s)", tt.v, err.Error())
 		} else if tryNIST != tt.wantNIST {
@@ -68,6 +54,33 @@ func TestID(t *testing.T) {
 			t.Errorf("rev5.FormatOSCALSort() error: on (%s) error (%s)", tt.v, err.Error())
 		} else if tryOSCALSort != tt.wantOSCALSort {
 			t.Errorf("rev5.FormatOSCALSort() mimatch: on (%s) want (%s) got (%s)", tt.v, tt.wantOSCALSort, tryOSCALSort)
+		}
+	}
+
+	for _, tt := range idTests {
+		var try ID
+		var err error
+		switch tt.vType {
+		case IDTypeNIST:
+			try, err = parseIDFromNIST(tt.v)
+			if err != nil {
+				t.Errorf("rev5.ParseIDFromOSCAL(\"%s\") error: (%s)", tt.v, err.Error())
+				continue
+			}
+		case IDTypeOSCAL:
+			try, err = parseIDFromOSCAL(tt.v)
+			if err != nil {
+				t.Errorf("rev5.ParseIDFromOSCAL(\"%s\") error: (%s)", tt.v, err.Error())
+				continue
+			}
+		}
+		testFnID(t, try, tt)
+		try, err = ParseID(tt.v)
+		if err != nil {
+			t.Errorf("rev5.ParseID(\"%s\") error: (%s)", tt.v, err.Error())
+			continue
+		} else {
+			testFnID(t, try, tt)
 		}
 	}
 }

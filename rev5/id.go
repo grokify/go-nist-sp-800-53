@@ -16,7 +16,15 @@ type ID struct {
 
 var rxControlBaseOnly = regexp.MustCompile(`^([a-zA-Z]{2})\-([0-9]{1,2})\s*(\(([0-9]{1,2})\))?$`)
 
-func ParseIDFromNIST(s string) (ID, error) {
+func ParseID(s string) (ID, error) {
+	if strings.Contains(s, ".") {
+		return parseIDFromOSCAL(s)
+	} else {
+		return parseIDFromNIST(s)
+	}
+}
+
+func parseIDFromNIST(s string) (ID, error) {
 	id := ID{}
 	s = strings.ToUpper(strings.TrimSpace(s))
 	if s == "" {
@@ -46,7 +54,7 @@ func ParseIDFromNIST(s string) (ID, error) {
 	return id, nil
 }
 
-func ParseIDFromOSCAL(s string) (ID, error) {
+func parseIDFromOSCAL(s string) (ID, error) {
 	id := ID{}
 	s = strings.TrimSpace(s)
 	if s == "" {
