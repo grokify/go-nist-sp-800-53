@@ -8,7 +8,10 @@
 
 Go SDK for NIST SP 800-53.
 
-It provides high-level functions to access OSCAL data published by NIST.
+It provides high-level functions to access OSCAL data published by NIST. Notably:
+
+1. It combines source data from NIST with the structs provided by Defense Unicorns
+2. In provides higher-level functions automation and other use cases
 
 ## Credits
 
