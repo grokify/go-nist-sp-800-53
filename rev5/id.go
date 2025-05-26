@@ -176,3 +176,18 @@ func (id ID) FormatOSCALSort() (string, error) {
 		return strings.ToLower(s), nil
 	}
 }
+
+func (id ID) FormatType(idType IDType) (string, error) {
+	switch idType {
+	case IDTypeNIST:
+		return id.FormatNIST()
+	case IDTypeNISTSort:
+		return id.FormatNISTSort()
+	case IDTypeOSCAL:
+		return id.FormatOSCAL()
+	case IDTypeOSCALSort:
+		return id.FormatOSCALSort()
+	default:
+		return "", fmt.Errorf("idtype not known (%s)", string(idType))
+	}
+}
