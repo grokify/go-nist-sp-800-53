@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://grokify.github.io/go-nist-sp-800-53/rev5/high_baseline/</loc>
+         <lastmod>2025-05-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://grokify.github.io/go-nist-sp-800-53/rev5/high_baseline/ac/</loc>
          <lastmod>2025-05-27</lastmod>
          <changefreq>daily</changefreq>
@@ -92,6 +97,11 @@
     </url>
     <url>
          <loc>https://grokify.github.io/go-nist-sp-800-53/rev5/high_baseline/sr/</loc>
+         <lastmod>2025-05-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://grokify.github.io/go-nist-sp-800-53/rev5/high_uplift/</loc>
          <lastmod>2025-05-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -186,6 +196,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://grokify.github.io/go-nist-sp-800-53/rev5/low_baseline/</loc>
+         <lastmod>2025-05-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://grokify.github.io/go-nist-sp-800-53/rev5/low_baseline/ac/</loc>
          <lastmod>2025-05-27</lastmod>
          <changefreq>daily</changefreq>
@@ -276,6 +291,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://grokify.github.io/go-nist-sp-800-53/rev5/moderate_baseline/</loc>
+         <lastmod>2025-05-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://grokify.github.io/go-nist-sp-800-53/rev5/moderate_baseline/ac/</loc>
          <lastmod>2025-05-27</lastmod>
          <changefreq>daily</changefreq>
@@ -362,6 +382,11 @@
     </url>
     <url>
          <loc>https://grokify.github.io/go-nist-sp-800-53/rev5/moderate_baseline/sr/</loc>
+         <lastmod>2025-05-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://grokify.github.io/go-nist-sp-800-53/rev5/moderate_uplift/</loc>
          <lastmod>2025-05-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
