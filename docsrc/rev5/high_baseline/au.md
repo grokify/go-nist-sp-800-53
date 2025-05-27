@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {au-01 au %!s(int=1) %!s(int=0)}: Policy and Procedures
+### AU-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, au-1_prm_1 }}:
 
@@ -72,7 +72,7 @@ Organizational personnel with audit and accountability responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### {au-02 au %!s(int=2) %!s(int=0)}: Event Logging
+### AU-2: Event Logging
 
 Identify the types of events that the system is capable of logging in support of the audit function: {{ insert: param, au-02_odp.01 }};
 
@@ -128,7 +128,7 @@ system/network administrators
 
 Mechanisms implementing system auditing
 
-### {au-03 au %!s(int=3) %!s(int=0)}: Content of Audit Records
+### AU-3: Content of Audit Records
 
 Ensure that audit records contain information that establishes the following:
 
@@ -186,7 +186,7 @@ system/network administrators
 
 Mechanisms implementing system auditing of auditable events
 
-### {au-03.01 au %!s(int=3) %!s(int=1)}: Additional Audit Information
+### AU-3 (1): Additional Audit Information
 
 Generate audit records containing the following additional information: {{ insert: param, au-03.01_odp }}.
 
@@ -222,7 +222,7 @@ system developers
 
 system audit capability
 
-### {au-04 au %!s(int=4) %!s(int=0)}: Audit Log Storage Capacity
+### AU-4: Audit Log Storage Capacity
 
 Allocate audit log storage capacity to accommodate {{ insert: param, au-04_odp }}.
 
@@ -260,7 +260,7 @@ system developers
 
 Audit record storage capacity and related configuration settings
 
-### {au-05 au %!s(int=5) %!s(int=0)}: Response to Audit Logging Process Failures
+### AU-5: Response to Audit Logging Process Failures
 
 Alert {{ insert: param, au-05_odp.01 }} within {{ insert: param, au-05_odp.02 }} in the event of an audit logging process failure; and
 
@@ -300,7 +300,7 @@ system developers
 
 Mechanisms implementing system response to audit processing failures
 
-### {au-05.01 au %!s(int=5) %!s(int=1)}: Storage Capacity Warning
+### AU-5 (1): Storage Capacity Warning
 
 Provide a warning to {{ insert: param, au-05.01_odp.01 }} within {{ insert: param, au-05.01_odp.02 }} when allocated audit log storage volume reaches {{ insert: param, au-05.01_odp.03 }} of repository maximum audit log storage capacity.
 
@@ -332,7 +332,7 @@ system developers
 
 Mechanisms implementing audit storage limit warnings
 
-### {au-05.02 au %!s(int=5) %!s(int=2)}: Real-time Alerts
+### AU-5 (2): Real-time Alerts
 
 Provide an alert within {{ insert: param, au-05.02_odp.01 }} to {{ insert: param, au-05.02_odp.02 }} when the following audit failure events occur: {{ insert: param, au-05.02_odp.03 }}.
 
@@ -364,7 +364,7 @@ system/network administrators
 
 system developers
 
-### {au-06 au %!s(int=6) %!s(int=0)}: Audit Record Review, Analysis, and Reporting
+### AU-6: Audit Record Review, Analysis, and Reporting
 
 Review and analyze system audit records {{ insert: param, au-06_odp.01 }} for indications of {{ insert: param, au-06_odp.02 }} and the potential impact of the inappropriate or unusual activity;
 
@@ -398,7 +398,7 @@ Organizational personnel with audit review, analysis, and reporting responsibili
 
 organizational personnel with information security and privacy responsibilities
 
-### {au-06.01 au %!s(int=6) %!s(int=1)}: Automated Process Integration
+### AU-6 (1): Automated Process Integration
 
 Integrate audit record review, analysis, and reporting processes using {{ insert: param, au-06.01_odp }}.
 
@@ -430,7 +430,7 @@ organizational personnel with information security and privacy responsibilities
 
 Automated mechanisms integrating audit review, analysis, and reporting processes
 
-### {au-06.03 au %!s(int=6) %!s(int=3)}: Correlate Audit Record Repositories
+### AU-6 (3): Correlate Audit Record Repositories
 
 Analyze and correlate audit records across different repositories to gain organization-wide situational awareness.
 
@@ -460,7 +460,7 @@ organizational personnel with information security and privacy responsibilities
 
 Mechanisms supporting the analysis and correlation of audit records
 
-### {au-06.05 au %!s(int=6) %!s(int=5)}: Integrated Analysis of Audit Records
+### AU-6 (5): Integrated Analysis of Audit Records
 
 Integrate analysis of audit records with analysis of {{ insert: param, au-06.05_odp.01 }} to further enhance the ability to identify inappropriate or unusual activity.
 
@@ -490,7 +490,7 @@ organizational personnel with information security and privacy responsibilities
 
 Mechanisms implementing the capability to integrate analysis of audit records with analysis of data/information sources
 
-### {au-06.06 au %!s(int=6) %!s(int=6)}: Correlation with Physical Monitoring
+### AU-6 (6): Correlation with Physical Monitoring
 
 Correlate information from audit records with information obtained from monitoring physical access to further enhance the ability to identify suspicious, inappropriate, unusual, or malevolent activity.
 
@@ -524,7 +524,7 @@ organizational personnel with information security and privacy responsibilities
 
 Mechanisms implementing the capability to correlate information from audit records with information from monitoring physical access
 
-### {au-07 au %!s(int=7) %!s(int=0)}: Audit Record Reduction and Report Generation
+### AU-7: Audit Record Reduction and Report Generation
 
 Provide and implement an audit record reduction and report generation capability that:
 
@@ -566,7 +566,7 @@ organizational personnel with information security and privacy responsibilities
 
 Audit reduction and report generation capability
 
-### {au-07.01 au %!s(int=7) %!s(int=1)}: Automatic Processing
+### AU-7 (1): Automatic Processing
 
 Provide and implement the capability to process, sort, and search audit records for events of interest based on the following content: {{ insert: param, au-07.01_odp }}.
 
@@ -604,7 +604,7 @@ system developers
 
 Audit reduction and report generation capability
 
-### {au-08 au %!s(int=8) %!s(int=0)}: Time Stamps
+### AU-8: Time Stamps
 
 Use internal system clocks to generate time stamps for audit records; and
 
@@ -640,7 +640,7 @@ system developers
 
 Mechanisms implementing timestamp generation
 
-### {au-09 au %!s(int=9) %!s(int=0)}: Protection of Audit Information
+### AU-9: Protection of Audit Information
 
 Protect audit information and audit logging tools from unauthorized access, modification, and deletion; and
 
@@ -682,7 +682,7 @@ system developers
 
 Mechanisms implementing audit information protection
 
-### {au-09.02 au %!s(int=9) %!s(int=2)}: Store on Separate Physical Systems or Components
+### AU-9 (2): Store on Separate Physical Systems or Components
 
 Store audit records {{ insert: param, au-09.02_odp }} in a repository that is part of a physically different system or system component than the system or component being audited.
 
@@ -718,7 +718,7 @@ system developers
 
 Mechanisms implementing the backing up of audit records
 
-### {au-09.03 au %!s(int=9) %!s(int=3)}: Cryptographic Protection
+### AU-9 (3): Cryptographic Protection
 
 Implement cryptographic mechanisms to protect the integrity of audit information and audit tools.
 
@@ -756,7 +756,7 @@ system developers
 
 Cryptographic mechanisms protecting the integrity of audit information and tools
 
-### {au-09.04 au %!s(int=9) %!s(int=4)}: Access by Subset of Privileged Users
+### AU-9 (4): Access by Subset of Privileged Users
 
 Authorize access to management of audit logging functionality to only {{ insert: param, au-09.04_odp }}.
 
@@ -796,7 +796,7 @@ system/network administrators
 
 Mechanisms managing access to audit functionality
 
-### {au-10 au %!s(int=10) %!s(int=0)}: Non-repudiation
+### AU-10: Non-repudiation
 
 Provide irrefutable evidence that an individual (or process acting on behalf of an individual) has performed {{ insert: param, au-10_odp }}.
 
@@ -828,7 +828,7 @@ system developers
 
 Mechanisms implementing non-repudiation capability
 
-### {au-11 au %!s(int=11) %!s(int=0)}: Audit Record Retention
+### AU-11: Audit Record Retention
 
 Retain audit records for {{ insert: param, au-11_odp }} to provide support for after-the-fact investigations of incidents and to meet regulatory and organizational information retention requirements.
 
@@ -862,7 +862,7 @@ organizational personnel with information security and privacy responsibilities
 
 system/network administrators
 
-### {au-12 au %!s(int=12) %!s(int=0)}: Audit Record Generation
+### AU-12: Audit Record Generation
 
 Provide audit record generation capability for the event types the system is capable of auditing as defined in [AU-2a](#au-2_smt.a) on {{ insert: param, au-12_odp.01 }};
 
@@ -906,7 +906,7 @@ system developers
 
 Mechanisms implementing audit record generation capability
 
-### {au-12.01 au %!s(int=12) %!s(int=1)}: System-wide and Time-correlated Audit Trail
+### AU-12 (1): System-wide and Time-correlated Audit Trail
 
 Compile audit records from {{ insert: param, au-12.01_odp.01 }} into a system-wide (logical or physical) audit trail that is time-correlated to within {{ insert: param, au-12.01_odp.02 }}.
 
@@ -942,7 +942,7 @@ system developers
 
 Mechanisms implementing audit record generation capability
 
-### {au-12.03 au %!s(int=12) %!s(int=3)}: Changes by Authorized Individuals
+### AU-12 (3): Changes by Authorized Individuals
 
 Provide and implement the capability for {{ insert: param, au-12.03_odp.01 }} to change the logging to be performed on {{ insert: param, au-12.03_odp.02 }} based on {{ insert: param, au-12.03_odp.03 }} within {{ insert: param, au-12.03_odp.04 }}.
 

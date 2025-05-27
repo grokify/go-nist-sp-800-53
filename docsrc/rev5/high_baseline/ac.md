@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {ac-01 ac %!s(int=1) %!s(int=0)}: Policy and Procedures
+### AC-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, ac-1_prm_1 }}:
 
@@ -72,7 +72,7 @@ Organizational personnel with access control responsibilities
 
 organizational personnel with information security with information security and privacy responsibilities
 
-### {ac-02 ac %!s(int=2) %!s(int=0)}: Account Management
+### AC-2: Account Management
 
 Define and document the types of accounts allowed and specifically prohibited for use within the system;
 
@@ -218,7 +218,7 @@ Organizational processes for account management on the system
 
 mechanisms for implementing account management
 
-### {ac-02.01 ac %!s(int=2) %!s(int=1)}: Automated System Account Management
+### AC-2 (1): Automated System Account Management
 
 Support the management of system accounts using {{ insert: param, ac-02.01_odp }}.
 
@@ -250,7 +250,7 @@ system developers
 
 Automated mechanisms for implementing account management functions
 
-### {ac-02.02 ac %!s(int=2) %!s(int=2)}: Automated Temporary and Emergency Account Management
+### AC-2 (2): Automated Temporary and Emergency Account Management
 
 Automatically {{ insert: param, ac-02.02_odp.01 }} temporary and emergency accounts after {{ insert: param, ac-02.02_odp.02 }}.
 
@@ -286,7 +286,7 @@ system developers
 
 Automated mechanisms for implementing account management functions
 
-### {ac-02.03 ac %!s(int=2) %!s(int=3)}: Disable Accounts
+### AC-2 (3): Disable Accounts
 
 Disable accounts within {{ insert: param, ac-02.03_odp.01 }} when the accounts:
 
@@ -338,7 +338,7 @@ system developers
 
 Mechanisms for implementing account management functions
 
-### {ac-02.04 ac %!s(int=2) %!s(int=4)}: Automated Audit Actions
+### AC-2 (4): Automated Audit Actions
 
 Automatically audit account creation, modification, enabling, disabling, and removal actions.
 
@@ -378,7 +378,7 @@ organizational personnel with information security responsibilities
 
 Automated mechanisms implementing account management functions
 
-### {ac-02.05 ac %!s(int=2) %!s(int=5)}: Inactivity Logout
+### AC-2 (5): Inactivity Logout
 
 Require that users log out when {{ insert: param, ac-02.05_odp }}.
 
@@ -410,7 +410,7 @@ organizational personnel with information security responsibilities
 
 users that must comply with inactivity logout policy
 
-### {ac-02.11 ac %!s(int=2) %!s(int=11)}: Usage Conditions
+### AC-2 (11): Usage Conditions
 
 Enforce {{ insert: param, ac-02.11_odp.01 }} for {{ insert: param, ac-02.11_odp.02 }}.
 
@@ -444,7 +444,7 @@ system developers
 
 Mechanisms implementing account management functions
 
-### {ac-02.12 ac %!s(int=2) %!s(int=12)}: Account Monitoring for Atypical Usage
+### AC-2 (12): Account Monitoring for Atypical Usage
 
 Monitor system accounts for {{ insert: param, ac-02.12_odp.01 }} ; and
 
@@ -486,7 +486,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms implementing account management functions
 
-### {ac-02.13 ac %!s(int=2) %!s(int=13)}: Disable Accounts for High-risk Individuals
+### AC-2 (13): Disable Accounts for High-risk Individuals
 
 Disable accounts of individuals within {{ insert: param, ac-02.13_odp.01 }} of discovery of {{ insert: param, ac-02.13_odp.02 }}.
 
@@ -520,7 +520,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms implementing account management functions
 
-### {ac-03 ac %!s(int=3) %!s(int=0)}: Access Enforcement
+### AC-3: Access Enforcement
 
 Enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.
 
@@ -556,7 +556,7 @@ system developers
 
 Mechanisms implementing access control policy
 
-### {ac-04 ac %!s(int=4) %!s(int=0)}: Information Flow Enforcement
+### AC-4: Information Flow Enforcement
 
 Enforce approved authorizations for controlling the flow of information within the system and between connected systems based on {{ insert: param, ac-04_odp }}.
 
@@ -602,7 +602,7 @@ system developers
 
 Mechanisms implementing information flow enforcement policy
 
-### {ac-04.04 ac %!s(int=4) %!s(int=4)}: Flow Control of Encrypted Information
+### AC-4 (4): Flow Control of Encrypted Information
 
 Prevent encrypted information from bypassing {{ insert: param, ac-04.04_odp.01 }} by {{ insert: param, ac-04.04_odp.02 }}.
 
@@ -634,7 +634,7 @@ system developers
 
 Mechanisms implementing information flow enforcement policy
 
-### {ac-05 ac %!s(int=5) %!s(int=0)}: Separation of Duties
+### AC-5: Separation of Duties
 
 Identify and document {{ insert: param, ac-05_odp }} ; and
 
@@ -670,7 +670,7 @@ system/network administrators
 
 Mechanisms implementing separation of duties policy
 
-### {ac-06 ac %!s(int=6) %!s(int=0)}: Least Privilege
+### AC-6: Least Privilege
 
 Employ the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) that are necessary to accomplish assigned organizational tasks.
 
@@ -700,7 +700,7 @@ system/network administrators
 
 Mechanisms implementing least privilege functions
 
-### {ac-06.01 ac %!s(int=6) %!s(int=1)}: Authorize Access to Security Functions
+### AC-6 (1): Authorize Access to Security Functions
 
 Authorize access for {{ insert: param, ac-06.01_odp.01 }} to:
 
@@ -740,7 +740,7 @@ system/network administrators
 
 Mechanisms implementing least privilege functions
 
-### {ac-06.02 ac %!s(int=6) %!s(int=2)}: Non-privileged Access for Nonsecurity Functions
+### AC-6 (2): Non-privileged Access for Nonsecurity Functions
 
 Require that users of system accounts (or roles) with access to {{ insert: param, ac-06.02_odp }} use non-privileged accounts or roles, when accessing nonsecurity functions.
 
@@ -770,7 +770,7 @@ system/network administrators
 
 Mechanisms implementing least privilege functions
 
-### {ac-06.03 ac %!s(int=6) %!s(int=3)}: Network Access to Privileged Commands
+### AC-6 (3): Network Access to Privileged Commands
 
 Authorize network access to {{ insert: param, ac-06.03_odp.01 }} only for {{ insert: param, ac-06.03_odp.02 }} and document the rationale for such access in the security plan for the system.
 
@@ -800,7 +800,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms implementing least privilege functions
 
-### {ac-06.05 ac %!s(int=6) %!s(int=5)}: Privileged Accounts
+### AC-6 (5): Privileged Accounts
 
 Restrict privileged accounts on the system to {{ insert: param, ac-06.05_odp }}.
 
@@ -832,7 +832,7 @@ system/network administrators
 
 Mechanisms implementing least privilege functions
 
-### {ac-06.07 ac %!s(int=6) %!s(int=7)}: Review of User Privileges
+### AC-6 (7): Review of User Privileges
 
 Review {{ insert: param, ac-06.07_odp.01 }} the privileges assigned to {{ insert: param, ac-06.07_odp.02 }} to validate the need for such privileges; and
 
@@ -872,7 +872,7 @@ system/network administrators
 
 Mechanisms implementing review of user privileges
 
-### {ac-06.09 ac %!s(int=6) %!s(int=9)}: Log Use of Privileged Functions
+### AC-6 (9): Log Use of Privileged Functions
 
 Log the execution of privileged functions.
 
@@ -908,7 +908,7 @@ system developers
 
 Mechanisms auditing the execution of least privilege functions
 
-### {ac-06.10 ac %!s(int=6) %!s(int=10)}: Prohibit Non-privileged Users from Executing Privileged Functions
+### AC-6 (10): Prohibit Non-privileged Users from Executing Privileged Functions
 
 Prevent non-privileged users from executing privileged functions.
 
@@ -940,7 +940,7 @@ system developers
 
 Mechanisms implementing least privilege functions for non-privileged users
 
-### {ac-07 ac %!s(int=7) %!s(int=0)}: Unsuccessful Logon Attempts
+### AC-7: Unsuccessful Logon Attempts
 
 Enforce a limit of {{ insert: param, ac-07_odp.01 }} consecutive invalid logon attempts by a user during a {{ insert: param, ac-07_odp.02 }} ; and
 
@@ -974,7 +974,7 @@ system/network administrators
 
 Mechanisms implementing access control policy for unsuccessful logon attempts
 
-### {ac-08 ac %!s(int=8) %!s(int=0)}: System Use Notification
+### AC-8: System Use Notification
 
 Display {{ insert: param, ac-08_odp.01 }} to users before granting access to the system that provides privacy and security notices consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines and state that:
 
@@ -1052,7 +1052,7 @@ system developers
 
 Mechanisms implementing system use notification
 
-### {ac-10 ac %!s(int=10) %!s(int=0)}: Concurrent Session Control
+### AC-10: Concurrent Session Control
 
 Limit the number of concurrent sessions for each {{ insert: param, ac-10_odp.01 }} to {{ insert: param, ac-10_odp.02 }}.
 
@@ -1082,7 +1082,7 @@ system developers
 
 Mechanisms implementing access control policy for concurrent session control
 
-### {ac-11 ac %!s(int=11) %!s(int=0)}: Device Lock
+### AC-11: Device Lock
 
 Prevent further access to the system by {{ insert: param, ac-11_odp.01 }} ; and
 
@@ -1118,7 +1118,7 @@ system developers
 
 Mechanisms implementing access control policy for session lock
 
-### {ac-11.01 ac %!s(int=11) %!s(int=1)}: Pattern-hiding Displays
+### AC-11 (1): Pattern-hiding Displays
 
 Conceal, via the device lock, information previously visible on the display with a publicly viewable image.
 
@@ -1148,7 +1148,7 @@ system developers
 
 System session lock mechanisms
 
-### {ac-12 ac %!s(int=12) %!s(int=0)}: Session Termination
+### AC-12: Session Termination
 
 Automatically terminate a user session after {{ insert: param, ac-12_odp }}.
 
@@ -1180,7 +1180,7 @@ system developers
 
 Automated mechanisms implementing user session termination
 
-### {ac-14 ac %!s(int=14) %!s(int=0)}: Permitted Actions Without Identification or Authentication
+### AC-14: Permitted Actions Without Identification or Authentication
 
 Identify {{ insert: param, ac-14_odp }} that can be performed on the system without identification or authentication consistent with organizational mission and business functions; and
 
@@ -1214,7 +1214,7 @@ System/network administrators
 
 organizational personnel with information security responsibilities
 
-### {ac-17 ac %!s(int=17) %!s(int=0)}: Remote Access
+### AC-17: Remote Access
 
 Establish and document usage restrictions, configuration/connection requirements, and implementation guidance for each type of remote access allowed; and
 
@@ -1254,7 +1254,7 @@ organizational personnel with information security responsibilities
 
 Remote access management capability for the system
 
-### {ac-17.01 ac %!s(int=17) %!s(int=1)}: Monitoring and Control
+### AC-17 (1): Monitoring and Control
 
 Employ automated mechanisms to monitor and control remote access methods.
 
@@ -1288,7 +1288,7 @@ system developers
 
 Automated mechanisms monitoring and controlling remote access methods
 
-### {ac-17.02 ac %!s(int=17) %!s(int=2)}: Protection of Confidentiality and Integrity Using Encryption
+### AC-17 (2): Protection of Confidentiality and Integrity Using Encryption
 
 Implement cryptographic mechanisms to protect the confidentiality and integrity of remote access sessions.
 
@@ -1320,7 +1320,7 @@ system developers
 
 Cryptographic mechanisms protecting confidentiality and integrity of remote access sessions
 
-### {ac-17.03 ac %!s(int=17) %!s(int=3)}: Managed Access Control Points
+### AC-17 (3): Managed Access Control Points
 
 Route remote accesses through authorized and managed network access control points.
 
@@ -1350,7 +1350,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms routing all remote accesses through managed network access control points
 
-### {ac-17.04 ac %!s(int=17) %!s(int=4)}: Privileged Commands and Access
+### AC-17 (4): Privileged Commands and Access
 
 Authorize the execution of privileged commands and access to security-relevant information via remote access only in a format that provides assessable evidence and for the following needs: {{ insert: param, ac-17.4_prm_1 }} ; and
 
@@ -1388,7 +1388,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms implementing remote access management
 
-### {ac-18 ac %!s(int=18) %!s(int=0)}: Wireless Access
+### AC-18: Wireless Access
 
 Establish configuration requirements, connection requirements, and implementation guidance for each type of wireless access; and
 
@@ -1428,7 +1428,7 @@ organizational personnel with information security responsibilities
 
 Wireless access management capability for the system
 
-### {ac-18.01 ac %!s(int=18) %!s(int=1)}: Authentication and Encryption
+### AC-18 (1): Authentication and Encryption
 
 Protect wireless access to the system using authentication of {{ insert: param, ac-18.01_odp }} and encryption.
 
@@ -1460,7 +1460,7 @@ system developers
 
 Mechanisms implementing wireless access protections to the system
 
-### {ac-18.03 ac %!s(int=18) %!s(int=3)}: Disable Wireless Networking
+### AC-18 (3): Disable Wireless Networking
 
 Disable, when not intended for use, wireless networking capabilities embedded within system components prior to issuance and deployment.
 
@@ -1488,7 +1488,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms managing the disabling of wireless networking capabilities internally embedded within system components
 
-### {ac-18.04 ac %!s(int=18) %!s(int=4)}: Restrict Configurations by Users
+### AC-18 (4): Restrict Configurations by Users
 
 Identify and explicitly authorize users allowed to independently configure wireless networking capabilities.
 
@@ -1518,7 +1518,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms authorizing independent user configuration of wireless networking capabilities
 
-### {ac-18.05 ac %!s(int=18) %!s(int=5)}: Antennas and Transmission Power Levels
+### AC-18 (5): Antennas and Transmission Power Levels
 
 Select radio antennas and calibrate transmission power levels to reduce the probability that signals from wireless access points can be received outside of organization-controlled boundaries.
 
@@ -1552,7 +1552,7 @@ radio antenna signals for wireless access
 
 wireless access reception outside of organization-controlled boundaries
 
-### {ac-19 ac %!s(int=19) %!s(int=0)}: Access Control for Mobile Devices
+### AC-19: Access Control for Mobile Devices
 
 Establish configuration requirements, connection requirements, and implementation guidance for organization-controlled mobile devices, to include when such devices are outside of controlled areas; and
 
@@ -1600,7 +1600,7 @@ Access control capability for mobile device connections to organizational system
 
 configurations of mobile devices
 
-### {ac-19.05 ac %!s(int=19) %!s(int=5)}: Full Device or Container-based Encryption
+### AC-19 (5): Full Device or Container-based Encryption
 
 Employ {{ insert: param, ac-19.05_odp.01 }} to protect the confidentiality and integrity of information on {{ insert: param, ac-19.05_odp.02 }}.
 
@@ -1632,7 +1632,7 @@ organizational personnel with information security responsibilities
 
 Encryption mechanisms protecting confidentiality and integrity of information on mobile devices
 
-### {ac-20 ac %!s(int=20) %!s(int=0)}: Use of External Systems
+### AC-20: Use of External Systems
 
  {{ insert: param, ac-20_odp.01 }} , consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems, allowing authorized individuals to:
 
@@ -1678,7 +1678,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms implementing terms and conditions on the use of external systems
 
-### {ac-20.01 ac %!s(int=20) %!s(int=1)}: Limits on Authorized Use
+### AC-20 (1): Limits on Authorized Use
 
 Permit authorized individuals to use an external system to access the system or to process, store, or transmit organization-controlled information only after:
 
@@ -1710,7 +1710,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms implementing limits on use of external systems
 
-### {ac-20.02 ac %!s(int=20) %!s(int=2)}: Portable Storage Devices — Restricted Use
+### AC-20 (2): Portable Storage Devices — Restricted Use
 
 Restrict the use of organization-controlled portable storage devices by authorized individuals on external systems using {{ insert: param, ac-20.02_odp }}.
 
@@ -1740,7 +1740,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms implementing restrictions on the use of portable storage devices
 
-### {ac-21 ac %!s(int=21) %!s(int=0)}: Information Sharing
+### AC-21: Information Sharing
 
 Enable authorized users to determine whether access authorizations assigned to a sharing partner match the information’s access and use restrictions for {{ insert: param, ac-21_odp.01 }} ; and
 
@@ -1788,7 +1788,7 @@ organizational personnel with information security and privacy responsibilities
 
 Automated mechanisms or manual process implementing access authorizations supporting information-sharing/user collaboration decisions
 
-### {ac-22 ac %!s(int=22) %!s(int=0)}: Publicly Accessible Content
+### AC-22: Publicly Accessible Content
 
 Designate individuals authorized to make information publicly accessible;
 

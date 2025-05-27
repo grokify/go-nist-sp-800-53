@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {at-01 at %!s(int=1) %!s(int=0)}: Policy and Procedures
+### AT-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, at-1_prm_1 }}:
 
@@ -72,7 +72,7 @@ Organizational personnel with awareness and training responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### {at-02 at %!s(int=2) %!s(int=0)}: Literacy Training and Awareness
+### AT-2: Literacy Training and Awareness
 
 Provide security and privacy literacy training to system users (including managers, senior executives, and contractors):
 
@@ -136,7 +136,7 @@ organizational personnel comprising the general system user community
 
 Mechanisms managing information security and privacy literacy training
 
-### {at-02.02 at %!s(int=2) %!s(int=2)}: Insider Threat
+### AT-2 (2): Insider Threat
 
 Provide literacy training on recognizing and reporting potential indicators of insider threat.
 
@@ -166,7 +166,7 @@ organizational personnel with responsibilities for literacy training and awarene
 
 organizational personnel with information security and privacy responsibilities
 
-### {at-02.03 at %!s(int=2) %!s(int=3)}: Social Engineering and Mining
+### AT-2 (3): Social Engineering and Mining
 
 Provide literacy training on recognizing and reporting potential and actual instances of social engineering and social mining.
 
@@ -200,7 +200,7 @@ organizational personnel with responsibilities for literacy training and awarene
 
 organizational personnel with information security and privacy responsibilities
 
-### {at-03 at %!s(int=3) %!s(int=0)}: Role-based Training
+### AT-3: Role-based Training
 
 Provide role-based security and privacy training to personnel with the following roles and responsibilities: {{ insert: param, at-3_prm_1 }}:
 
@@ -258,7 +258,7 @@ organizational personnel with assigned system security and privacy roles and res
 
 Mechanisms managing role-based security and privacy training
 
-### {at-04 at %!s(int=4) %!s(int=0)}: Training Records
+### AT-4: Training Records
 
 Document and monitor information security and privacy training activities, including security and privacy awareness training and specific role-based security and privacy training; and
 

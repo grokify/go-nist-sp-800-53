@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {ca-01 ca %!s(int=1) %!s(int=0)}: Policy and Procedures
+### CA-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, ca-1_prm_1 }}:
 
@@ -72,7 +72,7 @@ Organizational personnel with assessment, authorization, and monitoring policy r
 
 organizational personnel with information security and privacy responsibilities
 
-### {ca-02 ca %!s(int=2) %!s(int=0)}: Control Assessments
+### CA-2: Control Assessments
 
 Select the appropriate assessor or assessment team for the type of assessment to be conducted;
 
@@ -146,7 +146,7 @@ organizational personnel with information security and privacy responsibilities
 
 Mechanisms supporting control assessment, control assessment plan development, and/or control assessment reporting
 
-### {ca-02.01 ca %!s(int=2) %!s(int=1)}: Independent Assessors
+### CA-2 (1): Independent Assessors
 
 Employ independent assessors or assessment teams to conduct control assessments.
 
@@ -180,7 +180,7 @@ Organizational personnel with security assessment responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### {ca-02.02 ca %!s(int=2) %!s(int=2)}: Specialized Assessments
+### CA-2 (2): Specialized Assessments
 
 Include as part of control assessments, {{ insert: param, ca-02.02_odp.01 }}, {{ insert: param, ca-02.02_odp.02 }}, {{ insert: param, ca-02.02_odp.03 }}.
 
@@ -210,7 +210,7 @@ organizational personnel with information security and privacy responsibilities
 
 Mechanisms supporting control assessment
 
-### {ca-03 ca %!s(int=3) %!s(int=0)}: Information Exchange
+### CA-3: Information Exchange
 
 Approve and manage the exchange of information between the system and other systems using {{ insert: param, ca-03_odp.01 }};
 
@@ -274,7 +274,7 @@ organizational personnel with information security and privacy responsibilities
 
 personnel managing the system(s) to which the interconnection security agreement applies
 
-### {ca-03.06 ca %!s(int=3) %!s(int=6)}: Transfer Authorizations
+### CA-3 (6): Transfer Authorizations
 
 Verify that individuals or systems transferring data between interconnecting systems have the requisite authorizations (i.e., write permissions or privileges) prior to accepting such data.
 
@@ -320,7 +320,7 @@ organizational personnel with information security and privacy responsibilities
 
 Mechanisms implementing restrictions on external system connections
 
-### {ca-05 ca %!s(int=5) %!s(int=0)}: Plan of Action and Milestones
+### CA-5: Plan of Action and Milestones
 
 Develop a plan of action and milestones for the system to document the planned remediation actions of the organization to correct weaknesses or deficiencies noted during the assessment of the controls and to reduce or eliminate known vulnerabilities in the system; and
 
@@ -356,7 +356,7 @@ organizational personnel with information security and privacy responsibilities
 
 Mechanisms for developing, implementing, and maintaining plan of action and milestones
 
-### {ca-06 ca %!s(int=6) %!s(int=0)}: Authorization
+### CA-6: Authorization
 
 Assign a senior official as the authorizing official for the system;
 
@@ -404,7 +404,7 @@ organizational personnel with information security and privacy responsibilities
 
 Mechanisms that facilitate authorizations and updates
 
-### {ca-07 ca %!s(int=7) %!s(int=0)}: Continuous Monitoring
+### CA-7: Continuous Monitoring
 
 Develop a system-level continuous monitoring strategy and implement continuous monitoring in accordance with the organization-level continuous monitoring strategy that includes:
 
@@ -488,7 +488,7 @@ mechanisms supporting response actions to address assessment and monitoring resu
 
 mechanisms supporting security and privacy status reporting
 
-### {ca-07.01 ca %!s(int=7) %!s(int=1)}: Independent Assessment
+### CA-7 (1): Independent Assessment
 
 Employ independent assessors or assessment teams to monitor the controls in the system on an ongoing basis.
 
@@ -524,7 +524,7 @@ Organizational personnel with continuous monitoring responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### {ca-07.04 ca %!s(int=7) %!s(int=4)}: Risk Monitoring
+### CA-7 (4): Risk Monitoring
 
 Ensure risk monitoring is an integral part of the continuous monitoring strategy that includes the following:
 
@@ -574,7 +574,7 @@ organizational personnel with information security and privacy responsibilities
 
 Mechanisms supporting risk monitoring
 
-### {ca-08 ca %!s(int=8) %!s(int=0)}: Penetration Testing
+### CA-8: Penetration Testing
 
 Conduct penetration testing {{ insert: param, ca-08_odp.01 }} on {{ insert: param, ca-08_odp.02 }}.
 
@@ -610,7 +610,7 @@ system/network administrators
 
 Mechanisms supporting penetration testing
 
-### {ca-08.01 ca %!s(int=8) %!s(int=1)}: Independent Penetration Testing Agent or Team
+### CA-8 (1): Independent Penetration Testing Agent or Team
 
 Employ an independent penetration testing agent or team to perform penetration testing on the system or system components.
 
@@ -640,7 +640,7 @@ Organizational personnel with assessment responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### {ca-09 ca %!s(int=9) %!s(int=0)}: Internal System Connections
+### CA-9: Internal System Connections
 
 Authorize internal connections of {{ insert: param, ca-09_odp.01 }} to the system;
 

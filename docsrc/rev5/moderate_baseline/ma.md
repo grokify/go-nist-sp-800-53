@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {ma-01 ma %!s(int=1) %!s(int=0)}: Policy and Procedures
+### MA-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, ma-1_prm_1 }}:
 
@@ -74,7 +74,7 @@ Organizational personnel with maintenance responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### {ma-02 ma %!s(int=2) %!s(int=0)}: Controlled Maintenance
+### MA-2: Controlled Maintenance
 
 Schedule, document, and review records of maintenance, repair, and replacement on system components in accordance with manufacturer or vendor specifications and/or organizational requirements;
 
@@ -140,7 +140,7 @@ mechanisms supporting and/or implementing controlled maintenance
 
 mechanisms implementing the sanitization of system components
 
-### {ma-03 ma %!s(int=3) %!s(int=0)}: Maintenance Tools
+### MA-3: Maintenance Tools
 
 Approve, control, and monitor the use of system maintenance tools; and
 
@@ -176,7 +176,7 @@ Organizational processes for approving, controlling, and monitoring maintenance 
 
 mechanisms supporting and/or implementing the approval, control, and/or monitoring of maintenance tools
 
-### {ma-03.01 ma %!s(int=3) %!s(int=1)}: Inspect Tools
+### MA-3 (1): Inspect Tools
 
 Inspect the maintenance tools used by maintenance personnel for improper or unauthorized modifications.
 
@@ -206,7 +206,7 @@ Organizational processes for inspecting maintenance tools
 
 mechanisms supporting and/or implementing the inspection of maintenance tools
 
-### {ma-03.02 ma %!s(int=3) %!s(int=2)}: Inspect Media
+### MA-3 (2): Inspect Media
 
 Check media containing diagnostic and test programs for malicious code before the media are used in the system.
 
@@ -234,7 +234,7 @@ Organizational process for inspecting media for malicious code
 
 mechanisms supporting and/or implementing the inspection of media used for maintenance
 
-### {ma-03.03 ma %!s(int=3) %!s(int=3)}: Prevent Unauthorized Removal
+### MA-3 (3): Prevent Unauthorized Removal
 
 Prevent the removal of maintenance equipment containing organizational information by:
 
@@ -286,7 +286,7 @@ mechanisms supporting media sanitization or destruction of equipment
 
 mechanisms supporting verification of media sanitization
 
-### {ma-04 ma %!s(int=4) %!s(int=0)}: Nonlocal Maintenance
+### MA-4: Nonlocal Maintenance
 
 Approve and monitor nonlocal maintenance and diagnostic activities;
 
@@ -352,7 +352,7 @@ mechanisms for strong authentication of nonlocal maintenance diagnostic sessions
 
 mechanisms for terminating nonlocal maintenance sessions and network connections
 
-### {ma-05 ma %!s(int=5) %!s(int=0)}: Maintenance Personnel
+### MA-5: Maintenance Personnel
 
 Establish a process for maintenance personnel authorization and maintain a list of authorized maintenance organizations or personnel;
 
@@ -396,7 +396,7 @@ Organizational processes for authorizing and managing maintenance personnel
 
 mechanisms supporting and/or implementing authorization of maintenance personnel
 
-### {ma-06 ma %!s(int=6) %!s(int=0)}: Timely Maintenance
+### MA-6: Timely Maintenance
 
 Obtain maintenance support and/or spare parts for {{ insert: param, ma-06_odp.01 }} within {{ insert: param, ma-06_odp.02 }} of failure.
 

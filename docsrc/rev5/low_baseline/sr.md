@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {sr-01 sr %!s(int=1) %!s(int=0)}: Policy and Procedures
+### SR-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, sr-1_prm_1 }}:
 
@@ -78,7 +78,7 @@ organizational personnel with acquisition responsibilities
 
 organizational personnel with enterprise risk management responsibilities
 
-### {sr-02 sr %!s(int=2) %!s(int=0)}: Supply Chain Risk Management Plan
+### SR-2: Supply Chain Risk Management Plan
 
 Develop a plan for managing supply chain risks associated with the research and development, design, manufacturing, acquisition, delivery, integration, operations and maintenance, and disposal of the following systems, system components or system services: {{ insert: param, sr-02_odp.01 }};
 
@@ -168,7 +168,7 @@ organizational processes for integrating supply chain risk management into the S
 
 mechanisms supporting and/or implementing the SDLC
 
-### {sr-02.01 sr %!s(int=2) %!s(int=1)}: Establish SCRM Team
+### SR-2 (1): Establish SCRM Team
 
 Establish a supply chain risk management team consisting of {{ insert: param, sr-02.01_odp.01 }} to lead and support the following SCRM activities: {{ insert: param, sr-02.01_odp.02 }}.
 
@@ -206,7 +206,7 @@ legal counsel
 
 organizational personnel with business continuity responsibilities
 
-### {sr-03 sr %!s(int=3) %!s(int=0)}: Supply Chain Controls and Processes
+### SR-3: Supply Chain Controls and Processes
 
 Establish a process or processes to identify and address weaknesses or deficiencies in the supply chain elements and processes of {{ insert: param, sr-03_odp.01 }} in coordination with {{ insert: param, sr-03_odp.02 }};
 
@@ -264,7 +264,7 @@ organizational personnel with supply chain risk management responsibilities
 
 Organizational processes for identifying and addressing supply chain element and process deficiencies
 
-### {sr-05 sr %!s(int=5) %!s(int=0)}: Acquisition Strategies, Tools, and Methods
+### SR-5: Acquisition Strategies, Tools, and Methods
 
 Employ the following acquisition strategies, contract tools, and procurement methods to protect against, identify, and mitigate supply chain risks: {{ insert: param, sr-05_odp }}.
 
@@ -316,7 +316,7 @@ Organizational processes for defining and employing tailored acquisition strateg
 
 mechanisms supporting and/or implementing the definition and employment of tailored acquisition strategies, contract tools, and procurement methods
 
-### {sr-08 sr %!s(int=8) %!s(int=0)}: Notification Agreements
+### SR-8: Notification Agreements
 
 Establish agreements and procedures with entities involved in the supply chain for the system, system component, or system service for the {{ insert: param, sr-08_odp.01 }}.
 
@@ -352,7 +352,7 @@ organizational personnel with supply chain risk management responsibilities
 
 Organizational processes for establishing inter-organizational agreements and procedures with supply chain entities
 
-### {sr-10 sr %!s(int=10) %!s(int=0)}: Inspection of Systems or Components
+### SR-10: Inspection of Systems or Components
 
 Inspect the following systems or system components {{ insert: param, sr-10_odp.02 }} to detect tampering: {{ insert: param, sr-10_odp.01 }}.
 
@@ -394,7 +394,7 @@ Organizational processes for establishing inter-organizational agreements and pr
 
 organizational processes to inspect for tampering
 
-### {sr-11 sr %!s(int=11) %!s(int=0)}: Component Authenticity
+### SR-11: Component Authenticity
 
 Develop and implement anti-counterfeit policy and procedures that include the means to detect and prevent counterfeit components from entering the system; and
 
@@ -456,7 +456,7 @@ Organizational processes for counterfeit prevention, detection, and reporting
 
 mechanisms supporting and/or implementing anti-counterfeit detection, prevention, and reporting
 
-### {sr-11.01 sr %!s(int=11) %!s(int=1)}: Anti-counterfeit Training
+### SR-11 (1): Anti-counterfeit Training
 
 Train {{ insert: param, sr-11.01_odp }} to detect counterfeit system components (including hardware, software, and firmware).
 
@@ -496,7 +496,7 @@ organizational personnel with responsibilities for anti-counterfeit policies, pr
 
 Organizational processes for anti-counterfeit training
 
-### {sr-11.02 sr %!s(int=11) %!s(int=2)}: Configuration Control for Component Service and Repair
+### SR-11 (2): Configuration Control for Component Service and Repair
 
 Maintain configuration control over the following system components awaiting service or repair and serviced or repaired components awaiting return to service: {{ insert: param, sr-11.02_odp }}.
 
@@ -534,7 +534,7 @@ Organizational processes for establishing inter-organizational agreements and pr
 
 organizational configuration control processes
 
-### {sr-12 sr %!s(int=12) %!s(int=0)}: Component Disposal
+### SR-12: Component Disposal
 
 Dispose of {{ insert: param, sr-12_odp.01 }} using the following techniques and methods: {{ insert: param, sr-12_odp.02 }}.
 

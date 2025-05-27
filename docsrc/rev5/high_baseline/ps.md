@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {ps-01 ps %!s(int=1) %!s(int=0)}: Policy and Procedures
+### PS-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, ps-1_prm_1 }}:
 
@@ -78,7 +78,7 @@ Organizational personnel with personnel security responsibilities
 
 organizational personnel with information security responsibilities
 
-### {ps-02 ps %!s(int=2) %!s(int=0)}: Position Risk Designation
+### PS-2: Position Risk Designation
 
 Assign a risk designation to all organizational positions;
 
@@ -116,7 +116,7 @@ Organizational processes for assigning, reviewing, and updating position risk de
 
 organizational processes for establishing screening criteria
 
-### {ps-03 ps %!s(int=3) %!s(int=0)}: Personnel Screening
+### PS-3: Personnel Screening
 
 Screen individuals prior to authorizing access to the system; and
 
@@ -146,7 +146,7 @@ organizational personnel with information security responsibilities
 
 Organizational processes for personnel screening
 
-### {ps-04 ps %!s(int=4) %!s(int=0)}: Personnel Termination
+### PS-4: Personnel Termination
 
 Upon termination of individual employment:
 
@@ -202,7 +202,7 @@ mechanisms supporting and/or implementing personnel termination notifications
 
 mechanisms for disabling system access/revoking authenticators
 
-### {ps-04.02 ps %!s(int=4) %!s(int=2)}: Automated Actions
+### PS-4 (2): Automated Actions
 
 Use {{ insert: param, ps-04.02_odp.01 }} to {{ insert: param, ps-04.02_odp.02 }}.
 
@@ -234,7 +234,7 @@ Organizational processes for personnel termination
 
 automated mechanisms supporting and/or implementing personnel termination notifications
 
-### {ps-05 ps %!s(int=5) %!s(int=0)}: Personnel Transfer
+### PS-5: Personnel Transfer
 
 Review and confirm ongoing operational need for current logical and physical access authorizations to systems and facilities when individuals are reassigned or transferred to other positions within the organization;
 
@@ -280,7 +280,7 @@ mechanisms supporting and/or implementing personnel transfer notifications
 
 mechanisms for disabling system access/revoking authenticators
 
-### {ps-06 ps %!s(int=6) %!s(int=0)}: Access Agreements
+### PS-6: Access Agreements
 
 Develop and document access agreements for organizational systems;
 
@@ -332,7 +332,7 @@ Organizational processes for reviewing, updating, and re-signing access agreemen
 
 mechanisms supporting the reviewing, updating, and re-signing of access agreements
 
-### {ps-07 ps %!s(int=7) %!s(int=0)}: External Personnel Security
+### PS-7: External Personnel Security
 
 Establish personnel security requirements, including security roles and responsibilities for external providers;
 
@@ -386,7 +386,7 @@ Organizational processes for managing and monitoring external personnel security
 
 mechanisms supporting and/or implementing the monitoring of provider compliance
 
-### {ps-08 ps %!s(int=8) %!s(int=0)}: Personnel Sanctions
+### PS-8: Personnel Sanctions
 
 Employ a formal sanctions process for individuals failing to comply with established information security and privacy policies and procedures; and
 
@@ -428,7 +428,7 @@ Organizational processes for managing formal employee sanctions
 
 mechanisms supporting and/or implementing formal employee sanctions notifications
 
-### {ps-09 ps %!s(int=9) %!s(int=0)}: Position Descriptions
+### PS-9: Position Descriptions
 
 Incorporate security and privacy roles and responsibilities into organizational position descriptions.
 

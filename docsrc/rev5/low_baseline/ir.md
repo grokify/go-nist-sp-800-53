@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {ir-01 ir %!s(int=1) %!s(int=0)}: Policy and Procedures
+### IR-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, ir-1_prm_1 }}:
 
@@ -72,7 +72,7 @@ Organizational personnel with incident response responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### {ir-02 ir %!s(int=2) %!s(int=0)}: Incident Response Training
+### IR-2: Incident Response Training
 
 Provide incident response training to system users consistent with assigned roles and responsibilities:
 
@@ -120,7 +120,7 @@ Organizational personnel with incident response training and operational respons
 
 organizational personnel with information security and privacy responsibilities
 
-### {ir-04 ir %!s(int=4) %!s(int=0)}: Incident Handling
+### IR-4: Incident Handling
 
 Implement an incident handling capability for incidents that is consistent with the incident response plan and includes preparation, detection and analysis, containment, eradication, and recovery;
 
@@ -182,7 +182,7 @@ organizational personnel with information security and privacy responsibilities
 
 Incident handling capability for the organization
 
-### {ir-05 ir %!s(int=5) %!s(int=0)}: Incident Monitoring
+### IR-5: Incident Monitoring
 
 Track and document incidents.
 
@@ -214,7 +214,7 @@ Incident monitoring capability for the organization
 
 mechanisms supporting and/or implementing the tracking and documenting of system security incidents
 
-### {ir-06 ir %!s(int=6) %!s(int=0)}: Incident Reporting
+### IR-6: Incident Reporting
 
 Require personnel to report suspected incidents to the organizational incident response capability within {{ insert: param, ir-06_odp.01 }} ; and
 
@@ -254,7 +254,7 @@ Organizational processes for incident reporting
 
 mechanisms supporting and/or implementing incident reporting
 
-### {ir-07 ir %!s(int=7) %!s(int=0)}: Incident Response Assistance
+### IR-7: Incident Response Assistance
 
 Provide an incident response support resource, integral to the organizational incident response capability, that offers advice and assistance to users of the system for the handling and reporting of incidents.
 
@@ -286,7 +286,7 @@ Organizational processes for incident response assistance
 
 mechanisms supporting and/or implementing incident response assistance
 
-### {ir-08 ir %!s(int=8) %!s(int=0)}: Incident Response Plan
+### IR-8: Incident Response Plan
 
 Develop an incident response plan that:
 

@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {sa-01 sa %!s(int=1) %!s(int=0)}: Policy and Procedures
+### SA-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, sa-1_prm_1 }}:
 
@@ -82,7 +82,7 @@ organizational personnel with information security and privacy responsibilities
 
 organizational personnel with supply chain risk management responsibilities
 
-### {sa-02 sa %!s(int=2) %!s(int=0)}: Allocation of Resources
+### SA-2: Allocation of Resources
 
 Determine the high-level information security and privacy requirements for the system or system service in mission and business process planning;
 
@@ -136,7 +136,7 @@ organizational processes for capital planning, programming, and budgeting
 
 mechanisms supporting and/or implementing organizational capital planning, programming, and budgeting
 
-### {sa-03 sa %!s(int=3) %!s(int=0)}: System Development Life Cycle
+### SA-3: System Development Life Cycle
 
 Acquire, develop, and manage the system using {{ insert: param, sa-03_odp }} that incorporates information security and privacy considerations;
 
@@ -206,7 +206,7 @@ organizational processes for integrating information security and privacy and su
 
 mechanisms supporting and/or implementing the system development life cycle
 
-### {sa-04 sa %!s(int=4) %!s(int=0)}: Acquisition Process
+### SA-4: Acquisition Process
 
 Include the following requirements, descriptions, and criteria, explicitly or by reference, using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service:
 
@@ -300,7 +300,7 @@ organizational processes for developing acquisition contracts
 
 mechanisms supporting and/or implementing acquisitions and the inclusion of security and privacy requirements in contracts
 
-### {sa-04.01 sa %!s(int=4) %!s(int=1)}: Functional Properties of Controls
+### SA-4 (1): Functional Properties of Controls
 
 Require the developer of the system, system component, or system service to provide a description of the functional properties of the controls to be implemented.
 
@@ -338,7 +338,7 @@ organizational processes for developing acquisition contracts
 
 mechanisms supporting and/or implementing acquisitions and the inclusion of security and privacy requirements in contracts
 
-### {sa-04.02 sa %!s(int=4) %!s(int=2)}: Design and Implementation Information for Controls
+### SA-4 (2): Design and Implementation Information for Controls
 
 Require the developer of the system, system component, or system service to provide design and implementation information for the controls that includes: {{ insert: param, sa-04.02_odp.01 }} at {{ insert: param, sa-04.02_odp.03 }}.
 
@@ -378,7 +378,7 @@ organizational processes for developing acquisition contracts
 
 mechanisms supporting and/or implementing the development of system design details
 
-### {sa-04.09 sa %!s(int=4) %!s(int=9)}: Functions, Ports, Protocols, and Services in Use
+### SA-4 (9): Functions, Ports, Protocols, and Services in Use
 
 Require the developer of the system, system component, or system service to identify the functions, ports, protocols, and services intended for organizational use.
 
@@ -426,7 +426,7 @@ system developers
 
 organizational personnel with information security responsibilities
 
-### {sa-04.10 sa %!s(int=4) %!s(int=10)}: Use of Approved PIV Products
+### SA-4 (10): Use of Approved PIV Products
 
 Employ only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational systems.
 
@@ -464,7 +464,7 @@ organizational personnel with information security responsibilities
 
 Organizational processes for selecting and employing FIPS 201-approved products
 
-### {sa-05 sa %!s(int=5) %!s(int=0)}: System Documentation
+### SA-5: System Documentation
 
 Obtain or develop administrator documentation for the system, system component, or system service that describes:
 
@@ -566,7 +566,7 @@ system developers
 
 Organizational processes for obtaining, protecting, and distributing system administrator and user documentation
 
-### {sa-08 sa %!s(int=8) %!s(int=0)}: Security and Privacy Engineering Principles
+### SA-8: Security and Privacy Engineering Principles
 
 Apply the following systems security and privacy engineering principles in the specification, design, development, implementation, and modification of the system and system components: {{ insert: param, sa-8_prm_1 }}.
 
@@ -630,7 +630,7 @@ Organizational processes for applying security and privacy engineering principle
 
 mechanisms supporting the application of security and privacy engineering principles in system specification, design, development, implementation, and modification
 
-### {sa-09 sa %!s(int=9) %!s(int=0)}: External System Services
+### SA-9: External System Services
 
 Require that providers of external system services comply with organizational security and privacy requirements and employ the following controls: {{ insert: param, sa-09_odp.01 }};
 
@@ -692,7 +692,7 @@ Organizational processes for monitoring security and privacy control compliance 
 
 mechanisms for monitoring security and privacy control compliance by external service providers on an ongoing basis
 
-### {sa-09.02 sa %!s(int=9) %!s(int=2)}: Identification of Functions, Ports, Protocols, and Services
+### SA-9 (2): Identification of Functions, Ports, Protocols, and Services
 
 Require providers of the following external system services to identify the functions, ports, protocols, and other services required for the use of such services: {{ insert: param, sa-09.02_odp }}.
 
@@ -730,7 +730,7 @@ system/network administrators
 
 external providers of system services
 
-### {sa-10 sa %!s(int=10) %!s(int=0)}: Developer Configuration Management
+### SA-10: Developer Configuration Management
 
 Require the developer of the system, system component, or system service to:
 
@@ -808,7 +808,7 @@ Organizational processes for monitoring developer configuration management
 
 mechanisms supporting and/or implementing the monitoring of developer configuration management
 
-### {sa-11 sa %!s(int=11) %!s(int=0)}: Developer Testing and Evaluation
+### SA-11: Developer Testing and Evaluation
 
 Require the developer of the system, system component, or system service, at all post-design stages of the system development life cycle, to:
 
@@ -892,7 +892,7 @@ Organizational processes for monitoring developer security testing and evaluatio
 
 mechanisms supporting and/or implementing the monitoring of developer security and privacy testing and evaluation
 
-### {sa-15 sa %!s(int=15) %!s(int=0)}: Development Process, Standards, and Tools
+### SA-15: Development Process, Standards, and Tools
 
 Require the developer of the system, system component, or system service to follow a documented development process that:
 
@@ -974,7 +974,7 @@ organizational personnel with information security and privacy responsibilities
 
 system developer
 
-### {sa-15.03 sa %!s(int=15) %!s(int=3)}: Criticality Analysis
+### SA-15 (3): Criticality Analysis
 
 Require the developer of the system, system component, or system service to perform a criticality analysis:
 
@@ -1030,7 +1030,7 @@ Organizational processes for performing criticality analysis
 
 mechanisms supporting and/or implementing criticality analysis
 
-### {sa-22 sa %!s(int=22) %!s(int=0)}: Unsupported System Components
+### SA-22: Unsupported System Components
 
 Replace system components when support for the components is no longer available from the developer, vendor, or manufacturer; or
 

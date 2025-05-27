@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {cm-01 cm %!s(int=1) %!s(int=0)}: Policy and Procedures
+### CM-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, cm-1_prm_1 }}:
 
@@ -80,7 +80,7 @@ Organizational personnel with configuration management responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### {cm-02 cm %!s(int=2) %!s(int=0)}: Baseline Configuration
+### CM-2: Baseline Configuration
 
 Develop, document, and maintain under configuration control, a current baseline configuration of the system; and
 
@@ -138,7 +138,7 @@ Organizational processes for managing baseline configurations
 
 mechanisms supporting configuration control of the baseline configuration
 
-### {cm-02.02 cm %!s(int=2) %!s(int=2)}: Automation Support for Accuracy and Currency
+### CM-2 (2): Automation Support for Accuracy and Currency
 
 Maintain the currency, completeness, accuracy, and availability of the baseline configuration of the system using {{ insert: param, cm-02.02_odp }}.
 
@@ -182,7 +182,7 @@ Organizational processes for managing baseline configurations
 
 automated mechanisms implementing baseline configuration maintenance
 
-### {cm-02.03 cm %!s(int=2) %!s(int=3)}: Retention of Previous Configurations
+### CM-2 (3): Retention of Previous Configurations
 
 Retain {{ insert: param, cm-02.03_odp }} of previous versions of baseline configurations of the system to support rollback.
 
@@ -214,7 +214,7 @@ system/network administrators
 
 Organizational processes for managing baseline configurations
 
-### {cm-02.07 cm %!s(int=2) %!s(int=7)}: Configure Systems and Components for High-risk Areas
+### CM-2 (7): Configure Systems and Components for High-risk Areas
 
 Issue {{ insert: param, cm-02.07_odp.01 }} with {{ insert: param, cm-02.07_odp.02 }} to individuals traveling to locations that the organization deems to be of significant risk; and
 
@@ -258,7 +258,7 @@ system/network administrators
 
 Organizational processes for managing baseline configurations
 
-### {cm-03 cm %!s(int=3) %!s(int=0)}: Configuration Change Control
+### CM-3: Configuration Change Control
 
 Determine and document the types of changes to the system that are configuration-controlled;
 
@@ -334,7 +334,7 @@ Organizational processes for configuration change control
 
 mechanisms that implement configuration change control
 
-### {cm-03.02 cm %!s(int=3) %!s(int=2)}: Testing, Validation, and Documentation of Changes
+### CM-3 (2): Testing, Validation, and Documentation of Changes
 
 Test, validate, and document changes to the system before finalizing the implementation of the changes.
 
@@ -384,7 +384,7 @@ Organizational processes for configuration change control
 
 mechanisms supporting and/or implementing, testing, validating, and documenting system changes
 
-### {cm-03.04 cm %!s(int=3) %!s(int=4)}: Security and Privacy Representatives
+### CM-3 (4): Security and Privacy Representatives
 
 Require {{ insert: param, cm-3.4_prm_1 }} to be members of the {{ insert: param, cm-03.04_odp.03 }}.
 
@@ -414,7 +414,7 @@ members of change control board or similar
 
 Organizational processes for configuration change control
 
-### {cm-04 cm %!s(int=4) %!s(int=0)}: Impact Analyses
+### CM-4: Impact Analyses
 
 Analyze changes to the system to determine potential security and privacy impacts prior to change implementation.
 
@@ -468,7 +468,7 @@ Organizational processes for security impact analyses
 
 organizational processes for privacy impact analyses
 
-### {cm-04.02 cm %!s(int=4) %!s(int=2)}: Verification of Controls
+### CM-4 (2): Verification of Controls
 
 After system changes, verify that the impacted controls are implemented correctly, operating as intended, and producing the desired outcome with regard to meeting the security and privacy requirements for the system.
 
@@ -528,7 +528,7 @@ Organizational processes for security and privacy impact analyses
 
 mechanisms supporting and/or implementing security and privacy impact analyses of changes
 
-### {cm-05 cm %!s(int=5) %!s(int=0)}: Access Restrictions for Change
+### CM-5: Access Restrictions for Change
 
 Define, document, approve, and enforce physical and logical access restrictions associated with changes to the system.
 
@@ -584,7 +584,7 @@ Organizational processes for managing access restrictions to change
 
 mechanisms supporting, implementing, or enforcing access restrictions associated with changes to the system
 
-### {cm-06 cm %!s(int=6) %!s(int=0)}: Configuration Settings
+### CM-6: Configuration Settings
 
 Establish and document configuration settings for components employed within the system that reflect the most restrictive mode consistent with operational requirements using {{ insert: param, cm-06_odp.01 }};
 
@@ -654,7 +654,7 @@ mechanisms that implement, monitor, and/or control system configuration settings
 
 mechanisms that identify and/or document deviations from established configuration settings
 
-### {cm-07 cm %!s(int=7) %!s(int=0)}: Least Functionality
+### CM-7: Least Functionality
 
 Configure the system to provide only {{ insert: param, cm-07_odp.01 }} ; and
 
@@ -704,7 +704,7 @@ Organizational processes prohibiting or restricting functions, ports, protocols,
 
 mechanisms implementing restrictions or prohibition of functions, ports, protocols, software, and/or services
 
-### {cm-07.01 cm %!s(int=7) %!s(int=1)}: Periodic Review
+### CM-7 (1): Periodic Review
 
 Review the system {{ insert: param, cm-07.01_odp.01 }} to identify unnecessary and/or nonsecure functions, ports, protocols, software, and services; and
 
@@ -758,7 +758,7 @@ Organizational processes for reviewing or disabling functions, ports, protocols,
 
 mechanisms implementing review and disabling of functions, ports, protocols, and/or services
 
-### {cm-07.02 cm %!s(int=7) %!s(int=2)}: Prevent Program Execution
+### CM-7 (2): Prevent Program Execution
 
 Prevent program execution in accordance with {{ insert: param, cm-07.02_odp.01 }}.
 
@@ -804,7 +804,7 @@ mechanisms preventing program execution on the system
 
 mechanisms supporting and/or implementing software program usage and restrictions
 
-### {cm-07.05 cm %!s(int=7) %!s(int=5)}: Authorized Software — Allow-by-exception
+### CM-7 (5): Authorized Software — Allow-by-exception
 
 Identify {{ insert: param, cm-07.05_odp.01 }};
 
@@ -858,7 +858,7 @@ organizational process for implementing authorized software policy
 
 mechanisms supporting and/or implementing authorized software policy
 
-### {cm-08 cm %!s(int=8) %!s(int=0)}: System Component Inventory
+### CM-8: System Component Inventory
 
 Develop and document an inventory of system components that:
 
@@ -918,7 +918,7 @@ Organizational processes for managing the system component inventory
 
 mechanisms supporting and/or implementing system component inventory
 
-### {cm-08.01 cm %!s(int=8) %!s(int=1)}: Updates During Installation and Removal
+### CM-8 (1): Updates During Installation and Removal
 
 Update the inventory of system components as part of component installations, removals, and system updates.
 
@@ -962,7 +962,7 @@ Organizational processes for updating the system component inventory
 
 mechanisms supporting and/or implementing system component inventory updates
 
-### {cm-08.03 cm %!s(int=8) %!s(int=3)}: Automated Unauthorized Component Detection
+### CM-8 (3): Automated Unauthorized Component Detection
 
 Detect the presence of unauthorized hardware, software, and firmware components within the system using {{ insert: param, cm-8.3_prm_1 }} {{ insert: param, cm-08.03_odp.04 }} ; and
 
@@ -1026,7 +1026,7 @@ automated mechanisms supporting and/or implementing the detection of unauthorize
 
 automated mechanisms supporting and/or implementing actions taken when unauthorized system components are detected
 
-### {cm-09 cm %!s(int=9) %!s(int=0)}: Configuration Management Plan
+### CM-9: Configuration Management Plan
 
 Develop, document, and implement a configuration management plan for the system that:
 
@@ -1106,7 +1106,7 @@ mechanisms for managing configuration items
 
 mechanisms for protecting the configuration management plan
 
-### {cm-10 cm %!s(int=10) %!s(int=0)}: Software Usage Restrictions
+### CM-10: Software Usage Restrictions
 
 Use software and associated documentation in accordance with contract agreements and copyright laws;
 
@@ -1158,7 +1158,7 @@ mechanisms implementing software license tracking
 
 mechanisms implementing and controlling the use of peer-to-peer files sharing technology
 
-### {cm-11 cm %!s(int=11) %!s(int=0)}: User-installed Software
+### CM-11: User-installed Software
 
 Establish {{ insert: param, cm-11_odp.01 }} governing the installation of software by users;
 
@@ -1214,7 +1214,7 @@ mechanisms enforcing policies and methods for governing the installation of soft
 
 mechanisms monitoring policy compliance
 
-### {cm-12 cm %!s(int=12) %!s(int=0)}: Information Location
+### CM-12: Information Location
 
 Identify and document the location of {{ insert: param, cm-12_odp }} and the specific system components on which the information is processed and stored;
 
@@ -1280,7 +1280,7 @@ Organizational processes governing information location
 
 mechanisms enforcing policies and methods for governing information location
 
-### {cm-12.01 cm %!s(int=12) %!s(int=1)}: Automated Tools to Support Information Location
+### CM-12 (1): Automated Tools to Support Information Location
 
 Use automated tools to identify {{ insert: param, cm-12.01_odp.01 }} on {{ insert: param, cm-12.01_odp.02 }} to ensure controls are in place to protect organizational information and individual privacy.
 

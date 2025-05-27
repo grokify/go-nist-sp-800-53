@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {pe-01 pe %!s(int=1) %!s(int=0)}: Policy and Procedures
+### PE-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, pe-1_prm_1 }}:
 
@@ -74,7 +74,7 @@ Organizational personnel with physical and environmental protection responsibili
 
 organizational personnel with information security and privacy responsibilities
 
-### {pe-02 pe %!s(int=2) %!s(int=0)}: Physical Access Authorizations
+### PE-2: Physical Access Authorizations
 
 Develop, approve, and maintain a list of individuals with authorized access to the facility where the system resides;
 
@@ -124,7 +124,7 @@ Organizational processes for physical access authorizations
 
 mechanisms supporting and/or implementing physical access authorizations
 
-### {pe-03 pe %!s(int=3) %!s(int=0)}: Physical Access Control
+### PE-3: Physical Access Control
 
 Enforce physical access authorizations at {{ insert: param, pe-03_odp.01 }} by:
 
@@ -202,7 +202,7 @@ mechanisms supporting and/or implementing physical access control
 
 physical access control devices
 
-### {pe-03.01 pe %!s(int=3) %!s(int=1)}: System Access
+### PE-3 (1): System Access
 
 Enforce physical access authorizations to the system in addition to the physical access controls for the facility at {{ insert: param, pe-03.01_odp }}.
 
@@ -240,7 +240,7 @@ Organizational processes for physical access control to the information system/c
 
 mechanisms supporting and/or implementing physical access control for facility areas containing system components
 
-### {pe-04 pe %!s(int=4) %!s(int=0)}: Access Control for Transmission
+### PE-4: Access Control for Transmission
 
 Control physical access to {{ insert: param, pe-04_odp.01 }} within organizational facilities using {{ insert: param, pe-04_odp.02 }}.
 
@@ -270,7 +270,7 @@ Organizational processes for access control to distribution and transmission lin
 
 mechanisms/security safeguards supporting and/or implementing access control to distribution and transmission lines
 
-### {pe-05 pe %!s(int=5) %!s(int=0)}: Access Control for Output Devices
+### PE-5: Access Control for Output Devices
 
 Control physical access to output from {{ insert: param, pe-05_odp }} to prevent unauthorized individuals from obtaining the output.
 
@@ -302,7 +302,7 @@ Organizational processes for access control to output devices
 
 mechanisms supporting and/or implementing access control to output devices
 
-### {pe-06 pe %!s(int=6) %!s(int=0)}: Monitoring Physical Access
+### PE-6: Monitoring Physical Access
 
 Monitor physical access to the facility where the system resides to detect and respond to physical security incidents;
 
@@ -348,7 +348,7 @@ mechanisms supporting and/or implementing physical access monitoring
 
 mechanisms supporting and/or implementing the review of physical access logs
 
-### {pe-06.01 pe %!s(int=6) %!s(int=1)}: Intrusion Alarms and Surveillance Equipment
+### PE-6 (1): Intrusion Alarms and Surveillance Equipment
 
 Monitor physical access to the facility where the system resides using physical intrusion alarms and surveillance equipment.
 
@@ -390,7 +390,7 @@ mechanisms supporting and/or implementing physical access monitoring
 
 mechanisms supporting and/or implementing physical intrusion alarms and surveillance equipment
 
-### {pe-06.04 pe %!s(int=6) %!s(int=4)}: Monitoring Physical Access to Systems
+### PE-6 (4): Monitoring Physical Access to Systems
 
 Monitor physical access to the system in addition to the physical access monitoring of the facility at {{ insert: param, pe-06.04_odp }}.
 
@@ -430,7 +430,7 @@ Organizational processes for monitoring physical access to the system
 
 mechanisms supporting and/or implementing physical access monitoring for facility areas containing system components
 
-### {pe-08 pe %!s(int=8) %!s(int=0)}: Visitor Access Records
+### PE-8: Visitor Access Records
 
 Maintain visitor access records to the facility where the system resides for {{ insert: param, pe-08_odp.01 }};
 
@@ -472,7 +472,7 @@ Organizational processes for maintaining and reviewing visitor access records
 
 mechanisms supporting and/or implementing the maintenance and review of visitor access records
 
-### {pe-08.01 pe %!s(int=8) %!s(int=1)}: Automated Records Maintenance and Review
+### PE-8 (1): Automated Records Maintenance and Review
 
 Maintain and review visitor access records using {{ insert: param, pe-8.1_prm_1 }}.
 
@@ -504,7 +504,7 @@ Organizational processes for maintaining and reviewing visitor access records
 
 automated mechanisms supporting and/or implementing the maintenance and review of visitor access records
 
-### {pe-09 pe %!s(int=9) %!s(int=0)}: Power Equipment and Cabling
+### PE-9: Power Equipment and Cabling
 
 Protect power equipment and power cabling for the system from damage and destruction.
 
@@ -530,7 +530,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms supporting and/or implementing the protection of power equipment/cabling
 
-### {pe-10 pe %!s(int=10) %!s(int=0)}: Emergency Shutoff
+### PE-10: Emergency Shutoff
 
 Provide the capability of shutting off power to {{ insert: param, pe-10_odp.01 }} in emergency situations;
 
@@ -566,7 +566,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms supporting and/or implementing emergency power shutoff
 
-### {pe-11 pe %!s(int=11) %!s(int=0)}: Emergency Power
+### PE-11: Emergency Power
 
 Provide an uninterruptible power supply to facilitate {{ insert: param, pe-11_odp }} in the event of a primary power source loss.
 
@@ -596,7 +596,7 @@ Mechanisms supporting and/or implementing an uninterruptible power supply
 
 the uninterruptable power supply
 
-### {pe-11.01 pe %!s(int=11) %!s(int=1)}: Alternate Power Supply — Minimal Operational Capability
+### PE-11 (1): Alternate Power Supply — Minimal Operational Capability
 
 Provide an alternate power supply for the system that is activated {{ insert: param, pe-11.01_odp }} and that can maintain minimally required operational capability in the event of an extended loss of the primary power source.
 
@@ -628,7 +628,7 @@ Mechanisms supporting and/or implementing an alternate power supply
 
 the alternate power supply
 
-### {pe-12 pe %!s(int=12) %!s(int=0)}: Emergency Lighting
+### PE-12: Emergency Lighting
 
 Employ and maintain automatic emergency lighting for the system that activates in the event of a power outage or disruption and that covers emergency exits and evacuation routes within the facility.
 
@@ -662,7 +662,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms supporting and/or implementing an emergency lighting capability
 
-### {pe-13 pe %!s(int=13) %!s(int=0)}: Fire Protection
+### PE-13: Fire Protection
 
 Employ and maintain fire detection and suppression systems that are supported by an independent energy source.
 
@@ -700,7 +700,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms supporting and/or implementing fire suppression/detection devices/systems
 
-### {pe-13.01 pe %!s(int=13) %!s(int=1)}: Detection Systems — Automatic Activation and Notification
+### PE-13 (1): Detection Systems — Automatic Activation and Notification
 
 Employ fire detection systems that activate automatically and notify {{ insert: param, pe-13.01_odp.01 }} and {{ insert: param, pe-13.01_odp.02 }} in the event of a fire.
 
@@ -742,7 +742,7 @@ activation of fire detection devices/systems (simulated)
 
 automated notifications
 
-### {pe-13.02 pe %!s(int=13) %!s(int=2)}: Suppression Systems — Automatic Activation and Notification
+### PE-13 (2): Suppression Systems — Automatic Activation and Notification
 
 Employ fire suppression systems that activate automatically and notify {{ insert: param, pe-13.02_odp.01 }} and {{ insert: param, pe-13.02_odp.02 }} ; and
 
@@ -786,7 +786,7 @@ activation of fire suppression devices/systems (simulated)
 
 automated notifications
 
-### {pe-14 pe %!s(int=14) %!s(int=0)}: Environmental Controls
+### PE-14: Environmental Controls
 
 Maintain {{ insert: param, pe-14_odp.01 }} levels within the facility where the system resides at {{ insert: param, pe-14_odp.03 }} ; and
 
@@ -820,7 +820,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms supporting and/or implementing the maintenance and monitoring of temperature and humidity levels
 
-### {pe-15 pe %!s(int=15) %!s(int=0)}: Water Damage Protection
+### PE-15: Water Damage Protection
 
 Protect the system from damage resulting from water leakage by providing master shutoff or isolation valves that are accessible, working properly, and known to key personnel.
 
@@ -858,7 +858,7 @@ Master water-shutoff valves
 
 organizational process for activating master water shutoff
 
-### {pe-15.01 pe %!s(int=15) %!s(int=1)}: Automation Support
+### PE-15 (1): Automation Support
 
 Detect the presence of water near the system and alert {{ insert: param, pe-15.01_odp.01 }} using {{ insert: param, pe-15.01_odp.02 }}.
 
@@ -890,7 +890,7 @@ organizational personnel with information security responsibilities
 
 Automated mechanisms supporting and/or implementing water detection capabilities and alerts for the system
 
-### {pe-16 pe %!s(int=16) %!s(int=0)}: Delivery and Removal
+### PE-16: Delivery and Removal
 
 Authorize and control {{ insert: param, pe-16_prm_1 }} entering and exiting the facility; and
 
@@ -928,7 +928,7 @@ Organizational process for authorizing, monitoring, and controlling system-relat
 
 mechanisms supporting and/or implementing, authorizing, monitoring, and controlling system-related items entering and exiting the facility
 
-### {pe-17 pe %!s(int=17) %!s(int=0)}: Alternate Work Site
+### PE-17: Alternate Work Site
 
 Determine and document the {{ insert: param, pe-17_odp.01 }} allowed for use by employees;
 
@@ -978,7 +978,7 @@ security and privacy controls employed at alternate work sites
 
 means of communication between personnel at alternate work sites and security and privacy personnel
 
-### {pe-18 pe %!s(int=18) %!s(int=0)}: Location of System Components
+### PE-18: Location of System Components
 
 Position system components within the facility to minimize potential damage from {{ insert: param, pe-18_odp }} and to minimize the opportunity for unauthorized access.
 

@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {si-01 si %!s(int=1) %!s(int=0)}: Policy and Procedures
+### SI-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, si-1_prm_1 }}:
 
@@ -74,7 +74,7 @@ Organizational personnel with system and information integrity responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### {si-02 si %!s(int=2) %!s(int=0)}: Flaw Remediation
+### SI-2: Flaw Remediation
 
 Identify, report, and correct system flaws;
 
@@ -148,7 +148,7 @@ mechanisms supporting and/or implementing the reporting and correcting of system
 
 mechanisms supporting and/or implementing testing software and firmware updates
 
-### {si-03 si %!s(int=3) %!s(int=0)}: Malicious Code Protection
+### SI-3: Malicious Code Protection
 
 Implement {{ insert: param, si-03_odp.01 }} malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code;
 
@@ -228,7 +228,7 @@ mechanisms supporting and/or implementing, employing, updating, and configuring 
 
 mechanisms supporting and/or implementing malicious code scanning and subsequent actions
 
-### {si-04 si %!s(int=4) %!s(int=0)}: System Monitoring
+### SI-4: System Monitoring
 
 Monitor the system to detect:
 
@@ -314,7 +314,7 @@ Organizational processes for system monitoring
 
 mechanisms supporting and/or implementing system monitoring capabilities
 
-### {si-05 si %!s(int=5) %!s(int=0)}: Security Alerts, Advisories, and Directives
+### SI-5: Security Alerts, Advisories, and Directives
 
 Receive system security alerts, advisories, and directives from {{ insert: param, si-05_odp.01 }} on an ongoing basis;
 
@@ -362,7 +362,7 @@ mechanisms supporting and/or implementing the definition, receipt, generation, a
 
 mechanisms supporting and/or implementing security directives
 
-### {si-12 si %!s(int=12) %!s(int=0)}: Information Management and Retention
+### SI-12: Information Management and Retention
 
 Manage and retain information within the system and information output from the system in accordance with applicable laws, executive orders, directives, regulations, policies, standards, guidelines and operational requirements.
 

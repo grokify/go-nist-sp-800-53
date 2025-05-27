@@ -4,7 +4,7 @@
 
 ## Controls
 
-### {sc-01 sc %!s(int=1) %!s(int=0)}: Policy and Procedures
+### SC-1: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, sc-1_prm_1 }}:
 
@@ -78,7 +78,7 @@ Organizational personnel with system and communications protection responsibilit
 
 organizational personnel with information security and privacy responsibilities
 
-### {sc-02 sc %!s(int=2) %!s(int=0)}: Separation of System and User Functionality
+### SC-2: Separation of System and User Functionality
 
 Separate user functionality, including user interface services, from system management functionality.
 
@@ -108,7 +108,7 @@ system developer
 
 Separation of user functionality from system management functionality
 
-### {sc-03 sc %!s(int=3) %!s(int=0)}: Security Function Isolation
+### SC-3: Security Function Isolation
 
 Isolate security functions from nonsecurity functions.
 
@@ -140,7 +140,7 @@ system developer
 
 Separation of security functions from non-security functions within the system
 
-### {sc-04 sc %!s(int=4) %!s(int=0)}: Information in Shared System Resources
+### SC-4: Information in Shared System Resources
 
 Prevent unauthorized and unintended information transfer via shared system resources.
 
@@ -172,7 +172,7 @@ system developer
 
 Mechanisms preventing the unauthorized and unintended transfer of information via shared system resources
 
-### {sc-05 sc %!s(int=5) %!s(int=0)}: Denial-of-service Protection
+### SC-5: Denial-of-service Protection
 
  {{ insert: param, sc-05_odp.02 }} the effects of the following types of denial-of-service events: {{ insert: param, sc-05_odp.01 }} ; and
 
@@ -212,7 +212,7 @@ system developer
 
 Mechanisms protecting against or limiting the effects of denial-of-service attacks
 
-### {sc-07 sc %!s(int=7) %!s(int=0)}: Boundary Protection
+### SC-7: Boundary Protection
 
 Monitor and control communications at the external managed interfaces to the system and at key internal managed interfaces within the system;
 
@@ -264,7 +264,7 @@ organizational personnel with boundary protection responsibilities
 
 Mechanisms implementing boundary protection capabilities
 
-### {sc-07.03 sc %!s(int=7) %!s(int=3)}: Access Points
+### SC-7 (3): Access Points
 
 Limit the number of external network connections to the system.
 
@@ -302,7 +302,7 @@ Mechanisms implementing boundary protection capabilities
 
 mechanisms limiting the number of external network connections to the system
 
-### {sc-07.04 sc %!s(int=7) %!s(int=4)}: External Telecommunications Services
+### SC-7 (4): External Telecommunications Services
 
 Implement a managed interface for each external telecommunication service;
 
@@ -382,7 +382,7 @@ mechanisms implementing boundary protection capabilities
 
 managed interfaces implementing traffic flow policy
 
-### {sc-07.05 sc %!s(int=7) %!s(int=5)}: Deny by Default — Allow by Exception
+### SC-7 (5): Deny by Default — Allow by Exception
 
 Deny network communications traffic by default and allow network communications traffic by exception {{ insert: param, sc-07.05_odp.01 }}.
 
@@ -416,7 +416,7 @@ organizational personnel with boundary protection responsibilities
 
 Mechanisms implementing traffic management at managed interfaces
 
-### {sc-07.07 sc %!s(int=7) %!s(int=7)}: Split Tunneling for Remote Devices
+### SC-7 (7): Split Tunneling for Remote Devices
 
 Prevent split tunneling for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using {{ insert: param, sc-07.07_odp }}.
 
@@ -454,7 +454,7 @@ Mechanisms implementing boundary protection capabilities
 
 mechanisms supporting/restricting non-remote connections
 
-### {sc-07.08 sc %!s(int=7) %!s(int=8)}: Route Traffic to Authenticated Proxy Servers
+### SC-7 (8): Route Traffic to Authenticated Proxy Servers
 
 Route {{ insert: param, sc-07.08_odp.01 }} to {{ insert: param, sc-07.08_odp.02 }} through authenticated proxy servers at managed interfaces.
 
@@ -490,7 +490,7 @@ organizational personnel with boundary protection responsibilities
 
 Mechanisms implementing traffic management through authenticated proxy servers at managed interfaces
 
-### {sc-07.18 sc %!s(int=7) %!s(int=18)}: Fail Secure
+### SC-7 (18): Fail Secure
 
 Prevent systems from entering unsecure states in the event of an operational failure of a boundary protection device.
 
@@ -524,7 +524,7 @@ organizational personnel with boundary protection responsibilities
 
 Mechanisms supporting and/or implementing secure failure
 
-### {sc-07.21 sc %!s(int=7) %!s(int=21)}: Isolation of System Components
+### SC-7 (21): Isolation of System Components
 
 Employ boundary protection mechanisms to isolate {{ insert: param, sc-07.21_odp.01 }} supporting {{ insert: param, sc-07.21_odp.02 }}.
 
@@ -560,7 +560,7 @@ organizational personnel with boundary protection responsibilities
 
 Mechanisms supporting and/or implementing the capability to separate system components supporting organizational missions and/or business functions
 
-### {sc-08 sc %!s(int=8) %!s(int=0)}: Transmission Confidentiality and Integrity
+### SC-8: Transmission Confidentiality and Integrity
 
 Protect the {{ insert: param, sc-08_odp }} of transmitted information.
 
@@ -592,7 +592,7 @@ system developer
 
 Mechanisms supporting and/or implementing transmission confidentiality and/or integrity
 
-### {sc-08.01 sc %!s(int=8) %!s(int=1)}: Cryptographic Protection
+### SC-8 (1): Cryptographic Protection
 
 Implement cryptographic mechanisms to {{ insert: param, sc-08.01_odp }} during transmission.
 
@@ -626,7 +626,7 @@ mechanisms supporting and/or implementing alternative physical safeguards
 
 organizational processes for defining and implementing alternative physical safeguards
 
-### {sc-10 sc %!s(int=10) %!s(int=0)}: Network Disconnect
+### SC-10: Network Disconnect
 
 Terminate the network connection associated with a communications session at the end of the session or after {{ insert: param, sc-10_odp }} of inactivity.
 
@@ -658,7 +658,7 @@ system developer
 
 Mechanisms supporting and/or implementing a network disconnect capability
 
-### {sc-12 sc %!s(int=12) %!s(int=0)}: Cryptographic Key Establishment and Management
+### SC-12: Cryptographic Key Establishment and Management
 
 Establish and manage cryptographic keys when cryptography is employed within the system in accordance with the following key management requirements: {{ insert: param, sc-12_odp }}.
 
@@ -692,7 +692,7 @@ organizational personnel with responsibilities for cryptographic key establishme
 
 Mechanisms supporting and/or implementing cryptographic key establishment and management
 
-### {sc-12.01 sc %!s(int=12) %!s(int=1)}: Availability
+### SC-12 (1): Availability
 
 Maintain availability of information in the event of the loss of cryptographic keys by users.
 
@@ -722,7 +722,7 @@ organizational personnel with responsibilities for cryptographic key establishme
 
 Mechanisms supporting and/or implementing cryptographic key establishment and management
 
-### {sc-13 sc %!s(int=13) %!s(int=0)}: Cryptographic Protection
+### SC-13: Cryptographic Protection
 
 Determine the {{ insert: param, sc-13_odp.01 }} ; and
 
@@ -762,7 +762,7 @@ organizational personnel with responsibilities for cryptographic protection
 
 Mechanisms supporting and/or implementing cryptographic protection
 
-### {sc-15 sc %!s(int=15) %!s(int=0)}: Collaborative Computing Devices and Applications
+### SC-15: Collaborative Computing Devices and Applications
 
 Prohibit remote activation of collaborative computing devices and applications with the following exceptions: {{ insert: param, sc-15_odp }} ; and
 
@@ -802,7 +802,7 @@ Mechanisms supporting and/or implementing the management of remote activation of
 
 mechanisms providing an indication of use of collaborative computing devices
 
-### {sc-17 sc %!s(int=17) %!s(int=0)}: Public Key Infrastructure Certificates
+### SC-17: Public Key Infrastructure Certificates
 
 Issue public key certificates under an {{ insert: param, sc-17_odp }} or obtain public key certificates from an approved service provider; and
 
@@ -836,7 +836,7 @@ service providers
 
 Mechanisms supporting and/or implementing the management of public key infrastructure certificates
 
-### {sc-18 sc %!s(int=18) %!s(int=0)}: Mobile Code
+### SC-18: Mobile Code
 
 Define acceptable and unacceptable mobile code and mobile code technologies; and
 
@@ -890,7 +890,7 @@ mechanisms supporting and/or implementing the management of mobile code
 
 mechanisms supporting and/or implementing the monitoring of mobile code
 
-### {sc-20 sc %!s(int=20) %!s(int=0)}: Secure Name/Address Resolution Service (Authoritative Source)
+### SC-20: Secure Name/Address Resolution Service (Authoritative Source)
 
 Provide additional data origin authentication and integrity verification artifacts along with the authoritative name resolution data the system returns in response to external name/address resolution queries; and
 
@@ -926,7 +926,7 @@ organizational personnel with responsibilities for managing DNS
 
 Mechanisms supporting and/or implementing secure name/address resolution services
 
-### {sc-21 sc %!s(int=21) %!s(int=0)}: Secure Name/Address Resolution Service (Recursive or Caching Resolver)
+### SC-21: Secure Name/Address Resolution Service (Recursive or Caching Resolver)
 
 Request and perform data origin authentication and data integrity verification on the name/address resolution responses the system receives from authoritative sources.
 
@@ -962,7 +962,7 @@ organizational personnel with responsibilities for managing DNS
 
 Mechanisms supporting and/or implementing data origin authentication and data integrity verification for name/address resolution services
 
-### {sc-22 sc %!s(int=22) %!s(int=0)}: Architecture and Provisioning for Name/Address Resolution Service
+### SC-22: Architecture and Provisioning for Name/Address Resolution Service
 
 Ensure the systems that collectively provide name/address resolution service for an organization are fault-tolerant and implement internal and external role separation.
 
@@ -1000,7 +1000,7 @@ organizational personnel with responsibilities for managing DNS
 
 Mechanisms supporting and/or implementing name/address resolution services for fault tolerance and role separation
 
-### {sc-23 sc %!s(int=23) %!s(int=0)}: Session Authenticity
+### SC-23: Session Authenticity
 
 Protect the authenticity of communications sessions.
 
@@ -1028,7 +1028,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms supporting and/or implementing session authenticity
 
-### {sc-24 sc %!s(int=24) %!s(int=0)}: Fail in Known State
+### SC-24: Fail in Known State
 
 Fail to a {{ insert: param, sc-24_odp.02 }} for the following failures on the indicated components while preserving {{ insert: param, sc-24_odp.03 }} in failure: {{ insert: param, sc-24_odp.01 }}.
 
@@ -1064,7 +1064,7 @@ Mechanisms supporting and/or implementing the fail in known state capability
 
 mechanisms preserving system state information in the event of a system failure
 
-### {sc-28 sc %!s(int=28) %!s(int=0)}: Protection of Information at Rest
+### SC-28: Protection of Information at Rest
 
 Protect the {{ insert: param, sc-28_odp.01 }} of the following information at rest: {{ insert: param, sc-28_odp.02 }}.
 
@@ -1096,7 +1096,7 @@ system developer
 
 Mechanisms supporting and/or implementing confidentiality and integrity protections for information at rest
 
-### {sc-28.01 sc %!s(int=28) %!s(int=1)}: Cryptographic Protection
+### SC-28 (1): Cryptographic Protection
 
 Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of the following information at rest on {{ insert: param, sc-28.01_odp.02 }}: {{ insert: param, sc-28.01_odp.01 }}.
 
@@ -1130,7 +1130,7 @@ system developer
 
 Cryptographic mechanisms implementing confidentiality and integrity protections for information at rest
 
-### {sc-39 sc %!s(int=39) %!s(int=0)}: Process Isolation
+### SC-39: Process Isolation
 
 Maintain a separate execution domain for each executing system process.
 
