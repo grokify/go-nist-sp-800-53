@@ -1,6 +1,8 @@
 # sa - System and Services Acquisition
 
-## Base Controls
+* Controls: 9
+
+## Controls
 
 ### sa-1: Policy and Procedures
 
@@ -298,6 +300,44 @@ organizational processes for developing acquisition contracts
 
 mechanisms supporting and/or implementing acquisitions and the inclusion of security and privacy requirements in contracts
 
+### sa-4.10: Use of Approved PIV Products
+
+Employ only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational systems.
+
+Products on the FIPS 201-approved products list meet NIST requirements for Personal Identity Verification (PIV) of Federal Employees and Contractors. PIV cards are used for multi-factor authentication in systems and organizations.
+
+only information technology products on the FIPS 201-approved products list for the Personal Identity Verification (PIV) capability implemented within organizational systems are employed.
+
+Supply chain risk management plan
+
+system and services acquisition policy
+
+procedures addressing the integration of security requirements, descriptions, and criteria into the acquisition process
+
+solicitation documentation
+
+acquisition documentation
+
+acquisition contracts for the system, system component, or system service
+
+service level agreements
+
+FIPS 201 approved products list
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with acquisition/contracting responsibilities
+
+organizational personnel with the responsibility for determining system security requirements
+
+organizational personnel with the responsibility for ensuring that only FIPS 201- approved products are implemented
+
+organizational personnel with information security responsibilities
+
+Organizational processes for selecting and employing FIPS 201-approved products
+
 ### sa-5: System Documentation
 
 Obtain or develop administrator documentation for the system, system component, or system service that describes:
@@ -565,6 +605,4 @@ organizational personnel responsible for component replacement
 Organizational processes for replacing unsupported system components
 
 mechanisms supporting and/or implementing the replacement of unsupported system components
-
-## Control Enhancements
 

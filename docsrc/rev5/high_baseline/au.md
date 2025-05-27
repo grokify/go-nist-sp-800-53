@@ -1,6 +1,8 @@
 # au - Audit and Accountability
 
-## Base Controls
+* Controls: 25
+
+## Controls
 
 ### au-1: Policy and Procedures
 
@@ -184,6 +186,42 @@ system/network administrators
 
 Mechanisms implementing system auditing of auditable events
 
+### au-3.1: Additional Audit Information
+
+Generate audit records containing the following additional information: {{ insert: param, au-03.01_odp }}.
+
+The ability to add information generated in audit records is dependent on system functionality to configure the audit record content. Organizations may consider additional information in audit records including, but not limited to, access control or flow control rules invoked and individual identities of group account users. Organizations may also consider limiting additional audit record information to only information that is explicitly needed for audit requirements. This facilitates the use of audit trails and audit logs by not including information in audit records that could potentially be misleading, make it more difficult to locate information of interest, or increase the risk to individuals' privacy.
+
+generated audit records contain the following {{ insert: param, au-03.01_odp }}.
+
+Audit and accountability policy
+
+procedures addressing content of audit records
+
+system security plan
+
+privacy plan
+
+system design documentation
+
+system configuration settings and associated documentation
+
+list of organization-defined auditable events
+
+system audit records
+
+other relevant documents or records
+
+Organizational personnel with audit and accountability responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+system/network administrators
+
+system developers
+
+system audit capability
+
 ### au-4: Audit Log Storage Capacity
 
 Allocate audit log storage capacity to accommodate {{ insert: param, au-04_odp }}.
@@ -262,6 +300,70 @@ system developers
 
 Mechanisms implementing system response to audit processing failures
 
+### au-5.1: Storage Capacity Warning
+
+Provide a warning to {{ insert: param, au-05.01_odp.01 }} within {{ insert: param, au-05.01_odp.02 }} when allocated audit log storage volume reaches {{ insert: param, au-05.01_odp.03 }} of repository maximum audit log storage capacity.
+
+Organizations may have multiple audit log storage repositories distributed across multiple system components with each repository having different storage volume capacities.
+
+a warning is provided to {{ insert: param, au-05.01_odp.01 }} within {{ insert: param, au-05.01_odp.02 }} when allocated audit log storage volume reaches {{ insert: param, au-05.01_odp.03 }} of repository maximum audit log storage capacity.
+
+Audit and accountability policy
+
+procedures addressing response to audit processing failures
+
+system design documentation
+
+system security plan
+
+privacy system configuration settings and associated documentation
+
+system audit records
+
+other relevant documents or records
+
+Organizational personnel with audit and accountability responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+system/network administrators
+
+system developers
+
+Mechanisms implementing audit storage limit warnings
+
+### au-5.2: Real-time Alerts
+
+Provide an alert within {{ insert: param, au-05.02_odp.01 }} to {{ insert: param, au-05.02_odp.02 }} when the following audit failure events occur: {{ insert: param, au-05.02_odp.03 }}.
+
+Alerts provide organizations with urgent messages. Real-time alerts provide these messages at information technology speed (i.e., the time from event detection to alert occurs in seconds or less).
+
+an alert is provided within {{ insert: param, au-05.02_odp.01 }} to {{ insert: param, au-05.02_odp.02 }} when {{ insert: param, au-05.02_odp.03 }} occur.
+
+Audit and accountability policy
+
+procedures addressing response to audit processing failures
+
+system design documentation
+
+system security plan
+
+privacy plan
+
+system configuration settings and associated documentation
+
+system audit records
+
+other relevant documents or records
+
+Organizational personnel with audit and accountability responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+system/network administrators
+
+system developers
+
 ### au-6: Audit Record Review, Analysis, and Reporting
 
 Review and analyze system audit records {{ insert: param, au-06_odp.01 }} for indications of {{ insert: param, au-06_odp.02 }} and the potential impact of the inappropriate or unusual activity;
@@ -295,6 +397,132 @@ other relevant documents or records
 Organizational personnel with audit review, analysis, and reporting responsibilities
 
 organizational personnel with information security and privacy responsibilities
+
+### au-6.1: Automated Process Integration
+
+Integrate audit record review, analysis, and reporting processes using {{ insert: param, au-06.01_odp }}.
+
+Organizational processes that benefit from integrated audit record review, analysis, and reporting include incident response, continuous monitoring, contingency planning, investigation and response to suspicious activities, and Inspector General audits.
+
+audit record review, analysis, and reporting processes are integrated using {{ insert: param, au-06.01_odp }}.
+
+Audit and accountability policy
+
+system security plan
+
+privacy plan
+
+procedures addressing audit review, analysis, and reporting
+
+procedures addressing investigation and response to suspicious activities
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+other relevant documents or records
+
+Organizational personnel with audit review, analysis, and reporting responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+Automated mechanisms integrating audit review, analysis, and reporting processes
+
+### au-6.3: Correlate Audit Record Repositories
+
+Analyze and correlate audit records across different repositories to gain organization-wide situational awareness.
+
+Organization-wide situational awareness includes awareness across all three levels of risk management (i.e., organizational level, mission/business process level, and information system level) and supports cross-organization awareness.
+
+audit records across different repositories are analyzed and correlated to gain organization-wide situational awareness.
+
+Audit and accountability policy
+
+system security plan
+
+privacy plan
+
+procedures addressing audit review, analysis, and reporting
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records across different repositories
+
+other relevant documents or records
+
+Organizational personnel with audit review, analysis, and reporting responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+Mechanisms supporting the analysis and correlation of audit records
+
+### au-6.5: Integrated Analysis of Audit Records
+
+Integrate analysis of audit records with analysis of {{ insert: param, au-06.05_odp.01 }} to further enhance the ability to identify inappropriate or unusual activity.
+
+Integrated analysis of audit records does not require vulnerability scanning, the generation of performance data, or system monitoring. Rather, integrated analysis requires that the analysis of information generated by scanning, monitoring, or other data collection activities is integrated with the analysis of audit record information. Security Information and Event Management tools can facilitate audit record aggregation or consolidation from multiple system components as well as audit record correlation and analysis. The use of standardized audit record analysis scripts developed by organizations (with localized script adjustments, as necessary) provides more cost-effective approaches for analyzing audit record information collected. The correlation of audit record information with vulnerability scanning information is important in determining the veracity of vulnerability scans of the system and in correlating attack detection events with scanning results. Correlation with performance data can uncover denial-of-service attacks or other types of attacks that result in the unauthorized use of resources. Correlation with system monitoring information can assist in uncovering attacks and in better relating audit information to operational situations.
+
+analysis of audit records is integrated with analysis of {{ insert: param, au-06.05_odp.01 }} to further enhance the ability to identify inappropriate or unusual activity.
+
+Audit and accountability policy
+
+system security plan
+
+privacy plan
+
+procedures addressing audit review, analysis, and reporting
+
+system design documentation
+
+system configuration settings and associated documentation
+
+integrated analysis of audit records, vulnerability scanning information, performance data, network monitoring information, and associated documentation
+
+other relevant documents or records
+
+Organizational personnel with audit review, analysis, and reporting responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+Mechanisms implementing the capability to integrate analysis of audit records with analysis of data/information sources
+
+### au-6.6: Correlation with Physical Monitoring
+
+Correlate information from audit records with information obtained from monitoring physical access to further enhance the ability to identify suspicious, inappropriate, unusual, or malevolent activity.
+
+The correlation of physical audit record information and the audit records from systems may assist organizations in identifying suspicious behavior or supporting evidence of such behavior. For example, the correlation of an individual’s identity for logical access to certain systems with the additional physical security information that the individual was present at the facility when the logical access occurred may be useful in investigations.
+
+information from audit records is correlated with information obtained from monitoring physical access to further enhance the ability to identify suspicious, inappropriate, unusual, or malevolent activity.
+
+Audit and accountability policy
+
+procedures addressing audit review, analysis, and reporting
+
+procedures addressing physical access monitoring
+
+system design documentation
+
+system configuration settings and associated documentation
+
+documentation providing evidence of correlated information obtained from audit records and physical access monitoring records
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with audit review, analysis, and reporting responsibilities
+
+organizational personnel with physical access monitoring responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+Mechanisms implementing the capability to correlate information from audit records with information from monitoring physical access
 
 ### au-7: Audit Record Reduction and Report Generation
 
@@ -335,6 +563,44 @@ other relevant documents or records
 Organizational personnel with audit reduction and report generation responsibilities
 
 organizational personnel with information security and privacy responsibilities
+
+Audit reduction and report generation capability
+
+### au-7.1: Automatic Processing
+
+Provide and implement the capability to process, sort, and search audit records for events of interest based on the following content: {{ insert: param, au-07.01_odp }}.
+
+Events of interest can be identified by the content of audit records, including system resources involved, information objects accessed, identities of individuals, event types, event locations, event dates and times, Internet Protocol addresses involved, or event success or failure. Organizations may define event criteria to any degree of granularity required, such as locations selectable by a general networking location or by specific system component.
+
+the capability to process, sort, and search audit records for events of interest based on {{ insert: param, au-07.01_odp }} are provided;
+
+the capability to process, sort, and search audit records for events of interest based on {{ insert: param, au-07.01_odp }} are implemented.
+
+Audit and accountability policy
+
+system security plan
+
+privacy plan
+
+procedures addressing audit reduction and report generation
+
+system design documentation
+
+system configuration settings and associated documentation
+
+audit reduction, review, analysis, and reporting tools
+
+audit record criteria (fields) establishing events of interest
+
+system audit records
+
+other relevant documents or records
+
+Organizational personnel with audit reduction and report generation responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+system developers
 
 Audit reduction and report generation capability
 
@@ -415,6 +681,120 @@ system/network administrators
 system developers
 
 Mechanisms implementing audit information protection
+
+### au-9.2: Store on Separate Physical Systems or Components
+
+Store audit records {{ insert: param, au-09.02_odp }} in a repository that is part of a physically different system or system component than the system or component being audited.
+
+Storing audit records in a repository separate from the audited system or system component helps to ensure that a compromise of the system being audited does not also result in a compromise of the audit records. Storing audit records on separate physical systems or components also preserves the confidentiality and integrity of audit records and facilitates the management of audit records as an organization-wide activity. Storing audit records on separate systems or components applies to initial generation as well as backup or long-term storage of audit records.
+
+audit records are stored {{ insert: param, au-09.02_odp }} in a repository that is part of a physically different system or system component than the system or component being audited.
+
+Audit and accountability policy
+
+system security plan
+
+privacy plan
+
+procedures addressing protection of audit information
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system or media storing backups of system audit records
+
+system audit records
+
+other relevant documents or records
+
+Organizational personnel with audit and accountability responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+system/network administrators
+
+system developers
+
+Mechanisms implementing the backing up of audit records
+
+### au-9.3: Cryptographic Protection
+
+Implement cryptographic mechanisms to protect the integrity of audit information and audit tools.
+
+Cryptographic mechanisms used for protecting the integrity of audit information include signed hash functions using asymmetric cryptography. This enables the distribution of the public key to verify the hash information while maintaining the confidentiality of the secret key used to generate the hash.
+
+cryptographic mechanisms to protect the integrity of audit information and audit tools are implemented.
+
+Audit and accountability policy
+
+system security plan
+
+privacy plan
+
+access control policy and procedures
+
+procedures addressing protection of audit information
+
+system design documentation
+
+system hardware settings
+
+system configuration settings and associated documentation
+
+system audit records
+
+other relevant documents or records
+
+Organizational personnel with audit and accountability responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+system/network administrators
+
+system developers
+
+Cryptographic mechanisms protecting the integrity of audit information and tools
+
+### au-9.4: Access by Subset of Privileged Users
+
+Authorize access to management of audit logging functionality to only {{ insert: param, au-09.04_odp }}.
+
+Individuals or roles with privileged access to a system and who are also the subject of an audit by that system may affect the reliability of the audit information by inhibiting audit activities or modifying audit records. Requiring privileged access to be further defined between audit-related privileges and other privileges limits the number of users or roles with audit-related privileges.
+
+access to management of audit logging functionality is authorized only to {{ insert: param, au-09.04_odp }}.
+
+Audit and accountability policy
+
+system security plan
+
+privacy plan
+
+access control policy and procedures
+
+procedures addressing protection of audit information
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system-generated list of privileged users with access to management of audit functionality
+
+access authorizations
+
+access control list
+
+system audit records
+
+other relevant documents or records
+
+Organizational personnel with audit and accountability responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+system/network administrators
+
+Mechanisms managing access to audit functionality
 
 ### au-10: Non-repudiation
 
@@ -526,5 +906,77 @@ system developers
 
 Mechanisms implementing audit record generation capability
 
-## Control Enhancements
+### au-12.1: System-wide and Time-correlated Audit Trail
+
+Compile audit records from {{ insert: param, au-12.01_odp.01 }} into a system-wide (logical or physical) audit trail that is time-correlated to within {{ insert: param, au-12.01_odp.02 }}.
+
+Audit trails are time-correlated if the time stamps in the individual audit records can be reliably related to the time stamps in other audit records to achieve a time ordering of the records within organizational tolerances.
+
+audit records from {{ insert: param, au-12.01_odp.01 }} are compiled into a system-wide (logical or physical) audit trail that is time-correlated to within {{ insert: param, au-12.01_odp.02 }}.
+
+Audit and accountability policy
+
+system security plan
+
+privacy plan
+
+procedures addressing audit record generation
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system-wide audit trail (logical or physical)
+
+system audit records
+
+other relevant documents or records
+
+Organizational personnel with audit record generation responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+system/network administrators
+
+system developers
+
+Mechanisms implementing audit record generation capability
+
+### au-12.3: Changes by Authorized Individuals
+
+Provide and implement the capability for {{ insert: param, au-12.03_odp.01 }} to change the logging to be performed on {{ insert: param, au-12.03_odp.02 }} based on {{ insert: param, au-12.03_odp.03 }} within {{ insert: param, au-12.03_odp.04 }}.
+
+Permitting authorized individuals to make changes to system logging enables organizations to extend or limit logging as necessary to meet organizational requirements. Logging that is limited to conserve system resources may be extended (either temporarily or permanently) to address certain threat situations. In addition, logging may be limited to a specific set of event types to facilitate audit reduction, analysis, and reporting. Organizations can establish time thresholds in which logging actions are changed (e.g., near real-time, within minutes, or within hours).
+
+the capability for {{ insert: param, au-12.03_odp.01 }} to change the logging to be performed on {{ insert: param, au-12.03_odp.02 }} based on {{ insert: param, au-12.03_odp.03 }} within {{ insert: param, au-12.03_odp.04 }} is provided;
+
+the capability for {{ insert: param, au-12.03_odp.01 }} to change the logging to be performed on {{ insert: param, au-12.03_odp.02 }} based on {{ insert: param, au-12.03_odp.03 }} within {{ insert: param, au-12.03_odp.04 }} is implemented.
+
+Audit and accountability policy
+
+system security plan
+
+privacy plan
+
+procedures addressing audit record generation
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system-generated list of individuals or roles authorized to change auditing to be performed
+
+system audit records
+
+other relevant documents or records
+
+Organizational personnel with audit record generation responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+system/network administrators
+
+system developers
+
+Mechanisms implementing audit record generation capability
 

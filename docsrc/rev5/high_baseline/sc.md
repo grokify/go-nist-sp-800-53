@@ -1,6 +1,8 @@
 # sc - System and Communications Protection
 
-## Base Controls
+* Controls: 30
+
+## Controls
 
 ### sc-1: Policy and Procedures
 
@@ -262,6 +264,302 @@ organizational personnel with boundary protection responsibilities
 
 Mechanisms implementing boundary protection capabilities
 
+### sc-7.3: Access Points
+
+Limit the number of external network connections to the system.
+
+Limiting the number of external network connections facilitates monitoring of inbound and outbound communications traffic. The Trusted Internet Connection [DHS TIC](#4f42ee6e-86cc-403b-a51f-76c2b4f81b54) initiative is an example of a federal guideline that requires limits on the number of external network connections. Limiting the number of external network connections to the system is important during transition periods from older to newer technologies (e.g., transitioning from IPv4 to IPv6 network protocols). Such transitions may require implementing the older and newer technologies simultaneously during the transition period and thus increase the number of access points to the system.
+
+the number of external network connections to the system is limited.
+
+System and communications protection policy
+
+procedures addressing boundary protection
+
+system design documentation
+
+boundary protection hardware and software
+
+system architecture and configuration documentation
+
+system configuration settings and associated documentation
+
+communications and network traffic monitoring logs
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+organizational personnel with boundary protection responsibilities
+
+Mechanisms implementing boundary protection capabilities
+
+mechanisms limiting the number of external network connections to the system
+
+### sc-7.4: External Telecommunications Services
+
+Implement a managed interface for each external telecommunication service;
+
+Establish a traffic flow policy for each managed interface;
+
+Protect the confidentiality and integrity of the information being transmitted across each interface;
+
+Document each exception to the traffic flow policy with a supporting mission or business need and duration of that need;
+
+Review exceptions to the traffic flow policy {{ insert: param, sc-07.04_odp }} and remove exceptions that are no longer supported by an explicit mission or business need;
+
+Prevent unauthorized exchange of control plane traffic with external networks;
+
+Publish information to enable remote networks to detect unauthorized control plane traffic from internal networks; and
+
+Filter unauthorized control plane traffic from external networks.
+
+External telecommunications services can provide data and/or voice communications services. Examples of control plane traffic include Border Gateway Protocol (BGP) routing, Domain Name System (DNS), and management protocols. See [SP 800-189](#f5edfe51-d1f2-422e-9b27-5d0e90b49c72) for additional information on the use of the resource public key infrastructure (RPKI) to protect BGP routes and detect unauthorized BGP announcements.
+
+a managed interface is implemented for each external telecommunication service;
+
+a traffic flow policy is established for each managed interface;
+
+the confidentiality of the information being transmitted across each interface is protected;
+
+the integrity of the information being transmitted across each interface is protected;
+
+each exception to the traffic flow policy is documented with a supporting mission or business need and duration of that need;
+
+exceptions to the traffic flow policy are reviewed {{ insert: param, sc-07.04_odp }};
+
+exceptions to the traffic flow policy that are no longer supported by an explicit mission or business need are removed;
+
+unauthorized exchanges of control plan traffic with external networks are prevented;
+
+information is published to enable remote networks to detect unauthorized control plane traffic from internal networks;
+
+unauthorized control plane traffic is filtered from external networks.
+
+System and communications protection policy
+
+traffic flow policy
+
+information flow control policy
+
+procedures addressing boundary protection
+
+system security architecture
+
+system design documentation
+
+boundary protection hardware and software
+
+system architecture and configuration documentation
+
+system configuration settings and associated documentation
+
+records of traffic flow policy exceptions
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+organizational personnel with boundary protection responsibilities
+
+Organizational processes for documenting and reviewing exceptions to the traffic flow policy
+
+organizational processes for removing exceptions to the traffic flow policy
+
+mechanisms implementing boundary protection capabilities
+
+managed interfaces implementing traffic flow policy
+
+### sc-7.5: Deny by Default — Allow by Exception
+
+Deny network communications traffic by default and allow network communications traffic by exception {{ insert: param, sc-07.05_odp.01 }}.
+
+Denying by default and allowing by exception applies to inbound and outbound network communications traffic. A deny-all, permit-by-exception network communications traffic policy ensures that only those system connections that are essential and approved are allowed. Deny by default, allow by exception also applies to a system that is connected to an external system.
+
+network communications traffic is denied by default {{ insert: param, sc-07.05_odp.01 }};
+
+network communications traffic is allowed by exception {{ insert: param, sc-07.05_odp.01 }}.
+
+System and communications protection policy
+
+procedures addressing boundary protection
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+system developer
+
+organizational personnel with boundary protection responsibilities
+
+Mechanisms implementing traffic management at managed interfaces
+
+### sc-7.7: Split Tunneling for Remote Devices
+
+Prevent split tunneling for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using {{ insert: param, sc-07.07_odp }}.
+
+Split tunneling is the process of allowing a remote user or device to establish a non-remote connection with a system and simultaneously communicate via some other connection to a resource in an external network. This method of network access enables a user to access remote devices and simultaneously, access uncontrolled networks. Split tunneling might be desirable by remote users to communicate with local system resources, such as printers or file servers. However, split tunneling can facilitate unauthorized external connections, making the system vulnerable to attack and to exfiltration of organizational information. Split tunneling can be prevented by disabling configuration settings that allow such capability in remote devices and by preventing those configuration settings from being configurable by users. Prevention can also be achieved by the detection of split tunneling (or of configuration settings that allow split tunneling) in the remote device, and by prohibiting the connection if the remote device is using split tunneling. A virtual private network (VPN) can be used to securely provision a split tunnel. A securely provisioned VPN includes locking connectivity to exclusive, managed, and named environments, or to a specific set of pre-approved addresses, without user control.
+
+split tunneling is prevented for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using {{ insert: param, sc-07.07_odp }}.
+
+System and communications protection policy
+
+procedures addressing boundary protection
+
+system design documentation
+
+system hardware and software
+
+system architecture
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+system developer
+
+organizational personnel with boundary protection responsibilities
+
+Mechanisms implementing boundary protection capabilities
+
+mechanisms supporting/restricting non-remote connections
+
+### sc-7.8: Route Traffic to Authenticated Proxy Servers
+
+Route {{ insert: param, sc-07.08_odp.01 }} to {{ insert: param, sc-07.08_odp.02 }} through authenticated proxy servers at managed interfaces.
+
+External networks are networks outside of organizational control. A proxy server is a server (i.e., system or application) that acts as an intermediary for clients requesting system resources from non-organizational or other organizational servers. System resources that may be requested include files, connections, web pages, or services. Client requests established through a connection to a proxy server are assessed to manage complexity and provide additional protection by limiting direct connectivity. Web content filtering devices are one of the most common proxy servers that provide access to the Internet. Proxy servers can support the logging of Transmission Control Protocol sessions and the blocking of specific Uniform Resource Locators, Internet Protocol addresses, and domain names. Web proxies can be configured with organization-defined lists of authorized and unauthorized websites. Note that proxy servers may inhibit the use of virtual private networks (VPNs) and create the potential for "man-in-the-middle" attacks (depending on the implementation).
+
+ {{ insert: param, sc-07.08_odp.01 }} is routed to {{ insert: param, sc-07.08_odp.02 }} through authenticated proxy servers at managed interfaces.
+
+System and communications protection policy
+
+procedures addressing boundary protection
+
+system design documentation
+
+system hardware and software
+
+system architecture
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+system developer
+
+organizational personnel with boundary protection responsibilities
+
+Mechanisms implementing traffic management through authenticated proxy servers at managed interfaces
+
+### sc-7.18: Fail Secure
+
+Prevent systems from entering unsecure states in the event of an operational failure of a boundary protection device.
+
+Fail secure is a condition achieved by employing mechanisms to ensure that in the event of operational failures of boundary protection devices at managed interfaces, systems do not enter into unsecure states where intended security properties no longer hold. Managed interfaces include routers, firewalls, and application gateways that reside on protected subnetworks (commonly referred to as demilitarized zones). Failures of boundary protection devices cannot lead to or cause information external to the devices to enter the devices nor can failures permit unauthorized information releases.
+
+systems are prevented from entering unsecure states in the event of an operational failure of a boundary protection device.
+
+System and communications protection policy
+
+procedures addressing boundary protection
+
+system design documentation
+
+system architecture
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+system developer
+
+organizational personnel with boundary protection responsibilities
+
+Mechanisms supporting and/or implementing secure failure
+
+### sc-7.21: Isolation of System Components
+
+Employ boundary protection mechanisms to isolate {{ insert: param, sc-07.21_odp.01 }} supporting {{ insert: param, sc-07.21_odp.02 }}.
+
+Organizations can isolate system components that perform different mission or business functions. Such isolation limits unauthorized information flows among system components and provides the opportunity to deploy greater levels of protection for selected system components. Isolating system components with boundary protection mechanisms provides the capability for increased protection of individual system components and to more effectively control information flows between those components. Isolating system components provides enhanced protection that limits the potential harm from hostile cyber-attacks and errors. The degree of isolation varies depending upon the mechanisms chosen. Boundary protection mechanisms include routers, gateways, and firewalls that separate system components into physically separate networks or subnetworks; cross-domain devices that separate subnetworks; virtualization techniques; and the encryption of information flows among system components using distinct encryption keys.
+
+boundary protection mechanisms are employed to isolate {{ insert: param, sc-07.21_odp.01 }} supporting {{ insert: param, sc-07.21_odp.02 }}.
+
+System and communications protection policy
+
+procedures addressing boundary protection
+
+system design documentation
+
+system hardware and software
+
+enterprise architecture documentation
+
+system architecture
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+organizational personnel with boundary protection responsibilities
+
+Mechanisms supporting and/or implementing the capability to separate system components supporting organizational missions and/or business functions
+
 ### sc-8: Transmission Confidentiality and Integrity
 
 Protect the {{ insert: param, sc-08_odp }} of transmitted information.
@@ -293,6 +591,40 @@ organizational personnel with information security responsibilities
 system developer
 
 Mechanisms supporting and/or implementing transmission confidentiality and/or integrity
+
+### sc-8.1: Cryptographic Protection
+
+Implement cryptographic mechanisms to {{ insert: param, sc-08.01_odp }} during transmission.
+
+Encryption protects information from unauthorized disclosure and modification during transmission. Cryptographic mechanisms that protect the confidentiality and integrity of information during transmission include TLS and IPSec. Cryptographic mechanisms used to protect information integrity include cryptographic hash functions that have applications in digital signatures, checksums, and message authentication codes.
+
+cryptographic mechanisms are implemented to {{ insert: param, sc-08.01_odp }} during transmission.
+
+System and communications protection policy
+
+procedures addressing transmission confidentiality and integrity
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+system developer
+
+Cryptographic mechanisms supporting and/or implementing transmission confidentiality and/or integrity
+
+mechanisms supporting and/or implementing alternative physical safeguards
+
+organizational processes for defining and implementing alternative physical safeguards
 
 ### sc-10: Network Disconnect
 
@@ -357,6 +689,36 @@ System/network administrators
 organizational personnel with information security responsibilities
 
 organizational personnel with responsibilities for cryptographic key establishment and/or management
+
+Mechanisms supporting and/or implementing cryptographic key establishment and management
+
+### sc-12.1: Availability
+
+Maintain availability of information in the event of the loss of cryptographic keys by users.
+
+Escrowing of encryption keys is a common practice for ensuring availability in the event of key loss. A forgotten passphrase is an example of losing a cryptographic key.
+
+information availability is maintained in the event of the loss of cryptographic keys by users.
+
+System and communications protection policy
+
+procedures addressing cryptographic key establishment, management, and recovery
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+organizational personnel with responsibilities for cryptographic key establishment or management
 
 Mechanisms supporting and/or implementing cryptographic key establishment and management
 
@@ -734,6 +1096,40 @@ system developer
 
 Mechanisms supporting and/or implementing confidentiality and integrity protections for information at rest
 
+### sc-28.1: Cryptographic Protection
+
+Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of the following information at rest on {{ insert: param, sc-28.01_odp.02 }}: {{ insert: param, sc-28.01_odp.01 }}.
+
+The selection of cryptographic mechanisms is based on the need to protect the confidentiality and integrity of organizational information. The strength of mechanism is commensurate with the security category or classification of the information. Organizations have the flexibility to encrypt information on system components or media or encrypt data structures, including files, records, or fields.
+
+cryptographic mechanisms are implemented to prevent unauthorized disclosure of {{ insert: param, sc-28.01_odp.01 }} at rest on {{ insert: param, sc-28.01_odp.02 }};
+
+cryptographic mechanisms are implemented to prevent unauthorized modification of {{ insert: param, sc-28.01_odp.01 }} at rest on {{ insert: param, sc-28.01_odp.02 }}.
+
+System and communications protection policy
+
+procedures addressing the protection of information at rest
+
+system design documentation
+
+system configuration settings and associated documentation
+
+cryptographic mechanisms and associated configuration documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+system developer
+
+Cryptographic mechanisms implementing confidentiality and integrity protections for information at rest
+
 ### sc-39: Process Isolation
 
 Maintain a separate execution domain for each executing system process.
@@ -757,6 +1153,4 @@ System developers/integrators
 system security architect
 
 Mechanisms supporting and/or implementing separate execution domains for each executing process
-
-## Control Enhancements
 

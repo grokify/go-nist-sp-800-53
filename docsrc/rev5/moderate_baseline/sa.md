@@ -1,6 +1,8 @@
 # sa - System and Services Acquisition
 
-## Base Controls
+* Controls: 17
+
+## Controls
 
 ### sa-1: Policy and Procedures
 
@@ -298,6 +300,170 @@ organizational processes for developing acquisition contracts
 
 mechanisms supporting and/or implementing acquisitions and the inclusion of security and privacy requirements in contracts
 
+### sa-4.1: Functional Properties of Controls
+
+Require the developer of the system, system component, or system service to provide a description of the functional properties of the controls to be implemented.
+
+Functional properties of security and privacy controls describe the functionality (i.e., security or privacy capability, functions, or mechanisms) visible at the interfaces of the controls and specifically exclude functionality and data structures internal to the operation of the controls.
+
+the developer of the system, system component, or system service is required to provide a description of the functional properties of the controls to be implemented.
+
+System and services acquisition policy
+
+system and services acquisition procedures
+
+procedures addressing the integration of security and privacy requirements, descriptions, and criteria into the acquisition process
+
+solicitation documents
+
+acquisition documentation
+
+acquisition contracts for the system, system component, or system services
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with acquisition/contracting responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+system developers
+
+Organizational processes for determining system security functional requirements
+
+organizational processes for developing acquisition contracts
+
+mechanisms supporting and/or implementing acquisitions and the inclusion of security and privacy requirements in contracts
+
+### sa-4.2: Design and Implementation Information for Controls
+
+Require the developer of the system, system component, or system service to provide design and implementation information for the controls that includes: {{ insert: param, sa-04.02_odp.01 }} at {{ insert: param, sa-04.02_odp.03 }}.
+
+Organizations may require different levels of detail in the documentation for the design and implementation of controls in organizational systems, system components, or system services based on mission and business requirements, requirements for resiliency and trustworthiness, and requirements for analysis and testing. Systems can be partitioned into multiple subsystems. Each subsystem within the system can contain one or more modules. The high-level design for the system is expressed in terms of subsystems and the interfaces between subsystems providing security-relevant functionality. The low-level design for the system is expressed in terms of modules and the interfaces between modules providing security-relevant functionality. Design and implementation documentation can include manufacturer, version, serial number, verification hash signature, software libraries used, date of purchase or download, and the vendor or download source. Source code and hardware schematics are referred to as the implementation representation of the system.
+
+the developer of the system, system component, or system service is required to provide design and implementation information for the controls that includes using {{ insert: param, sa-04.02_odp.01 }} at {{ insert: param, sa-04.02_odp.03 }}.
+
+System and services acquisition policy
+
+system and services acquisition procedures
+
+procedures addressing the integration of security requirements, descriptions, and criteria into the acquisition process
+
+solicitation documents
+
+acquisition documentation
+
+acquisition contracts for the system, system components, or system services
+
+design and implementation information for controls employed in the system, system component, or system service
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with acquisition/contracting responsibilities
+
+organizational personnel with the responsibility to determine system security requirements
+
+system developers or service provider
+
+organizational personnel with information security responsibilities
+
+Organizational processes for determining the level of detail for system design and controls
+
+organizational processes for developing acquisition contracts
+
+mechanisms supporting and/or implementing the development of system design details
+
+### sa-4.9: Functions, Ports, Protocols, and Services in Use
+
+Require the developer of the system, system component, or system service to identify the functions, ports, protocols, and services intended for organizational use.
+
+The identification of functions, ports, protocols, and services early in the system development life cycle (e.g., during the initial requirements definition and design stages) allows organizations to influence the design of the system, system component, or system service. This early involvement in the system development life cycle helps organizations avoid or minimize the use of functions, ports, protocols, or services that pose unnecessarily high risks and understand the trade-offs involved in blocking specific ports, protocols, or services or requiring system service providers to do so. Early identification of functions, ports, protocols, and services avoids costly retrofitting of controls after the system, component, or system service has been implemented. [SA-9](#sa-9) describes the requirements for external system services. Organizations identify which functions, ports, protocols, and services are provided from external sources.
+
+the developer of the system, system component, or system service is required to identify the functions intended for organizational use;
+
+the developer of the system, system component, or system service is required to identify the ports intended for organizational use;
+
+the developer of the system, system component, or system service is required to identify the protocols intended for organizational use;
+
+the developer of the system, system component, or system service is required to identify the services intended for organizational use.
+
+System and services acquisition policy
+
+procedures addressing the integration of security requirements, descriptions, and criteria into the acquisition process
+
+system design documentation
+
+system documentation, including functions, ports, protocols, and services intended for organizational use
+
+acquisition contracts for systems or services
+
+acquisition documentation
+
+solicitation documentation
+
+service level agreements
+
+organizational security requirements, descriptions, and criteria for developers of systems, system components, and system services
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with acquisition/contracting responsibilities
+
+organizational personnel with the responsibility for determining system security requirements
+
+system/network administrators
+
+organizational personnel operating, using, and/or maintaining the system
+
+system developers
+
+organizational personnel with information security responsibilities
+
+### sa-4.10: Use of Approved PIV Products
+
+Employ only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational systems.
+
+Products on the FIPS 201-approved products list meet NIST requirements for Personal Identity Verification (PIV) of Federal Employees and Contractors. PIV cards are used for multi-factor authentication in systems and organizations.
+
+only information technology products on the FIPS 201-approved products list for the Personal Identity Verification (PIV) capability implemented within organizational systems are employed.
+
+Supply chain risk management plan
+
+system and services acquisition policy
+
+procedures addressing the integration of security requirements, descriptions, and criteria into the acquisition process
+
+solicitation documentation
+
+acquisition documentation
+
+acquisition contracts for the system, system component, or system service
+
+service level agreements
+
+FIPS 201 approved products list
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with acquisition/contracting responsibilities
+
+organizational personnel with the responsibility for determining system security requirements
+
+organizational personnel with the responsibility for ensuring that only FIPS 201- approved products are implemented
+
+organizational personnel with information security responsibilities
+
+Organizational processes for selecting and employing FIPS 201-approved products
+
 ### sa-5: System Documentation
 
 Obtain or develop administrator documentation for the system, system component, or system service that describes:
@@ -525,6 +691,44 @@ organizational personnel with supply chain risk management responsibilities
 Organizational processes for monitoring security and privacy control compliance by external service providers on an ongoing basis
 
 mechanisms for monitoring security and privacy control compliance by external service providers on an ongoing basis
+
+### sa-9.2: Identification of Functions, Ports, Protocols, and Services
+
+Require providers of the following external system services to identify the functions, ports, protocols, and other services required for the use of such services: {{ insert: param, sa-09.02_odp }}.
+
+Information from external service providers regarding the specific functions, ports, protocols, and services used in the provision of such services can be useful when the need arises to understand the trade-offs involved in restricting certain functions and services or blocking certain ports and protocols.
+
+providers of {{ insert: param, sa-09.02_odp }} are required to identify the functions, ports, protocols, and other services required for the use of such services.
+
+System and services acquisition policy
+
+supply chain risk management policy and procedures
+
+procedures addressing external system services
+
+acquisition contracts for the system, system component, or system service
+
+acquisition documentation
+
+solicitation documentation
+
+service level agreements
+
+organizational security requirements and security specifications for external service providers
+
+list of required functions, ports, protocols, and other services
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with system and service acquisition responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+external providers of system services
 
 ### sa-10: Developer Configuration Management
 
@@ -770,6 +974,62 @@ organizational personnel with information security and privacy responsibilities
 
 system developer
 
+### sa-15.3: Criticality Analysis
+
+Require the developer of the system, system component, or system service to perform a criticality analysis:
+
+At the following decision points in the system development life cycle: {{ insert: param, sa-15.03_odp.01 }} ; and
+
+At the following level of rigor: {{ insert: param, sa-15.3_prm_2 }}.
+
+Criticality analysis performed by the developer provides input to the criticality analysis performed by organizations. Developer input is essential to organizational criticality analysis because organizations may not have access to detailed design documentation for system components that are developed as commercial off-the-shelf products. Such design documentation includes functional specifications, high-level designs, low-level designs, source code, and hardware schematics. Criticality analysis is important for organizational systems that are designated as high value assets. High value assets can be moderate- or high-impact systems due to heightened adversarial interest or potential adverse effects on the federal enterprise. Developer input is especially important when organizations conduct supply chain criticality analyses.
+
+the developer of the system, system component, or system service is required to perform a criticality analysis at {{ insert: param, sa-15.03_odp.01 }} in the system development life cycle;
+
+the developer of the system, system component, or system service is required to perform a criticality analysis at the following rigor level: {{ insert: param, sa-15.03_odp.02 }};
+
+the developer of the system, system component, or system service is required to perform a criticality analysis at the following rigor level: {{ insert: param, sa-15.03_odp.03 }} .
+
+Supply chain risk management plan
+
+system and services acquisition policy
+
+procedures addressing development process, standards, and tools
+
+procedures addressing criticality analysis requirements for the system, system component, or system service
+
+solicitation documentation
+
+acquisition documentation
+
+service level agreements
+
+acquisition contracts for the system, system component, or system service
+
+criticality analysis documentation
+
+business impact analysis documentation
+
+software development life cycle documentation
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with system and service acquisition responsibilities
+
+organizational personnel with information security responsibilities
+
+organizational personnel responsible for performing criticality analysis
+
+system developer
+
+organizational personnel with supply chain risk management responsibilities
+
+Organizational processes for performing criticality analysis
+
+mechanisms supporting and/or implementing criticality analysis
+
 ### sa-22: Unsupported System Components
 
 Replace system components when support for the components is no longer available from the developer, vendor, or manufacturer; or
@@ -809,6 +1069,4 @@ organizational personnel responsible for component replacement
 Organizational processes for replacing unsupported system components
 
 mechanisms supporting and/or implementing the replacement of unsupported system components
-
-## Control Enhancements
 

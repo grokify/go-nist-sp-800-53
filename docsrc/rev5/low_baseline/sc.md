@@ -1,6 +1,8 @@
 # sc - System and Communications Protection
 
-## Base Controls
+* Controls: 10
+
+## Controls
 
 ### sc-1: Policy and Procedures
 
@@ -415,6 +417,4 @@ System developers/integrators
 system security architect
 
 Mechanisms supporting and/or implementing separate execution domains for each executing process
-
-## Control Enhancements
 

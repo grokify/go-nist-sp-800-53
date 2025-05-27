@@ -1,6 +1,8 @@
 # ia - Identification and Authentication
 
-## Base Controls
+* Controls: 16
+
+## Controls
 
 ### ia-1: Policy and Procedures
 
@@ -115,6 +117,156 @@ system developers
 Organizational processes for uniquely identifying and authenticating users
 
 mechanisms supporting and/or implementing identification and authentication capabilities
+
+### ia-2.1: Multi-factor Authentication to Privileged Accounts
+
+Implement multi-factor authentication for access to privileged accounts.
+
+Multi-factor authentication requires the use of two or more different factors to achieve authentication. The authentication factors are defined as follows: something you know (e.g., a personal identification number [PIN]), something you have (e.g., a physical authenticator such as a cryptographic private key), or something you are (e.g., a biometric). Multi-factor authentication solutions that feature physical authenticators include hardware authenticators that provide time-based or challenge-response outputs and smart cards such as the U.S. Government Personal Identity Verification (PIV) card or the Department of Defense (DoD) Common Access Card (CAC). In addition to authenticating users at the system level (i.e., at logon), organizations may employ authentication mechanisms at the application level, at their discretion, to provide increased security. Regardless of the type of access (i.e., local, network, remote), privileged accounts are authenticated using multi-factor options appropriate for the level of risk. Organizations can add additional security measures, such as additional or more rigorous authentication mechanisms, for specific types of access.
+
+multi-factor authentication is implemented for access to privileged accounts.
+
+Identification and authentication policy
+
+procedures addressing user identification and authentication
+
+system security plan
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+list of system accounts
+
+other relevant documents or records
+
+Organizational personnel with system operations responsibilities
+
+organizational personnel with account management responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+Mechanisms supporting and/or implementing a multi-factor authentication capability
+
+### ia-2.2: Multi-factor Authentication to Non-privileged Accounts
+
+Implement multi-factor authentication for access to non-privileged accounts.
+
+Multi-factor authentication requires the use of two or more different factors to achieve authentication. The authentication factors are defined as follows: something you know (e.g., a personal identification number [PIN]), something you have (e.g., a physical authenticator such as a cryptographic private key), or something you are (e.g., a biometric). Multi-factor authentication solutions that feature physical authenticators include hardware authenticators that provide time-based or challenge-response outputs and smart cards such as the U.S. Government Personal Identity Verification card or the DoD Common Access Card. In addition to authenticating users at the system level, organizations may also employ authentication mechanisms at the application level, at their discretion, to provide increased information security. Regardless of the type of access (i.e., local, network, remote), non-privileged accounts are authenticated using multi-factor options appropriate for the level of risk. Organizations can provide additional security measures, such as additional or more rigorous authentication mechanisms, for specific types of access.
+
+multi-factor authentication for access to non-privileged accounts is implemented.
+
+Identification and authentication policy
+
+system security plan
+
+procedures addressing user identification and authentication
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+list of system accounts
+
+other relevant documents or records
+
+Organizational personnel with system operations responsibilities
+
+organizational personnel with account management responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+Mechanisms supporting and/or implementing a multi-factor authentication capability
+
+### ia-2.8: Access to Accounts — Replay Resistant
+
+Implement replay-resistant authentication mechanisms for access to {{ insert: param, ia-02.08_odp }}.
+
+Authentication processes resist replay attacks if it is impractical to achieve successful authentications by replaying previous authentication messages. Replay-resistant techniques include protocols that use nonces or challenges such as time synchronous or cryptographic authenticators.
+
+replay-resistant authentication mechanisms for access to {{ insert: param, ia-02.08_odp }} are implemented.
+
+Identification and authentication policy
+
+system security plan
+
+procedures addressing user identification and authentication
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+list of privileged system accounts
+
+other relevant documents or records
+
+Organizational personnel with system operations responsibilities
+
+organizational personnel with account management responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+Mechanisms supporting and/or implementing identification and authentication capabilities
+
+Mechanisms supporting and/or implementing replay-resistant authentication mechanisms
+
+### ia-2.12: Acceptance of PIV Credentials
+
+Accept and electronically verify Personal Identity Verification-compliant credentials.
+
+Acceptance of Personal Identity Verification (PIV)-compliant credentials applies to organizations implementing logical access control and physical access control systems. PIV-compliant credentials are those credentials issued by federal agencies that conform to FIPS Publication 201 and supporting guidance documents. The adequacy and reliability of PIV card issuers are authorized using [SP 800-79-2](#10963761-58fc-4b20-b3d6-b44a54daba03) . Acceptance of PIV-compliant credentials includes derived PIV credentials, the use of which is addressed in [SP 800-166](#e8552d48-cf41-40aa-8b06-f45f7fb4706c) . The DOD Common Access Card (CAC) is an example of a PIV credential.
+
+Personal Identity Verification-compliant credentials are accepted and electronically verified.
+
+Identification and authentication policy
+
+system security plan
+
+procedures addressing user identification and authentication
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+PIV verification records
+
+evidence of PIV credentials
+
+PIV credential authorizations
+
+other relevant documents or records
+
+Organizational personnel with system operations responsibilities
+
+organizational personnel with account management responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+Mechanisms supporting and/or implementing acceptance and verification of PIV credentials
 
 ### ia-4: Identifier Management
 
@@ -238,6 +390,70 @@ system/network administrators
 
 Mechanisms supporting and/or implementing authenticator management capability
 
+### ia-5.1: Password-based Authentication
+
+For password-based authentication:
+
+Maintain a list of commonly-used, expected, or compromised passwords and update the list {{ insert: param, ia-05.01_odp.01 }} and when organizational passwords are suspected to have been compromised directly or indirectly;
+
+Verify, when users create or update passwords, that the passwords are not found on the list of commonly-used, expected, or compromised passwords in IA-5(1)(a);
+
+Transmit passwords only over cryptographically-protected channels;
+
+Store passwords using an approved salted key derivation function, preferably using a keyed hash;
+
+Require immediate selection of a new password upon account recovery;
+
+Allow user selection of long passwords and passphrases, including spaces and all printable characters;
+
+Employ automated tools to assist the user in selecting strong password authenticators; and
+
+Enforce the following composition and complexity rules: {{ insert: param, ia-05.01_odp.02 }}.
+
+Password-based authentication applies to passwords regardless of whether they are used in single-factor or multi-factor authentication. Long passwords or passphrases are preferable over shorter passwords. Enforced composition rules provide marginal security benefits while decreasing usability. However, organizations may choose to establish certain rules for password generation (e.g., minimum character length for long passwords) under certain circumstances and can enforce this requirement in IA-5(1)(h). Account recovery can occur, for example, in situations when a password is forgotten. Cryptographically protected passwords include salted one-way cryptographic hashes of passwords. The list of commonly used, compromised, or expected passwords includes passwords obtained from previous breach corpuses, dictionary words, and repetitive or sequential characters. The list includes context-specific words, such as the name of the service, username, and derivatives thereof.
+
+for password-based authentication, a list of commonly used, expected, or compromised passwords is maintained and updated {{ insert: param, ia-05.01_odp.01 }} and when organizational passwords are suspected to have been compromised directly or indirectly;
+
+for password-based authentication when passwords are created or updated by users, the passwords are verified not to be found on the list of commonly used, expected, or compromised passwords in IA-05(01)(a);
+
+for password-based authentication, passwords are only transmitted over cryptographically protected channels;
+
+for password-based authentication, passwords are stored using an approved salted key derivation function, preferably using a keyed hash;
+
+for password-based authentication, immediate selection of a new password is required upon account recovery;
+
+for password-based authentication, user selection of long passwords and passphrases is allowed, including spaces and all printable characters;
+
+for password-based authentication, automated tools are employed to assist the user in selecting strong password authenticators;
+
+for password-based authentication, {{ insert: param, ia-05.01_odp.02 }} are enforced.
+
+Identification and authentication policy
+
+password policy
+
+procedures addressing authenticator management
+
+system security plan
+
+system design documentation
+
+system configuration settings and associated documentation
+
+password configurations and associated documentation
+
+other relevant documents or records
+
+Organizational personnel with authenticator management responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+Mechanisms supporting and/or implementing password-based authenticator management capability
+
 ### ia-6: Authentication Feedback
 
 Obscure feedback of authentication information during the authentication process to protect the information from possible exploitation and use by unauthorized individuals.
@@ -336,6 +552,134 @@ organizational personnel with account management responsibilities
 
 Mechanisms supporting and/or implementing identification and authentication capabilities
 
+### ia-8.1: Acceptance of PIV Credentials from Other Agencies
+
+Accept and electronically verify Personal Identity Verification-compliant credentials from other federal agencies.
+
+Acceptance of Personal Identity Verification (PIV) credentials from other federal agencies applies to both logical and physical access control systems. PIV credentials are those credentials issued by federal agencies that conform to FIPS Publication 201 and supporting guidelines. The adequacy and reliability of PIV card issuers are addressed and authorized using [SP 800-79-2](#10963761-58fc-4b20-b3d6-b44a54daba03).
+
+Personal Identity Verification-compliant credentials from other federal agencies are accepted;
+
+Personal Identity Verification-compliant credentials from other federal agencies are electronically verified.
+
+Identification and authentication policy
+
+system security plan
+
+procedures addressing user identification and authentication
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+PIV verification records
+
+evidence of PIV credentials
+
+PIV credential authorizations
+
+other relevant documents or records
+
+Organizational personnel with system operations responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+organizational personnel with account management responsibilities
+
+Mechanisms supporting and/or implementing identification and authentication capabilities
+
+mechanisms that accept and verify PIV credentials
+
+### ia-8.2: Acceptance of External Authenticators
+
+Accept only external authenticators that are NIST-compliant; and
+
+Document and maintain a list of accepted external authenticators.
+
+Acceptance of only NIST-compliant external authenticators applies to organizational systems that are accessible to the public (e.g., public-facing websites). External authenticators are issued by nonfederal government entities and are compliant with [SP 800-63B](#e59c5a7c-8b1f-49ca-8de0-6ee0882180ce) . Approved external authenticators meet or exceed the minimum Federal Government-wide technical, security, privacy, and organizational maturity requirements. Meeting or exceeding Federal requirements allows Federal Government relying parties to trust external authenticators in connection with an authentication transaction at a specified authenticator assurance level.
+
+only external authenticators that are NIST-compliant are accepted;
+
+a list of accepted external authenticators is documented;
+
+a list of accepted external authenticators is maintained.
+
+Identification and authentication policy
+
+system security plan
+
+procedures addressing user identification and authentication
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+list of third-party credentialing products, components, or services procured and implemented by organization
+
+third-party credential verification records
+
+evidence of third-party credentials
+
+third-party credential authorizations
+
+other relevant documents or records
+
+Organizational personnel with system operations responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+organizational personnel with account management responsibilities
+
+Mechanisms supporting and/or implementing identification and authentication capabilities
+
+mechanisms that accept external credentials
+
+### ia-8.4: Use of Defined Profiles
+
+Conform to the following profiles for identity management {{ insert: param, ia-08.04_odp }}.
+
+Organizations define profiles for identity management based on open identity management standards. To ensure that open identity management standards are viable, robust, reliable, sustainable, and interoperable as documented, the Federal Government assesses and scopes the standards and technology implementations against applicable laws, executive orders, directives, policies, regulations, standards, and guidelines.
+
+there is conformance with {{ insert: param, ia-08.04_odp }} for identity management.
+
+Identification and authentication policy
+
+system security plan
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+other relevant documents or records
+
+Organizational personnel with system operations responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+organizational personnel with account management responsibilities
+
+Mechanisms supporting and/or implementing identification and authentication capabilities
+
+mechanisms supporting and/or implementing conformance with profiles
+
 ### ia-11: Re-authentication
 
 Require users to re-authenticate when {{ insert: param, ia-11_odp }}.
@@ -371,6 +715,4 @@ system developers
 organizational personnel with identification and authentication responsibilities
 
 Mechanisms supporting and/or implementing identification and authentication capabilities
-
-## Control Enhancements
 

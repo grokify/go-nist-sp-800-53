@@ -1,6 +1,8 @@
 # ma - Maintenance
 
-## Base Controls
+* Controls: 4
+
+## Controls
 
 ### ma-1: Policy and Procedures
 
@@ -247,6 +249,4 @@ organizational personnel with information security responsibilities
 Organizational processes for authorizing and managing maintenance personnel
 
 mechanisms supporting and/or implementing authorization of maintenance personnel
-
-## Control Enhancements
 

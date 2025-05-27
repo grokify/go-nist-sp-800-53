@@ -1,6 +1,8 @@
 # si - System and Information Integrity
 
-## Base Controls
+* Controls: 6
+
+## Controls
 
 ### si-1: Policy and Procedures
 
@@ -415,6 +417,4 @@ network administrators
 Organizational processes for information management, retention, and disposition
 
 automated mechanisms supporting and/or implementing information management, retention, and disposition
-
-## Control Enhancements
 

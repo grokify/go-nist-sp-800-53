@@ -1,6 +1,8 @@
 # au - Audit and Accountability
 
-## Base Controls
+* Controls: 10
+
+## Controls
 
 ### au-1: Policy and Procedures
 
@@ -451,6 +453,4 @@ system/network administrators
 system developers
 
 Mechanisms implementing audit record generation capability
-
-## Control Enhancements
 

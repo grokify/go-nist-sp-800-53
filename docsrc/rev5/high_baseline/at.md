@@ -1,6 +1,8 @@
 # at - Awareness and Training
 
-## Base Controls
+* Controls: 6
+
+## Controls
 
 ### at-1: Policy and Procedures
 
@@ -134,6 +136,70 @@ organizational personnel comprising the general system user community
 
 Mechanisms managing information security and privacy literacy training
 
+### at-2.2: Insider Threat
+
+Provide literacy training on recognizing and reporting potential indicators of insider threat.
+
+Potential indicators and possible precursors of insider threat can include behaviors such as inordinate, long-term job dissatisfaction; attempts to gain access to information not required for job performance; unexplained access to financial resources; bullying or harassment of fellow employees; workplace violence; and other serious violations of policies, procedures, directives, regulations, rules, or practices. Literacy training includes how to communicate the concerns of employees and management regarding potential indicators of insider threat through channels established by the organization and in accordance with established policies and procedures. Organizations may consider tailoring insider threat awareness topics to the role. For example, training for managers may be focused on changes in the behavior of team members, while training for employees may be focused on more general observations.
+
+literacy training on recognizing potential indicators of insider threat is provided;
+
+literacy training on reporting potential indicators of insider threat is provided.
+
+System security plan
+
+privacy plan
+
+literacy training and awareness policy
+
+procedures addressing literacy training and awareness implementation
+
+literacy training and awareness curriculum
+
+literacy training and awareness materials
+
+other relevant documents or records
+
+Organizational personnel who receive literacy training and awareness
+
+organizational personnel with responsibilities for literacy training and awareness
+
+organizational personnel with information security and privacy responsibilities
+
+### at-2.3: Social Engineering and Mining
+
+Provide literacy training on recognizing and reporting potential and actual instances of social engineering and social mining.
+
+Social engineering is an attempt to trick an individual into revealing information or taking an action that can be used to breach, compromise, or otherwise adversely impact a system. Social engineering includes phishing, pretexting, impersonation, baiting, quid pro quo, thread-jacking, social media exploitation, and tailgating. Social mining is an attempt to gather information about the organization that may be used to support future attacks. Literacy training includes information on how to communicate the concerns of employees and management regarding potential and actual instances of social engineering and data mining through organizational channels based on established policies and procedures.
+
+literacy training on recognizing potential and actual instances of social engineering is provided;
+
+literacy training on reporting potential and actual instances of social engineering is provided;
+
+literacy training on recognizing potential and actual instances of social mining is provided;
+
+literacy training on reporting potential and actual instances of social mining is provided.
+
+System security plan
+
+privacy plan
+
+literacy training and awareness policy
+
+procedures addressing literacy training and awareness implementation
+
+literacy training and awareness curriculum
+
+literacy training and awareness materials
+
+other relevant documents or records
+
+Organizational personnel who receive literacy training and awareness
+
+organizational personnel with responsibilities for literacy training and awareness
+
+organizational personnel with information security and privacy responsibilities
+
 ### at-3: Role-based Training
 
 Provide role-based security and privacy training to personnel with the following roles and responsibilities: {{ insert: param, at-3_prm_1 }}:
@@ -221,6 +287,4 @@ other relevant documents or records
 Organizational personnel with information security and privacy training record retention responsibilities
 
 Mechanisms supporting the management of security and privacy training records
-
-## Control Enhancements
 

@@ -1,6 +1,8 @@
 # ir - Incident Response
 
-## Base Controls
+* Controls: 18
+
+## Controls
 
 ### ir-1: Policy and Procedures
 
@@ -118,6 +120,68 @@ Organizational personnel with incident response training and operational respons
 
 organizational personnel with information security and privacy responsibilities
 
+### ir-2.1: Simulated Events
+
+Incorporate simulated events into incident response training to facilitate the required response by personnel in crisis situations.
+
+Organizations establish requirements for responding to incidents in incident response plans. Incorporating simulated events into incident response training helps to ensure that personnel understand their individual responsibilities and what specific actions to take in crisis situations.
+
+simulated events are incorporated into incident response training to facilitate the required response by personnel in crisis situations.
+
+Incident response policy
+
+procedures addressing incident response training
+
+incident response training curriculum
+
+incident response training materials
+
+incident response plan
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with incident response training and operational responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+Mechanisms that support and/or implement simulated events for incident response training
+
+### ir-2.2: Automated Training Environments
+
+Provide an incident response training environment using {{ insert: param, ir-02.02_odp }}.
+
+Automated mechanisms can provide a more thorough and realistic incident response training environment. This can be accomplished, for example, by providing more complete coverage of incident response issues, selecting more realistic training scenarios and environments, and stressing the response capability.
+
+an incident response training environment is provided using {{ insert: param, ir-02.02_odp }}.
+
+Incident response policy
+
+procedures addressing incident response training
+
+incident response training curriculum
+
+incident response training materials
+
+automated mechanisms supporting incident response training
+
+incident response plan
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with incident response training and operational responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+Automated mechanisms that provide a thorough and realistic incident response training environment
+
 ### ir-3: Incident Response Testing
 
 Test the effectiveness of the incident response capability for the system {{ insert: param, ir-03_odp.01 }} using the following tests: {{ insert: param, ir-03_odp.02 }}.
@@ -151,6 +215,50 @@ privacy plan
 other relevant documents or records
 
 Organizational personnel with incident response testing responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+### ir-3.2: Coordination with Related Plans
+
+Coordinate incident response testing with organizational elements responsible for related plans.
+
+Organizational plans related to incident response testing include business continuity plans, disaster recovery plans, continuity of operations plans, contingency plans, crisis communications plans, critical infrastructure plans, and occupant emergency plans.
+
+incident response testing is coordinated with organizational elements responsible for related plans.
+
+Incident response policy
+
+contingency planning policy
+
+procedures addressing incident response testing
+
+incident response testing documentation
+
+incident response plan
+
+business continuity plans
+
+contingency plans
+
+disaster recovery plans
+
+continuity of operations plans
+
+crisis communications plans
+
+critical infrastructure plans
+
+occupant emergency plans
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with incident response testing responsibilities
+
+organizational personnel with responsibilities for testing organizational plans related to incident response testing
 
 organizational personnel with information security and privacy responsibilities
 
@@ -216,6 +324,122 @@ organizational personnel with information security and privacy responsibilities
 
 Incident handling capability for the organization
 
+### ir-4.1: Automated Incident Handling Processes
+
+Support the incident handling process using {{ insert: param, ir-04.01_odp }}.
+
+Automated mechanisms that support incident handling processes include online incident management systems and tools that support the collection of live response data, full network packet capture, and forensic analysis.
+
+the incident handling process is supported using {{ insert: param, ir-04.01_odp }}.
+
+Incident response policy
+
+procedures addressing incident handling
+
+automated mechanisms supporting incident handling
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+incident response plan
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with incident handling responsibilities
+
+organizational personnel with information security responsibilities
+
+Automated mechanisms that support and/or implement the incident handling process
+
+### ir-4.4: Information Correlation
+
+Correlate incident information and individual incident responses to achieve an organization-wide perspective on incident awareness and response.
+
+Sometimes, a threat event, such as a hostile cyber-attack, can only be observed by bringing together information from different sources, including various reports and reporting procedures established by organizations.
+
+incident information and individual incident responses are correlated to achieve an organization-wide perspective on incident awareness and response.
+
+Incident response policy
+
+procedures addressing incident handling
+
+incident response plan
+
+privacy plan
+
+mechanisms supporting incident and event correlation
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system security plan
+
+privacy plan
+
+incident management correlation logs
+
+event management correlation logs
+
+security information and event management logs
+
+incident management correlation reports
+
+event management correlation reports
+
+security information and event management reports
+
+audit records
+
+other relevant documents or records
+
+Organizational personnel with incident handling responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+organizational personnel with whom incident information and individual incident responses are to be correlated
+
+Organizational processes for correlating incident information and individual incident responses
+
+mechanisms that support and or implement the correlation of incident response information with individual incident responses
+
+### ir-4.11: Integrated Incident Response Team
+
+Establish and maintain an integrated incident response team that can be deployed to any location identified by the organization in {{ insert: param, ir-04.11_odp }}.
+
+An integrated incident response team is a team of experts that assesses, documents, and responds to incidents so that organizational systems and networks can recover quickly and implement the necessary controls to avoid future incidents. Incident response team personnel include forensic and malicious code analysts, tool developers, systems security and privacy engineers, and real-time operations personnel. The incident handling capability includes performing rapid forensic preservation of evidence and analysis of and response to intrusions. For some organizations, the incident response team can be a cross-organizational entity.
+
+An integrated incident response team facilitates information sharing and allows organizational personnel (e.g., developers, implementers, and operators) to leverage team knowledge of the threat and implement defensive measures that enable organizations to deter intrusions more effectively. Moreover, integrated teams promote the rapid detection of intrusions, the development of appropriate mitigations, and the deployment of effective defensive measures. For example, when an intrusion is detected, the integrated team can rapidly develop an appropriate response for operators to implement, correlate the new incident with information on past intrusions, and augment ongoing cyber intelligence development. Integrated incident response teams are better able to identify adversary tactics, techniques, and procedures that are linked to the operations tempo or specific mission and business functions and to define responsive actions in a way that does not disrupt those mission and business functions. Incident response teams can be distributed within organizations to make the capability resilient.
+
+an integrated incident response team is established and maintained;
+
+the integrated incident response team can be deployed to any location identified by the organization in {{ insert: param, ir-04.11_odp }}.
+
+Incident response policy
+
+procedures addressing incident handling
+
+procedures addressing incident response planning
+
+incident response plan
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with incident handling responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+members of the integrated incident response team
+
 ### ir-5: Incident Monitoring
 
 Track and document incidents.
@@ -247,6 +471,38 @@ organizational personnel with information security and privacy responsibilities
 Incident monitoring capability for the organization
 
 mechanisms supporting and/or implementing the tracking and documenting of system security incidents
+
+### ir-5.1: Automated Tracking, Data Collection, and Analysis
+
+Track incidents and collect and analyze incident information using {{ insert: param, ir-5.1_prm_1 }}.
+
+Automated mechanisms for tracking incidents and collecting and analyzing incident information include Computer Incident Response Centers or other electronic databases of incidents and network monitoring devices.
+
+incidents are tracked using {{ insert: param, ir-05.01_odp.01 }};
+
+incident information is collected using {{ insert: param, ir-05.01_odp.02 }};
+
+incident information is analyzed using {{ insert: param, ir-05.01_odp.03 }}.
+
+Incident response policy
+
+procedures addressing incident monitoring
+
+incident response records and documentation
+
+system security plan
+
+incident response plan
+
+other relevant documents or records
+
+Organizational personnel with incident monitoring responsibilities
+
+organizational personnel with information security responsibilities
+
+Incident monitoring capability for the organization
+
+automated mechanisms supporting and/or implementing the tracking and documenting of system security incidents
 
 ### ir-6: Incident Reporting
 
@@ -288,6 +544,80 @@ Organizational processes for incident reporting
 
 mechanisms supporting and/or implementing incident reporting
 
+### ir-6.1: Automated Reporting
+
+Report incidents using {{ insert: param, ir-06.01_odp }}.
+
+The recipients of incident reports are specified in [IR-6b](#ir-6_smt.b) . Automated reporting mechanisms include email, posting on websites (with automatic updates), and automated incident response tools and programs.
+
+incidents are reported using {{ insert: param, ir-06.01_odp }}.
+
+Incident response policy
+
+procedures addressing incident reporting
+
+automated mechanisms supporting incident reporting
+
+system design documentation
+
+system configuration settings and associated documentation
+
+incident response plan
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with incident reporting responsibilities
+
+organizational personnel with information security responsibilities
+
+Organizational processes for incident reporting
+
+automated mechanisms supporting and/or implementing the reporting of security incidents
+
+### ir-6.3: Supply Chain Coordination
+
+Provide incident information to the provider of the product or service and other organizations involved in the supply chain or supply chain governance for systems or system components related to the incident.
+
+Organizations involved in supply chain activities include product developers, system integrators, manufacturers, packagers, assemblers, distributors, vendors, and resellers. Entities that provide supply chain governance include the Federal Acquisition Security Council (FASC). Supply chain incidents include compromises or breaches that involve information technology products, system components, development processes or personnel, distribution processes, or warehousing facilities. Organizations determine the appropriate information to share and consider the value gained from informing external organizations about supply chain incidents, including the ability to improve processes or to identify the root cause of an incident.
+
+incident information is provided to the provider of the product or service and other organizations involved in the supply chain or supply chain governance for systems or system components related to the incident.
+
+Incident response policy
+
+procedures addressing supply chain coordination and supply chain risk information sharing with the Federal Acquisition Security Council
+
+acquisition policy
+
+acquisition contracts
+
+service-level agreements
+
+incident response plan
+
+supply chain risk management plan
+
+system security plan
+
+plans of other organizations involved in supply chain activities
+
+other relevant documents or records
+
+Organizational personnel with incident reporting responsibilities
+
+organizational personnel with information security responsibilities
+
+organizational personnel with supply chain risk management responsibilities
+
+organization personnel with acquisition responsibilities
+
+Organizational processes for incident reporting
+
+organizational processes for supply chain risk information sharing
+
+mechanisms supporting and/or implementing the reporting of incident information involved in the supply chain
+
 ### ir-7: Incident Response Assistance
 
 Provide an incident response support resource, integral to the organizational incident response capability, that offers advice and assistance to users of the system for the handling and reporting of incidents.
@@ -319,6 +649,40 @@ organizational personnel with information security and privacy responsibilities
 Organizational processes for incident response assistance
 
 mechanisms supporting and/or implementing incident response assistance
+
+### ir-7.1: Automation Support for Availability of Information and Support
+
+Increase the availability of incident response information and support using {{ insert: param, ir-07.01_odp }}.
+
+Automated mechanisms can provide a push or pull capability for users to obtain incident response assistance. For example, individuals may have access to a website to query the assistance capability, or the assistance capability can proactively send incident response information to users (general distribution or targeted) as part of increasing understanding of current response capabilities and support.
+
+the availability of incident response information and support is increased using {{ insert: param, ir-07.01_odp }}.
+
+Incident response policy
+
+procedures addressing incident response assistance
+
+automated mechanisms supporting incident response support and assistance
+
+system design documentation
+
+system configuration settings and associated documentation
+
+incident response plan
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with incident response support and assistance responsibilities
+
+organizational personnel with access to incident response support and assistance capability
+
+organizational personnel with information security responsibilities
+
+Organizational processes for incident response assistance
+
+automated mechanisms supporting and/or implementing an increase in the availability of incident response information and support
 
 ### ir-8: Incident Response Plan
 
@@ -407,6 +771,4 @@ Organizational personnel with incident response planning responsibilities
 organizational personnel with information security and privacy responsibilities
 
 Organizational incident response plan and related organizational processes
-
-## Control Enhancements
 

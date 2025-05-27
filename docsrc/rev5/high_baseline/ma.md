@@ -1,6 +1,8 @@
 # ma - Maintenance
 
-## Base Controls
+* Controls: 12
+
+## Controls
 
 ### ma-1: Policy and Procedures
 
@@ -138,6 +140,50 @@ mechanisms supporting and/or implementing controlled maintenance
 
 mechanisms implementing the sanitization of system components
 
+### ma-2.2: Automated Maintenance Activities
+
+Schedule, conduct, and document maintenance, repair, and replacement actions for the system using {{ insert: param, ma-2.2_prm_1 }} ; and
+
+Produce up-to date, accurate, and complete records of all maintenance, repair, and replacement actions requested, scheduled, in process, and completed.
+
+The use of automated mechanisms to manage and control system maintenance programs and activities helps to ensure the generation of timely, accurate, complete, and consistent maintenance records.
+
+ {{ insert: param, ma-02.02_odp.01 }} are used to schedule maintenance, repair, and replacement actions for the system;
+
+ {{ insert: param, ma-02.02_odp.02 }} are used to conduct maintenance, repair, and replacement actions for the system;
+
+ {{ insert: param, ma-02.02_odp.03 }} are used to document maintenance, repair, and replacement actions for the system;
+
+up-to date, accurate, and complete records of all maintenance actions requested, scheduled, in process, and completed are produced.
+
+up-to date, accurate, and complete records of all repair actions requested, scheduled, in process, and completed are produced.
+
+up-to date, accurate, and complete records of all replacement actions requested, scheduled, in process, and completed are produced.
+
+Maintenance policy
+
+procedures addressing controlled system maintenance
+
+automated mechanisms supporting system maintenance activities
+
+system configuration settings and associated documentation
+
+maintenance records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with system maintenance responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+Automated mechanisms supporting and/or implementing controlled maintenance
+
+automated mechanisms supporting and/or implementing the production of records of maintenance and repair actions
+
 ### ma-3: Maintenance Tools
 
 Approve, control, and monitor the use of system maintenance tools; and
@@ -173,6 +219,116 @@ organizational personnel with information security responsibilities
 Organizational processes for approving, controlling, and monitoring maintenance tools
 
 mechanisms supporting and/or implementing the approval, control, and/or monitoring of maintenance tools
+
+### ma-3.1: Inspect Tools
+
+Inspect the maintenance tools used by maintenance personnel for improper or unauthorized modifications.
+
+Maintenance tools can be directly brought into a facility by maintenance personnel or downloaded from a vendor’s website. If, upon inspection of the maintenance tools, organizations determine that the tools have been modified in an improper manner or the tools contain malicious code, the incident is handled consistent with organizational policies and procedures for incident handling.
+
+maintenance tools used by maintenance personnel are inspected for improper or unauthorized modifications.
+
+Maintenance policy
+
+procedures addressing system maintenance tools
+
+system maintenance tools and associated documentation
+
+maintenance tool inspection records
+
+maintenance records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with system maintenance responsibilities
+
+organizational personnel with information security responsibilities
+
+Organizational processes for inspecting maintenance tools
+
+mechanisms supporting and/or implementing the inspection of maintenance tools
+
+### ma-3.2: Inspect Media
+
+Check media containing diagnostic and test programs for malicious code before the media are used in the system.
+
+If, upon inspection of media containing maintenance, diagnostic, and test programs, organizations determine that the media contains malicious code, the incident is handled consistent with organizational incident handling policies and procedures.
+
+media containing diagnostic and test programs are checked for malicious code before the media are used in the system.
+
+Maintenance policy
+
+procedures addressing system maintenance tools
+
+system maintenance tools and associated documentation
+
+maintenance records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with system maintenance responsibilities
+
+organizational personnel with information security responsibilities
+
+Organizational process for inspecting media for malicious code
+
+mechanisms supporting and/or implementing the inspection of media used for maintenance
+
+### ma-3.3: Prevent Unauthorized Removal
+
+Prevent the removal of maintenance equipment containing organizational information by:
+
+Verifying that there is no organizational information contained on the equipment;
+
+Sanitizing or destroying the equipment;
+
+Retaining the equipment within the facility; or
+
+Obtaining an exemption from {{ insert: param, ma-03.03_odp }} explicitly authorizing removal of the equipment from the facility.
+
+Organizational information includes all information owned by organizations and any information provided to organizations for which the organizations serve as information stewards.
+
+the removal of maintenance equipment containing organizational information is prevented by verifying that there is no organizational information contained on the equipment; or
+
+the removal of maintenance equipment containing organizational information is prevented by sanitizing or destroying the equipment; or
+
+the removal of maintenance equipment containing organizational information is prevented by retaining the equipment within the facility; or
+
+the removal of maintenance equipment containing organizational information is prevented by obtaining an exemption from {{ insert: param, ma-03.03_odp }} explicitly authorizing removal of the equipment from the facility.
+
+Maintenance policy
+
+procedures addressing system maintenance tools
+
+system maintenance tools and associated documentation
+
+maintenance records
+
+equipment sanitization records
+
+media sanitization records
+
+exemptions for equipment removal
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with system maintenance responsibilities
+
+organizational personnel with information security responsibilities
+
+organizational personnel responsible for media sanitization
+
+Organizational process for preventing unauthorized removal of information
+
+mechanisms supporting media sanitization or destruction of equipment
+
+mechanisms supporting verification of media sanitization
 
 ### ma-4: Nonlocal Maintenance
 
@@ -240,6 +396,60 @@ mechanisms for strong authentication of nonlocal maintenance diagnostic sessions
 
 mechanisms for terminating nonlocal maintenance sessions and network connections
 
+### ma-4.3: Comparable Security and Sanitization
+
+Require that nonlocal maintenance and diagnostic services be performed from a system that implements a security capability comparable to the capability implemented on the system being serviced; or
+
+Remove the component to be serviced from the system prior to nonlocal maintenance or diagnostic services; sanitize the component (for organizational information); and after the service is performed, inspect and sanitize the component (for potentially malicious software) before reconnecting the component to the system.
+
+Comparable security capability on systems, diagnostic tools, and equipment providing maintenance services implies that the implemented controls on those systems, tools, and equipment are at least as comprehensive as the controls on the system being serviced.
+
+nonlocal maintenance services are required to be performed from a system that implements a security capability comparable to the capability implemented on the system being serviced;
+
+nonlocal diagnostic services are required to be performed from a system that implements a security capability comparable to the capability implemented on the system being serviced; or
+
+the component to be serviced is removed from the system prior to nonlocal maintenance or diagnostic services;
+
+the component to be serviced is sanitized (for organizational information);
+
+the component is inspected and sanitized (for potentially malicious software) after the service is performed and before reconnecting the component to the system.
+
+Maintenance policy
+
+procedures addressing nonlocal system maintenance
+
+service provider contracts and/or service-level agreements
+
+maintenance records
+
+inspection records
+
+audit records
+
+equipment sanitization records
+
+media sanitization records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with system maintenance responsibilities
+
+system maintenance provider
+
+organizational personnel with information security responsibilities
+
+organizational personnel responsible for media sanitization
+
+system/network administrators
+
+Organizational processes for comparable security and sanitization for nonlocal maintenance
+
+organizational processes for the removal, sanitization, and inspection of components serviced via nonlocal maintenance
+
+mechanisms supporting and/or implementing component sanitization and inspection
+
 ### ma-5: Maintenance Personnel
 
 Establish a process for maintenance personnel authorization and maintain a list of authorized maintenance organizations or personnel;
@@ -284,6 +494,60 @@ Organizational processes for authorizing and managing maintenance personnel
 
 mechanisms supporting and/or implementing authorization of maintenance personnel
 
+### ma-5.1: Individuals Without Appropriate Access
+
+Implement procedures for the use of maintenance personnel that lack appropriate security clearances or are not U.S. citizens, that include the following requirements:
+
+Maintenance personnel who do not have needed access authorizations, clearances, or formal access approvals are escorted and supervised during the performance of maintenance and diagnostic activities on the system by approved organizational personnel who are fully cleared, have appropriate access authorizations, and are technically qualified; and
+
+Prior to initiating maintenance or diagnostic activities by personnel who do not have needed access authorizations, clearances or formal access approvals, all volatile information storage components within the system are sanitized and all nonvolatile storage media are removed or physically disconnected from the system and secured; and
+
+Develop and implement {{ insert: param, ma-05.01_odp }} in the event a system component cannot be sanitized, removed, or disconnected from the system.
+
+Procedures for individuals who lack appropriate security clearances or who are not U.S. citizens are intended to deny visual and electronic access to classified or controlled unclassified information contained on organizational systems. Procedures for the use of maintenance personnel can be documented in security plans for the systems.
+
+procedures for the use of maintenance personnel who lack appropriate security clearances or are not U.S. citizens are implemented and include approved organizational personnel who are fully cleared, have appropriate access authorizations, and are technically qualified escorting and supervising maintenance personnel without the needed access authorization during the performance of maintenance and diagnostic activities;
+
+procedures for the use of maintenance personnel who lack appropriate security clearances or are not U.S. citizens are implemented and include all volatile information storage components within the system being sanitized and all non-volatile storage media being removed or physically disconnected from the system and secured prior to initiating maintenance or diagnostic activities;
+
+ {{ insert: param, ma-05.01_odp }} are developed and implemented in the event that a system cannot be sanitized, removed, or disconnected from the system.
+
+Maintenance policy
+
+procedures addressing maintenance personnel
+
+system media protection policy
+
+physical and environmental protection policy
+
+list of maintenance personnel requiring escort/supervision
+
+maintenance records
+
+access control records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with system maintenance responsibilities
+
+organizational personnel with personnel security responsibilities
+
+organizational personnel with physical access control responsibilities
+
+organizational personnel with information security responsibilities
+
+organizational personnel responsible for media sanitization
+
+system/network administrators
+
+Organizational processes for managing maintenance personnel without appropriate access
+
+mechanisms supporting and/or implementing alternative security safeguards
+
+mechanisms supporting and/or implementing information storage component sanitization
+
 ### ma-6: Timely Maintenance
 
 Obtain maintenance support and/or spare parts for {{ insert: param, ma-06_odp.01 }} within {{ insert: param, ma-06_odp.02 }} of failure.
@@ -315,6 +579,4 @@ organizational personnel with information security responsibilities
 system/network administrators
 
 Organizational processes for ensuring timely maintenance
-
-## Control Enhancements
 

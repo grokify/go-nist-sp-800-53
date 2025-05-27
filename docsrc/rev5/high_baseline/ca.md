@@ -1,6 +1,8 @@
 # ca - Assessment, Authorization, and Monitoring
 
-## Base Controls
+* Controls: 14
+
+## Controls
 
 ### ca-1: Policy and Procedures
 
@@ -144,6 +146,70 @@ organizational personnel with information security and privacy responsibilities
 
 Mechanisms supporting control assessment, control assessment plan development, and/or control assessment reporting
 
+### ca-2.1: Independent Assessors
+
+Employ independent assessors or assessment teams to conduct control assessments.
+
+Independent assessors or assessment teams are individuals or groups who conduct impartial assessments of systems. Impartiality means that assessors are free from any perceived or actual conflicts of interest regarding the development, operation, sustainment, or management of the systems under assessment or the determination of control effectiveness. To achieve impartiality, assessors do not create a mutual or conflicting interest with the organizations where the assessments are being conducted, assess their own work, act as management or employees of the organizations they are serving, or place themselves in positions of advocacy for the organizations acquiring their services.
+
+Independent assessments can be obtained from elements within organizations or be contracted to public or private sector entities outside of organizations. Authorizing officials determine the required level of independence based on the security categories of systems and/or the risk to organizational operations, organizational assets, or individuals. Authorizing officials also determine if the level of assessor independence provides sufficient assurance that the results are sound and can be used to make credible, risk-based decisions. Assessor independence determination includes whether contracted assessment services have sufficient independence, such as when system owners are not directly involved in contracting processes or cannot influence the impartiality of the assessors conducting the assessments. During the system design and development phase, having independent assessors is analogous to having independent SMEs involved in design reviews.
+
+When organizations that own the systems are small or the structures of the organizations require that assessments be conducted by individuals that are in the developmental, operational, or management chain of the system owners, independence in assessment processes can be achieved by ensuring that assessment results are carefully reviewed and analyzed by independent teams of experts to validate the completeness, accuracy, integrity, and reliability of the results. Assessments performed for purposes other than to support authorization decisions are more likely to be useable for such decisions when performed by assessors with sufficient independence, thereby reducing the need to repeat assessments.
+
+independent assessors or assessment teams are employed to conduct control assessments.
+
+Assessment, authorization, and monitoring policy
+
+procedures addressing control assessments
+
+previous control assessment plan
+
+previous control assessment report
+
+plan of action and milestones
+
+existing authorization statement
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with security assessment responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+### ca-2.2: Specialized Assessments
+
+Include as part of control assessments, {{ insert: param, ca-02.02_odp.01 }}, {{ insert: param, ca-02.02_odp.02 }}, {{ insert: param, ca-02.02_odp.03 }}.
+
+Organizations can conduct specialized assessments, including verification and validation, system monitoring, insider threat assessments, malicious user testing, and other forms of testing. These assessments can improve readiness by exercising organizational capabilities and indicating current levels of performance as a means of focusing actions to improve security and privacy. Organizations conduct specialized assessments in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Authorizing officials approve the assessment methods in coordination with the organizational risk executive function. Organizations can include vulnerabilities uncovered during assessments into vulnerability remediation processes. Specialized assessments can also be conducted early in the system development life cycle (e.g., during initial design, development, and unit testing).
+
+ {{ insert: param, ca-02.02_odp.01 }} {{ insert: param, ca-02.02_odp.02 }} {{ insert: param, ca-02.02_odp.03 }} are included as part of control assessments.
+
+Assessment, authorization, and monitoring policy
+
+procedures addressing control assessments
+
+control assessment plan
+
+control assessment report
+
+control assessment evidence
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with control assessment responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+Mechanisms supporting control assessment
+
 ### ca-3: Information Exchange
 
 Approve and manage the exchange of information between the system and other systems using {{ insert: param, ca-03_odp.01 }};
@@ -207,6 +273,52 @@ Organizational personnel with responsibilities for developing, implementing, or 
 organizational personnel with information security and privacy responsibilities
 
 personnel managing the system(s) to which the interconnection security agreement applies
+
+### ca-3.6: Transfer Authorizations
+
+Verify that individuals or systems transferring data between interconnecting systems have the requisite authorizations (i.e., write permissions or privileges) prior to accepting such data.
+
+To prevent unauthorized individuals and systems from making information transfers to protected systems, the protected system verifies—via independent means— whether the individual or system attempting to transfer information is authorized to do so. Verification of the authorization to transfer information also applies to control plane traffic (e.g., routing and DNS) and services (e.g., authenticated SMTP relays).
+
+individuals or systems transferring data between interconnecting systems have the requisite authorizations (i.e., write permissions or privileges) prior to accepting such data.
+
+Access control policy
+
+procedures addressing system connections
+
+system and communications protection policy
+
+system interconnection agreements
+
+information exchange security agreements
+
+memoranda of understanding or agreements
+
+service level agreements
+
+non-disclosure agreements
+
+system design documentation
+
+system configuration settings and associated documentation
+
+control assessment report
+
+system audit records
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for managing connections to external systems
+
+network administrators
+
+organizational personnel with information security and privacy responsibilities
+
+Mechanisms implementing restrictions on external system connections
 
 ### ca-5: Plan of Action and Milestones
 
@@ -376,6 +488,92 @@ mechanisms supporting response actions to address assessment and monitoring resu
 
 mechanisms supporting security and privacy status reporting
 
+### ca-7.1: Independent Assessment
+
+Employ independent assessors or assessment teams to monitor the controls in the system on an ongoing basis.
+
+Organizations maximize the value of control assessments by requiring that assessments be conducted by assessors with appropriate levels of independence. The level of required independence is based on organizational continuous monitoring strategies. Assessor independence provides a degree of impartiality to the monitoring process. To achieve such impartiality, assessors do not create a mutual or conflicting interest with the organizations where the assessments are being conducted, assess their own work, act as management or employees of the organizations they are serving, or place themselves in advocacy positions for the organizations acquiring their services.
+
+independent assessors or assessment teams are employed to monitor the controls in the system on an ongoing basis.
+
+Assessment, authorization, and monitoring policy
+
+organizational continuous monitoring strategy
+
+system-level continuous monitoring strategy
+
+procedures addressing continuous monitoring of system controls
+
+control assessment report
+
+plan of action and milestones
+
+system monitoring records
+
+impact analyses
+
+status reports
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with continuous monitoring responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+### ca-7.4: Risk Monitoring
+
+Ensure risk monitoring is an integral part of the continuous monitoring strategy that includes the following:
+
+Effectiveness monitoring;
+
+Compliance monitoring; and
+
+Change monitoring.
+
+Risk monitoring is informed by the established organizational risk tolerance. Effectiveness monitoring determines the ongoing effectiveness of the implemented risk response measures. Compliance monitoring verifies that required risk response measures are implemented. It also verifies that security and privacy requirements are satisfied. Change monitoring identifies changes to organizational systems and environments of operation that may affect security and privacy risk.
+
+risk monitoring is an integral part of the continuous monitoring strategy;
+
+effectiveness monitoring is included in risk monitoring;
+
+compliance monitoring is included in risk monitoring;
+
+change monitoring is included in risk monitoring.
+
+Assessment, authorization, and monitoring policy
+
+organizational continuous monitoring strategy
+
+system-level continuous monitoring strategy
+
+procedures addressing continuous monitoring of system controls
+
+assessment report
+
+plan of action and milestones
+
+system monitoring records
+
+impact analyses
+
+status reports
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with continuous monitoring responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+Mechanisms supporting risk monitoring
+
 ### ca-8: Penetration Testing
 
 Conduct penetration testing {{ insert: param, ca-08_odp.01 }} on {{ insert: param, ca-08_odp.02 }}.
@@ -411,6 +609,36 @@ organizational personnel with information security and privacy responsibilities
 system/network administrators
 
 Mechanisms supporting penetration testing
+
+### ca-8.1: Independent Penetration Testing Agent or Team
+
+Employ an independent penetration testing agent or team to perform penetration testing on the system or system components.
+
+Independent penetration testing agents or teams are individuals or groups who conduct impartial penetration testing of organizational systems. Impartiality implies that penetration testing agents or teams are free from perceived or actual conflicts of interest with respect to the development, operation, or management of the systems that are the targets of the penetration testing. [CA-2(1)](#ca-2.1) provides additional information on independent assessments that can be applied to penetration testing.
+
+an independent penetration testing agent or team is employed to perform penetration testing on the system or system components.
+
+Assessment, authorization, and monitoring policy
+
+procedures addressing penetration testing
+
+assessment plan
+
+penetration test report
+
+assessment report
+
+security assessment evidence
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with assessment responsibilities
+
+organizational personnel with information security and privacy responsibilities
 
 ### ca-9: Internal System Connections
 
@@ -467,6 +695,4 @@ Organizational personnel with responsibilities for developing, implementing, or 
 organizational personnel with information security and privacy responsibilities
 
 Mechanisms supporting internal system connections
-
-## Control Enhancements
 

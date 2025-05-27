@@ -1,6 +1,8 @@
 # ca - Assessment, Authorization, and Monitoring
 
-## Base Controls
+* Controls: 8
+
+## Controls
 
 ### ca-1: Policy and Procedures
 
@@ -376,6 +378,56 @@ mechanisms supporting response actions to address assessment and monitoring resu
 
 mechanisms supporting security and privacy status reporting
 
+### ca-7.4: Risk Monitoring
+
+Ensure risk monitoring is an integral part of the continuous monitoring strategy that includes the following:
+
+Effectiveness monitoring;
+
+Compliance monitoring; and
+
+Change monitoring.
+
+Risk monitoring is informed by the established organizational risk tolerance. Effectiveness monitoring determines the ongoing effectiveness of the implemented risk response measures. Compliance monitoring verifies that required risk response measures are implemented. It also verifies that security and privacy requirements are satisfied. Change monitoring identifies changes to organizational systems and environments of operation that may affect security and privacy risk.
+
+risk monitoring is an integral part of the continuous monitoring strategy;
+
+effectiveness monitoring is included in risk monitoring;
+
+compliance monitoring is included in risk monitoring;
+
+change monitoring is included in risk monitoring.
+
+Assessment, authorization, and monitoring policy
+
+organizational continuous monitoring strategy
+
+system-level continuous monitoring strategy
+
+procedures addressing continuous monitoring of system controls
+
+assessment report
+
+plan of action and milestones
+
+system monitoring records
+
+impact analyses
+
+status reports
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with continuous monitoring responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+Mechanisms supporting risk monitoring
+
 ### ca-9: Internal System Connections
 
 Authorize internal connections of {{ insert: param, ca-09_odp.01 }} to the system;
@@ -431,6 +483,4 @@ Organizational personnel with responsibilities for developing, implementing, or 
 organizational personnel with information security and privacy responsibilities
 
 Mechanisms supporting internal system connections
-
-## Control Enhancements
 

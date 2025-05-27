@@ -1,6 +1,8 @@
 # cp - Contingency Planning
 
-## Base Controls
+* Controls: 6
+
+## Controls
 
 ### cp-1: Policy and Procedures
 
@@ -351,6 +353,4 @@ organizational personnel with information security responsibilities
 Organizational processes implementing system recovery and reconstitution operations
 
 mechanisms supporting and/or implementing system recovery and reconstitution operations
-
-## Control Enhancements
 

@@ -1,6 +1,8 @@
 # ra - Risk Assessment
 
-## Base Controls
+* Controls: 11
+
+## Controls
 
 ### ra-1: Policy and Procedures
 
@@ -182,6 +184,54 @@ Organizational processes for risk assessment
 
 mechanisms supporting and/or conducting, documenting, reviewing, disseminating, and updating the risk assessment
 
+### ra-3.1: Supply Chain Risk Assessment
+
+Assess supply chain risks associated with {{ insert: param, ra-03.01_odp.01 }} ; and
+
+Update the supply chain risk assessment {{ insert: param, ra-03.01_odp.02 }} , when there are significant changes to the relevant supply chain, or when changes to the system, environments of operation, or other conditions may necessitate a change in the supply chain.
+
+Supply chain-related events include disruption, use of defective components, insertion of counterfeits, theft, malicious development practices, improper delivery practices, and insertion of malicious code. These events can have a significant impact on the confidentiality, integrity, or availability of a system and its information and, therefore, can also adversely impact organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, other organizations, and the Nation. The supply chain-related events may be unintentional or malicious and can occur at any point during the system life cycle. An analysis of supply chain risk can help an organization identify systems or components for which additional supply chain risk mitigations are required.
+
+supply chain risks associated with {{ insert: param, ra-03.01_odp.01 }} are assessed;
+
+the supply chain risk assessment is updated {{ insert: param, ra-03.01_odp.02 }} , when there are significant changes to the relevant supply chain, or when changes to the system, environments of operation, or other conditions may necessitate a change in the supply chain.
+
+Supply chain risk management policy
+
+inventory of critical systems, system components, and system services
+
+risk assessment policy
+
+security planning policy and procedures
+
+procedures addressing organizational assessments of supply chain risk
+
+risk assessment
+
+risk assessment results
+
+risk assessment reviews
+
+risk assessment updates
+
+acquisition policy
+
+system security plan
+
+supply chain risk management plan
+
+other relevant documents or records
+
+Organizational personnel with risk assessment responsibilities
+
+organizational personnel with security responsibilities
+
+organizational personnel with supply chain risk management responsibilities
+
+Organizational processes for risk assessment
+
+mechanisms supporting and/or conducting, documenting, reviewing, disseminating, and updating the supply chain risk assessment
+
 ### ra-5: Vulnerability Monitoring and Scanning
 
 Monitor and scan for vulnerabilities in the system and hosted applications {{ insert: param, ra-5_prm_1 }} and when new vulnerabilities potentially affecting the system are identified and reported;
@@ -262,6 +312,180 @@ Organizational processes for vulnerability scanning, analysis, remediation, and 
 
 mechanisms supporting and/or implementing vulnerability scanning, analysis, remediation, and information sharing
 
+### ra-5.2: Update Vulnerabilities to Be Scanned
+
+Update the system vulnerabilities to be scanned {{ insert: param, ra-05.02_odp.01 }}.
+
+Due to the complexity of modern software, systems, and other factors, new vulnerabilities are discovered on a regular basis. It is important that newly discovered vulnerabilities are added to the list of vulnerabilities to be scanned to ensure that the organization can take steps to mitigate those vulnerabilities in a timely manner.
+
+the system vulnerabilities to be scanned are updated {{ insert: param, ra-05.02_odp.01 }}.
+
+Procedures addressing vulnerability scanning
+
+assessment report
+
+vulnerability scanning tools and associated configuration documentation
+
+vulnerability scanning results
+
+patch and vulnerability management records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with vulnerability scanning responsibilities
+
+organizational personnel with vulnerability scan analysis responsibilities
+
+organizational personnel with security responsibilities
+
+system/network administrators
+
+Organizational processes for vulnerability scanning
+
+mechanisms/tools supporting and/or implementing vulnerability scanning
+
+### ra-5.4: Discoverable Information
+
+Determine information about the system that is discoverable and take {{ insert: param, ra-05.04_odp }}.
+
+Discoverable information includes information that adversaries could obtain without compromising or breaching the system, such as by collecting information that the system is exposing or by conducting extensive web searches. Corrective actions include notifying appropriate organizational personnel, removing designated information, or changing the system to make the designated information less relevant or attractive to adversaries. This enhancement excludes intentionally discoverable information that may be part of a decoy capability (e.g., honeypots, honeynets, or deception nets) deployed by the organization.
+
+information about the system is discoverable;
+
+ {{ insert: param, ra-05.04_odp }} are taken when information about the system is confirmed as discoverable.
+
+Procedures addressing vulnerability scanning
+
+assessment report
+
+penetration test results
+
+vulnerability scanning results
+
+risk assessment report
+
+records of corrective actions taken
+
+incident response records
+
+audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with vulnerability scanning and/or penetration testing responsibilities
+
+organizational personnel with vulnerability scan analysis responsibilities
+
+organizational personnel responsible for risk response
+
+organizational personnel responsible for incident management and response
+
+organizational personnel with security responsibilities
+
+Organizational processes for vulnerability scanning
+
+organizational processes for risk response
+
+organizational processes for incident management and response
+
+mechanisms/tools supporting and/or implementing vulnerability scanning
+
+mechanisms supporting and/or implementing risk response
+
+mechanisms supporting and/or implementing incident management and response
+
+### ra-5.5: Privileged Access
+
+Implement privileged access authorization to {{ insert: param, ra-05.05_odp.01 }} for {{ insert: param, ra-05.05_odp.02 }}.
+
+In certain situations, the nature of the vulnerability scanning may be more intrusive, or the system component that is the subject of the scanning may contain classified or controlled unclassified information, such as personally identifiable information. Privileged access authorization to selected system components facilitates more thorough vulnerability scanning and protects the sensitive nature of such scanning.
+
+privileged access authorization is implemented to {{ insert: param, ra-05.05_odp.01 }} for {{ insert: param, ra-05.05_odp.02 }}.
+
+Risk assessment policy
+
+procedures addressing vulnerability scanning
+
+system design documentation
+
+system configuration settings and associated documentation
+
+list of system components for vulnerability scanning
+
+personnel access authorization list
+
+authorization credentials
+
+access authorization records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with vulnerability scanning responsibilities
+
+system/network administrators
+
+organizational personnel responsible for access control to the system
+
+organizational personnel responsible for configuration management of the system
+
+system developers
+
+organizational personnel with security responsibilities
+
+Organizational processes for vulnerability scanning
+
+organizational processes for access control
+
+mechanisms supporting and/or implementing access control
+
+mechanisms/tools supporting and/or implementing vulnerability scanning
+
+### ra-5.11: Public Disclosure Program
+
+Establish a public reporting channel for receiving reports of vulnerabilities in organizational systems and system components.
+
+The reporting channel is publicly discoverable and contains clear language authorizing good-faith research and the disclosure of vulnerabilities to the organization. The organization does not condition its authorization on an expectation of indefinite non-disclosure to the public by the reporting entity but may request a specific time period to properly remediate the vulnerability.
+
+a public reporting channel is established for receiving reports of vulnerabilities in organizational systems and system components.
+
+Risk assessment policy
+
+procedures addressing vulnerability scanning
+
+risk assessment
+
+vulnerability scanning tools and techniques documentation
+
+vulnerability scanning results
+
+vulnerability management records
+
+audit records
+
+public reporting channel
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with vulnerability scanning responsibilities
+
+organizational personnel with vulnerability scan analysis responsibilities
+
+organizational personnel with security responsibilities
+
+Organizational processes for vulnerability scanning
+
+mechanisms/tools supporting and/or implementing vulnerability scanning
+
+mechanisms implementing the public reporting of vulnerabilities
+
 ### ra-7: Risk Response
 
 Respond to findings from security and privacy assessments, monitoring, and audits in accordance with organizational risk tolerance.
@@ -335,6 +559,4 @@ organizational personnel with security responsibilities
 Organizational processes for assessments and audits
 
 mechanisms/tools supporting and/or implementing assessments and auditing
-
-## Control Enhancements
 

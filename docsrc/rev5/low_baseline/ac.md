@@ -1,6 +1,8 @@
 # ac - Access Control
 
-## Base Controls
+* Controls: 11
+
+## Controls
 
 ### ac-1: Policy and Procedures
 
@@ -619,6 +621,4 @@ Organizational personnel with responsibilities for managing publicly accessible 
 organizational personnel with information security responsibilities
 
 Mechanisms implementing management of publicly accessible content
-
-## Control Enhancements
 

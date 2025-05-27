@@ -1,6 +1,8 @@
 # sr - Supply Chain Risk Management
 
-## Base Controls
+* Controls: 12
+
+## Controls
 
 ### sr-1: Policy and Procedures
 
@@ -165,6 +167,44 @@ organizational processes for identifying SDLC roles and responsibilities
 organizational processes for integrating supply chain risk management into the SDLC
 
 mechanisms supporting and/or implementing the SDLC
+
+### sr-2.1: Establish SCRM Team
+
+Establish a supply chain risk management team consisting of {{ insert: param, sr-02.01_odp.01 }} to lead and support the following SCRM activities: {{ insert: param, sr-02.01_odp.02 }}.
+
+To implement supply chain risk management plans, organizations establish a coordinated, team-based approach to identify and assess supply chain risks and manage these risks by using programmatic and technical mitigation techniques. The team approach enables organizations to conduct an analysis of their supply chain, communicate with internal and external partners or stakeholders, and gain broad consensus regarding the appropriate resources for SCRM. The SCRM team consists of organizational personnel with diverse roles and responsibilities for leading and supporting SCRM activities, including risk executive, information technology, contracting, information security, privacy, mission or business, legal, supply chain and logistics, acquisition, business continuity, and other relevant functions. Members of the SCRM team are involved in various aspects of the SDLC and, collectively, have an awareness of and provide expertise in acquisition processes, legal practices, vulnerabilities, threats, and attack vectors, as well as an understanding of the technical aspects and dependencies of systems. The SCRM team can be an extension of the security and privacy risk management processes or be included as part of an organizational risk management team.
+
+a supply chain risk management team consisting of {{ insert: param, sr-02.01_odp.01 }} is established to lead and support {{ insert: param, sr-02.01_odp.02 }}.
+
+Supply chain risk management policy
+
+supply chain risk management procedures
+
+supply chain risk management team charter documentation
+
+supply chain risk management strategy
+
+supply chain risk management implementation plan
+
+procedures addressing supply chain protection
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with acquisition responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+organizational personnel with supply chain risk management responsibilities
+
+organizational personnel with enterprise risk management responsibilities
+
+legal counsel
+
+organizational personnel with business continuity responsibilities
 
 ### sr-3: Supply Chain Controls and Processes
 
@@ -452,6 +492,84 @@ Organizational processes for counterfeit prevention, detection, and reporting
 
 mechanisms supporting and/or implementing anti-counterfeit detection, prevention, and reporting
 
+### sr-11.1: Anti-counterfeit Training
+
+Train {{ insert: param, sr-11.01_odp }} to detect counterfeit system components (including hardware, software, and firmware).
+
+None.
+
+ {{ insert: param, sr-11.01_odp }} are trained to detect counterfeit system components (including hardware, software, and firmware).
+
+Supply chain risk management policy and procedures
+
+supply chain risk management plan
+
+system and services acquisition policy
+
+anti-counterfeit plan
+
+anti-counterfeit policy and procedures
+
+media disposal policy
+
+media protection policy
+
+incident response policy
+
+training materials addressing counterfeit system components
+
+training records on the detection and prevention of counterfeit components entering the system
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with information security responsibilities
+
+organizational personnel with supply chain risk management responsibilities
+
+organizational personnel with responsibilities for anti-counterfeit policies, procedures, and training
+
+Organizational processes for anti-counterfeit training
+
+### sr-11.2: Configuration Control for Component Service and Repair
+
+Maintain configuration control over the following system components awaiting service or repair and serviced or repaired components awaiting return to service: {{ insert: param, sr-11.02_odp }}.
+
+None.
+
+configuration control over {{ insert: param, sr-11.02_odp }} awaiting service or repair is maintained;
+
+configuration control over serviced or repaired {{ insert: param, sr-11.02_odp }} awaiting return to service is maintained.
+
+Supply chain risk management policy and procedures
+
+supply chain risk management plan
+
+configuration control procedures
+
+acquisition documentation
+
+service level agreements
+
+acquisition contracts for the system component
+
+inter-organizational agreements and procedures
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with system and services acquisition responsibilities
+
+organizational personnel with information security responsibilities
+
+organizational personnel with supply chain risk management responsibilities
+
+Organizational processes for establishing inter-organizational agreements and procedures with supply chain entities
+
+organizational configuration control processes
+
 ### sr-12: Component Disposal
 
 Dispose of {{ insert: param, sr-12_odp.01 }} using the following techniques and methods: {{ insert: param, sr-12_odp.02 }}.
@@ -489,6 +607,4 @@ organizational personnel with supply chain protection responsibilities
 Organizational techniques and methods for system component disposal
 
 mechanisms supporting and/or implementing system component disposal
-
-## Control Enhancements
 

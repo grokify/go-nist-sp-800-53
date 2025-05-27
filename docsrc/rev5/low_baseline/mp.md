@@ -1,6 +1,8 @@
 # mp - Media Protection
 
-## Base Controls
+* Controls: 4
+
+## Controls
 
 ### mp-1: Policy and Procedures
 
@@ -199,6 +201,4 @@ system/network administrators
 Organizational processes for media use
 
 mechanisms restricting or prohibiting the use of system media on systems or system components
-
-## Control Enhancements
 

@@ -1,6 +1,8 @@
 # cm - Configuration Management
 
-## Base Controls
+* Controls: 32
+
+## Controls
 
 ### cm-1: Policy and Procedures
 
@@ -136,6 +138,126 @@ Organizational processes for managing baseline configurations
 
 mechanisms supporting configuration control of the baseline configuration
 
+### cm-2.2: Automation Support for Accuracy and Currency
+
+Maintain the currency, completeness, accuracy, and availability of the baseline configuration of the system using {{ insert: param, cm-02.02_odp }}.
+
+Automated mechanisms that help organizations maintain consistent baseline configurations for systems include configuration management tools, hardware, software, firmware inventory tools, and network management tools. Automated tools can be used at the organization level, mission and business process level, or system level on workstations, servers, notebook computers, network components, or mobile devices. Tools can be used to track version numbers on operating systems, applications, types of software installed, and current patch levels. Automation support for accuracy and currency can be satisfied by the implementation of [CM-8(2)](#cm-8.2) for organizations that combine system component inventory and baseline configuration activities.
+
+the currency of the baseline configuration of the system is maintained using {{ insert: param, cm-02.02_odp }};
+
+the completeness of the baseline configuration of the system is maintained using {{ insert: param, cm-02.02_odp }};
+
+the accuracy of the baseline configuration of the system is maintained using {{ insert: param, cm-02.02_odp }};
+
+the availability of the baseline configuration of the system is maintained using {{ insert: param, cm-02.02_odp }}.
+
+Configuration management policy
+
+procedures addressing the baseline configuration of the system
+
+configuration management plan
+
+system design documentation
+
+system architecture and configuration documentation
+
+system configuration settings and associated documentation
+
+system component inventory
+
+configuration change control records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with configuration management responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+Organizational processes for managing baseline configurations
+
+automated mechanisms implementing baseline configuration maintenance
+
+### cm-2.3: Retention of Previous Configurations
+
+Retain {{ insert: param, cm-02.03_odp }} of previous versions of baseline configurations of the system to support rollback.
+
+Retaining previous versions of baseline configurations to support rollback include hardware, software, firmware, configuration files, configuration records, and associated documentation.
+
+ {{ insert: param, cm-02.03_odp }} of previous baseline configuration version(s) of the system is/are retained to support rollback.
+
+Configuration management policy
+
+procedures addressing the baseline configuration of the system
+
+configuration management plan
+
+system architecture and configuration documentation
+
+system configuration settings and associated documentation
+
+copies of previous baseline configuration versions
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with configuration management responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+Organizational processes for managing baseline configurations
+
+### cm-2.7: Configure Systems and Components for High-risk Areas
+
+Issue {{ insert: param, cm-02.07_odp.01 }} with {{ insert: param, cm-02.07_odp.02 }} to individuals traveling to locations that the organization deems to be of significant risk; and
+
+Apply the following controls to the systems or components when the individuals return from travel: {{ insert: param, cm-02.07_odp.03 }}.
+
+When it is known that systems or system components will be in high-risk areas external to the organization, additional controls may be implemented to counter the increased threat in such areas. For example, organizations can take actions for notebook computers used by individuals departing on and returning from travel. Actions include determining the locations that are of concern, defining the required configurations for the components, ensuring that components are configured as intended before travel is initiated, and applying controls to the components after travel is completed. Specially configured notebook computers include computers with sanitized hard drives, limited applications, and more stringent configuration settings. Controls applied to mobile devices upon return from travel include examining the mobile device for signs of physical tampering and purging and reimaging disk drives. Protecting information that resides on mobile devices is addressed in the [MP](#mp) (Media Protection) family.
+
+ {{ insert: param, cm-02.07_odp.01 }} with {{ insert: param, cm-02.07_odp.02 }} are issued to individuals traveling to locations that the organization deems to be of significant risk;
+
+ {{ insert: param, cm-02.07_odp.03 }} are applied to the systems or system components when the individuals return from travel.
+
+Configuration management policy
+
+configuration management plan
+
+procedures addressing the baseline configuration of the system
+
+procedures addressing system component installations and upgrades
+
+system architecture and configuration documentation
+
+system configuration settings and associated documentation
+
+system component inventory
+
+records of system baseline configuration reviews and updates
+
+system component installations/upgrades and associated records
+
+change control records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with configuration management responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+Organizational processes for managing baseline configurations
+
 ### cm-3: Configuration Change Control
 
 Determine and document the types of changes to the system that are configuration-controlled;
@@ -212,6 +334,194 @@ Organizational processes for configuration change control
 
 mechanisms that implement configuration change control
 
+### cm-3.1: Automated Documentation, Notification, and Prohibition of Changes
+
+Use {{ insert: param, cm-03.01_odp.01 }} to:
+
+Document proposed changes to the system;
+
+Notify {{ insert: param, cm-03.01_odp.02 }} of proposed changes to the system and request change approval;
+
+Highlight proposed changes to the system that have not been approved or disapproved within {{ insert: param, cm-03.01_odp.03 }};
+
+Prohibit changes to the system until designated approvals are received;
+
+Document all changes to the system; and
+
+Notify {{ insert: param, cm-03.01_odp.04 }} when approved changes to the system are completed.
+
+None.
+
+ {{ insert: param, cm-03.01_odp.01 }} are used to document proposed changes to the system;
+
+ {{ insert: param, cm-03.01_odp.01 }} are used to notify {{ insert: param, cm-03.01_odp.02 }} of proposed changes to the system and request change approval;
+
+ {{ insert: param, cm-03.01_odp.01 }} are used to highlight proposed changes to the system that have not been approved or disapproved within {{ insert: param, cm-03.01_odp.03 }};
+
+ {{ insert: param, cm-03.01_odp.01 }} are used to prohibit changes to the system until designated approvals are received;
+
+ {{ insert: param, cm-03.01_odp.01 }} are used to document all changes to the system;
+
+ {{ insert: param, cm-03.01_odp.01 }} are used to notify {{ insert: param, cm-03.01_odp.04 }} when approved changes to the system are completed.
+
+Configuration management policy
+
+procedures addressing system configuration change control
+
+configuration management plan
+
+system design documentation
+
+system architecture and configuration documentation
+
+automated configuration control mechanisms
+
+system configuration settings and associated documentation
+
+change control records
+
+system audit records
+
+change approval requests
+
+change approvals
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with configuration change control responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+members of change control board or similar
+
+Organizational processes for configuration change control
+
+automated mechanisms implementing configuration change control activities
+
+### cm-3.2: Testing, Validation, and Documentation of Changes
+
+Test, validate, and document changes to the system before finalizing the implementation of the changes.
+
+Changes to systems include modifications to hardware, software, or firmware components and configuration settings defined in [CM-6](#cm-6) . Organizations ensure that testing does not interfere with system operations that support organizational mission and business functions. Individuals or groups conducting tests understand security and privacy policies and procedures, system security and privacy policies and procedures, and the health, safety, and environmental risks associated with specific facilities or processes. Operational systems may need to be taken offline, or replicated to the extent feasible, before testing can be conducted. If systems must be taken offline for testing, the tests are scheduled to occur during planned system outages whenever possible. If the testing cannot be conducted on operational systems, organizations employ compensating controls.
+
+changes to the system are tested before finalizing the implementation of the changes;
+
+changes to the system are validated before finalizing the implementation of the changes;
+
+changes to the system are documented before finalizing the implementation of the changes.
+
+Configuration management policy
+
+configuration management plan
+
+procedures addressing system configuration change control
+
+system design documentation
+
+system architecture and configuration documentation
+
+system configuration settings and associated documentation
+
+test records
+
+validation records
+
+change control records
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with configuration change control responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+members of change control board or similar
+
+Organizational processes for configuration change control
+
+mechanisms supporting and/or implementing, testing, validating, and documenting system changes
+
+### cm-3.4: Security and Privacy Representatives
+
+Require {{ insert: param, cm-3.4_prm_1 }} to be members of the {{ insert: param, cm-03.04_odp.03 }}.
+
+Information security and privacy representatives include system security officers, senior agency information security officers, senior agency officials for privacy, or system privacy officers. Representation by personnel with information security and privacy expertise is important because changes to system configurations can have unintended side effects, some of which may be security- or privacy-relevant. Detecting such changes early in the process can help avoid unintended, negative consequences that could ultimately affect the security and privacy posture of systems. The configuration change control element referred to in the second organization-defined parameter reflects the change control elements defined by organizations in [CM-3g](#cm-3_smt.g).
+
+ {{ insert: param, cm-03.04_odp.01 }} are required to be members of the {{ insert: param, cm-03.04_odp.03 }};
+
+ {{ insert: param, cm-03.04_odp.02 }} are required to be members of the {{ insert: param, cm-03.04_odp.03 }}.
+
+Configuration management policy
+
+procedures addressing system configuration change control
+
+configuration management plan
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with configuration change control responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+members of change control board or similar
+
+Organizational processes for configuration change control
+
+### cm-3.6: Cryptography Management
+
+Ensure that cryptographic mechanisms used to provide the following controls are under configuration management: {{ insert: param, cm-03.06_odp }}.
+
+The controls referenced in the control enhancement refer to security and privacy controls from the control catalog. Regardless of the cryptographic mechanisms employed, processes and procedures are in place to manage those mechanisms. For example, if system components use certificates for identification and authentication, a process is implemented to address the expiration of those certificates.
+
+cryptographic mechanisms used to provide {{ insert: param, cm-03.06_odp }} are under configuration management.
+
+Configuration management policy
+
+procedures addressing system configuration change control
+
+configuration management plan
+
+system design documentation
+
+system architecture and configuration documentation
+
+system configuration settings and associated documentation
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with configuration change control responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+members of change control board or similar
+
+Organizational processes for configuration change control
+
+cryptographic mechanisms implementing organizational security safeguards (controls)
+
 ### cm-4: Impact Analyses
 
 Analyze changes to the system to determine potential security and privacy impacts prior to change implementation.
@@ -265,6 +575,136 @@ members of change control board or similar
 Organizational processes for security impact analyses
 
 organizational processes for privacy impact analyses
+
+### cm-4.1: Separate Test Environments
+
+Analyze changes to the system in a separate test environment before implementation in an operational environment, looking for security and privacy impacts due to flaws, weaknesses, incompatibility, or intentional malice.
+
+A separate test environment requires an environment that is physically or logically separate and distinct from the operational environment. The separation is sufficient to ensure that activities in the test environment do not impact activities in the operational environment and that information in the operational environment is not inadvertently transmitted to the test environment. Separate environments can be achieved by physical or logical means. If physically separate test environments are not implemented, organizations determine the strength of mechanism required when implementing logical separation.
+
+changes to the system are analyzed in a separate test environment before implementation in an operational environment;
+
+changes to the system are analyzed for security impacts due to flaws;
+
+changes to the system are analyzed for privacy impacts due to flaws;
+
+changes to the system are analyzed for security impacts due to weaknesses;
+
+changes to the system are analyzed for privacy impacts due to weaknesses;
+
+changes to the system are analyzed for security impacts due to incompatibility;
+
+changes to the system are analyzed for privacy impacts due to incompatibility;
+
+changes to the system are analyzed for security impacts due to intentional malice;
+
+changes to the system are analyzed for privacy impacts due to intentional malice.
+
+Configuration management policy
+
+procedures addressing security impact analyses for changes to the system
+
+procedures addressing privacy impact analyses for changes to the system
+
+configuration management plan
+
+security impact analysis documentation
+
+privacy impact analysis documentation
+
+privacy impact assessment
+
+privacy risk assessment documentation
+
+analysis tools and associated outputs system design documentation
+
+system architecture and configuration documentation
+
+change control records
+
+procedures addressing the authority to test with PII
+
+system audit records
+
+documentation of separate test and operational environments
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with responsibility for conducting security and privacy impact analyses
+
+organizational personnel with information security and privacy responsibilities
+
+system/network administrators
+
+members of change control board or similar
+
+Organizational processes for security and privacy impact analyses
+
+mechanisms supporting and/or implementing security and privacy impact analyses of changes
+
+### cm-4.2: Verification of Controls
+
+After system changes, verify that the impacted controls are implemented correctly, operating as intended, and producing the desired outcome with regard to meeting the security and privacy requirements for the system.
+
+Implementation in this context refers to installing changed code in the operational system that may have an impact on security or privacy controls.
+
+the impacted controls are implemented correctly with regard to meeting the security requirements for the system after system changes;
+
+the impacted controls are implemented correctly with regard to meeting the privacy requirements for the system after system changes;
+
+the impacted controls are operating as intended with regard to meeting the security requirements for the system after system changes;
+
+the impacted controls are operating as intended with regard to meeting the privacy requirements for the system after system changes;
+
+the impacted controls are producing the desired outcome with regard to meeting the security requirements for the system after system changes;
+
+the impacted controls are producing the desired outcome with regard to meeting the privacy requirements for the system after system changes.
+
+Configuration management policy
+
+procedures addressing security impact analyses for changes to the system
+
+procedures addressing privacy impact analyses for changes to the system
+
+privacy risk assessment documentation
+
+configuration management plan
+
+security and privacy impact analysis documentation
+
+privacy impact assessment
+
+analysis tools and associated outputs
+
+change control records
+
+control assessment results
+
+system audit records
+
+system component inventory
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with responsibility for conducting security and privacy impact analyses
+
+organizational personnel with information security and privacy responsibilities
+
+system/network administrators
+
+security and privacy assessors
+
+Organizational processes for security and privacy impact analyses
+
+mechanisms supporting and/or implementing security and privacy impact analyses of changes
 
 ### cm-5: Access Restrictions for Change
 
@@ -321,6 +761,50 @@ system/network administrators
 Organizational processes for managing access restrictions to change
 
 mechanisms supporting, implementing, or enforcing access restrictions associated with changes to the system
+
+### cm-5.1: Automated Access Enforcement and Audit Records
+
+Enforce access restrictions using {{ insert: param, cm-05.01_odp }} ; and
+
+Automatically generate audit records of the enforcement actions.
+
+Organizations log system accesses associated with applying configuration changes to ensure that configuration change control is implemented and to support after-the-fact actions should organizations discover any unauthorized changes.
+
+access restrictions for change are enforced using {{ insert: param, cm-05.01_odp }};
+
+audit records of enforcement actions are automatically generated.
+
+Configuration management policy
+
+procedures addressing access restrictions for changes to the system
+
+system design documentation
+
+system architecture and configuration documentation
+
+system configuration settings and associated documentation
+
+change control records
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with logical access control responsibilities
+
+organizational personnel with physical access control responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+Organizational processes for managing access restrictions to change
+
+automated mechanisms implementing the enforcement of access restrictions for changes to the system
+
+automated mechanisms supporting auditing of enforcement actions
 
 ### cm-6: Configuration Settings
 
@@ -392,6 +876,98 @@ mechanisms that implement, monitor, and/or control system configuration settings
 
 mechanisms that identify and/or document deviations from established configuration settings
 
+### cm-6.1: Automated Management, Application, and Verification
+
+Manage, apply, and verify configuration settings for {{ insert: param, cm-06.01_odp.01 }} using {{ insert: param, cm-6.1_prm_2 }}.
+
+Automated tools (e.g., hardening tools, baseline configuration tools) can improve the accuracy, consistency, and availability of configuration settings information. Automation can also provide data aggregation and data correlation capabilities, alerting mechanisms, and dashboards to support risk-based decision-making within the organization.
+
+configuration settings for {{ insert: param, cm-06.01_odp.01 }} are managed using {{ insert: param, cm-06.01_odp.02 }};
+
+configuration settings for {{ insert: param, cm-06.01_odp.01 }} are applied using {{ insert: param, cm-06.01_odp.03 }};
+
+configuration settings for {{ insert: param, cm-06.01_odp.01 }} are verified using {{ insert: param, cm-06.01_odp.04 }}.
+
+Configuration management policy
+
+procedures addressing configuration settings for the system
+
+configuration management plan
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system component inventory
+
+common secure configuration checklists
+
+change control records
+
+system audit records
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with security configuration management responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+system/network administrators
+
+system developers
+
+Organizational processes for managing configuration settings
+
+automated mechanisms implemented to manage, apply, and verify system configuration settings
+
+### cm-6.2: Respond to Unauthorized Changes
+
+Take the following actions in response to unauthorized changes to {{ insert: param, cm-06.02_odp.02 }}: {{ insert: param, cm-06.02_odp.01 }}.
+
+Responses to unauthorized changes to configuration settings include alerting designated organizational personnel, restoring established configuration settings, or—in extreme cases—halting affected system processing.
+
+ {{ insert: param, cm-06.02_odp.01 }} are taken in response to unauthorized changes to {{ insert: param, cm-06.02_odp.02 }}.
+
+System security plan
+
+privacy plan
+
+configuration management policy
+
+procedures addressing configuration settings for the system
+
+configuration management plan
+
+system design documentation
+
+system configuration settings and associated documentation
+
+alerts/notifications of unauthorized changes to system configuration settings
+
+system component inventory
+
+documented responses to unauthorized changes to system configuration settings
+
+change control records
+
+system audit records
+
+other relevant documents or records
+
+Organizational personnel with security configuration management responsibilities
+
+organizational personnel with security and privacy responsibilities
+
+system/network administrators
+
+Organizational process for responding to unauthorized changes to system configuration settings
+
+mechanisms supporting and/or implementing actions in response to unauthorized changes
+
 ### cm-7: Least Functionality
 
 Configure the system to provide only {{ insert: param, cm-07_odp.01 }} ; and
@@ -441,6 +1017,160 @@ system developers
 Organizational processes prohibiting or restricting functions, ports, protocols, software, and/or services
 
 mechanisms implementing restrictions or prohibition of functions, ports, protocols, software, and/or services
+
+### cm-7.1: Periodic Review
+
+Review the system {{ insert: param, cm-07.01_odp.01 }} to identify unnecessary and/or nonsecure functions, ports, protocols, software, and services; and
+
+Disable or remove {{ insert: param, cm-7.1_prm_2 }}.
+
+Organizations review functions, ports, protocols, and services provided by systems or system components to determine the functions and services that are candidates for elimination. Such reviews are especially important during transition periods from older technologies to newer technologies (e.g., transition from IPv4 to IPv6). These technology transitions may require implementing the older and newer technologies simultaneously during the transition period and returning to minimum essential functions, ports, protocols, and services at the earliest opportunity. Organizations can either decide the relative security of the function, port, protocol, and/or service or base the security decision on the assessment of other entities. Unsecure protocols include Bluetooth, FTP, and peer-to-peer networking.
+
+the system is reviewed {{ insert: param, cm-07.01_odp.01 }} to identify unnecessary and/or non-secure functions, ports, protocols, software, and services:
+
+ {{ insert: param, cm-07.01_odp.02 }} deemed to be unnecessary and/or non-secure are disabled or removed;
+
+ {{ insert: param, cm-07.01_odp.03 }} deemed to be unnecessary and/or non-secure are disabled or removed;
+
+ {{ insert: param, cm-07.01_odp.04 }} deemed to be unnecessary and/or non-secure are disabled or removed;
+
+ {{ insert: param, cm-07.01_odp.05 }} deemed to be unnecessary and/or non-secure is disabled or removed;
+
+ {{ insert: param, cm-07.01_odp.06 }} deemed to be unnecessary and/or non-secure are disabled or removed.
+
+Configuration management policy
+
+procedures addressing least functionality in the system
+
+configuration management plan
+
+system design documentation
+
+system configuration settings and associated documentation
+
+common secure configuration checklists
+
+documented reviews of functions, ports, protocols, and/or services
+
+change control records
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for reviewing functions, ports, protocols, and services on the system
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+Organizational processes for reviewing or disabling functions, ports, protocols, and services on the system
+
+mechanisms implementing review and disabling of functions, ports, protocols, and/or services
+
+### cm-7.2: Prevent Program Execution
+
+Prevent program execution in accordance with {{ insert: param, cm-07.02_odp.01 }}.
+
+Prevention of program execution addresses organizational policies, rules of behavior, and/or access agreements that restrict software usage and the terms and conditions imposed by the developer or manufacturer, including software licensing and copyrights. Restrictions include prohibiting auto-execute features, restricting roles allowed to approve program execution, permitting or prohibiting specific software programs, or restricting the number of program instances executed at the same time.
+
+program execution is prevented in accordance with {{ insert: param, cm-07.02_odp.01 }}.
+
+Configuration management policy
+
+procedures addressing least functionality in the system
+
+configuration management plan
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system component inventory
+
+common secure configuration checklists
+
+specifications for preventing software program execution
+
+change control records
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+Organizational processes preventing program execution on the system
+
+organizational processes for software program usage and restrictions
+
+mechanisms preventing program execution on the system
+
+mechanisms supporting and/or implementing software program usage and restrictions
+
+### cm-7.5: Authorized Software — Allow-by-exception
+
+Identify {{ insert: param, cm-07.05_odp.01 }};
+
+Employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs on the system; and
+
+Review and update the list of authorized software programs {{ insert: param, cm-07.05_odp.02 }}.
+
+Authorized software programs can be limited to specific versions or from a specific source. To facilitate a comprehensive authorized software process and increase the strength of protection for attacks that bypass application level authorized software, software programs may be decomposed into and monitored at different levels of detail. These levels include applications, application programming interfaces, application modules, scripts, system processes, system services, kernel functions, registries, drivers, and dynamic link libraries. The concept of permitting the execution of authorized software may also be applied to user actions, system ports and protocols, IP addresses/ranges, websites, and MAC addresses. Organizations consider verifying the integrity of authorized software programs using digital signatures, cryptographic checksums, or hash functions. Verification of authorized software can occur either prior to execution or at system startup. The identification of authorized URLs for websites is addressed in [CA-3(5)](#ca-3.5) and [SC-7](#sc-7).
+
+ {{ insert: param, cm-07.05_odp.01 }} are identified;
+
+a deny-all, permit-by-exception policy to allow the execution of authorized software programs on the system is employed;
+
+the list of authorized software programs is reviewed and updated {{ insert: param, cm-07.05_odp.02 }}.
+
+Configuration management policy
+
+procedures addressing least functionality in the system
+
+configuration management plan
+
+system design documentation
+
+system configuration settings and associated documentation
+
+list of software programs authorized to execute on the system
+
+system component inventory
+
+common secure configuration checklists
+
+review and update records associated with list of authorized software programs
+
+change control records
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for identifying software authorized to execute on the system
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+Organizational process for identifying, reviewing, and updating programs authorized to execute on the system
+
+organizational process for implementing authorized software policy
+
+mechanisms supporting and/or implementing authorized software policy
 
 ### cm-8: System Component Inventory
 
@@ -501,6 +1231,194 @@ system/network administrators
 Organizational processes for managing the system component inventory
 
 mechanisms supporting and/or implementing system component inventory
+
+### cm-8.1: Updates During Installation and Removal
+
+Update the inventory of system components as part of component installations, removals, and system updates.
+
+Organizations can improve the accuracy, completeness, and consistency of system component inventories if the inventories are updated as part of component installations or removals or during general system updates. If inventories are not updated at these key times, there is a greater likelihood that the information will not be appropriately captured and documented. System updates include hardware, software, and firmware components.
+
+the inventory of system components is updated as part of component installations;
+
+the inventory of system components is updated as part of component removals;
+
+the inventory of system components is updated as part of system updates.
+
+Configuration management policy
+
+procedures addressing system component inventory
+
+configuration management plan
+
+system security plan
+
+system component inventory
+
+inventory reviews and update records
+
+change control records
+
+component installation records
+
+component removal records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with component inventory updating responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+Organizational processes for updating the system component inventory
+
+mechanisms supporting and/or implementing system component inventory updates
+
+### cm-8.2: Automated Maintenance
+
+Maintain the currency, completeness, accuracy, and availability of the inventory of system components using {{ insert: param, cm-8.2_prm_1 }}.
+
+Organizations maintain system inventories to the extent feasible. For example, virtual machines can be difficult to monitor because such machines are not visible to the network when not in use. In such cases, organizations maintain as up-to-date, complete, and accurate an inventory as is deemed reasonable. Automated maintenance can be achieved by the implementation of [CM-2(2)](#cm-2.2) for organizations that combine system component inventory and baseline configuration activities.
+
+ {{ insert: param, cm-08.02_odp.01 }} are used to maintain the currency of the system component inventory;
+
+ {{ insert: param, cm-08.02_odp.02 }} are used to maintain the completeness of the system component inventory;
+
+ {{ insert: param, cm-08.02_odp.03 }} are used to maintain the accuracy of the system component inventory;
+
+ {{ insert: param, cm-08.02_odp.04 }} are used to maintain the availability of the system component inventory.
+
+Configuration management policy
+
+procedures addressing system component inventory
+
+configuration management plan
+
+system design documentation
+
+system security plan
+
+system component inventory
+
+change control records
+
+system maintenance records
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with component inventory management responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+Organizational processes for maintaining the system component inventory
+
+automated mechanisms supporting and/or implementing the system component inventory
+
+### cm-8.3: Automated Unauthorized Component Detection
+
+Detect the presence of unauthorized hardware, software, and firmware components within the system using {{ insert: param, cm-8.3_prm_1 }} {{ insert: param, cm-08.03_odp.04 }} ; and
+
+Take the following actions when unauthorized components are detected: {{ insert: param, cm-08.03_odp.05 }}.
+
+Automated unauthorized component detection is applied in addition to the monitoring for unauthorized remote connections and mobile devices. Monitoring for unauthorized system components may be accomplished on an ongoing basis or by the periodic scanning of systems for that purpose. Automated mechanisms may also be used to prevent the connection of unauthorized components (see [CM-7(9)](#cm-7.9) ). Automated mechanisms can be implemented in systems or in separate system components. When acquiring and implementing automated mechanisms, organizations consider whether such mechanisms depend on the ability of the system component to support an agent or supplicant in order to be detected since some types of components do not have or cannot support agents (e.g., IoT devices, sensors). Isolation can be achieved , for example, by placing unauthorized system components in separate domains or subnets or quarantining such components. This type of component isolation is commonly referred to as "sandboxing." 
+
+the presence of unauthorized hardware within the system is detected using {{ insert: param, cm-08.03_odp.01 }} {{ insert: param, cm-08.03_odp.04 }};
+
+the presence of unauthorized software within the system is detected using {{ insert: param, cm-08.03_odp.02 }} {{ insert: param, cm-08.03_odp.04 }};
+
+the presence of unauthorized firmware within the system is detected using {{ insert: param, cm-08.03_odp.03 }} {{ insert: param, cm-08.03_odp.04 }};
+
+ {{ insert: param, cm-08.03_odp.05 }} are taken when unauthorized hardware is detected;
+
+ {{ insert: param, cm-08.03_odp.05 }} are taken when unauthorized software is detected;
+
+ {{ insert: param, cm-08.03_odp.05 }} are taken when unauthorized firmware is detected.
+
+Configuration management policy
+
+procedures addressing system component inventory
+
+configuration management plan
+
+system design documentation
+
+system security plan
+
+system component inventory
+
+change control records
+
+alerts/notifications of unauthorized components within the system
+
+system monitoring records
+
+system maintenance records
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with component inventory management responsibilities
+
+organizational personnel with responsibilities for managing the automated mechanisms implementing unauthorized system component detection
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+Organizational processes for detection of unauthorized system components
+
+organizational processes for taking action when unauthorized system components are detected
+
+automated mechanisms supporting and/or implementing the detection of unauthorized system components
+
+automated mechanisms supporting and/or implementing actions taken when unauthorized system components are detected
+
+### cm-8.4: Accountability Information
+
+Include in the system component inventory information, a means for identifying by {{ insert: param, cm-08.04_odp }} , individuals responsible and accountable for administering those components.
+
+Identifying individuals who are responsible and accountable for administering system components ensures that the assigned components are properly administered and that organizations can contact those individuals if some action is required (e.g., when the component is determined to be the source of a breach, needs to be recalled or replaced, or needs to be relocated).
+
+individuals responsible and accountable for administering system components are identified by {{ insert: param, cm-08.04_odp }} in the system component inventory.
+
+Configuration management policy
+
+procedures addressing system component inventory
+
+configuration management plan
+
+system security plan
+
+system component inventory
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with component inventory management responsibilities
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+Organizational processes for managing the system component inventory
+
+mechanisms supporting and/or implementing the system component inventory
 
 ### cm-9: Configuration Management Plan
 
@@ -756,5 +1674,47 @@ Organizational processes governing information location
 
 mechanisms enforcing policies and methods for governing information location
 
-## Control Enhancements
+### cm-12.1: Automated Tools to Support Information Location
+
+Use automated tools to identify {{ insert: param, cm-12.01_odp.01 }} on {{ insert: param, cm-12.01_odp.02 }} to ensure controls are in place to protect organizational information and individual privacy.
+
+The use of automated tools helps to increase the effectiveness and efficiency of the information location capability implemented within the system. Automation also helps organizations manage the data produced during information location activities and share such information across the organization. The output of automated information location tools can be used to guide and inform system architecture and design decisions.
+
+automated tools are used to identify {{ insert: param, cm-12.01_odp.01 }} on {{ insert: param, cm-12.01_odp.02 }} to ensure that controls are in place to protect organizational information and individual privacy.
+
+Configuration management policy
+
+procedures addressing identification and documentation of information location
+
+configuration management plan
+
+system design documentation
+
+PII inventory documentation
+
+data mapping documentation
+
+change control records
+
+system component inventory
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for managing information location
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+Organizational processes governing information location
+
+automated mechanisms enforcing policies and methods for governing information location
+
+automated tools used to identify information on system components
 

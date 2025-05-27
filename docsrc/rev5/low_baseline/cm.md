@@ -1,6 +1,8 @@
 # cm - Configuration Management
 
-## Base Controls
+* Controls: 9
+
+## Controls
 
 ### cm-1: Policy and Procedures
 
@@ -533,6 +535,4 @@ Organizational processes governing user-installed software on the system
 mechanisms enforcing policies and methods for governing the installation of software by users
 
 mechanisms monitoring policy compliance
-
-## Control Enhancements
 

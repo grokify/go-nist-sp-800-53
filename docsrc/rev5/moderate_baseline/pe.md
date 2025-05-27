@@ -1,6 +1,8 @@
 # pe - Physical and Environmental Protection
 
-## Base Controls
+* Controls: 18
+
+## Controls
 
 ### pe-1: Policy and Procedures
 
@@ -308,6 +310,48 @@ mechanisms supporting and/or implementing physical access monitoring
 
 mechanisms supporting and/or implementing the review of physical access logs
 
+### pe-6.1: Intrusion Alarms and Surveillance Equipment
+
+Monitor physical access to the facility where the system resides using physical intrusion alarms and surveillance equipment.
+
+Physical intrusion alarms can be employed to alert security personnel when unauthorized access to the facility is attempted. Alarm systems work in conjunction with physical barriers, physical access control systems, and security guards by triggering a response when these other forms of security have been compromised or breached. Physical intrusion alarms can include different types of sensor devices, such as motion sensors, contact sensors, and broken glass sensors. Surveillance equipment includes video cameras installed at strategic locations throughout the facility.
+
+physical access to the facility where the system resides is monitored using physical intrusion alarms;
+
+physical access to the facility where the system resides is monitored using physical surveillance equipment.
+
+Physical and environmental protection policy
+
+procedures addressing physical access monitoring
+
+physical access logs or records
+
+physical access monitoring records
+
+physical access log reviews
+
+system security plan
+
+privacy plan
+
+privacy impact assessment
+
+privacy risk assessment documentation
+
+other relevant documents or records
+
+Organizational personnel with physical access monitoring responsibilities
+
+organizational personnel with incident response responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+Organizational processes for monitoring physical intrusion alarms and surveillance equipment
+
+mechanisms supporting and/or implementing physical access monitoring
+
+mechanisms supporting and/or implementing physical intrusion alarms and surveillance equipment
+
 ### pe-8: Visitor Access Records
 
 Maintain visitor access records to the facility where the system resides for {{ insert: param, pe-08_odp.01 }};
@@ -514,6 +558,48 @@ organizational personnel with information security responsibilities
 
 Mechanisms supporting and/or implementing fire suppression/detection devices/systems
 
+### pe-13.1: Detection Systems — Automatic Activation and Notification
+
+Employ fire detection systems that activate automatically and notify {{ insert: param, pe-13.01_odp.01 }} and {{ insert: param, pe-13.01_odp.02 }} in the event of a fire.
+
+Organizations can identify personnel, roles, and emergency responders if individuals on the notification list need to have access authorizations or clearances (e.g., to enter to facilities where access is restricted due to the classification or impact level of information within the facility). Notification mechanisms may require independent energy sources to ensure that the notification capability is not adversely affected by the fire.
+
+fire detection systems that activate automatically are employed in the event of a fire;
+
+fire detection systems that notify {{ insert: param, pe-13.01_odp.01 }} automatically are employed in the event of a fire;
+
+fire detection systems that notify {{ insert: param, pe-13.01_odp.02 }} automatically are employed in the event of a fire.
+
+Physical and environmental protection policy
+
+procedures addressing fire protection
+
+facility housing the information system
+
+alarm service-level agreements
+
+test records of fire suppression and detection devices/systems
+
+fire suppression and detection devices/systems documentation
+
+alerts/notifications of fire events
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for fire detection and suppression devices/systems
+
+organizational personnel with responsibilities for notifying appropriate personnel, roles, and emergency responders of fires
+
+organizational personnel with information security responsibilities
+
+Mechanisms supporting and/or implementing fire detection devices/systems
+
+activation of fire detection devices/systems (simulated)
+
+automated notifications
+
 ### pe-14: Environmental Controls
 
 Maintain {{ insert: param, pe-14_odp.01 }} levels within the facility where the system resides at {{ insert: param, pe-14_odp.03 }} ; and
@@ -673,6 +759,4 @@ mechanisms supporting alternate work sites
 security and privacy controls employed at alternate work sites
 
 means of communication between personnel at alternate work sites and security and privacy personnel
-
-## Control Enhancements
 

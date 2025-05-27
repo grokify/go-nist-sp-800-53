@@ -1,6 +1,8 @@
 # ir - Incident Response
 
-## Base Controls
+* Controls: 7
+
+## Controls
 
 ### ir-1: Policy and Procedures
 
@@ -371,6 +373,4 @@ Organizational personnel with incident response planning responsibilities
 organizational personnel with information security and privacy responsibilities
 
 Organizational incident response plan and related organizational processes
-
-## Control Enhancements
 

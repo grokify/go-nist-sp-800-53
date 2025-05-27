@@ -1,6 +1,8 @@
 # pe - Physical and Environmental Protection
 
-## Base Controls
+* Controls: 10
+
+## Controls
 
 ### pe-1: Policy and Procedures
 
@@ -469,6 +471,4 @@ organizational personnel with information security responsibilities
 Organizational process for authorizing, monitoring, and controlling system-related items entering and exiting the facility
 
 mechanisms supporting and/or implementing, authorizing, monitoring, and controlling system-related items entering and exiting the facility
-
-## Control Enhancements
 

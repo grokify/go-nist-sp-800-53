@@ -1,6 +1,8 @@
 # ac - Access Control
 
-## Base Controls
+* Controls: 39
+
+## Controls
 
 ### ac-1: Policy and Procedures
 
@@ -216,6 +218,232 @@ Organizational processes for account management on the system
 
 mechanisms for implementing account management
 
+### ac-2.1: Automated System Account Management
+
+Support the management of system accounts using {{ insert: param, ac-02.01_odp }}.
+
+Automated system account management includes using automated mechanisms to create, enable, modify, disable, and remove accounts; notify account managers when an account is created, enabled, modified, disabled, or removed, or when users are terminated or transferred; monitor system account usage; and report atypical system account usage. Automated mechanisms can include internal system functions and email, telephonic, and text messaging notifications.
+
+the management of system accounts is supported using {{ insert: param, ac-02.01_odp }}.
+
+Access control policy
+
+procedures for addressing account management
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with account management responsibilities
+
+system/network administrators
+
+organizational personnel with information security with information security responsibilities
+
+system developers
+
+Automated mechanisms for implementing account management functions
+
+### ac-2.2: Automated Temporary and Emergency Account Management
+
+Automatically {{ insert: param, ac-02.02_odp.01 }} temporary and emergency accounts after {{ insert: param, ac-02.02_odp.02 }}.
+
+Management of temporary and emergency accounts includes the removal or disabling of such accounts automatically after a predefined time period rather than at the convenience of the system administrator. Automatic removal or disabling of accounts provides a more consistent implementation.
+
+temporary and emergency accounts are automatically {{ insert: param, ac-02.02_odp.01 }} after {{ insert: param, ac-02.02_odp.02 }}.
+
+Access control policy
+
+procedures for addressing account management
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system-generated list of temporary accounts removed and/or disabled
+
+system-generated list of emergency accounts removed and/or disabled
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with account management responsibilities
+
+system/network administrators
+
+organizational personnel with information security with information security responsibilities
+
+system developers
+
+Automated mechanisms for implementing account management functions
+
+### ac-2.3: Disable Accounts
+
+Disable accounts within {{ insert: param, ac-02.03_odp.01 }} when the accounts:
+
+Have expired;
+
+Are no longer associated with a user or individual;
+
+Are in violation of organizational policy; or
+
+Have been inactive for {{ insert: param, ac-02.03_odp.02 }}.
+
+Disabling expired, inactive, or otherwise anomalous accounts supports the concepts of least privilege and least functionality which reduce the attack surface of the system.
+
+accounts are disabled within {{ insert: param, ac-02.03_odp.01 }} when the accounts have expired;
+
+accounts are disabled within {{ insert: param, ac-02.03_odp.01 }} when the accounts are no longer associated with a user or individual;
+
+accounts are disabled within {{ insert: param, ac-02.03_odp.01 }} when the accounts are in violation of organizational policy;
+
+accounts are disabled within {{ insert: param, ac-02.03_odp.01 }} when the accounts have been inactive for {{ insert: param, ac-02.03_odp.02 }}.
+
+Access control policy
+
+procedures for addressing account management
+
+system security plan
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system-generated list of accounts removed
+
+system-generated list of emergency accounts disabled
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with account management responsibilities
+
+system/network administrators
+
+organizational personnel with information security responsibilities
+
+system developers
+
+Mechanisms for implementing account management functions
+
+### ac-2.4: Automated Audit Actions
+
+Automatically audit account creation, modification, enabling, disabling, and removal actions.
+
+Account management audit records are defined in accordance with [AU-02](#au-2) and reviewed, analyzed, and reported in accordance with [AU-06](#au-6).
+
+account creation is automatically audited;
+
+account modification is automatically audited;
+
+account enabling is automatically audited;
+
+account disabling is automatically audited;
+
+account removal actions are automatically audited.
+
+Access control policy
+
+procedures addressing account management
+
+system design documentation
+
+system configuration settings and associated documentation
+
+notifications/alerts of account creation, modification, enabling, disabling, and removal actions
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with account management responsibilities
+
+system/network administrators
+
+organizational personnel with information security responsibilities
+
+Automated mechanisms implementing account management functions
+
+### ac-2.5: Inactivity Logout
+
+Require that users log out when {{ insert: param, ac-02.05_odp }}.
+
+Inactivity logout is behavior- or policy-based and requires users to take physical action to log out when they are expecting inactivity longer than the defined period. Automatic enforcement of inactivity logout is addressed by [AC-11](#ac-11).
+
+users are required to log out when {{ insert: param, ac-02.05_odp }}.
+
+Access control policy
+
+procedures addressing account management
+
+system design documentation
+
+system configuration settings and associated documentation
+
+security violation reports
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with account management responsibilities
+
+system/network administrators
+
+organizational personnel with information security responsibilities
+
+users that must comply with inactivity logout policy
+
+### ac-2.13: Disable Accounts for High-risk Individuals
+
+Disable accounts of individuals within {{ insert: param, ac-02.13_odp.01 }} of discovery of {{ insert: param, ac-02.13_odp.02 }}.
+
+Users who pose a significant security and/or privacy risk include individuals for whom reliable evidence indicates either the intention to use authorized access to systems to cause harm or through whom adversaries will cause harm. Such harm includes adverse impacts to organizational operations, organizational assets, individuals, other organizations, or the Nation. Close coordination among system administrators, legal staff, human resource managers, and authorizing officials is essential when disabling system accounts for high-risk individuals.
+
+accounts of individuals are disabled within {{ insert: param, ac-02.13_odp.01 }} of discovery of {{ insert: param, ac-02.13_odp.02 }}.
+
+Access control policy
+
+procedures addressing account management
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system-generated list of disabled accounts
+
+list of user activities posing significant organizational risk
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with account management responsibilities
+
+system/network administrators
+
+organizational personnel with information security responsibilities
+
+Mechanisms implementing account management functions
+
 ### ac-3: Access Enforcement
 
 Enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.
@@ -363,6 +591,216 @@ organizational personnel with information security responsibilities
 system/network administrators
 
 Mechanisms implementing least privilege functions
+
+### ac-6.1: Authorize Access to Security Functions
+
+Authorize access for {{ insert: param, ac-06.01_odp.01 }} to:
+
+ {{ insert: param, ac-6.1_prm_2 }} ; and
+
+ {{ insert: param, ac-06.01_odp.05 }}.
+
+Security functions include establishing system accounts, configuring access authorizations (i.e., permissions, privileges), configuring settings for events to be audited, and establishing intrusion detection parameters. Security-relevant information includes filtering rules for routers or firewalls, configuration parameters for security services, cryptographic key management information, and access control lists. Authorized personnel include security administrators, system administrators, system security officers, system programmers, and other privileged users.
+
+access is authorized for {{ insert: param, ac-06.01_odp.01 }} to {{ insert: param, ac-06.01_odp.02 }};
+
+access is authorized for {{ insert: param, ac-06.01_odp.01 }} to {{ insert: param, ac-06.01_odp.03 }};
+
+access is authorized for {{ insert: param, ac-06.01_odp.01 }} to {{ insert: param, ac-06.01_odp.04 }};
+
+access is authorized for {{ insert: param, ac-06.01_odp.01 }} to {{ insert: param, ac-06.01_odp.05 }}.
+
+Access control policy
+
+procedures addressing least privilege
+
+list of security functions (deployed in hardware, software, and firmware) and security-relevant information for which access must be explicitly authorized
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for defining least privileges necessary to accomplish specified tasks
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+Mechanisms implementing least privilege functions
+
+### ac-6.2: Non-privileged Access for Nonsecurity Functions
+
+Require that users of system accounts (or roles) with access to {{ insert: param, ac-06.02_odp }} use non-privileged accounts or roles, when accessing nonsecurity functions.
+
+Requiring the use of non-privileged accounts when accessing nonsecurity functions limits exposure when operating from within privileged accounts or roles. The inclusion of roles addresses situations where organizations implement access control policies, such as role-based access control, and where a change of role provides the same degree of assurance in the change of access authorizations for the user and the processes acting on behalf of the user as would be provided by a change between a privileged and non-privileged account.
+
+users of system accounts (or roles) with access to {{ insert: param, ac-06.02_odp }} are required to use non-privileged accounts or roles when accessing non-security functions.
+
+Access control policy
+
+procedures addressing least privilege
+
+list of system-generated security functions or security-relevant information assigned to system accounts or roles
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for defining least privileges necessary to accomplish specified tasks
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+Mechanisms implementing least privilege functions
+
+### ac-6.5: Privileged Accounts
+
+Restrict privileged accounts on the system to {{ insert: param, ac-06.05_odp }}.
+
+Privileged accounts, including super user accounts, are typically described as system administrator for various types of commercial off-the-shelf operating systems. Restricting privileged accounts to specific personnel or roles prevents day-to-day users from accessing privileged information or privileged functions. Organizations may differentiate in the application of restricting privileged accounts between allowed privileges for local accounts and for domain accounts provided that they retain the ability to control system configurations for key parameters and as otherwise necessary to sufficiently mitigate risk.
+
+privileged accounts on the system are restricted to {{ insert: param, ac-06.05_odp }}.
+
+Access control policy
+
+procedures addressing least privilege
+
+list of system-generated privileged accounts
+
+list of system administration personnel
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for defining least privileges necessary to accomplish specified tasks
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+Mechanisms implementing least privilege functions
+
+### ac-6.7: Review of User Privileges
+
+Review {{ insert: param, ac-06.07_odp.01 }} the privileges assigned to {{ insert: param, ac-06.07_odp.02 }} to validate the need for such privileges; and
+
+Reassign or remove privileges, if necessary, to correctly reflect organizational mission and business needs.
+
+The need for certain assigned user privileges may change over time to reflect changes in organizational mission and business functions, environments of operation, technologies, or threats. A periodic review of assigned user privileges is necessary to determine if the rationale for assigning such privileges remains valid. If the need cannot be revalidated, organizations take appropriate corrective actions.
+
+privileges assigned to {{ insert: param, ac-06.07_odp.02 }} are reviewed {{ insert: param, ac-06.07_odp.01 }} to validate the need for such privileges;
+
+privileges are reassigned or removed, if necessary, to correctly reflect organizational mission and business needs.
+
+Access control policy
+
+procedures addressing least privilege
+
+list of system-generated roles or classes of users and assigned privileges
+
+system design documentation
+
+system configuration settings and associated documentation
+
+validation reviews of privileges assigned to roles or classes or users
+
+records of privilege removals or reassignments for roles or classes of users
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for reviewing least privileges necessary to accomplish specified tasks
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+Mechanisms implementing review of user privileges
+
+### ac-6.9: Log Use of Privileged Functions
+
+Log the execution of privileged functions.
+
+The misuse of privileged functions, either intentionally or unintentionally by authorized users or by unauthorized external entities that have compromised system accounts, is a serious and ongoing concern and can have significant adverse impacts on organizations. Logging and analyzing the use of privileged functions is one way to detect such misuse and, in doing so, help mitigate the risk from insider threats and the advanced persistent threat.
+
+the execution of privileged functions is logged.
+
+Access control policy
+
+procedures addressing least privilege
+
+system design documentation
+
+system configuration settings and associated documentation
+
+list of privileged functions to be audited
+
+list of audited events
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for reviewing least privileges necessary to accomplish specified tasks
+
+organizational personnel with information security responsibilities
+
+system/network administrators
+
+system developers
+
+Mechanisms auditing the execution of least privilege functions
+
+### ac-6.10: Prohibit Non-privileged Users from Executing Privileged Functions
+
+Prevent non-privileged users from executing privileged functions.
+
+Privileged functions include disabling, circumventing, or altering implemented security or privacy controls, establishing system accounts, performing system integrity checks, and administering cryptographic key management activities. Non-privileged users are individuals who do not possess appropriate authorizations. Privileged functions that require protection from non-privileged users include circumventing intrusion detection and prevention mechanisms or malicious code protection mechanisms. Preventing non-privileged users from executing privileged functions is enforced by [AC-3](#ac-3).
+
+non-privileged users are prevented from executing privileged functions.
+
+Access control policy
+
+procedures addressing least privilege
+
+system design documentation
+
+system configuration settings and associated documentation
+
+list of privileged functions and associated user account assignments
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for defining least privileges necessary to accomplish specified tasks
+
+organizational personnel with information security responsibilities
+
+system developers
+
+Mechanisms implementing least privilege functions for non-privileged users
 
 ### ac-7: Unsuccessful Logon Attempts
 
@@ -512,6 +950,36 @@ system developers
 
 Mechanisms implementing access control policy for session lock
 
+### ac-11.1: Pattern-hiding Displays
+
+Conceal, via the device lock, information previously visible on the display with a publicly viewable image.
+
+The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed.
+
+information previously visible on the display is concealed, via device lock, with a publicly viewable image.
+
+Access control policy
+
+procedures addressing session lock
+
+display screen with session lock activated
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+system developers
+
+System session lock mechanisms
+
 ### ac-12: Session Termination
 
 Automatically terminate a user session after {{ insert: param, ac-12_odp }}.
@@ -618,6 +1086,140 @@ organizational personnel with information security responsibilities
 
 Remote access management capability for the system
 
+### ac-17.1: Monitoring and Control
+
+Employ automated mechanisms to monitor and control remote access methods.
+
+Monitoring and control of remote access methods allows organizations to detect attacks and help ensure compliance with remote access policies by auditing the connection activities of remote users on a variety of system components, including servers, notebook computers, workstations, smart phones, and tablets. Audit logging for remote access is enforced by [AU-2](#au-2) . Audit events are defined in [AU-2a](#au-2_smt.a).
+
+automated mechanisms are employed to monitor remote access methods;
+
+automated mechanisms are employed to control remote access methods.
+
+Access control policy
+
+procedures addressing remote access to the system
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+system monitoring records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+system developers
+
+Automated mechanisms monitoring and controlling remote access methods
+
+### ac-17.2: Protection of Confidentiality and Integrity Using Encryption
+
+Implement cryptographic mechanisms to protect the confidentiality and integrity of remote access sessions.
+
+Virtual private networks can be used to protect the confidentiality and integrity of remote access sessions. Transport Layer Security (TLS) is an example of a cryptographic protocol that provides end-to-end communications security over networks and is used for Internet communications and online transactions.
+
+cryptographic mechanisms are implemented to protect the confidentiality and integrity of remote access sessions.
+
+Access control policy
+
+procedures addressing remote access to the system
+
+system design documentation
+
+system configuration settings and associated documentation
+
+cryptographic mechanisms and associated configuration documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+system developers
+
+Cryptographic mechanisms protecting confidentiality and integrity of remote access sessions
+
+### ac-17.3: Managed Access Control Points
+
+Route remote accesses through authorized and managed network access control points.
+
+Organizations consider the Trusted Internet Connections (TIC) initiative [DHS TIC](#4f42ee6e-86cc-403b-a51f-76c2b4f81b54) requirements for external network connections since limiting the number of access control points for remote access reduces attack surfaces.
+
+remote accesses are routed through authorized and managed network access control points.
+
+Access control policy
+
+procedures addressing remote access to the system
+
+system design documentation
+
+list of all managed network access control points
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+Mechanisms routing all remote accesses through managed network access control points
+
+### ac-17.4: Privileged Commands and Access
+
+Authorize the execution of privileged commands and access to security-relevant information via remote access only in a format that provides assessable evidence and for the following needs: {{ insert: param, ac-17.4_prm_1 }} ; and
+
+Document the rationale for remote access in the security plan for the system.
+
+Remote access to systems represents a significant potential vulnerability that can be exploited by adversaries. As such, restricting the execution of privileged commands and access to security-relevant information via remote access reduces the exposure of the organization and the susceptibility to threats by adversaries to the remote access capability.
+
+the execution of privileged commands via remote access is authorized only in a format that provides assessable evidence;
+
+access to security-relevant information via remote access is authorized only in a format that provides assessable evidence;
+
+the execution of privileged commands via remote access is authorized only for the following needs: {{ insert: param, ac-17.04_odp.01 }};
+
+access to security-relevant information via remote access is authorized only for the following needs: {{ insert: param, ac-17.04_odp.02 }};
+
+the rationale for remote access is documented in the security plan for the system.
+
+Access control policy
+
+procedures addressing remote access to the system
+
+system configuration settings and associated documentation
+
+security plan
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+Mechanisms implementing remote access management
+
 ### ac-18: Wireless Access
 
 Establish configuration requirements, connection requirements, and implementation guidance for each type of wireless access; and
@@ -657,6 +1259,66 @@ Organizational personnel with responsibilities for managing wireless access conn
 organizational personnel with information security responsibilities
 
 Wireless access management capability for the system
+
+### ac-18.1: Authentication and Encryption
+
+Protect wireless access to the system using authentication of {{ insert: param, ac-18.01_odp }} and encryption.
+
+Wireless networking capabilities represent a significant potential vulnerability that can be exploited by adversaries. To protect systems with wireless access points, strong authentication of users and devices along with strong encryption can reduce susceptibility to threats by adversaries involving wireless technologies.
+
+wireless access to the system is protected using authentication of {{ insert: param, ac-18.01_odp }};
+
+wireless access to the system is protected using encryption.
+
+Access control policy
+
+procedures addressing wireless implementation and usage (including restrictions)
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+system developers
+
+Mechanisms implementing wireless access protections to the system
+
+### ac-18.3: Disable Wireless Networking
+
+Disable, when not intended for use, wireless networking capabilities embedded within system components prior to issuance and deployment.
+
+Wireless networking capabilities that are embedded within system components represent a significant potential vulnerability that can be exploited by adversaries. Disabling wireless capabilities when not needed for essential organizational missions or functions can reduce susceptibility to threats by adversaries involving wireless technologies.
+
+when not intended for use, wireless networking capabilities embedded within system components are disabled prior to issuance and deployment.
+
+Access control policy
+
+procedures addressing wireless implementation and usage (including restrictions)
+
+system design documentation
+
+system configuration settings and associated documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+Mechanisms managing the disabling of wireless networking capabilities internally embedded within system components
 
 ### ac-19: Access Control for Mobile Devices
 
@@ -706,6 +1368,38 @@ Access control capability for mobile device connections to organizational system
 
 configurations of mobile devices
 
+### ac-19.5: Full Device or Container-based Encryption
+
+Employ {{ insert: param, ac-19.05_odp.01 }} to protect the confidentiality and integrity of information on {{ insert: param, ac-19.05_odp.02 }}.
+
+Container-based encryption provides a more fine-grained approach to data and information encryption on mobile devices, including encrypting selected data structures such as files, records, or fields.
+
+ {{ insert: param, ac-19.05_odp.01 }} is employed to protect the confidentiality and integrity of information on {{ insert: param, ac-19.05_odp.02 }}.
+
+Access control policy
+
+procedures addressing access control for mobile devices
+
+system design documentation
+
+system configuration settings and associated documentation
+
+encryption mechanisms and associated configuration documentation
+
+system audit records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with access control responsibilities for mobile devices
+
+system/network administrators
+
+organizational personnel with information security responsibilities
+
+Encryption mechanisms protecting confidentiality and integrity of information on mobile devices
+
 ### ac-20: Use of External Systems
 
  {{ insert: param, ac-20_odp.01 }} , consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems, allowing authorized individuals to:
@@ -751,6 +1445,68 @@ system/network administrators
 organizational personnel with information security responsibilities
 
 Mechanisms implementing terms and conditions on the use of external systems
+
+### ac-20.1: Limits on Authorized Use
+
+Permit authorized individuals to use an external system to access the system or to process, store, or transmit organization-controlled information only after:
+
+Verification of the implementation of controls on the external system as specified in the organization’s security and privacy policies and security and privacy plans; or
+
+Retention of approved system connection or processing agreements with the organizational entity hosting the external system.
+
+Limiting authorized use recognizes circumstances where individuals using external systems may need to access organizational systems. Organizations need assurance that the external systems contain the necessary controls so as not to compromise, damage, or otherwise harm organizational systems. Verification that the required controls have been implemented can be achieved by external, independent assessments, attestations, or other means, depending on the confidence level required by organizations.
+
+authorized individuals are permitted to use an external system to access the system or to process, store, or transmit organization-controlled information only after verification of the implementation of controls on the external system as specified in the organization’s security and privacy policies and security and privacy plans (if applicable);
+
+authorized individuals are permitted to use an external system to access the system or to process, store, or transmit organization-controlled information only after retention of approved system connection or processing agreements with the organizational entity hosting the external system (if applicable).
+
+Access control policy
+
+procedures addressing the use of external systems
+
+system connection or processing agreements
+
+account management documents
+
+system security plan
+
+other relevant documents or records
+
+System/network administrators
+
+organizational personnel with information security responsibilities
+
+Mechanisms implementing limits on use of external systems
+
+### ac-20.2: Portable Storage Devices — Restricted Use
+
+Restrict the use of organization-controlled portable storage devices by authorized individuals on external systems using {{ insert: param, ac-20.02_odp }}.
+
+Limits on the use of organization-controlled portable storage devices in external systems include restrictions on how the devices may be used and under what conditions the devices may be used.
+
+the use of organization-controlled portable storage devices by authorized individuals is restricted on external systems using {{ insert: param, ac-20.02_odp }}.
+
+Access control policy
+
+procedures addressing the use of external systems
+
+system configuration settings and associated documentation
+
+system connection or processing agreements
+
+account management documents
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for restricting or prohibiting the use of organization-controlled storage devices on external systems
+
+system/network administrators
+
+organizational personnel with information security responsibilities
+
+Mechanisms implementing restrictions on the use of portable storage devices
 
 ### ac-21: Information Sharing
 
@@ -847,6 +1603,4 @@ Organizational personnel with responsibilities for managing publicly accessible 
 organizational personnel with information security responsibilities
 
 Mechanisms implementing management of publicly accessible content
-
-## Control Enhancements
 

@@ -1,6 +1,8 @@
 # ps - Personnel Security
 
-## Base Controls
+* Controls: 9
+
+## Controls
 
 ### ps-1: Policy and Procedures
 
@@ -427,6 +429,4 @@ organizational personnel with information security and privacy responsibilities
 organizational personnel with human capital management responsibilities
 
 Organizational processes for managing position descriptions
-
-## Control Enhancements
 
