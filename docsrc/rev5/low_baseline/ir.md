@@ -1,4 +1,4 @@
-# ir - Incident Response
+# IR - Incident Response
 
 * Controls: 7
 

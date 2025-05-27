@@ -1,4 +1,4 @@
-# sr - Supply Chain Risk Management
+# SR - Supply Chain Risk Management
 
 * Controls: 14
 

@@ -1,4 +1,4 @@
-# si - System and Information Integrity
+# SI - System and Information Integrity
 
 * Controls: 18
 

@@ -1,4 +1,4 @@
-# ca - Assessment, Authorization, and Monitoring
+# CA - Assessment, Authorization, and Monitoring
 
 * Controls: 14
 

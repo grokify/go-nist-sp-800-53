@@ -1,4 +1,4 @@
-# pe - Physical and Environmental Protection
+# PE - Physical and Environmental Protection
 
 * Controls: 18
 

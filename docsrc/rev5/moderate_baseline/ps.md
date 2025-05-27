@@ -1,4 +1,4 @@
-# ps - Personnel Security
+# PS - Personnel Security
 
 * Controls: 9
 

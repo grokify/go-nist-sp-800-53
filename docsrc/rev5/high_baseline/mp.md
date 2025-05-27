@@ -1,4 +1,4 @@
-# mp - Media Protection
+# MP - Media Protection
 
 * Controls: 10
 

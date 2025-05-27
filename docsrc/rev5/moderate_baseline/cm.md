@@ -1,4 +1,4 @@
-# cm - Configuration Management
+# CM - Configuration Management
 
 * Controls: 24
 

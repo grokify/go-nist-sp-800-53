@@ -1,4 +1,4 @@
-# cp - Contingency Planning
+# CP - Contingency Planning
 
 * Controls: 6
 

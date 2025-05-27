@@ -1,4 +1,4 @@
-# sc - System and Communications Protection
+# SC - System and Communications Protection
 
 * Controls: 10
 

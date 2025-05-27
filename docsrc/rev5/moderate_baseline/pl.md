@@ -1,4 +1,4 @@
-# pl - Planning
+# PL - Planning
 
 * Controls: 7
 
