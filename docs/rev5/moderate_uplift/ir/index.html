@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://grokify.github.io/go-nist-sp-800-53/rev5/moderate_uplift/ir/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>IR: Incident Response (6) - NIST SP 800-53 Control Reference Site</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "IR: Incident Response (6)";
+        var mkdocs_page_input_path = "rev5/moderate_uplift/ir.md";
+        var mkdocs_page_url = "/go-nist-sp-800-53/rev5/moderate_uplift/ir/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> NIST SP 800-53 Control Reference Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ac/">AC: Access Control (46)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/au/">AU: Audit and Accountability (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ca/">CA: Assessment, Authorization, and Monitoring (14)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cm/">CM: Configuration Management (32)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cp/">CP: Contingency Planning (35)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ia/">IA: Identification and Authentication (26)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ir/">IR: Incident Response (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ma/">MA: Maintenance (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/mp/">MP: Media Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pe/">PE: Physical and Environmental Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ps/">PS: Personnel Security (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ra/">RA: Risk Assessment (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sa/">SA: System and Services Acquisition (21)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sc/">SC: System and Communications Protection (30)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/si/">SI: System and Information Integrity (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sr/">SR: Supply Chain Risk Management (14)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ac/">AC: Access Control (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/at/">AT: Awareness and Training (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/au/">AU: Audit and Accountability (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ca/">CA: Assessment, Authorization, and Monitoring (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cm/">CM: Configuration Management (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cp/">CP: Contingency Planning (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ia/">IA: Identification and Authentication (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ir/">IR: Incident Response (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ma/">MA: Maintenance (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pe/">PE: Physical and Environmental Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pl/">PL: Planning (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ps/">PS: Personnel Security (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ra/">RA: Risk Assessment (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sa/">SA: System and Services Acquisition (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sc/">SC: System and Communications Protection (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/si/">SI: System and Information Integrity (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sr/">SR: Supply Chain Risk Management (2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ac/">AC: Access Control (39)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/au/">AU: Audit and Accountability (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ca/">CA: Assessment, Authorization, and Monitoring (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cm/">CM: Configuration Management (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cp/">CP: Contingency Planning (23)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ia/">IA: Identification and Authentication (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ir/">IR: Incident Response (13)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ma/">MA: Maintenance (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/mp/">MP: Media Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pe/">PE: Physical and Environmental Protection (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ra/">RA: Risk Assessment (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sa/">SA: System and Services Acquisition (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sc/">SC: System and Communications Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/si/">SI: System and Information Integrity (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sr/">SR: Supply Chain Risk Management (12)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Uplift</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ac/">AC: Access Control (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../at/">AT: Awareness and Training (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../au/">AU: Audit and Accountability (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ca/">CA: Assessment, Authorization, and Monitoring (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cm/">CM: Configuration Management (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cp/">CP: Contingency Planning (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ia/">IA: Identification and Authentication (8)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">IR: Incident Response (6)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ir-3-incident-response-testing">IR-3: Incident Response Testing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ir-3-2-coordination-with-related-plans">IR-3 (2): Coordination with Related Plans</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ir-4-1-automated-incident-handling-processes">IR-4 (1): Automated Incident Handling Processes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ir-6-1-automated-reporting">IR-6 (1): Automated Reporting</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ir-6-3-supply-chain-coordination">IR-6 (3): Supply Chain Coordination</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ir-7-1-automation-support-for-availability-of-information-and-support">IR-7 (1): Automation Support for Availability of Information and Support</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ma/">MA: Maintenance (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pe/">PE: Physical and Environmental Protection (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pl/">PL: Planning (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ps/">PS: Personnel Security (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ra/">RA: Risk Assessment (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sa/">SA: System and Services Acquisition (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sc/">SC: System and Communications Protection (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../si/">SI: System and Information Integrity (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sr/">SR: Supply Chain Risk Management (1)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Low Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ac/">AC: Access Control (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/at/">AT: Awareness and Training (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/au/">AU: Audit and Accountability (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ca/">CA: Assessment, Authorization, and Monitoring (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cm/">CM: Configuration Management (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cp/">CP: Contingency Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ia/">IA: Identification and Authentication (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ir/">IR: Incident Response (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ma/">MA: Maintenance (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/mp/">MP: Media Protection (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pe/">PE: Physical and Environmental Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pl/">PL: Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ra/">RA: Risk Assessment (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sa/">SA: System and Services Acquisition (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sc/">SC: System and Communications Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/si/">SI: System and Information Integrity (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sr/">SR: Supply Chain Risk Management (11)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NIST SP 800-53 Control Reference Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Moderate Uplift &raquo;</li><li>IR: Incident Response (6)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ir-incident-response">IR - Incident Response</h1>
+<ul>
+<li>Controls: 6</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<h3 id="ir-3-incident-response-testing">IR-3: Incident Response Testing</h3>
+<p>Test the effectiveness of the incident response capability for the system {{ insert: param, ir-03_odp.01 }} using the following tests: {{ insert: param, ir-03_odp.02 }}.</p>
+<p>Organizations test incident response capabilities to determine their effectiveness and identify potential weaknesses or deficiencies. Incident response testing includes the use of checklists, walk-through or tabletop exercises, and simulations (parallel or full interrupt). Incident response testing can include a determination of the effects on organizational operations and assets and individuals due to incident response. The use of qualitative and quantitative data aids in determining the effectiveness of incident response processes.</p>
+<p>the effectiveness of the incident response capability for the system is tested {{ insert: param, ir-03_odp.01 }} using {{ insert: param, ir-03_odp.02 }}.</p>
+<p>Incident response policy</p>
+<p>contingency planning policy</p>
+<p>procedures addressing incident response testing</p>
+<p>procedures addressing contingency plan testing</p>
+<p>incident response testing material</p>
+<p>incident response test results</p>
+<p>incident response test plan</p>
+<p>incident response plan</p>
+<p>contingency plan</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with incident response testing responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<h3 id="ir-3-2-coordination-with-related-plans">IR-3 (2): Coordination with Related Plans</h3>
+<p>Coordinate incident response testing with organizational elements responsible for related plans.</p>
+<p>Organizational plans related to incident response testing include business continuity plans, disaster recovery plans, continuity of operations plans, contingency plans, crisis communications plans, critical infrastructure plans, and occupant emergency plans.</p>
+<p>incident response testing is coordinated with organizational elements responsible for related plans.</p>
+<p>Incident response policy</p>
+<p>contingency planning policy</p>
+<p>procedures addressing incident response testing</p>
+<p>incident response testing documentation</p>
+<p>incident response plan</p>
+<p>business continuity plans</p>
+<p>contingency plans</p>
+<p>disaster recovery plans</p>
+<p>continuity of operations plans</p>
+<p>crisis communications plans</p>
+<p>critical infrastructure plans</p>
+<p>occupant emergency plans</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with incident response testing responsibilities</p>
+<p>organizational personnel with responsibilities for testing organizational plans related to incident response testing</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<h3 id="ir-4-1-automated-incident-handling-processes">IR-4 (1): Automated Incident Handling Processes</h3>
+<p>Support the incident handling process using {{ insert: param, ir-04.01_odp }}.</p>
+<p>Automated mechanisms that support incident handling processes include online incident management systems and tools that support the collection of live response data, full network packet capture, and forensic analysis.</p>
+<p>the incident handling process is supported using {{ insert: param, ir-04.01_odp }}.</p>
+<p>Incident response policy</p>
+<p>procedures addressing incident handling</p>
+<p>automated mechanisms supporting incident handling</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>incident response plan</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with incident handling responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Automated mechanisms that support and/or implement the incident handling process</p>
+<h3 id="ir-6-1-automated-reporting">IR-6 (1): Automated Reporting</h3>
+<p>Report incidents using {{ insert: param, ir-06.01_odp }}.</p>
+<p>The recipients of incident reports are specified in <a href="#ir-6_smt.b">IR-6b</a> . Automated reporting mechanisms include email, posting on websites (with automatic updates), and automated incident response tools and programs.</p>
+<p>incidents are reported using {{ insert: param, ir-06.01_odp }}.</p>
+<p>Incident response policy</p>
+<p>procedures addressing incident reporting</p>
+<p>automated mechanisms supporting incident reporting</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>incident response plan</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with incident reporting responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for incident reporting</p>
+<p>automated mechanisms supporting and/or implementing the reporting of security incidents</p>
+<h3 id="ir-6-3-supply-chain-coordination">IR-6 (3): Supply Chain Coordination</h3>
+<p>Provide incident information to the provider of the product or service and other organizations involved in the supply chain or supply chain governance for systems or system components related to the incident.</p>
+<p>Organizations involved in supply chain activities include product developers, system integrators, manufacturers, packagers, assemblers, distributors, vendors, and resellers. Entities that provide supply chain governance include the Federal Acquisition Security Council (FASC). Supply chain incidents include compromises or breaches that involve information technology products, system components, development processes or personnel, distribution processes, or warehousing facilities. Organizations determine the appropriate information to share and consider the value gained from informing external organizations about supply chain incidents, including the ability to improve processes or to identify the root cause of an incident.</p>
+<p>incident information is provided to the provider of the product or service and other organizations involved in the supply chain or supply chain governance for systems or system components related to the incident.</p>
+<p>Incident response policy</p>
+<p>procedures addressing supply chain coordination and supply chain risk information sharing with the Federal Acquisition Security Council</p>
+<p>acquisition policy</p>
+<p>acquisition contracts</p>
+<p>service-level agreements</p>
+<p>incident response plan</p>
+<p>supply chain risk management plan</p>
+<p>system security plan</p>
+<p>plans of other organizations involved in supply chain activities</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with incident reporting responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>organizational personnel with supply chain risk management responsibilities</p>
+<p>organization personnel with acquisition responsibilities</p>
+<p>Organizational processes for incident reporting</p>
+<p>organizational processes for supply chain risk information sharing</p>
+<p>mechanisms supporting and/or implementing the reporting of incident information involved in the supply chain</p>
+<h3 id="ir-7-1-automation-support-for-availability-of-information-and-support">IR-7 (1): Automation Support for Availability of Information and Support</h3>
+<p>Increase the availability of incident response information and support using {{ insert: param, ir-07.01_odp }}.</p>
+<p>Automated mechanisms can provide a push or pull capability for users to obtain incident response assistance. For example, individuals may have access to a website to query the assistance capability, or the assistance capability can proactively send incident response information to users (general distribution or targeted) as part of increasing understanding of current response capabilities and support.</p>
+<p>the availability of incident response information and support is increased using {{ insert: param, ir-07.01_odp }}.</p>
+<p>Incident response policy</p>
+<p>procedures addressing incident response assistance</p>
+<p>automated mechanisms supporting incident response support and assistance</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>incident response plan</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with incident response support and assistance responsibilities</p>
+<p>organizational personnel with access to incident response support and assistance capability</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for incident response assistance</p>
+<p>automated mechanisms supporting and/or implementing an increase in the availability of incident response information and support</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ia/" class="btn btn-neutral float-left" title="IA: Identification and Authentication (8)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ma/" class="btn btn-neutral float-right" title="MA: Maintenance (5)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ia/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ma/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://grokify.github.io/go-nist-sp-800-53/rev5/moderate_baseline/sa/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>SA: System and Services Acquisition (17) - NIST SP 800-53 Control Reference Site</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "SA: System and Services Acquisition (17)";
+        var mkdocs_page_input_path = "rev5/moderate_baseline/sa.md";
+        var mkdocs_page_url = "/go-nist-sp-800-53/rev5/moderate_baseline/sa/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> NIST SP 800-53 Control Reference Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ac/">AC: Access Control (46)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/au/">AU: Audit and Accountability (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ca/">CA: Assessment, Authorization, and Monitoring (14)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cm/">CM: Configuration Management (32)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cp/">CP: Contingency Planning (35)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ia/">IA: Identification and Authentication (26)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ir/">IR: Incident Response (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ma/">MA: Maintenance (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/mp/">MP: Media Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pe/">PE: Physical and Environmental Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ps/">PS: Personnel Security (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ra/">RA: Risk Assessment (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sa/">SA: System and Services Acquisition (21)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sc/">SC: System and Communications Protection (30)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/si/">SI: System and Information Integrity (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sr/">SR: Supply Chain Risk Management (14)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ac/">AC: Access Control (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/at/">AT: Awareness and Training (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/au/">AU: Audit and Accountability (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ca/">CA: Assessment, Authorization, and Monitoring (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cm/">CM: Configuration Management (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cp/">CP: Contingency Planning (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ia/">IA: Identification and Authentication (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ir/">IR: Incident Response (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ma/">MA: Maintenance (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pe/">PE: Physical and Environmental Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pl/">PL: Planning (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ps/">PS: Personnel Security (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ra/">RA: Risk Assessment (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sa/">SA: System and Services Acquisition (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sc/">SC: System and Communications Protection (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/si/">SI: System and Information Integrity (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sr/">SR: Supply Chain Risk Management (2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Baseline</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ac/">AC: Access Control (39)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../au/">AU: Audit and Accountability (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ca/">CA: Assessment, Authorization, and Monitoring (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cm/">CM: Configuration Management (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cp/">CP: Contingency Planning (23)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ia/">IA: Identification and Authentication (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ir/">IR: Incident Response (13)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ma/">MA: Maintenance (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mp/">MP: Media Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pe/">PE: Physical and Environmental Protection (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ra/">RA: Risk Assessment (10)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">SA: System and Services Acquisition (17)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-1-policy-and-procedures">SA-1: Policy and Procedures</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-2-allocation-of-resources">SA-2: Allocation of Resources</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-3-system-development-life-cycle">SA-3: System Development Life Cycle</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-4-acquisition-process">SA-4: Acquisition Process</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-4-1-functional-properties-of-controls">SA-4 (1): Functional Properties of Controls</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-4-2-design-and-implementation-information-for-controls">SA-4 (2): Design and Implementation Information for Controls</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-4-9-functions-ports-protocols-and-services-in-use">SA-4 (9): Functions, Ports, Protocols, and Services in Use</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-4-10-use-of-approved-piv-products">SA-4 (10): Use of Approved PIV Products</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-5-system-documentation">SA-5: System Documentation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-8-security-and-privacy-engineering-principles">SA-8: Security and Privacy Engineering Principles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-9-external-system-services">SA-9: External System Services</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-9-2-identification-of-functions-ports-protocols-and-services">SA-9 (2): Identification of Functions, Ports, Protocols, and Services</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-10-developer-configuration-management">SA-10: Developer Configuration Management</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-11-developer-testing-and-evaluation">SA-11: Developer Testing and Evaluation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-15-development-process-standards-and-tools">SA-15: Development Process, Standards, and Tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-15-3-criticality-analysis">SA-15 (3): Criticality Analysis</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sa-22-unsupported-system-components">SA-22: Unsupported System Components</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sc/">SC: System and Communications Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../si/">SI: System and Information Integrity (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sr/">SR: Supply Chain Risk Management (12)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ac/">AC: Access Control (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/at/">AT: Awareness and Training (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/au/">AU: Audit and Accountability (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ca/">CA: Assessment, Authorization, and Monitoring (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cm/">CM: Configuration Management (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cp/">CP: Contingency Planning (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ia/">IA: Identification and Authentication (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ir/">IR: Incident Response (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ma/">MA: Maintenance (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pe/">PE: Physical and Environmental Protection (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pl/">PL: Planning (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ps/">PS: Personnel Security (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ra/">RA: Risk Assessment (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sa/">SA: System and Services Acquisition (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sc/">SC: System and Communications Protection (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/si/">SI: System and Information Integrity (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sr/">SR: Supply Chain Risk Management (1)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Low Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ac/">AC: Access Control (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/at/">AT: Awareness and Training (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/au/">AU: Audit and Accountability (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ca/">CA: Assessment, Authorization, and Monitoring (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cm/">CM: Configuration Management (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cp/">CP: Contingency Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ia/">IA: Identification and Authentication (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ir/">IR: Incident Response (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ma/">MA: Maintenance (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/mp/">MP: Media Protection (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pe/">PE: Physical and Environmental Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pl/">PL: Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ra/">RA: Risk Assessment (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sa/">SA: System and Services Acquisition (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sc/">SC: System and Communications Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/si/">SI: System and Information Integrity (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sr/">SR: Supply Chain Risk Management (11)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NIST SP 800-53 Control Reference Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Moderate Baseline &raquo;</li><li>SA: System and Services Acquisition (17)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="sa-system-and-services-acquisition">SA - System and Services Acquisition</h1>
+<ul>
+<li>Controls: 17</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<h3 id="sa-1-policy-and-procedures">SA-1: Policy and Procedures</h3>
+<p>Develop, document, and disseminate to {{ insert: param, sa-1_prm_1 }}:</p>
+<p>{{ insert: param, sa-01_odp.03 }} system and services acquisition policy that:</p>
+<p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
+<p>Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and</p>
+<p>Procedures to facilitate the implementation of the system and services acquisition policy and the associated system and services acquisition controls;</p>
+<p>Designate an {{ insert: param, sa-01_odp.04 }} to manage the development, documentation, and dissemination of the system and services acquisition policy and procedures; and</p>
+<p>Review and update the current system and services acquisition:</p>
+<p>Policy {{ insert: param, sa-01_odp.05 }} and following {{ insert: param, sa-01_odp.06 }} ; and</p>
+<p>Procedures {{ insert: param, sa-01_odp.07 }} and following {{ insert: param, sa-01_odp.08 }}.</p>
+<p>System and services acquisition policy and procedures address the controls in the SA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of system and services acquisition policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to system and services acquisition policy and procedures include assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.</p>
+<p>a system and services acquisition policy is developed and documented;</p>
+<p>the system and services acquisition policy is disseminated to {{ insert: param, sa-01_odp.01 }};</p>
+<p>system and services acquisition procedures to facilitate the implementation of the system and services acquisition policy and associated system and services acquisition controls are developed and documented;</p>
+<p>the system and services acquisition procedures are disseminated to {{ insert: param, sa-01_odp.02 }};</p>
+<p>the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses purpose;</p>
+<p>the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses scope;</p>
+<p>the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses roles;</p>
+<p>the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses responsibilities;</p>
+<p>the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses management commitment;</p>
+<p>the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses coordination among organizational entities;</p>
+<p>the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses compliance;</p>
+<p>the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;</p>
+<p>the {{ insert: param, sa-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the system and services acquisition policy and procedures;</p>
+<p>the system and services acquisition policy is reviewed and updated {{ insert: param, sa-01_odp.05 }};</p>
+<p>the current system and services acquisition policy is reviewed and updated following {{ insert: param, sa-01_odp.06 }};</p>
+<p>the current system and services acquisition procedures are reviewed and updated {{ insert: param, sa-01_odp.07 }};</p>
+<p>the current system and services acquisition procedures are reviewed and updated following {{ insert: param, sa-01_odp.08 }}.</p>
+<p>System and services acquisition policy</p>
+<p>system and services acquisition procedures</p>
+<p>supply chain risk management policy</p>
+<p>supply chain risk management procedures</p>
+<p>supply chain risk management plan</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system and services acquisition responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>organizational personnel with supply chain risk management responsibilities</p>
+<h3 id="sa-2-allocation-of-resources">SA-2: Allocation of Resources</h3>
+<p>Determine the high-level information security and privacy requirements for the system or system service in mission and business process planning;</p>
+<p>Determine, document, and allocate the resources required to protect the system or system service as part of the organizational capital planning and investment control process; and</p>
+<p>Establish a discrete line item for information security and privacy in organizational programming and budgeting documentation.</p>
+<p>Resource allocation for information security and privacy includes funding for system and services acquisition, sustainment, and supply chain-related risks throughout the system development life cycle.</p>
+<p>the high-level information security requirements for the system or system service are determined in mission and business process planning;</p>
+<p>the high-level privacy requirements for the system or system service are determined in mission and business process planning;</p>
+<p>the resources required to protect the system or system service are determined and documented as part of the organizational capital planning and investment control process;</p>
+<p>the resources required to protect the system or system service are allocated as part of the organizational capital planning and investment control process;</p>
+<p>a discrete line item for information security is established in organizational programming and budgeting documentation;</p>
+<p>a discrete line item for privacy is established in organizational programming and budgeting documentation.</p>
+<p>System and services acquisition policy</p>
+<p>system and services acquisition procedures</p>
+<p>system and services acquisition strategy and plans</p>
+<p>procedures addressing the allocation of resources to information security and privacy requirements</p>
+<p>procedures addressing capital planning and investment control</p>
+<p>organizational programming and budgeting documentation</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>supply chain risk management policy</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with capital planning, investment control, organizational programming, and budgeting responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>organizational personnel with supply chain risk management responsibilities</p>
+<p>Organizational processes for determining information security and privacy requirements</p>
+<p>organizational processes for capital planning, programming, and budgeting</p>
+<p>mechanisms supporting and/or implementing organizational capital planning, programming, and budgeting</p>
+<h3 id="sa-3-system-development-life-cycle">SA-3: System Development Life Cycle</h3>
+<p>Acquire, develop, and manage the system using {{ insert: param, sa-03_odp }} that incorporates information security and privacy considerations;</p>
+<p>Define and document information security and privacy roles and responsibilities throughout the system development life cycle;</p>
+<p>Identify individuals having information security and privacy roles and responsibilities; and</p>
+<p>Integrate the organizational information security and privacy risk management process into system development life cycle activities.</p>
+<p>A system development life cycle process provides the foundation for the successful development, implementation, and operation of organizational systems. The integration of security and privacy considerations early in the system development life cycle is a foundational principle of systems security engineering and privacy engineering. To apply the required controls within the system development life cycle requires a basic understanding of information security and privacy, threats, vulnerabilities, adverse impacts, and risk to critical mission and business functions. The security engineering principles in <a href="#sa-8">SA-8</a> help individuals properly design, code, and test systems and system components. Organizations include qualified personnel (e.g., senior agency information security officers, senior agency officials for privacy, security and privacy architects, and security and privacy engineers) in system development life cycle processes to ensure that established security and privacy requirements are incorporated into organizational systems. Role-based security and privacy training programs can ensure that individuals with key security and privacy roles and responsibilities have the experience, skills, and expertise to conduct assigned system development life cycle activities.</p>
+<p>The effective integration of security and privacy requirements into enterprise architecture also helps to ensure that important security and privacy considerations are addressed throughout the system life cycle and that those considerations are directly related to organizational mission and business processes. This process also facilitates the integration of the information security and privacy architectures into the enterprise architecture, consistent with the risk management strategy of the organization. Because the system development life cycle involves multiple organizations, (e.g., external suppliers, developers, integrators, service providers), acquisition and supply chain risk management functions and controls play significant roles in the effective management of the system during the life cycle.</p>
+<p>the system is acquired, developed, and managed using {{ insert: param, sa-03_odp }} that incorporates information security considerations;</p>
+<p>the system is acquired, developed, and managed using {{ insert: param, sa-03_odp }} that incorporates privacy considerations;</p>
+<p>information security roles and responsibilities are defined and documented throughout the system development life cycle;</p>
+<p>privacy roles and responsibilities are defined and documented throughout the system development life cycle;</p>
+<p>individuals with information security roles and responsibilities are identified;</p>
+<p>individuals with privacy roles and responsibilities are identified;</p>
+<p>organizational information security risk management processes are integrated into system development life cycle activities;</p>
+<p>organizational privacy risk management processes are integrated into system development life cycle activities.</p>
+<p>System and services acquisition policy</p>
+<p>system and services acquisition procedures</p>
+<p>procedures addressing the integration of information security and privacy and supply chain risk management into the system development life cycle process</p>
+<p>system development life cycle documentation</p>
+<p>organizational risk management strategy</p>
+<p>information security and privacy risk management strategy documentation</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>privacy program plan</p>
+<p>enterprise architecture documentation</p>
+<p>role-based security and privacy training program documentation</p>
+<p>data mapping documentation</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with information security and privacy responsibilities</p>
+<p>organizational personnel with system life cycle development responsibilities</p>
+<p>organizational personnel with supply chain risk management responsibilities</p>
+<p>Organizational processes for defining and documenting the system development life cycle</p>
+<p>organizational processes for identifying system development life cycle roles and responsibilities</p>
+<p>organizational processes for integrating information security and privacy and supply chain risk management into the system development life cycle</p>
+<p>mechanisms supporting and/or implementing the system development life cycle</p>
+<h3 id="sa-4-acquisition-process">SA-4: Acquisition Process</h3>
+<p>Include the following requirements, descriptions, and criteria, explicitly or by reference, using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service:</p>
+<p>Security and privacy functional requirements;</p>
+<p>Strength of mechanism requirements;</p>
+<p>Security and privacy assurance requirements;</p>
+<p>Controls needed to satisfy the security and privacy requirements.</p>
+<p>Security and privacy documentation requirements;</p>
+<p>Requirements for protecting security and privacy documentation;</p>
+<p>Description of the system development environment and environment in which the system is intended to operate;</p>
+<p>Allocation of responsibility or identification of parties responsible for information security, privacy, and supply chain risk management; and</p>
+<p>Acceptance criteria.</p>
+<p>Security and privacy functional requirements are typically derived from the high-level security and privacy requirements described in <a href="#sa-2">SA-2</a> . The derived requirements include security and privacy capabilities, functions, and mechanisms. Strength requirements associated with such capabilities, functions, and mechanisms include degree of correctness, completeness, resistance to tampering or bypass, and resistance to direct attack. Assurance requirements include development processes, procedures, and methodologies as well as the evidence from development and assessment activities that provide grounds for confidence that the required functionality is implemented and possesses the required strength of mechanism. <a href="#e3cc0520-a366-4fc9-abc2-5272db7e3564">SP 800-160-1</a> describes the process of requirements engineering as part of the system development life cycle.</p>
+<p>Controls can be viewed as descriptions of the safeguards and protection capabilities appropriate for achieving the particular security and privacy objectives of the organization and for reflecting the security and privacy requirements of stakeholders. Controls are selected and implemented in order to satisfy system requirements and include developer and organizational responsibilities. Controls can include technical, administrative, and physical aspects. In some cases, the selection and implementation of a control may necessitate additional specification by the organization in the form of derived requirements or instantiated control parameter values. The derived requirements and control parameter values may be necessary to provide the appropriate level of implementation detail for controls within the system development life cycle.</p>
+<p>Security and privacy documentation requirements address all stages of the system development life cycle. Documentation provides user and administrator guidance for the implementation and operation of controls. The level of detail required in such documentation is based on the security categorization or classification level of the system and the degree to which organizations depend on the capabilities, functions, or mechanisms to meet risk response expectations. Requirements can include mandated configuration settings that specify allowed functions, ports, protocols, and services. Acceptance criteria for systems, system components, and system services are defined in the same manner as the criteria for any organizational acquisition or procurement.</p>
+<p>security functional requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>privacy functional requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>strength of mechanism requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>security assurance requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>privacy assurance requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>controls needed to satisfy the security requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>controls needed to satisfy the privacy requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>security documentation requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>privacy documentation requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>requirements for protecting security documentation, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>requirements for protecting privacy documentation, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>the description of the system development environment and environment in which the system is intended to operate, requirements, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>the allocation of responsibility or identification of parties responsible for information security requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;</p>
+<p>the allocation of responsibility or identification of parties responsible for privacy requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }};</p>
+<p>the allocation of responsibility or identification of parties responsible for supply chain risk management requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }};</p>
+<p>acceptance criteria requirements and descriptions are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service.</p>
+<p>System and services acquisition policy</p>
+<p>system and services acquisition procedures</p>
+<p>procedures addressing the integration of information security and privacy and supply chain risk management into the acquisition process</p>
+<p>configuration management plan</p>
+<p>acquisition contracts for the system, system component, or system service</p>
+<p>system design documentation</p>
+<p>system security plan</p>
+<p>supply chain risk management plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with acquisition/contracting responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system/network administrators</p>
+<p>organizational personnel with supply chain risk management responsibilities</p>
+<p>Organizational processes for determining system security and privacy functional, strength, and assurance requirements</p>
+<p>organizational processes for developing acquisition contracts</p>
+<p>mechanisms supporting and/or implementing acquisitions and the inclusion of security and privacy requirements in contracts</p>
+<h3 id="sa-4-1-functional-properties-of-controls">SA-4 (1): Functional Properties of Controls</h3>
+<p>Require the developer of the system, system component, or system service to provide a description of the functional properties of the controls to be implemented.</p>
+<p>Functional properties of security and privacy controls describe the functionality (i.e., security or privacy capability, functions, or mechanisms) visible at the interfaces of the controls and specifically exclude functionality and data structures internal to the operation of the controls.</p>
+<p>the developer of the system, system component, or system service is required to provide a description of the functional properties of the controls to be implemented.</p>
+<p>System and services acquisition policy</p>
+<p>system and services acquisition procedures</p>
+<p>procedures addressing the integration of security and privacy requirements, descriptions, and criteria into the acquisition process</p>
+<p>solicitation documents</p>
+<p>acquisition documentation</p>
+<p>acquisition contracts for the system, system component, or system services</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with acquisition/contracting responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system developers</p>
+<p>Organizational processes for determining system security functional requirements</p>
+<p>organizational processes for developing acquisition contracts</p>
+<p>mechanisms supporting and/or implementing acquisitions and the inclusion of security and privacy requirements in contracts</p>
+<h3 id="sa-4-2-design-and-implementation-information-for-controls">SA-4 (2): Design and Implementation Information for Controls</h3>
+<p>Require the developer of the system, system component, or system service to provide design and implementation information for the controls that includes: {{ insert: param, sa-04.02_odp.01 }} at {{ insert: param, sa-04.02_odp.03 }}.</p>
+<p>Organizations may require different levels of detail in the documentation for the design and implementation of controls in organizational systems, system components, or system services based on mission and business requirements, requirements for resiliency and trustworthiness, and requirements for analysis and testing. Systems can be partitioned into multiple subsystems. Each subsystem within the system can contain one or more modules. The high-level design for the system is expressed in terms of subsystems and the interfaces between subsystems providing security-relevant functionality. The low-level design for the system is expressed in terms of modules and the interfaces between modules providing security-relevant functionality. Design and implementation documentation can include manufacturer, version, serial number, verification hash signature, software libraries used, date of purchase or download, and the vendor or download source. Source code and hardware schematics are referred to as the implementation representation of the system.</p>
+<p>the developer of the system, system component, or system service is required to provide design and implementation information for the controls that includes using {{ insert: param, sa-04.02_odp.01 }} at {{ insert: param, sa-04.02_odp.03 }}.</p>
+<p>System and services acquisition policy</p>
+<p>system and services acquisition procedures</p>
+<p>procedures addressing the integration of security requirements, descriptions, and criteria into the acquisition process</p>
+<p>solicitation documents</p>
+<p>acquisition documentation</p>
+<p>acquisition contracts for the system, system components, or system services</p>
+<p>design and implementation information for controls employed in the system, system component, or system service</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with acquisition/contracting responsibilities</p>
+<p>organizational personnel with the responsibility to determine system security requirements</p>
+<p>system developers or service provider</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for determining the level of detail for system design and controls</p>
+<p>organizational processes for developing acquisition contracts</p>
+<p>mechanisms supporting and/or implementing the development of system design details</p>
+<h3 id="sa-4-9-functions-ports-protocols-and-services-in-use">SA-4 (9): Functions, Ports, Protocols, and Services in Use</h3>
+<p>Require the developer of the system, system component, or system service to identify the functions, ports, protocols, and services intended for organizational use.</p>
+<p>The identification of functions, ports, protocols, and services early in the system development life cycle (e.g., during the initial requirements definition and design stages) allows organizations to influence the design of the system, system component, or system service. This early involvement in the system development life cycle helps organizations avoid or minimize the use of functions, ports, protocols, or services that pose unnecessarily high risks and understand the trade-offs involved in blocking specific ports, protocols, or services or requiring system service providers to do so. Early identification of functions, ports, protocols, and services avoids costly retrofitting of controls after the system, component, or system service has been implemented. <a href="#sa-9">SA-9</a> describes the requirements for external system services. Organizations identify which functions, ports, protocols, and services are provided from external sources.</p>
+<p>the developer of the system, system component, or system service is required to identify the functions intended for organizational use;</p>
+<p>the developer of the system, system component, or system service is required to identify the ports intended for organizational use;</p>
+<p>the developer of the system, system component, or system service is required to identify the protocols intended for organizational use;</p>
+<p>the developer of the system, system component, or system service is required to identify the services intended for organizational use.</p>
+<p>System and services acquisition policy</p>
+<p>procedures addressing the integration of security requirements, descriptions, and criteria into the acquisition process</p>
+<p>system design documentation</p>
+<p>system documentation, including functions, ports, protocols, and services intended for organizational use</p>
+<p>acquisition contracts for systems or services</p>
+<p>acquisition documentation</p>
+<p>solicitation documentation</p>
+<p>service level agreements</p>
+<p>organizational security requirements, descriptions, and criteria for developers of systems, system components, and system services</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with acquisition/contracting responsibilities</p>
+<p>organizational personnel with the responsibility for determining system security requirements</p>
+<p>system/network administrators</p>
+<p>organizational personnel operating, using, and/or maintaining the system</p>
+<p>system developers</p>
+<p>organizational personnel with information security responsibilities</p>
+<h3 id="sa-4-10-use-of-approved-piv-products">SA-4 (10): Use of Approved PIV Products</h3>
+<p>Employ only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational systems.</p>
+<p>Products on the FIPS 201-approved products list meet NIST requirements for Personal Identity Verification (PIV) of Federal Employees and Contractors. PIV cards are used for multi-factor authentication in systems and organizations.</p>
+<p>only information technology products on the FIPS 201-approved products list for the Personal Identity Verification (PIV) capability implemented within organizational systems are employed.</p>
+<p>Supply chain risk management plan</p>
+<p>system and services acquisition policy</p>
+<p>procedures addressing the integration of security requirements, descriptions, and criteria into the acquisition process</p>
+<p>solicitation documentation</p>
+<p>acquisition documentation</p>
+<p>acquisition contracts for the system, system component, or system service</p>
+<p>service level agreements</p>
+<p>FIPS 201 approved products list</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with acquisition/contracting responsibilities</p>
+<p>organizational personnel with the responsibility for determining system security requirements</p>
+<p>organizational personnel with the responsibility for ensuring that only FIPS 201- approved products are implemented</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for selecting and employing FIPS 201-approved products</p>
+<h3 id="sa-5-system-documentation">SA-5: System Documentation</h3>
+<p>Obtain or develop administrator documentation for the system, system component, or system service that describes:</p>
+<p>Secure configuration, installation, and operation of the system, component, or service;</p>
+<p>Effective use and maintenance of security and privacy functions and mechanisms; and</p>
+<p>Known vulnerabilities regarding configuration and use of administrative or privileged functions;</p>
+<p>Obtain or develop user documentation for the system, system component, or system service that describes:</p>
+<p>User-accessible security and privacy functions and mechanisms and how to effectively use those functions and mechanisms;</p>
+<p>Methods for user interaction, which enables individuals to use the system, component, or service in a more secure manner and protect individual privacy; and</p>
+<p>User responsibilities in maintaining the security of the system, component, or service and privacy of individuals;</p>
+<p>Document attempts to obtain system, system component, or system service documentation when such documentation is either unavailable or nonexistent and take {{ insert: param, sa-05_odp.01 }} in response; and</p>
+<p>Distribute documentation to {{ insert: param, sa-05_odp.02 }}.</p>
+<p>System documentation helps personnel understand the implementation and operation of controls. Organizations consider establishing specific measures to determine the quality and completeness of the content provided. System documentation may be used to support the management of supply chain risk, incident response, and other functions. Personnel or roles that require documentation include system owners, system security officers, and system administrators. Attempts to obtain documentation include contacting manufacturers or suppliers and conducting web-based searches. The inability to obtain documentation may occur due to the age of the system or component or the lack of support from developers and contractors. When documentation cannot be obtained, organizations may need to recreate the documentation if it is essential to the implementation or operation of the controls. The protection provided for the documentation is commensurate with the security category or classification of the system. Documentation that addresses system vulnerabilities may require an increased level of protection. Secure operation of the system includes initially starting the system and resuming secure system operation after a lapse in system operation.</p>
+<p>administrator documentation for the system, system component, or system service that describes the secure configuration of the system, component, or service is obtained or developed;</p>
+<p>administrator documentation for the system, system component, or system service that describes the secure installation of the system, component, or service is obtained or developed;</p>
+<p>administrator documentation for the system, system component, or system service that describes the secure operation of the system, component, or service is obtained or developed;</p>
+<p>administrator documentation for the system, system component, or system service that describes the effective use of security functions and mechanisms is obtained or developed;</p>
+<p>administrator documentation for the system, system component, or system service that describes the effective maintenance of security functions and mechanisms is obtained or developed;</p>
+<p>administrator documentation for the system, system component, or system service that describes the effective use of privacy functions and mechanisms is obtained or developed;</p>
+<p>administrator documentation for the system, system component, or system service that describes the effective maintenance of privacy functions and mechanisms is obtained or developed;</p>
+<p>administrator documentation for the system, system component, or system service that describes known vulnerabilities regarding the configuration of administrative or privileged functions is obtained or developed;</p>
+<p>administrator documentation for the system, system component, or system service that describes known vulnerabilities regarding the use of administrative or privileged functions is obtained or developed;</p>
+<p>user documentation for the system, system component, or system service that describes user-accessible security functions and mechanisms is obtained or developed;</p>
+<p>user documentation for the system, system component, or system service that describes how to effectively use those (user-accessible security) functions and mechanisms is obtained or developed;</p>
+<p>user documentation for the system, system component, or system service that describes user-accessible privacy functions and mechanisms is obtained or developed;</p>
+<p>user documentation for the system, system component, or system service that describes how to effectively use those (user-accessible privacy) functions and mechanisms is obtained or developed;</p>
+<p>user documentation for the system, system component, or system service that describes methods for user interaction, which enable individuals to use the system, component, or service in a more secure manner is obtained or developed;</p>
+<p>user documentation for the system, system component, or system service that describes methods for user interaction, which enable individuals to use the system, component, or service to protect individual privacy is obtained or developed;</p>
+<p>user documentation for the system, system component, or system service that describes user responsibilities for maintaining the security of the system, component, or service is obtained or developed;</p>
+<p>user documentation for the system, system component, or system service that describes user responsibilities for maintaining the privacy of individuals is obtained or developed;</p>
+<p>attempts to obtain system, system component, or system service documentation when such documentation is either unavailable or nonexistent is documented;</p>
+<p>after attempts to obtain system, system component, or system service documentation when such documentation is either unavailable or nonexistent, {{ insert: param, sa-05_odp.01 }} are taken in response;</p>
+<p>documentation is distributed to {{ insert: param, sa-05_odp.02 }}.</p>
+<p>System and services acquisition policy</p>
+<p>system and services acquisition procedures</p>
+<p>procedures addressing system documentation</p>
+<p>system documentation, including administrator and user guides</p>
+<p>system design documentation</p>
+<p>records documenting attempts to obtain unavailable or nonexistent system documentation</p>
+<p>list of actions to be taken in response to documented attempts to obtain system, system component, or system service documentation</p>
+<p>risk management strategy documentation</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>privacy impact assessment</p>
+<p>privacy risk assessment documentation</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with acquisition/contracting responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system administrators</p>
+<p>organizational personnel responsible for operating, using, and/or maintaining the system</p>
+<p>system developers</p>
+<p>Organizational processes for obtaining, protecting, and distributing system administrator and user documentation</p>
+<h3 id="sa-8-security-and-privacy-engineering-principles">SA-8: Security and Privacy Engineering Principles</h3>
+<p>Apply the following systems security and privacy engineering principles in the specification, design, development, implementation, and modification of the system and system components: {{ insert: param, sa-8_prm_1 }}.</p>
+<p>Systems security and privacy engineering principles are closely related to and implemented throughout the system development life cycle (see <a href="#sa-3">SA-3</a> ). Organizations can apply systems security and privacy engineering principles to new systems under development or to systems undergoing upgrades. For existing systems, organizations apply systems security and privacy engineering principles to system upgrades and modifications to the extent feasible, given the current state of hardware, software, and firmware components within those systems.</p>
+<p>The application of systems security and privacy engineering principles helps organizations develop trustworthy, secure, and resilient systems and reduces the susceptibility to disruptions, hazards, threats, and the creation of privacy problems for individuals. Examples of system security engineering principles include: developing layered protections; establishing security and privacy policies, architecture, and controls as the foundation for design and development; incorporating security and privacy requirements into the system development life cycle; delineating physical and logical security boundaries; ensuring that developers are trained on how to build secure software; tailoring controls to meet organizational needs; and performing threat modeling to identify use cases, threat agents, attack vectors and patterns, design patterns, and compensating controls needed to mitigate risk.</p>
+<p>Organizations that apply systems security and privacy engineering concepts and principles can facilitate the development of trustworthy, secure systems, system components, and system services; reduce risk to acceptable levels; and make informed risk management decisions. System security engineering principles can also be used to protect against certain supply chain risks, including incorporating tamper-resistant hardware into a design.</p>
+<p>{{ insert: param, sa-08_odp.01 }} are applied in the specification of the system and system components;</p>
+<p>{{ insert: param, sa-08_odp.01 }} are applied in the design of the system and system components;</p>
+<p>{{ insert: param, sa-08_odp.01 }} are applied in the development of the system and system components;</p>
+<p>{{ insert: param, sa-08_odp.01 }} are applied in the implementation of the system and system components;</p>
+<p>{{ insert: param, sa-08_odp.01 }} are applied in the modification of the system and system components;</p>
+<p>{{ insert: param, sa-08_odp.02 }} are applied in the specification of the system and system components;</p>
+<p>{{ insert: param, sa-08_odp.02 }} are applied in the design of the system and system components;</p>
+<p>{{ insert: param, sa-08_odp.02 }} are applied in the development of the system and system components;</p>
+<p>{{ insert: param, sa-08_odp.02 }} are applied in the implementation of the system and system components;</p>
+<p>{{ insert: param, sa-08_odp.02 }} are applied in the modification of the system and system components.</p>
+<p>System and services acquisition policy</p>
+<p>system and services acquisition procedures</p>
+<p>assessment and authorization procedures</p>
+<p>procedures addressing security and privacy engineering principles used in the specification, design, development, implementation, and modification of the system</p>
+<p>system design documentation</p>
+<p>security and privacy requirements and specifications for the system</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>privacy impact assessment</p>
+<p>privacy risk assessment documentation</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with acquisition/contracting responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>organizational personnel with system specification, design, development, implementation, and modification responsibilities</p>
+<p>system developers</p>
+<p>Organizational processes for applying security and privacy engineering principles in system specification, design, development, implementation, and modification</p>
+<p>mechanisms supporting the application of security and privacy engineering principles in system specification, design, development, implementation, and modification</p>
+<h3 id="sa-9-external-system-services">SA-9: External System Services</h3>
+<p>Require that providers of external system services comply with organizational security and privacy requirements and employ the following controls: {{ insert: param, sa-09_odp.01 }};</p>
+<p>Define and document organizational oversight and user roles and responsibilities with regard to external system services; and</p>
+<p>Employ the following processes, methods, and techniques to monitor control compliance by external service providers on an ongoing basis: {{ insert: param, sa-09_odp.02 }}.</p>
+<p>External system services are provided by an external provider, and the organization has no direct control over the implementation of the required controls or the assessment of control effectiveness. Organizations establish relationships with external service providers in a variety of ways, including through business partnerships, contracts, interagency agreements, lines of business arrangements, licensing agreements, joint ventures, and supply chain exchanges. The responsibility for managing risks from the use of external system services remains with authorizing officials. For services external to organizations, a chain of trust requires that organizations establish and retain a certain level of confidence that each provider in the consumer-provider relationship provides adequate protection for the services rendered. The extent and nature of this chain of trust vary based on relationships between organizations and the external providers. Organizations document the basis for the trust relationships so that the relationships can be monitored. External system services documentation includes government, service providers, end user security roles and responsibilities, and service-level agreements. Service-level agreements define the expectations of performance for implemented controls, describe measurable outcomes, and identify remedies and response requirements for identified instances of noncompliance.</p>
+<p>providers of external system services comply with organizational security requirements;</p>
+<p>providers of external system services comply with organizational privacy requirements;</p>
+<p>providers of external system services employ {{ insert: param, sa-09_odp.01 }};</p>
+<p>organizational oversight with regard to external system services are defined and documented;</p>
+<p>user roles and responsibilities with regard to external system services are defined and documented;</p>
+<p>{{ insert: param, sa-09_odp.02 }} are employed to monitor control compliance by external service providers on an ongoing basis.</p>
+<p>System and services acquisition policy</p>
+<p>system and services acquisition procedures</p>
+<p>procedures addressing methods and techniques for monitoring control compliance by external service providers of system services</p>
+<p>acquisition documentation</p>
+<p>contracts</p>
+<p>service level agreements</p>
+<p>interagency agreements</p>
+<p>licensing agreements</p>
+<p>list of organizational security and privacy requirements for external provider services</p>
+<p>control assessment results or reports from external providers of system services</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>supply chain risk management plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with acquisition responsibilities</p>
+<p>external providers of system services</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>organizational personnel with supply chain risk management responsibilities</p>
+<p>Organizational processes for monitoring security and privacy control compliance by external service providers on an ongoing basis</p>
+<p>mechanisms for monitoring security and privacy control compliance by external service providers on an ongoing basis</p>
+<h3 id="sa-9-2-identification-of-functions-ports-protocols-and-services">SA-9 (2): Identification of Functions, Ports, Protocols, and Services</h3>
+<p>Require providers of the following external system services to identify the functions, ports, protocols, and other services required for the use of such services: {{ insert: param, sa-09.02_odp }}.</p>
+<p>Information from external service providers regarding the specific functions, ports, protocols, and services used in the provision of such services can be useful when the need arises to understand the trade-offs involved in restricting certain functions and services or blocking certain ports and protocols.</p>
+<p>providers of {{ insert: param, sa-09.02_odp }} are required to identify the functions, ports, protocols, and other services required for the use of such services.</p>
+<p>System and services acquisition policy</p>
+<p>supply chain risk management policy and procedures</p>
+<p>procedures addressing external system services</p>
+<p>acquisition contracts for the system, system component, or system service</p>
+<p>acquisition documentation</p>
+<p>solicitation documentation</p>
+<p>service level agreements</p>
+<p>organizational security requirements and security specifications for external service providers</p>
+<p>list of required functions, ports, protocols, and other services</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system and service acquisition responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>external providers of system services</p>
+<h3 id="sa-10-developer-configuration-management">SA-10: Developer Configuration Management</h3>
+<p>Require the developer of the system, system component, or system service to:</p>
+<p>Perform configuration management during system, component, or service {{ insert: param, sa-10_odp.01 }};</p>
+<p>Document, manage, and control the integrity of changes to {{ insert: param, sa-10_odp.02 }};</p>
+<p>Implement only organization-approved changes to the system, component, or service;</p>
+<p>Document approved changes to the system, component, or service and the potential security and privacy impacts of such changes; and</p>
+<p>Track security flaws and flaw resolution within the system, component, or service and report findings to {{ insert: param, sa-10_odp.03 }}.</p>
+<p>Organizations consider the quality and completeness of configuration management activities conducted by developers as direct evidence of applying effective security controls. Controls include protecting the master copies of material used to generate security-relevant portions of the system hardware, software, and firmware from unauthorized modification or destruction. Maintaining the integrity of changes to the system, system component, or system service requires strict configuration control throughout the system development life cycle to track authorized changes and prevent unauthorized changes.</p>
+<p>The configuration items that are placed under configuration management include the formal model; the functional, high-level, and low-level design specifications; other design data; implementation documentation; source code and hardware schematics; the current running version of the object code; tools for comparing new versions of security-relevant hardware descriptions and source code with previous versions; and test fixtures and documentation. Depending on the mission and business needs of organizations and the nature of the contractual relationships in place, developers may provide configuration management support during the operations and maintenance stage of the system development life cycle.</p>
+<p>the developer of the system, system component, or system service is required to perform configuration management during system, component, or service {{ insert: param, sa-10_odp.01 }};</p>
+<p>the developer of the system, system component, or system service is required to document the integrity of changes to {{ insert: param, sa-10_odp.02 }};</p>
+<p>the developer of the system, system component, or system service is required to manage the integrity of changes to {{ insert: param, sa-10_odp.02 }};</p>
+<p>the developer of the system, system component, or system service is required to control the integrity of changes to {{ insert: param, sa-10_odp.02 }};</p>
+<p>the developer of the system, system component, or system service is required to implement only organization-approved changes to the system, component, or service;</p>
+<p>the developer of the system, system component, or system service is required to document approved changes to the system, component, or service;</p>
+<p>the developer of the system, system component, or system service is required to document the potential security impacts of approved changes;</p>
+<p>the developer of the system, system component, or system service is required to document the potential privacy impacts of approved changes;</p>
+<p>the developer of the system, system component, or system service is required to track security flaws within the system, component, or service;</p>
+<p>the developer of the system, system component, or system service is required to track security flaw resolutions within the system, component, or service;</p>
+<p>the developer of the system, system component, or system service is required to report findings to {{ insert: param, sa-10_odp.03 }}.</p>
+<p>System and services acquisition policy</p>
+<p>procedures addressing system developer configuration management</p>
+<p>solicitation documentation</p>
+<p>acquisition documentation</p>
+<p>service level agreements</p>
+<p>acquisition contracts for the system, system component, or system service</p>
+<p>system developer configuration management plan</p>
+<p>security flaw and flaw resolution tracking records</p>
+<p>system change authorization records</p>
+<p>change control records</p>
+<p>configuration management records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system and service acquisition responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>organizational personnel with configuration management responsibilities</p>
+<p>system developers</p>
+<p>Organizational processes for monitoring developer configuration management</p>
+<p>mechanisms supporting and/or implementing the monitoring of developer configuration management</p>
+<h3 id="sa-11-developer-testing-and-evaluation">SA-11: Developer Testing and Evaluation</h3>
+<p>Require the developer of the system, system component, or system service, at all post-design stages of the system development life cycle, to:</p>
+<p>Develop and implement a plan for ongoing security and privacy control assessments;</p>
+<p>Perform {{ insert: param, sa-11_odp.01 }} testing/evaluation {{ insert: param, sa-11_odp.02 }} at {{ insert: param, sa-11_odp.03 }};</p>
+<p>Produce evidence of the execution of the assessment plan and the results of the testing and evaluation;</p>
+<p>Implement a verifiable flaw remediation process; and</p>
+<p>Correct flaws identified during testing and evaluation.</p>
+<p>Developmental testing and evaluation confirms that the required controls are implemented correctly, operating as intended, enforcing the desired security and privacy policies, and meeting established security and privacy requirements. Security properties of systems and the privacy of individuals may be affected by the interconnection of system components or changes to those components. The interconnections or changes—including upgrading or replacing applications, operating systems, and firmware—may adversely affect previously implemented controls. Ongoing assessment during development allows for additional types of testing and evaluation that developers can conduct to reduce or eliminate potential flaws. Testing custom software applications may require approaches such as manual code review, security architecture review, and penetration testing, as well as and static analysis, dynamic analysis, binary analysis, or a hybrid of the three analysis approaches.</p>
+<p>Developers can use the analysis approaches, along with security instrumentation and fuzzing, in a variety of tools and in source code reviews. The security and privacy assessment plans include the specific activities that developers plan to carry out, including the types of analyses, testing, evaluation, and reviews of software and firmware components; the degree of rigor to be applied; the frequency of the ongoing testing and evaluation; and the types of artifacts produced during those processes. The depth of testing and evaluation refers to the rigor and level of detail associated with the assessment process. The coverage of testing and evaluation refers to the scope (i.e., number and type) of the artifacts included in the assessment process. Contracts specify the acceptance criteria for security and privacy assessment plans, flaw remediation processes, and the evidence that the plans and processes have been diligently applied. Methods for reviewing and protecting assessment plans, evidence, and documentation are commensurate with the security category or classification level of the system. Contracts may specify protection requirements for documentation.</p>
+<p>the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to develop a plan for ongoing security assessments;</p>
+<p>the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to implement a plan for ongoing security assessments;</p>
+<p>the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to develop a plan for privacy assessments;</p>
+<p>the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to implement a plan for ongoing privacy assessments;</p>
+<p>the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to perform {{ insert: param, sa-11_odp.01 }} testing/evaluation {{ insert: param, sa-11_odp.02 }} at {{ insert: param, sa-11_odp.03 }};</p>
+<p>the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to produce evidence of the execution of the assessment plan;</p>
+<p>the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to produce the results of the testing and evaluation;</p>
+<p>the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to implement a verifiable flaw remediation process;</p>
+<p>the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to correct flaws identified during testing and evaluation.</p>
+<p>System and services acquisition policy</p>
+<p>system and services acquisition procedures</p>
+<p>procedures addressing system developer security and privacy testing</p>
+<p>procedures addressing flaw remediation</p>
+<p>solicitation documentation</p>
+<p>acquisition documentation</p>
+<p>service level agreements</p>
+<p>acquisition contracts for the system, system component, or system service</p>
+<p>security and privacy architecture</p>
+<p>system design documentation</p>
+<p>system developer security and privacy assessment plans</p>
+<p>results of developer security and privacy assessments for the system, system component, or system service</p>
+<p>security and privacy flaw and remediation tracking records</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>privacy impact assessment</p>
+<p>privacy risk assessment documentation</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system and service acquisition responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>organizational personnel with developer security and privacy testing responsibilities</p>
+<p>system developers</p>
+<p>Organizational processes for monitoring developer security testing and evaluation</p>
+<p>mechanisms supporting and/or implementing the monitoring of developer security and privacy testing and evaluation</p>
+<h3 id="sa-15-development-process-standards-and-tools">SA-15: Development Process, Standards, and Tools</h3>
+<p>Require the developer of the system, system component, or system service to follow a documented development process that:</p>
+<p>Explicitly addresses security and privacy requirements;</p>
+<p>Identifies the standards and tools used in the development process;</p>
+<p>Documents the specific tool options and tool configurations used in the development process; and</p>
+<p>Documents, manages, and ensures the integrity of changes to the process and/or tools used in development; and</p>
+<p>Review the development process, standards, tools, tool options, and tool configurations {{ insert: param, sa-15_odp.01 }} to determine if the process, standards, tools, tool options and tool configurations selected and employed can satisfy the following security and privacy requirements: {{ insert: param, sa-15_prm_2 }}.</p>
+<p>Development tools include programming languages and computer-aided design systems. Reviews of development processes include the use of maturity models to determine the potential effectiveness of such processes. Maintaining the integrity of changes to tools and processes facilitates effective supply chain risk assessment and mitigation. Such integrity requires configuration control throughout the system development life cycle to track authorized changes and prevent unauthorized changes.</p>
+<p>the developer of the system, system component, or system service is required to follow a documented development process that explicitly addresses security requirements;</p>
+<p>the developer of the system, system component, or system service is required to follow a documented development process that explicitly addresses privacy requirements;</p>
+<p>the developer of the system, system component, or system service is required to follow a documented development process that identifies the standards used in the development process;</p>
+<p>the developer of the system, system component, or system service is required to follow a documented development process that identifies the tools used in the development process;</p>
+<p>the developer of the system, system component, or system service is required to follow a documented development process that documents the specific tool used in the development process;</p>
+<p>the developer of the system, system component, or system service is required to follow a documented development process that documents the specific tool configurations used in the development process;</p>
+<p>the developer of the system, system component, or system service is required to follow a documented development process that documents, manages, and ensures the integrity of changes to the process and/or tools used in development;</p>
+<p>the developer of the system, system component, or system service is required to follow a documented development process in which the development process, standards, tools, tool options, and tool configurations are reviewed {{ insert: param, sa-15_odp.01 }} to determine that the process, standards, tools, tool options, and tool configurations selected and employed satisfy {{ insert: param, sa-15_odp.02 }};</p>
+<p>the developer of the system, system component, or system service is required to follow a documented development process in which the development process, standards, tools, tool options, and tool configurations are reviewed {{ insert: param, sa-15_odp.01 }} to determine that the process, standards, tools, tool options, and tool configurations selected and employed satisfy {{ insert: param, sa-15_odp.03 }}.</p>
+<p>System and services acquisition policy</p>
+<p>system and services acquisition procedures</p>
+<p>procedures addressing development process, standards, and tools</p>
+<p>procedures addressing the integration of security and privacy requirements during the development process</p>
+<p>solicitation documentation</p>
+<p>acquisition documentation</p>
+<p>critical component inventory documentation</p>
+<p>service level agreements</p>
+<p>acquisition contracts for the system, system component, or system service</p>
+<p>system developer documentation listing tool options/configuration guides</p>
+<p>configuration management policy</p>
+<p>configuration management records</p>
+<p>documentation of development process reviews using maturity models</p>
+<p>change control records</p>
+<p>configuration control records</p>
+<p>documented reviews of the development process, standards, tools, and tool options/configurations</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>privacy impact assessment</p>
+<p>privacy risk assessment documentation</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system and service acquisition responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system developer</p>
+<h3 id="sa-15-3-criticality-analysis">SA-15 (3): Criticality Analysis</h3>
+<p>Require the developer of the system, system component, or system service to perform a criticality analysis:</p>
+<p>At the following decision points in the system development life cycle: {{ insert: param, sa-15.03_odp.01 }} ; and</p>
+<p>At the following level of rigor: {{ insert: param, sa-15.3_prm_2 }}.</p>
+<p>Criticality analysis performed by the developer provides input to the criticality analysis performed by organizations. Developer input is essential to organizational criticality analysis because organizations may not have access to detailed design documentation for system components that are developed as commercial off-the-shelf products. Such design documentation includes functional specifications, high-level designs, low-level designs, source code, and hardware schematics. Criticality analysis is important for organizational systems that are designated as high value assets. High value assets can be moderate- or high-impact systems due to heightened adversarial interest or potential adverse effects on the federal enterprise. Developer input is especially important when organizations conduct supply chain criticality analyses.</p>
+<p>the developer of the system, system component, or system service is required to perform a criticality analysis at {{ insert: param, sa-15.03_odp.01 }} in the system development life cycle;</p>
+<p>the developer of the system, system component, or system service is required to perform a criticality analysis at the following rigor level: {{ insert: param, sa-15.03_odp.02 }};</p>
+<p>the developer of the system, system component, or system service is required to perform a criticality analysis at the following rigor level: {{ insert: param, sa-15.03_odp.03 }} .</p>
+<p>Supply chain risk management plan</p>
+<p>system and services acquisition policy</p>
+<p>procedures addressing development process, standards, and tools</p>
+<p>procedures addressing criticality analysis requirements for the system, system component, or system service</p>
+<p>solicitation documentation</p>
+<p>acquisition documentation</p>
+<p>service level agreements</p>
+<p>acquisition contracts for the system, system component, or system service</p>
+<p>criticality analysis documentation</p>
+<p>business impact analysis documentation</p>
+<p>software development life cycle documentation</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system and service acquisition responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>organizational personnel responsible for performing criticality analysis</p>
+<p>system developer</p>
+<p>organizational personnel with supply chain risk management responsibilities</p>
+<p>Organizational processes for performing criticality analysis</p>
+<p>mechanisms supporting and/or implementing criticality analysis</p>
+<h3 id="sa-22-unsupported-system-components">SA-22: Unsupported System Components</h3>
+<p>Replace system components when support for the components is no longer available from the developer, vendor, or manufacturer; or</p>
+<p>Provide the following options for alternative sources for continued support for unsupported components {{ insert: param, sa-22_odp.01 }}.</p>
+<p>Support for system components includes software patches, firmware updates, replacement parts, and maintenance contracts. An example of unsupported components includes when vendors no longer provide critical software patches or product updates, which can result in an opportunity for adversaries to exploit weaknesses in the installed components. Exceptions to replacing unsupported system components include systems that provide critical mission or business capabilities where newer technologies are not available or where the systems are so isolated that installing replacement components is not an option.</p>
+<p>Alternative sources for support address the need to provide continued support for system components that are no longer supported by the original manufacturers, developers, or vendors when such components remain essential to organizational mission and business functions. If necessary, organizations can establish in-house support by developing customized patches for critical software components or, alternatively, obtain the services of external providers who provide ongoing support for the designated unsupported components through contractual relationships. Such contractual relationships can include open-source software value-added vendors. The increased risk of using unsupported system components can be mitigated, for example, by prohibiting the connection of such components to public or uncontrolled networks, or implementing other forms of isolation.</p>
+<p>system components are replaced when support for the components is no longer available from the developer, vendor, or manufacturer;</p>
+<p>{{ insert: param, sa-22_odp.01 }} provide options for alternative sources for continued support for unsupported components.</p>
+<p>System and services acquisition policy</p>
+<p>procedures addressing the replacement or continued use of unsupported system components</p>
+<p>documented evidence of replacing unsupported system components</p>
+<p>documented approvals (including justification) for the continued use of unsupported system components</p>
+<p>system security plan</p>
+<p>supply chain risk management plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system and service acquisition responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>organizational personnel with the responsibility for the system development life cycle</p>
+<p>organizational personnel responsible for component replacement</p>
+<p>Organizational processes for replacing unsupported system components</p>
+<p>mechanisms supporting and/or implementing the replacement of unsupported system components</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ra/" class="btn btn-neutral float-left" title="RA: Risk Assessment (10)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sc/" class="btn btn-neutral float-right" title="SC: System and Communications Protection (25)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ra/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../sc/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

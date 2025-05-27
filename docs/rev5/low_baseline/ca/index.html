@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://grokify.github.io/go-nist-sp-800-53/rev5/low_baseline/ca/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>CA: Assessment, Authorization, and Monitoring (8) - NIST SP 800-53 Control Reference Site</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CA: Assessment, Authorization, and Monitoring (8)";
+        var mkdocs_page_input_path = "rev5/low_baseline/ca.md";
+        var mkdocs_page_url = "/go-nist-sp-800-53/rev5/low_baseline/ca/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> NIST SP 800-53 Control Reference Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ac/">AC: Access Control (46)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/au/">AU: Audit and Accountability (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ca/">CA: Assessment, Authorization, and Monitoring (14)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cm/">CM: Configuration Management (32)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cp/">CP: Contingency Planning (35)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ia/">IA: Identification and Authentication (26)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ir/">IR: Incident Response (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ma/">MA: Maintenance (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/mp/">MP: Media Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pe/">PE: Physical and Environmental Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ps/">PS: Personnel Security (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ra/">RA: Risk Assessment (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sa/">SA: System and Services Acquisition (21)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sc/">SC: System and Communications Protection (30)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/si/">SI: System and Information Integrity (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sr/">SR: Supply Chain Risk Management (14)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ac/">AC: Access Control (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/at/">AT: Awareness and Training (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/au/">AU: Audit and Accountability (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ca/">CA: Assessment, Authorization, and Monitoring (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cm/">CM: Configuration Management (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cp/">CP: Contingency Planning (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ia/">IA: Identification and Authentication (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ir/">IR: Incident Response (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ma/">MA: Maintenance (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pe/">PE: Physical and Environmental Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pl/">PL: Planning (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ps/">PS: Personnel Security (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ra/">RA: Risk Assessment (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sa/">SA: System and Services Acquisition (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sc/">SC: System and Communications Protection (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/si/">SI: System and Information Integrity (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sr/">SR: Supply Chain Risk Management (2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ac/">AC: Access Control (39)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/au/">AU: Audit and Accountability (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ca/">CA: Assessment, Authorization, and Monitoring (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cm/">CM: Configuration Management (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cp/">CP: Contingency Planning (23)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ia/">IA: Identification and Authentication (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ir/">IR: Incident Response (13)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ma/">MA: Maintenance (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/mp/">MP: Media Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pe/">PE: Physical and Environmental Protection (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ra/">RA: Risk Assessment (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sa/">SA: System and Services Acquisition (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sc/">SC: System and Communications Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/si/">SI: System and Information Integrity (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sr/">SR: Supply Chain Risk Management (12)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ac/">AC: Access Control (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/at/">AT: Awareness and Training (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/au/">AU: Audit and Accountability (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ca/">CA: Assessment, Authorization, and Monitoring (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cm/">CM: Configuration Management (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cp/">CP: Contingency Planning (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ia/">IA: Identification and Authentication (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ir/">IR: Incident Response (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ma/">MA: Maintenance (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pe/">PE: Physical and Environmental Protection (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pl/">PL: Planning (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ps/">PS: Personnel Security (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ra/">RA: Risk Assessment (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sa/">SA: System and Services Acquisition (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sc/">SC: System and Communications Protection (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/si/">SI: System and Information Integrity (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sr/">SR: Supply Chain Risk Management (1)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Low Baseline</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ac/">AC: Access Control (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../at/">AT: Awareness and Training (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../au/">AU: Audit and Accountability (10)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">CA: Assessment, Authorization, and Monitoring (8)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ca-1-policy-and-procedures">CA-1: Policy and Procedures</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ca-2-control-assessments">CA-2: Control Assessments</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ca-3-information-exchange">CA-3: Information Exchange</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ca-5-plan-of-action-and-milestones">CA-5: Plan of Action and Milestones</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ca-6-authorization">CA-6: Authorization</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ca-7-continuous-monitoring">CA-7: Continuous Monitoring</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ca-7-4-risk-monitoring">CA-7 (4): Risk Monitoring</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ca-9-internal-system-connections">CA-9: Internal System Connections</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cm/">CM: Configuration Management (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cp/">CP: Contingency Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ia/">IA: Identification and Authentication (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ir/">IR: Incident Response (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ma/">MA: Maintenance (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mp/">MP: Media Protection (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pe/">PE: Physical and Environmental Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pl/">PL: Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ra/">RA: Risk Assessment (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sa/">SA: System and Services Acquisition (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sc/">SC: System and Communications Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../si/">SI: System and Information Integrity (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sr/">SR: Supply Chain Risk Management (11)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NIST SP 800-53 Control Reference Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Low Baseline &raquo;</li><li>CA: Assessment, Authorization, and Monitoring (8)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ca-assessment-authorization-and-monitoring">CA - Assessment, Authorization, and Monitoring</h1>
+<ul>
+<li>Controls: 8</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<h3 id="ca-1-policy-and-procedures">CA-1: Policy and Procedures</h3>
+<p>Develop, document, and disseminate to {{ insert: param, ca-1_prm_1 }}:</p>
+<p>{{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy that:</p>
+<p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
+<p>Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and</p>
+<p>Procedures to facilitate the implementation of the assessment, authorization, and monitoring policy and the associated assessment, authorization, and monitoring controls;</p>
+<p>Designate an {{ insert: param, ca-01_odp.04 }} to manage the development, documentation, and dissemination of the assessment, authorization, and monitoring policy and procedures; and</p>
+<p>Review and update the current assessment, authorization, and monitoring:</p>
+<p>Policy {{ insert: param, ca-01_odp.05 }} and following {{ insert: param, ca-01_odp.06 }} ; and</p>
+<p>Procedures {{ insert: param, ca-01_odp.07 }} and following {{ insert: param, ca-01_odp.08 }}.</p>
+<p>Assessment, authorization, and monitoring policy and procedures address the controls in the CA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of assessment, authorization, and monitoring policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to assessment, authorization, and monitoring policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.</p>
+<p>an assessment, authorization, and monitoring policy is developed and documented;</p>
+<p>the assessment, authorization, and monitoring policy is disseminated to {{ insert: param, ca-01_odp.01 }};</p>
+<p>assessment, authorization, and monitoring procedures to facilitate the implementation of the assessment, authorization, and monitoring policy and associated assessment, authorization, and monitoring controls are developed and documented;</p>
+<p>the assessment, authorization, and monitoring procedures are disseminated to {{ insert: param, ca-01_odp.02 }};</p>
+<p>the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses purpose;</p>
+<p>the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses scope;</p>
+<p>the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses roles;</p>
+<p>the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses responsibilities;</p>
+<p>the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses management commitment;</p>
+<p>the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses coordination among organizational entities;</p>
+<p>the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses compliance;</p>
+<p>the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines;</p>
+<p>the {{ insert: param, ca-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the assessment, authorization, and monitoring policy and procedures;</p>
+<p>the current assessment, authorization, and monitoring policy is reviewed and updated {{ insert: param, ca-01_odp.05 }}; </p>
+<p>the current assessment, authorization, and monitoring policy is reviewed and updated following {{ insert: param, ca-01_odp.06 }};</p>
+<p>the current assessment, authorization, and monitoring procedures are reviewed and updated {{ insert: param, ca-01_odp.07 }}; </p>
+<p>the current assessment, authorization, and monitoring procedures are reviewed and updated following {{ insert: param, ca-01_odp.08 }}.</p>
+<p>Assessment, authorization, and monitoring policy and procedures</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with assessment, authorization, and monitoring policy responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<h3 id="ca-2-control-assessments">CA-2: Control Assessments</h3>
+<p>Select the appropriate assessor or assessment team for the type of assessment to be conducted;</p>
+<p>Develop a control assessment plan that describes the scope of the assessment including:</p>
+<p>Controls and control enhancements under assessment;</p>
+<p>Assessment procedures to be used to determine control effectiveness; and</p>
+<p>Assessment environment, assessment team, and assessment roles and responsibilities;</p>
+<p>Ensure the control assessment plan is reviewed and approved by the authorizing official or designated representative prior to conducting the assessment;</p>
+<p>Assess the controls in the system and its environment of operation {{ insert: param, ca-02_odp.01 }} to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security and privacy requirements;</p>
+<p>Produce a control assessment report that document the results of the assessment; and</p>
+<p>Provide the results of the control assessment to {{ insert: param, ca-02_odp.02 }}.</p>
+<p>Organizations ensure that control assessors possess the required skills and technical expertise to develop effective assessment plans and to conduct assessments of system-specific, hybrid, common, and program management controls, as appropriate. The required skills include general knowledge of risk management concepts and approaches as well as comprehensive knowledge of and experience with the hardware, software, and firmware system components implemented.</p>
+<p>Organizations assess controls in systems and the environments in which those systems operate as part of initial and ongoing authorizations, continuous monitoring, FISMA annual assessments, system design and development, systems security engineering, privacy engineering, and the system development life cycle. Assessments help to ensure that organizations meet information security and privacy requirements, identify weaknesses and deficiencies in the system design and development process, provide essential information needed to make risk-based decisions as part of authorization processes, and comply with vulnerability mitigation procedures. Organizations conduct assessments on the implemented controls as documented in security and privacy plans. Assessments can also be conducted throughout the system development life cycle as part of systems engineering and systems security engineering processes. The design for controls can be assessed as RFPs are developed, responses assessed, and design reviews conducted. If a design to implement controls and subsequent implementation in accordance with the design are assessed during development, the final control testing can be a simple confirmation utilizing previously completed control assessment and aggregating the outcomes.</p>
+<p>Organizations may develop a single, consolidated security and privacy assessment plan for the system or maintain separate plans. A consolidated assessment plan clearly delineates the roles and responsibilities for control assessment. If multiple organizations participate in assessing a system, a coordinated approach can reduce redundancies and associated costs.</p>
+<p>Organizations can use other types of assessment activities, such as vulnerability scanning and system monitoring, to maintain the security and privacy posture of systems during the system life cycle. Assessment reports document assessment results in sufficient detail, as deemed necessary by organizations, to determine the accuracy and completeness of the reports and whether the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting requirements. Assessment results are provided to the individuals or roles appropriate for the types of assessments being conducted. For example, assessments conducted in support of authorization decisions are provided to authorizing officials, senior agency officials for privacy, senior agency information security officers, and authorizing official designated representatives.</p>
+<p>To satisfy annual assessment requirements, organizations can use assessment results from the following sources: initial or ongoing system authorizations, continuous monitoring, systems engineering processes, or system development life cycle activities. Organizations ensure that assessment results are current, relevant to the determination of control effectiveness, and obtained with the appropriate level of assessor independence. Existing control assessment results can be reused to the extent that the results are still valid and can also be supplemented with additional assessments as needed. After the initial authorizations, organizations assess controls during continuous monitoring. Organizations also establish the frequency for ongoing assessments in accordance with organizational continuous monitoring strategies. External audits, including audits by external entities such as regulatory agencies, are outside of the scope of <a href="#ca-2">CA-2</a>.</p>
+<p>an appropriate assessor or assessment team is selected for the type of assessment to be conducted;</p>
+<p>a control assessment plan is developed that describes the scope of the assessment, including controls and control enhancements under assessment;</p>
+<p>a control assessment plan is developed that describes the scope of the assessment, including assessment procedures to be used to determine control effectiveness;</p>
+<p>a control assessment plan is developed that describes the scope of the assessment, including the assessment environment;</p>
+<p>a control assessment plan is developed that describes the scope of the assessment, including the assessment team;</p>
+<p>a control assessment plan is developed that describes the scope of the assessment, including assessment roles and responsibilities;</p>
+<p>the control assessment plan is reviewed and approved by the authorizing official or designated representative prior to conducting the assessment;</p>
+<p>controls are assessed in the system and its environment of operation {{ insert: param, ca-02_odp.01 }} to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements;</p>
+<p>controls are assessed in the system and its environment of operation {{ insert: param, ca-02_odp.01 }} to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established privacy requirements;</p>
+<p>a control assessment report is produced that documents the results of the assessment;</p>
+<p>the results of the control assessment are provided to {{ insert: param, ca-02_odp.02 }}.</p>
+<p>Assessment, authorization, and monitoring policy</p>
+<p>procedures addressing assessment planning</p>
+<p>procedures addressing control assessments</p>
+<p>control assessment plan</p>
+<p>control assessment report</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with control assessment responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>Mechanisms supporting control assessment, control assessment plan development, and/or control assessment reporting</p>
+<h3 id="ca-3-information-exchange">CA-3: Information Exchange</h3>
+<p>Approve and manage the exchange of information between the system and other systems using {{ insert: param, ca-03_odp.01 }};</p>
+<p>Document, as part of each exchange agreement, the interface characteristics, security and privacy requirements, controls, and responsibilities for each system, and the impact level of the information communicated; and</p>
+<p>Review and update the agreements {{ insert: param, ca-03_odp.03 }}.</p>
+<p>System information exchange requirements apply to information exchanges between two or more systems. System information exchanges include connections via leased lines or virtual private networks, connections to internet service providers, database sharing or exchanges of database transaction information, connections and exchanges with cloud services, exchanges via web-based services, or exchanges of files via file transfer protocols, network protocols (e.g., IPv4, IPv6), email, or other organization-to-organization communications. Organizations consider the risk related to new or increased threats that may be introduced when systems exchange information with other systems that may have different security and privacy requirements and controls. This includes systems within the same organization and systems that are external to the organization. A joint authorization of the systems exchanging information, as described in <a href="#ca-6.1">CA-6(1)</a> or <a href="#ca-6.2">CA-6(2)</a> , may help to communicate and reduce risk.</p>
+<p>Authorizing officials determine the risk associated with system information exchange and the controls needed for appropriate risk mitigation. The types of agreements selected are based on factors such as the impact level of the information being exchanged, the relationship between the organizations exchanging information (e.g., government to government, government to business, business to business, government or business to service provider, government or business to individual), or the level of access to the organizational system by users of the other system. If systems that exchange information have the same authorizing official, organizations need not develop agreements. Instead, the interface characteristics between the systems (e.g., how the information is being exchanged. how the information is protected) are described in the respective security and privacy plans. If the systems that exchange information have different authorizing officials within the same organization, the organizations can develop agreements or provide the same information that would be provided in the appropriate agreement type from <a href="#ca-3_smt.a">CA-3a</a> in the respective security and privacy plans for the systems. Organizations may incorporate agreement information into formal contracts, especially for information exchanges established between federal agencies and nonfederal organizations (including service providers, contractors, system developers, and system integrators). Risk considerations include systems that share the same networks.</p>
+<p>the exchange of information between the system and other systems is approved and managed using {{ insert: param, ca-03_odp.01 }};</p>
+<p>the interface characteristics are documented as part of each exchange agreement;</p>
+<p>security requirements are documented as part of each exchange agreement;</p>
+<p>privacy requirements are documented as part of each exchange agreement;</p>
+<p>controls are documented as part of each exchange agreement;</p>
+<p>responsibilities for each system are documented as part of each exchange agreement;</p>
+<p>the impact level of the information communicated is documented as part of each exchange agreement;</p>
+<p>agreements are reviewed and updated {{ insert: param, ca-03_odp.03 }}.</p>
+<p>Access control policy</p>
+<p>procedures addressing system connections</p>
+<p>system and communications protection policy</p>
+<p>system interconnection security agreements</p>
+<p>information exchange security agreements</p>
+<p>memoranda of understanding or agreements</p>
+<p>service level agreements</p>
+<p>non-disclosure agreements</p>
+<p>system design documentation</p>
+<p>enterprise architecture</p>
+<p>system architecture</p>
+<p>system configuration settings and associated documentation</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for developing, implementing, or approving system interconnection agreements</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>personnel managing the system(s) to which the interconnection security agreement applies</p>
+<h3 id="ca-5-plan-of-action-and-milestones">CA-5: Plan of Action and Milestones</h3>
+<p>Develop a plan of action and milestones for the system to document the planned remediation actions of the organization to correct weaknesses or deficiencies noted during the assessment of the controls and to reduce or eliminate known vulnerabilities in the system; and</p>
+<p>Update existing plan of action and milestones {{ insert: param, ca-05_odp }} based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities.</p>
+<p>Plans of action and milestones are useful for any type of organization to track planned remedial actions. Plans of action and milestones are required in authorization packages and subject to federal reporting requirements established by OMB.</p>
+<p>a plan of action and milestones for the system is developed to document the planned remediation actions of the organization to correct weaknesses or deficiencies noted during the assessment of the controls and to reduce or eliminate known vulnerabilities in the system;</p>
+<p>existing plan of action and milestones are updated {{ insert: param, ca-05_odp }} based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities.</p>
+<p>Assessment, authorization, and monitoring policy</p>
+<p>procedures addressing plan of action and milestones</p>
+<p>control assessment plan</p>
+<p>control assessment report</p>
+<p>control assessment evidence</p>
+<p>plan of action and milestones</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with plan of action and milestones development and implementation responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>Mechanisms for developing, implementing, and maintaining plan of action and milestones</p>
+<h3 id="ca-6-authorization">CA-6: Authorization</h3>
+<p>Assign a senior official as the authorizing official for the system;</p>
+<p>Assign a senior official as the authorizing official for common controls available for inheritance by organizational systems;</p>
+<p>Ensure that the authorizing official for the system, before commencing operations:</p>
+<p>Accepts the use of common controls inherited by the system; and</p>
+<p>Authorizes the system to operate;</p>
+<p>Ensure that the authorizing official for common controls authorizes the use of those controls for inheritance by organizational systems;</p>
+<p>Update the authorizations {{ insert: param, ca-06_odp }}.</p>
+<p>Authorizations are official management decisions by senior officials to authorize operation of systems, authorize the use of common controls for inheritance by organizational systems, and explicitly accept the risk to organizational operations and assets, individuals, other organizations, and the Nation based on the implementation of agreed-upon controls. Authorizing officials provide budgetary oversight for organizational systems and common controls or assume responsibility for the mission and business functions supported by those systems or common controls. The authorization process is a federal responsibility, and therefore, authorizing officials must be federal employees. Authorizing officials are both responsible and accountable for security and privacy risks associated with the operation and use of organizational systems. Nonfederal organizations may have similar processes to authorize systems and senior officials that assume the authorization role and associated responsibilities.</p>
+<p>Authorizing officials issue ongoing authorizations of systems based on evidence produced from implemented continuous monitoring programs. Robust continuous monitoring programs reduce the need for separate reauthorization processes. Through the employment of comprehensive continuous monitoring processes, the information contained in authorization packages (i.e., security and privacy plans, assessment reports, and plans of action and milestones) is updated on an ongoing basis. This provides authorizing officials, common control providers, and system owners with an up-to-date status of the security and privacy posture of their systems, controls, and operating environments. To reduce the cost of reauthorization, authorizing officials can leverage the results of continuous monitoring processes to the maximum extent possible as the basis for rendering reauthorization decisions.</p>
+<p>a senior official is assigned as the authorizing official for the system;</p>
+<p>a senior official is assigned as the authorizing official for common controls available for inheritance by organizational systems;</p>
+<p>before commencing operations, the authorizing official for the system accepts the use of common controls inherited by the system;</p>
+<p>before commencing operations, the authorizing official for the system authorizes the system to operate;</p>
+<p>the authorizing official for common controls authorizes the use of those controls for inheritance by organizational systems;</p>
+<p>the authorizations are updated {{ insert: param, ca-06_odp }}.</p>
+<p>Assessment, authorization, and monitoring policy</p>
+<p>procedures addressing authorization</p>
+<p>system security plan, privacy plan, assessment report, plan of action and milestones</p>
+<p>authorization statement</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with authorization responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>Mechanisms that facilitate authorizations and updates</p>
+<h3 id="ca-7-continuous-monitoring">CA-7: Continuous Monitoring</h3>
+<p>Develop a system-level continuous monitoring strategy and implement continuous monitoring in accordance with the organization-level continuous monitoring strategy that includes:</p>
+<p>Establishing the following system-level metrics to be monitored: {{ insert: param, ca-07_odp.01 }};</p>
+<p>Establishing {{ insert: param, ca-07_odp.02 }} for monitoring and {{ insert: param, ca-07_odp.03 }} for assessment of control effectiveness;</p>
+<p>Ongoing control assessments in accordance with the continuous monitoring strategy;</p>
+<p>Ongoing monitoring of system and organization-defined metrics in accordance with the continuous monitoring strategy;</p>
+<p>Correlation and analysis of information generated by control assessments and monitoring;</p>
+<p>Response actions to address results of the analysis of control assessment and monitoring information; and</p>
+<p>Reporting the security and privacy status of the system to {{ insert: param, ca-7_prm_4 }} {{ insert: param, ca-7_prm_5 }}.</p>
+<p>Continuous monitoring at the system level facilitates ongoing awareness of the system security and privacy posture to support organizational risk management decisions. The terms "continuous" and "ongoing" imply that organizations assess and monitor their controls and risks at a frequency sufficient to support risk-based decisions. Different types of controls may require different monitoring frequencies. The results of continuous monitoring generate risk response actions by organizations. When monitoring the effectiveness of multiple controls that have been grouped into capabilities, a root-cause analysis may be needed to determine the specific control that has failed. Continuous monitoring programs allow organizations to maintain the authorizations of systems and common controls in highly dynamic environments of operation with changing mission and business needs, threats, vulnerabilities, and technologies. Having access to security and privacy information on a continuing basis through reports and dashboards gives organizational officials the ability to make effective and timely risk management decisions, including ongoing authorization decisions.</p>
+<p>Automation supports more frequent updates to hardware, software, and firmware inventories, authorization packages, and other system information. Effectiveness is further enhanced when continuous monitoring outputs are formatted to provide information that is specific, measurable, actionable, relevant, and timely. Continuous monitoring activities are scaled in accordance with the security categories of systems. Monitoring requirements, including the need for specific monitoring, may be referenced in other controls and control enhancements, such as <a href="#ac-2_smt.g">AC-2g</a>, <a href="#ac-2.7">AC-2(7)</a>, <a href="#ac-2.12_smt.a">AC-2(12)(a)</a>, <a href="#ac-2.7_smt.b">AC-2(7)(b)</a>, <a href="#ac-2.7_smt.c">AC-2(7)(c)</a>, <a href="#ac-17.1">AC-17(1)</a>, <a href="#at-4_smt.a">AT-4a</a>, <a href="#au-13">AU-13</a>, <a href="#au-13.1">AU-13(1)</a>, <a href="#au-13.2">AU-13(2)</a>, <a href="#cm-3_smt.f">CM-3f</a>, <a href="#cm-6_smt.d">CM-6d</a>, <a href="#cm-11_smt.c">CM-11c</a>, <a href="#ir-5">IR-5</a>, <a href="#ma-2_smt.b">MA-2b</a>, <a href="#ma-3_smt.a">MA-3a</a>, <a href="#ma-4_smt.a">MA-4a</a>, <a href="#pe-3_smt.d">PE-3d</a>, <a href="#pe-6">PE-6</a>, <a href="#pe-14_smt.b">PE-14b</a>, <a href="#pe-16">PE-16</a>, <a href="#pe-20">PE-20</a>, <a href="#pm-6">PM-6</a>, <a href="#pm-23">PM-23</a>, <a href="#pm-31">PM-31</a>, <a href="#ps-7_smt.e">PS-7e</a>, <a href="#sa-9_smt.c">SA-9c</a>, <a href="#sr-4">SR-4</a>, <a href="#sc-5.3_smt.b">SC-5(3)(b)</a>, <a href="#sc-7_smt.a">SC-7a</a>, <a href="#sc-7.24_smt.b">SC-7(24)(b)</a>, <a href="#sc-18_smt.b">SC-18b</a>, <a href="#sc-43_smt.b">SC-43b</a> , and <a href="#si-4">SI-4</a>.</p>
+<p>a system-level continuous monitoring strategy is developed;</p>
+<p>system-level continuous monitoring is implemented in accordance with the organization-level continuous monitoring strategy;</p>
+<p>system-level continuous monitoring includes establishment of the following system-level metrics to be monitored: {{ insert: param, ca-07_odp.01 }};</p>
+<p>system-level continuous monitoring includes established {{ insert: param, ca-07_odp.02 }} for monitoring;</p>
+<p>system-level continuous monitoring includes established {{ insert: param, ca-07_odp.03 }} for assessment of control effectiveness;</p>
+<p>system-level continuous monitoring includes ongoing control assessments in accordance with the continuous monitoring strategy;</p>
+<p>system-level continuous monitoring includes ongoing monitoring of system and organization-defined metrics in accordance with the continuous monitoring strategy;</p>
+<p>system-level continuous monitoring includes correlation and analysis of information generated by control assessments and monitoring;</p>
+<p>system-level continuous monitoring includes response actions to address the results of the analysis of control assessment and monitoring information;</p>
+<p>system-level continuous monitoring includes reporting the security status of the system to {{ insert: param, ca-07_odp.04 }} {{ insert: param, ca-07_odp.05 }};</p>
+<p>system-level continuous monitoring includes reporting the privacy status of the system to {{ insert: param, ca-07_odp.06 }} {{ insert: param, ca-07_odp.07 }}.</p>
+<p>Assessment, authorization, and monitoring policy</p>
+<p>organizational continuous monitoring strategy</p>
+<p>system-level continuous monitoring strategy</p>
+<p>procedures addressing continuous monitoring of system controls</p>
+<p>procedures addressing configuration management</p>
+<p>control assessment report</p>
+<p>plan of action and milestones</p>
+<p>system monitoring records</p>
+<p>configuration management records</p>
+<p>impact analyses</p>
+<p>status reports</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with continuous monitoring responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system/network administrators</p>
+<p>Mechanisms implementing continuous monitoring</p>
+<p>mechanisms supporting response actions to address assessment and monitoring results</p>
+<p>mechanisms supporting security and privacy status reporting</p>
+<h3 id="ca-7-4-risk-monitoring">CA-7 (4): Risk Monitoring</h3>
+<p>Ensure risk monitoring is an integral part of the continuous monitoring strategy that includes the following:</p>
+<p>Effectiveness monitoring;</p>
+<p>Compliance monitoring; and</p>
+<p>Change monitoring.</p>
+<p>Risk monitoring is informed by the established organizational risk tolerance. Effectiveness monitoring determines the ongoing effectiveness of the implemented risk response measures. Compliance monitoring verifies that required risk response measures are implemented. It also verifies that security and privacy requirements are satisfied. Change monitoring identifies changes to organizational systems and environments of operation that may affect security and privacy risk.</p>
+<p>risk monitoring is an integral part of the continuous monitoring strategy;</p>
+<p>effectiveness monitoring is included in risk monitoring;</p>
+<p>compliance monitoring is included in risk monitoring;</p>
+<p>change monitoring is included in risk monitoring.</p>
+<p>Assessment, authorization, and monitoring policy</p>
+<p>organizational continuous monitoring strategy</p>
+<p>system-level continuous monitoring strategy</p>
+<p>procedures addressing continuous monitoring of system controls</p>
+<p>assessment report</p>
+<p>plan of action and milestones</p>
+<p>system monitoring records</p>
+<p>impact analyses</p>
+<p>status reports</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with continuous monitoring responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>Mechanisms supporting risk monitoring</p>
+<h3 id="ca-9-internal-system-connections">CA-9: Internal System Connections</h3>
+<p>Authorize internal connections of {{ insert: param, ca-09_odp.01 }} to the system;</p>
+<p>Document, for each internal connection, the interface characteristics, security and privacy requirements, and the nature of the information communicated;</p>
+<p>Terminate internal system connections after {{ insert: param, ca-09_odp.02 }} ; and</p>
+<p>Review {{ insert: param, ca-09_odp.03 }} the continued need for each internal connection.</p>
+<p>Internal system connections are connections between organizational systems and separate constituent system components (i.e., connections between components that are part of the same system) including components used for system development. Intra-system connections include connections with mobile devices, notebook and desktop computers, tablets, printers, copiers, facsimile machines, scanners, sensors, and servers. Instead of authorizing each internal system connection individually, organizations can authorize internal connections for a class of system components with common characteristics and/or configurations, including printers, scanners, and copiers with a specified processing, transmission, and storage capability or smart phones and tablets with a specific baseline configuration. The continued need for an internal system connection is reviewed from the perspective of whether it provides support for organizational missions or business functions.</p>
+<p>internal connections of {{ insert: param, ca-09_odp.01 }} to the system are authorized;</p>
+<p>for each internal connection, the interface characteristics are documented;</p>
+<p>for each internal connection, the security requirements are documented;</p>
+<p>for each internal connection, the privacy requirements are documented;</p>
+<p>for each internal connection, the nature of the information communicated is documented;</p>
+<p>internal system connections are terminated after {{ insert: param, ca-09_odp.02 }};</p>
+<p>the continued need for each internal connection is reviewed {{ insert: param, ca-09_odp.03 }}.</p>
+<p>Assessment, authorization, and monitoring policy</p>
+<p>access control policy</p>
+<p>procedures addressing system connections</p>
+<p>system and communications protection policy</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>list of components or classes of components authorized as internal system connections</p>
+<p>assessment report</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for developing, implementing, or authorizing internal system connections</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>Mechanisms supporting internal system connections</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../au/" class="btn btn-neutral float-left" title="AU: Audit and Accountability (10)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../cm/" class="btn btn-neutral float-right" title="CM: Configuration Management (9)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../au/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../cm/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

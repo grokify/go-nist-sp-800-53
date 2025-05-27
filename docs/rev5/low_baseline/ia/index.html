@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://grokify.github.io/go-nist-sp-800-53/rev5/low_baseline/ia/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>IA: Identification and Authentication (16) - NIST SP 800-53 Control Reference Site</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "IA: Identification and Authentication (16)";
+        var mkdocs_page_input_path = "rev5/low_baseline/ia.md";
+        var mkdocs_page_url = "/go-nist-sp-800-53/rev5/low_baseline/ia/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> NIST SP 800-53 Control Reference Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ac/">AC: Access Control (46)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/au/">AU: Audit and Accountability (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ca/">CA: Assessment, Authorization, and Monitoring (14)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cm/">CM: Configuration Management (32)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cp/">CP: Contingency Planning (35)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ia/">IA: Identification and Authentication (26)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ir/">IR: Incident Response (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ma/">MA: Maintenance (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/mp/">MP: Media Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pe/">PE: Physical and Environmental Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ps/">PS: Personnel Security (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ra/">RA: Risk Assessment (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sa/">SA: System and Services Acquisition (21)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sc/">SC: System and Communications Protection (30)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/si/">SI: System and Information Integrity (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sr/">SR: Supply Chain Risk Management (14)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ac/">AC: Access Control (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/at/">AT: Awareness and Training (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/au/">AU: Audit and Accountability (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ca/">CA: Assessment, Authorization, and Monitoring (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cm/">CM: Configuration Management (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cp/">CP: Contingency Planning (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ia/">IA: Identification and Authentication (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ir/">IR: Incident Response (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ma/">MA: Maintenance (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pe/">PE: Physical and Environmental Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pl/">PL: Planning (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ps/">PS: Personnel Security (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ra/">RA: Risk Assessment (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sa/">SA: System and Services Acquisition (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sc/">SC: System and Communications Protection (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/si/">SI: System and Information Integrity (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sr/">SR: Supply Chain Risk Management (2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ac/">AC: Access Control (39)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/au/">AU: Audit and Accountability (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ca/">CA: Assessment, Authorization, and Monitoring (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cm/">CM: Configuration Management (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cp/">CP: Contingency Planning (23)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ia/">IA: Identification and Authentication (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ir/">IR: Incident Response (13)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ma/">MA: Maintenance (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/mp/">MP: Media Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pe/">PE: Physical and Environmental Protection (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ra/">RA: Risk Assessment (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sa/">SA: System and Services Acquisition (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sc/">SC: System and Communications Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/si/">SI: System and Information Integrity (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sr/">SR: Supply Chain Risk Management (12)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ac/">AC: Access Control (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/at/">AT: Awareness and Training (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/au/">AU: Audit and Accountability (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ca/">CA: Assessment, Authorization, and Monitoring (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cm/">CM: Configuration Management (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cp/">CP: Contingency Planning (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ia/">IA: Identification and Authentication (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ir/">IR: Incident Response (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ma/">MA: Maintenance (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pe/">PE: Physical and Environmental Protection (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pl/">PL: Planning (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ps/">PS: Personnel Security (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ra/">RA: Risk Assessment (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sa/">SA: System and Services Acquisition (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sc/">SC: System and Communications Protection (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/si/">SI: System and Information Integrity (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sr/">SR: Supply Chain Risk Management (1)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Low Baseline</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ac/">AC: Access Control (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../at/">AT: Awareness and Training (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../au/">AU: Audit and Accountability (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ca/">CA: Assessment, Authorization, and Monitoring (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cm/">CM: Configuration Management (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cp/">CP: Contingency Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">IA: Identification and Authentication (16)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-1-policy-and-procedures">IA-1: Policy and Procedures</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-2-identification-and-authentication-organizational-users">IA-2: Identification and Authentication (Organizational Users)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-2-1-multi-factor-authentication-to-privileged-accounts">IA-2 (1): Multi-factor Authentication to Privileged Accounts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-2-2-multi-factor-authentication-to-non-privileged-accounts">IA-2 (2): Multi-factor Authentication to Non-privileged Accounts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-2-8-access-to-accounts-replay-resistant">IA-2 (8): Access to Accounts — Replay Resistant</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-2-12-acceptance-of-piv-credentials">IA-2 (12): Acceptance of PIV Credentials</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-4-identifier-management">IA-4: Identifier Management</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-5-authenticator-management">IA-5: Authenticator Management</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-5-1-password-based-authentication">IA-5 (1): Password-based Authentication</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-6-authentication-feedback">IA-6: Authentication Feedback</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-7-cryptographic-module-authentication">IA-7: Cryptographic Module Authentication</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-8-identification-and-authentication-non-organizational-users">IA-8: Identification and Authentication (Non-organizational Users)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-8-1-acceptance-of-piv-credentials-from-other-agencies">IA-8 (1): Acceptance of PIV Credentials from Other Agencies</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-8-2-acceptance-of-external-authenticators">IA-8 (2): Acceptance of External Authenticators</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-8-4-use-of-defined-profiles">IA-8 (4): Use of Defined Profiles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ia-11-re-authentication">IA-11: Re-authentication</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ir/">IR: Incident Response (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ma/">MA: Maintenance (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mp/">MP: Media Protection (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pe/">PE: Physical and Environmental Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pl/">PL: Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ra/">RA: Risk Assessment (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sa/">SA: System and Services Acquisition (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sc/">SC: System and Communications Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../si/">SI: System and Information Integrity (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sr/">SR: Supply Chain Risk Management (11)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NIST SP 800-53 Control Reference Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Low Baseline &raquo;</li><li>IA: Identification and Authentication (16)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ia-identification-and-authentication">IA - Identification and Authentication</h1>
+<ul>
+<li>Controls: 16</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<h3 id="ia-1-policy-and-procedures">IA-1: Policy and Procedures</h3>
+<p>Develop, document, and disseminate to {{ insert: param, ia-1_prm_1 }}:</p>
+<p>{{ insert: param, ia-01_odp.03 }} identification and authentication policy that:</p>
+<p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
+<p>Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and</p>
+<p>Procedures to facilitate the implementation of the identification and authentication policy and the associated identification and authentication controls;</p>
+<p>Designate an {{ insert: param, ia-01_odp.04 }} to manage the development, documentation, and dissemination of the identification and authentication policy and procedures; and</p>
+<p>Review and update the current identification and authentication:</p>
+<p>Policy {{ insert: param, ia-01_odp.05 }} and following {{ insert: param, ia-01_odp.06 }} ; and</p>
+<p>Procedures {{ insert: param, ia-01_odp.07 }} and following {{ insert: param, ia-01_odp.08 }}.</p>
+<p>Identification and authentication policy and procedures address the controls in the IA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of identification and authentication policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to identification and authentication policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.</p>
+<p>an identification and authentication policy is developed and documented;</p>
+<p>the identification and authentication policy is disseminated to {{ insert: param, ia-01_odp.01 }};</p>
+<p>identification and authentication procedures to facilitate the implementation of the identification and authentication policy and associated identification and authentication controls are developed and documented;</p>
+<p>the identification and authentication procedures are disseminated to {{ insert: param, ia-01_odp.02 }};</p>
+<p>the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses purpose;</p>
+<p>the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses scope;</p>
+<p>the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses roles;</p>
+<p>the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses responsibilities;</p>
+<p>the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses management commitment;</p>
+<p>the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses coordination among organizational entities;</p>
+<p>the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses compliance;</p>
+<p>the {{ insert: param, ia-01_odp.03 }} identification and authentication policy is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines;</p>
+<p>the {{ insert: param, ia-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the identification and authentication policy and procedures;</p>
+<p>the current identification and authentication policy is reviewed and updated {{ insert: param, ia-01_odp.05 }};</p>
+<p>the current identification and authentication policy is reviewed and updated following {{ insert: param, ia-01_odp.06 }};</p>
+<p>the current identification and authentication procedures are reviewed and updated {{ insert: param, ia-01_odp.07 }};</p>
+<p>the current identification and authentication procedures are reviewed and updated following {{ insert: param, ia-01_odp.08 }}.</p>
+<p>Identification and authentication policy and procedures</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>risk management strategy documentation</p>
+<p>list of events requiring identification and authentication procedures to be reviewed and updated (e.g., audit findings)</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with identification and authentication responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<h3 id="ia-2-identification-and-authentication-organizational-users">IA-2: Identification and Authentication (Organizational Users)</h3>
+<p>Uniquely identify and authenticate organizational users and associate that unique identification with processes acting on behalf of those users.</p>
+<p>Organizations can satisfy the identification and authentication requirements by complying with the requirements in <a href="#f16e438e-7114-4144-bfe2-2dfcad8cb2d0">HSPD 12</a> . Organizational users include employees or individuals who organizations consider to have an equivalent status to employees (e.g., contractors and guest researchers). Unique identification and authentication of users applies to all accesses other than those that are explicitly identified in <a href="#ac-14">AC-14</a> and that occur through the authorized use of group authenticators without individual authentication. Since processes execute on behalf of groups and roles, organizations may require unique identification of individuals in group accounts or for detailed accountability of individual activity.</p>
+<p>Organizations employ passwords, physical authenticators, or biometrics to authenticate user identities or, in the case of multi-factor authentication, some combination thereof. Access to organizational systems is defined as either local access or network access. Local access is any access to organizational systems by users or processes acting on behalf of users, where access is obtained through direct connections without the use of networks. Network access is access to organizational systems by users (or processes acting on behalf of users) where access is obtained through network connections (i.e., nonlocal accesses). Remote access is a type of network access that involves communication through external networks. Internal networks include local area networks and wide area networks.</p>
+<p>The use of encrypted virtual private networks for network connections between organization-controlled endpoints and non-organization-controlled endpoints may be treated as internal networks with respect to protecting the confidentiality and integrity of information traversing the network. Identification and authentication requirements for non-organizational users are described in <a href="#ia-8">IA-8</a>.</p>
+<p>organizational users are uniquely identified and authenticated;</p>
+<p>the unique identification of authenticated organizational users is associated with processes acting on behalf of those users.</p>
+<p>Identification and authentication policy</p>
+<p>procedures addressing user identification and authentication</p>
+<p>system security plan, system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>list of system accounts</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system operations responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>organizational personnel with account management responsibilities</p>
+<p>system developers</p>
+<p>Organizational processes for uniquely identifying and authenticating users</p>
+<p>mechanisms supporting and/or implementing identification and authentication capabilities</p>
+<h3 id="ia-2-1-multi-factor-authentication-to-privileged-accounts">IA-2 (1): Multi-factor Authentication to Privileged Accounts</h3>
+<p>Implement multi-factor authentication for access to privileged accounts.</p>
+<p>Multi-factor authentication requires the use of two or more different factors to achieve authentication. The authentication factors are defined as follows: something you know (e.g., a personal identification number [PIN]), something you have (e.g., a physical authenticator such as a cryptographic private key), or something you are (e.g., a biometric). Multi-factor authentication solutions that feature physical authenticators include hardware authenticators that provide time-based or challenge-response outputs and smart cards such as the U.S. Government Personal Identity Verification (PIV) card or the Department of Defense (DoD) Common Access Card (CAC). In addition to authenticating users at the system level (i.e., at logon), organizations may employ authentication mechanisms at the application level, at their discretion, to provide increased security. Regardless of the type of access (i.e., local, network, remote), privileged accounts are authenticated using multi-factor options appropriate for the level of risk. Organizations can add additional security measures, such as additional or more rigorous authentication mechanisms, for specific types of access.</p>
+<p>multi-factor authentication is implemented for access to privileged accounts.</p>
+<p>Identification and authentication policy</p>
+<p>procedures addressing user identification and authentication</p>
+<p>system security plan</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>list of system accounts</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system operations responsibilities</p>
+<p>organizational personnel with account management responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms supporting and/or implementing a multi-factor authentication capability</p>
+<h3 id="ia-2-2-multi-factor-authentication-to-non-privileged-accounts">IA-2 (2): Multi-factor Authentication to Non-privileged Accounts</h3>
+<p>Implement multi-factor authentication for access to non-privileged accounts.</p>
+<p>Multi-factor authentication requires the use of two or more different factors to achieve authentication. The authentication factors are defined as follows: something you know (e.g., a personal identification number [PIN]), something you have (e.g., a physical authenticator such as a cryptographic private key), or something you are (e.g., a biometric). Multi-factor authentication solutions that feature physical authenticators include hardware authenticators that provide time-based or challenge-response outputs and smart cards such as the U.S. Government Personal Identity Verification card or the DoD Common Access Card. In addition to authenticating users at the system level, organizations may also employ authentication mechanisms at the application level, at their discretion, to provide increased information security. Regardless of the type of access (i.e., local, network, remote), non-privileged accounts are authenticated using multi-factor options appropriate for the level of risk. Organizations can provide additional security measures, such as additional or more rigorous authentication mechanisms, for specific types of access.</p>
+<p>multi-factor authentication for access to non-privileged accounts is implemented.</p>
+<p>Identification and authentication policy</p>
+<p>system security plan</p>
+<p>procedures addressing user identification and authentication</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>list of system accounts</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system operations responsibilities</p>
+<p>organizational personnel with account management responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms supporting and/or implementing a multi-factor authentication capability</p>
+<h3 id="ia-2-8-access-to-accounts-replay-resistant">IA-2 (8): Access to Accounts — Replay Resistant</h3>
+<p>Implement replay-resistant authentication mechanisms for access to {{ insert: param, ia-02.08_odp }}.</p>
+<p>Authentication processes resist replay attacks if it is impractical to achieve successful authentications by replaying previous authentication messages. Replay-resistant techniques include protocols that use nonces or challenges such as time synchronous or cryptographic authenticators.</p>
+<p>replay-resistant authentication mechanisms for access to {{ insert: param, ia-02.08_odp }} are implemented.</p>
+<p>Identification and authentication policy</p>
+<p>system security plan</p>
+<p>procedures addressing user identification and authentication</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>list of privileged system accounts</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system operations responsibilities</p>
+<p>organizational personnel with account management responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms supporting and/or implementing identification and authentication capabilities</p>
+<p>Mechanisms supporting and/or implementing replay-resistant authentication mechanisms</p>
+<h3 id="ia-2-12-acceptance-of-piv-credentials">IA-2 (12): Acceptance of PIV Credentials</h3>
+<p>Accept and electronically verify Personal Identity Verification-compliant credentials.</p>
+<p>Acceptance of Personal Identity Verification (PIV)-compliant credentials applies to organizations implementing logical access control and physical access control systems. PIV-compliant credentials are those credentials issued by federal agencies that conform to FIPS Publication 201 and supporting guidance documents. The adequacy and reliability of PIV card issuers are authorized using <a href="#10963761-58fc-4b20-b3d6-b44a54daba03">SP 800-79-2</a> . Acceptance of PIV-compliant credentials includes derived PIV credentials, the use of which is addressed in <a href="#e8552d48-cf41-40aa-8b06-f45f7fb4706c">SP 800-166</a> . The DOD Common Access Card (CAC) is an example of a PIV credential.</p>
+<p>Personal Identity Verification-compliant credentials are accepted and electronically verified.</p>
+<p>Identification and authentication policy</p>
+<p>system security plan</p>
+<p>procedures addressing user identification and authentication</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>PIV verification records</p>
+<p>evidence of PIV credentials</p>
+<p>PIV credential authorizations</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system operations responsibilities</p>
+<p>organizational personnel with account management responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms supporting and/or implementing acceptance and verification of PIV credentials</p>
+<h3 id="ia-4-identifier-management">IA-4: Identifier Management</h3>
+<p>Manage system identifiers by:</p>
+<p>Receiving authorization from {{ insert: param, ia-04_odp.01 }} to assign an individual, group, role, service, or device identifier;</p>
+<p>Selecting an identifier that identifies an individual, group, role, service, or device;</p>
+<p>Assigning the identifier to the intended individual, group, role, service, or device; and</p>
+<p>Preventing reuse of identifiers for {{ insert: param, ia-04_odp.02 }}.</p>
+<p>Common device identifiers include Media Access Control (MAC) addresses, Internet Protocol (IP) addresses, or device-unique token identifiers. The management of individual identifiers is not applicable to shared system accounts. Typically, individual identifiers are the usernames of the system accounts assigned to those individuals. In such instances, the account management activities of <a href="#ac-2">AC-2</a> use account names provided by <a href="#ia-4">IA-4</a> . Identifier management also addresses individual identifiers not necessarily associated with system accounts. Preventing the reuse of identifiers implies preventing the assignment of previously used individual, group, role, service, or device identifiers to different individuals, groups, roles, services, or devices.</p>
+<p>system identifiers are managed by receiving authorization from {{ insert: param, ia-04_odp.01 }} to assign to an individual, group, role, or device identifier;</p>
+<p>system identifiers are managed by selecting an identifier that identifies an individual, group, role, service, or device;</p>
+<p>system identifiers are managed by assigning the identifier to the intended individual, group, role, service, or device;</p>
+<p>system identifiers are managed by preventing reuse of identifiers for {{ insert: param, ia-04_odp.02 }}.</p>
+<p>Identification and authentication policy</p>
+<p>procedures addressing identifier management</p>
+<p>procedures addressing account management</p>
+<p>system security plan</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>list of system accounts</p>
+<p>list of identifiers generated from physical access control devices</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with identifier management responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms supporting and/or implementing identifier management</p>
+<h3 id="ia-5-authenticator-management">IA-5: Authenticator Management</h3>
+<p>Manage system authenticators by:</p>
+<p>Verifying, as part of the initial authenticator distribution, the identity of the individual, group, role, service, or device receiving the authenticator;</p>
+<p>Establishing initial authenticator content for any authenticators issued by the organization;</p>
+<p>Ensuring that authenticators have sufficient strength of mechanism for their intended use;</p>
+<p>Establishing and implementing administrative procedures for initial authenticator distribution, for lost or compromised or damaged authenticators, and for revoking authenticators;</p>
+<p>Changing default authenticators prior to first use;</p>
+<p>Changing or refreshing authenticators {{ insert: param, ia-05_odp.01 }} or when {{ insert: param, ia-05_odp.02 }} occur;</p>
+<p>Protecting authenticator content from unauthorized disclosure and modification;</p>
+<p>Requiring individuals to take, and having devices implement, specific controls to protect authenticators; and</p>
+<p>Changing authenticators for group or role accounts when membership to those accounts changes.</p>
+<p>Authenticators include passwords, cryptographic devices, biometrics, certificates, one-time password devices, and ID badges. Device authenticators include certificates and passwords. Initial authenticator content is the actual content of the authenticator (e.g., the initial password). In contrast, the requirements for authenticator content contain specific criteria or characteristics (e.g., minimum password length). Developers may deliver system components with factory default authentication credentials (i.e., passwords) to allow for initial installation and configuration. Default authentication credentials are often well known, easily discoverable, and present a significant risk. The requirement to protect individual authenticators may be implemented via control <a href="#pl-4">PL-4</a> or <a href="#ps-6">PS-6</a> for authenticators in the possession of individuals and by controls <a href="#ac-3">AC-3</a>, <a href="#ac-6">AC-6</a> , and <a href="#sc-28">SC-28</a> for authenticators stored in organizational systems, including passwords stored in hashed or encrypted formats or files containing encrypted or hashed passwords accessible with administrator privileges.</p>
+<p>Systems support authenticator management by organization-defined settings and restrictions for various authenticator characteristics (e.g., minimum password length, validation time window for time synchronous one-time tokens, and number of allowed rejections during the verification stage of biometric authentication). Actions can be taken to safeguard individual authenticators, including maintaining possession of authenticators, not sharing authenticators with others, and immediately reporting lost, stolen, or compromised authenticators. Authenticator management includes issuing and revoking authenticators for temporary access when no longer needed.</p>
+<p>system authenticators are managed through the verification of the identity of the individual, group, role, service, or device receiving the authenticator as part of the initial authenticator distribution;</p>
+<p>system authenticators are managed through the establishment of initial authenticator content for any authenticators issued by the organization;</p>
+<p>system authenticators are managed to ensure that authenticators have sufficient strength of mechanism for their intended use;</p>
+<p>system authenticators are managed through the establishment and implementation of administrative procedures for initial authenticator distribution; lost, compromised, or damaged authenticators; and the revocation of authenticators;</p>
+<p>system authenticators are managed through the change of default authenticators prior to first use;</p>
+<p>system authenticators are managed through the change or refreshment of authenticators {{ insert: param, ia-05_odp.01 }} or when {{ insert: param, ia-05_odp.02 }} occur;</p>
+<p>system authenticators are managed through the protection of authenticator content from unauthorized disclosure and modification;</p>
+<p>system authenticators are managed through the requirement for individuals to take specific controls to protect authenticators;</p>
+<p>system authenticators are managed through the requirement for devices to implement specific controls to protect authenticators;</p>
+<p>system authenticators are managed through the change of authenticators for group or role accounts when membership to those accounts changes.</p>
+<p>Identification and authentication policy</p>
+<p>system security plan</p>
+<p>addressing authenticator management</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>list of system authenticator types</p>
+<p>change control records associated with managing system authenticators</p>
+<p>system audit records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with authenticator management responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>Mechanisms supporting and/or implementing authenticator management capability</p>
+<h3 id="ia-5-1-password-based-authentication">IA-5 (1): Password-based Authentication</h3>
+<p>For password-based authentication:</p>
+<p>Maintain a list of commonly-used, expected, or compromised passwords and update the list {{ insert: param, ia-05.01_odp.01 }} and when organizational passwords are suspected to have been compromised directly or indirectly;</p>
+<p>Verify, when users create or update passwords, that the passwords are not found on the list of commonly-used, expected, or compromised passwords in IA-5(1)(a);</p>
+<p>Transmit passwords only over cryptographically-protected channels;</p>
+<p>Store passwords using an approved salted key derivation function, preferably using a keyed hash;</p>
+<p>Require immediate selection of a new password upon account recovery;</p>
+<p>Allow user selection of long passwords and passphrases, including spaces and all printable characters;</p>
+<p>Employ automated tools to assist the user in selecting strong password authenticators; and</p>
+<p>Enforce the following composition and complexity rules: {{ insert: param, ia-05.01_odp.02 }}.</p>
+<p>Password-based authentication applies to passwords regardless of whether they are used in single-factor or multi-factor authentication. Long passwords or passphrases are preferable over shorter passwords. Enforced composition rules provide marginal security benefits while decreasing usability. However, organizations may choose to establish certain rules for password generation (e.g., minimum character length for long passwords) under certain circumstances and can enforce this requirement in IA-5(1)(h). Account recovery can occur, for example, in situations when a password is forgotten. Cryptographically protected passwords include salted one-way cryptographic hashes of passwords. The list of commonly used, compromised, or expected passwords includes passwords obtained from previous breach corpuses, dictionary words, and repetitive or sequential characters. The list includes context-specific words, such as the name of the service, username, and derivatives thereof.</p>
+<p>for password-based authentication, a list of commonly used, expected, or compromised passwords is maintained and updated {{ insert: param, ia-05.01_odp.01 }} and when organizational passwords are suspected to have been compromised directly or indirectly;</p>
+<p>for password-based authentication when passwords are created or updated by users, the passwords are verified not to be found on the list of commonly used, expected, or compromised passwords in IA-05(01)(a);</p>
+<p>for password-based authentication, passwords are only transmitted over cryptographically protected channels;</p>
+<p>for password-based authentication, passwords are stored using an approved salted key derivation function, preferably using a keyed hash;</p>
+<p>for password-based authentication, immediate selection of a new password is required upon account recovery;</p>
+<p>for password-based authentication, user selection of long passwords and passphrases is allowed, including spaces and all printable characters;</p>
+<p>for password-based authentication, automated tools are employed to assist the user in selecting strong password authenticators;</p>
+<p>for password-based authentication, {{ insert: param, ia-05.01_odp.02 }} are enforced.</p>
+<p>Identification and authentication policy</p>
+<p>password policy</p>
+<p>procedures addressing authenticator management</p>
+<p>system security plan</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>password configurations and associated documentation</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with authenticator management responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms supporting and/or implementing password-based authenticator management capability</p>
+<h3 id="ia-6-authentication-feedback">IA-6: Authentication Feedback</h3>
+<p>Obscure feedback of authentication information during the authentication process to protect the information from possible exploitation and use by unauthorized individuals.</p>
+<p>Authentication feedback from systems does not provide information that would allow unauthorized individuals to compromise authentication mechanisms. For some types of systems, such as desktops or notebooks with relatively large monitors, the threat (referred to as shoulder surfing) may be significant. For other types of systems, such as mobile devices with small displays, the threat may be less significant and is balanced against the increased likelihood of typographic input errors due to small keyboards. Thus, the means for obscuring authentication feedback is selected accordingly. Obscuring authentication feedback includes displaying asterisks when users type passwords into input devices or displaying feedback for a very limited time before obscuring it.</p>
+<p>the feedback of authentication information is obscured during the authentication process to protect the information from possible exploitation and use by unauthorized individuals.</p>
+<p>Identification and authentication policy</p>
+<p>system security plan</p>
+<p>procedures addressing authenticator feedback</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms supporting and/or implementing the obscuring of feedback of authentication information during authentication</p>
+<h3 id="ia-7-cryptographic-module-authentication">IA-7: Cryptographic Module Authentication</h3>
+<p>Implement mechanisms for authentication to a cryptographic module that meet the requirements of applicable laws, executive orders, directives, policies, regulations, standards, and guidelines for such authentication.</p>
+<p>Authentication mechanisms may be required within a cryptographic module to authenticate an operator accessing the module and to verify that the operator is authorized to assume the requested role and perform services within that role.</p>
+<p>mechanisms for authentication to a cryptographic module are implemented that meet the requirements of applicable laws, executive orders, directives, policies, regulations, standards, and guidelines for such authentication.</p>
+<p>Identification and authentication policy</p>
+<p>system security plan</p>
+<p>procedures addressing cryptographic module authentication</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibility for cryptographic module authentication</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms supporting and/or implementing cryptographic module authentication</p>
+<h3 id="ia-8-identification-and-authentication-non-organizational-users">IA-8: Identification and Authentication (Non-organizational Users)</h3>
+<p>Uniquely identify and authenticate non-organizational users or processes acting on behalf of non-organizational users.</p>
+<p>Non-organizational users include system users other than organizational users explicitly covered by <a href="#ia-2">IA-2</a> . Non-organizational users are uniquely identified and authenticated for accesses other than those explicitly identified and documented in <a href="#ac-14">AC-14</a> . Identification and authentication of non-organizational users accessing federal systems may be required to protect federal, proprietary, or privacy-related information (with exceptions noted for national security systems). Organizations consider many factors—including security, privacy, scalability, and practicality—when balancing the need to ensure ease of use for access to federal information and systems with the need to protect and adequately mitigate risk.</p>
+<p>non-organizational users or processes acting on behalf of non-organizational users are uniquely identified and authenticated.</p>
+<p>Identification and authentication policy</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>procedures addressing user identification and authentication</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>list of system accounts</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system operations responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system/network administrators</p>
+<p>organizational personnel with account management responsibilities</p>
+<p>Mechanisms supporting and/or implementing identification and authentication capabilities</p>
+<h3 id="ia-8-1-acceptance-of-piv-credentials-from-other-agencies">IA-8 (1): Acceptance of PIV Credentials from Other Agencies</h3>
+<p>Accept and electronically verify Personal Identity Verification-compliant credentials from other federal agencies.</p>
+<p>Acceptance of Personal Identity Verification (PIV) credentials from other federal agencies applies to both logical and physical access control systems. PIV credentials are those credentials issued by federal agencies that conform to FIPS Publication 201 and supporting guidelines. The adequacy and reliability of PIV card issuers are addressed and authorized using <a href="#10963761-58fc-4b20-b3d6-b44a54daba03">SP 800-79-2</a>.</p>
+<p>Personal Identity Verification-compliant credentials from other federal agencies are accepted;</p>
+<p>Personal Identity Verification-compliant credentials from other federal agencies are electronically verified.</p>
+<p>Identification and authentication policy</p>
+<p>system security plan</p>
+<p>procedures addressing user identification and authentication</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>PIV verification records</p>
+<p>evidence of PIV credentials</p>
+<p>PIV credential authorizations</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system operations responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>organizational personnel with account management responsibilities</p>
+<p>Mechanisms supporting and/or implementing identification and authentication capabilities</p>
+<p>mechanisms that accept and verify PIV credentials</p>
+<h3 id="ia-8-2-acceptance-of-external-authenticators">IA-8 (2): Acceptance of External Authenticators</h3>
+<p>Accept only external authenticators that are NIST-compliant; and</p>
+<p>Document and maintain a list of accepted external authenticators.</p>
+<p>Acceptance of only NIST-compliant external authenticators applies to organizational systems that are accessible to the public (e.g., public-facing websites). External authenticators are issued by nonfederal government entities and are compliant with <a href="#e59c5a7c-8b1f-49ca-8de0-6ee0882180ce">SP 800-63B</a> . Approved external authenticators meet or exceed the minimum Federal Government-wide technical, security, privacy, and organizational maturity requirements. Meeting or exceeding Federal requirements allows Federal Government relying parties to trust external authenticators in connection with an authentication transaction at a specified authenticator assurance level.</p>
+<p>only external authenticators that are NIST-compliant are accepted;</p>
+<p>a list of accepted external authenticators is documented;</p>
+<p>a list of accepted external authenticators is maintained.</p>
+<p>Identification and authentication policy</p>
+<p>system security plan</p>
+<p>procedures addressing user identification and authentication</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>list of third-party credentialing products, components, or services procured and implemented by organization</p>
+<p>third-party credential verification records</p>
+<p>evidence of third-party credentials</p>
+<p>third-party credential authorizations</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system operations responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>organizational personnel with account management responsibilities</p>
+<p>Mechanisms supporting and/or implementing identification and authentication capabilities</p>
+<p>mechanisms that accept external credentials</p>
+<h3 id="ia-8-4-use-of-defined-profiles">IA-8 (4): Use of Defined Profiles</h3>
+<p>Conform to the following profiles for identity management {{ insert: param, ia-08.04_odp }}.</p>
+<p>Organizations define profiles for identity management based on open identity management standards. To ensure that open identity management standards are viable, robust, reliable, sustainable, and interoperable as documented, the Federal Government assesses and scopes the standards and technology implementations against applicable laws, executive orders, directives, policies, regulations, standards, and guidelines.</p>
+<p>there is conformance with {{ insert: param, ia-08.04_odp }} for identity management.</p>
+<p>Identification and authentication policy</p>
+<p>system security plan</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system operations responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>organizational personnel with account management responsibilities</p>
+<p>Mechanisms supporting and/or implementing identification and authentication capabilities</p>
+<p>mechanisms supporting and/or implementing conformance with profiles</p>
+<h3 id="ia-11-re-authentication">IA-11: Re-authentication</h3>
+<p>Require users to re-authenticate when {{ insert: param, ia-11_odp }}.</p>
+<p>In addition to the re-authentication requirements associated with device locks, organizations may require re-authentication of individuals in certain situations, including when roles, authenticators or credentials change, when security categories of systems change, when the execution of privileged functions occurs, after a fixed time period, or periodically.</p>
+<p>users are required to re-authenticate when {{ insert: param, ia-11_odp }}.</p>
+<p>Identification and authentication policy</p>
+<p>procedures addressing user and device re-authentication</p>
+<p>system security plan</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>list of circumstances or situations requiring re-authentication</p>
+<p>system audit records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system operations responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>organizational personnel with identification and authentication responsibilities</p>
+<p>Mechanisms supporting and/or implementing identification and authentication capabilities</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../cp/" class="btn btn-neutral float-left" title="CP: Contingency Planning (6)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ir/" class="btn btn-neutral float-right" title="IR: Incident Response (7)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../cp/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ir/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

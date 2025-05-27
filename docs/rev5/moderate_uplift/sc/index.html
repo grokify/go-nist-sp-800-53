@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://grokify.github.io/go-nist-sp-800-53/rev5/moderate_uplift/sc/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>SC: System and Communications Protection (15) - NIST SP 800-53 Control Reference Site</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "SC: System and Communications Protection (15)";
+        var mkdocs_page_input_path = "rev5/moderate_uplift/sc.md";
+        var mkdocs_page_url = "/go-nist-sp-800-53/rev5/moderate_uplift/sc/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> NIST SP 800-53 Control Reference Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ac/">AC: Access Control (46)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/au/">AU: Audit and Accountability (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ca/">CA: Assessment, Authorization, and Monitoring (14)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cm/">CM: Configuration Management (32)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cp/">CP: Contingency Planning (35)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ia/">IA: Identification and Authentication (26)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ir/">IR: Incident Response (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ma/">MA: Maintenance (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/mp/">MP: Media Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pe/">PE: Physical and Environmental Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ps/">PS: Personnel Security (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ra/">RA: Risk Assessment (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sa/">SA: System and Services Acquisition (21)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sc/">SC: System and Communications Protection (30)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/si/">SI: System and Information Integrity (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sr/">SR: Supply Chain Risk Management (14)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ac/">AC: Access Control (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/at/">AT: Awareness and Training (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/au/">AU: Audit and Accountability (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ca/">CA: Assessment, Authorization, and Monitoring (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cm/">CM: Configuration Management (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cp/">CP: Contingency Planning (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ia/">IA: Identification and Authentication (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ir/">IR: Incident Response (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ma/">MA: Maintenance (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pe/">PE: Physical and Environmental Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pl/">PL: Planning (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ps/">PS: Personnel Security (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ra/">RA: Risk Assessment (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sa/">SA: System and Services Acquisition (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sc/">SC: System and Communications Protection (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/si/">SI: System and Information Integrity (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sr/">SR: Supply Chain Risk Management (2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ac/">AC: Access Control (39)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/au/">AU: Audit and Accountability (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ca/">CA: Assessment, Authorization, and Monitoring (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cm/">CM: Configuration Management (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cp/">CP: Contingency Planning (23)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ia/">IA: Identification and Authentication (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ir/">IR: Incident Response (13)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ma/">MA: Maintenance (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/mp/">MP: Media Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pe/">PE: Physical and Environmental Protection (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ra/">RA: Risk Assessment (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sa/">SA: System and Services Acquisition (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sc/">SC: System and Communications Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/si/">SI: System and Information Integrity (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sr/">SR: Supply Chain Risk Management (12)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Uplift</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ac/">AC: Access Control (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../at/">AT: Awareness and Training (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../au/">AU: Audit and Accountability (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ca/">CA: Assessment, Authorization, and Monitoring (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cm/">CM: Configuration Management (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cp/">CP: Contingency Planning (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ia/">IA: Identification and Authentication (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ir/">IR: Incident Response (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ma/">MA: Maintenance (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pe/">PE: Physical and Environmental Protection (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pl/">PL: Planning (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ps/">PS: Personnel Security (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ra/">RA: Risk Assessment (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sa/">SA: System and Services Acquisition (8)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">SC: System and Communications Protection (15)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-2-separation-of-system-and-user-functionality">SC-2: Separation of System and User Functionality</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-4-information-in-shared-system-resources">SC-4: Information in Shared System Resources</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-7-3-access-points">SC-7 (3): Access Points</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-7-4-external-telecommunications-services">SC-7 (4): External Telecommunications Services</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-7-5-deny-by-default-allow-by-exception">SC-7 (5): Deny by Default — Allow by Exception</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-7-7-split-tunneling-for-remote-devices">SC-7 (7): Split Tunneling for Remote Devices</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-7-8-route-traffic-to-authenticated-proxy-servers">SC-7 (8): Route Traffic to Authenticated Proxy Servers</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-8-transmission-confidentiality-and-integrity">SC-8: Transmission Confidentiality and Integrity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-8-1-cryptographic-protection">SC-8 (1): Cryptographic Protection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-10-network-disconnect">SC-10: Network Disconnect</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-17-public-key-infrastructure-certificates">SC-17: Public Key Infrastructure Certificates</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-18-mobile-code">SC-18: Mobile Code</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-23-session-authenticity">SC-23: Session Authenticity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-28-protection-of-information-at-rest">SC-28: Protection of Information at Rest</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sc-28-1-cryptographic-protection">SC-28 (1): Cryptographic Protection</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../si/">SI: System and Information Integrity (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sr/">SR: Supply Chain Risk Management (1)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Low Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ac/">AC: Access Control (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/at/">AT: Awareness and Training (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/au/">AU: Audit and Accountability (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ca/">CA: Assessment, Authorization, and Monitoring (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cm/">CM: Configuration Management (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cp/">CP: Contingency Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ia/">IA: Identification and Authentication (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ir/">IR: Incident Response (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ma/">MA: Maintenance (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/mp/">MP: Media Protection (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pe/">PE: Physical and Environmental Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pl/">PL: Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ra/">RA: Risk Assessment (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sa/">SA: System and Services Acquisition (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sc/">SC: System and Communications Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/si/">SI: System and Information Integrity (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sr/">SR: Supply Chain Risk Management (11)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NIST SP 800-53 Control Reference Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Moderate Uplift &raquo;</li><li>SC: System and Communications Protection (15)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="sc-system-and-communications-protection">SC - System and Communications Protection</h1>
+<ul>
+<li>Controls: 15</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<h3 id="sc-2-separation-of-system-and-user-functionality">SC-2: Separation of System and User Functionality</h3>
+<p>Separate user functionality, including user interface services, from system management functionality.</p>
+<p>System management functionality includes functions that are necessary to administer databases, network components, workstations, or servers. These functions typically require privileged user access. The separation of user functions from system management functions is physical or logical. Organizations may separate system management functions from user functions by using different computers, instances of operating systems, central processing units, or network addresses; by employing virtualization techniques; or some combination of these or other methods. Separation of system management functions from user functions includes web administrative interfaces that employ separate authentication methods for users of any other system resources. Separation of system and user functions may include isolating administrative interfaces on different domains and with additional access controls. The separation of system and user functionality can be achieved by applying the systems security engineering design principles in <a href="#sa-8">SA-8</a> , including <a href="#sa-8.1">SA-8(1)</a>, <a href="#sa-8.3">SA-8(3)</a>, <a href="#sa-8.4">SA-8(4)</a>, <a href="#sa-8.10">SA-8(10)</a>, <a href="#sa-8.12">SA-8(12)</a>, <a href="#sa-8.13">SA-8(13)</a>, <a href="#sa-8.14">SA-8(14)</a> , and <a href="#sa-8.18">SA-8(18)</a>.</p>
+<p>user functionality, including user interface services, is separated from system management functionality.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing application partitioning</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developer</p>
+<p>Separation of user functionality from system management functionality</p>
+<h3 id="sc-4-information-in-shared-system-resources">SC-4: Information in Shared System Resources</h3>
+<p>Prevent unauthorized and unintended information transfer via shared system resources.</p>
+<p>Preventing unauthorized and unintended information transfer via shared system resources stops information produced by the actions of prior users or roles (or the actions of processes acting on behalf of prior users or roles) from being available to current users or roles (or current processes acting on behalf of current users or roles) that obtain access to shared system resources after those resources have been released back to the system. Information in shared system resources also applies to encrypted representations of information. In other contexts, control of information in shared system resources is referred to as object reuse and residual information protection. Information in shared system resources does not address information remanence, which refers to the residual representation of data that has been nominally deleted; covert channels (including storage and timing channels), where shared system resources are manipulated to violate information flow restrictions; or components within systems for which there are only single users or roles.</p>
+<p>unauthorized information transfer via shared system resources is prevented;</p>
+<p>unintended information transfer via shared system resources is prevented.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing information protection in shared system resources</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developer</p>
+<p>Mechanisms preventing the unauthorized and unintended transfer of information via shared system resources</p>
+<h3 id="sc-7-3-access-points">SC-7 (3): Access Points</h3>
+<p>Limit the number of external network connections to the system.</p>
+<p>Limiting the number of external network connections facilitates monitoring of inbound and outbound communications traffic. The Trusted Internet Connection <a href="#4f42ee6e-86cc-403b-a51f-76c2b4f81b54">DHS TIC</a> initiative is an example of a federal guideline that requires limits on the number of external network connections. Limiting the number of external network connections to the system is important during transition periods from older to newer technologies (e.g., transitioning from IPv4 to IPv6 network protocols). Such transitions may require implementing the older and newer technologies simultaneously during the transition period and thus increase the number of access points to the system.</p>
+<p>the number of external network connections to the system is limited.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing boundary protection</p>
+<p>system design documentation</p>
+<p>boundary protection hardware and software</p>
+<p>system architecture and configuration documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>communications and network traffic monitoring logs</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>organizational personnel with boundary protection responsibilities</p>
+<p>Mechanisms implementing boundary protection capabilities</p>
+<p>mechanisms limiting the number of external network connections to the system</p>
+<h3 id="sc-7-4-external-telecommunications-services">SC-7 (4): External Telecommunications Services</h3>
+<p>Implement a managed interface for each external telecommunication service;</p>
+<p>Establish a traffic flow policy for each managed interface;</p>
+<p>Protect the confidentiality and integrity of the information being transmitted across each interface;</p>
+<p>Document each exception to the traffic flow policy with a supporting mission or business need and duration of that need;</p>
+<p>Review exceptions to the traffic flow policy {{ insert: param, sc-07.04_odp }} and remove exceptions that are no longer supported by an explicit mission or business need;</p>
+<p>Prevent unauthorized exchange of control plane traffic with external networks;</p>
+<p>Publish information to enable remote networks to detect unauthorized control plane traffic from internal networks; and</p>
+<p>Filter unauthorized control plane traffic from external networks.</p>
+<p>External telecommunications services can provide data and/or voice communications services. Examples of control plane traffic include Border Gateway Protocol (BGP) routing, Domain Name System (DNS), and management protocols. See <a href="#f5edfe51-d1f2-422e-9b27-5d0e90b49c72">SP 800-189</a> for additional information on the use of the resource public key infrastructure (RPKI) to protect BGP routes and detect unauthorized BGP announcements.</p>
+<p>a managed interface is implemented for each external telecommunication service;</p>
+<p>a traffic flow policy is established for each managed interface;</p>
+<p>the confidentiality of the information being transmitted across each interface is protected;</p>
+<p>the integrity of the information being transmitted across each interface is protected;</p>
+<p>each exception to the traffic flow policy is documented with a supporting mission or business need and duration of that need;</p>
+<p>exceptions to the traffic flow policy are reviewed {{ insert: param, sc-07.04_odp }};</p>
+<p>exceptions to the traffic flow policy that are no longer supported by an explicit mission or business need are removed;</p>
+<p>unauthorized exchanges of control plan traffic with external networks are prevented;</p>
+<p>information is published to enable remote networks to detect unauthorized control plane traffic from internal networks;</p>
+<p>unauthorized control plane traffic is filtered from external networks.</p>
+<p>System and communications protection policy</p>
+<p>traffic flow policy</p>
+<p>information flow control policy</p>
+<p>procedures addressing boundary protection</p>
+<p>system security architecture</p>
+<p>system design documentation</p>
+<p>boundary protection hardware and software</p>
+<p>system architecture and configuration documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>records of traffic flow policy exceptions</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>organizational personnel with boundary protection responsibilities</p>
+<p>Organizational processes for documenting and reviewing exceptions to the traffic flow policy</p>
+<p>organizational processes for removing exceptions to the traffic flow policy</p>
+<p>mechanisms implementing boundary protection capabilities</p>
+<p>managed interfaces implementing traffic flow policy</p>
+<h3 id="sc-7-5-deny-by-default-allow-by-exception">SC-7 (5): Deny by Default — Allow by Exception</h3>
+<p>Deny network communications traffic by default and allow network communications traffic by exception {{ insert: param, sc-07.05_odp.01 }}.</p>
+<p>Denying by default and allowing by exception applies to inbound and outbound network communications traffic. A deny-all, permit-by-exception network communications traffic policy ensures that only those system connections that are essential and approved are allowed. Deny by default, allow by exception also applies to a system that is connected to an external system.</p>
+<p>network communications traffic is denied by default {{ insert: param, sc-07.05_odp.01 }};</p>
+<p>network communications traffic is allowed by exception {{ insert: param, sc-07.05_odp.01 }}.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing boundary protection</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developer</p>
+<p>organizational personnel with boundary protection responsibilities</p>
+<p>Mechanisms implementing traffic management at managed interfaces</p>
+<h3 id="sc-7-7-split-tunneling-for-remote-devices">SC-7 (7): Split Tunneling for Remote Devices</h3>
+<p>Prevent split tunneling for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using {{ insert: param, sc-07.07_odp }}.</p>
+<p>Split tunneling is the process of allowing a remote user or device to establish a non-remote connection with a system and simultaneously communicate via some other connection to a resource in an external network. This method of network access enables a user to access remote devices and simultaneously, access uncontrolled networks. Split tunneling might be desirable by remote users to communicate with local system resources, such as printers or file servers. However, split tunneling can facilitate unauthorized external connections, making the system vulnerable to attack and to exfiltration of organizational information. Split tunneling can be prevented by disabling configuration settings that allow such capability in remote devices and by preventing those configuration settings from being configurable by users. Prevention can also be achieved by the detection of split tunneling (or of configuration settings that allow split tunneling) in the remote device, and by prohibiting the connection if the remote device is using split tunneling. A virtual private network (VPN) can be used to securely provision a split tunnel. A securely provisioned VPN includes locking connectivity to exclusive, managed, and named environments, or to a specific set of pre-approved addresses, without user control.</p>
+<p>split tunneling is prevented for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using {{ insert: param, sc-07.07_odp }}.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing boundary protection</p>
+<p>system design documentation</p>
+<p>system hardware and software</p>
+<p>system architecture</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developer</p>
+<p>organizational personnel with boundary protection responsibilities</p>
+<p>Mechanisms implementing boundary protection capabilities</p>
+<p>mechanisms supporting/restricting non-remote connections</p>
+<h3 id="sc-7-8-route-traffic-to-authenticated-proxy-servers">SC-7 (8): Route Traffic to Authenticated Proxy Servers</h3>
+<p>Route {{ insert: param, sc-07.08_odp.01 }} to {{ insert: param, sc-07.08_odp.02 }} through authenticated proxy servers at managed interfaces.</p>
+<p>External networks are networks outside of organizational control. A proxy server is a server (i.e., system or application) that acts as an intermediary for clients requesting system resources from non-organizational or other organizational servers. System resources that may be requested include files, connections, web pages, or services. Client requests established through a connection to a proxy server are assessed to manage complexity and provide additional protection by limiting direct connectivity. Web content filtering devices are one of the most common proxy servers that provide access to the Internet. Proxy servers can support the logging of Transmission Control Protocol sessions and the blocking of specific Uniform Resource Locators, Internet Protocol addresses, and domain names. Web proxies can be configured with organization-defined lists of authorized and unauthorized websites. Note that proxy servers may inhibit the use of virtual private networks (VPNs) and create the potential for "man-in-the-middle" attacks (depending on the implementation).</p>
+<p>{{ insert: param, sc-07.08_odp.01 }} is routed to {{ insert: param, sc-07.08_odp.02 }} through authenticated proxy servers at managed interfaces.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing boundary protection</p>
+<p>system design documentation</p>
+<p>system hardware and software</p>
+<p>system architecture</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developer</p>
+<p>organizational personnel with boundary protection responsibilities</p>
+<p>Mechanisms implementing traffic management through authenticated proxy servers at managed interfaces</p>
+<h3 id="sc-8-transmission-confidentiality-and-integrity">SC-8: Transmission Confidentiality and Integrity</h3>
+<p>Protect the {{ insert: param, sc-08_odp }} of transmitted information.</p>
+<p>Protecting the confidentiality and integrity of transmitted information applies to internal and external networks as well as any system components that can transmit information, including servers, notebook computers, desktop computers, mobile devices, printers, copiers, scanners, facsimile machines, and radios. Unprotected communication paths are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of information can be accomplished by physical or logical means. Physical protection can be achieved by using protected distribution systems. A protected distribution system is a wireline or fiber-optics telecommunications system that includes terminals and adequate electromagnetic, acoustical, electrical, and physical controls to permit its use for the unencrypted transmission of classified information. Logical protection can be achieved by employing encryption techniques.</p>
+<p>Organizations that rely on commercial providers who offer transmission services as commodity services rather than as fully dedicated services may find it difficult to obtain the necessary assurances regarding the implementation of needed controls for transmission confidentiality and integrity. In such situations, organizations determine what types of confidentiality or integrity services are available in standard, commercial telecommunications service packages. If it is not feasible to obtain the necessary controls and assurances of control effectiveness through appropriate contracting vehicles, organizations can implement appropriate compensating controls.</p>
+<p>the {{ insert: param, sc-08_odp }} of transmitted information is/are protected.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing transmission confidentiality and integrity</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developer</p>
+<p>Mechanisms supporting and/or implementing transmission confidentiality and/or integrity</p>
+<h3 id="sc-8-1-cryptographic-protection">SC-8 (1): Cryptographic Protection</h3>
+<p>Implement cryptographic mechanisms to {{ insert: param, sc-08.01_odp }} during transmission.</p>
+<p>Encryption protects information from unauthorized disclosure and modification during transmission. Cryptographic mechanisms that protect the confidentiality and integrity of information during transmission include TLS and IPSec. Cryptographic mechanisms used to protect information integrity include cryptographic hash functions that have applications in digital signatures, checksums, and message authentication codes.</p>
+<p>cryptographic mechanisms are implemented to {{ insert: param, sc-08.01_odp }} during transmission.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing transmission confidentiality and integrity</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developer</p>
+<p>Cryptographic mechanisms supporting and/or implementing transmission confidentiality and/or integrity</p>
+<p>mechanisms supporting and/or implementing alternative physical safeguards</p>
+<p>organizational processes for defining and implementing alternative physical safeguards</p>
+<h3 id="sc-10-network-disconnect">SC-10: Network Disconnect</h3>
+<p>Terminate the network connection associated with a communications session at the end of the session or after {{ insert: param, sc-10_odp }} of inactivity.</p>
+<p>Network disconnect applies to internal and external networks. Terminating network connections associated with specific communications sessions includes de-allocating TCP/IP address or port pairs at the operating system level and de-allocating the networking assignments at the application level if multiple application sessions are using a single operating system-level network connection. Periods of inactivity may be established by organizations and include time periods by type of network access or for specific network accesses.</p>
+<p>the network connection associated with a communication session is terminated at the end of the session or after {{ insert: param, sc-10_odp }} of inactivity.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing network disconnect</p>
+<p>system design documentation</p>
+<p>security plan</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developer</p>
+<p>Mechanisms supporting and/or implementing a network disconnect capability</p>
+<h3 id="sc-17-public-key-infrastructure-certificates">SC-17: Public Key Infrastructure Certificates</h3>
+<p>Issue public key certificates under an {{ insert: param, sc-17_odp }} or obtain public key certificates from an approved service provider; and</p>
+<p>Include only approved trust anchors in trust stores or certificate stores managed by the organization.</p>
+<p>Public key infrastructure (PKI) certificates are certificates with visibility external to organizational systems and certificates related to the internal operations of systems, such as application-specific time services. In cryptographic systems with a hierarchical structure, a trust anchor is an authoritative source (i.e., a certificate authority) for which trust is assumed and not derived. A root certificate for a PKI system is an example of a trust anchor. A trust store or certificate store maintains a list of trusted root certificates.</p>
+<p>public key certificates are issued under {{ insert: param, sc-17_odp }} , or public key certificates are obtained from an approved service provider;</p>
+<p>only approved trust anchors are included in trust stores or certificate stores managed by the organization.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing public key infrastructure certificates</p>
+<p>public key certificate policy or policies</p>
+<p>public key issuing process</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>organizational personnel with responsibilities for issuing public key certificates</p>
+<p>service providers</p>
+<p>Mechanisms supporting and/or implementing the management of public key infrastructure certificates</p>
+<h3 id="sc-18-mobile-code">SC-18: Mobile Code</h3>
+<p>Define acceptable and unacceptable mobile code and mobile code technologies; and</p>
+<p>Authorize, monitor, and control the use of mobile code within the system.</p>
+<p>Mobile code includes any program, application, or content that can be transmitted across a network (e.g., embedded in an email, document, or website) and executed on a remote system. Decisions regarding the use of mobile code within organizational systems are based on the potential for the code to cause damage to the systems if used maliciously. Mobile code technologies include Java applets, JavaScript, HTML5, WebGL, and VBScript. Usage restrictions and implementation guidelines apply to both the selection and use of mobile code installed on servers and mobile code downloaded and executed on individual workstations and devices, including notebook computers and smart phones. Mobile code policy and procedures address specific actions taken to prevent the development, acquisition, and introduction of unacceptable mobile code within organizational systems, including requiring mobile code to be digitally signed by a trusted source.</p>
+<p>acceptable mobile code is defined;</p>
+<p>unacceptable mobile code is defined;</p>
+<p>acceptable mobile code technologies are defined;</p>
+<p>unacceptable mobile code technologies are defined;</p>
+<p>the use of mobile code is authorized within the system;</p>
+<p>the use of mobile code is monitored within the system;</p>
+<p>the use of mobile code is controlled within the system.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing mobile code</p>
+<p>mobile code implementation policy and procedures</p>
+<p>list of acceptable mobile code and mobile code technologies</p>
+<p>list of unacceptable mobile code and mobile technologies</p>
+<p>authorization records</p>
+<p>system monitoring records</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>organizational personnel with responsibilities for managing mobile code</p>
+<p>Organizational process for authorizing, monitoring, and controlling mobile code</p>
+<p>mechanisms supporting and/or implementing the management of mobile code</p>
+<p>mechanisms supporting and/or implementing the monitoring of mobile code</p>
+<h3 id="sc-23-session-authenticity">SC-23: Session Authenticity</h3>
+<p>Protect the authenticity of communications sessions.</p>
+<p>Protecting session authenticity addresses communications protection at the session level, not at the packet level. Such protection establishes grounds for confidence at both ends of communications sessions in the ongoing identities of other parties and the validity of transmitted information. Authenticity protection includes protecting against "man-in-the-middle" attacks, session hijacking, and the insertion of false information into sessions.</p>
+<p>the authenticity of communication sessions is protected.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing session authenticity</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms supporting and/or implementing session authenticity</p>
+<h3 id="sc-28-protection-of-information-at-rest">SC-28: Protection of Information at Rest</h3>
+<p>Protect the {{ insert: param, sc-28_odp.01 }} of the following information at rest: {{ insert: param, sc-28_odp.02 }}.</p>
+<p>Information at rest refers to the state of information when it is not in process or in transit and is located on system components. Such components include internal or external hard disk drives, storage area network devices, or databases. However, the focus of protecting information at rest is not on the type of storage device or frequency of access but rather on the state of the information. Information at rest addresses the confidentiality and integrity of information and covers user information and system information. System-related information that requires protection includes configurations or rule sets for firewalls, intrusion detection and prevention systems, filtering routers, and authentication information. Organizations may employ different mechanisms to achieve confidentiality and integrity protections, including the use of cryptographic mechanisms and file share scanning. Integrity protection can be achieved, for example, by implementing write-once-read-many (WORM) technologies. When adequate protection of information at rest cannot otherwise be achieved, organizations may employ other controls, including frequent scanning to identify malicious code at rest and secure offline storage in lieu of online storage.</p>
+<p>the {{ insert: param, sc-28_odp.01 }} of {{ insert: param, sc-28_odp.02 }} is/are protected.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing the protection of information at rest</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>cryptographic mechanisms and associated configuration documentation</p>
+<p>list of information at rest requiring confidentiality and integrity protections</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developer</p>
+<p>Mechanisms supporting and/or implementing confidentiality and integrity protections for information at rest</p>
+<h3 id="sc-28-1-cryptographic-protection">SC-28 (1): Cryptographic Protection</h3>
+<p>Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of the following information at rest on {{ insert: param, sc-28.01_odp.02 }}: {{ insert: param, sc-28.01_odp.01 }}.</p>
+<p>The selection of cryptographic mechanisms is based on the need to protect the confidentiality and integrity of organizational information. The strength of mechanism is commensurate with the security category or classification of the information. Organizations have the flexibility to encrypt information on system components or media or encrypt data structures, including files, records, or fields.</p>
+<p>cryptographic mechanisms are implemented to prevent unauthorized disclosure of {{ insert: param, sc-28.01_odp.01 }} at rest on {{ insert: param, sc-28.01_odp.02 }};</p>
+<p>cryptographic mechanisms are implemented to prevent unauthorized modification of {{ insert: param, sc-28.01_odp.01 }} at rest on {{ insert: param, sc-28.01_odp.02 }}.</p>
+<p>System and communications protection policy</p>
+<p>procedures addressing the protection of information at rest</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>cryptographic mechanisms and associated configuration documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developer</p>
+<p>Cryptographic mechanisms implementing confidentiality and integrity protections for information at rest</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../sa/" class="btn btn-neutral float-left" title="SA: System and Services Acquisition (8)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../si/" class="btn btn-neutral float-right" title="SI: System and Information Integrity (12)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../sa/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../si/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

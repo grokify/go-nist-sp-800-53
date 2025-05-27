@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://grokify.github.io/go-nist-sp-800-53/rev5/high_baseline/ra/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>RA: Risk Assessment (11) - NIST SP 800-53 Control Reference Site</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "RA: Risk Assessment (11)";
+        var mkdocs_page_input_path = "rev5/high_baseline/ra.md";
+        var mkdocs_page_url = "/go-nist-sp-800-53/rev5/high_baseline/ra/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> NIST SP 800-53 Control Reference Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Baseline</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ac/">AC: Access Control (46)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../au/">AU: Audit and Accountability (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ca/">CA: Assessment, Authorization, and Monitoring (14)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cm/">CM: Configuration Management (32)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cp/">CP: Contingency Planning (35)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ia/">IA: Identification and Authentication (26)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ir/">IR: Incident Response (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ma/">MA: Maintenance (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mp/">MP: Media Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pe/">PE: Physical and Environmental Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ps/">PS: Personnel Security (10)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">RA: Risk Assessment (11)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ra-1-policy-and-procedures">RA-1: Policy and Procedures</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ra-2-security-categorization">RA-2: Security Categorization</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ra-3-risk-assessment">RA-3: Risk Assessment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ra-3-1-supply-chain-risk-assessment">RA-3 (1): Supply Chain Risk Assessment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ra-5-vulnerability-monitoring-and-scanning">RA-5: Vulnerability Monitoring and Scanning</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ra-5-2-update-vulnerabilities-to-be-scanned">RA-5 (2): Update Vulnerabilities to Be Scanned</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ra-5-4-discoverable-information">RA-5 (4): Discoverable Information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ra-5-5-privileged-access">RA-5 (5): Privileged Access</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ra-5-11-public-disclosure-program">RA-5 (11): Public Disclosure Program</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ra-7-risk-response">RA-7: Risk Response</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ra-9-criticality-analysis">RA-9: Criticality Analysis</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sa/">SA: System and Services Acquisition (21)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sc/">SC: System and Communications Protection (30)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../si/">SI: System and Information Integrity (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sr/">SR: Supply Chain Risk Management (14)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ac/">AC: Access Control (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/at/">AT: Awareness and Training (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/au/">AU: Audit and Accountability (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ca/">CA: Assessment, Authorization, and Monitoring (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cm/">CM: Configuration Management (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cp/">CP: Contingency Planning (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ia/">IA: Identification and Authentication (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ir/">IR: Incident Response (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ma/">MA: Maintenance (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pe/">PE: Physical and Environmental Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pl/">PL: Planning (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ps/">PS: Personnel Security (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ra/">RA: Risk Assessment (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sa/">SA: System and Services Acquisition (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sc/">SC: System and Communications Protection (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/si/">SI: System and Information Integrity (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sr/">SR: Supply Chain Risk Management (2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ac/">AC: Access Control (39)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/au/">AU: Audit and Accountability (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ca/">CA: Assessment, Authorization, and Monitoring (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cm/">CM: Configuration Management (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cp/">CP: Contingency Planning (23)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ia/">IA: Identification and Authentication (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ir/">IR: Incident Response (13)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ma/">MA: Maintenance (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/mp/">MP: Media Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pe/">PE: Physical and Environmental Protection (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ra/">RA: Risk Assessment (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sa/">SA: System and Services Acquisition (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sc/">SC: System and Communications Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/si/">SI: System and Information Integrity (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sr/">SR: Supply Chain Risk Management (12)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ac/">AC: Access Control (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/at/">AT: Awareness and Training (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/au/">AU: Audit and Accountability (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ca/">CA: Assessment, Authorization, and Monitoring (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cm/">CM: Configuration Management (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cp/">CP: Contingency Planning (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ia/">IA: Identification and Authentication (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ir/">IR: Incident Response (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ma/">MA: Maintenance (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pe/">PE: Physical and Environmental Protection (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pl/">PL: Planning (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ps/">PS: Personnel Security (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ra/">RA: Risk Assessment (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sa/">SA: System and Services Acquisition (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sc/">SC: System and Communications Protection (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/si/">SI: System and Information Integrity (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sr/">SR: Supply Chain Risk Management (1)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Low Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ac/">AC: Access Control (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/at/">AT: Awareness and Training (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/au/">AU: Audit and Accountability (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ca/">CA: Assessment, Authorization, and Monitoring (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cm/">CM: Configuration Management (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cp/">CP: Contingency Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ia/">IA: Identification and Authentication (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ir/">IR: Incident Response (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ma/">MA: Maintenance (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/mp/">MP: Media Protection (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pe/">PE: Physical and Environmental Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pl/">PL: Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ra/">RA: Risk Assessment (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sa/">SA: System and Services Acquisition (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sc/">SC: System and Communications Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/si/">SI: System and Information Integrity (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sr/">SR: Supply Chain Risk Management (11)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NIST SP 800-53 Control Reference Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>High Baseline &raquo;</li><li>RA: Risk Assessment (11)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ra-risk-assessment">RA - Risk Assessment</h1>
+<ul>
+<li>Controls: 11</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<h3 id="ra-1-policy-and-procedures">RA-1: Policy and Procedures</h3>
+<p>Develop, document, and disseminate to {{ insert: param, ra-1_prm_1 }}:</p>
+<p>{{ insert: param, ra-01_odp.03 }} risk assessment policy that:</p>
+<p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
+<p>Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and</p>
+<p>Procedures to facilitate the implementation of the risk assessment policy and the associated risk assessment controls;</p>
+<p>Designate an {{ insert: param, ra-01_odp.04 }} to manage the development, documentation, and dissemination of the risk assessment policy and procedures; and</p>
+<p>Review and update the current risk assessment:</p>
+<p>Policy {{ insert: param, ra-01_odp.05 }} and following {{ insert: param, ra-01_odp.06 }} ; and</p>
+<p>Procedures {{ insert: param, ra-01_odp.07 }} and following {{ insert: param, ra-01_odp.08 }}.</p>
+<p>Risk assessment policy and procedures address the controls in the RA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of risk assessment policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies reflecting the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to risk assessment policy and procedures include assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.</p>
+<p>a risk assessment policy is developed and documented;</p>
+<p>the risk assessment policy is disseminated to {{ insert: param, ra-01_odp.01 }};</p>
+<p>risk assessment procedures to facilitate the implementation of the risk assessment policy and associated risk assessment controls are developed and documented;</p>
+<p>the risk assessment procedures are disseminated to {{ insert: param, ra-01_odp.02 }};</p>
+<p>the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses purpose;</p>
+<p>the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses scope;</p>
+<p>the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses roles;</p>
+<p>the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses responsibilities;</p>
+<p>the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses management commitment;</p>
+<p>the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses coordination among organizational entities;</p>
+<p>the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses compliance;</p>
+<p>the {{ insert: param, ra-01_odp.03 }} risk assessment policy is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines;</p>
+<p>the {{ insert: param, ra-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the risk assessment policy and procedures;</p>
+<p>the current risk assessment policy is reviewed and updated {{ insert: param, ra-01_odp.05 }};</p>
+<p>the current risk assessment policy is reviewed and updated following {{ insert: param, ra-01_odp.06 }};</p>
+<p>the current risk assessment procedures are reviewed and updated {{ insert: param, ra-01_odp.07 }};</p>
+<p>the current risk assessment procedures are reviewed and updated following {{ insert: param, ra-01_odp.08 }}.</p>
+<p>Risk assessment policy and procedures</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with risk assessment responsibilities</p>
+<p>organizational personnel with security and privacy responsibilities</p>
+<h3 id="ra-2-security-categorization">RA-2: Security Categorization</h3>
+<p>Categorize the system and information it processes, stores, and transmits;</p>
+<p>Document the security categorization results, including supporting rationale, in the security plan for the system; and</p>
+<p>Verify that the authorizing official or authorizing official designated representative reviews and approves the security categorization decision.</p>
+<p>Security categories describe the potential adverse impacts or negative consequences to organizational operations, organizational assets, and individuals if organizational information and systems are compromised through a loss of confidentiality, integrity, or availability. Security categorization is also a type of asset loss characterization in systems security engineering processes that is carried out throughout the system development life cycle. Organizations can use privacy risk assessments or privacy impact assessments to better understand the potential adverse effects on individuals. <a href="#4e4fbc93-333d-45e6-a875-de36b878b6b9">CNSSI 1253</a> provides additional guidance on categorization for national security systems.</p>
+<p>Organizations conduct the security categorization process as an organization-wide activity with the direct involvement of chief information officers, senior agency information security officers, senior agency officials for privacy, system owners, mission and business owners, and information owners or stewards. Organizations consider the potential adverse impacts to other organizations and, in accordance with <a href="#13f0c39d-eaf7-417a-baef-69a041878bb5">USA PATRIOT</a> and Homeland Security Presidential Directives, potential national-level adverse impacts.</p>
+<p>Security categorization processes facilitate the development of inventories of information assets and, along with <a href="#cm-8">CM-8</a> , mappings to specific system components where information is processed, stored, or transmitted. The security categorization process is revisited throughout the system development life cycle to ensure that the security categories remain accurate and relevant.</p>
+<p>the system and the information it processes, stores, and transmits are categorized;</p>
+<p>the security categorization results, including supporting rationale, are documented in the security plan for the system;</p>
+<p>the authorizing official or authorizing official designated representative reviews and approves the security categorization decision.</p>
+<p>Risk assessment policy</p>
+<p>security planning policy and procedures</p>
+<p>procedures addressing security categorization of organizational information and systems</p>
+<p>security categorization documentation</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with security categorization and risk assessment responsibilities</p>
+<p>organizational personnel with security and privacy responsibilities</p>
+<p>Organizational processes for security categorization</p>
+<h3 id="ra-3-risk-assessment">RA-3: Risk Assessment</h3>
+<p>Conduct a risk assessment, including:</p>
+<p>Identifying threats to and vulnerabilities in the system;</p>
+<p>Determining the likelihood and magnitude of harm from unauthorized access, use, disclosure, disruption, modification, or destruction of the system, the information it processes, stores, or transmits, and any related information; and</p>
+<p>Determining the likelihood and impact of adverse effects on individuals arising from the processing of personally identifiable information;</p>
+<p>Integrate risk assessment results and risk management decisions from the organization and mission or business process perspectives with system-level risk assessments;</p>
+<p>Document risk assessment results in {{ insert: param, ra-03_odp.01 }};</p>
+<p>Review risk assessment results {{ insert: param, ra-03_odp.03 }};</p>
+<p>Disseminate risk assessment results to {{ insert: param, ra-03_odp.04 }} ; and</p>
+<p>Update the risk assessment {{ insert: param, ra-03_odp.05 }} or when there are significant changes to the system, its environment of operation, or other conditions that may impact the security or privacy state of the system.</p>
+<p>Risk assessments consider threats, vulnerabilities, likelihood, and impact to organizational operations and assets, individuals, other organizations, and the Nation. Risk assessments also consider risk from external parties, including contractors who operate systems on behalf of the organization, individuals who access organizational systems, service providers, and outsourcing entities.</p>
+<p>Organizations can conduct risk assessments at all three levels in the risk management hierarchy (i.e., organization level, mission/business process level, or information system level) and at any stage in the system development life cycle. Risk assessments can also be conducted at various steps in the Risk Management Framework, including preparation, categorization, control selection, control implementation, control assessment, authorization, and control monitoring. Risk assessment is an ongoing activity carried out throughout the system development life cycle.</p>
+<p>Risk assessments can also address information related to the system, including system design, the intended use of the system, testing results, and supply chain-related information or artifacts. Risk assessments can play an important role in control selection processes, particularly during the application of tailoring guidance and in the earliest phases of capability determination.</p>
+<p>a risk assessment is conducted to identify threats to and vulnerabilities in the system;</p>
+<p>a risk assessment is conducted to determine the likelihood and magnitude of harm from unauthorized access, use, disclosure, disruption, modification, or destruction of the system; the information it processes, stores, or transmits; and any related information;</p>
+<p>a risk assessment is conducted to determine the likelihood and impact of adverse effects on individuals arising from the processing of personally identifiable information;</p>
+<p>risk assessment results and risk management decisions from the organization and mission or business process perspectives are integrated with system-level risk assessments;</p>
+<p>risk assessment results are documented in {{ insert: param, ra-03_odp.01 }};</p>
+<p>risk assessment results are reviewed {{ insert: param, ra-03_odp.03 }};</p>
+<p>risk assessment results are disseminated to {{ insert: param, ra-03_odp.04 }};</p>
+<p>the risk assessment is updated {{ insert: param, ra-03_odp.05 }} or when there are significant changes to the system, its environment of operation, or other conditions that may impact the security or privacy state of the system.</p>
+<p>Risk assessment policy</p>
+<p>risk assessment procedures</p>
+<p>security and privacy planning policy and procedures</p>
+<p>procedures addressing organizational assessments of risk</p>
+<p>risk assessment</p>
+<p>risk assessment results</p>
+<p>risk assessment reviews</p>
+<p>risk assessment updates</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with risk assessment responsibilities</p>
+<p>organizational personnel with security and privacy responsibilities</p>
+<p>Organizational processes for risk assessment</p>
+<p>mechanisms supporting and/or conducting, documenting, reviewing, disseminating, and updating the risk assessment</p>
+<h3 id="ra-3-1-supply-chain-risk-assessment">RA-3 (1): Supply Chain Risk Assessment</h3>
+<p>Assess supply chain risks associated with {{ insert: param, ra-03.01_odp.01 }} ; and</p>
+<p>Update the supply chain risk assessment {{ insert: param, ra-03.01_odp.02 }} , when there are significant changes to the relevant supply chain, or when changes to the system, environments of operation, or other conditions may necessitate a change in the supply chain.</p>
+<p>Supply chain-related events include disruption, use of defective components, insertion of counterfeits, theft, malicious development practices, improper delivery practices, and insertion of malicious code. These events can have a significant impact on the confidentiality, integrity, or availability of a system and its information and, therefore, can also adversely impact organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, other organizations, and the Nation. The supply chain-related events may be unintentional or malicious and can occur at any point during the system life cycle. An analysis of supply chain risk can help an organization identify systems or components for which additional supply chain risk mitigations are required.</p>
+<p>supply chain risks associated with {{ insert: param, ra-03.01_odp.01 }} are assessed;</p>
+<p>the supply chain risk assessment is updated {{ insert: param, ra-03.01_odp.02 }} , when there are significant changes to the relevant supply chain, or when changes to the system, environments of operation, or other conditions may necessitate a change in the supply chain.</p>
+<p>Supply chain risk management policy</p>
+<p>inventory of critical systems, system components, and system services</p>
+<p>risk assessment policy</p>
+<p>security planning policy and procedures</p>
+<p>procedures addressing organizational assessments of supply chain risk</p>
+<p>risk assessment</p>
+<p>risk assessment results</p>
+<p>risk assessment reviews</p>
+<p>risk assessment updates</p>
+<p>acquisition policy</p>
+<p>system security plan</p>
+<p>supply chain risk management plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with risk assessment responsibilities</p>
+<p>organizational personnel with security responsibilities</p>
+<p>organizational personnel with supply chain risk management responsibilities</p>
+<p>Organizational processes for risk assessment</p>
+<p>mechanisms supporting and/or conducting, documenting, reviewing, disseminating, and updating the supply chain risk assessment</p>
+<h3 id="ra-5-vulnerability-monitoring-and-scanning">RA-5: Vulnerability Monitoring and Scanning</h3>
+<p>Monitor and scan for vulnerabilities in the system and hosted applications {{ insert: param, ra-5_prm_1 }} and when new vulnerabilities potentially affecting the system are identified and reported;</p>
+<p>Employ vulnerability monitoring tools and techniques that facilitate interoperability among tools and automate parts of the vulnerability management process by using standards for:</p>
+<p>Enumerating platforms, software flaws, and improper configurations;</p>
+<p>Formatting checklists and test procedures; and</p>
+<p>Measuring vulnerability impact;</p>
+<p>Analyze vulnerability scan reports and results from vulnerability monitoring;</p>
+<p>Remediate legitimate vulnerabilities {{ insert: param, ra-05_odp.03 }} in accordance with an organizational assessment of risk;</p>
+<p>Share information obtained from the vulnerability monitoring process and control assessments with {{ insert: param, ra-05_odp.04 }} to help eliminate similar vulnerabilities in other systems; and</p>
+<p>Employ vulnerability monitoring tools that include the capability to readily update the vulnerabilities to be scanned.</p>
+<p>Security categorization of information and systems guides the frequency and comprehensiveness of vulnerability monitoring (including scans). Organizations determine the required vulnerability monitoring for system components, ensuring that the potential sources of vulnerabilities—such as infrastructure components (e.g., switches, routers, guards, sensors), networked printers, scanners, and copiers—are not overlooked. The capability to readily update vulnerability monitoring tools as new vulnerabilities are discovered and announced and as new scanning methods are developed helps to ensure that new vulnerabilities are not missed by employed vulnerability monitoring tools. The vulnerability monitoring tool update process helps to ensure that potential vulnerabilities in the system are identified and addressed as quickly as possible. Vulnerability monitoring and analyses for custom software may require additional approaches, such as static analysis, dynamic analysis, binary analysis, or a hybrid of the three approaches. Organizations can use these analysis approaches in source code reviews and in a variety of tools, including web-based application scanners, static analysis tools, and binary analyzers.</p>
+<p>Vulnerability monitoring includes scanning for patch levels; scanning for functions, ports, protocols, and services that should not be accessible to users or devices; and scanning for flow control mechanisms that are improperly configured or operating incorrectly. Vulnerability monitoring may also include continuous vulnerability monitoring tools that use instrumentation to continuously analyze components. Instrumentation-based tools may improve accuracy and may be run throughout an organization without scanning. Vulnerability monitoring tools that facilitate interoperability include tools that are Security Content Automated Protocol (SCAP)-validated. Thus, organizations consider using scanning tools that express vulnerabilities in the Common Vulnerabilities and Exposures (CVE) naming convention and that employ the Open Vulnerability Assessment Language (OVAL) to determine the presence of vulnerabilities. Sources for vulnerability information include the Common Weakness Enumeration (CWE) listing and the National Vulnerability Database (NVD). Control assessments, such as red team exercises, provide additional sources of potential vulnerabilities for which to scan. Organizations also consider using scanning tools that express vulnerability impact by the Common Vulnerability Scoring System (CVSS).</p>
+<p>Vulnerability monitoring includes a channel and process for receiving reports of security vulnerabilities from the public at-large. Vulnerability disclosure programs can be as simple as publishing a monitored email address or web form that can receive reports, including notification authorizing good-faith research and disclosure of security vulnerabilities. Organizations generally expect that such research is happening with or without their authorization and can use public vulnerability disclosure channels to increase the likelihood that discovered vulnerabilities are reported directly to the organization for remediation.</p>
+<p>Organizations may also employ the use of financial incentives (also known as "bug bounties" ) to further encourage external security researchers to report discovered vulnerabilities. Bug bounty programs can be tailored to the organization’s needs. Bounties can be operated indefinitely or over a defined period of time and can be offered to the general public or to a curated group. Organizations may run public and private bounties simultaneously and could choose to offer partially credentialed access to certain participants in order to evaluate security vulnerabilities from privileged vantage points.</p>
+<p>systems and hosted applications are monitored for vulnerabilities {{ insert: param, ra-05_odp.01 }} and when new vulnerabilities potentially affecting the system are identified and reported;</p>
+<p>systems and hosted applications are scanned for vulnerabilities {{ insert: param, ra-05_odp.02 }} and when new vulnerabilities potentially affecting the system are identified and reported;</p>
+<p>vulnerability monitoring tools and techniques are employed to facilitate interoperability among tools;</p>
+<p>vulnerability monitoring tools and techniques are employed to automate parts of the vulnerability management process by using standards for enumerating platforms, software flaws, and improper configurations;</p>
+<p>vulnerability monitoring tools and techniques are employed to facilitate interoperability among tools and to automate parts of the vulnerability management process by using standards for formatting checklists and test procedures;</p>
+<p>vulnerability monitoring tools and techniques are employed to facilitate interoperability among tools and to automate parts of the vulnerability management process by using standards for measuring vulnerability impact;</p>
+<p>vulnerability scan reports and results from vulnerability monitoring are analyzed;</p>
+<p>legitimate vulnerabilities are remediated {{ insert: param, ra-05_odp.03 }} in accordance with an organizational assessment of risk;</p>
+<p>information obtained from the vulnerability monitoring process and control assessments is shared with {{ insert: param, ra-05_odp.04 }} to help eliminate similar vulnerabilities in other systems;</p>
+<p>vulnerability monitoring tools that include the capability to readily update the vulnerabilities to be scanned are employed.</p>
+<p>Risk assessment policy</p>
+<p>procedures addressing vulnerability scanning</p>
+<p>risk assessment</p>
+<p>assessment report</p>
+<p>vulnerability scanning tools and associated configuration documentation</p>
+<p>vulnerability scanning results</p>
+<p>patch and vulnerability management records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with risk assessment, control assessment, and vulnerability scanning responsibilities</p>
+<p>organizational personnel with vulnerability scan analysis responsibilities</p>
+<p>organizational personnel with vulnerability remediation responsibilities</p>
+<p>organizational personnel with security responsibilities</p>
+<p>system/network administrators</p>
+<p>Organizational processes for vulnerability scanning, analysis, remediation, and information sharing</p>
+<p>mechanisms supporting and/or implementing vulnerability scanning, analysis, remediation, and information sharing</p>
+<h3 id="ra-5-2-update-vulnerabilities-to-be-scanned">RA-5 (2): Update Vulnerabilities to Be Scanned</h3>
+<p>Update the system vulnerabilities to be scanned {{ insert: param, ra-05.02_odp.01 }}.</p>
+<p>Due to the complexity of modern software, systems, and other factors, new vulnerabilities are discovered on a regular basis. It is important that newly discovered vulnerabilities are added to the list of vulnerabilities to be scanned to ensure that the organization can take steps to mitigate those vulnerabilities in a timely manner.</p>
+<p>the system vulnerabilities to be scanned are updated {{ insert: param, ra-05.02_odp.01 }}.</p>
+<p>Procedures addressing vulnerability scanning</p>
+<p>assessment report</p>
+<p>vulnerability scanning tools and associated configuration documentation</p>
+<p>vulnerability scanning results</p>
+<p>patch and vulnerability management records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with vulnerability scanning responsibilities</p>
+<p>organizational personnel with vulnerability scan analysis responsibilities</p>
+<p>organizational personnel with security responsibilities</p>
+<p>system/network administrators</p>
+<p>Organizational processes for vulnerability scanning</p>
+<p>mechanisms/tools supporting and/or implementing vulnerability scanning</p>
+<h3 id="ra-5-4-discoverable-information">RA-5 (4): Discoverable Information</h3>
+<p>Determine information about the system that is discoverable and take {{ insert: param, ra-05.04_odp }}.</p>
+<p>Discoverable information includes information that adversaries could obtain without compromising or breaching the system, such as by collecting information that the system is exposing or by conducting extensive web searches. Corrective actions include notifying appropriate organizational personnel, removing designated information, or changing the system to make the designated information less relevant or attractive to adversaries. This enhancement excludes intentionally discoverable information that may be part of a decoy capability (e.g., honeypots, honeynets, or deception nets) deployed by the organization.</p>
+<p>information about the system is discoverable;</p>
+<p>{{ insert: param, ra-05.04_odp }} are taken when information about the system is confirmed as discoverable.</p>
+<p>Procedures addressing vulnerability scanning</p>
+<p>assessment report</p>
+<p>penetration test results</p>
+<p>vulnerability scanning results</p>
+<p>risk assessment report</p>
+<p>records of corrective actions taken</p>
+<p>incident response records</p>
+<p>audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with vulnerability scanning and/or penetration testing responsibilities</p>
+<p>organizational personnel with vulnerability scan analysis responsibilities</p>
+<p>organizational personnel responsible for risk response</p>
+<p>organizational personnel responsible for incident management and response</p>
+<p>organizational personnel with security responsibilities</p>
+<p>Organizational processes for vulnerability scanning</p>
+<p>organizational processes for risk response</p>
+<p>organizational processes for incident management and response</p>
+<p>mechanisms/tools supporting and/or implementing vulnerability scanning</p>
+<p>mechanisms supporting and/or implementing risk response</p>
+<p>mechanisms supporting and/or implementing incident management and response</p>
+<h3 id="ra-5-5-privileged-access">RA-5 (5): Privileged Access</h3>
+<p>Implement privileged access authorization to {{ insert: param, ra-05.05_odp.01 }} for {{ insert: param, ra-05.05_odp.02 }}.</p>
+<p>In certain situations, the nature of the vulnerability scanning may be more intrusive, or the system component that is the subject of the scanning may contain classified or controlled unclassified information, such as personally identifiable information. Privileged access authorization to selected system components facilitates more thorough vulnerability scanning and protects the sensitive nature of such scanning.</p>
+<p>privileged access authorization is implemented to {{ insert: param, ra-05.05_odp.01 }} for {{ insert: param, ra-05.05_odp.02 }}.</p>
+<p>Risk assessment policy</p>
+<p>procedures addressing vulnerability scanning</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>list of system components for vulnerability scanning</p>
+<p>personnel access authorization list</p>
+<p>authorization credentials</p>
+<p>access authorization records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with vulnerability scanning responsibilities</p>
+<p>system/network administrators</p>
+<p>organizational personnel responsible for access control to the system</p>
+<p>organizational personnel responsible for configuration management of the system</p>
+<p>system developers</p>
+<p>organizational personnel with security responsibilities</p>
+<p>Organizational processes for vulnerability scanning</p>
+<p>organizational processes for access control</p>
+<p>mechanisms supporting and/or implementing access control</p>
+<p>mechanisms/tools supporting and/or implementing vulnerability scanning</p>
+<h3 id="ra-5-11-public-disclosure-program">RA-5 (11): Public Disclosure Program</h3>
+<p>Establish a public reporting channel for receiving reports of vulnerabilities in organizational systems and system components.</p>
+<p>The reporting channel is publicly discoverable and contains clear language authorizing good-faith research and the disclosure of vulnerabilities to the organization. The organization does not condition its authorization on an expectation of indefinite non-disclosure to the public by the reporting entity but may request a specific time period to properly remediate the vulnerability.</p>
+<p>a public reporting channel is established for receiving reports of vulnerabilities in organizational systems and system components.</p>
+<p>Risk assessment policy</p>
+<p>procedures addressing vulnerability scanning</p>
+<p>risk assessment</p>
+<p>vulnerability scanning tools and techniques documentation</p>
+<p>vulnerability scanning results</p>
+<p>vulnerability management records</p>
+<p>audit records</p>
+<p>public reporting channel</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with vulnerability scanning responsibilities</p>
+<p>organizational personnel with vulnerability scan analysis responsibilities</p>
+<p>organizational personnel with security responsibilities</p>
+<p>Organizational processes for vulnerability scanning</p>
+<p>mechanisms/tools supporting and/or implementing vulnerability scanning</p>
+<p>mechanisms implementing the public reporting of vulnerabilities</p>
+<h3 id="ra-7-risk-response">RA-7: Risk Response</h3>
+<p>Respond to findings from security and privacy assessments, monitoring, and audits in accordance with organizational risk tolerance.</p>
+<p>Organizations have many options for responding to risk including mitigating risk by implementing new controls or strengthening existing controls, accepting risk with appropriate justification or rationale, sharing or transferring risk, or avoiding risk. The risk tolerance of the organization influences risk response decisions and actions. Risk response addresses the need to determine an appropriate response to risk before generating a plan of action and milestones entry. For example, the response may be to accept risk or reject risk, or it may be possible to mitigate the risk immediately so that a plan of action and milestones entry is not needed. However, if the risk response is to mitigate the risk, and the mitigation cannot be completed immediately, a plan of action and milestones entry is generated.</p>
+<p>findings from security assessments are responded to in accordance with organizational risk tolerance;</p>
+<p>findings from privacy assessments are responded to in accordance with organizational risk tolerance;</p>
+<p>findings from monitoring are responded to in accordance with organizational risk tolerance;</p>
+<p>findings from audits are responded to in accordance with organizational risk tolerance.</p>
+<p>Risk assessment policy</p>
+<p>assessment reports</p>
+<p>audit records/event logs</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with assessment and auditing responsibilities</p>
+<p>system/network administrators</p>
+<p>organizational personnel with security and privacy responsibilities</p>
+<p>Organizational processes for assessments and audits</p>
+<p>mechanisms/tools supporting and/or implementing assessments and auditing</p>
+<h3 id="ra-9-criticality-analysis">RA-9: Criticality Analysis</h3>
+<p>Identify critical system components and functions by performing a criticality analysis for {{ insert: param, ra-09_odp.01 }} at {{ insert: param, ra-09_odp.02 }}.</p>
+<p>Not all system components, functions, or services necessarily require significant protections. For example, criticality analysis is a key tenet of supply chain risk management and informs the prioritization of protection activities. The identification of critical system components and functions considers applicable laws, executive orders, regulations, directives, policies, standards, system functionality requirements, system and component interfaces, and system and component dependencies. Systems engineers conduct a functional decomposition of a system to identify mission-critical functions and components. The functional decomposition includes the identification of organizational missions supported by the system, decomposition into the specific functions to perform those missions, and traceability to the hardware, software, and firmware components that implement those functions, including when the functions are shared by many components within and external to the system.</p>
+<p>The operational environment of a system or a system component may impact the criticality, including the connections to and dependencies on cyber-physical systems, devices, system-of-systems, and outsourced IT services. System components that allow unmediated access to critical system components or functions are considered critical due to the inherent vulnerabilities that such components create. Component and function criticality are assessed in terms of the impact of a component or function failure on the organizational missions that are supported by the system that contains the components and functions.</p>
+<p>Criticality analysis is performed when an architecture or design is being developed, modified, or upgraded. If such analysis is performed early in the system development life cycle, organizations may be able to modify the system design to reduce the critical nature of these components and functions, such as by adding redundancy or alternate paths into the system design. Criticality analysis can also influence the protection measures required by development contractors. In addition to criticality analysis for systems, system components, and system services, criticality analysis of information is an important consideration. Such analysis is conducted as part of security categorization in <a href="#ra-2">RA-2</a>.</p>
+<p>critical system components and functions are identified by performing a criticality analysis for {{ insert: param, ra-09_odp.01 }} at {{ insert: param, ra-09_odp.02 }}.</p>
+<p>Risk assessment policy</p>
+<p>assessment reports</p>
+<p>criticality analysis/finalized criticality for each component/subcomponent</p>
+<p>audit records/event logs</p>
+<p>analysis reports</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with assessment and auditing responsibilities</p>
+<p>organizational personnel with criticality analysis responsibilities</p>
+<p>system/network administrators</p>
+<p>organizational personnel with security responsibilities</p>
+<p>Organizational processes for assessments and audits</p>
+<p>mechanisms/tools supporting and/or implementing assessments and auditing</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ps/" class="btn btn-neutral float-left" title="PS: Personnel Security (10)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sa/" class="btn btn-neutral float-right" title="SA: System and Services Acquisition (21)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ps/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../sa/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

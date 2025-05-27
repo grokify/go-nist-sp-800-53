@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://grokify.github.io/go-nist-sp-800-53/rev5/high_uplift/cp/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>CP: Contingency Planning (12) - NIST SP 800-53 Control Reference Site</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CP: Contingency Planning (12)";
+        var mkdocs_page_input_path = "rev5/high_uplift/cp.md";
+        var mkdocs_page_url = "/go-nist-sp-800-53/rev5/high_uplift/cp/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> NIST SP 800-53 Control Reference Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ac/">AC: Access Control (46)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/au/">AU: Audit and Accountability (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ca/">CA: Assessment, Authorization, and Monitoring (14)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cm/">CM: Configuration Management (32)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cp/">CP: Contingency Planning (35)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ia/">IA: Identification and Authentication (26)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ir/">IR: Incident Response (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ma/">MA: Maintenance (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/mp/">MP: Media Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pe/">PE: Physical and Environmental Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ps/">PS: Personnel Security (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ra/">RA: Risk Assessment (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sa/">SA: System and Services Acquisition (21)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sc/">SC: System and Communications Protection (30)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/si/">SI: System and Information Integrity (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sr/">SR: Supply Chain Risk Management (14)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Uplift</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ac/">AC: Access Control (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../at/">AT: Awareness and Training (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../au/">AU: Audit and Accountability (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ca/">CA: Assessment, Authorization, and Monitoring (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cm/">CM: Configuration Management (8)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">CP: Contingency Planning (12)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#cp-2-2-capacity-planning">CP-2 (2): Capacity Planning</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cp-2-5-continue-mission-and-business-functions">CP-2 (5): Continue Mission and Business Functions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cp-3-1-simulated-events">CP-3 (1): Simulated Events</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cp-4-2-alternate-processing-site">CP-4 (2): Alternate Processing Site</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cp-6-2-recovery-time-and-recovery-point-objectives">CP-6 (2): Recovery Time and Recovery Point Objectives</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cp-7-4-preparation-for-use">CP-7 (4): Preparation for Use</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cp-8-3-separation-of-primary-and-alternate-providers">CP-8 (3): Separation of Primary and Alternate Providers</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cp-8-4-provider-contingency-plan">CP-8 (4): Provider Contingency Plan</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cp-9-2-test-restoration-using-sampling">CP-9 (2): Test Restoration Using Sampling</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cp-9-3-separate-storage-for-critical-information">CP-9 (3): Separate Storage for Critical Information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cp-9-5-transfer-to-alternate-storage-site">CP-9 (5): Transfer to Alternate Storage Site</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cp-10-4-restore-within-time-period">CP-10 (4): Restore Within Time Period</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ia/">IA: Identification and Authentication (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ir/">IR: Incident Response (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ma/">MA: Maintenance (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pe/">PE: Physical and Environmental Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pl/">PL: Planning (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ps/">PS: Personnel Security (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ra/">RA: Risk Assessment (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sa/">SA: System and Services Acquisition (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sc/">SC: System and Communications Protection (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../si/">SI: System and Information Integrity (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sr/">SR: Supply Chain Risk Management (2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ac/">AC: Access Control (39)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/au/">AU: Audit and Accountability (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ca/">CA: Assessment, Authorization, and Monitoring (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cm/">CM: Configuration Management (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cp/">CP: Contingency Planning (23)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ia/">IA: Identification and Authentication (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ir/">IR: Incident Response (13)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ma/">MA: Maintenance (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/mp/">MP: Media Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pe/">PE: Physical and Environmental Protection (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ra/">RA: Risk Assessment (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sa/">SA: System and Services Acquisition (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sc/">SC: System and Communications Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/si/">SI: System and Information Integrity (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sr/">SR: Supply Chain Risk Management (12)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ac/">AC: Access Control (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/at/">AT: Awareness and Training (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/au/">AU: Audit and Accountability (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ca/">CA: Assessment, Authorization, and Monitoring (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cm/">CM: Configuration Management (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cp/">CP: Contingency Planning (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ia/">IA: Identification and Authentication (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ir/">IR: Incident Response (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ma/">MA: Maintenance (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pe/">PE: Physical and Environmental Protection (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pl/">PL: Planning (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ps/">PS: Personnel Security (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ra/">RA: Risk Assessment (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sa/">SA: System and Services Acquisition (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sc/">SC: System and Communications Protection (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/si/">SI: System and Information Integrity (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sr/">SR: Supply Chain Risk Management (1)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Low Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ac/">AC: Access Control (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/at/">AT: Awareness and Training (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/au/">AU: Audit and Accountability (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ca/">CA: Assessment, Authorization, and Monitoring (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cm/">CM: Configuration Management (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cp/">CP: Contingency Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ia/">IA: Identification and Authentication (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ir/">IR: Incident Response (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ma/">MA: Maintenance (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/mp/">MP: Media Protection (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pe/">PE: Physical and Environmental Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pl/">PL: Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ra/">RA: Risk Assessment (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sa/">SA: System and Services Acquisition (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sc/">SC: System and Communications Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/si/">SI: System and Information Integrity (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sr/">SR: Supply Chain Risk Management (11)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NIST SP 800-53 Control Reference Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>High Uplift &raquo;</li><li>CP: Contingency Planning (12)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="cp-contingency-planning">CP - Contingency Planning</h1>
+<ul>
+<li>Controls: 12</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<h3 id="cp-2-2-capacity-planning">CP-2 (2): Capacity Planning</h3>
+<p>Conduct capacity planning so that necessary capacity for information processing, telecommunications, and environmental support exists during contingency operations.</p>
+<p>Capacity planning is needed because different threats can result in a reduction of the available processing, telecommunications, and support services intended to support essential mission and business functions. Organizations anticipate degraded operations during contingency operations and factor the degradation into capacity planning. For capacity planning, environmental support refers to any environmental factor for which the organization determines that it needs to provide support in a contingency situation, even if in a degraded state. Such determinations are based on an organizational assessment of risk, system categorization (impact level), and organizational risk tolerance.</p>
+<p>capacity planning is conducted so that the necessary capacity exists during contingency operations for information processing;</p>
+<p>capacity planning is conducted so that the necessary capacity exists during contingency operations for telecommunications;</p>
+<p>capacity planning is conducted so that the necessary capacity exists during contingency operations for environmental support.</p>
+<p>Contingency planning policy</p>
+<p>procedures addressing contingency operations for the system</p>
+<p>contingency plan</p>
+<p>capacity planning documents</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with contingency planning and plan implementation responsibilities</p>
+<p>organizational personnel responsible for capacity planning</p>
+<p>organizational personnel with information security responsibilities</p>
+<h3 id="cp-2-5-continue-mission-and-business-functions">CP-2 (5): Continue Mission and Business Functions</h3>
+<p>Plan for the continuance of {{ insert: param, cp-02.05_odp }} mission and business functions with minimal or no loss of operational continuity and sustains that continuity until full system restoration at primary processing and/or storage sites.</p>
+<p>Organizations may choose to conduct the contingency planning activities to continue mission and business functions as part of business continuity planning or business impact analyses. Primary processing and/or storage sites defined by organizations as part of contingency planning may change depending on the circumstances associated with the contingency.</p>
+<p>the continuance of {{ insert: param, cp-02.05_odp }} mission and business functions with minimal or no loss of operational continuity is planned for;</p>
+<p>continuity is sustained until full system restoration at primary processing and/or storage sites.</p>
+<p>Contingency planning policy</p>
+<p>procedures addressing contingency operations for the system</p>
+<p>contingency plan</p>
+<p>business impact assessment</p>
+<p>primary processing site agreements</p>
+<p>primary storage site agreements</p>
+<p>alternate processing site agreements</p>
+<p>alternate storage site agreements</p>
+<p>contingency plan test documentation</p>
+<p>contingency plan test results</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with contingency planning and plan implementation responsibilities</p>
+<p>organizational personnel with knowledge of requirements for mission and business functions</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for continuing missions and business functions</p>
+<h3 id="cp-3-1-simulated-events">CP-3 (1): Simulated Events</h3>
+<p>Incorporate simulated events into contingency training to facilitate effective response by personnel in crisis situations.</p>
+<p>The use of simulated events creates an environment for personnel to experience actual threat events, including cyber-attacks that disable websites, ransomware attacks that encrypt organizational data on servers, hurricanes that damage or destroy organizational facilities, or hardware or software failures.</p>
+<p>simulated events are incorporated into contingency training to facilitate effective response by personnel in crisis situations.</p>
+<p>Contingency planning policy</p>
+<p>procedures addressing contingency training</p>
+<p>contingency plan</p>
+<p>contingency training curriculum</p>
+<p>contingency training material</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with contingency planning, plan implementation, and training responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for contingency training</p>
+<p>mechanisms for simulating contingency events</p>
+<h3 id="cp-4-2-alternate-processing-site">CP-4 (2): Alternate Processing Site</h3>
+<p>Test the contingency plan at the alternate processing site:</p>
+<p>To familiarize contingency personnel with the facility and available resources; and</p>
+<p>To evaluate the capabilities of the alternate processing site to support contingency operations.</p>
+<p>Conditions at the alternate processing site may be significantly different than the conditions at the primary site. Having the opportunity to visit the alternate site and experience the actual capabilities available at the site can provide valuable information on potential vulnerabilities that could affect essential organizational mission and business functions. The on-site visit can also provide an opportunity to refine the contingency plan to address the vulnerabilities discovered during testing.</p>
+<p>the contingency plan is tested at the alternate processing site to familiarize contingency personnel with the facility and available resources;</p>
+<p>the contingency plan is tested at the alternate processing site to evaluate the capabilities of the alternate processing site to support contingency operations.</p>
+<p>Contingency planning policy</p>
+<p>procedures addressing contingency plan testing</p>
+<p>contingency plan</p>
+<p>contingency plan test documentation</p>
+<p>contingency plan test results</p>
+<p>alternate processing site agreements</p>
+<p>service-level agreements</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with contingency planning and plan implementation responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for contingency plan testing</p>
+<p>mechanisms supporting the contingency plan and/or contingency plan testing</p>
+<h3 id="cp-6-2-recovery-time-and-recovery-point-objectives">CP-6 (2): Recovery Time and Recovery Point Objectives</h3>
+<p>Configure the alternate storage site to facilitate recovery operations in accordance with recovery time and recovery point objectives.</p>
+<p>Organizations establish recovery time and recovery point objectives as part of contingency planning. Configuration of the alternate storage site includes physical facilities and the systems supporting recovery operations that ensure accessibility and correct execution.</p>
+<p>the alternate storage site is configured to facilitate recovery operations in accordance with recovery time objectives;</p>
+<p>the alternate storage site is configured to facilitate recovery operations in accordance with recovery point objectives.</p>
+<p>Contingency planning policy</p>
+<p>procedures addressing alternate storage sites</p>
+<p>contingency plan</p>
+<p>alternate storage site</p>
+<p>alternate storage site agreements</p>
+<p>alternate storage site configurations</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with contingency plan testing responsibilities</p>
+<p>organizational personnel with responsibilities for testing related plans</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for contingency plan testing</p>
+<p>mechanisms supporting recovery time and point objectives</p>
+<h3 id="cp-7-4-preparation-for-use">CP-7 (4): Preparation for Use</h3>
+<p>Prepare the alternate processing site so that the site can serve as the operational site supporting essential mission and business functions.</p>
+<p>Site preparation includes establishing configuration settings for systems at the alternate processing site consistent with the requirements for such settings at the primary site and ensuring that essential supplies and logistical considerations are in place.</p>
+<p>the alternate processing site is prepared so that the site can serve as the operational site supporting essential mission and business functions.</p>
+<p>Contingency planning policy</p>
+<p>procedures addressing alternate processing sites</p>
+<p>contingency plan</p>
+<p>alternate processing site</p>
+<p>alternate processing site agreements</p>
+<p>alternate processing site configurations</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with contingency plan alternate processing site responsibilities</p>
+<p>organizational personnel with system recovery responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms supporting and/or implementing recovery at the alternate processing site</p>
+<h3 id="cp-8-3-separation-of-primary-and-alternate-providers">CP-8 (3): Separation of Primary and Alternate Providers</h3>
+<p>Obtain alternate telecommunications services from providers that are separated from primary service providers to reduce susceptibility to the same threats.</p>
+<p>Threats that affect telecommunications services are defined in organizational assessments of risk and include natural disasters, structural failures, cyber or physical attacks, and errors of omission or commission. Organizations can reduce common susceptibilities by minimizing shared infrastructure among telecommunications service providers and achieving sufficient geographic separation between services. Organizations may consider using a single service provider in situations where the service provider can provide alternate telecommunications services that meet the separation needs addressed in the risk assessment.</p>
+<p>alternate telecommunications services from providers that are separated from primary service providers are obtained to reduce susceptibility to the same threats.</p>
+<p>Contingency planning policy</p>
+<p>procedures addressing primary and alternate telecommunications services</p>
+<p>contingency plan</p>
+<p>primary and alternate telecommunications service agreements</p>
+<p>alternate telecommunications service provider site</p>
+<p>primary telecommunications service provider site</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with contingency plan telecommunications responsibilities</p>
+<p>organizational personnel with system recovery responsibilities</p>
+<p>primary and alternate telecommunications service providers</p>
+<p>organizational personnel with information security responsibilities</p>
+<h3 id="cp-8-4-provider-contingency-plan">CP-8 (4): Provider Contingency Plan</h3>
+<p>Require primary and alternate telecommunications service providers to have contingency plans;</p>
+<p>Review provider contingency plans to ensure that the plans meet organizational contingency requirements; and</p>
+<p>Obtain evidence of contingency testing and training by providers {{ insert: param, cp-8.4_prm_1 }}.</p>
+<p>Reviews of provider contingency plans consider the proprietary nature of such plans. In some situations, a summary of provider contingency plans may be sufficient evidence for organizations to satisfy the review requirement. Telecommunications service providers may also participate in ongoing disaster recovery exercises in coordination with the Department of Homeland Security and state and local governments. Organizations may use these types of activities to satisfy evidentiary requirements related to service provider contingency plan reviews, testing, and training.</p>
+<p>primary telecommunications service providers are required to have contingency plans;</p>
+<p>alternate telecommunications service providers are required to have contingency plans;</p>
+<p>provider contingency plans are reviewed to ensure that the plans meet organizational contingency requirements;</p>
+<p>evidence of contingency testing by providers is obtained {{ insert: param, cp-08.04_odp.01 }}.</p>
+<p>evidence of contingency training by providers is obtained {{ insert: param, cp-08.04_odp.02 }}.</p>
+<p>Contingency planning policy</p>
+<p>procedures addressing primary and alternate telecommunications services</p>
+<p>contingency plan</p>
+<p>provider contingency plans</p>
+<p>evidence of contingency testing/training by providers</p>
+<p>primary and alternate telecommunications service agreements</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with contingency planning, plan implementation, and testing responsibilities</p>
+<p>primary and alternate telecommunications service providers</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>organizational personnel with responsibility for acquisitions/contractual agreements</p>
+<h3 id="cp-9-2-test-restoration-using-sampling">CP-9 (2): Test Restoration Using Sampling</h3>
+<p>Use a sample of backup information in the restoration of selected system functions as part of contingency plan testing.</p>
+<p>Organizations need assurance that system functions can be restored correctly and can support established organizational missions. To ensure that the selected system functions are thoroughly exercised during contingency plan testing, a sample of backup information is retrieved to determine whether the functions are operating as intended. Organizations can determine the sample size for the functions and backup information based on the level of assurance needed.</p>
+<p>a sample of backup information in the restoration of selected system functions is used as part of contingency plan testing.</p>
+<p>Contingency planning policy</p>
+<p>procedures addressing system backup</p>
+<p>contingency plan</p>
+<p>system backup test results</p>
+<p>contingency plan test documentation</p>
+<p>contingency plan test results</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system backup responsibilities</p>
+<p>organizational personnel with contingency planning/contingency plan testing responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for conducting system backups</p>
+<p>mechanisms supporting and/or implementing system backups</p>
+<h3 id="cp-9-3-separate-storage-for-critical-information">CP-9 (3): Separate Storage for Critical Information</h3>
+<p>Store backup copies of {{ insert: param, cp-09.03_odp }} in a separate facility or in a fire rated container that is not collocated with the operational system.</p>
+<p>Separate storage for critical information applies to all critical information regardless of the type of backup storage media. Critical system software includes operating systems, middleware, cryptographic key management systems, and intrusion detection systems. Security-related information includes inventories of system hardware, software, and firmware components. Alternate storage sites, including geographically distributed architectures, serve as separate storage facilities for organizations. Organizations may provide separate storage by implementing automated backup processes at alternative storage sites (e.g., data centers). The General Services Administration (GSA) establishes standards and specifications for security and fire rated containers.</p>
+<p>backup copies of {{ insert: param, cp-09.03_odp }} are stored in a separate facility or in a fire rated container that is not collocated with the operational system.</p>
+<p>Contingency planning policy</p>
+<p>procedures addressing system backup</p>
+<p>contingency plan</p>
+<p>backup storage location(s)</p>
+<p>system backup configurations and associated documentation</p>
+<p>system backup logs or records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with contingency planning and plan implementation responsibilities</p>
+<p>organizational personnel with system backup responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<h3 id="cp-9-5-transfer-to-alternate-storage-site">CP-9 (5): Transfer to Alternate Storage Site</h3>
+<p>Transfer system backup information to the alternate storage site {{ insert: param, cp-9.5_prm_1 }}.</p>
+<p>System backup information can be transferred to alternate storage sites either electronically or by the physical shipment of storage media.</p>
+<p>system backup information is transferred to the alternate storage site for {{ insert: param, cp-09.05_odp.01 }};</p>
+<p>system backup information is transferred to the alternate storage site {{ insert: param, cp-09.05_odp.02 }}.</p>
+<p>Contingency planning policy</p>
+<p>procedures addressing system backup</p>
+<p>contingency plan</p>
+<p>system backup logs or records</p>
+<p>evidence of system backup information transferred to alternate storage site</p>
+<p>alternate storage site agreements</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system backup responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for transferring system backups to the alternate storage site</p>
+<p>mechanisms supporting and/or implementing system backups</p>
+<p>mechanisms supporting and/or implementing information transfer to the alternate storage site</p>
+<h3 id="cp-10-4-restore-within-time-period">CP-10 (4): Restore Within Time Period</h3>
+<p>Provide the capability to restore system components within {{ insert: param, cp-10.04_odp }} from configuration-controlled and integrity-protected information representing a known, operational state for the components.</p>
+<p>Restoration of system components includes reimaging, which restores the components to known, operational states.</p>
+<p>the capability to restore system components within {{ insert: param, cp-10.04_odp }} from configuration-controlled and integrity-protected information representing a known, operational state for the components is provided.</p>
+<p>Contingency planning policy</p>
+<p>procedures addressing system recovery and reconstitution</p>
+<p>contingency plan</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>contingency plan test documentation</p>
+<p>contingency plan test results</p>
+<p>evidence of system recovery and reconstitution operations</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with system recovery and reconstitution responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms supporting and/or implementing the recovery/reconstitution of system information</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../cm/" class="btn btn-neutral float-left" title="CM: Configuration Management (8)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ia/" class="btn btn-neutral float-right" title="IA: Identification and Authentication (2)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../cm/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ia/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

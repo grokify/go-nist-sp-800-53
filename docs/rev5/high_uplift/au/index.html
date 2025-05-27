@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://grokify.github.io/go-nist-sp-800-53/rev5/high_uplift/au/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>AU: Audit and Accountability (9) - NIST SP 800-53 Control Reference Site</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "AU: Audit and Accountability (9)";
+        var mkdocs_page_input_path = "rev5/high_uplift/au.md";
+        var mkdocs_page_url = "/go-nist-sp-800-53/rev5/high_uplift/au/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> NIST SP 800-53 Control Reference Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ac/">AC: Access Control (46)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/au/">AU: Audit and Accountability (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ca/">CA: Assessment, Authorization, and Monitoring (14)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cm/">CM: Configuration Management (32)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cp/">CP: Contingency Planning (35)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ia/">IA: Identification and Authentication (26)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ir/">IR: Incident Response (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ma/">MA: Maintenance (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/mp/">MP: Media Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pe/">PE: Physical and Environmental Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ps/">PS: Personnel Security (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ra/">RA: Risk Assessment (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sa/">SA: System and Services Acquisition (21)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sc/">SC: System and Communications Protection (30)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/si/">SI: System and Information Integrity (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sr/">SR: Supply Chain Risk Management (14)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Uplift</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ac/">AC: Access Control (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../at/">AT: Awareness and Training (0)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">AU: Audit and Accountability (9)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#au-5-1-storage-capacity-warning">AU-5 (1): Storage Capacity Warning</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#au-5-2-real-time-alerts">AU-5 (2): Real-time Alerts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#au-6-5-integrated-analysis-of-audit-records">AU-6 (5): Integrated Analysis of Audit Records</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#au-6-6-correlation-with-physical-monitoring">AU-6 (6): Correlation with Physical Monitoring</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#au-9-2-store-on-separate-physical-systems-or-components">AU-9 (2): Store on Separate Physical Systems or Components</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#au-9-3-cryptographic-protection">AU-9 (3): Cryptographic Protection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#au-10-non-repudiation">AU-10: Non-repudiation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#au-12-1-system-wide-and-time-correlated-audit-trail">AU-12 (1): System-wide and Time-correlated Audit Trail</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#au-12-3-changes-by-authorized-individuals">AU-12 (3): Changes by Authorized Individuals</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ca/">CA: Assessment, Authorization, and Monitoring (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cm/">CM: Configuration Management (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cp/">CP: Contingency Planning (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ia/">IA: Identification and Authentication (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ir/">IR: Incident Response (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ma/">MA: Maintenance (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pe/">PE: Physical and Environmental Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pl/">PL: Planning (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ps/">PS: Personnel Security (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ra/">RA: Risk Assessment (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sa/">SA: System and Services Acquisition (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sc/">SC: System and Communications Protection (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../si/">SI: System and Information Integrity (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sr/">SR: Supply Chain Risk Management (2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ac/">AC: Access Control (39)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/au/">AU: Audit and Accountability (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ca/">CA: Assessment, Authorization, and Monitoring (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cm/">CM: Configuration Management (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cp/">CP: Contingency Planning (23)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ia/">IA: Identification and Authentication (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ir/">IR: Incident Response (13)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ma/">MA: Maintenance (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/mp/">MP: Media Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pe/">PE: Physical and Environmental Protection (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ra/">RA: Risk Assessment (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sa/">SA: System and Services Acquisition (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sc/">SC: System and Communications Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/si/">SI: System and Information Integrity (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sr/">SR: Supply Chain Risk Management (12)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ac/">AC: Access Control (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/at/">AT: Awareness and Training (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/au/">AU: Audit and Accountability (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ca/">CA: Assessment, Authorization, and Monitoring (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cm/">CM: Configuration Management (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cp/">CP: Contingency Planning (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ia/">IA: Identification and Authentication (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ir/">IR: Incident Response (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ma/">MA: Maintenance (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pe/">PE: Physical and Environmental Protection (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pl/">PL: Planning (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ps/">PS: Personnel Security (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ra/">RA: Risk Assessment (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sa/">SA: System and Services Acquisition (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sc/">SC: System and Communications Protection (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/si/">SI: System and Information Integrity (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sr/">SR: Supply Chain Risk Management (1)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Low Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ac/">AC: Access Control (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/at/">AT: Awareness and Training (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/au/">AU: Audit and Accountability (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ca/">CA: Assessment, Authorization, and Monitoring (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cm/">CM: Configuration Management (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cp/">CP: Contingency Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ia/">IA: Identification and Authentication (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ir/">IR: Incident Response (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ma/">MA: Maintenance (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/mp/">MP: Media Protection (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pe/">PE: Physical and Environmental Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pl/">PL: Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ra/">RA: Risk Assessment (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sa/">SA: System and Services Acquisition (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sc/">SC: System and Communications Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/si/">SI: System and Information Integrity (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sr/">SR: Supply Chain Risk Management (11)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NIST SP 800-53 Control Reference Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>High Uplift &raquo;</li><li>AU: Audit and Accountability (9)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="au-audit-and-accountability">AU - Audit and Accountability</h1>
+<ul>
+<li>Controls: 9</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<h3 id="au-5-1-storage-capacity-warning">AU-5 (1): Storage Capacity Warning</h3>
+<p>Provide a warning to {{ insert: param, au-05.01_odp.01 }} within {{ insert: param, au-05.01_odp.02 }} when allocated audit log storage volume reaches {{ insert: param, au-05.01_odp.03 }} of repository maximum audit log storage capacity.</p>
+<p>Organizations may have multiple audit log storage repositories distributed across multiple system components with each repository having different storage volume capacities.</p>
+<p>a warning is provided to {{ insert: param, au-05.01_odp.01 }} within {{ insert: param, au-05.01_odp.02 }} when allocated audit log storage volume reaches {{ insert: param, au-05.01_odp.03 }} of repository maximum audit log storage capacity.</p>
+<p>Audit and accountability policy</p>
+<p>procedures addressing response to audit processing failures</p>
+<p>system design documentation</p>
+<p>system security plan</p>
+<p>privacy system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with audit and accountability responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms implementing audit storage limit warnings</p>
+<h3 id="au-5-2-real-time-alerts">AU-5 (2): Real-time Alerts</h3>
+<p>Provide an alert within {{ insert: param, au-05.02_odp.01 }} to {{ insert: param, au-05.02_odp.02 }} when the following audit failure events occur: {{ insert: param, au-05.02_odp.03 }}.</p>
+<p>Alerts provide organizations with urgent messages. Real-time alerts provide these messages at information technology speed (i.e., the time from event detection to alert occurs in seconds or less).</p>
+<p>an alert is provided within {{ insert: param, au-05.02_odp.01 }} to {{ insert: param, au-05.02_odp.02 }} when {{ insert: param, au-05.02_odp.03 }} occur.</p>
+<p>Audit and accountability policy</p>
+<p>procedures addressing response to audit processing failures</p>
+<p>system design documentation</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with audit and accountability responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<h3 id="au-6-5-integrated-analysis-of-audit-records">AU-6 (5): Integrated Analysis of Audit Records</h3>
+<p>Integrate analysis of audit records with analysis of {{ insert: param, au-06.05_odp.01 }} to further enhance the ability to identify inappropriate or unusual activity.</p>
+<p>Integrated analysis of audit records does not require vulnerability scanning, the generation of performance data, or system monitoring. Rather, integrated analysis requires that the analysis of information generated by scanning, monitoring, or other data collection activities is integrated with the analysis of audit record information. Security Information and Event Management tools can facilitate audit record aggregation or consolidation from multiple system components as well as audit record correlation and analysis. The use of standardized audit record analysis scripts developed by organizations (with localized script adjustments, as necessary) provides more cost-effective approaches for analyzing audit record information collected. The correlation of audit record information with vulnerability scanning information is important in determining the veracity of vulnerability scans of the system and in correlating attack detection events with scanning results. Correlation with performance data can uncover denial-of-service attacks or other types of attacks that result in the unauthorized use of resources. Correlation with system monitoring information can assist in uncovering attacks and in better relating audit information to operational situations.</p>
+<p>analysis of audit records is integrated with analysis of {{ insert: param, au-06.05_odp.01 }} to further enhance the ability to identify inappropriate or unusual activity.</p>
+<p>Audit and accountability policy</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>procedures addressing audit review, analysis, and reporting</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>integrated analysis of audit records, vulnerability scanning information, performance data, network monitoring information, and associated documentation</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with audit review, analysis, and reporting responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>Mechanisms implementing the capability to integrate analysis of audit records with analysis of data/information sources</p>
+<h3 id="au-6-6-correlation-with-physical-monitoring">AU-6 (6): Correlation with Physical Monitoring</h3>
+<p>Correlate information from audit records with information obtained from monitoring physical access to further enhance the ability to identify suspicious, inappropriate, unusual, or malevolent activity.</p>
+<p>The correlation of physical audit record information and the audit records from systems may assist organizations in identifying suspicious behavior or supporting evidence of such behavior. For example, the correlation of an individual’s identity for logical access to certain systems with the additional physical security information that the individual was present at the facility when the logical access occurred may be useful in investigations.</p>
+<p>information from audit records is correlated with information obtained from monitoring physical access to further enhance the ability to identify suspicious, inappropriate, unusual, or malevolent activity.</p>
+<p>Audit and accountability policy</p>
+<p>procedures addressing audit review, analysis, and reporting</p>
+<p>procedures addressing physical access monitoring</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>documentation providing evidence of correlated information obtained from audit records and physical access monitoring records</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with audit review, analysis, and reporting responsibilities</p>
+<p>organizational personnel with physical access monitoring responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>Mechanisms implementing the capability to correlate information from audit records with information from monitoring physical access</p>
+<h3 id="au-9-2-store-on-separate-physical-systems-or-components">AU-9 (2): Store on Separate Physical Systems or Components</h3>
+<p>Store audit records {{ insert: param, au-09.02_odp }} in a repository that is part of a physically different system or system component than the system or component being audited.</p>
+<p>Storing audit records in a repository separate from the audited system or system component helps to ensure that a compromise of the system being audited does not also result in a compromise of the audit records. Storing audit records on separate physical systems or components also preserves the confidentiality and integrity of audit records and facilitates the management of audit records as an organization-wide activity. Storing audit records on separate systems or components applies to initial generation as well as backup or long-term storage of audit records.</p>
+<p>audit records are stored {{ insert: param, au-09.02_odp }} in a repository that is part of a physically different system or system component than the system or component being audited.</p>
+<p>Audit and accountability policy</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>procedures addressing protection of audit information</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system or media storing backups of system audit records</p>
+<p>system audit records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with audit and accountability responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms implementing the backing up of audit records</p>
+<h3 id="au-9-3-cryptographic-protection">AU-9 (3): Cryptographic Protection</h3>
+<p>Implement cryptographic mechanisms to protect the integrity of audit information and audit tools.</p>
+<p>Cryptographic mechanisms used for protecting the integrity of audit information include signed hash functions using asymmetric cryptography. This enables the distribution of the public key to verify the hash information while maintaining the confidentiality of the secret key used to generate the hash.</p>
+<p>cryptographic mechanisms to protect the integrity of audit information and audit tools are implemented.</p>
+<p>Audit and accountability policy</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>access control policy and procedures</p>
+<p>procedures addressing protection of audit information</p>
+<p>system design documentation</p>
+<p>system hardware settings</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with audit and accountability responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Cryptographic mechanisms protecting the integrity of audit information and tools</p>
+<h3 id="au-10-non-repudiation">AU-10: Non-repudiation</h3>
+<p>Provide irrefutable evidence that an individual (or process acting on behalf of an individual) has performed {{ insert: param, au-10_odp }}.</p>
+<p>Types of individual actions covered by non-repudiation include creating information, sending and receiving messages, and approving information. Non-repudiation protects against claims by authors of not having authored certain documents, senders of not having transmitted messages, receivers of not having received messages, and signatories of not having signed documents. Non-repudiation services can be used to determine if information originated from an individual or if an individual took specific actions (e.g., sending an email, signing a contract, approving a procurement request, or receiving specific information). Organizations obtain non-repudiation services by employing various techniques or mechanisms, including digital signatures and digital message receipts.</p>
+<p>irrefutable evidence is provided that an individual (or process acting on behalf of an individual) has performed {{ insert: param, au-10_odp }}.</p>
+<p>Audit and accountability policy</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>procedures addressing non-repudiation</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with information security and privacy responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms implementing non-repudiation capability</p>
+<h3 id="au-12-1-system-wide-and-time-correlated-audit-trail">AU-12 (1): System-wide and Time-correlated Audit Trail</h3>
+<p>Compile audit records from {{ insert: param, au-12.01_odp.01 }} into a system-wide (logical or physical) audit trail that is time-correlated to within {{ insert: param, au-12.01_odp.02 }}.</p>
+<p>Audit trails are time-correlated if the time stamps in the individual audit records can be reliably related to the time stamps in other audit records to achieve a time ordering of the records within organizational tolerances.</p>
+<p>audit records from {{ insert: param, au-12.01_odp.01 }} are compiled into a system-wide (logical or physical) audit trail that is time-correlated to within {{ insert: param, au-12.01_odp.02 }}.</p>
+<p>Audit and accountability policy</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>procedures addressing audit record generation</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system-wide audit trail (logical or physical)</p>
+<p>system audit records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with audit record generation responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms implementing audit record generation capability</p>
+<h3 id="au-12-3-changes-by-authorized-individuals">AU-12 (3): Changes by Authorized Individuals</h3>
+<p>Provide and implement the capability for {{ insert: param, au-12.03_odp.01 }} to change the logging to be performed on {{ insert: param, au-12.03_odp.02 }} based on {{ insert: param, au-12.03_odp.03 }} within {{ insert: param, au-12.03_odp.04 }}.</p>
+<p>Permitting authorized individuals to make changes to system logging enables organizations to extend or limit logging as necessary to meet organizational requirements. Logging that is limited to conserve system resources may be extended (either temporarily or permanently) to address certain threat situations. In addition, logging may be limited to a specific set of event types to facilitate audit reduction, analysis, and reporting. Organizations can establish time thresholds in which logging actions are changed (e.g., near real-time, within minutes, or within hours).</p>
+<p>the capability for {{ insert: param, au-12.03_odp.01 }} to change the logging to be performed on {{ insert: param, au-12.03_odp.02 }} based on {{ insert: param, au-12.03_odp.03 }} within {{ insert: param, au-12.03_odp.04 }} is provided;</p>
+<p>the capability for {{ insert: param, au-12.03_odp.01 }} to change the logging to be performed on {{ insert: param, au-12.03_odp.02 }} based on {{ insert: param, au-12.03_odp.03 }} within {{ insert: param, au-12.03_odp.04 }} is implemented.</p>
+<p>Audit and accountability policy</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>procedures addressing audit record generation</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system-generated list of individuals or roles authorized to change auditing to be performed</p>
+<p>system audit records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with audit record generation responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms implementing audit record generation capability</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../at/" class="btn btn-neutral float-left" title="AT: Awareness and Training (0)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ca/" class="btn btn-neutral float-right" title="CA: Assessment, Authorization, and Monitoring (4)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../at/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ca/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://grokify.github.io/go-nist-sp-800-53/rev5/low_baseline/cm/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>CM: Configuration Management (9) - NIST SP 800-53 Control Reference Site</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CM: Configuration Management (9)";
+        var mkdocs_page_input_path = "rev5/low_baseline/cm.md";
+        var mkdocs_page_url = "/go-nist-sp-800-53/rev5/low_baseline/cm/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> NIST SP 800-53 Control Reference Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ac/">AC: Access Control (46)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/au/">AU: Audit and Accountability (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ca/">CA: Assessment, Authorization, and Monitoring (14)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cm/">CM: Configuration Management (32)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cp/">CP: Contingency Planning (35)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ia/">IA: Identification and Authentication (26)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ir/">IR: Incident Response (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ma/">MA: Maintenance (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/mp/">MP: Media Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pe/">PE: Physical and Environmental Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ps/">PS: Personnel Security (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ra/">RA: Risk Assessment (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sa/">SA: System and Services Acquisition (21)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sc/">SC: System and Communications Protection (30)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/si/">SI: System and Information Integrity (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sr/">SR: Supply Chain Risk Management (14)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ac/">AC: Access Control (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/at/">AT: Awareness and Training (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/au/">AU: Audit and Accountability (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ca/">CA: Assessment, Authorization, and Monitoring (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cm/">CM: Configuration Management (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cp/">CP: Contingency Planning (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ia/">IA: Identification and Authentication (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ir/">IR: Incident Response (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ma/">MA: Maintenance (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pe/">PE: Physical and Environmental Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pl/">PL: Planning (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ps/">PS: Personnel Security (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ra/">RA: Risk Assessment (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sa/">SA: System and Services Acquisition (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sc/">SC: System and Communications Protection (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/si/">SI: System and Information Integrity (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sr/">SR: Supply Chain Risk Management (2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ac/">AC: Access Control (39)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/au/">AU: Audit and Accountability (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ca/">CA: Assessment, Authorization, and Monitoring (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cm/">CM: Configuration Management (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cp/">CP: Contingency Planning (23)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ia/">IA: Identification and Authentication (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ir/">IR: Incident Response (13)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ma/">MA: Maintenance (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/mp/">MP: Media Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pe/">PE: Physical and Environmental Protection (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ra/">RA: Risk Assessment (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sa/">SA: System and Services Acquisition (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sc/">SC: System and Communications Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/si/">SI: System and Information Integrity (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sr/">SR: Supply Chain Risk Management (12)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ac/">AC: Access Control (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/at/">AT: Awareness and Training (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/au/">AU: Audit and Accountability (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ca/">CA: Assessment, Authorization, and Monitoring (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cm/">CM: Configuration Management (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cp/">CP: Contingency Planning (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ia/">IA: Identification and Authentication (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ir/">IR: Incident Response (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ma/">MA: Maintenance (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pe/">PE: Physical and Environmental Protection (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pl/">PL: Planning (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ps/">PS: Personnel Security (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ra/">RA: Risk Assessment (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sa/">SA: System and Services Acquisition (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sc/">SC: System and Communications Protection (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/si/">SI: System and Information Integrity (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sr/">SR: Supply Chain Risk Management (1)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Low Baseline</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ac/">AC: Access Control (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../at/">AT: Awareness and Training (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../au/">AU: Audit and Accountability (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ca/">CA: Assessment, Authorization, and Monitoring (8)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">CM: Configuration Management (9)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#cm-1-policy-and-procedures">CM-1: Policy and Procedures</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cm-2-baseline-configuration">CM-2: Baseline Configuration</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cm-4-impact-analyses">CM-4: Impact Analyses</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cm-5-access-restrictions-for-change">CM-5: Access Restrictions for Change</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cm-6-configuration-settings">CM-6: Configuration Settings</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cm-7-least-functionality">CM-7: Least Functionality</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cm-8-system-component-inventory">CM-8: System Component Inventory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cm-10-software-usage-restrictions">CM-10: Software Usage Restrictions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cm-11-user-installed-software">CM-11: User-installed Software</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cp/">CP: Contingency Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ia/">IA: Identification and Authentication (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ir/">IR: Incident Response (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ma/">MA: Maintenance (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mp/">MP: Media Protection (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pe/">PE: Physical and Environmental Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pl/">PL: Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ra/">RA: Risk Assessment (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sa/">SA: System and Services Acquisition (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sc/">SC: System and Communications Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../si/">SI: System and Information Integrity (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sr/">SR: Supply Chain Risk Management (11)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NIST SP 800-53 Control Reference Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Low Baseline &raquo;</li><li>CM: Configuration Management (9)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="cm-configuration-management">CM - Configuration Management</h1>
+<ul>
+<li>Controls: 9</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<h3 id="cm-1-policy-and-procedures">CM-1: Policy and Procedures</h3>
+<p>Develop, document, and disseminate to {{ insert: param, cm-1_prm_1 }}:</p>
+<p>{{ insert: param, cm-01_odp.03 }} configuration management policy that:</p>
+<p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
+<p>Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and</p>
+<p>Procedures to facilitate the implementation of the configuration management policy and the associated configuration management controls;</p>
+<p>Designate an {{ insert: param, cm-01_odp.04 }} to manage the development, documentation, and dissemination of the configuration management policy and procedures; and</p>
+<p>Review and update the current configuration management:</p>
+<p>Policy {{ insert: param, cm-01_odp.05 }} and following {{ insert: param, cm-01_odp.06 }} ; and</p>
+<p>Procedures {{ insert: param, cm-01_odp.07 }} and following {{ insert: param, cm-01_odp.08 }}.</p>
+<p>Configuration management policy and procedures address the controls in the CM family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of configuration management policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission/business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to configuration management policy and procedures include, but are not limited to, assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.</p>
+<p>a configuration management policy is developed and documented;</p>
+<p>the configuration management policy is disseminated to {{ insert: param, cm-01_odp.01 }};</p>
+<p>configuration management procedures to facilitate the implementation of the configuration management policy and associated configuration management controls are developed and documented;</p>
+<p>the configuration management procedures are disseminated to {{ insert: param, cm-01_odp.02 }};</p>
+<p>the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses purpose;</p>
+<p>the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses scope;</p>
+<p>the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses roles;</p>
+<p>the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses responsibilities;</p>
+<p>the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses management commitment;</p>
+<p>the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses coordination among organizational entities;</p>
+<p>the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses compliance;</p>
+<p>the configuration management policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;</p>
+<p>the {{ insert: param, cm-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the configuration management policy and procedures;</p>
+<p>the current configuration management policy is reviewed and updated {{ insert: param, cm-01_odp.05 }}; </p>
+<p>the current configuration management policy is reviewed and updated following {{ insert: param, cm-01_odp.06 }};</p>
+<p>the current configuration management procedures are reviewed and updated {{ insert: param, cm-01_odp.07 }}; </p>
+<p>the current configuration management procedures are reviewed and updated following {{ insert: param, cm-01_odp.08 }}.</p>
+<p>Configuration management policy and procedures</p>
+<p>security and privacy program policies and procedures</p>
+<p>assessment or audit findings</p>
+<p>documentation of security incidents or breaches</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>risk management strategy</p>
+<p>other relevant artifacts, documents, or records</p>
+<p>Organizational personnel with configuration management responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<h3 id="cm-2-baseline-configuration">CM-2: Baseline Configuration</h3>
+<p>Develop, document, and maintain under configuration control, a current baseline configuration of the system; and</p>
+<p>Review and update the baseline configuration of the system:</p>
+<p>{{ insert: param, cm-02_odp.01 }};</p>
+<p>When required due to {{ insert: param, cm-02_odp.02 }} ; and</p>
+<p>When system components are installed or upgraded.</p>
+<p>Baseline configurations for systems and system components include connectivity, operational, and communications aspects of systems. Baseline configurations are documented, formally reviewed, and agreed-upon specifications for systems or configuration items within those systems. Baseline configurations serve as a basis for future builds, releases, or changes to systems and include security and privacy control implementations, operational procedures, information about system components, network topology, and logical placement of components in the system architecture. Maintaining baseline configurations requires creating new baselines as organizational systems change over time. Baseline configurations of systems reflect the current enterprise architecture.</p>
+<p>a current baseline configuration of the system is developed and documented;</p>
+<p>a current baseline configuration of the system is maintained under configuration control;</p>
+<p>the baseline configuration of the system is reviewed and updated {{ insert: param, cm-02_odp.01 }};</p>
+<p>the baseline configuration of the system is reviewed and updated when required due to {{ insert: param, cm-02_odp.02 }};</p>
+<p>the baseline configuration of the system is reviewed and updated when system components are installed or upgraded.</p>
+<p>Configuration management policy</p>
+<p>procedures addressing the baseline configuration of the system</p>
+<p>configuration management plan</p>
+<p>enterprise architecture documentation</p>
+<p>system design documentation</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>system architecture and configuration documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system component inventory</p>
+<p>change control records</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with configuration management responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system/network administrators</p>
+<p>Organizational processes for managing baseline configurations</p>
+<p>mechanisms supporting configuration control of the baseline configuration</p>
+<h3 id="cm-4-impact-analyses">CM-4: Impact Analyses</h3>
+<p>Analyze changes to the system to determine potential security and privacy impacts prior to change implementation.</p>
+<p>Organizational personnel with security or privacy responsibilities conduct impact analyses. Individuals conducting impact analyses possess the necessary skills and technical expertise to analyze the changes to systems as well as the security or privacy ramifications. Impact analyses include reviewing security and privacy plans, policies, and procedures to understand control requirements; reviewing system design documentation and operational procedures to understand control implementation and how specific system changes might affect the controls; reviewing the impact of changes on organizational supply chain partners with stakeholders; and determining how potential changes to a system create new risks to the privacy of individuals and the ability of implemented controls to mitigate those risks. Impact analyses also include risk assessments to understand the impact of the changes and determine if additional controls are required.</p>
+<p>changes to the system are analyzed to determine potential security impacts prior to change implementation;</p>
+<p>changes to the system are analyzed to determine potential privacy impacts prior to change implementation.</p>
+<p>Configuration management policy</p>
+<p>procedures addressing security impact analyses for changes to the system</p>
+<p>procedures addressing privacy impact analyses for changes to the system</p>
+<p>configuration management plan</p>
+<p>security impact analysis documentation</p>
+<p>privacy impact analysis documentation</p>
+<p>privacy impact assessment</p>
+<p>privacy risk assessment documentation, system design documentation</p>
+<p>analysis tools and associated outputs</p>
+<p>change control records</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibility for conducting security impact analyses</p>
+<p>organizational personnel with responsibility for conducting privacy impact analyses</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system developer</p>
+<p>system/network administrators</p>
+<p>members of change control board or similar</p>
+<p>Organizational processes for security impact analyses</p>
+<p>organizational processes for privacy impact analyses</p>
+<h3 id="cm-5-access-restrictions-for-change">CM-5: Access Restrictions for Change</h3>
+<p>Define, document, approve, and enforce physical and logical access restrictions associated with changes to the system.</p>
+<p>Changes to the hardware, software, or firmware components of systems or the operational procedures related to the system can potentially have significant effects on the security of the systems or individuals’ privacy. Therefore, organizations permit only qualified and authorized individuals to access systems for purposes of initiating changes. Access restrictions include physical and logical access controls (see <a href="#ac-3">AC-3</a> and <a href="#pe-3">PE-3</a> ), software libraries, workflow automation, media libraries, abstract layers (i.e., changes implemented into external interfaces rather than directly into systems), and change windows (i.e., changes occur only during specified times).</p>
+<p>physical access restrictions associated with changes to the system are defined and documented;</p>
+<p>physical access restrictions associated with changes to the system are approved;</p>
+<p>physical access restrictions associated with changes to the system are enforced;</p>
+<p>logical access restrictions associated with changes to the system are defined and documented;</p>
+<p>logical access restrictions associated with changes to the system are approved;</p>
+<p>logical access restrictions associated with changes to the system are enforced.</p>
+<p>Configuration management policy</p>
+<p>procedures addressing access restrictions for changes to the system</p>
+<p>configuration management plan</p>
+<p>system design documentation</p>
+<p>system architecture and configuration documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>logical access approvals</p>
+<p>physical access approvals</p>
+<p>access credentials</p>
+<p>change control records</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with logical access control responsibilities</p>
+<p>organizational personnel with physical access control responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>Organizational processes for managing access restrictions to change</p>
+<p>mechanisms supporting, implementing, or enforcing access restrictions associated with changes to the system</p>
+<h3 id="cm-6-configuration-settings">CM-6: Configuration Settings</h3>
+<p>Establish and document configuration settings for components employed within the system that reflect the most restrictive mode consistent with operational requirements using {{ insert: param, cm-06_odp.01 }};</p>
+<p>Implement the configuration settings;</p>
+<p>Identify, document, and approve any deviations from established configuration settings for {{ insert: param, cm-06_odp.02 }} based on {{ insert: param, cm-06_odp.03 }} ; and</p>
+<p>Monitor and control changes to the configuration settings in accordance with organizational policies and procedures.</p>
+<p>Configuration settings are the parameters that can be changed in the hardware, software, or firmware components of the system that affect the security and privacy posture or functionality of the system. Information technology products for which configuration settings can be defined include mainframe computers, servers, workstations, operating systems, mobile devices, input/output devices, protocols, and applications. Parameters that impact the security posture of systems include registry settings; account, file, or directory permission settings; and settings for functions, protocols, ports, services, and remote connections. Privacy parameters are parameters impacting the privacy posture of systems, including the parameters required to satisfy other privacy controls. Privacy parameters include settings for access controls, data processing preferences, and processing and retention permissions. Organizations establish organization-wide configuration settings and subsequently derive specific configuration settings for systems. The established settings become part of the configuration baseline for the system.</p>
+<p>Common secure configurations (also known as security configuration checklists, lockdown and hardening guides, and security reference guides) provide recognized, standardized, and established benchmarks that stipulate secure configuration settings for information technology products and platforms as well as instructions for configuring those products or platforms to meet operational requirements. Common secure configurations can be developed by a variety of organizations, including information technology product developers, manufacturers, vendors, federal agencies, consortia, academia, industry, and other organizations in the public and private sectors.</p>
+<p>Implementation of a common secure configuration may be mandated at the organization level, mission and business process level, system level, or at a higher level, including by a regulatory agency. Common secure configurations include the United States Government Configuration Baseline <a href="#98498928-3ca3-44b3-8b1e-f48685373087">USGCB</a> and security technical implementation guides (STIGs), which affect the implementation of <a href="#cm-6">CM-6</a> and other controls such as <a href="#ac-19">AC-19</a> and <a href="#cm-7">CM-7</a> . The Security Content Automation Protocol (SCAP) and the defined standards within the protocol provide an effective method to uniquely identify, track, and control configuration settings.</p>
+<p>configuration settings that reflect the most restrictive mode consistent with operational requirements are established and documented for components employed within the system using {{ insert: param, cm-06_odp.01 }};</p>
+<p>the configuration settings documented in CM-06a are implemented;</p>
+<p>any deviations from established configuration settings for {{ insert: param, cm-06_odp.02 }} are identified and documented based on {{ insert: param, cm-06_odp.03 }};</p>
+<p>any deviations from established configuration settings for {{ insert: param, cm-06_odp.02 }} are approved;</p>
+<p>changes to the configuration settings are monitored in accordance with organizational policies and procedures;</p>
+<p>changes to the configuration settings are controlled in accordance with organizational policies and procedures.</p>
+<p>Configuration management policy</p>
+<p>procedures addressing configuration settings for the system</p>
+<p>configuration management plan</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>common secure configuration checklists</p>
+<p>system component inventory</p>
+<p>evidence supporting approved deviations from established configuration settings</p>
+<p>change control records</p>
+<p>system data processing and retention permissions</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with security configuration management responsibilities</p>
+<p>organizational personnel with privacy configuration management responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system/network administrators</p>
+<p>Organizational processes for managing configuration settings</p>
+<p>mechanisms that implement, monitor, and/or control system configuration settings</p>
+<p>mechanisms that identify and/or document deviations from established configuration settings</p>
+<h3 id="cm-7-least-functionality">CM-7: Least Functionality</h3>
+<p>Configure the system to provide only {{ insert: param, cm-07_odp.01 }} ; and</p>
+<p>Prohibit or restrict the use of the following functions, ports, protocols, software, and/or services: {{ insert: param, cm-7_prm_2 }}.</p>
+<p>Systems provide a wide variety of functions and services. Some of the functions and services routinely provided by default may not be necessary to support essential organizational missions, functions, or operations. Additionally, it is sometimes convenient to provide multiple services from a single system component, but doing so increases risk over limiting the services provided by that single component. Where feasible, organizations limit component functionality to a single function per component. Organizations consider removing unused or unnecessary software and disabling unused or unnecessary physical and logical ports and protocols to prevent unauthorized connection of components, transfer of information, and tunneling. Organizations employ network scanning tools, intrusion detection and prevention systems, and end-point protection technologies, such as firewalls and host-based intrusion detection systems, to identify and prevent the use of prohibited functions, protocols, ports, and services. Least functionality can also be achieved as part of the fundamental design and development of the system (see <a href="#sa-8">SA-8</a>, <a href="#sc-2">SC-2</a> , and <a href="#sc-3">SC-3</a>).</p>
+<p>the system is configured to provide only {{ insert: param, cm-07_odp.01 }};</p>
+<p>the use of {{ insert: param, cm-07_odp.02 }} is prohibited or restricted;</p>
+<p>the use of {{ insert: param, cm-07_odp.03 }} is prohibited or restricted;</p>
+<p>the use of {{ insert: param, cm-07_odp.04 }} is prohibited or restricted;</p>
+<p>the use of {{ insert: param, cm-07_odp.05 }} is prohibited or restricted;</p>
+<p>the use of {{ insert: param, cm-07_odp.06 }} is prohibited or restricted.</p>
+<p>Configuration management policy</p>
+<p>procedures addressing least functionality in the system</p>
+<p>configuration management plan</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system component inventory</p>
+<p>common secure configuration checklists</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with security configuration management responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Organizational processes prohibiting or restricting functions, ports, protocols, software, and/or services</p>
+<p>mechanisms implementing restrictions or prohibition of functions, ports, protocols, software, and/or services</p>
+<h3 id="cm-8-system-component-inventory">CM-8: System Component Inventory</h3>
+<p>Develop and document an inventory of system components that:</p>
+<p>Accurately reflects the system;</p>
+<p>Includes all components within the system;</p>
+<p>Does not include duplicate accounting of components or components assigned to any other system;</p>
+<p>Is at the level of granularity deemed necessary for tracking and reporting; and</p>
+<p>Includes the following information to achieve system component accountability: {{ insert: param, cm-08_odp.01 }} ; and</p>
+<p>Review and update the system component inventory {{ insert: param, cm-08_odp.02 }}.</p>
+<p>System components are discrete, identifiable information technology assets that include hardware, software, and firmware. Organizations may choose to implement centralized system component inventories that include components from all organizational systems. In such situations, organizations ensure that the inventories include system-specific information required for component accountability. The information necessary for effective accountability of system components includes the system name, software owners, software version numbers, hardware inventory specifications, software license information, and for networked components, the machine names and network addresses across all implemented protocols (e.g., IPv4, IPv6). Inventory specifications include date of receipt, cost, model, serial number, manufacturer, supplier information, component type, and physical location.</p>
+<p>Preventing duplicate accounting of system components addresses the lack of accountability that occurs when component ownership and system association is not known, especially in large or complex connected systems. Effective prevention of duplicate accounting of system components necessitates use of a unique identifier for each component. For software inventory, centrally managed software that is accessed via other systems is addressed as a component of the system on which it is installed and managed. Software installed on multiple organizational systems and managed at the system level is addressed for each individual system and may appear more than once in a centralized component inventory, necessitating a system association for each software instance in the centralized inventory to avoid duplicate accounting of components. Scanning systems implementing multiple network protocols (e.g., IPv4 and IPv6) can result in duplicate components being identified in different address spaces. The implementation of <a href="#cm-8.7">CM-8(7)</a> can help to eliminate duplicate accounting of components.</p>
+<p>an inventory of system components that accurately reflects the system is developed and documented;</p>
+<p>an inventory of system components that includes all components within the system is developed and documented;</p>
+<p>an inventory of system components that does not include duplicate accounting of components or components assigned to any other system is developed and documented;</p>
+<p>an inventory of system components that is at the level of granularity deemed necessary for tracking and reporting is developed and documented;</p>
+<p>an inventory of system components that includes {{ insert: param, cm-08_odp.01 }} is developed and documented;</p>
+<p>the system component inventory is reviewed and updated {{ insert: param, cm-08_odp.02 }}.</p>
+<p>Configuration management policy</p>
+<p>procedures addressing system component inventory</p>
+<p>configuration management plan</p>
+<p>system security plan</p>
+<p>system design documentation</p>
+<p>system component inventory</p>
+<p>inventory reviews and update records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with component inventory management responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>Organizational processes for managing the system component inventory</p>
+<p>mechanisms supporting and/or implementing system component inventory</p>
+<h3 id="cm-10-software-usage-restrictions">CM-10: Software Usage Restrictions</h3>
+<p>Use software and associated documentation in accordance with contract agreements and copyright laws;</p>
+<p>Track the use of software and associated documentation protected by quantity licenses to control copying and distribution; and</p>
+<p>Control and document the use of peer-to-peer file sharing technology to ensure that this capability is not used for the unauthorized distribution, display, performance, or reproduction of copyrighted work.</p>
+<p>Software license tracking can be accomplished by manual or automated methods, depending on organizational needs. Examples of contract agreements include software license agreements and non-disclosure agreements.</p>
+<p>software and associated documentation are used in accordance with contract agreements and copyright laws;</p>
+<p>the use of software and associated documentation protected by quantity licenses is tracked to control copying and distribution;</p>
+<p>the use of peer-to-peer file sharing technology is controlled and documented to ensure that peer-to-peer file sharing is not used for the unauthorized distribution, display, performance, or reproduction of copyrighted work.</p>
+<p>Configuration management policy</p>
+<p>software usage restrictions</p>
+<p>software contract agreements and copyright laws</p>
+<p>site license documentation</p>
+<p>list of software usage restrictions</p>
+<p>software license tracking reports</p>
+<p>configuration management plan</p>
+<p>system security plan</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel operating, using, and/or maintaining the system</p>
+<p>organizational personnel with software license management responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>Organizational processes for tracking the use of software protected by quantity licenses</p>
+<p>organizational processes for controlling/documenting the use of peer-to-peer file sharing technology</p>
+<p>mechanisms implementing software license tracking</p>
+<p>mechanisms implementing and controlling the use of peer-to-peer files sharing technology</p>
+<h3 id="cm-11-user-installed-software">CM-11: User-installed Software</h3>
+<p>Establish {{ insert: param, cm-11_odp.01 }} governing the installation of software by users;</p>
+<p>Enforce software installation policies through the following methods: {{ insert: param, cm-11_odp.02 }} ; and</p>
+<p>Monitor policy compliance {{ insert: param, cm-11_odp.03 }}.</p>
+<p>If provided the necessary privileges, users can install software in organizational systems. To maintain control over the software installed, organizations identify permitted and prohibited actions regarding software installation. Permitted software installations include updates and security patches to existing software and downloading new applications from organization-approved "app stores." Prohibited software installations include software with unknown or suspect pedigrees or software that organizations consider potentially malicious. Policies selected for governing user-installed software are organization-developed or provided by some external entity. Policy enforcement methods can include procedural methods and automated methods.</p>
+<p>{{ insert: param, cm-11_odp.01 }} governing the installation of software by users are established;</p>
+<p>software installation policies are enforced through {{ insert: param, cm-11_odp.02 }};</p>
+<p>compliance with {{ insert: param, cm-11_odp.01 }} is monitored {{ insert: param, cm-11_odp.03 }}.</p>
+<p>Configuration management policy</p>
+<p>procedures addressing user-installed software</p>
+<p>configuration management plan</p>
+<p>system security plan</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>list of rules governing user installed software</p>
+<p>system monitoring records</p>
+<p>system audit records</p>
+<p>continuous monitoring strategy</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for governing user-installed software</p>
+<p>organizational personnel operating, using, and/or maintaining the system</p>
+<p>organizational personnel monitoring compliance with user-installed software policy</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>Organizational processes governing user-installed software on the system</p>
+<p>mechanisms enforcing policies and methods for governing the installation of software by users</p>
+<p>mechanisms monitoring policy compliance</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ca/" class="btn btn-neutral float-left" title="CA: Assessment, Authorization, and Monitoring (8)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../cp/" class="btn btn-neutral float-right" title="CP: Contingency Planning (6)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ca/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../cp/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

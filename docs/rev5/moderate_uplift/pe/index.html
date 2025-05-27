@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://grokify.github.io/go-nist-sp-800-53/rev5/moderate_uplift/pe/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>PE: Physical and Environmental Protection (8) - NIST SP 800-53 Control Reference Site</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "PE: Physical and Environmental Protection (8)";
+        var mkdocs_page_input_path = "rev5/moderate_uplift/pe.md";
+        var mkdocs_page_url = "/go-nist-sp-800-53/rev5/moderate_uplift/pe/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> NIST SP 800-53 Control Reference Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ac/">AC: Access Control (46)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/au/">AU: Audit and Accountability (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ca/">CA: Assessment, Authorization, and Monitoring (14)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cm/">CM: Configuration Management (32)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cp/">CP: Contingency Planning (35)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ia/">IA: Identification and Authentication (26)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ir/">IR: Incident Response (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ma/">MA: Maintenance (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/mp/">MP: Media Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pe/">PE: Physical and Environmental Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ps/">PS: Personnel Security (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ra/">RA: Risk Assessment (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sa/">SA: System and Services Acquisition (21)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sc/">SC: System and Communications Protection (30)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/si/">SI: System and Information Integrity (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sr/">SR: Supply Chain Risk Management (14)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ac/">AC: Access Control (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/at/">AT: Awareness and Training (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/au/">AU: Audit and Accountability (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ca/">CA: Assessment, Authorization, and Monitoring (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cm/">CM: Configuration Management (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cp/">CP: Contingency Planning (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ia/">IA: Identification and Authentication (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ir/">IR: Incident Response (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ma/">MA: Maintenance (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pe/">PE: Physical and Environmental Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pl/">PL: Planning (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ps/">PS: Personnel Security (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ra/">RA: Risk Assessment (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sa/">SA: System and Services Acquisition (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sc/">SC: System and Communications Protection (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/si/">SI: System and Information Integrity (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sr/">SR: Supply Chain Risk Management (2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ac/">AC: Access Control (39)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/au/">AU: Audit and Accountability (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ca/">CA: Assessment, Authorization, and Monitoring (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cm/">CM: Configuration Management (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cp/">CP: Contingency Planning (23)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ia/">IA: Identification and Authentication (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ir/">IR: Incident Response (13)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ma/">MA: Maintenance (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/mp/">MP: Media Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pe/">PE: Physical and Environmental Protection (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ra/">RA: Risk Assessment (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sa/">SA: System and Services Acquisition (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sc/">SC: System and Communications Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/si/">SI: System and Information Integrity (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sr/">SR: Supply Chain Risk Management (12)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Uplift</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ac/">AC: Access Control (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../at/">AT: Awareness and Training (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../au/">AU: Audit and Accountability (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ca/">CA: Assessment, Authorization, and Monitoring (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cm/">CM: Configuration Management (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cp/">CP: Contingency Planning (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ia/">IA: Identification and Authentication (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ir/">IR: Incident Response (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ma/">MA: Maintenance (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">PE: Physical and Environmental Protection (8)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pe-4-access-control-for-transmission">PE-4: Access Control for Transmission</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pe-5-access-control-for-output-devices">PE-5: Access Control for Output Devices</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pe-6-1-intrusion-alarms-and-surveillance-equipment">PE-6 (1): Intrusion Alarms and Surveillance Equipment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pe-9-power-equipment-and-cabling">PE-9: Power Equipment and Cabling</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pe-10-emergency-shutoff">PE-10: Emergency Shutoff</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pe-11-emergency-power">PE-11: Emergency Power</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pe-13-1-detection-systems-automatic-activation-and-notification">PE-13 (1): Detection Systems — Automatic Activation and Notification</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pe-17-alternate-work-site">PE-17: Alternate Work Site</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pl/">PL: Planning (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ps/">PS: Personnel Security (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ra/">RA: Risk Assessment (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sa/">SA: System and Services Acquisition (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sc/">SC: System and Communications Protection (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../si/">SI: System and Information Integrity (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sr/">SR: Supply Chain Risk Management (1)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Low Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ac/">AC: Access Control (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/at/">AT: Awareness and Training (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/au/">AU: Audit and Accountability (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ca/">CA: Assessment, Authorization, and Monitoring (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cm/">CM: Configuration Management (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cp/">CP: Contingency Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ia/">IA: Identification and Authentication (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ir/">IR: Incident Response (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ma/">MA: Maintenance (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/mp/">MP: Media Protection (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pe/">PE: Physical and Environmental Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pl/">PL: Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ra/">RA: Risk Assessment (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sa/">SA: System and Services Acquisition (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sc/">SC: System and Communications Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/si/">SI: System and Information Integrity (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sr/">SR: Supply Chain Risk Management (11)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NIST SP 800-53 Control Reference Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Moderate Uplift &raquo;</li><li>PE: Physical and Environmental Protection (8)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="pe-physical-and-environmental-protection">PE - Physical and Environmental Protection</h1>
+<ul>
+<li>Controls: 8</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<h3 id="pe-4-access-control-for-transmission">PE-4: Access Control for Transmission</h3>
+<p>Control physical access to {{ insert: param, pe-04_odp.01 }} within organizational facilities using {{ insert: param, pe-04_odp.02 }}.</p>
+<p>Security controls applied to system distribution and transmission lines prevent accidental damage, disruption, and physical tampering. Such controls may also be necessary to prevent eavesdropping or modification of unencrypted transmissions. Security controls used to control physical access to system distribution and transmission lines include disconnected or locked spare jacks, locked wiring closets, protection of cabling by conduit or cable trays, and wiretapping sensors.</p>
+<p>physical access to {{ insert: param, pe-04_odp.01 }} within organizational facilities is controlled using {{ insert: param, pe-04_odp.02 }}.</p>
+<p>Physical and environmental protection policy</p>
+<p>procedures addressing access control for transmission mediums</p>
+<p>system design documentation</p>
+<p>facility communications and wiring diagrams</p>
+<p>list of physical security safeguards applied to system distribution and transmission lines</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with physical access control responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for access control to distribution and transmission lines</p>
+<p>mechanisms/security safeguards supporting and/or implementing access control to distribution and transmission lines</p>
+<h3 id="pe-5-access-control-for-output-devices">PE-5: Access Control for Output Devices</h3>
+<p>Control physical access to output from {{ insert: param, pe-05_odp }} to prevent unauthorized individuals from obtaining the output.</p>
+<p>Controlling physical access to output devices includes placing output devices in locked rooms or other secured areas with keypad or card reader access controls and allowing access to authorized individuals only, placing output devices in locations that can be monitored by personnel, installing monitor or screen filters, and using headphones. Examples of output devices include monitors, printers, scanners, audio devices, facsimile machines, and copiers.</p>
+<p>physical access to output from {{ insert: param, pe-05_odp }} is controlled to prevent unauthorized individuals from obtaining the output.</p>
+<p>Physical and environmental protection policy</p>
+<p>procedures addressing access control for display medium</p>
+<p>facility layout of system components</p>
+<p>actual displays from system components</p>
+<p>list of output devices and associated outputs requiring physical access controls</p>
+<p>physical access control logs or records for areas containing output devices and related outputs</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with physical access control responsibilities</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for access control to output devices</p>
+<p>mechanisms supporting and/or implementing access control to output devices</p>
+<h3 id="pe-6-1-intrusion-alarms-and-surveillance-equipment">PE-6 (1): Intrusion Alarms and Surveillance Equipment</h3>
+<p>Monitor physical access to the facility where the system resides using physical intrusion alarms and surveillance equipment.</p>
+<p>Physical intrusion alarms can be employed to alert security personnel when unauthorized access to the facility is attempted. Alarm systems work in conjunction with physical barriers, physical access control systems, and security guards by triggering a response when these other forms of security have been compromised or breached. Physical intrusion alarms can include different types of sensor devices, such as motion sensors, contact sensors, and broken glass sensors. Surveillance equipment includes video cameras installed at strategic locations throughout the facility.</p>
+<p>physical access to the facility where the system resides is monitored using physical intrusion alarms;</p>
+<p>physical access to the facility where the system resides is monitored using physical surveillance equipment.</p>
+<p>Physical and environmental protection policy</p>
+<p>procedures addressing physical access monitoring</p>
+<p>physical access logs or records</p>
+<p>physical access monitoring records</p>
+<p>physical access log reviews</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>privacy impact assessment</p>
+<p>privacy risk assessment documentation</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with physical access monitoring responsibilities</p>
+<p>organizational personnel with incident response responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>Organizational processes for monitoring physical intrusion alarms and surveillance equipment</p>
+<p>mechanisms supporting and/or implementing physical access monitoring</p>
+<p>mechanisms supporting and/or implementing physical intrusion alarms and surveillance equipment</p>
+<h3 id="pe-9-power-equipment-and-cabling">PE-9: Power Equipment and Cabling</h3>
+<p>Protect power equipment and power cabling for the system from damage and destruction.</p>
+<p>Organizations determine the types of protection necessary for the power equipment and cabling employed at different locations that are both internal and external to organizational facilities and environments of operation. Types of power equipment and cabling include internal cabling and uninterruptable power sources in offices or data centers, generators and power cabling outside of buildings, and power sources for self-contained components such as satellites, vehicles, and other deployable systems.</p>
+<p>power equipment for the system is protected from damage and destruction;</p>
+<p>power cabling for the system is protected from damage and destruction.</p>
+<p>Physical and environmental protection policy</p>
+<p>procedures addressing power equipment/cabling protection</p>
+<p>facilities housing power equipment/cabling</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with the responsibility to protect power equipment/cabling</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms supporting and/or implementing the protection of power equipment/cabling</p>
+<h3 id="pe-10-emergency-shutoff">PE-10: Emergency Shutoff</h3>
+<p>Provide the capability of shutting off power to {{ insert: param, pe-10_odp.01 }} in emergency situations;</p>
+<p>Place emergency shutoff switches or devices in {{ insert: param, pe-10_odp.02 }} to facilitate access for authorized personnel; and</p>
+<p>Protect emergency power shutoff capability from unauthorized activation.</p>
+<p>Emergency power shutoff primarily applies to organizational facilities that contain concentrations of system resources, including data centers, mainframe computer rooms, server rooms, and areas with computer-controlled machinery.</p>
+<p>the capability to shut off power to {{ insert: param, pe-10_odp.01 }} in emergency situations is provided;</p>
+<p>emergency shutoff switches or devices are placed in {{ insert: param, pe-10_odp.02 }} to facilitate access for authorized personnel;</p>
+<p>the emergency power shutoff capability is protected from unauthorized activation.</p>
+<p>Physical and environmental protection policy</p>
+<p>procedures addressing power source emergency shutoff</p>
+<p>emergency shutoff controls or switches</p>
+<p>locations housing emergency shutoff switches and devices</p>
+<p>security safeguards protecting the emergency power shutoff capability from unauthorized activation</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with the responsibility for the emergency power shutoff capability (both implementing and using the capability)</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms supporting and/or implementing emergency power shutoff</p>
+<h3 id="pe-11-emergency-power">PE-11: Emergency Power</h3>
+<p>Provide an uninterruptible power supply to facilitate {{ insert: param, pe-11_odp }} in the event of a primary power source loss.</p>
+<p>An uninterruptible power supply (UPS) is an electrical system or mechanism that provides emergency power when there is a failure of the main power source. A UPS is typically used to protect computers, data centers, telecommunication equipment, or other electrical equipment where an unexpected power disruption could cause injuries, fatalities, serious mission or business disruption, or loss of data or information. A UPS differs from an emergency power system or backup generator in that the UPS provides near-instantaneous protection from unanticipated power interruptions from the main power source by providing energy stored in batteries, supercapacitors, or flywheels. The battery duration of a UPS is relatively short but provides sufficient time to start a standby power source, such as a backup generator, or properly shut down the system.</p>
+<p>an uninterruptible power supply is provided to facilitate {{ insert: param, pe-11_odp }} in the event of a primary power source loss.</p>
+<p>Physical and environmental protection policy</p>
+<p>procedures addressing emergency power</p>
+<p>uninterruptible power supply</p>
+<p>uninterruptible power supply documentation</p>
+<p>uninterruptible power supply test records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with the responsibility for emergency power and/or planning</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms supporting and/or implementing an uninterruptible power supply</p>
+<p>the uninterruptable power supply</p>
+<h3 id="pe-13-1-detection-systems-automatic-activation-and-notification">PE-13 (1): Detection Systems — Automatic Activation and Notification</h3>
+<p>Employ fire detection systems that activate automatically and notify {{ insert: param, pe-13.01_odp.01 }} and {{ insert: param, pe-13.01_odp.02 }} in the event of a fire.</p>
+<p>Organizations can identify personnel, roles, and emergency responders if individuals on the notification list need to have access authorizations or clearances (e.g., to enter to facilities where access is restricted due to the classification or impact level of information within the facility). Notification mechanisms may require independent energy sources to ensure that the notification capability is not adversely affected by the fire.</p>
+<p>fire detection systems that activate automatically are employed in the event of a fire;</p>
+<p>fire detection systems that notify {{ insert: param, pe-13.01_odp.01 }} automatically are employed in the event of a fire;</p>
+<p>fire detection systems that notify {{ insert: param, pe-13.01_odp.02 }} automatically are employed in the event of a fire.</p>
+<p>Physical and environmental protection policy</p>
+<p>procedures addressing fire protection</p>
+<p>facility housing the information system</p>
+<p>alarm service-level agreements</p>
+<p>test records of fire suppression and detection devices/systems</p>
+<p>fire suppression and detection devices/systems documentation</p>
+<p>alerts/notifications of fire events</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for fire detection and suppression devices/systems</p>
+<p>organizational personnel with responsibilities for notifying appropriate personnel, roles, and emergency responders of fires</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms supporting and/or implementing fire detection devices/systems</p>
+<p>activation of fire detection devices/systems (simulated)</p>
+<p>automated notifications</p>
+<h3 id="pe-17-alternate-work-site">PE-17: Alternate Work Site</h3>
+<p>Determine and document the {{ insert: param, pe-17_odp.01 }} allowed for use by employees;</p>
+<p>Employ the following controls at alternate work sites: {{ insert: param, pe-17_odp.02 }};</p>
+<p>Assess the effectiveness of controls at alternate work sites; and</p>
+<p>Provide a means for employees to communicate with information security and privacy personnel in case of incidents.</p>
+<p>Alternate work sites include government facilities or the private residences of employees. While distinct from alternative processing sites, alternate work sites can provide readily available alternate locations during contingency operations. Organizations can define different sets of controls for specific alternate work sites or types of sites depending on the work-related activities conducted at the sites. Implementing and assessing the effectiveness of organization-defined controls and providing a means to communicate incidents at alternate work sites supports the contingency planning activities of organizations.</p>
+<p>{{ insert: param, pe-17_odp.01 }} are determined and documented;</p>
+<p>{{ insert: param, pe-17_odp.02 }} are employed at alternate work sites;</p>
+<p>the effectiveness of controls at alternate work sites is assessed;</p>
+<p>a means for employees to communicate with information security and privacy personnel in case of incidents is provided.</p>
+<p>Physical and environmental protection policy</p>
+<p>procedures addressing alternate work sites for organizational personnel</p>
+<p>list of security controls required for alternate work sites</p>
+<p>assessments of security controls at alternate work sites</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel approving the use of alternate work sites</p>
+<p>organizational personnel using alternate work sites</p>
+<p>organizational personnel assessing controls at alternate work sites</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>Organizational processes for security and privacy at alternate work sites</p>
+<p>mechanisms supporting alternate work sites</p>
+<p>security and privacy controls employed at alternate work sites</p>
+<p>means of communication between personnel at alternate work sites and security and privacy personnel</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../mp/" class="btn btn-neutral float-left" title="MP: Media Protection (3)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../pl/" class="btn btn-neutral float-right" title="PL: Planning (1)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../mp/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../pl/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

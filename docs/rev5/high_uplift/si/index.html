@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://grokify.github.io/go-nist-sp-800-53/rev5/high_uplift/si/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>SI: System and Information Integrity (10) - NIST SP 800-53 Control Reference Site</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "SI: System and Information Integrity (10)";
+        var mkdocs_page_input_path = "rev5/high_uplift/si.md";
+        var mkdocs_page_url = "/go-nist-sp-800-53/rev5/high_uplift/si/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> NIST SP 800-53 Control Reference Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ac/">AC: Access Control (46)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/au/">AU: Audit and Accountability (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ca/">CA: Assessment, Authorization, and Monitoring (14)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cm/">CM: Configuration Management (32)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cp/">CP: Contingency Planning (35)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ia/">IA: Identification and Authentication (26)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ir/">IR: Incident Response (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ma/">MA: Maintenance (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/mp/">MP: Media Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pe/">PE: Physical and Environmental Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ps/">PS: Personnel Security (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ra/">RA: Risk Assessment (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sa/">SA: System and Services Acquisition (21)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sc/">SC: System and Communications Protection (30)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/si/">SI: System and Information Integrity (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sr/">SR: Supply Chain Risk Management (14)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Uplift</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ac/">AC: Access Control (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../at/">AT: Awareness and Training (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../au/">AU: Audit and Accountability (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ca/">CA: Assessment, Authorization, and Monitoring (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cm/">CM: Configuration Management (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cp/">CP: Contingency Planning (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ia/">IA: Identification and Authentication (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ir/">IR: Incident Response (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ma/">MA: Maintenance (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pe/">PE: Physical and Environmental Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pl/">PL: Planning (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ps/">PS: Personnel Security (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ra/">RA: Risk Assessment (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sa/">SA: System and Services Acquisition (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sc/">SC: System and Communications Protection (5)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">SI: System and Information Integrity (10)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#si-4-10-visibility-of-encrypted-communications">SI-4 (10): Visibility of Encrypted Communications</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#si-4-12-automated-organization-generated-alerts">SI-4 (12): Automated Organization-generated Alerts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#si-4-14-wireless-intrusion-detection">SI-4 (14): Wireless Intrusion Detection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#si-4-20-privileged-users">SI-4 (20): Privileged Users</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#si-4-22-unauthorized-network-services">SI-4 (22): Unauthorized Network Services</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#si-5-1-automated-alerts-and-advisories">SI-5 (1): Automated Alerts and Advisories</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#si-6-security-and-privacy-function-verification">SI-6: Security and Privacy Function Verification</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#si-7-2-automated-notifications-of-integrity-violations">SI-7 (2): Automated Notifications of Integrity Violations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#si-7-5-automated-response-to-integrity-violations">SI-7 (5): Automated Response to Integrity Violations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#si-7-15-code-authentication">SI-7 (15): Code Authentication</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sr/">SR: Supply Chain Risk Management (2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ac/">AC: Access Control (39)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/au/">AU: Audit and Accountability (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ca/">CA: Assessment, Authorization, and Monitoring (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cm/">CM: Configuration Management (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cp/">CP: Contingency Planning (23)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ia/">IA: Identification and Authentication (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ir/">IR: Incident Response (13)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ma/">MA: Maintenance (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/mp/">MP: Media Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pe/">PE: Physical and Environmental Protection (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ra/">RA: Risk Assessment (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sa/">SA: System and Services Acquisition (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sc/">SC: System and Communications Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/si/">SI: System and Information Integrity (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sr/">SR: Supply Chain Risk Management (12)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ac/">AC: Access Control (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/at/">AT: Awareness and Training (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/au/">AU: Audit and Accountability (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ca/">CA: Assessment, Authorization, and Monitoring (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cm/">CM: Configuration Management (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/cp/">CP: Contingency Planning (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ia/">IA: Identification and Authentication (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ir/">IR: Incident Response (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ma/">MA: Maintenance (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pe/">PE: Physical and Environmental Protection (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/pl/">PL: Planning (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ps/">PS: Personnel Security (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/ra/">RA: Risk Assessment (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sa/">SA: System and Services Acquisition (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sc/">SC: System and Communications Protection (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/si/">SI: System and Information Integrity (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_uplift/sr/">SR: Supply Chain Risk Management (1)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Low Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ac/">AC: Access Control (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/at/">AT: Awareness and Training (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/au/">AU: Audit and Accountability (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ca/">CA: Assessment, Authorization, and Monitoring (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cm/">CM: Configuration Management (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cp/">CP: Contingency Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ia/">IA: Identification and Authentication (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ir/">IR: Incident Response (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ma/">MA: Maintenance (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/mp/">MP: Media Protection (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pe/">PE: Physical and Environmental Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pl/">PL: Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ra/">RA: Risk Assessment (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sa/">SA: System and Services Acquisition (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sc/">SC: System and Communications Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/si/">SI: System and Information Integrity (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sr/">SR: Supply Chain Risk Management (11)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NIST SP 800-53 Control Reference Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>High Uplift &raquo;</li><li>SI: System and Information Integrity (10)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="si-system-and-information-integrity">SI - System and Information Integrity</h1>
+<ul>
+<li>Controls: 10</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<h3 id="si-4-10-visibility-of-encrypted-communications">SI-4 (10): Visibility of Encrypted Communications</h3>
+<p>Make provisions so that {{ insert: param, si-04.10_odp.01 }} is visible to {{ insert: param, si-04.10_odp.02 }}.</p>
+<p>Organizations balance the need to encrypt communications traffic to protect data confidentiality with the need to maintain visibility into such traffic from a monitoring perspective. Organizations determine whether the visibility requirement applies to internal encrypted traffic, encrypted traffic intended for external destinations, or a subset of the traffic types.</p>
+<p>provisions are made so that {{ insert: param, si-04.10_odp.01 }} is visible to {{ insert: param, si-04.10_odp.02 }}.</p>
+<p>System and information integrity policy</p>
+<p>system and information integrity procedures</p>
+<p>procedures addressing system monitoring tools and techniques</p>
+<p>system design documentation</p>
+<p>system monitoring tools and techniques documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system protocols</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>organizational personnel installing, configuring, and/or maintaining the system</p>
+<p>organizational personnel responsible for monitoring the system</p>
+<p>organizational personnel responsible for the intrusion detection system</p>
+<p>Organizational processes for intrusion detection and system monitoring</p>
+<p>mechanisms supporting and/or implementing intrusion detection and system monitoring capabilities</p>
+<p>mechanisms supporting and/or implementing the visibility of encrypted communications traffic to monitoring tools</p>
+<h3 id="si-4-12-automated-organization-generated-alerts">SI-4 (12): Automated Organization-generated Alerts</h3>
+<p>Alert {{ insert: param, si-04.12_odp.01 }} using {{ insert: param, si-04.12_odp.02 }} when the following indications of inappropriate or unusual activities with security or privacy implications occur: {{ insert: param, si-04.12_odp.03 }}.</p>
+<p>Organizational personnel on the system alert notification list include system administrators, mission or business owners, system owners, senior agency information security officer, senior agency official for privacy, system security officers, or privacy officers. Automated organization-generated alerts are the security alerts generated by organizations and transmitted using automated means. The sources for organization-generated alerts are focused on other entities such as suspicious activity reports and reports on potential insider threats. In contrast to alerts generated by the organization, alerts generated by the system in <a href="#si-4.5">SI-4(5)</a> focus on information sources that are internal to the systems, such as audit records.</p>
+<p>{{ insert: param, si-04.12_odp.01 }} is/are alerted using {{ insert: param, si-04.12_odp.02 }} when {{ insert: param, si-04.12_odp.03 }} indicate inappropriate or unusual activities with security or privacy implications.</p>
+<p>System and information integrity policy</p>
+<p>system and information integrity procedures</p>
+<p>procedures addressing system monitoring tools and techniques</p>
+<p>system design documentation</p>
+<p>system monitoring tools and techniques documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>list of inappropriate or unusual activities with security and privacy implications that trigger alerts</p>
+<p>suspicious activity reports</p>
+<p>alerts provided to security and privacy personnel</p>
+<p>system monitoring logs or records</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system developers</p>
+<p>organizational personnel installing, configuring, and/or maintaining the system</p>
+<p>organizational personnel responsible for monitoring the system</p>
+<p>organizational personnel responsible for the intrusion detection system</p>
+<p>Organizational processes for intrusion detection and system monitoring</p>
+<p>automated mechanisms supporting and/or implementing intrusion detection and system monitoring capabilities</p>
+<p>automated mechanisms supporting and/or implementing automated alerts to security personnel</p>
+<h3 id="si-4-14-wireless-intrusion-detection">SI-4 (14): Wireless Intrusion Detection</h3>
+<p>Employ a wireless intrusion detection system to identify rogue wireless devices and to detect attack attempts and potential compromises or breaches to the system.</p>
+<p>Wireless signals may radiate beyond organizational facilities. Organizations proactively search for unauthorized wireless connections, including the conduct of thorough scans for unauthorized wireless access points. Wireless scans are not limited to those areas within facilities containing systems but also include areas outside of facilities to verify that unauthorized wireless access points are not connected to organizational systems.</p>
+<p>a wireless intrusion detection system is employed to identify rogue wireless devices;</p>
+<p>a wireless intrusion detection system is employed to detect attack attempts on the system;</p>
+<p>a wireless intrusion detection system is employed to detect potential compromises or breaches to the system.</p>
+<p>System and information integrity policy</p>
+<p>system and information integrity procedures</p>
+<p>procedures addressing system monitoring tools and techniques</p>
+<p>system design documentation</p>
+<p>system monitoring tools and techniques documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system protocols</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>organizational personnel installing, configuring, and/or maintaining the system</p>
+<p>organizational personnel responsible for monitoring the system</p>
+<p>organizational personnel responsible for the intrusion detection system</p>
+<p>Organizational processes for intrusion detection</p>
+<p>mechanisms supporting and/or implementing a wireless intrusion detection capability</p>
+<h3 id="si-4-20-privileged-users">SI-4 (20): Privileged Users</h3>
+<p>Implement the following additional monitoring of privileged users: {{ insert: param, si-04.20_odp }}.</p>
+<p>Privileged users have access to more sensitive information, including security-related information, than the general user population. Access to such information means that privileged users can potentially do greater damage to systems and organizations than non-privileged users. Therefore, implementing additional monitoring on privileged users helps to ensure that organizations can identify malicious activity at the earliest possible time and take appropriate actions.</p>
+<p>{{ insert: param, si-04.20_odp }} of privileged users is implemented.</p>
+<p>System and information integrity policy</p>
+<p>system and information integrity procedures</p>
+<p>procedures addressing system monitoring tools and techniques</p>
+<p>system design documentation</p>
+<p>system monitoring tools and techniques documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system monitoring logs or records</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>organizational personnel installing, configuring, and/or maintaining the system</p>
+<p>organizational personnel responsible for monitoring the system</p>
+<p>Organizational processes for system monitoring</p>
+<p>mechanisms supporting and/or implementing a system monitoring capability</p>
+<h3 id="si-4-22-unauthorized-network-services">SI-4 (22): Unauthorized Network Services</h3>
+<p>Detect network services that have not been authorized or approved by {{ insert: param, si-04.22_odp.01 }} ; and</p>
+<p>{{ insert: param, si-04.22_odp.02 }} when detected.</p>
+<p>Unauthorized or unapproved network services include services in service-oriented architectures that lack organizational verification or validation and may therefore be unreliable or serve as malicious rogues for valid services.</p>
+<p>network services that have not been authorized or approved by {{ insert: param, si-04.22_odp.01 }} are detected;</p>
+<p>{{ insert: param, si-04.22_odp.02 }} is/are initiated when network services that have not been authorized or approved by authorization or approval processes are detected.</p>
+<p>System and information integrity policy</p>
+<p>system and information integrity procedures</p>
+<p>procedures addressing system monitoring tools and techniques</p>
+<p>system design documentation</p>
+<p>system monitoring tools and techniques documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>documented authorization/approval of network services</p>
+<p>notifications or alerts of unauthorized network services</p>
+<p>system monitoring logs or records</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developer</p>
+<p>organizational personnel installing, configuring, and/or maintaining the system</p>
+<p>organizational personnel responsible for monitoring the system</p>
+<p>Organizational processes for system monitoring</p>
+<p>mechanisms supporting and/or implementing a system monitoring capability</p>
+<p>mechanisms for auditing network services</p>
+<p>mechanisms for providing alerts</p>
+<h3 id="si-5-1-automated-alerts-and-advisories">SI-5 (1): Automated Alerts and Advisories</h3>
+<p>Broadcast security alert and advisory information throughout the organization using {{ insert: param, si-05.01_odp }}.</p>
+<p>The significant number of changes to organizational systems and environments of operation requires the dissemination of security-related information to a variety of organizational entities that have a direct interest in the success of organizational mission and business functions. Based on information provided by security alerts and advisories, changes may be required at one or more of the three levels related to the management of risk, including the governance level, mission and business process level, and the information system level.</p>
+<p>{{ insert: param, si-05.01_odp }} are used to broadcast security alert and advisory information throughout the organization.</p>
+<p>System and information integrity policy</p>
+<p>system and information integrity procedures</p>
+<p>procedures addressing security alerts, advisories, and directives</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>automated mechanisms supporting the distribution of security alert and advisory information</p>
+<p>records of security alerts and advisories</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with security alert and advisory responsibilities</p>
+<p>organizational personnel implementing, operating, maintaining, and using the system</p>
+<p>organizational personnel, organizational elements, and/or external organizations to whom alerts and advisories are to be disseminated</p>
+<p>system/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Organizational processes for defining, receiving, generating, and disseminating security alerts and advisories</p>
+<p>automated mechanisms supporting and/or implementing the dissemination of security alerts and advisories</p>
+<h3 id="si-6-security-and-privacy-function-verification">SI-6: Security and Privacy Function Verification</h3>
+<p>Verify the correct operation of {{ insert: param, si-6_prm_1 }};</p>
+<p>Perform the verification of the functions specified in SI-6a {{ insert: param, si-06_odp.03 }};</p>
+<p>Alert {{ insert: param, si-06_odp.06 }} to failed security and privacy verification tests; and</p>
+<p>{{ insert: param, si-06_odp.07 }} when anomalies are discovered.</p>
+<p>Transitional states for systems include system startup, restart, shutdown, and abort. System notifications include hardware indicator lights, electronic alerts to system administrators, and messages to local computer consoles. In contrast to security function verification, privacy function verification ensures that privacy functions operate as expected and are approved by the senior agency official for privacy or that privacy attributes are applied or used as expected.</p>
+<p>{{ insert: param, si-06_odp.01 }} are verified to be operating correctly;</p>
+<p>{{ insert: param, si-06_odp.02 }} are verified to be operating correctly;</p>
+<p>{{ insert: param, si-06_odp.01 }} are verified {{ insert: param, si-06_odp.03 }};</p>
+<p>{{ insert: param, si-06_odp.02 }} are verified {{ insert: param, si-06_odp.03 }};</p>
+<p>{{ insert: param, si-06_odp.06 }} is/are alerted to failed security verification tests;</p>
+<p>{{ insert: param, si-06_odp.06 }} is/are alerted to failed privacy verification tests;</p>
+<p>{{ insert: param, si-06_odp.07 }} is/are initiated when anomalies are discovered.</p>
+<p>System and information integrity policy</p>
+<p>system and information integrity procedures</p>
+<p>procedures addressing security and privacy function verification</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>alerts/notifications of failed security verification tests</p>
+<p>list of system transition states requiring security functionality verification</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with security and privacy function verification responsibilities</p>
+<p>organizational personnel implementing, operating, and maintaining the system</p>
+<p>system/network administrators</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system developer</p>
+<p>Organizational processes for security and privacy function verification</p>
+<p>mechanisms supporting and/or implementing the security and privacy function verification capability</p>
+<h3 id="si-7-2-automated-notifications-of-integrity-violations">SI-7 (2): Automated Notifications of Integrity Violations</h3>
+<p>Employ automated tools that provide notification to {{ insert: param, si-07.02_odp }} upon discovering discrepancies during integrity verification.</p>
+<p>The employment of automated tools to report system and information integrity violations and to notify organizational personnel in a timely matter is essential to effective risk response. Personnel with an interest in system and information integrity violations include mission and business owners, system owners, senior agency information security official, senior agency official for privacy, system administrators, software developers, systems integrators, information security officers, and privacy officers.</p>
+<p>automated tools that provide notification to {{ insert: param, si-07.02_odp }} upon discovering discrepancies during integrity verification are employed.</p>
+<p>System and information integrity policy</p>
+<p>system and information integrity procedures</p>
+<p>procedures addressing software, firmware, and information integrity</p>
+<p>personally identifiable information processing policy</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>integrity verification tools and associated documentation</p>
+<p>records of integrity scans</p>
+<p>automated tools supporting alerts and notifications for integrity discrepancies</p>
+<p>notifications provided upon discovering discrepancies during integrity verifications</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel responsible for software, firmware, and/or information integrity</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system administrators</p>
+<p>software developers</p>
+<p>Software, firmware, and information integrity verification tools</p>
+<p>mechanisms providing integrity discrepancy notifications</p>
+<h3 id="si-7-5-automated-response-to-integrity-violations">SI-7 (5): Automated Response to Integrity Violations</h3>
+<p>Automatically {{ insert: param, si-07.05_odp.01 }} when integrity violations are discovered.</p>
+<p>Organizations may define different integrity-checking responses by type of information, specific information, or a combination of both. Types of information include firmware, software, and user data. Specific information includes boot firmware for certain types of machines. The automatic implementation of controls within organizational systems includes reversing the changes, halting the system, or triggering audit alerts when unauthorized modifications to critical security files occur.</p>
+<p>{{ insert: param, si-07.05_odp.01 }} are automatically performed when integrity violations are discovered.</p>
+<p>System and information integrity policy</p>
+<p>system and information integrity procedures</p>
+<p>procedures addressing software, firmware, and information integrity</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>integrity verification tools and associated documentation</p>
+<p>records of integrity scans</p>
+<p>records of integrity checks and responses to integrity violations</p>
+<p>audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel responsible for software, firmware, and/or information integrity</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developer</p>
+<p>Software, firmware, and information integrity verification tools</p>
+<p>mechanisms providing an automated response to integrity violations</p>
+<p>mechanisms supporting and/or implementing security safeguards to be implemented when integrity violations are discovered</p>
+<h3 id="si-7-15-code-authentication">SI-7 (15): Code Authentication</h3>
+<p>Implement cryptographic mechanisms to authenticate the following software or firmware components prior to installation: {{ insert: param, si-07.15_odp }}.</p>
+<p>Cryptographic authentication includes verifying that software or firmware components have been digitally signed using certificates recognized and approved by organizations. Code signing is an effective method to protect against malicious code. Organizations that employ cryptographic mechanisms also consider cryptographic key management solutions.</p>
+<p>cryptographic mechanisms are implemented to authenticate {{ insert: param, si-07.15_odp }} prior to installation.</p>
+<p>System and information integrity policy</p>
+<p>system and information integrity procedures</p>
+<p>procedures addressing software, firmware, and information integrity</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>cryptographic mechanisms and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel responsible for software, firmware, and/or information integrity</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developer</p>
+<p>Cryptographic mechanisms authenticating software and firmware prior to installation</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../sc/" class="btn btn-neutral float-left" title="SC: System and Communications Protection (5)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sr/" class="btn btn-neutral float-right" title="SR: Supply Chain Risk Management (2)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../sc/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../sr/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

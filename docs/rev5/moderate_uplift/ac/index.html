@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://grokify.github.io/go-nist-sp-800-53/rev5/moderate_uplift/ac/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>AC: Access Control (28) - NIST SP 800-53 Control Reference Site</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "AC: Access Control (28)";
+        var mkdocs_page_input_path = "rev5/moderate_uplift/ac.md";
+        var mkdocs_page_url = "/go-nist-sp-800-53/rev5/moderate_uplift/ac/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> NIST SP 800-53 Control Reference Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ac/">AC: Access Control (46)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/au/">AU: Audit and Accountability (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ca/">CA: Assessment, Authorization, and Monitoring (14)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cm/">CM: Configuration Management (32)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/cp/">CP: Contingency Planning (35)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ia/">IA: Identification and Authentication (26)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ir/">IR: Incident Response (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ma/">MA: Maintenance (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/mp/">MP: Media Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pe/">PE: Physical and Environmental Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ps/">PS: Personnel Security (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/ra/">RA: Risk Assessment (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sa/">SA: System and Services Acquisition (21)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sc/">SC: System and Communications Protection (30)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/si/">SI: System and Information Integrity (28)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_baseline/sr/">SR: Supply Chain Risk Management (14)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">High Uplift</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ac/">AC: Access Control (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/at/">AT: Awareness and Training (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/au/">AU: Audit and Accountability (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ca/">CA: Assessment, Authorization, and Monitoring (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cm/">CM: Configuration Management (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/cp/">CP: Contingency Planning (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ia/">IA: Identification and Authentication (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ir/">IR: Incident Response (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ma/">MA: Maintenance (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pe/">PE: Physical and Environmental Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/pl/">PL: Planning (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ps/">PS: Personnel Security (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/ra/">RA: Risk Assessment (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sa/">SA: System and Services Acquisition (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sc/">SC: System and Communications Protection (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/si/">SI: System and Information Integrity (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../high_uplift/sr/">SR: Supply Chain Risk Management (2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ac/">AC: Access Control (39)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/at/">AT: Awareness and Training (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/au/">AU: Audit and Accountability (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ca/">CA: Assessment, Authorization, and Monitoring (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cm/">CM: Configuration Management (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/cp/">CP: Contingency Planning (23)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ia/">IA: Identification and Authentication (24)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ir/">IR: Incident Response (13)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ma/">MA: Maintenance (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/mp/">MP: Media Protection (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pe/">PE: Physical and Environmental Protection (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/pl/">PL: Planning (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/ra/">RA: Risk Assessment (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sa/">SA: System and Services Acquisition (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sc/">SC: System and Communications Protection (25)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/si/">SI: System and Information Integrity (18)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../moderate_baseline/sr/">SR: Supply Chain Risk Management (12)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Moderate Uplift</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">AC: Access Control (28)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-2-1-automated-system-account-management">AC-2 (1): Automated System Account Management</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-2-2-automated-temporary-and-emergency-account-management">AC-2 (2): Automated Temporary and Emergency Account Management</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-2-3-disable-accounts">AC-2 (3): Disable Accounts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-2-4-automated-audit-actions">AC-2 (4): Automated Audit Actions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-2-5-inactivity-logout">AC-2 (5): Inactivity Logout</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-2-13-disable-accounts-for-high-risk-individuals">AC-2 (13): Disable Accounts for High-risk Individuals</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-4-information-flow-enforcement">AC-4: Information Flow Enforcement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-5-separation-of-duties">AC-5: Separation of Duties</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-6-least-privilege">AC-6: Least Privilege</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-6-1-authorize-access-to-security-functions">AC-6 (1): Authorize Access to Security Functions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-6-2-non-privileged-access-for-nonsecurity-functions">AC-6 (2): Non-privileged Access for Nonsecurity Functions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-6-5-privileged-accounts">AC-6 (5): Privileged Accounts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-6-7-review-of-user-privileges">AC-6 (7): Review of User Privileges</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-6-9-log-use-of-privileged-functions">AC-6 (9): Log Use of Privileged Functions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-6-10-prohibit-non-privileged-users-from-executing-privileged-functions">AC-6 (10): Prohibit Non-privileged Users from Executing Privileged Functions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-11-device-lock">AC-11: Device Lock</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-11-1-pattern-hiding-displays">AC-11 (1): Pattern-hiding Displays</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-12-session-termination">AC-12: Session Termination</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-17-1-monitoring-and-control">AC-17 (1): Monitoring and Control</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-17-2-protection-of-confidentiality-and-integrity-using-encryption">AC-17 (2): Protection of Confidentiality and Integrity Using Encryption</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-17-3-managed-access-control-points">AC-17 (3): Managed Access Control Points</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-17-4-privileged-commands-and-access">AC-17 (4): Privileged Commands and Access</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-18-1-authentication-and-encryption">AC-18 (1): Authentication and Encryption</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-18-3-disable-wireless-networking">AC-18 (3): Disable Wireless Networking</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-19-5-full-device-or-container-based-encryption">AC-19 (5): Full Device or Container-based Encryption</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-20-1-limits-on-authorized-use">AC-20 (1): Limits on Authorized Use</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-20-2-portable-storage-devices-restricted-use">AC-20 (2): Portable Storage Devices — Restricted Use</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-21-information-sharing">AC-21: Information Sharing</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../at/">AT: Awareness and Training (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../au/">AU: Audit and Accountability (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ca/">CA: Assessment, Authorization, and Monitoring (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cm/">CM: Configuration Management (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cp/">CP: Contingency Planning (17)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ia/">IA: Identification and Authentication (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ir/">IR: Incident Response (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ma/">MA: Maintenance (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mp/">MP: Media Protection (3)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pe/">PE: Physical and Environmental Protection (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pl/">PL: Planning (1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ps/">PS: Personnel Security (0)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ra/">RA: Risk Assessment (2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sa/">SA: System and Services Acquisition (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sc/">SC: System and Communications Protection (15)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../si/">SI: System and Information Integrity (12)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sr/">SR: Supply Chain Risk Management (1)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Low Baseline</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ac/">AC: Access Control (11)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/at/">AT: Awareness and Training (5)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/au/">AU: Audit and Accountability (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ca/">CA: Assessment, Authorization, and Monitoring (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cm/">CM: Configuration Management (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/cp/">CP: Contingency Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ia/">IA: Identification and Authentication (16)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ir/">IR: Incident Response (7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ma/">MA: Maintenance (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/mp/">MP: Media Protection (4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pe/">PE: Physical and Environmental Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/pl/">PL: Planning (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ps/">PS: Personnel Security (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/ra/">RA: Risk Assessment (8)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sa/">SA: System and Services Acquisition (9)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sc/">SC: System and Communications Protection (10)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/si/">SI: System and Information Integrity (6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../low_baseline/sr/">SR: Supply Chain Risk Management (11)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NIST SP 800-53 Control Reference Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Moderate Uplift &raquo;</li><li>AC: Access Control (28)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ac-access-control">AC - Access Control</h1>
+<ul>
+<li>Controls: 28</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<h3 id="ac-2-1-automated-system-account-management">AC-2 (1): Automated System Account Management</h3>
+<p>Support the management of system accounts using {{ insert: param, ac-02.01_odp }}.</p>
+<p>Automated system account management includes using automated mechanisms to create, enable, modify, disable, and remove accounts; notify account managers when an account is created, enabled, modified, disabled, or removed, or when users are terminated or transferred; monitor system account usage; and report atypical system account usage. Automated mechanisms can include internal system functions and email, telephonic, and text messaging notifications.</p>
+<p>the management of system accounts is supported using {{ insert: param, ac-02.01_odp }}.</p>
+<p>Access control policy</p>
+<p>procedures for addressing account management</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with account management responsibilities</p>
+<p>system/network administrators</p>
+<p>organizational personnel with information security with information security responsibilities</p>
+<p>system developers</p>
+<p>Automated mechanisms for implementing account management functions</p>
+<h3 id="ac-2-2-automated-temporary-and-emergency-account-management">AC-2 (2): Automated Temporary and Emergency Account Management</h3>
+<p>Automatically {{ insert: param, ac-02.02_odp.01 }} temporary and emergency accounts after {{ insert: param, ac-02.02_odp.02 }}.</p>
+<p>Management of temporary and emergency accounts includes the removal or disabling of such accounts automatically after a predefined time period rather than at the convenience of the system administrator. Automatic removal or disabling of accounts provides a more consistent implementation.</p>
+<p>temporary and emergency accounts are automatically {{ insert: param, ac-02.02_odp.01 }} after {{ insert: param, ac-02.02_odp.02 }}.</p>
+<p>Access control policy</p>
+<p>procedures for addressing account management</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system-generated list of temporary accounts removed and/or disabled</p>
+<p>system-generated list of emergency accounts removed and/or disabled</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with account management responsibilities</p>
+<p>system/network administrators</p>
+<p>organizational personnel with information security with information security responsibilities</p>
+<p>system developers</p>
+<p>Automated mechanisms for implementing account management functions</p>
+<h3 id="ac-2-3-disable-accounts">AC-2 (3): Disable Accounts</h3>
+<p>Disable accounts within {{ insert: param, ac-02.03_odp.01 }} when the accounts:</p>
+<p>Have expired;</p>
+<p>Are no longer associated with a user or individual;</p>
+<p>Are in violation of organizational policy; or</p>
+<p>Have been inactive for {{ insert: param, ac-02.03_odp.02 }}.</p>
+<p>Disabling expired, inactive, or otherwise anomalous accounts supports the concepts of least privilege and least functionality which reduce the attack surface of the system.</p>
+<p>accounts are disabled within {{ insert: param, ac-02.03_odp.01 }} when the accounts have expired;</p>
+<p>accounts are disabled within {{ insert: param, ac-02.03_odp.01 }} when the accounts are no longer associated with a user or individual;</p>
+<p>accounts are disabled within {{ insert: param, ac-02.03_odp.01 }} when the accounts are in violation of organizational policy;</p>
+<p>accounts are disabled within {{ insert: param, ac-02.03_odp.01 }} when the accounts have been inactive for {{ insert: param, ac-02.03_odp.02 }}.</p>
+<p>Access control policy</p>
+<p>procedures for addressing account management</p>
+<p>system security plan</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system-generated list of accounts removed</p>
+<p>system-generated list of emergency accounts disabled</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with account management responsibilities</p>
+<p>system/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developers</p>
+<p>Mechanisms for implementing account management functions</p>
+<h3 id="ac-2-4-automated-audit-actions">AC-2 (4): Automated Audit Actions</h3>
+<p>Automatically audit account creation, modification, enabling, disabling, and removal actions.</p>
+<p>Account management audit records are defined in accordance with <a href="#au-2">AU-02</a> and reviewed, analyzed, and reported in accordance with <a href="#au-6">AU-06</a>.</p>
+<p>account creation is automatically audited;</p>
+<p>account modification is automatically audited;</p>
+<p>account enabling is automatically audited;</p>
+<p>account disabling is automatically audited;</p>
+<p>account removal actions are automatically audited.</p>
+<p>Access control policy</p>
+<p>procedures addressing account management</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>notifications/alerts of account creation, modification, enabling, disabling, and removal actions</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with account management responsibilities</p>
+<p>system/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Automated mechanisms implementing account management functions</p>
+<h3 id="ac-2-5-inactivity-logout">AC-2 (5): Inactivity Logout</h3>
+<p>Require that users log out when {{ insert: param, ac-02.05_odp }}.</p>
+<p>Inactivity logout is behavior- or policy-based and requires users to take physical action to log out when they are expecting inactivity longer than the defined period. Automatic enforcement of inactivity logout is addressed by <a href="#ac-11">AC-11</a>.</p>
+<p>users are required to log out when {{ insert: param, ac-02.05_odp }}.</p>
+<p>Access control policy</p>
+<p>procedures addressing account management</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>security violation reports</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with account management responsibilities</p>
+<p>system/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>users that must comply with inactivity logout policy</p>
+<h3 id="ac-2-13-disable-accounts-for-high-risk-individuals">AC-2 (13): Disable Accounts for High-risk Individuals</h3>
+<p>Disable accounts of individuals within {{ insert: param, ac-02.13_odp.01 }} of discovery of {{ insert: param, ac-02.13_odp.02 }}.</p>
+<p>Users who pose a significant security and/or privacy risk include individuals for whom reliable evidence indicates either the intention to use authorized access to systems to cause harm or through whom adversaries will cause harm. Such harm includes adverse impacts to organizational operations, organizational assets, individuals, other organizations, or the Nation. Close coordination among system administrators, legal staff, human resource managers, and authorizing officials is essential when disabling system accounts for high-risk individuals.</p>
+<p>accounts of individuals are disabled within {{ insert: param, ac-02.13_odp.01 }} of discovery of {{ insert: param, ac-02.13_odp.02 }}.</p>
+<p>Access control policy</p>
+<p>procedures addressing account management</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system-generated list of disabled accounts</p>
+<p>list of user activities posing significant organizational risk</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with account management responsibilities</p>
+<p>system/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms implementing account management functions</p>
+<h3 id="ac-4-information-flow-enforcement">AC-4: Information Flow Enforcement</h3>
+<p>Enforce approved authorizations for controlling the flow of information within the system and between connected systems based on {{ insert: param, ac-04_odp }}.</p>
+<p>Information flow control regulates where information can travel within a system and between systems (in contrast to who is allowed to access the information) and without regard to subsequent accesses to that information. Flow control restrictions include blocking external traffic that claims to be from within the organization, keeping export-controlled information from being transmitted in the clear to the Internet, restricting web requests that are not from the internal web proxy server, and limiting information transfers between organizations based on data structures and content. Transferring information between organizations may require an agreement specifying how the information flow is enforced (see <a href="#ca-3">CA-3</a> ). Transferring information between systems in different security or privacy domains with different security or privacy policies introduces the risk that such transfers violate one or more domain security or privacy policies. In such situations, information owners/stewards provide guidance at designated policy enforcement points between connected systems. Organizations consider mandating specific architectural solutions to enforce specific security and privacy policies. Enforcement includes prohibiting information transfers between connected systems (i.e., allowing access only), verifying write permissions before accepting information from another security or privacy domain or connected system, employing hardware mechanisms to enforce one-way information flows, and implementing trustworthy regrading mechanisms to reassign security or privacy attributes and labels.</p>
+<p>Organizations commonly employ information flow control policies and enforcement mechanisms to control the flow of information between designated sources and destinations within systems and between connected systems. Flow control is based on the characteristics of the information and/or the information path. Enforcement occurs, for example, in boundary protection devices that employ rule sets or establish configuration settings that restrict system services, provide a packet-filtering capability based on header information, or provide a message-filtering capability based on message content. Organizations also consider the trustworthiness of filtering and/or inspection mechanisms (i.e., hardware, firmware, and software components) that are critical to information flow enforcement. Control enhancements 3 through 32 primarily address cross-domain solution needs that focus on more advanced filtering techniques, in-depth analysis, and stronger flow enforcement mechanisms implemented in cross-domain products, such as high-assurance guards. Such capabilities are generally not available in commercial off-the-shelf products. Information flow enforcement also applies to control plane traffic (e.g., routing and DNS).</p>
+<p>approved authorizations are enforced for controlling the flow of information within the system and between connected systems based on {{ insert: param, ac-04_odp }}.</p>
+<p>Access control policy</p>
+<p>information flow control policies</p>
+<p>procedures addressing information flow enforcement</p>
+<p>security architecture documentation</p>
+<p>privacy architecture documentation</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system baseline configuration</p>
+<p>list of information flow authorizations</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security and privacy architecture development responsibilities</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>system developers</p>
+<p>Mechanisms implementing information flow enforcement policy</p>
+<h3 id="ac-5-separation-of-duties">AC-5: Separation of Duties</h3>
+<p>Identify and document {{ insert: param, ac-05_odp }} ; and</p>
+<p>Define system access authorizations to support separation of duties.</p>
+<p>Separation of duties addresses the potential for abuse of authorized privileges and helps to reduce the risk of malevolent activity without collusion. Separation of duties includes dividing mission or business functions and support functions among different individuals or roles, conducting system support functions with different individuals, and ensuring that security personnel who administer access control functions do not also administer audit functions. Because separation of duty violations can span systems and application domains, organizations consider the entirety of systems and system components when developing policy on separation of duties. Separation of duties is enforced through the account management activities in <a href="#ac-2">AC-2</a> , access control mechanisms in <a href="#ac-3">AC-3</a> , and identity management activities in <a href="#ia-2">IA-2</a>, <a href="#ia-4">IA-4</a> , and <a href="#ia-12">IA-12</a>.</p>
+<p>{{ insert: param, ac-05_odp }} are identified and documented;</p>
+<p>system access authorizations to support separation of duties are defined.</p>
+<p>Access control policy</p>
+<p>procedures addressing divisions of responsibility and separation of duties</p>
+<p>system configuration settings and associated documentation</p>
+<p>list of divisions of responsibility and separation of duties</p>
+<p>system access authorizations</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for defining appropriate divisions of responsibility and separation of duties</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>Mechanisms implementing separation of duties policy</p>
+<h3 id="ac-6-least-privilege">AC-6: Least Privilege</h3>
+<p>Employ the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) that are necessary to accomplish assigned organizational tasks.</p>
+<p>Organizations employ least privilege for specific duties and systems. The principle of least privilege is also applied to system processes, ensuring that the processes have access to systems and operate at privilege levels no higher than necessary to accomplish organizational missions or business functions. Organizations consider the creation of additional processes, roles, and accounts as necessary to achieve least privilege. Organizations apply least privilege to the development, implementation, and operation of organizational systems.</p>
+<p>the principle of least privilege is employed, allowing only authorized accesses for users (or processes acting on behalf of users) that are necessary to accomplish assigned organizational tasks.</p>
+<p>Access control policy</p>
+<p>procedures addressing least privilege</p>
+<p>list of assigned access authorizations (user privileges)</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for defining least privileges necessary to accomplish specified tasks</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>Mechanisms implementing least privilege functions</p>
+<h3 id="ac-6-1-authorize-access-to-security-functions">AC-6 (1): Authorize Access to Security Functions</h3>
+<p>Authorize access for {{ insert: param, ac-06.01_odp.01 }} to:</p>
+<p>{{ insert: param, ac-6.1_prm_2 }} ; and</p>
+<p>{{ insert: param, ac-06.01_odp.05 }}.</p>
+<p>Security functions include establishing system accounts, configuring access authorizations (i.e., permissions, privileges), configuring settings for events to be audited, and establishing intrusion detection parameters. Security-relevant information includes filtering rules for routers or firewalls, configuration parameters for security services, cryptographic key management information, and access control lists. Authorized personnel include security administrators, system administrators, system security officers, system programmers, and other privileged users.</p>
+<p>access is authorized for {{ insert: param, ac-06.01_odp.01 }} to {{ insert: param, ac-06.01_odp.02 }};</p>
+<p>access is authorized for {{ insert: param, ac-06.01_odp.01 }} to {{ insert: param, ac-06.01_odp.03 }};</p>
+<p>access is authorized for {{ insert: param, ac-06.01_odp.01 }} to {{ insert: param, ac-06.01_odp.04 }};</p>
+<p>access is authorized for {{ insert: param, ac-06.01_odp.01 }} to {{ insert: param, ac-06.01_odp.05 }}.</p>
+<p>Access control policy</p>
+<p>procedures addressing least privilege</p>
+<p>list of security functions (deployed in hardware, software, and firmware) and security-relevant information for which access must be explicitly authorized</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for defining least privileges necessary to accomplish specified tasks</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>Mechanisms implementing least privilege functions</p>
+<h3 id="ac-6-2-non-privileged-access-for-nonsecurity-functions">AC-6 (2): Non-privileged Access for Nonsecurity Functions</h3>
+<p>Require that users of system accounts (or roles) with access to {{ insert: param, ac-06.02_odp }} use non-privileged accounts or roles, when accessing nonsecurity functions.</p>
+<p>Requiring the use of non-privileged accounts when accessing nonsecurity functions limits exposure when operating from within privileged accounts or roles. The inclusion of roles addresses situations where organizations implement access control policies, such as role-based access control, and where a change of role provides the same degree of assurance in the change of access authorizations for the user and the processes acting on behalf of the user as would be provided by a change between a privileged and non-privileged account.</p>
+<p>users of system accounts (or roles) with access to {{ insert: param, ac-06.02_odp }} are required to use non-privileged accounts or roles when accessing non-security functions.</p>
+<p>Access control policy</p>
+<p>procedures addressing least privilege</p>
+<p>list of system-generated security functions or security-relevant information assigned to system accounts or roles</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for defining least privileges necessary to accomplish specified tasks</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>Mechanisms implementing least privilege functions</p>
+<h3 id="ac-6-5-privileged-accounts">AC-6 (5): Privileged Accounts</h3>
+<p>Restrict privileged accounts on the system to {{ insert: param, ac-06.05_odp }}.</p>
+<p>Privileged accounts, including super user accounts, are typically described as system administrator for various types of commercial off-the-shelf operating systems. Restricting privileged accounts to specific personnel or roles prevents day-to-day users from accessing privileged information or privileged functions. Organizations may differentiate in the application of restricting privileged accounts between allowed privileges for local accounts and for domain accounts provided that they retain the ability to control system configurations for key parameters and as otherwise necessary to sufficiently mitigate risk.</p>
+<p>privileged accounts on the system are restricted to {{ insert: param, ac-06.05_odp }}.</p>
+<p>Access control policy</p>
+<p>procedures addressing least privilege</p>
+<p>list of system-generated privileged accounts</p>
+<p>list of system administration personnel</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for defining least privileges necessary to accomplish specified tasks</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>Mechanisms implementing least privilege functions</p>
+<h3 id="ac-6-7-review-of-user-privileges">AC-6 (7): Review of User Privileges</h3>
+<p>Review {{ insert: param, ac-06.07_odp.01 }} the privileges assigned to {{ insert: param, ac-06.07_odp.02 }} to validate the need for such privileges; and</p>
+<p>Reassign or remove privileges, if necessary, to correctly reflect organizational mission and business needs.</p>
+<p>The need for certain assigned user privileges may change over time to reflect changes in organizational mission and business functions, environments of operation, technologies, or threats. A periodic review of assigned user privileges is necessary to determine if the rationale for assigning such privileges remains valid. If the need cannot be revalidated, organizations take appropriate corrective actions.</p>
+<p>privileges assigned to {{ insert: param, ac-06.07_odp.02 }} are reviewed {{ insert: param, ac-06.07_odp.01 }} to validate the need for such privileges;</p>
+<p>privileges are reassigned or removed, if necessary, to correctly reflect organizational mission and business needs.</p>
+<p>Access control policy</p>
+<p>procedures addressing least privilege</p>
+<p>list of system-generated roles or classes of users and assigned privileges</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>validation reviews of privileges assigned to roles or classes or users</p>
+<p>records of privilege removals or reassignments for roles or classes of users</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for reviewing least privileges necessary to accomplish specified tasks</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>Mechanisms implementing review of user privileges</p>
+<h3 id="ac-6-9-log-use-of-privileged-functions">AC-6 (9): Log Use of Privileged Functions</h3>
+<p>Log the execution of privileged functions.</p>
+<p>The misuse of privileged functions, either intentionally or unintentionally by authorized users or by unauthorized external entities that have compromised system accounts, is a serious and ongoing concern and can have significant adverse impacts on organizations. Logging and analyzing the use of privileged functions is one way to detect such misuse and, in doing so, help mitigate the risk from insider threats and the advanced persistent threat.</p>
+<p>the execution of privileged functions is logged.</p>
+<p>Access control policy</p>
+<p>procedures addressing least privilege</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>list of privileged functions to be audited</p>
+<p>list of audited events</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for reviewing least privileges necessary to accomplish specified tasks</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system/network administrators</p>
+<p>system developers</p>
+<p>Mechanisms auditing the execution of least privilege functions</p>
+<h3 id="ac-6-10-prohibit-non-privileged-users-from-executing-privileged-functions">AC-6 (10): Prohibit Non-privileged Users from Executing Privileged Functions</h3>
+<p>Prevent non-privileged users from executing privileged functions.</p>
+<p>Privileged functions include disabling, circumventing, or altering implemented security or privacy controls, establishing system accounts, performing system integrity checks, and administering cryptographic key management activities. Non-privileged users are individuals who do not possess appropriate authorizations. Privileged functions that require protection from non-privileged users include circumventing intrusion detection and prevention mechanisms or malicious code protection mechanisms. Preventing non-privileged users from executing privileged functions is enforced by <a href="#ac-3">AC-3</a>.</p>
+<p>non-privileged users are prevented from executing privileged functions.</p>
+<p>Access control policy</p>
+<p>procedures addressing least privilege</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>list of privileged functions and associated user account assignments</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for defining least privileges necessary to accomplish specified tasks</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developers</p>
+<p>Mechanisms implementing least privilege functions for non-privileged users</p>
+<h3 id="ac-11-device-lock">AC-11: Device Lock</h3>
+<p>Prevent further access to the system by {{ insert: param, ac-11_odp.01 }} ; and</p>
+<p>Retain the device lock until the user reestablishes access using established identification and authentication procedures.</p>
+<p>Device locks are temporary actions taken to prevent logical access to organizational systems when users stop work and move away from the immediate vicinity of those systems but do not want to log out because of the temporary nature of their absences. Device locks can be implemented at the operating system level or at the application level. A proximity lock may be used to initiate the device lock (e.g., via a Bluetooth-enabled device or dongle). User-initiated device locking is behavior or policy-based and, as such, requires users to take physical action to initiate the device lock. Device locks are not an acceptable substitute for logging out of systems, such as when organizations require users to log out at the end of workdays.</p>
+<p>further access to the system is prevented by {{ insert: param, ac-11_odp.01 }};</p>
+<p>device lock is retained until the user re-establishes access using established identification and authentication procedures.</p>
+<p>Access control policy</p>
+<p>procedures addressing session lock</p>
+<p>procedures addressing identification and authentication</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>security plan</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developers</p>
+<p>Mechanisms implementing access control policy for session lock</p>
+<h3 id="ac-11-1-pattern-hiding-displays">AC-11 (1): Pattern-hiding Displays</h3>
+<p>Conceal, via the device lock, information previously visible on the display with a publicly viewable image.</p>
+<p>The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed.</p>
+<p>information previously visible on the display is concealed, via device lock, with a publicly viewable image.</p>
+<p>Access control policy</p>
+<p>procedures addressing session lock</p>
+<p>display screen with session lock activated</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developers</p>
+<p>System session lock mechanisms</p>
+<h3 id="ac-12-session-termination">AC-12: Session Termination</h3>
+<p>Automatically terminate a user session after {{ insert: param, ac-12_odp }}.</p>
+<p>Session termination addresses the termination of user-initiated logical sessions (in contrast to <a href="#sc-10">SC-10</a> , which addresses the termination of network connections associated with communications sessions (i.e., network disconnect)). A logical session (for local, network, and remote access) is initiated whenever a user (or process acting on behalf of a user) accesses an organizational system. Such user sessions can be terminated without terminating network sessions. Session termination ends all processes associated with a user’s logical session except for those processes that are specifically created by the user (i.e., session owner) to continue after the session is terminated. Conditions or trigger events that require automatic termination of the session include organization-defined periods of user inactivity, targeted responses to certain types of incidents, or time-of-day restrictions on system use.</p>
+<p>a user session is automatically terminated after {{ insert: param, ac-12_odp }}.</p>
+<p>Access control policy</p>
+<p>procedures addressing session termination</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>list of conditions or trigger events requiring session disconnect</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developers</p>
+<p>Automated mechanisms implementing user session termination</p>
+<h3 id="ac-17-1-monitoring-and-control">AC-17 (1): Monitoring and Control</h3>
+<p>Employ automated mechanisms to monitor and control remote access methods.</p>
+<p>Monitoring and control of remote access methods allows organizations to detect attacks and help ensure compliance with remote access policies by auditing the connection activities of remote users on a variety of system components, including servers, notebook computers, workstations, smart phones, and tablets. Audit logging for remote access is enforced by <a href="#au-2">AU-2</a> . Audit events are defined in <a href="#au-2_smt.a">AU-2a</a>.</p>
+<p>automated mechanisms are employed to monitor remote access methods;</p>
+<p>automated mechanisms are employed to control remote access methods.</p>
+<p>Access control policy</p>
+<p>procedures addressing remote access to the system</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system monitoring records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developers</p>
+<p>Automated mechanisms monitoring and controlling remote access methods</p>
+<h3 id="ac-17-2-protection-of-confidentiality-and-integrity-using-encryption">AC-17 (2): Protection of Confidentiality and Integrity Using Encryption</h3>
+<p>Implement cryptographic mechanisms to protect the confidentiality and integrity of remote access sessions.</p>
+<p>Virtual private networks can be used to protect the confidentiality and integrity of remote access sessions. Transport Layer Security (TLS) is an example of a cryptographic protocol that provides end-to-end communications security over networks and is used for Internet communications and online transactions.</p>
+<p>cryptographic mechanisms are implemented to protect the confidentiality and integrity of remote access sessions.</p>
+<p>Access control policy</p>
+<p>procedures addressing remote access to the system</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>cryptographic mechanisms and associated configuration documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developers</p>
+<p>Cryptographic mechanisms protecting confidentiality and integrity of remote access sessions</p>
+<h3 id="ac-17-3-managed-access-control-points">AC-17 (3): Managed Access Control Points</h3>
+<p>Route remote accesses through authorized and managed network access control points.</p>
+<p>Organizations consider the Trusted Internet Connections (TIC) initiative <a href="#4f42ee6e-86cc-403b-a51f-76c2b4f81b54">DHS TIC</a> requirements for external network connections since limiting the number of access control points for remote access reduces attack surfaces.</p>
+<p>remote accesses are routed through authorized and managed network access control points.</p>
+<p>Access control policy</p>
+<p>procedures addressing remote access to the system</p>
+<p>system design documentation</p>
+<p>list of all managed network access control points</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms routing all remote accesses through managed network access control points</p>
+<h3 id="ac-17-4-privileged-commands-and-access">AC-17 (4): Privileged Commands and Access</h3>
+<p>Authorize the execution of privileged commands and access to security-relevant information via remote access only in a format that provides assessable evidence and for the following needs: {{ insert: param, ac-17.4_prm_1 }} ; and</p>
+<p>Document the rationale for remote access in the security plan for the system.</p>
+<p>Remote access to systems represents a significant potential vulnerability that can be exploited by adversaries. As such, restricting the execution of privileged commands and access to security-relevant information via remote access reduces the exposure of the organization and the susceptibility to threats by adversaries to the remote access capability.</p>
+<p>the execution of privileged commands via remote access is authorized only in a format that provides assessable evidence;</p>
+<p>access to security-relevant information via remote access is authorized only in a format that provides assessable evidence;</p>
+<p>the execution of privileged commands via remote access is authorized only for the following needs: {{ insert: param, ac-17.04_odp.01 }};</p>
+<p>access to security-relevant information via remote access is authorized only for the following needs: {{ insert: param, ac-17.04_odp.02 }};</p>
+<p>the rationale for remote access is documented in the security plan for the system.</p>
+<p>Access control policy</p>
+<p>procedures addressing remote access to the system</p>
+<p>system configuration settings and associated documentation</p>
+<p>security plan</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms implementing remote access management</p>
+<h3 id="ac-18-1-authentication-and-encryption">AC-18 (1): Authentication and Encryption</h3>
+<p>Protect wireless access to the system using authentication of {{ insert: param, ac-18.01_odp }} and encryption.</p>
+<p>Wireless networking capabilities represent a significant potential vulnerability that can be exploited by adversaries. To protect systems with wireless access points, strong authentication of users and devices along with strong encryption can reduce susceptibility to threats by adversaries involving wireless technologies.</p>
+<p>wireless access to the system is protected using authentication of {{ insert: param, ac-18.01_odp }};</p>
+<p>wireless access to the system is protected using encryption.</p>
+<p>Access control policy</p>
+<p>procedures addressing wireless implementation and usage (including restrictions)</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>system developers</p>
+<p>Mechanisms implementing wireless access protections to the system</p>
+<h3 id="ac-18-3-disable-wireless-networking">AC-18 (3): Disable Wireless Networking</h3>
+<p>Disable, when not intended for use, wireless networking capabilities embedded within system components prior to issuance and deployment.</p>
+<p>Wireless networking capabilities that are embedded within system components represent a significant potential vulnerability that can be exploited by adversaries. Disabling wireless capabilities when not needed for essential organizational missions or functions can reduce susceptibility to threats by adversaries involving wireless technologies.</p>
+<p>when not intended for use, wireless networking capabilities embedded within system components are disabled prior to issuance and deployment.</p>
+<p>Access control policy</p>
+<p>procedures addressing wireless implementation and usage (including restrictions)</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms managing the disabling of wireless networking capabilities internally embedded within system components</p>
+<h3 id="ac-19-5-full-device-or-container-based-encryption">AC-19 (5): Full Device or Container-based Encryption</h3>
+<p>Employ {{ insert: param, ac-19.05_odp.01 }} to protect the confidentiality and integrity of information on {{ insert: param, ac-19.05_odp.02 }}.</p>
+<p>Container-based encryption provides a more fine-grained approach to data and information encryption on mobile devices, including encrypting selected data structures such as files, records, or fields.</p>
+<p>{{ insert: param, ac-19.05_odp.01 }} is employed to protect the confidentiality and integrity of information on {{ insert: param, ac-19.05_odp.02 }}.</p>
+<p>Access control policy</p>
+<p>procedures addressing access control for mobile devices</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>encryption mechanisms and associated configuration documentation</p>
+<p>system audit records</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with access control responsibilities for mobile devices</p>
+<p>system/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Encryption mechanisms protecting confidentiality and integrity of information on mobile devices</p>
+<h3 id="ac-20-1-limits-on-authorized-use">AC-20 (1): Limits on Authorized Use</h3>
+<p>Permit authorized individuals to use an external system to access the system or to process, store, or transmit organization-controlled information only after:</p>
+<p>Verification of the implementation of controls on the external system as specified in the organization’s security and privacy policies and security and privacy plans; or</p>
+<p>Retention of approved system connection or processing agreements with the organizational entity hosting the external system.</p>
+<p>Limiting authorized use recognizes circumstances where individuals using external systems may need to access organizational systems. Organizations need assurance that the external systems contain the necessary controls so as not to compromise, damage, or otherwise harm organizational systems. Verification that the required controls have been implemented can be achieved by external, independent assessments, attestations, or other means, depending on the confidence level required by organizations.</p>
+<p>authorized individuals are permitted to use an external system to access the system or to process, store, or transmit organization-controlled information only after verification of the implementation of controls on the external system as specified in the organization’s security and privacy policies and security and privacy plans (if applicable);</p>
+<p>authorized individuals are permitted to use an external system to access the system or to process, store, or transmit organization-controlled information only after retention of approved system connection or processing agreements with the organizational entity hosting the external system (if applicable).</p>
+<p>Access control policy</p>
+<p>procedures addressing the use of external systems</p>
+<p>system connection or processing agreements</p>
+<p>account management documents</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>System/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms implementing limits on use of external systems</p>
+<h3 id="ac-20-2-portable-storage-devices-restricted-use">AC-20 (2): Portable Storage Devices — Restricted Use</h3>
+<p>Restrict the use of organization-controlled portable storage devices by authorized individuals on external systems using {{ insert: param, ac-20.02_odp }}.</p>
+<p>Limits on the use of organization-controlled portable storage devices in external systems include restrictions on how the devices may be used and under what conditions the devices may be used.</p>
+<p>the use of organization-controlled portable storage devices by authorized individuals is restricted on external systems using {{ insert: param, ac-20.02_odp }}.</p>
+<p>Access control policy</p>
+<p>procedures addressing the use of external systems</p>
+<p>system configuration settings and associated documentation</p>
+<p>system connection or processing agreements</p>
+<p>account management documents</p>
+<p>system security plan</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel with responsibilities for restricting or prohibiting the use of organization-controlled storage devices on external systems</p>
+<p>system/network administrators</p>
+<p>organizational personnel with information security responsibilities</p>
+<p>Mechanisms implementing restrictions on the use of portable storage devices</p>
+<h3 id="ac-21-information-sharing">AC-21: Information Sharing</h3>
+<p>Enable authorized users to determine whether access authorizations assigned to a sharing partner match the information’s access and use restrictions for {{ insert: param, ac-21_odp.01 }} ; and</p>
+<p>Employ {{ insert: param, ac-21_odp.02 }} to assist users in making information sharing and collaboration decisions.</p>
+<p>Information sharing applies to information that may be restricted in some manner based on some formal or administrative determination. Examples of such information include, contract-sensitive information, classified information related to special access programs or compartments, privileged information, proprietary information, and personally identifiable information. Security and privacy risk assessments as well as applicable laws, regulations, and policies can provide useful inputs to these determinations. Depending on the circumstances, sharing partners may be defined at the individual, group, or organizational level. Information may be defined by content, type, security category, or special access program or compartment. Access restrictions may include non-disclosure agreements (NDA). Information flow techniques and security attributes may be used to provide automated assistance to users making sharing and collaboration decisions.</p>
+<p>authorized users are enabled to determine whether access authorizations assigned to a sharing partner match the information’s access and use restrictions for {{ insert: param, ac-21_odp.01 }};</p>
+<p>{{ insert: param, ac-21_odp.02 }} are employed to assist users in making information-sharing and collaboration decisions.</p>
+<p>Access control policy</p>
+<p>procedures addressing user-based collaboration and information sharing (including restrictions)</p>
+<p>system design documentation</p>
+<p>system configuration settings and associated documentation</p>
+<p>list of users authorized to make information-sharing/collaboration decisions</p>
+<p>list of information-sharing circumstances requiring user discretion</p>
+<p>non-disclosure agreements</p>
+<p>acquisitions/contractual agreements</p>
+<p>system security plan</p>
+<p>privacy plan</p>
+<p>privacy impact assessment</p>
+<p>security and privacy risk assessments</p>
+<p>other relevant documents or records</p>
+<p>Organizational personnel responsible for information-sharing/collaboration decisions</p>
+<p>organizational personnel with responsibility for acquisitions/contractual agreements</p>
+<p>system/network administrators</p>
+<p>organizational personnel with information security and privacy responsibilities</p>
+<p>Automated mechanisms or manual process implementing access authorizations supporting information-sharing/user collaboration decisions</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../moderate_baseline/sr/" class="btn btn-neutral float-left" title="SR: Supply Chain Risk Management (12)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../at/" class="btn btn-neutral float-right" title="AT: Awareness and Training (1)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../moderate_baseline/sr/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../at/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
