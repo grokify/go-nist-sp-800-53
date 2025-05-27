@@ -13,7 +13,17 @@ It provides high-level functions to access OSCAL data published by NIST. Notably
 1. provides higher-level functions to automate use cases
 2. converts between various conrrol ID formats, e.g. NIST and OSCAL, with and without sort formatting
 3. combines source data from NIST with the structs provided by Defense Unicorns
-4. renders control documentation from OSCAL
+4. renders control documentation from OSCAL online here [https://grokify.github.io/go-nist-sp-800-53](https://grokify.github.io/go-nist-sp-800-53)
+
+## Docs
+
+### Run Locally
+
+`% mkdocs serve`
+
+### Build Docs
+
+`% mkdocs build -d docs`
 
 ## Credits
 
