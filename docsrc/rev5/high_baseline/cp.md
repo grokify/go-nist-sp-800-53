@@ -1,0 +1,472 @@
+# cp - Contingency Planning
+
+## Base Controls
+
+### cp-1: Policy and Procedures
+
+Develop, document, and disseminate to {{ insert: param, cp-1_prm_1 }}:
+
+ {{ insert: param, cp-01_odp.03 }} contingency planning policy that:
+
+Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+
+Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and
+
+Procedures to facilitate the implementation of the contingency planning policy and the associated contingency planning controls;
+
+Designate an {{ insert: param, cp-01_odp.04 }} to manage the development, documentation, and dissemination of the contingency planning policy and procedures; and
+
+Review and update the current contingency planning:
+
+Policy {{ insert: param, cp-01_odp.05 }} and following {{ insert: param, cp-01_odp.06 }} ; and
+
+Procedures {{ insert: param, cp-01_odp.07 }} and following {{ insert: param, cp-01_odp.08 }}.
+
+Contingency planning policy and procedures address the controls in the CP family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of contingency planning policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to contingency planning policy and procedures include assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+
+a contingency planning policy is developed and documented;
+
+the contingency planning policy is disseminated to {{ insert: param, cp-01_odp.01 }};
+
+contingency planning procedures to facilitate the implementation of the contingency planning policy and associated contingency planning controls are developed and documented;
+
+the contingency planning procedures are disseminated to {{ insert: param, cp-01_odp.02 }};
+
+the {{ insert: param, cp-01_odp.03 }} contingency planning policy addresses purpose;
+
+the {{ insert: param, cp-01_odp.03 }} contingency planning policy addresses scope;
+
+the {{ insert: param, cp-01_odp.03 }} contingency planning policy addresses roles;
+
+the {{ insert: param, cp-01_odp.03 }} contingency planning policy addresses responsibilities;
+
+the {{ insert: param, cp-01_odp.03 }} contingency planning policy addresses management commitment;
+
+the {{ insert: param, cp-01_odp.03 }} contingency planning policy addresses coordination among organizational entities;
+
+the {{ insert: param, cp-01_odp.03 }} contingency planning policy addresses compliance;
+
+the {{ insert: param, cp-01_odp.03 }} contingency planning policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
+
+the {{ insert: param, cp-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the contingency planning policy and procedures;
+
+the current contingency planning policy is reviewed and updated {{ insert: param, cp-01_odp.05 }};
+
+the current contingency planning policy is reviewed and updated following {{ insert: param, cp-01_odp.06 }};
+
+the current contingency planning procedures are reviewed and updated {{ insert: param, cp-01_odp.07 }};
+
+the current contingency planning procedures are reviewed and updated following {{ insert: param, cp-01_odp.08 }}.
+
+Contingency planning policy and procedures
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with contingency planning responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+### cp-2: Contingency Plan
+
+Develop a contingency plan for the system that:
+
+Identifies essential mission and business functions and associated contingency requirements;
+
+Provides recovery objectives, restoration priorities, and metrics;
+
+Addresses contingency roles, responsibilities, assigned individuals with contact information;
+
+Addresses maintaining essential mission and business functions despite a system disruption, compromise, or failure;
+
+Addresses eventual, full system restoration without deterioration of the controls originally planned and implemented;
+
+Addresses the sharing of contingency information; and
+
+Is reviewed and approved by {{ insert: param, cp-2_prm_1 }};
+
+Distribute copies of the contingency plan to {{ insert: param, cp-2_prm_2 }};
+
+Coordinate contingency planning activities with incident handling activities;
+
+Review the contingency plan for the system {{ insert: param, cp-02_odp.05 }};
+
+Update the contingency plan to address changes to the organization, system, or environment of operation and problems encountered during contingency plan implementation, execution, or testing;
+
+Communicate contingency plan changes to {{ insert: param, cp-2_prm_4 }};
+
+Incorporate lessons learned from contingency plan testing, training, or actual contingency activities into contingency testing and training; and
+
+Protect the contingency plan from unauthorized disclosure and modification.
+
+Contingency planning for systems is part of an overall program for achieving continuity of operations for organizational mission and business functions. Contingency planning addresses system restoration and implementation of alternative mission or business processes when systems are compromised or breached. Contingency planning is considered throughout the system development life cycle and is a fundamental part of the system design. Systems can be designed for redundancy, to provide backup capabilities, and for resilience. Contingency plans reflect the degree of restoration required for organizational systems since not all systems need to fully recover to achieve the level of continuity of operations desired. System recovery objectives reflect applicable laws, executive orders, directives, regulations, policies, standards, guidelines, organizational risk tolerance, and system impact level.
+
+Actions addressed in contingency plans include orderly system degradation, system shutdown, fallback to a manual mode, alternate information flows, and operating in modes reserved for when systems are under attack. By coordinating contingency planning with incident handling activities, organizations ensure that the necessary planning activities are in place and activated in the event of an incident. Organizations consider whether continuity of operations during an incident conflicts with the capability to automatically disable the system, as specified in [IR-4(5)](#ir-4.5) . Incident response planning is part of contingency planning for organizations and is addressed in the [IR](#ir) (Incident Response) family.
+
+a contingency plan for the system is developed that identifies essential mission and business functions and associated contingency requirements;
+
+a contingency plan for the system is developed that provides recovery objectives;
+
+a contingency plan for the system is developed that provides restoration priorities;
+
+a contingency plan for the system is developed that provides metrics;
+
+a contingency plan for the system is developed that addresses contingency roles;
+
+a contingency plan for the system is developed that addresses contingency responsibilities;
+
+a contingency plan for the system is developed that addresses assigned individuals with contact information;
+
+a contingency plan for the system is developed that addresses maintaining essential mission and business functions despite a system disruption, compromise, or failure;
+
+a contingency plan for the system is developed that addresses eventual, full-system restoration without deterioration of the controls originally planned and implemented;
+
+a contingency plan for the system is developed that addresses the sharing of contingency information;
+
+a contingency plan for the system is developed that is reviewed by {{ insert: param, cp-02_odp.01 }};
+
+a contingency plan for the system is developed that is approved by {{ insert: param, cp-02_odp.02 }};
+
+copies of the contingency plan are distributed to {{ insert: param, cp-02_odp.03 }};
+
+copies of the contingency plan are distributed to {{ insert: param, cp-02_odp.04 }};
+
+contingency planning activities are coordinated with incident handling activities;
+
+the contingency plan for the system is reviewed {{ insert: param, cp-02_odp.05 }};
+
+the contingency plan is updated to address changes to the organization, system, or environment of operation;
+
+the contingency plan is updated to address problems encountered during contingency plan implementation, execution, or testing;
+
+contingency plan changes are communicated to {{ insert: param, cp-02_odp.06 }};
+
+contingency plan changes are communicated to {{ insert: param, cp-02_odp.07 }};
+
+lessons learned from contingency plan testing or actual contingency activities are incorporated into contingency testing;
+
+lessons learned from contingency plan training or actual contingency activities are incorporated into contingency testing and training;
+
+the contingency plan is protected from unauthorized disclosure;
+
+the contingency plan is protected from unauthorized modification.
+
+Contingency planning policy
+
+procedures addressing contingency operations for the system
+
+contingency plan
+
+evidence of contingency plan reviews and updates
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with contingency planning and plan implementation responsibilities
+
+organizational personnel with incident handling responsibilities
+
+organizational personnel with knowledge of requirements for mission and business functions
+
+organizational personnel with information security responsibilities
+
+Organizational processes for contingency plan development, review, update, and protection
+
+mechanisms for developing, reviewing, updating, and/or protecting the contingency plan
+
+### cp-3: Contingency Training
+
+Provide contingency training to system users consistent with assigned roles and responsibilities:
+
+Within {{ insert: param, cp-03_odp.01 }} of assuming a contingency role or responsibility;
+
+When required by system changes; and
+
+ {{ insert: param, cp-03_odp.02 }} thereafter; and
+
+Review and update contingency training content {{ insert: param, cp-03_odp.03 }} and following {{ insert: param, cp-03_odp.04 }}.
+
+Contingency training provided by organizations is linked to the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail is included in such training. For example, some individuals may only need to know when and where to report for duty during contingency operations and if normal duties are affected; system administrators may require additional training on how to establish systems at alternate processing and storage sites; and organizational officials may receive more specific training on how to conduct mission-essential functions in designated off-site locations and how to establish communications with other governmental entities for purposes of coordination on contingency-related activities. Training for contingency roles or responsibilities reflects the specific continuity requirements in the contingency plan. Events that may precipitate an update to contingency training content include, but are not limited to, contingency plan testing or an actual contingency (lessons learned), assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. At the discretion of the organization, participation in a contingency plan test or exercise, including lessons learned sessions subsequent to the test or exercise, may satisfy contingency plan training requirements.
+
+contingency training is provided to system users consistent with assigned roles and responsibilities within {{ insert: param, cp-03_odp.01 }} of assuming a contingency role or responsibility;
+
+contingency training is provided to system users consistent with assigned roles and responsibilities when required by system changes;
+
+contingency training is provided to system users consistent with assigned roles and responsibilities {{ insert: param, cp-03_odp.02 }} thereafter;
+
+the contingency plan training content is reviewed and updated {{ insert: param, cp-03_odp.03 }};
+
+the contingency plan training content is reviewed and updated following {{ insert: param, cp-03_odp.04 }}.
+
+Contingency planning policy
+
+procedures addressing contingency training
+
+contingency plan
+
+contingency training curriculum
+
+contingency training material
+
+contingency training records
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with contingency planning, plan implementation, and training responsibilities
+
+organizational personnel with information security responsibilities
+
+Organizational processes for contingency training
+
+### cp-4: Contingency Plan Testing
+
+Test the contingency plan for the system {{ insert: param, cp-04_odp.01 }} using the following tests to determine the effectiveness of the plan and the readiness to execute the plan: {{ insert: param, cp-4_prm_2 }}.
+
+Review the contingency plan test results; and
+
+Initiate corrective actions, if needed.
+
+Methods for testing contingency plans to determine the effectiveness of the plans and identify potential weaknesses include checklists, walk-through and tabletop exercises, simulations (parallel or full interrupt), and comprehensive exercises. Organizations conduct testing based on the requirements in contingency plans and include a determination of the effects on organizational operations, assets, and individuals due to contingency operations. Organizations have flexibility and discretion in the breadth, depth, and timelines of corrective actions.
+
+the contingency plan for the system is tested {{ insert: param, cp-04_odp.01 }};
+
+ {{ insert: param, cp-04_odp.02 }} are used to determine the effectiveness of the plan;
+
+ {{ insert: param, cp-04_odp.03 }} are used to determine the readiness to execute the plan;
+
+the contingency plan test results are reviewed;
+
+corrective actions are initiated, if needed.
+
+Contingency planning policy
+
+procedures addressing contingency plan testing
+
+contingency plan
+
+contingency plan test documentation
+
+contingency plan test results
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for contingency plan testing, reviewing, or responding to contingency plan tests
+
+organizational personnel with information security responsibilities
+
+Organizational processes for contingency plan testing
+
+mechanisms supporting the contingency plan and/or contingency plan testing
+
+### cp-6: Alternate Storage Site
+
+Establish an alternate storage site, including necessary agreements to permit the storage and retrieval of system backup information; and
+
+Ensure that the alternate storage site provides controls equivalent to that of the primary site.
+
+Alternate storage sites are geographically distinct from primary storage sites and maintain duplicate copies of information and data if the primary storage site is not available. Similarly, alternate processing sites provide processing capability if the primary processing site is not available. Geographically distributed architectures that support contingency requirements may be considered alternate storage sites. Items covered by alternate storage site agreements include environmental conditions at the alternate sites, access rules for systems and facilities, physical and environmental protection requirements, and coordination of delivery and retrieval of backup media. Alternate storage sites reflect the requirements in contingency plans so that organizations can maintain essential mission and business functions despite compromise, failure, or disruption in organizational systems.
+
+an alternate storage site is established;
+
+establishment of the alternate storage site includes necessary agreements to permit the storage and retrieval of system backup information;
+
+the alternate storage site provides controls equivalent to that of the primary site.
+
+Contingency planning policy
+
+procedures addressing alternate storage sites
+
+contingency plan
+
+alternate storage site agreements
+
+primary storage site agreements
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with contingency plan alternate storage site responsibilities
+
+organizational personnel with system recovery responsibilities
+
+organizational personnel with information security responsibilities
+
+Organizational processes for storing and retrieving system backup information at the alternate storage site
+
+mechanisms supporting and/or implementing the storage and retrieval of system backup information at the alternate storage site
+
+### cp-7: Alternate Processing Site
+
+Establish an alternate processing site, including necessary agreements to permit the transfer and resumption of {{ insert: param, cp-07_odp.01 }} for essential mission and business functions within {{ insert: param, cp-07_odp.02 }} when the primary processing capabilities are unavailable;
+
+Make available at the alternate processing site, the equipment and supplies required to transfer and resume operations or put contracts in place to support delivery to the site within the organization-defined time period for transfer and resumption; and
+
+Provide controls at the alternate processing site that are equivalent to those at the primary site.
+
+Alternate processing sites are geographically distinct from primary processing sites and provide processing capability if the primary processing site is not available. The alternate processing capability may be addressed using a physical processing site or other alternatives, such as failover to a cloud-based service provider or other internally or externally provided processing service. Geographically distributed architectures that support contingency requirements may also be considered alternate processing sites. Controls that are covered by alternate processing site agreements include the environmental conditions at alternate sites, access rules, physical and environmental protection requirements, and the coordination for the transfer and assignment of personnel. Requirements are allocated to alternate processing sites that reflect the requirements in contingency plans to maintain essential mission and business functions despite disruption, compromise, or failure in organizational systems.
+
+an alternate processing site, including necessary agreements to permit the transfer and resumption of {{ insert: param, cp-07_odp.01 }} for essential mission and business functions, is established within {{ insert: param, cp-07_odp.02 }} when the primary processing capabilities are unavailable;
+
+the equipment and supplies required to transfer operations are made available at the alternate processing site or if contracts are in place to support delivery to the site within {{ insert: param, cp-07_odp.02 }} for transfer;
+
+the equipment and supplies required to resume operations are made available at the alternate processing site or if contracts are in place to support delivery to the site within {{ insert: param, cp-07_odp.02 }} for resumption;
+
+controls provided at the alternate processing site are equivalent to those at the primary site.
+
+Contingency planning policy
+
+procedures addressing alternate processing sites
+
+contingency plan
+
+alternate processing site agreements
+
+primary processing site agreements
+
+spare equipment and supplies inventory at alternate processing site
+
+equipment and supply contracts
+
+service-level agreements
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with responsibilities for contingency planning and/or alternate site arrangements
+
+organizational personnel with information security responsibilities
+
+Organizational processes for recovery at the alternate site
+
+mechanisms supporting and/or implementing recovery at the alternate processing site
+
+### cp-8: Telecommunications Services
+
+Establish alternate telecommunications services, including necessary agreements to permit the resumption of {{ insert: param, cp-08_odp.01 }} for essential mission and business functions within {{ insert: param, cp-08_odp.02 }} when the primary telecommunications capabilities are unavailable at either the primary or alternate processing or storage sites.
+
+Telecommunications services (for data and voice) for primary and alternate processing and storage sites are in scope for [CP-8](#cp-8) . Alternate telecommunications services reflect the continuity requirements in contingency plans to maintain essential mission and business functions despite the loss of primary telecommunications services. Organizations may specify different time periods for primary or alternate sites. Alternate telecommunications services include additional organizational or commercial ground-based circuits or lines, network-based approaches to telecommunications, or the use of satellites. Organizations consider factors such as availability, quality of service, and access when entering into alternate telecommunications agreements.
+
+alternate telecommunications services, including necessary agreements to permit the resumption of {{ insert: param, cp-08_odp.01 }} , are established for essential mission and business functions within {{ insert: param, cp-08_odp.02 }} when the primary telecommunications capabilities are unavailable at either the primary or alternate processing or storage sites.
+
+Contingency planning policy
+
+procedures addressing alternate telecommunications services
+
+contingency plan
+
+primary and alternate telecommunications service agreements
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with contingency plan telecommunications responsibilities
+
+organizational personnel with system recovery responsibilities
+
+organizational personnel with knowledge of requirements for mission and business functions
+
+organizational personnel with information security responsibilities
+
+organizational personnel with responsibility for acquisitions/contractual agreements
+
+Mechanisms supporting telecommunications
+
+### cp-9: System Backup
+
+Conduct backups of user-level information contained in {{ insert: param, cp-09_odp.01 }} {{ insert: param, cp-09_odp.02 }};
+
+Conduct backups of system-level information contained in the system {{ insert: param, cp-09_odp.03 }};
+
+Conduct backups of system documentation, including security- and privacy-related documentation {{ insert: param, cp-09_odp.04 }} ; and
+
+Protect the confidentiality, integrity, and availability of backup information.
+
+System-level information includes system state information, operating system software, middleware, application software, and licenses. User-level information includes information other than system-level information. Mechanisms employed to protect the integrity of system backups include digital signatures and cryptographic hashes. Protection of system backup information while in transit is addressed by [MP-5](#mp-5) and [SC-8](#sc-8) . System backups reflect the requirements in contingency plans as well as other organizational requirements for backing up information. Organizations may be subject to laws, executive orders, directives, regulations, or policies with requirements regarding specific categories of information (e.g., personal health information). Organizational personnel consult with the senior agency official for privacy and legal counsel regarding such requirements.
+
+backups of user-level information contained in {{ insert: param, cp-09_odp.01 }} are conducted {{ insert: param, cp-09_odp.02 }};
+
+backups of system-level information contained in the system are conducted {{ insert: param, cp-09_odp.03 }};
+
+backups of system documentation, including security- and privacy-related documentation are conducted {{ insert: param, cp-09_odp.04 }};
+
+the confidentiality of backup information is protected;
+
+the integrity of backup information is protected;
+
+the availability of backup information is protected.
+
+Contingency planning policy
+
+procedures addressing system backup
+
+contingency plan
+
+backup storage location(s)
+
+system backup logs or records
+
+system security plan
+
+privacy plan
+
+other relevant documents or records
+
+Organizational personnel with system backup responsibilities
+
+organizational personnel with information security and privacy responsibilities
+
+Organizational processes for conducting system backups
+
+mechanisms supporting and/or implementing system backups
+
+### cp-10: System Recovery and Reconstitution
+
+Provide for the recovery and reconstitution of the system to a known state within {{ insert: param, cp-10_prm_1 }} after a disruption, compromise, or failure.
+
+Recovery is executing contingency plan activities to restore organizational mission and business functions. Reconstitution takes place following recovery and includes activities for returning systems to fully operational states. Recovery and reconstitution operations reflect mission and business priorities; recovery point, recovery time, and reconstitution objectives; and organizational metrics consistent with contingency plan requirements. Reconstitution includes the deactivation of interim system capabilities that may have been needed during recovery operations. Reconstitution also includes assessments of fully restored system capabilities, reestablishment of continuous monitoring activities, system reauthorization (if required), and activities to prepare the system and organization for future disruptions, breaches, compromises, or failures. Recovery and reconstitution capabilities can include automated mechanisms and manual procedures. Organizations establish recovery time and recovery point objectives as part of contingency planning.
+
+the recovery of the system to a known state is provided within {{ insert: param, cp-10_odp.01 }} after a disruption, compromise, or failure;
+
+a reconstitution of the system to a known state is provided within {{ insert: param, cp-10_odp.02 }} after a disruption, compromise, or failure.
+
+Contingency planning policy
+
+procedures addressing system backup
+
+contingency plan
+
+system backup test results
+
+contingency plan test results
+
+contingency plan test documentation
+
+redundant secondary system for system backups
+
+location(s) of redundant secondary backup system(s)
+
+system security plan
+
+other relevant documents or records
+
+Organizational personnel with contingency planning, recovery, and/or reconstitution responsibilities
+
+organizational personnel with information security responsibilities
+
+Organizational processes implementing system recovery and reconstitution operations
+
+mechanisms supporting and/or implementing system recovery and reconstitution operations
+
+## Control Enhancements
+
