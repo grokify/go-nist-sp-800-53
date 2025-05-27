@@ -4,7 +4,7 @@
 
 ## Controls
 
-### ma-1: Policy and Procedures
+### {ma-01 ma %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, ma-1_prm_1 }}:
 
@@ -74,7 +74,7 @@ Organizational personnel with maintenance responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### ma-2: Controlled Maintenance
+### {ma-02 ma %!s(int=2) %!s(int=0)}: Controlled Maintenance
 
 Schedule, document, and review records of maintenance, repair, and replacement on system components in accordance with manufacturer or vendor specifications and/or organizational requirements;
 
@@ -140,7 +140,7 @@ mechanisms supporting and/or implementing controlled maintenance
 
 mechanisms implementing the sanitization of system components
 
-### ma-4: Nonlocal Maintenance
+### {ma-04 ma %!s(int=4) %!s(int=0)}: Nonlocal Maintenance
 
 Approve and monitor nonlocal maintenance and diagnostic activities;
 
@@ -206,7 +206,7 @@ mechanisms for strong authentication of nonlocal maintenance diagnostic sessions
 
 mechanisms for terminating nonlocal maintenance sessions and network connections
 
-### ma-5: Maintenance Personnel
+### {ma-05 ma %!s(int=5) %!s(int=0)}: Maintenance Personnel
 
 Establish a process for maintenance personnel authorization and maintain a list of authorized maintenance organizations or personnel;
 

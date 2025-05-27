@@ -4,7 +4,7 @@
 
 ## Controls
 
-### si-1: Policy and Procedures
+### {si-01 si %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, si-1_prm_1 }}:
 
@@ -74,7 +74,7 @@ Organizational personnel with system and information integrity responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### si-2: Flaw Remediation
+### {si-02 si %!s(int=2) %!s(int=0)}: Flaw Remediation
 
 Identify, report, and correct system flaws;
 
@@ -148,7 +148,7 @@ mechanisms supporting and/or implementing the reporting and correcting of system
 
 mechanisms supporting and/or implementing testing software and firmware updates
 
-### si-2.2: Automated Flaw Remediation Status
+### {si-02.02 si %!s(int=2) %!s(int=2)}: Automated Flaw Remediation Status
 
 Determine if system components have applicable security-relevant software and firmware updates installed using {{ insert: param, si-02.02_odp.01 }} {{ insert: param, si-02.02_odp.02 }}.
 
@@ -184,7 +184,7 @@ organizational personnel responsible for flaw remediation
 
 Automated mechanisms used to determine the state of system components with regard to flaw remediation
 
-### si-3: Malicious Code Protection
+### {si-03 si %!s(int=3) %!s(int=0)}: Malicious Code Protection
 
 Implement {{ insert: param, si-03_odp.01 }} malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code;
 
@@ -264,7 +264,7 @@ mechanisms supporting and/or implementing, employing, updating, and configuring 
 
 mechanisms supporting and/or implementing malicious code scanning and subsequent actions
 
-### si-4: System Monitoring
+### {si-04 si %!s(int=4) %!s(int=0)}: System Monitoring
 
 Monitor the system to detect:
 
@@ -350,7 +350,7 @@ Organizational processes for system monitoring
 
 mechanisms supporting and/or implementing system monitoring capabilities
 
-### si-4.2: Automated Tools and Mechanisms for Real-time Analysis
+### {si-04.02 si %!s(int=4) %!s(int=2)}: Automated Tools and Mechanisms for Real-time Analysis
 
 Employ automated tools and mechanisms to support near real-time analysis of events.
 
@@ -402,7 +402,7 @@ mechanisms supporting and/or implementing system monitoring
 
 mechanisms/tools supporting and/or implementing an analysis of events
 
-### si-4.4: Inbound and Outbound Communications Traffic
+### {si-04.04 si %!s(int=4) %!s(int=4)}: Inbound and Outbound Communications Traffic
 
 Determine criteria for unusual or unauthorized activities or conditions for inbound and outbound communications traffic;
 
@@ -454,7 +454,7 @@ mechanisms supporting and/or implementing intrusion detection and system monitor
 
 mechanisms supporting and/or implementing the monitoring of inbound and outbound communications traffic
 
-### si-4.5: System-generated Alerts
+### {si-04.05 si %!s(int=4) %!s(int=5)}: System-generated Alerts
 
 Alert {{ insert: param, si-04.05_odp.01 }} when the following system-generated indications of compromise or potential compromise occur: {{ insert: param, si-04.05_odp.02 }}.
 
@@ -504,7 +504,7 @@ mechanisms supporting and/or implementing intrusion detection and system monitor
 
 mechanisms supporting and/or implementing alerts for compromise indicators
 
-### si-4.10: Visibility of Encrypted Communications
+### {si-04.10 si %!s(int=4) %!s(int=10)}: Visibility of Encrypted Communications
 
 Make provisions so that {{ insert: param, si-04.10_odp.01 }} is visible to {{ insert: param, si-04.10_odp.02 }}.
 
@@ -546,7 +546,7 @@ mechanisms supporting and/or implementing intrusion detection and system monitor
 
 mechanisms supporting and/or implementing the visibility of encrypted communications traffic to monitoring tools
 
-### si-4.12: Automated Organization-generated Alerts
+### {si-04.12 si %!s(int=4) %!s(int=12)}: Automated Organization-generated Alerts
 
 Alert {{ insert: param, si-04.12_odp.01 }} using {{ insert: param, si-04.12_odp.02 }} when the following indications of inappropriate or unusual activities with security or privacy implications occur: {{ insert: param, si-04.12_odp.03 }}.
 
@@ -600,7 +600,7 @@ automated mechanisms supporting and/or implementing intrusion detection and syst
 
 automated mechanisms supporting and/or implementing automated alerts to security personnel
 
-### si-4.14: Wireless Intrusion Detection
+### {si-04.14 si %!s(int=4) %!s(int=14)}: Wireless Intrusion Detection
 
 Employ a wireless intrusion detection system to identify rogue wireless devices and to detect attack attempts and potential compromises or breaches to the system.
 
@@ -646,7 +646,7 @@ Organizational processes for intrusion detection
 
 mechanisms supporting and/or implementing a wireless intrusion detection capability
 
-### si-4.20: Privileged Users
+### {si-04.20 si %!s(int=4) %!s(int=20)}: Privileged Users
 
 Implement the following additional monitoring of privileged users: {{ insert: param, si-04.20_odp }}.
 
@@ -686,7 +686,7 @@ Organizational processes for system monitoring
 
 mechanisms supporting and/or implementing a system monitoring capability
 
-### si-4.22: Unauthorized Network Services
+### {si-04.22 si %!s(int=4) %!s(int=22)}: Unauthorized Network Services
 
 Detect network services that have not been authorized or approved by {{ insert: param, si-04.22_odp.01 }} ; and
 
@@ -740,7 +740,7 @@ mechanisms for auditing network services
 
 mechanisms for providing alerts
 
-### si-5: Security Alerts, Advisories, and Directives
+### {si-05 si %!s(int=5) %!s(int=0)}: Security Alerts, Advisories, and Directives
 
 Receive system security alerts, advisories, and directives from {{ insert: param, si-05_odp.01 }} on an ongoing basis;
 
@@ -788,7 +788,7 @@ mechanisms supporting and/or implementing the definition, receipt, generation, a
 
 mechanisms supporting and/or implementing security directives
 
-### si-5.1: Automated Alerts and Advisories
+### {si-05.01 si %!s(int=5) %!s(int=1)}: Automated Alerts and Advisories
 
 Broadcast security alert and advisory information throughout the organization using {{ insert: param, si-05.01_odp }}.
 
@@ -830,7 +830,7 @@ Organizational processes for defining, receiving, generating, and disseminating 
 
 automated mechanisms supporting and/or implementing the dissemination of security alerts and advisories
 
-### si-6: Security and Privacy Function Verification
+### {si-06 si %!s(int=6) %!s(int=0)}: Security and Privacy Function Verification
 
 Verify the correct operation of {{ insert: param, si-6_prm_1 }};
 
@@ -892,7 +892,7 @@ Organizational processes for security and privacy function verification
 
 mechanisms supporting and/or implementing the security and privacy function verification capability
 
-### si-7: Software, Firmware, and Information Integrity
+### {si-07 si %!s(int=7) %!s(int=0)}: Software, Firmware, and Information Integrity
 
 Employ integrity verification tools to detect unauthorized changes to the following software, firmware, and information: {{ insert: param, si-7_prm_1 }} ; and
 
@@ -944,7 +944,7 @@ system/network administrators
 
 Software, firmware, and information integrity verification tools
 
-### si-7.1: Integrity Checks
+### {si-07.01 si %!s(int=7) %!s(int=1)}: Integrity Checks
 
 Perform an integrity check of {{ insert: param, si-7.1_prm_1 }} {{ insert: param, si-7.1_prm_2 }}.
 
@@ -984,7 +984,7 @@ system developer
 
 Software, firmware, and information integrity verification tools
 
-### si-7.2: Automated Notifications of Integrity Violations
+### {si-07.02 si %!s(int=7) %!s(int=2)}: Automated Notifications of Integrity Violations
 
 Employ automated tools that provide notification to {{ insert: param, si-07.02_odp }} upon discovering discrepancies during integrity verification.
 
@@ -1032,7 +1032,7 @@ Software, firmware, and information integrity verification tools
 
 mechanisms providing integrity discrepancy notifications
 
-### si-7.5: Automated Response to Integrity Violations
+### {si-07.05 si %!s(int=7) %!s(int=5)}: Automated Response to Integrity Violations
 
 Automatically {{ insert: param, si-07.05_odp.01 }} when integrity violations are discovered.
 
@@ -1076,7 +1076,7 @@ mechanisms providing an automated response to integrity violations
 
 mechanisms supporting and/or implementing security safeguards to be implemented when integrity violations are discovered
 
-### si-7.7: Integration of Detection and Response
+### {si-07.07 si %!s(int=7) %!s(int=7)}: Integration of Detection and Response
 
 Incorporate the detection of the following unauthorized changes into the organizational incident response capability: {{ insert: param, si-07.07_odp }}.
 
@@ -1116,7 +1116,7 @@ software, firmware, and information integrity verification tools
 
 mechanisms supporting and/or implementing the incorporation of detection of unauthorized security-relevant changes into the incident response capability
 
-### si-7.15: Code Authentication
+### {si-07.15 si %!s(int=7) %!s(int=15)}: Code Authentication
 
 Implement cryptographic mechanisms to authenticate the following software or firmware components prior to installation: {{ insert: param, si-07.15_odp }}.
 
@@ -1152,7 +1152,7 @@ system developer
 
 Cryptographic mechanisms authenticating software and firmware prior to installation
 
-### si-8: Spam Protection
+### {si-08 si %!s(int=8) %!s(int=0)}: Spam Protection
 
 Employ spam protection mechanisms at system entry and exit points to detect and act on unsolicited messages; and
 
@@ -1204,7 +1204,7 @@ Organizational processes for implementing spam protection
 
 mechanisms supporting and/or implementing spam protection
 
-### si-8.2: Automatic Updates
+### {si-08.02 si %!s(int=8) %!s(int=2)}: Automatic Updates
 
 Automatically update spam protection mechanisms {{ insert: param, si-08.02_odp }}.
 
@@ -1244,7 +1244,7 @@ Organizational processes for spam protection
 
 mechanisms supporting and/or implementing automatic updates to spam protection mechanisms
 
-### si-10: Information Input Validation
+### {si-10 si %!s(int=10) %!s(int=0)}: Information Input Validation
 
 Check the validity of the following information inputs: {{ insert: param, si-10_odp }}.
 
@@ -1286,7 +1286,7 @@ system developer
 
 Mechanisms supporting and/or implementing validity checks on information inputs
 
-### si-11: Error Handling
+### {si-11 si %!s(int=11) %!s(int=0)}: Error Handling
 
 Generate error messages that provide information necessary for corrective actions without revealing information that could be exploited; and
 
@@ -1330,7 +1330,7 @@ automated mechanisms supporting and/or implementing error handling
 
 automated mechanisms supporting and/or implementing the management of error messages
 
-### si-12: Information Management and Retention
+### {si-12 si %!s(int=12) %!s(int=0)}: Information Management and Retention
 
 Manage and retain information within the system and information output from the system in accordance with applicable laws, executive orders, directives, regulations, policies, standards, guidelines and operational requirements.
 
@@ -1386,7 +1386,7 @@ Organizational processes for information management, retention, and disposition
 
 automated mechanisms supporting and/or implementing information management, retention, and disposition
 
-### si-16: Memory Protection
+### {si-16 si %!s(int=16) %!s(int=0)}: Memory Protection
 
 Implement the following controls to protect the system memory from unauthorized code execution: {{ insert: param, si-16_odp }}.
 

@@ -4,7 +4,7 @@
 
 ## Controls
 
-### ra-1: Policy and Procedures
+### {ra-01 ra %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, ra-1_prm_1 }}:
 
@@ -72,7 +72,7 @@ Organizational personnel with risk assessment responsibilities
 
 organizational personnel with security and privacy responsibilities
 
-### ra-2: Security Categorization
+### {ra-02 ra %!s(int=2) %!s(int=0)}: Security Categorization
 
 Categorize the system and information it processes, stores, and transmits;
 
@@ -112,7 +112,7 @@ organizational personnel with security and privacy responsibilities
 
 Organizational processes for security categorization
 
-### ra-3: Risk Assessment
+### {ra-03 ra %!s(int=3) %!s(int=0)}: Risk Assessment
 
 Conduct a risk assessment, including:
 
@@ -184,7 +184,7 @@ Organizational processes for risk assessment
 
 mechanisms supporting and/or conducting, documenting, reviewing, disseminating, and updating the risk assessment
 
-### ra-3.1: Supply Chain Risk Assessment
+### {ra-03.01 ra %!s(int=3) %!s(int=1)}: Supply Chain Risk Assessment
 
 Assess supply chain risks associated with {{ insert: param, ra-03.01_odp.01 }} ; and
 
@@ -232,7 +232,7 @@ Organizational processes for risk assessment
 
 mechanisms supporting and/or conducting, documenting, reviewing, disseminating, and updating the supply chain risk assessment
 
-### ra-5: Vulnerability Monitoring and Scanning
+### {ra-05 ra %!s(int=5) %!s(int=0)}: Vulnerability Monitoring and Scanning
 
 Monitor and scan for vulnerabilities in the system and hosted applications {{ insert: param, ra-5_prm_1 }} and when new vulnerabilities potentially affecting the system are identified and reported;
 
@@ -312,7 +312,7 @@ Organizational processes for vulnerability scanning, analysis, remediation, and 
 
 mechanisms supporting and/or implementing vulnerability scanning, analysis, remediation, and information sharing
 
-### ra-5.2: Update Vulnerabilities to Be Scanned
+### {ra-05.02 ra %!s(int=5) %!s(int=2)}: Update Vulnerabilities to Be Scanned
 
 Update the system vulnerabilities to be scanned {{ insert: param, ra-05.02_odp.01 }}.
 
@@ -346,7 +346,7 @@ Organizational processes for vulnerability scanning
 
 mechanisms/tools supporting and/or implementing vulnerability scanning
 
-### ra-5.4: Discoverable Information
+### {ra-05.04 ra %!s(int=5) %!s(int=4)}: Discoverable Information
 
 Determine information about the system that is discoverable and take {{ insert: param, ra-05.04_odp }}.
 
@@ -398,7 +398,7 @@ mechanisms supporting and/or implementing risk response
 
 mechanisms supporting and/or implementing incident management and response
 
-### ra-5.5: Privileged Access
+### {ra-05.05 ra %!s(int=5) %!s(int=5)}: Privileged Access
 
 Implement privileged access authorization to {{ insert: param, ra-05.05_odp.01 }} for {{ insert: param, ra-05.05_odp.02 }}.
 
@@ -446,7 +446,7 @@ mechanisms supporting and/or implementing access control
 
 mechanisms/tools supporting and/or implementing vulnerability scanning
 
-### ra-5.11: Public Disclosure Program
+### {ra-05.11 ra %!s(int=5) %!s(int=11)}: Public Disclosure Program
 
 Establish a public reporting channel for receiving reports of vulnerabilities in organizational systems and system components.
 
@@ -486,7 +486,7 @@ mechanisms/tools supporting and/or implementing vulnerability scanning
 
 mechanisms implementing the public reporting of vulnerabilities
 
-### ra-7: Risk Response
+### {ra-07 ra %!s(int=7) %!s(int=0)}: Risk Response
 
 Respond to findings from security and privacy assessments, monitoring, and audits in accordance with organizational risk tolerance.
 
@@ -522,7 +522,7 @@ Organizational processes for assessments and audits
 
 mechanisms/tools supporting and/or implementing assessments and auditing
 
-### ra-9: Criticality Analysis
+### {ra-09 ra %!s(int=9) %!s(int=0)}: Criticality Analysis
 
 Identify critical system components and functions by performing a criticality analysis for {{ insert: param, ra-09_odp.01 }} at {{ insert: param, ra-09_odp.02 }}.
 

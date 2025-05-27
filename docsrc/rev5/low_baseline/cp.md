@@ -4,7 +4,7 @@
 
 ## Controls
 
-### cp-1: Policy and Procedures
+### {cp-01 cp %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, cp-1_prm_1 }}:
 
@@ -72,7 +72,7 @@ Organizational personnel with contingency planning responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### cp-2: Contingency Plan
+### {cp-02 cp %!s(int=2) %!s(int=0)}: Contingency Plan
 
 Develop a contingency plan for the system that:
 
@@ -180,7 +180,7 @@ Organizational processes for contingency plan development, review, update, and p
 
 mechanisms for developing, reviewing, updating, and/or protecting the contingency plan
 
-### cp-3: Contingency Training
+### {cp-03 cp %!s(int=3) %!s(int=0)}: Contingency Training
 
 Provide contingency training to system users consistent with assigned roles and responsibilities:
 
@@ -226,7 +226,7 @@ organizational personnel with information security responsibilities
 
 Organizational processes for contingency training
 
-### cp-4: Contingency Plan Testing
+### {cp-04 cp %!s(int=4) %!s(int=0)}: Contingency Plan Testing
 
 Test the contingency plan for the system {{ insert: param, cp-04_odp.01 }} using the following tests to determine the effectiveness of the plan and the readiness to execute the plan: {{ insert: param, cp-4_prm_2 }}.
 
@@ -268,7 +268,7 @@ Organizational processes for contingency plan testing
 
 mechanisms supporting the contingency plan and/or contingency plan testing
 
-### cp-9: System Backup
+### {cp-09 cp %!s(int=9) %!s(int=0)}: System Backup
 
 Conduct backups of user-level information contained in {{ insert: param, cp-09_odp.01 }} {{ insert: param, cp-09_odp.02 }};
 
@@ -316,7 +316,7 @@ Organizational processes for conducting system backups
 
 mechanisms supporting and/or implementing system backups
 
-### cp-10: System Recovery and Reconstitution
+### {cp-10 cp %!s(int=10) %!s(int=0)}: System Recovery and Reconstitution
 
 Provide for the recovery and reconstitution of the system to a known state within {{ insert: param, cp-10_prm_1 }} after a disruption, compromise, or failure.
 

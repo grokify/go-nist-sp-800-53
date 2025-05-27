@@ -4,7 +4,7 @@
 
 ## Controls
 
-### sa-1: Policy and Procedures
+### {sa-01 sa %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, sa-1_prm_1 }}:
 
@@ -82,7 +82,7 @@ organizational personnel with information security and privacy responsibilities
 
 organizational personnel with supply chain risk management responsibilities
 
-### sa-2: Allocation of Resources
+### {sa-02 sa %!s(int=2) %!s(int=0)}: Allocation of Resources
 
 Determine the high-level information security and privacy requirements for the system or system service in mission and business process planning;
 
@@ -136,7 +136,7 @@ organizational processes for capital planning, programming, and budgeting
 
 mechanisms supporting and/or implementing organizational capital planning, programming, and budgeting
 
-### sa-3: System Development Life Cycle
+### {sa-03 sa %!s(int=3) %!s(int=0)}: System Development Life Cycle
 
 Acquire, develop, and manage the system using {{ insert: param, sa-03_odp }} that incorporates information security and privacy considerations;
 
@@ -206,7 +206,7 @@ organizational processes for integrating information security and privacy and su
 
 mechanisms supporting and/or implementing the system development life cycle
 
-### sa-4: Acquisition Process
+### {sa-04 sa %!s(int=4) %!s(int=0)}: Acquisition Process
 
 Include the following requirements, descriptions, and criteria, explicitly or by reference, using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service:
 
@@ -300,7 +300,7 @@ organizational processes for developing acquisition contracts
 
 mechanisms supporting and/or implementing acquisitions and the inclusion of security and privacy requirements in contracts
 
-### sa-4.10: Use of Approved PIV Products
+### {sa-04.10 sa %!s(int=4) %!s(int=10)}: Use of Approved PIV Products
 
 Employ only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational systems.
 
@@ -338,7 +338,7 @@ organizational personnel with information security responsibilities
 
 Organizational processes for selecting and employing FIPS 201-approved products
 
-### sa-5: System Documentation
+### {sa-05 sa %!s(int=5) %!s(int=0)}: System Documentation
 
 Obtain or develop administrator documentation for the system, system component, or system service that describes:
 
@@ -440,7 +440,7 @@ system developers
 
 Organizational processes for obtaining, protecting, and distributing system administrator and user documentation
 
-### sa-8: Security and Privacy Engineering Principles
+### {sa-08 sa %!s(int=8) %!s(int=0)}: Security and Privacy Engineering Principles
 
 Apply the following systems security and privacy engineering principles in the specification, design, development, implementation, and modification of the system and system components: {{ insert: param, sa-8_prm_1 }}.
 
@@ -504,7 +504,7 @@ Organizational processes for applying security and privacy engineering principle
 
 mechanisms supporting the application of security and privacy engineering principles in system specification, design, development, implementation, and modification
 
-### sa-9: External System Services
+### {sa-09 sa %!s(int=9) %!s(int=0)}: External System Services
 
 Require that providers of external system services comply with organizational security and privacy requirements and employ the following controls: {{ insert: param, sa-09_odp.01 }};
 
@@ -566,7 +566,7 @@ Organizational processes for monitoring security and privacy control compliance 
 
 mechanisms for monitoring security and privacy control compliance by external service providers on an ongoing basis
 
-### sa-22: Unsupported System Components
+### {sa-22 sa %!s(int=22) %!s(int=0)}: Unsupported System Components
 
 Replace system components when support for the components is no longer available from the developer, vendor, or manufacturer; or
 

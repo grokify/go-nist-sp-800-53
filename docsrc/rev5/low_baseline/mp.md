@@ -4,7 +4,7 @@
 
 ## Controls
 
-### mp-1: Policy and Procedures
+### {mp-01 mp %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, mp-1_prm_1 }}:
 
@@ -74,7 +74,7 @@ Organizational personnel with media protection responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### mp-2: Media Access
+### {mp-02 mp %!s(int=2) %!s(int=0)}: Media Access
 
 Restrict access to {{ insert: param, mp-2_prm_1 }} to {{ insert: param, mp-2_prm_2 }}.
 
@@ -110,7 +110,7 @@ Organizational processes for restricting information media
 
 mechanisms supporting and/or implementing media access restrictions
 
-### mp-6: Media Sanitization
+### {mp-06 mp %!s(int=6) %!s(int=0)}: Media Sanitization
 
 Sanitize {{ insert: param, mp-6_prm_1 }} prior to disposal, release out of organizational control, or release for reuse using {{ insert: param, mp-6_prm_2 }} ; and
 
@@ -162,7 +162,7 @@ Organizational processes for media sanitization
 
 mechanisms supporting and/or implementing media sanitization
 
-### mp-7: Media Use
+### {mp-07 mp %!s(int=7) %!s(int=0)}: Media Use
 
  {{ insert: param, mp-07_odp.02 }} the use of {{ insert: param, mp-07_odp.01 }} on {{ insert: param, mp-07_odp.03 }} using {{ insert: param, mp-07_odp.04 }} ; and
 

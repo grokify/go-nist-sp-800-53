@@ -4,7 +4,7 @@
 
 ## Controls
 
-### ia-1: Policy and Procedures
+### {ia-01 ia %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, ia-1_prm_1 }}:
 
@@ -76,7 +76,7 @@ Organizational personnel with identification and authentication responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### ia-2: Identification and Authentication (Organizational Users)
+### {ia-02 ia %!s(int=2) %!s(int=0)}: Identification and Authentication (Organizational Users)
 
 Uniquely identify and authenticate organizational users and associate that unique identification with processes acting on behalf of those users.
 
@@ -118,7 +118,7 @@ Organizational processes for uniquely identifying and authenticating users
 
 mechanisms supporting and/or implementing identification and authentication capabilities
 
-### ia-2.1: Multi-factor Authentication to Privileged Accounts
+### {ia-02.01 ia %!s(int=2) %!s(int=1)}: Multi-factor Authentication to Privileged Accounts
 
 Implement multi-factor authentication for access to privileged accounts.
 
@@ -154,7 +154,7 @@ system developers
 
 Mechanisms supporting and/or implementing a multi-factor authentication capability
 
-### ia-2.2: Multi-factor Authentication to Non-privileged Accounts
+### {ia-02.02 ia %!s(int=2) %!s(int=2)}: Multi-factor Authentication to Non-privileged Accounts
 
 Implement multi-factor authentication for access to non-privileged accounts.
 
@@ -190,7 +190,7 @@ system developers
 
 Mechanisms supporting and/or implementing a multi-factor authentication capability
 
-### ia-2.8: Access to Accounts — Replay Resistant
+### {ia-02.08 ia %!s(int=2) %!s(int=8)}: Access to Accounts — Replay Resistant
 
 Implement replay-resistant authentication mechanisms for access to {{ insert: param, ia-02.08_odp }}.
 
@@ -228,7 +228,7 @@ Mechanisms supporting and/or implementing identification and authentication capa
 
 Mechanisms supporting and/or implementing replay-resistant authentication mechanisms
 
-### ia-2.12: Acceptance of PIV Credentials
+### {ia-02.12 ia %!s(int=2) %!s(int=12)}: Acceptance of PIV Credentials
 
 Accept and electronically verify Personal Identity Verification-compliant credentials.
 
@@ -268,7 +268,7 @@ system developers
 
 Mechanisms supporting and/or implementing acceptance and verification of PIV credentials
 
-### ia-4: Identifier Management
+### {ia-04 ia %!s(int=4) %!s(int=0)}: Identifier Management
 
 Manage system identifiers by:
 
@@ -318,7 +318,7 @@ system developers
 
 Mechanisms supporting and/or implementing identifier management
 
-### ia-5: Authenticator Management
+### {ia-05 ia %!s(int=5) %!s(int=0)}: Authenticator Management
 
 Manage system authenticators by:
 
@@ -390,7 +390,7 @@ system/network administrators
 
 Mechanisms supporting and/or implementing authenticator management capability
 
-### ia-5.1: Password-based Authentication
+### {ia-05.01 ia %!s(int=5) %!s(int=1)}: Password-based Authentication
 
 For password-based authentication:
 
@@ -454,7 +454,7 @@ system developers
 
 Mechanisms supporting and/or implementing password-based authenticator management capability
 
-### ia-6: Authentication Feedback
+### {ia-06 ia %!s(int=6) %!s(int=0)}: Authentication Feedback
 
 Obscure feedback of authentication information during the authentication process to protect the information from possible exploitation and use by unauthorized individuals.
 
@@ -484,7 +484,7 @@ system developers
 
 Mechanisms supporting and/or implementing the obscuring of feedback of authentication information during authentication
 
-### ia-7: Cryptographic Module Authentication
+### {ia-07 ia %!s(int=7) %!s(int=0)}: Cryptographic Module Authentication
 
 Implement mechanisms for authentication to a cryptographic module that meet the requirements of applicable laws, executive orders, directives, policies, regulations, standards, and guidelines for such authentication.
 
@@ -516,7 +516,7 @@ system developers
 
 Mechanisms supporting and/or implementing cryptographic module authentication
 
-### ia-8: Identification and Authentication (Non-organizational Users)
+### {ia-08 ia %!s(int=8) %!s(int=0)}: Identification and Authentication (Non-organizational Users)
 
 Uniquely identify and authenticate non-organizational users or processes acting on behalf of non-organizational users.
 
@@ -552,7 +552,7 @@ organizational personnel with account management responsibilities
 
 Mechanisms supporting and/or implementing identification and authentication capabilities
 
-### ia-8.1: Acceptance of PIV Credentials from Other Agencies
+### {ia-08.01 ia %!s(int=8) %!s(int=1)}: Acceptance of PIV Credentials from Other Agencies
 
 Accept and electronically verify Personal Identity Verification-compliant credentials from other federal agencies.
 
@@ -596,7 +596,7 @@ Mechanisms supporting and/or implementing identification and authentication capa
 
 mechanisms that accept and verify PIV credentials
 
-### ia-8.2: Acceptance of External Authenticators
+### {ia-08.02 ia %!s(int=8) %!s(int=2)}: Acceptance of External Authenticators
 
 Accept only external authenticators that are NIST-compliant; and
 
@@ -646,7 +646,7 @@ Mechanisms supporting and/or implementing identification and authentication capa
 
 mechanisms that accept external credentials
 
-### ia-8.4: Use of Defined Profiles
+### {ia-08.04 ia %!s(int=8) %!s(int=4)}: Use of Defined Profiles
 
 Conform to the following profiles for identity management {{ insert: param, ia-08.04_odp }}.
 
@@ -680,7 +680,7 @@ Mechanisms supporting and/or implementing identification and authentication capa
 
 mechanisms supporting and/or implementing conformance with profiles
 
-### ia-11: Re-authentication
+### {ia-11 ia %!s(int=11) %!s(int=0)}: Re-authentication
 
 Require users to re-authenticate when {{ insert: param, ia-11_odp }}.
 

@@ -4,7 +4,7 @@
 
 ## Controls
 
-### mp-1: Policy and Procedures
+### {mp-01 mp %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, mp-1_prm_1 }}:
 
@@ -74,7 +74,7 @@ Organizational personnel with media protection responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### mp-2: Media Access
+### {mp-02 mp %!s(int=2) %!s(int=0)}: Media Access
 
 Restrict access to {{ insert: param, mp-2_prm_1 }} to {{ insert: param, mp-2_prm_2 }}.
 
@@ -110,7 +110,7 @@ Organizational processes for restricting information media
 
 mechanisms supporting and/or implementing media access restrictions
 
-### mp-3: Media Marking
+### {mp-03 mp %!s(int=3) %!s(int=0)}: Media Marking
 
 Mark system media indicating the distribution limitations, handling caveats, and applicable security markings (if any) of the information; and
 
@@ -144,7 +144,7 @@ Organizational processes for marking information media
 
 mechanisms supporting and/or implementing media marking
 
-### mp-4: Media Storage
+### {mp-04 mp %!s(int=4) %!s(int=0)}: Media Storage
 
 Physically control and securely store {{ insert: param, mp-4_prm_1 }} within {{ insert: param, mp-4_prm_2 }} ; and
 
@@ -186,7 +186,7 @@ Organizational processes for storing information media
 
 mechanisms supporting and/or implementing secure media storage/media protection
 
-### mp-5: Media Transport
+### {mp-05 mp %!s(int=5) %!s(int=0)}: Media Transport
 
 Protect and control {{ insert: param, mp-05_odp.01 }} during transport outside of controlled areas using {{ insert: param, mp-5_prm_2 }};
 
@@ -238,7 +238,7 @@ Organizational processes for storing information media
 
 mechanisms supporting and/or implementing media storage/media protection
 
-### mp-6: Media Sanitization
+### {mp-06 mp %!s(int=6) %!s(int=0)}: Media Sanitization
 
 Sanitize {{ insert: param, mp-6_prm_1 }} prior to disposal, release out of organizational control, or release for reuse using {{ insert: param, mp-6_prm_2 }} ; and
 
@@ -290,7 +290,7 @@ Organizational processes for media sanitization
 
 mechanisms supporting and/or implementing media sanitization
 
-### mp-7: Media Use
+### {mp-07 mp %!s(int=7) %!s(int=0)}: Media Use
 
  {{ insert: param, mp-07_odp.02 }} the use of {{ insert: param, mp-07_odp.01 }} on {{ insert: param, mp-07_odp.03 }} using {{ insert: param, mp-07_odp.04 }} ; and
 

@@ -4,7 +4,7 @@
 
 ## Controls
 
-### au-1: Policy and Procedures
+### {au-01 au %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, au-1_prm_1 }}:
 
@@ -72,7 +72,7 @@ Organizational personnel with audit and accountability responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### au-2: Event Logging
+### {au-02 au %!s(int=2) %!s(int=0)}: Event Logging
 
 Identify the types of events that the system is capable of logging in support of the audit function: {{ insert: param, au-02_odp.01 }};
 
@@ -128,7 +128,7 @@ system/network administrators
 
 Mechanisms implementing system auditing
 
-### au-3: Content of Audit Records
+### {au-03 au %!s(int=3) %!s(int=0)}: Content of Audit Records
 
 Ensure that audit records contain information that establishes the following:
 
@@ -186,7 +186,7 @@ system/network administrators
 
 Mechanisms implementing system auditing of auditable events
 
-### au-4: Audit Log Storage Capacity
+### {au-04 au %!s(int=4) %!s(int=0)}: Audit Log Storage Capacity
 
 Allocate audit log storage capacity to accommodate {{ insert: param, au-04_odp }}.
 
@@ -224,7 +224,7 @@ system developers
 
 Audit record storage capacity and related configuration settings
 
-### au-5: Response to Audit Logging Process Failures
+### {au-05 au %!s(int=5) %!s(int=0)}: Response to Audit Logging Process Failures
 
 Alert {{ insert: param, au-05_odp.01 }} within {{ insert: param, au-05_odp.02 }} in the event of an audit logging process failure; and
 
@@ -264,7 +264,7 @@ system developers
 
 Mechanisms implementing system response to audit processing failures
 
-### au-6: Audit Record Review, Analysis, and Reporting
+### {au-06 au %!s(int=6) %!s(int=0)}: Audit Record Review, Analysis, and Reporting
 
 Review and analyze system audit records {{ insert: param, au-06_odp.01 }} for indications of {{ insert: param, au-06_odp.02 }} and the potential impact of the inappropriate or unusual activity;
 
@@ -298,7 +298,7 @@ Organizational personnel with audit review, analysis, and reporting responsibili
 
 organizational personnel with information security and privacy responsibilities
 
-### au-8: Time Stamps
+### {au-08 au %!s(int=8) %!s(int=0)}: Time Stamps
 
 Use internal system clocks to generate time stamps for audit records; and
 
@@ -334,7 +334,7 @@ system developers
 
 Mechanisms implementing timestamp generation
 
-### au-9: Protection of Audit Information
+### {au-09 au %!s(int=9) %!s(int=0)}: Protection of Audit Information
 
 Protect audit information and audit logging tools from unauthorized access, modification, and deletion; and
 
@@ -376,7 +376,7 @@ system developers
 
 Mechanisms implementing audit information protection
 
-### au-11: Audit Record Retention
+### {au-11 au %!s(int=11) %!s(int=0)}: Audit Record Retention
 
 Retain audit records for {{ insert: param, au-11_odp }} to provide support for after-the-fact investigations of incidents and to meet regulatory and organizational information retention requirements.
 
@@ -410,7 +410,7 @@ organizational personnel with information security and privacy responsibilities
 
 system/network administrators
 
-### au-12: Audit Record Generation
+### {au-12 au %!s(int=12) %!s(int=0)}: Audit Record Generation
 
 Provide audit record generation capability for the event types the system is capable of auditing as defined in [AU-2a](#au-2_smt.a) on {{ insert: param, au-12_odp.01 }};
 

@@ -4,7 +4,7 @@
 
 ## Controls
 
-### sc-1: Policy and Procedures
+### {sc-01 sc %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, sc-1_prm_1 }}:
 
@@ -78,7 +78,7 @@ Organizational personnel with system and communications protection responsibilit
 
 organizational personnel with information security and privacy responsibilities
 
-### sc-5: Denial-of-service Protection
+### {sc-05 sc %!s(int=5) %!s(int=0)}: Denial-of-service Protection
 
  {{ insert: param, sc-05_odp.02 }} the effects of the following types of denial-of-service events: {{ insert: param, sc-05_odp.01 }} ; and
 
@@ -118,7 +118,7 @@ system developer
 
 Mechanisms protecting against or limiting the effects of denial-of-service attacks
 
-### sc-7: Boundary Protection
+### {sc-07 sc %!s(int=7) %!s(int=0)}: Boundary Protection
 
 Monitor and control communications at the external managed interfaces to the system and at key internal managed interfaces within the system;
 
@@ -170,7 +170,7 @@ organizational personnel with boundary protection responsibilities
 
 Mechanisms implementing boundary protection capabilities
 
-### sc-12: Cryptographic Key Establishment and Management
+### {sc-12 sc %!s(int=12) %!s(int=0)}: Cryptographic Key Establishment and Management
 
 Establish and manage cryptographic keys when cryptography is employed within the system in accordance with the following key management requirements: {{ insert: param, sc-12_odp }}.
 
@@ -204,7 +204,7 @@ organizational personnel with responsibilities for cryptographic key establishme
 
 Mechanisms supporting and/or implementing cryptographic key establishment and management
 
-### sc-13: Cryptographic Protection
+### {sc-13 sc %!s(int=13) %!s(int=0)}: Cryptographic Protection
 
 Determine the {{ insert: param, sc-13_odp.01 }} ; and
 
@@ -244,7 +244,7 @@ organizational personnel with responsibilities for cryptographic protection
 
 Mechanisms supporting and/or implementing cryptographic protection
 
-### sc-15: Collaborative Computing Devices and Applications
+### {sc-15 sc %!s(int=15) %!s(int=0)}: Collaborative Computing Devices and Applications
 
 Prohibit remote activation of collaborative computing devices and applications with the following exceptions: {{ insert: param, sc-15_odp }} ; and
 
@@ -284,7 +284,7 @@ Mechanisms supporting and/or implementing the management of remote activation of
 
 mechanisms providing an indication of use of collaborative computing devices
 
-### sc-20: Secure Name/Address Resolution Service (Authoritative Source)
+### {sc-20 sc %!s(int=20) %!s(int=0)}: Secure Name/Address Resolution Service (Authoritative Source)
 
 Provide additional data origin authentication and integrity verification artifacts along with the authoritative name resolution data the system returns in response to external name/address resolution queries; and
 
@@ -320,7 +320,7 @@ organizational personnel with responsibilities for managing DNS
 
 Mechanisms supporting and/or implementing secure name/address resolution services
 
-### sc-21: Secure Name/Address Resolution Service (Recursive or Caching Resolver)
+### {sc-21 sc %!s(int=21) %!s(int=0)}: Secure Name/Address Resolution Service (Recursive or Caching Resolver)
 
 Request and perform data origin authentication and data integrity verification on the name/address resolution responses the system receives from authoritative sources.
 
@@ -356,7 +356,7 @@ organizational personnel with responsibilities for managing DNS
 
 Mechanisms supporting and/or implementing data origin authentication and data integrity verification for name/address resolution services
 
-### sc-22: Architecture and Provisioning for Name/Address Resolution Service
+### {sc-22 sc %!s(int=22) %!s(int=0)}: Architecture and Provisioning for Name/Address Resolution Service
 
 Ensure the systems that collectively provide name/address resolution service for an organization are fault-tolerant and implement internal and external role separation.
 
@@ -394,7 +394,7 @@ organizational personnel with responsibilities for managing DNS
 
 Mechanisms supporting and/or implementing name/address resolution services for fault tolerance and role separation
 
-### sc-39: Process Isolation
+### {sc-39 sc %!s(int=39) %!s(int=0)}: Process Isolation
 
 Maintain a separate execution domain for each executing system process.
 

@@ -4,7 +4,7 @@
 
 ## Controls
 
-### cp-1: Policy and Procedures
+### {cp-01 cp %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, cp-1_prm_1 }}:
 
@@ -72,7 +72,7 @@ Organizational personnel with contingency planning responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### cp-2: Contingency Plan
+### {cp-02 cp %!s(int=2) %!s(int=0)}: Contingency Plan
 
 Develop a contingency plan for the system that:
 
@@ -180,7 +180,7 @@ Organizational processes for contingency plan development, review, update, and p
 
 mechanisms for developing, reviewing, updating, and/or protecting the contingency plan
 
-### cp-2.1: Coordinate with Related Plans
+### {cp-02.01 cp %!s(int=2) %!s(int=1)}: Coordinate with Related Plans
 
 Coordinate contingency plan development with organizational elements responsible for related plans.
 
@@ -220,7 +220,7 @@ organizational personnel with information security responsibilities
 
 personnel with responsibility for related plans
 
-### cp-2.3: Resume Mission and Business Functions
+### {cp-02.03 cp %!s(int=2) %!s(int=3)}: Resume Mission and Business Functions
 
 Plan for the resumption of {{ insert: param, cp-02.03_odp.01 }} mission and business functions within {{ insert: param, cp-02.03_odp.02 }} of contingency plan activation.
 
@@ -254,7 +254,7 @@ organizational personnel with knowledge of requirements for mission and business
 
 Organizational processes for resumption of missions and business functions
 
-### cp-2.8: Identify Critical Assets
+### {cp-02.08 cp %!s(int=2) %!s(int=8)}: Identify Critical Assets
 
 Identify critical system assets supporting {{ insert: param, cp-02.08_odp }} mission and business functions.
 
@@ -280,7 +280,7 @@ organizational personnel with knowledge of requirements for mission and business
 
 organizational personnel with information security responsibilities
 
-### cp-3: Contingency Training
+### {cp-03 cp %!s(int=3) %!s(int=0)}: Contingency Training
 
 Provide contingency training to system users consistent with assigned roles and responsibilities:
 
@@ -326,7 +326,7 @@ organizational personnel with information security responsibilities
 
 Organizational processes for contingency training
 
-### cp-4: Contingency Plan Testing
+### {cp-04 cp %!s(int=4) %!s(int=0)}: Contingency Plan Testing
 
 Test the contingency plan for the system {{ insert: param, cp-04_odp.01 }} using the following tests to determine the effectiveness of the plan and the readiness to execute the plan: {{ insert: param, cp-4_prm_2 }}.
 
@@ -368,7 +368,7 @@ Organizational processes for contingency plan testing
 
 mechanisms supporting the contingency plan and/or contingency plan testing
 
-### cp-4.1: Coordinate with Related Plans
+### {cp-04.01 cp %!s(int=4) %!s(int=1)}: Coordinate with Related Plans
 
 Coordinate contingency plan testing with organizational elements responsible for related plans.
 
@@ -410,7 +410,7 @@ personnel with responsibilities for related plans
 
 organizational personnel with information security responsibilities
 
-### cp-6: Alternate Storage Site
+### {cp-06 cp %!s(int=6) %!s(int=0)}: Alternate Storage Site
 
 Establish an alternate storage site, including necessary agreements to permit the storage and retrieval of system backup information; and
 
@@ -448,7 +448,7 @@ Organizational processes for storing and retrieving system backup information at
 
 mechanisms supporting and/or implementing the storage and retrieval of system backup information at the alternate storage site
 
-### cp-6.1: Separation from Primary Site
+### {cp-06.01 cp %!s(int=6) %!s(int=1)}: Separation from Primary Site
 
 Identify an alternate storage site that is sufficiently separated from the primary storage site to reduce susceptibility to the same threats.
 
@@ -478,7 +478,7 @@ organizational personnel with system recovery responsibilities
 
 organizational personnel with information security responsibilities
 
-### cp-6.3: Accessibility
+### {cp-06.03 cp %!s(int=6) %!s(int=3)}: Accessibility
 
 Identify potential accessibility problems to the alternate storage site in the event of an area-wide disruption or disaster and outline explicit mitigation actions.
 
@@ -512,7 +512,7 @@ organizational personnel with system recovery responsibilities
 
 organizational personnel with information security responsibilities
 
-### cp-7: Alternate Processing Site
+### {cp-07 cp %!s(int=7) %!s(int=0)}: Alternate Processing Site
 
 Establish an alternate processing site, including necessary agreements to permit the transfer and resumption of {{ insert: param, cp-07_odp.01 }} for essential mission and business functions within {{ insert: param, cp-07_odp.02 }} when the primary processing capabilities are unavailable;
 
@@ -558,7 +558,7 @@ Organizational processes for recovery at the alternate site
 
 mechanisms supporting and/or implementing recovery at the alternate processing site
 
-### cp-7.1: Separation from Primary Site
+### {cp-07.01 cp %!s(int=7) %!s(int=1)}: Separation from Primary Site
 
 Identify an alternate processing site that is sufficiently separated from the primary processing site to reduce susceptibility to the same threats.
 
@@ -588,7 +588,7 @@ organizational personnel with system recovery responsibilities
 
 organizational personnel with information security responsibilities
 
-### cp-7.2: Accessibility
+### {cp-07.02 cp %!s(int=7) %!s(int=2)}: Accessibility
 
 Identify potential accessibility problems to alternate processing sites in the event of an area-wide disruption or disaster and outlines explicit mitigation actions.
 
@@ -620,7 +620,7 @@ organizational personnel with system recovery responsibilities
 
 organizational personnel with information security responsibilities
 
-### cp-7.3: Priority of Service
+### {cp-07.03 cp %!s(int=7) %!s(int=3)}: Priority of Service
 
 Develop alternate processing site agreements that contain priority-of-service provisions in accordance with availability requirements (including recovery time objectives).
 
@@ -650,7 +650,7 @@ organizational personnel with information security responsibilities
 
 organizational personnel with responsibility for acquisitions/contractual agreements
 
-### cp-8: Telecommunications Services
+### {cp-08 cp %!s(int=8) %!s(int=0)}: Telecommunications Services
 
 Establish alternate telecommunications services, including necessary agreements to permit the resumption of {{ insert: param, cp-08_odp.01 }} for essential mission and business functions within {{ insert: param, cp-08_odp.02 }} when the primary telecommunications capabilities are unavailable at either the primary or alternate processing or storage sites.
 
@@ -682,7 +682,7 @@ organizational personnel with responsibility for acquisitions/contractual agreem
 
 Mechanisms supporting telecommunications
 
-### cp-8.1: Priority of Service Provisions
+### {cp-08.01 cp %!s(int=8) %!s(int=1)}: Priority of Service Provisions
 
 Develop primary and alternate telecommunications service agreements that contain priority-of-service provisions in accordance with availability requirements (including recovery time objectives); and
 
@@ -720,7 +720,7 @@ organizational personnel with responsibility for acquisitions/contractual agreem
 
 Mechanisms supporting telecommunications
 
-### cp-8.2: Single Points of Failure
+### {cp-08.02 cp %!s(int=8) %!s(int=2)}: Single Points of Failure
 
 Obtain alternate telecommunications services to reduce the likelihood of sharing a single point of failure with primary telecommunications services.
 
@@ -748,7 +748,7 @@ primary and alternate telecommunications service providers
 
 organizational personnel with information security responsibilities
 
-### cp-9: System Backup
+### {cp-09 cp %!s(int=9) %!s(int=0)}: System Backup
 
 Conduct backups of user-level information contained in {{ insert: param, cp-09_odp.01 }} {{ insert: param, cp-09_odp.02 }};
 
@@ -796,7 +796,7 @@ Organizational processes for conducting system backups
 
 mechanisms supporting and/or implementing system backups
 
-### cp-9.1: Testing for Reliability and Integrity
+### {cp-09.01 cp %!s(int=9) %!s(int=1)}: Testing for Reliability and Integrity
 
 Test backup information {{ insert: param, cp-9.1_prm_1 }} to verify media reliability and information integrity.
 
@@ -830,7 +830,7 @@ Organizational processes for conducting system backups
 
 mechanisms supporting and/or implementing system backups
 
-### cp-9.8: Cryptographic Protection
+### {cp-09.08 cp %!s(int=9) %!s(int=8)}: Cryptographic Protection
 
 Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of {{ insert: param, cp-09.08_odp }}.
 
@@ -858,7 +858,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms supporting and/or implementing cryptographic protection of backup information
 
-### cp-10: System Recovery and Reconstitution
+### {cp-10 cp %!s(int=10) %!s(int=0)}: System Recovery and Reconstitution
 
 Provide for the recovery and reconstitution of the system to a known state within {{ insert: param, cp-10_prm_1 }} after a disruption, compromise, or failure.
 
@@ -896,7 +896,7 @@ Organizational processes implementing system recovery and reconstitution operati
 
 mechanisms supporting and/or implementing system recovery and reconstitution operations
 
-### cp-10.2: Transaction Recovery
+### {cp-10.02 cp %!s(int=10) %!s(int=2)}: Transaction Recovery
 
 Implement transaction recovery for systems that are transaction-based.
 

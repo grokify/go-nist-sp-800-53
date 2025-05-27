@@ -4,7 +4,7 @@
 
 ## Controls
 
-### cm-1: Policy and Procedures
+### {cm-01 cm %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, cm-1_prm_1 }}:
 
@@ -80,7 +80,7 @@ Organizational personnel with configuration management responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### cm-2: Baseline Configuration
+### {cm-02 cm %!s(int=2) %!s(int=0)}: Baseline Configuration
 
 Develop, document, and maintain under configuration control, a current baseline configuration of the system; and
 
@@ -138,7 +138,7 @@ Organizational processes for managing baseline configurations
 
 mechanisms supporting configuration control of the baseline configuration
 
-### cm-4: Impact Analyses
+### {cm-04 cm %!s(int=4) %!s(int=0)}: Impact Analyses
 
 Analyze changes to the system to determine potential security and privacy impacts prior to change implementation.
 
@@ -192,7 +192,7 @@ Organizational processes for security impact analyses
 
 organizational processes for privacy impact analyses
 
-### cm-5: Access Restrictions for Change
+### {cm-05 cm %!s(int=5) %!s(int=0)}: Access Restrictions for Change
 
 Define, document, approve, and enforce physical and logical access restrictions associated with changes to the system.
 
@@ -248,7 +248,7 @@ Organizational processes for managing access restrictions to change
 
 mechanisms supporting, implementing, or enforcing access restrictions associated with changes to the system
 
-### cm-6: Configuration Settings
+### {cm-06 cm %!s(int=6) %!s(int=0)}: Configuration Settings
 
 Establish and document configuration settings for components employed within the system that reflect the most restrictive mode consistent with operational requirements using {{ insert: param, cm-06_odp.01 }};
 
@@ -318,7 +318,7 @@ mechanisms that implement, monitor, and/or control system configuration settings
 
 mechanisms that identify and/or document deviations from established configuration settings
 
-### cm-7: Least Functionality
+### {cm-07 cm %!s(int=7) %!s(int=0)}: Least Functionality
 
 Configure the system to provide only {{ insert: param, cm-07_odp.01 }} ; and
 
@@ -368,7 +368,7 @@ Organizational processes prohibiting or restricting functions, ports, protocols,
 
 mechanisms implementing restrictions or prohibition of functions, ports, protocols, software, and/or services
 
-### cm-8: System Component Inventory
+### {cm-08 cm %!s(int=8) %!s(int=0)}: System Component Inventory
 
 Develop and document an inventory of system components that:
 
@@ -428,7 +428,7 @@ Organizational processes for managing the system component inventory
 
 mechanisms supporting and/or implementing system component inventory
 
-### cm-10: Software Usage Restrictions
+### {cm-10 cm %!s(int=10) %!s(int=0)}: Software Usage Restrictions
 
 Use software and associated documentation in accordance with contract agreements and copyright laws;
 
@@ -480,7 +480,7 @@ mechanisms implementing software license tracking
 
 mechanisms implementing and controlling the use of peer-to-peer files sharing technology
 
-### cm-11: User-installed Software
+### {cm-11 cm %!s(int=11) %!s(int=0)}: User-installed Software
 
 Establish {{ insert: param, cm-11_odp.01 }} governing the installation of software by users;
 

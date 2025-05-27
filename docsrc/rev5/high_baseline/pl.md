@@ -4,7 +4,7 @@
 
 ## Controls
 
-### pl-1: Policy and Procedures
+### {pl-01 pl %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, pl-1_prm_1 }}:
 
@@ -72,7 +72,7 @@ Organizational personnel with planning responsibilities
 
 organizational personnel with information security and privacy responsibilities
 
-### pl-2: System Security and Privacy Plans
+### {pl-02 pl %!s(int=2) %!s(int=0)}: System Security and Privacy Plans
 
 Develop security and privacy plans for the system that:
 
@@ -232,7 +232,7 @@ Organizational processes for system security and privacy plan development, revie
 
 mechanisms supporting the system security and privacy plan
 
-### pl-4: Rules of Behavior
+### {pl-04 pl %!s(int=4) %!s(int=0)}: Rules of Behavior
 
 Establish and provide to individuals requiring access to the system, the rules that describe their responsibilities and expected behavior for information and system usage, security, and privacy;
 
@@ -278,7 +278,7 @@ Organizational processes for establishing, reviewing, disseminating, and updatin
 
 mechanisms supporting and/or implementing the establishment, review, dissemination, and update of rules of behavior
 
-### pl-4.1: Social Media and External Site/Application Usage Restrictions
+### {pl-04.01 pl %!s(int=4) %!s(int=1)}: Social Media and External Site/Application Usage Restrictions
 
 Include in the rules of behavior, restrictions on:
 
@@ -318,7 +318,7 @@ Organizational processes for establishing rules of behavior
 
 mechanisms supporting and/or implementing the establishment of rules of behavior
 
-### pl-8: Security and Privacy Architectures
+### {pl-08 pl %!s(int=8) %!s(int=0)}: Security and Privacy Architectures
 
 Develop security and privacy architectures for the system that:
 
@@ -398,7 +398,7 @@ Organizational processes for developing, reviewing, and updating the information
 
 mechanisms supporting and/or implementing the development, review, and update of the information security and privacy architecture
 
-### pl-10: Baseline Selection
+### {pl-10 pl %!s(int=10) %!s(int=0)}: Baseline Selection
 
 Select a control baseline for the system.
 
@@ -450,7 +450,7 @@ organizational personnel with information security and privacy responsibilities
 
 organizational personnel with responsibility for organizational risk management activities
 
-### pl-11: Baseline Tailoring
+### {pl-11 pl %!s(int=11) %!s(int=0)}: Baseline Tailoring
 
 Tailor the selected control baseline by applying specified tailoring actions.
 

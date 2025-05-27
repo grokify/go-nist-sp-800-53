@@ -4,7 +4,7 @@
 
 ## Controls
 
-### ac-1: Policy and Procedures
+### {ac-01 ac %!s(int=1) %!s(int=0)}: Policy and Procedures
 
 Develop, document, and disseminate to {{ insert: param, ac-1_prm_1 }}:
 
@@ -72,7 +72,7 @@ Organizational personnel with access control responsibilities
 
 organizational personnel with information security with information security and privacy responsibilities
 
-### ac-2: Account Management
+### {ac-02 ac %!s(int=2) %!s(int=0)}: Account Management
 
 Define and document the types of accounts allowed and specifically prohibited for use within the system;
 
@@ -218,7 +218,7 @@ Organizational processes for account management on the system
 
 mechanisms for implementing account management
 
-### ac-3: Access Enforcement
+### {ac-03 ac %!s(int=3) %!s(int=0)}: Access Enforcement
 
 Enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.
 
@@ -254,7 +254,7 @@ system developers
 
 Mechanisms implementing access control policy
 
-### ac-7: Unsuccessful Logon Attempts
+### {ac-07 ac %!s(int=7) %!s(int=0)}: Unsuccessful Logon Attempts
 
 Enforce a limit of {{ insert: param, ac-07_odp.01 }} consecutive invalid logon attempts by a user during a {{ insert: param, ac-07_odp.02 }} ; and
 
@@ -288,7 +288,7 @@ system/network administrators
 
 Mechanisms implementing access control policy for unsuccessful logon attempts
 
-### ac-8: System Use Notification
+### {ac-08 ac %!s(int=8) %!s(int=0)}: System Use Notification
 
 Display {{ insert: param, ac-08_odp.01 }} to users before granting access to the system that provides privacy and security notices consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines and state that:
 
@@ -366,7 +366,7 @@ system developers
 
 Mechanisms implementing system use notification
 
-### ac-14: Permitted Actions Without Identification or Authentication
+### {ac-14 ac %!s(int=14) %!s(int=0)}: Permitted Actions Without Identification or Authentication
 
 Identify {{ insert: param, ac-14_odp }} that can be performed on the system without identification or authentication consistent with organizational mission and business functions; and
 
@@ -400,7 +400,7 @@ System/network administrators
 
 organizational personnel with information security responsibilities
 
-### ac-17: Remote Access
+### {ac-17 ac %!s(int=17) %!s(int=0)}: Remote Access
 
 Establish and document usage restrictions, configuration/connection requirements, and implementation guidance for each type of remote access allowed; and
 
@@ -440,7 +440,7 @@ organizational personnel with information security responsibilities
 
 Remote access management capability for the system
 
-### ac-18: Wireless Access
+### {ac-18 ac %!s(int=18) %!s(int=0)}: Wireless Access
 
 Establish configuration requirements, connection requirements, and implementation guidance for each type of wireless access; and
 
@@ -480,7 +480,7 @@ organizational personnel with information security responsibilities
 
 Wireless access management capability for the system
 
-### ac-19: Access Control for Mobile Devices
+### {ac-19 ac %!s(int=19) %!s(int=0)}: Access Control for Mobile Devices
 
 Establish configuration requirements, connection requirements, and implementation guidance for organization-controlled mobile devices, to include when such devices are outside of controlled areas; and
 
@@ -528,7 +528,7 @@ Access control capability for mobile device connections to organizational system
 
 configurations of mobile devices
 
-### ac-20: Use of External Systems
+### {ac-20 ac %!s(int=20) %!s(int=0)}: Use of External Systems
 
  {{ insert: param, ac-20_odp.01 }} , consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems, allowing authorized individuals to:
 
@@ -574,7 +574,7 @@ organizational personnel with information security responsibilities
 
 Mechanisms implementing terms and conditions on the use of external systems
 
-### ac-22: Publicly Accessible Content
+### {ac-22 ac %!s(int=22) %!s(int=0)}: Publicly Accessible Content
 
 Designate individuals authorized to make information publicly accessible;
 
