@@ -7,6 +7,7 @@ import (
 	"strings"
 
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
+	mkdocs "github.com/grokify/go-mkdocs"
 )
 
 type SiteWriter struct{}
@@ -19,17 +20,24 @@ func (sw SiteWriter) WriteMarkdownPagesTiers(baseDir string) error {
 		TierModerateUplift,
 		TierLowBaseline}
 
+	mkdocsTexts := mkdocs.Texts{}
+
 	for _, tierName := range tiers {
-		err := sw.WriteMarkdownPagesTier(baseDir, tierName)
-		if err != nil {
+		if tierMkdocsTexts, err := sw.WriteMarkdownPagesTier(baseDir, tierName); err != nil {
 			return err
+		} else {
+			mkdocsTexts = append(mkdocsTexts, mkdocs.Text{
+				Key:      TierDisplayOrDefault(tierName, tierName),
+				Children: tierMkdocsTexts,
+			})
 		}
 	}
-	return nil
+	return sw.mkdocsWriteTOC(filepath.Join(baseDir, mkdocs.FilenameTOC), mkdocsTexts)
 }
 
-func (sw SiteWriter) WriteMarkdownPagesTier(baseDir string, tierName string) error {
-	tierDir := filepath.Join(baseDir, tierName)
+func (sw SiteWriter) WriteMarkdownPagesTier(baseDir string, tierName string) (mkdocs.Texts, error) {
+	dirTierWrite := filepath.Join(baseDir, "docsrc/rev5", tierName)
+	dirTierMkdocs := filepath.Join("rev5", tierName)
 	var cat *Catalog
 	var idOSCALFilterIncl []string
 	ids := NewControlIDs()
@@ -47,32 +55,60 @@ func (sw SiteWriter) WriteMarkdownPagesTier(baseDir string, tierName string) err
 	case TierLowBaseline:
 		cat = CatalogLowBaseline()
 	default:
-		return fmt.Errorf("tierName not supported (%s)", tierName)
+		return mkdocs.Texts{}, fmt.Errorf("tierName not supported (%s)", tierName)
 	}
-	return sw.writeMarkdownPagesCatalog(tierDir, cat, idOSCALFilterIncl)
+	mkTexts, err := sw.writeMarkdownPagesCatalog(dirTierWrite, dirTierMkdocs, cat, idOSCALFilterIncl)
+	if err != nil {
+		return mkTexts, err
+	}
+	tierIndexFilename := filepath.Join(dirTierWrite, "index.md")
+	return mkTexts, sw.writeMarkdownPageTierIndex(tierIndexFilename, tierName, mkTexts)
 }
 
-func (sw SiteWriter) writeMarkdownPagesCatalog(dir string, cat *Catalog, idOSCALFilterIncl []string) error {
+func (sw SiteWriter) writeMarkdownPageTierIndex(filename string, tierName string, mkTexts mkdocs.Texts) error {
+	var mdContent strings.Builder
+	tierDisplayname := TierDisplayOrDefault(tierName, tierName)
+	ids := NewControlIDs()
+	tierControls, err := ids.Tier(tierName)
+	if err != nil {
+		return err
+	}
+	mdContent.WriteString(fmt.Sprintf("# %s (%d)\n\n", tierDisplayname, len(tierControls)))
+	for _, mktext := range mkTexts {
+		u := mktext.Val
+		_, filenameonly := filepath.Split(u)
+		mdContent.WriteString(fmt.Sprintf("1. [%s](%s)\n", mktext.Key, filenameonly))
+	}
+	return os.WriteFile(filename, []byte(mdContent.String()), 0600)
+}
+
+func (sw SiteWriter) writeMarkdownPagesCatalog(dirWrite, dirMkdocs string, cat *Catalog, idOSCALFilterIncl []string) (mkdocs.Texts, error) {
+	mkdocsTexts := mkdocs.Texts{}
 	for _, group := range *cat.Groups {
 		familyID := group.ID
 		filename := familyID + ".md"
-		fp := filepath.Join(dir, filename)
-		if err := sw.writeMarkdownPagesCatalogGroup(fp, group, idOSCALFilterIncl); err != nil {
-			return err
+		fp := filepath.Join(dirWrite, filename)
+		if toc, err := sw.writeMarkdownPagesCatalogGroup(fp, group, idOSCALFilterIncl); err != nil {
+			return mkdocsTexts, err
+		} else {
+			mkdocsTexts = append(mkdocsTexts, mkdocs.Text{
+				Key: toc,
+				Val: filepath.Join(dirMkdocs, filename),
+			})
 		}
 	}
-	return nil
+	return mkdocsTexts, nil
 }
 
-func (sw SiteWriter) writeMarkdownPagesCatalogGroup(filename string, group oscalTypes.Group, idOSCALFilterIncl []string) error {
-	if mdContent, err := sw.groupToStringsBuilder(group, idOSCALFilterIncl); err != nil {
-		return err
+func (sw SiteWriter) writeMarkdownPagesCatalogGroup(filename string, group oscalTypes.Group, idOSCALFilterIncl []string) (string, error) {
+	if mdContent, familyTOCTitle, err := sw.groupToStringsBuilder(group, idOSCALFilterIncl); err != nil {
+		return "", err
 	} else {
-		return os.WriteFile(filename, []byte(mdContent.String()), 0600)
+		return familyTOCTitle, os.WriteFile(filename, []byte(mdContent.String()), 0600)
 	}
 }
 
-func (sw SiteWriter) groupToStringsBuilder(group oscalTypes.Group, idOSCALFilterIncl []string) (*strings.Builder, error) {
+func (sw SiteWriter) groupToStringsBuilder(group oscalTypes.Group, idOSCALFilterIncl []string) (*strings.Builder, string, error) {
 	familyID := group.ID
 	familyTitle := group.Title
 
@@ -108,9 +144,9 @@ func (sw SiteWriter) groupToStringsBuilder(group oscalTypes.Group, idOSCALFilter
 	for _, control := range controlsFlattened {
 		controlID := control.ID
 		if id, err := ParseID(controlID); err != nil {
-			return nil, err
+			return nil, "", err
 		} else if controlIDNIST, err := id.FormatNIST(); err != nil {
-			return nil, err
+			return nil, "", err
 		} else {
 			controlID = controlIDNIST
 		}
@@ -143,5 +179,6 @@ func (sw SiteWriter) groupToStringsBuilder(group oscalTypes.Group, idOSCALFilter
 		mdContent.WriteString(mdControl + "\n")
 	}
 
-	return &mdContent, nil
+	tocTitle := fmt.Sprintf("%s: %s (%d)", strings.ToUpper(familyID), familyTitle, len(controlsFlattened))
+	return &mdContent, tocTitle, nil
 }
