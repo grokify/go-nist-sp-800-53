@@ -84,3 +84,20 @@ func (ids ControlIDs) Tier(tierName string) ([]string, error) {
 		return []string{}, fmt.Errorf("tier not found (%s)", tierName)
 	}
 }
+
+func (ids ControlIDs) TierMap(tierName string, idType IDType) (map[string]string, error) {
+	idsTier, err := ids.Tier(tierName)
+	if err != nil {
+		return nil, err
+	}
+	if idType != IDTypeOSCAL {
+		if idsWip, err := ParseIDs(idsTier); err != nil {
+			return map[string]string{}, err
+		} else if idsTry, err := idsWip.FormatIDType(idType); err != nil {
+			return map[string]string{}, err
+		} else {
+			idsTier = idsTry
+		}
+	}
+	return sliceToMap(idsTier), nil
+}
