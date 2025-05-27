@@ -1,9 +1,12 @@
 package rev5
 
 import (
+	"errors"
 	"slices"
 	"sort"
 )
+
+var ErrIDTypeNotSupported = errors.New("idtype not supported")
 
 type IDs []ID
 
@@ -80,6 +83,21 @@ func (ids IDs) FormatOSCAL() ([]string, error) {
 
 func (ids IDs) FormatOSCALSort() ([]string, error) {
 	return ids.formatFunc(func(id ID) (string, error) { return id.FormatOSCALSort() })
+}
+
+func (ids IDs) FormatIDType(idType IDType) ([]string, error) {
+	switch idType {
+	case IDTypeNIST:
+		return ids.FormatNIST()
+	case IDTypeNISTSort:
+		return ids.FormatNISTSort()
+	case IDTypeOSCAL:
+		return ids.FormatOSCAL()
+	case IDTypeOSCALSort:
+		return ids.FormatOSCALSort()
+	default:
+		return []string{}, ErrIDTypeNotSupported
+	}
 }
 
 func (ids IDs) formatOSCALSortMap() (map[string]int, error) {
