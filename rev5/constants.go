@@ -25,3 +25,18 @@ func Tiers() []string {
 		TierModerateUplift,
 		TierLowBaseline}
 }
+
+func TierDisplayOrDefault(tierName, def string) string {
+	m := map[string]string{
+		TierHighBaseline:     "High Baseline",
+		TierHighUplift:       "High Uplift",
+		TierModerateBaseline: "Moderate Baseline",
+		TierModerateUplift:   "Moderate Uplift",
+		TierLowBaseline:      "Low Baseline",
+	}
+	if v, ok := m[tierName]; ok {
+		return v
+	} else {
+		return def
+	}
+}
