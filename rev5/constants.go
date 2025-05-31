@@ -15,6 +15,8 @@ const (
 	TierModerateBaseline = "moderate_baseline"
 	TierModerateUplift   = "moderate_uplift"
 	TierLowBaseline      = "low_baseline"
+
+	SepLines = "\n\n"
 )
 
 func Tiers() []string {

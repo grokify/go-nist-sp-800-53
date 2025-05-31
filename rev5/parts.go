@@ -9,10 +9,10 @@ import (
 type Parts []oscalTypes.Part
 
 func (parts Parts) ExtractProseString() string {
-	return strings.Join(parts.ExtractProse(), "\n\n")
+	return strings.TrimSpace(strings.Join(parts.ExtractProseLines(), SepLines))
 }
 
-func (parts Parts) ExtractProse() []string {
+func (parts Parts) ExtractProseLines() []string {
 	var proseList []string
 	for _, part := range parts {
 		if part.Prose != "" {
