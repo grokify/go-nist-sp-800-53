@@ -30,7 +30,7 @@ func (p *Profile) ControlIDsMap() map[string]string {
 func (p *Profile) ControlSet(cat *Catalog) (*ControlSet, error) {
 	cs := ControlSet{}
 	for _, id := range p.ControlIDs() {
-		if ctr, err := cat.Control(id); err != nil {
+		if ctr, err := cat.ControlByOSCALID(id); err != nil {
 			return nil, err
 		} else if err := cs.Add(*ctr); err != nil {
 			return nil, err
