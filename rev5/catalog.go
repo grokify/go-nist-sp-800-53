@@ -11,14 +11,30 @@ import (
 
 type Catalog oscalTypes.Catalog
 
-func (c *Catalog) Control(controlID string) (*Control, error) {
-	controlID = strings.TrimSpace(controlID)
-	if controlID == "" {
+func (c *Catalog) Control(controlID ID) (*Control, error) {
+	if oscalID, err := controlID.FormatOSCAL(); err != nil {
+		return nil, err
+	} else {
+		return c.ControlByOSCALID(oscalID)
+	}
+}
+
+func (c *Catalog) ControlByIDStringAny(controlID string) (*Control, error) {
+	if id, err := ParseID(controlID); err != nil {
+		return nil, err
+	} else {
+		return c.Control(id)
+	}
+}
+
+func (c *Catalog) ControlByOSCALID(controlIDOSCAL string) (*Control, error) {
+	controlIDOSCAL = strings.ToLower(strings.TrimSpace(controlIDOSCAL))
+	if controlIDOSCAL == "" {
 		return nil, errors.New("controlid cannot be empty)")
 	}
 	if c.Controls != nil {
 		for _, ctr := range *c.Controls {
-			if ctr.ID == controlID {
+			if ctr.ID == controlIDOSCAL {
 				c2 := Control(ctr)
 				return &c2, nil
 			}
@@ -28,14 +44,14 @@ func (c *Catalog) Control(controlID string) (*Control, error) {
 		for _, grp := range *c.Groups {
 			if grp.Controls != nil {
 				for _, ctr := range *grp.Controls {
-					if ctr.ID == controlID {
+					if ctr.ID == controlIDOSCAL {
 						c2 := Control(ctr)
 						return &c2, nil
 					}
 					// Control appears most likely to be here, though check above for consistency.
 					if ctr.Controls != nil {
 						for _, ctr2 := range *ctr.Controls {
-							if ctr2.ID == controlID {
+							if ctr2.ID == controlIDOSCAL {
 								c2 := Control(ctr2)
 								return &c2, nil
 							}
@@ -45,13 +61,13 @@ func (c *Catalog) Control(controlID string) (*Control, error) {
 			}
 		}
 	}
-	return nil, fmt.Errorf("control not found for id (%s)", controlID)
+	return nil, fmt.Errorf("control not found for id (%s)", controlIDOSCAL)
 }
 
-func (c *Catalog) ControlSet(controlIDs []string) (*ControlSet, error) {
+func (c *Catalog) ControlSet(controlIDsOSCAL []string) (*ControlSet, error) {
 	cs := ControlSet{}
-	for _, ctrID := range controlIDs {
-		if ctr, err := c.Control(ctrID); err != nil {
+	for _, ctrID := range controlIDsOSCAL {
+		if ctr, err := c.ControlByOSCALID(ctrID); err != nil {
 			return nil, err
 		} else if err := cs.Add(*ctr); err != nil {
 			return nil, err
