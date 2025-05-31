@@ -8,7 +8,7 @@ func TestTierCatalogControls(t *testing.T) {
 	testFnCatalogControls := func(t *testing.T, cat *Catalog, label string, ctrIDs []string) {
 		t.Logf("testing existence of (%d) (%s) controls", len(ctrIDs), label)
 		for _, ctrID := range ctrIDs {
-			ctr, err := cat.Control(ctrID)
+			ctr, err := cat.ControlByIDStringAny(ctrID)
 			if err != nil {
 				t.Errorf("high uplift control not found(\"%s\") error: (%s)", ctrID, err.Error())
 			} else if ctr == nil {
