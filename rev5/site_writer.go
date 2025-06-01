@@ -142,18 +142,23 @@ func (sw SiteWriter) groupToStringsBuilder(group oscalTypes.Group, idOSCALFilter
 	}
 
 	for _, control := range controlsFlattened {
-		controlID := control.ID
-		if id, err := ParseID(controlID); err != nil {
+		ctl := Control(control)
+		var controlIDDisplay string
+		if id, err := ctl.ControlID(); err != nil {
 			return nil, "", err
 		} else if controlIDNIST, err := id.FormatNIST(); err != nil {
 			return nil, "", err
 		} else {
-			controlID = controlIDNIST
+			controlIDDisplay = controlIDNIST
 		}
+
 		controlTitle := control.Title
-		parts := Parts(*control.Parts)
-		controlDesc := parts.ExtractProseString()
-		mdAllControls = append(mdAllControls, fmt.Sprintf("### %s: %s\n\n%s\n", controlID, controlTitle, controlDesc))
+		controlDesc, err := ctl.Description()
+		if err != nil {
+			return nil, "", err
+		}
+
+		mdAllControls = append(mdAllControls, fmt.Sprintf("### %s: %s\n\n%s\n", controlIDDisplay, controlTitle, controlDesc))
 	}
 
 	// Create Markdown content
