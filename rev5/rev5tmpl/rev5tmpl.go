@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-const templateVarInsert = "{{ insert:"
+const TemplateVarInsertPrefix = "{{ insert:"
 
 // tmplRegex matches {{ insert: param, id }} pattern
 var tmplRegex = regexp.MustCompile(`{{\s*insert:\s*(\w+)\s*,\s*([\w\-\.]+)\s*}}`)
@@ -53,7 +53,7 @@ func renderTemplate(input string, paramMap map[string]string) (string, error) {
 			return "[UNSUPPORTED:" + kind + "]"
 		}
 	})
-	if strings.Contains(rendered, templateVarInsert) {
+	if strings.Contains(rendered, TemplateVarInsertPrefix) {
 		return "", errors.New("rev5tmpl: not fully rendered")
 	} else if len(unresolvedIDs) > 0 {
 		return "", fmt.Errorf("unresolved ids count (%d) ids (%v)", len(unresolvedIDs), unresolvedIDs)
@@ -68,7 +68,7 @@ func renderTemplate(input string, paramMap map[string]string) (string, error) {
 // may contain variables as well.
 func renderMap(paramMap map[string]string) (map[string]string, error) {
 	for k, v := range paramMap {
-		if strings.Contains(v, templateVarInsert) {
+		if strings.Contains(v, TemplateVarInsertPrefix) {
 			if vrendered, err := renderTemplate(v, paramMap); err != nil {
 				return map[string]string{}, err
 			} else {

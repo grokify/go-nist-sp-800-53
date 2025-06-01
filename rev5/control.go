@@ -1,10 +1,12 @@
 package rev5
 
 import (
+	"errors"
 	"fmt"
 	"strings"
 
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
+	"github.com/grokify/go-nist-sp-800-53/rev5/rev5tmpl"
 )
 
 type IDType string
@@ -21,16 +23,36 @@ const (
 
 type Control oscalTypes.Control
 
-func (ctr Control) Status() *string {
-	if ctr.Props == nil {
-		return nil
-	}
-	for _, prop := range *ctr.Props {
-		if prop.Name == PropNameStatus {
-			return &prop.Value
+func (ctr Control) ControlID() (ID, error) {
+	return ParseID(ctr.ID)
+}
+
+func (ctr Control) Description() (string, error) {
+	desc := ""
+	if ctr.Parts != nil {
+		parts := Parts(*ctr.Parts)
+		if len(parts) > 0 {
+			desc = strings.TrimSpace(parts.ExtractProseString())
 		}
 	}
-	return nil
+	if desc == "" {
+		return "", nil
+	}
+	paramSet, err := ctr.ParameterSet()
+	if err != nil {
+		return "", err
+	}
+	if strings.Contains(desc, rev5tmpl.TemplateVarInsertPrefix) {
+		if out, err := paramSet.RenderTemplate(desc); err != nil {
+			return "", err
+		} else {
+			desc = out
+		}
+	}
+	if strings.Contains(desc, rev5tmpl.TemplateVarInsertPrefix) {
+		return desc, errors.New("control.Description template not fully rendered")
+	}
+	return desc, nil
 }
 
 // IDForType returns the control id for a requested status type.
@@ -51,7 +73,6 @@ func (ctr Control) IDForType(idtype IDType) (string, error) {
 				}
 			}
 		case IDTypeNIST:
-			fmt.Println("checking.NIST NO SORT")
 			if prop.Name == PropNameLabel && strings.TrimSpace(prop.Class) == "" {
 				if v := strings.TrimSpace(prop.Value); v != "" {
 					return v, nil
@@ -70,4 +91,20 @@ func (ctr Control) IDForType(idtype IDType) (string, error) {
 		}
 	}
 	return "", fmt.Errorf("no key found for found idtype (%s)", string(idtype))
+}
+
+func (ctr Control) ParameterSet() (*ParameterSet, error) {
+	return ParameterSetFromControl(&ctr)
+}
+
+func (ctr Control) Status() *string {
+	if ctr.Props == nil {
+		return nil
+	}
+	for _, prop := range *ctr.Props {
+		if prop.Name == PropNameStatus {
+			return &prop.Value
+		}
+	}
+	return nil
 }
