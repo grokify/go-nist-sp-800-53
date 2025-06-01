@@ -122,8 +122,8 @@ func (set *ParameterSet) ProseForParamID(paramID string) ([]string, error) {
 	return out, nil
 }
 
-// RenderTemplate renders a template string with the paramters in the
-// paramter set.
+// RenderTemplate renders a template string with the parameters in the
+// parameter set.
 func (set *ParameterSet) RenderTemplate(template string) (string, error) {
 	return rev5tmpl.Render(template, set.MapKeyValue())
 }
