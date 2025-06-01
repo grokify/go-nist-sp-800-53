@@ -6,9 +6,9 @@
 
 ### SI-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, si-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, si-01_odp.03 }} system and information integrity policy that:
+organization-level, mission/business process-level, and/or system-level system and information integrity policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the system and information integrity policy and the associated system and information integrity controls;
 
-Designate an {{ insert: param, si-01_odp.04 }} to manage the development, documentation, and dissemination of the system and information integrity policy and procedures; and
+Designate an an official to manage the system and information integrity policy and procedures is defined; to manage the development, documentation, and dissemination of the system and information integrity policy and procedures; and
 
 Review and update the current system and information integrity:
 
-Policy {{ insert: param, si-01_odp.05 }} and following {{ insert: param, si-01_odp.06 }} ; and
+Policy the frequency at which the current system and information integrity policy is reviewed and updated is defined; and following events that would require the current system and information integrity policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, si-01_odp.07 }} and following {{ insert: param, si-01_odp.08 }}.
+Procedures the frequency at which the current system and information integrity procedures are reviewed and updated is defined; and following events that would require the system and information integrity procedures to be reviewed and updated are defined;.
 
 System and information integrity policy and procedures address the controls in the SI family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of system and information integrity policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to system and information integrity policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 a system and information integrity policy is developed and documented;
 
-the system and information integrity policy is disseminated to {{ insert: param, si-01_odp.01 }};
+the system and information integrity policy is disseminated to personnel or roles to whom the system and information integrity policy is to be disseminated is/are defined;;
 
 system and information integrity procedures to facilitate the implementation of the system and information integrity policy and associated system and information integrity controls are developed and documented;
 
-the system and information integrity procedures are disseminated to {{ insert: param, si-01_odp.02 }};
+the system and information integrity procedures are disseminated to personnel or roles to whom the system and information integrity procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, si-01_odp.03 }} system and information integrity policy addresses purpose;
+the organization-level, mission/business process-level, and/or system-level system and information integrity policy addresses purpose;
 
-the {{ insert: param, si-01_odp.03 }} system and information integrity policy addresses scope;
+the organization-level, mission/business process-level, and/or system-level system and information integrity policy addresses scope;
 
-the {{ insert: param, si-01_odp.03 }} system and information integrity policy addresses roles;
+the organization-level, mission/business process-level, and/or system-level system and information integrity policy addresses roles;
 
-the {{ insert: param, si-01_odp.03 }} system and information integrity policy addresses responsibilities;
+the organization-level, mission/business process-level, and/or system-level system and information integrity policy addresses responsibilities;
 
-the {{ insert: param, si-01_odp.03 }} system and information integrity policy addresses management commitment;
+the organization-level, mission/business process-level, and/or system-level system and information integrity policy addresses management commitment;
 
-the {{ insert: param, si-01_odp.03 }} system and information integrity policy addresses coordination among organizational entities;
+the organization-level, mission/business process-level, and/or system-level system and information integrity policy addresses coordination among organizational entities;
 
-the {{ insert: param, si-01_odp.03 }} system and information integrity policy addresses compliance;
+the organization-level, mission/business process-level, and/or system-level system and information integrity policy addresses compliance;
 
-the {{ insert: param, si-01_odp.03 }} system and information integrity policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
+the organization-level, mission/business process-level, and/or system-level system and information integrity policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, si-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the system and information integrity policy and procedures;
+the an official to manage the system and information integrity policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the system and information integrity policy and procedures;
 
-the current system and information integrity policy is reviewed and updated {{ insert: param, si-01_odp.05 }};
+the current system and information integrity policy is reviewed and updated the frequency at which the current system and information integrity policy is reviewed and updated is defined;;
 
-the current system and information integrity policy is reviewed and updated following {{ insert: param, si-01_odp.06 }};
+the current system and information integrity policy is reviewed and updated following events that would require the current system and information integrity policy to be reviewed and updated are defined;;
 
-the current system and information integrity procedures are reviewed and updated {{ insert: param, si-01_odp.07 }};
+the current system and information integrity procedures are reviewed and updated the frequency at which the current system and information integrity procedures are reviewed and updated is defined;;
 
-the current system and information integrity procedures are reviewed and updated following {{ insert: param, si-01_odp.08 }}.
+the current system and information integrity procedures are reviewed and updated following events that would require the system and information integrity procedures to be reviewed and updated are defined;.
 
 System and information integrity policy
 
@@ -80,7 +80,7 @@ Identify, report, and correct system flaws;
 
 Test software and firmware updates related to flaw remediation for effectiveness and potential side effects before installation;
 
-Install security-relevant software and firmware updates within {{ insert: param, si-02_odp }} of the release of the updates; and
+Install security-relevant software and firmware updates within time period within which to install security-relevant software updates after the release of the updates is defined; of the release of the updates; and
 
 Incorporate flaw remediation into the organizational configuration management process.
 
@@ -102,9 +102,9 @@ firmware updates related to flaw remediation are tested for effectiveness before
 
 firmware updates related to flaw remediation are tested for potential side effects before installation;
 
-security-relevant software updates are installed within {{ insert: param, si-02_odp }} of the release of the updates;
+security-relevant software updates are installed within time period within which to install security-relevant software updates after the release of the updates is defined; of the release of the updates;
 
-security-relevant firmware updates are installed within {{ insert: param, si-02_odp }} of the release of the updates;
+security-relevant firmware updates are installed within time period within which to install security-relevant software updates after the release of the updates is defined; of the release of the updates;
 
 flaw remediation is incorporated into the organizational configuration management process.
 
@@ -150,11 +150,11 @@ mechanisms supporting and/or implementing testing software and firmware updates
 
 ### SI-2 (2): Automated Flaw Remediation Status
 
-Determine if system components have applicable security-relevant software and firmware updates installed using {{ insert: param, si-02.02_odp.01 }} {{ insert: param, si-02.02_odp.02 }}.
+Determine if system components have applicable security-relevant software and firmware updates installed using automated mechanisms to determine if applicable security-relevant software and firmware updates are installed on system components are defined; the frequency at which to determine if applicable security-relevant software and firmware updates are installed on system components is defined;.
 
 Automated mechanisms can track and determine the status of known flaws for system components.
 
-system components have applicable security-relevant software and firmware updates installed {{ insert: param, si-02.02_odp.02 }} using {{ insert: param, si-02.02_odp.01 }}.
+system components have applicable security-relevant software and firmware updates installed the frequency at which to determine if applicable security-relevant software and firmware updates are installed on system components is defined; using automated mechanisms to determine if applicable security-relevant software and firmware updates are installed on system components are defined;.
 
 System and information integrity policy
 
@@ -186,15 +186,15 @@ Automated mechanisms used to determine the state of system components with regar
 
 ### SI-3: Malicious Code Protection
 
-Implement {{ insert: param, si-03_odp.01 }} malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code;
+Implement signature-basedand/ornon-signature-based malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code;
 
 Automatically update malicious code protection mechanisms as new releases are available in accordance with organizational configuration management policy and procedures;
 
 Configure malicious code protection mechanisms to:
 
-Perform periodic scans of the system {{ insert: param, si-03_odp.02 }} and real-time scans of files from external sources at {{ insert: param, si-03_odp.03 }} as the files are downloaded, opened, or executed in accordance with organizational policy; and
+Perform periodic scans of the system the frequency at which malicious code protection mechanisms perform scans is defined; and real-time scans of files from external sources at endpointand/ornetwork entry and exit points as the files are downloaded, opened, or executed in accordance with organizational policy; and
 
- {{ insert: param, si-03_odp.04 }} ; and send alert to {{ insert: param, si-03_odp.06 }} in response to malicious code detection; and
+ block malicious code, quarantine malicious code, and/or take action to be taken in response to malicious code detection are defined (if selected); ; and send alert to personnel or roles to be alerted when malicious code is detected is/are defined; in response to malicious code detection; and
 
 Address the receipt of false positives during malicious code detection and eradication and the resulting potential impact on the availability of the system.
 
@@ -204,19 +204,19 @@ Malicious code protection mechanisms include both signature- and nonsignature-ba
 
 In situations where malicious code cannot be detected by detection methods or technologies, organizations rely on other types of controls, including secure coding practices, configuration management and control, trusted procurement processes, and monitoring practices to ensure that software does not perform functions other than the functions intended. Organizations may determine that, in response to the detection of malicious code, different actions may be warranted. For example, organizations can define actions in response to malicious code detection during periodic scans, the detection of malicious downloads, or the detection of maliciousness when attempting to open or execute files.
 
- {{ insert: param, si-03_odp.01 }} malicious code protection mechanisms are implemented at system entry and exit points to detect malicious code;
+signature-basedand/ornon-signature-based malicious code protection mechanisms are implemented at system entry and exit points to detect malicious code;
 
- {{ insert: param, si-03_odp.01 }} malicious code protection mechanisms are implemented at system entry and exit points to eradicate malicious code;
+ signature-basedand/ornon-signature-based malicious code protection mechanisms are implemented at system entry and exit points to eradicate malicious code;
 
 malicious code protection mechanisms are updated automatically as new releases are available in accordance with organizational configuration management policy and procedures;
 
-malicious code protection mechanisms are configured to perform periodic scans of the system {{ insert: param, si-03_odp.02 }};
+malicious code protection mechanisms are configured to perform periodic scans of the system the frequency at which malicious code protection mechanisms perform scans is defined;;
 
-malicious code protection mechanisms are configured to perform real-time scans of files from external sources at {{ insert: param, si-03_odp.03 }} as the files are downloaded, opened, or executed in accordance with organizational policy;
+malicious code protection mechanisms are configured to perform real-time scans of files from external sources at endpointand/ornetwork entry and exit points as the files are downloaded, opened, or executed in accordance with organizational policy;
 
-malicious code protection mechanisms are configured to {{ insert: param, si-03_odp.04 }} in response to malicious code detection;
+malicious code protection mechanisms are configured to block malicious code, quarantine malicious code, and/or take action to be taken in response to malicious code detection are defined (if selected); in response to malicious code detection;
 
-malicious code protection mechanisms are configured to send alerts to {{ insert: param, si-03_odp.06 }} in response to malicious code detection;
+malicious code protection mechanisms are configured to send alerts to personnel or roles to be alerted when malicious code is detected is/are defined; in response to malicious code detection;
 
 the receipt of false positives during malicious code detection and eradication and the resulting potential impact on the availability of the system are addressed.
 
@@ -268,11 +268,11 @@ mechanisms supporting and/or implementing malicious code scanning and subsequent
 
 Monitor the system to detect:
 
-Attacks and indicators of potential attacks in accordance with the following monitoring objectives: {{ insert: param, si-04_odp.01 }} ; and
+Attacks and indicators of potential attacks in accordance with the following monitoring objectives: monitoring objectives to detect attacks and indicators of potential attacks on the system are defined; ; and
 
 Unauthorized local, network, and remote connections;
 
-Identify unauthorized use of the system through the following techniques and methods: {{ insert: param, si-04_odp.02 }};
+Identify unauthorized use of the system through the following techniques and methods: techniques and methods used to identify unauthorized use of the system are defined;;
 
 Invoke internal monitoring capabilities or deploy monitoring devices:
 
@@ -286,13 +286,13 @@ Adjust the level of system monitoring activity when there is a change in risk to
 
 Obtain legal opinion regarding system monitoring activities; and
 
-Provide {{ insert: param, si-04_odp.03 }} to {{ insert: param, si-04_odp.04 }} {{ insert: param, si-04_odp.05 }}.
+Provide system monitoring information to be provided to personnel or roles is defined; to personnel or roles to whom system monitoring information is to be provided is/are defined; as neededand/or a frequency for providing system monitoring to personnel or roles is defined (if selected);.
 
 System monitoring includes external and internal monitoring. External monitoring includes the observation of events occurring at external interfaces to the system. Internal monitoring includes the observation of events occurring within the system. Organizations monitor systems by observing audit activities in real time or by observing other system aspects such as access patterns, characteristics of access, and other actions. The monitoring objectives guide and inform the determination of the events. System monitoring capabilities are achieved through a variety of tools and techniques, including intrusion detection and prevention systems, malicious code protection software, scanning tools, audit record monitoring software, and network monitoring software.
 
 Depending on the security architecture, the distribution and configuration of monitoring devices may impact throughput at key internal and external boundaries as well as at other locations across a network due to the introduction of network throughput latency. If throughput management is needed, such devices are strategically located and deployed as part of an established organization-wide security architecture. Strategic locations for monitoring devices include selected perimeter locations and near key servers and server farms that support critical applications. Monitoring devices are typically employed at the managed interfaces associated with controls [SC-7](#sc-7) and [AC-17](#ac-17) . The information collected is a function of the organizational monitoring objectives and the capability of systems to support such objectives. Specific types of transactions of interest include Hypertext Transfer Protocol (HTTP) traffic that bypasses HTTP proxies. System monitoring is an integral part of organizational continuous monitoring and incident response programs, and output from system monitoring serves as input to those programs. System monitoring requirements, including the need for specific types of system monitoring, may be referenced in other controls (e.g., [AC-2g](#ac-2_smt.g), [AC-2(7)](#ac-2.7), [AC-2(12)(a)](#ac-2.12_smt.a), [AC-17(1)](#ac-17.1), [AU-13](#au-13), [AU-13(1)](#au-13.1), [AU-13(2)](#au-13.2), [CM-3f](#cm-3_smt.f), [CM-6d](#cm-6_smt.d), [MA-3a](#ma-3_smt.a), [MA-4a](#ma-4_smt.a), [SC-5(3)(b)](#sc-5.3_smt.b), [SC-7a](#sc-7_smt.a), [SC-7(24)(b)](#sc-7.24_smt.b), [SC-18b](#sc-18_smt.b), [SC-43b](#sc-43_smt.b) ). Adjustments to levels of system monitoring are based on law enforcement information, intelligence information, or other sources of information. The legality of system monitoring activities is based on applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
 
-the system is monitored to detect attacks and indicators of potential attacks in accordance with {{ insert: param, si-04_odp.01 }};
+the system is monitored to detect attacks and indicators of potential attacks in accordance with monitoring objectives to detect attacks and indicators of potential attacks on the system are defined;;
 
 the system is monitored to detect unauthorized local connections;
 
@@ -300,7 +300,7 @@ the system is monitored to detect unauthorized network connections;
 
 the system is monitored to detect unauthorized remote connections;
 
-unauthorized use of the system is identified through {{ insert: param, si-04_odp.02 }};
+unauthorized use of the system is identified through techniques and methods used to identify unauthorized use of the system are defined;;
 
 internal monitoring capabilities are invoked or monitoring devices are deployed strategically within the system to collect organization-determined essential information;
 
@@ -314,7 +314,7 @@ the level of system monitoring activity is adjusted when there is a change in ri
 
 a legal opinion regarding system monitoring activities is obtained;
 
- {{ insert: param, si-04_odp.03 }} is provided to {{ insert: param, si-04_odp.04 }} {{ insert: param, si-04_odp.05 }}.
+ system monitoring information to be provided to personnel or roles is defined; is provided to personnel or roles to whom system monitoring information is to be provided is/are defined; as neededand/or a frequency for providing system monitoring to personnel or roles is defined (if selected);.
 
 System and information integrity policy
 
@@ -406,7 +406,7 @@ mechanisms/tools supporting and/or implementing an analysis of events
 
 Determine criteria for unusual or unauthorized activities or conditions for inbound and outbound communications traffic;
 
-Monitor inbound and outbound communications traffic {{ insert: param, si-4.4_prm_1 }} for {{ insert: param, si-4.4_prm_2 }}.
+Monitor inbound and outbound communications traffic organization-defined frequency for organization-defined unusual or unauthorized activities or conditions.
 
 Unusual or unauthorized activities or conditions related to system inbound and outbound communications traffic includes internal traffic that indicates the presence of malicious code or unauthorized use of legitimate code or credentials within organizational systems or propagating among system components, signaling to external systems, and the unauthorized exporting of information. Evidence of malicious code or unauthorized use of legitimate code or credentials is used to identify potentially compromised systems or system components.
 
@@ -414,9 +414,9 @@ criteria for unusual or unauthorized activities or conditions for inbound commun
 
 criteria for unusual or unauthorized activities or conditions for outbound communications traffic are defined;
 
-inbound communications traffic is monitored {{ insert: param, si-04.04_odp.01 }} for {{ insert: param, si-04.04_odp.02 }};
+inbound communications traffic is monitored the frequency at which to monitor inbound communications traffic for unusual or unauthorized activities or conditions is defined; for unusual or unauthorized activities or conditions that are to be monitored in inbound communications traffic are defined;;
 
-outbound communications traffic is monitored {{ insert: param, si-04.04_odp.03 }} for {{ insert: param, si-04.04_odp.04 }}.
+outbound communications traffic is monitored the frequency at which to monitor outbound communications traffic for unusual or unauthorized activities or conditions is defined; for unusual or unauthorized activities or conditions that are to be monitored in outbound communications traffic are defined;.
 
 System and information integrity policy
 
@@ -456,11 +456,11 @@ mechanisms supporting and/or implementing the monitoring of inbound and outbound
 
 ### SI-4 (5): System-generated Alerts
 
-Alert {{ insert: param, si-04.05_odp.01 }} when the following system-generated indications of compromise or potential compromise occur: {{ insert: param, si-04.05_odp.02 }}.
+Alert personnel or roles to be alerted when indications of compromise or potential compromise occur is/are defined; when the following system-generated indications of compromise or potential compromise occur: compromise indicators are defined;.
 
 Alerts may be generated from a variety of sources, including audit records or inputs from malicious code protection mechanisms, intrusion detection or prevention mechanisms, or boundary protection devices such as firewalls, gateways, and routers. Alerts can be automated and may be transmitted telephonically, by electronic mail messages, or by text messaging. Organizational personnel on the alert notification list can include system administrators, mission or business owners, system owners, information owners/stewards, senior agency information security officers, senior agency officials for privacy, system security officers, or privacy officers. In contrast to alerts generated by the system, alerts generated by organizations in [SI-4(12)](#si-4.12) focus on information sources external to the system, such as suspicious activity reports and reports on potential insider threats.
 
- {{ insert: param, si-04.05_odp.01 }} are alerted when system-generated {{ insert: param, si-04.05_odp.02 }} occur.
+ personnel or roles to be alerted when indications of compromise or potential compromise occur is/are defined; are alerted when system-generated compromise indicators are defined; occur.
 
 System and information integrity policy
 
@@ -506,21 +506,21 @@ mechanisms supporting and/or implementing alerts for compromise indicators
 
 ### SI-5: Security Alerts, Advisories, and Directives
 
-Receive system security alerts, advisories, and directives from {{ insert: param, si-05_odp.01 }} on an ongoing basis;
+Receive system security alerts, advisories, and directives from external organizations from whom system security alerts, advisories, and directives are to be received on an ongoing basis are defined; on an ongoing basis;
 
 Generate internal security alerts, advisories, and directives as deemed necessary;
 
-Disseminate security alerts, advisories, and directives to: {{ insert: param, si-05_odp.02 }} ; and
+Disseminate security alerts, advisories, and directives to: personnel or roles to whom security alerts, advisories, and directives are to be disseminated is/are defined (if selected); ,  elements within the organization to whom security alerts, advisories, and directives are to be disseminated are defined (if selected); , and/or  external organizations to whom security alerts, advisories, and directives are to be disseminated are defined (if selected); ; and
 
 Implement security directives in accordance with established time frames, or notify the issuing organization of the degree of noncompliance.
 
 The Cybersecurity and Infrastructure Security Agency (CISA) generates security alerts and advisories to maintain situational awareness throughout the Federal Government. Security directives are issued by OMB or other designated organizations with the responsibility and authority to issue such directives. Compliance with security directives is essential due to the critical nature of many of these directives and the potential (immediate) adverse effects on organizational operations and assets, individuals, other organizations, and the Nation should the directives not be implemented in a timely manner. External organizations include supply chain partners, external mission or business partners, external service providers, and other peer or supporting organizations.
 
-system security alerts, advisories, and directives are received from {{ insert: param, si-05_odp.01 }} on an ongoing basis;
+system security alerts, advisories, and directives are received from external organizations from whom system security alerts, advisories, and directives are to be received on an ongoing basis are defined; on an ongoing basis;
 
 internal security alerts, advisories, and directives are generated as deemed necessary;
 
-security alerts, advisories, and directives are disseminated to {{ insert: param, si-05_odp.02 }};
+security alerts, advisories, and directives are disseminated to personnel or roles to whom security alerts, advisories, and directives are to be disseminated is/are defined (if selected); ,  elements within the organization to whom security alerts, advisories, and directives are to be disseminated are defined (if selected); , and/or  external organizations to whom security alerts, advisories, and directives are to be disseminated are defined (if selected);;
 
 security directives are implemented in accordance with established time frames or if the issuing organization is notified of the degree of noncompliance.
 
@@ -554,23 +554,23 @@ mechanisms supporting and/or implementing security directives
 
 ### SI-7: Software, Firmware, and Information Integrity
 
-Employ integrity verification tools to detect unauthorized changes to the following software, firmware, and information: {{ insert: param, si-7_prm_1 }} ; and
+Employ integrity verification tools to detect unauthorized changes to the following software, firmware, and information: organization-defined software, firmware, and information ; and
 
-Take the following actions when unauthorized changes to the software, firmware, and information are detected: {{ insert: param, si-7_prm_2 }}.
+Take the following actions when unauthorized changes to the software, firmware, and information are detected: organization-defined actions.
 
 Unauthorized changes to software, firmware, and information can occur due to errors or malicious activity. Software includes operating systems (with key internal components, such as kernels or drivers), middleware, and applications. Firmware interfaces include Unified Extensible Firmware Interface (UEFI) and Basic Input/Output System (BIOS). Information includes personally identifiable information and metadata that contains security and privacy attributes associated with information. Integrity-checking mechanisms—including parity checks, cyclical redundancy checks, cryptographic hashes, and associated tools—can automatically monitor the integrity of systems and hosted applications.
 
-integrity verification tools are employed to detect unauthorized changes to {{ insert: param, si-07_odp.01 }};
+integrity verification tools are employed to detect unauthorized changes to software requiring integrity verification tools to be employed to detect unauthorized changes is defined;;
 
-integrity verification tools are employed to detect unauthorized changes to {{ insert: param, si-07_odp.02 }};
+integrity verification tools are employed to detect unauthorized changes to firmware requiring integrity verification tools to be employed to detect unauthorized changes is defined;;
 
-integrity verification tools are employed to detect unauthorized changes to {{ insert: param, si-07_odp.03 }};
+integrity verification tools are employed to detect unauthorized changes to information requiring integrity verification tools to be employed to detect unauthorized changes is defined;;
 
- {{ insert: param, si-07_odp.04 }} are taken when unauthorized changes to the software, are detected;
+actions to be taken when unauthorized changes to software are detected are defined; are taken when unauthorized changes to the software, are detected;
 
- {{ insert: param, si-07_odp.05 }} are taken when unauthorized changes to the firmware are detected;
+ actions to be taken when unauthorized changes to firmware are detected are defined; are taken when unauthorized changes to the firmware are detected;
 
- {{ insert: param, si-07_odp.06 }} are taken when unauthorized changes to the information are detected.
+ actions to be taken when unauthorized changes to information are detected are defined; are taken when unauthorized changes to the information are detected.
 
 System and information integrity policy
 
@@ -606,15 +606,15 @@ Software, firmware, and information integrity verification tools
 
 ### SI-7 (1): Integrity Checks
 
-Perform an integrity check of {{ insert: param, si-7.1_prm_1 }} {{ insert: param, si-7.1_prm_2 }}.
+Perform an integrity check of organization-defined software, firmware, and information at startup, at organization-defined transitional states or security-relevant events , and/or  organization-defined frequency.
 
 Security-relevant events include the identification of new threats to which organizational systems are susceptible and the installation of new hardware, software, or firmware. Transitional states include system startup, restart, shutdown, and abort.
 
-an integrity check of {{ insert: param, si-07.01_odp.01 }} is performed {{ insert: param, si-07.01_odp.02 }};
+an integrity check of software on which an integrity check is to be performed is defined; is performed at startup, at transitional states or security-relevant events requiring integrity checks (on software) are defined (if selected); , and/or  frequency with which to perform an integrity check (on software) is defined (if selected);;
 
-an integrity check of {{ insert: param, si-07.01_odp.05 }} is performed {{ insert: param, si-07.01_odp.06 }};
+an integrity check of firmware on which an integrity check is to be performed is defined; is performed at startup, at transitional states or security-relevant events requiring integrity checks (on firmware) are defined (if selected); , and/or  frequency with which to perform an integrity check (on firmware) is defined (if selected);;
 
-an integrity check of {{ insert: param, si-07.01_odp.09 }} is performed {{ insert: param, si-07.01_odp.10 }}.
+an integrity check of information on which an integrity check is to be performed is defined; is performed at startup, at transitional states or security-relevant events requiring integrity checks (of information) are defined (if selected); , and/or  frequency with which to perform an integrity check (of information) is defined (if selected);.
 
 System and information integrity policy
 
@@ -646,11 +646,11 @@ Software, firmware, and information integrity verification tools
 
 ### SI-7 (7): Integration of Detection and Response
 
-Incorporate the detection of the following unauthorized changes into the organizational incident response capability: {{ insert: param, si-07.07_odp }}.
+Incorporate the detection of the following unauthorized changes into the organizational incident response capability: security-relevant changes to the system are defined;.
 
 Integrating detection and response helps to ensure that detected events are tracked, monitored, corrected, and available for historical purposes. Maintaining historical records is important for being able to identify and discern adversary actions over an extended time period and for possible legal actions. Security-relevant changes include unauthorized changes to established configuration settings or the unauthorized elevation of system privileges.
 
-the detection of {{ insert: param, si-07.07_odp }} are incorporated into the organizational incident response capability.
+the detection of security-relevant changes to the system are defined; are incorporated into the organizational incident response capability.
 
 System and information integrity policy
 
@@ -738,11 +738,11 @@ mechanisms supporting and/or implementing spam protection
 
 ### SI-8 (2): Automatic Updates
 
-Automatically update spam protection mechanisms {{ insert: param, si-08.02_odp }}.
+Automatically update spam protection mechanisms the frequency at which to automatically update spam protection mechanisms is defined;.
 
 Using automated mechanisms to update spam protection mechanisms helps to ensure that updates occur on a regular basis and provide the latest content and protection capabilities.
 
-spam protection mechanisms are automatically updated {{ insert: param, si-08.02_odp }}.
+spam protection mechanisms are automatically updated the frequency at which to automatically update spam protection mechanisms is defined;.
 
 System and information integrity policy
 
@@ -778,11 +778,11 @@ mechanisms supporting and/or implementing automatic updates to spam protection m
 
 ### SI-10: Information Input Validation
 
-Check the validity of the following information inputs: {{ insert: param, si-10_odp }}.
+Check the validity of the following information inputs: information inputs to the system requiring validity checks are defined;.
 
 Checking the valid syntax and semantics of system inputs—including character set, length, numerical range, and acceptable values—verifies that inputs match specified definitions for format and content. For example, if the organization specifies that numerical values between 1-100 are the only acceptable inputs for a field in a given application, inputs of "387," "abc," or "%K%" are invalid inputs and are not accepted as input to the system. Valid inputs are likely to vary from field to field within a software application. Applications typically follow well-defined protocols that use structured messages (i.e., commands or queries) to communicate between software modules or system components. Structured messages can contain raw or unstructured data interspersed with metadata or control information. If software applications use attacker-supplied inputs to construct structured messages without properly encoding such messages, then the attacker could insert malicious commands or special characters that can cause the data to be interpreted as control information or metadata. Consequently, the module or component that receives the corrupted output will perform the wrong operations or otherwise interpret the data incorrectly. Prescreening inputs prior to passing them to interpreters prevents the content from being unintentionally interpreted as commands. Input validation ensures accurate and correct inputs and prevents attacks such as cross-site scripting and a variety of injection attacks.
 
-the validity of the {{ insert: param, si-10_odp }} is checked.
+the validity of the information inputs to the system requiring validity checks are defined; is checked.
 
 System and information integrity policy
 
@@ -822,13 +822,13 @@ Mechanisms supporting and/or implementing validity checks on information inputs
 
 Generate error messages that provide information necessary for corrective actions without revealing information that could be exploited; and
 
-Reveal error messages only to {{ insert: param, si-11_odp }}.
+Reveal error messages only to personnel or roles to whom error messages are to be revealed is/are defined;.
 
 Organizations consider the structure and content of error messages. The extent to which systems can handle error conditions is guided and informed by organizational policy and operational requirements. Exploitable information includes stack traces and implementation details; erroneous logon attempts with passwords mistakenly entered as the username; mission or business information that can be derived from, if not stated explicitly by, the information recorded; and personally identifiable information, such as account numbers, social security numbers, and credit card numbers. Error messages may also provide a covert channel for transmitting information.
 
 error messages that provide the information necessary for corrective actions are generated without revealing information that could be exploited;
 
-error messages are revealed only to {{ insert: param, si-11_odp }}.
+error messages are revealed only to personnel or roles to whom error messages are to be revealed is/are defined;.
 
 System and information integrity policy
 
@@ -920,11 +920,11 @@ automated mechanisms supporting and/or implementing information management, rete
 
 ### SI-16: Memory Protection
 
-Implement the following controls to protect the system memory from unauthorized code execution: {{ insert: param, si-16_odp }}.
+Implement the following controls to protect the system memory from unauthorized code execution: controls to be implemented to protect the system memory from unauthorized code execution are defined;.
 
 Some adversaries launch attacks with the intent of executing code in non-executable regions of memory or in memory locations that are prohibited. Controls employed to protect memory include data execution prevention and address space layout randomization. Data execution prevention controls can either be hardware-enforced or software-enforced with hardware enforcement providing the greater strength of mechanism.
 
- {{ insert: param, si-16_odp }} are implemented to protect the system memory from unauthorized code execution.
+ controls to be implemented to protect the system memory from unauthorized code execution are defined; are implemented to protect the system memory from unauthorized code execution.
 
 System and information integrity policy
 

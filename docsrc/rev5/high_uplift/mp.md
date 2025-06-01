@@ -62,13 +62,13 @@ mechanisms supporting and/or implementing verification of media sanitization
 
 ### MP-6 (2): Equipment Testing
 
-Test sanitization equipment and procedures {{ insert: param, mp-6.2_prm_1 }} to ensure that the intended sanitization is being achieved.
+Test sanitization equipment and procedures organization-defined frequency to ensure that the intended sanitization is being achieved.
 
 Testing of sanitization equipment and procedures may be conducted by qualified and authorized external entities, including federal agencies or external service providers.
 
-sanitization equipment is tested {{ insert: param, mp-06.02_odp.01 }} to ensure that the intended sanitization is being achieved;
+sanitization equipment is tested frequency with which to test sanitization equipment is defined; to ensure that the intended sanitization is being achieved;
 
-sanitization procedures are tested {{ insert: param, mp-06.02_odp.02 }} to ensure that the intended sanitization is being achieved.
+sanitization procedures are tested frequency with which to test sanitization procedures is defined; to ensure that the intended sanitization is being achieved.
 
 System media protection policy
 
@@ -106,11 +106,11 @@ sanitization equipment
 
 ### MP-6 (3): Nondestructive Techniques
 
-Apply nondestructive sanitization techniques to portable storage devices prior to connecting such devices to the system under the following circumstances: {{ insert: param, mp-06.03_odp }}.
+Apply nondestructive sanitization techniques to portable storage devices prior to connecting such devices to the system under the following circumstances: circumstances requiring sanitization of portable storage devices are defined;.
 
 Portable storage devices include external or removable hard disk drives (e.g., solid state, magnetic), optical discs, magnetic or optical tapes, flash memory devices, flash memory cards, and other external or removable disks. Portable storage devices can be obtained from untrustworthy sources and contain malicious code that can be inserted into or transferred to organizational systems through USB ports or other entry portals. While scanning storage devices is recommended, sanitization provides additional assurance that such devices are free of malicious code. Organizations consider nondestructive sanitization of portable storage devices when the devices are purchased from manufacturers or vendors prior to initial use or when organizations cannot maintain a positive chain of custody for the devices.
 
-non-destructive sanitization techniques are applied to portable storage devices prior to connecting such devices to the system under {{ insert: param, mp-06.03_odp }}.
+non-destructive sanitization techniques are applied to portable storage devices prior to connecting such devices to the system under circumstances requiring sanitization of portable storage devices are defined;.
 
 System media protection policy
 

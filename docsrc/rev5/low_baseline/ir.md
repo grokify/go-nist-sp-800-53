@@ -6,9 +6,9 @@
 
 ### IR-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, ir-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, ir-01_odp.03 }} incident response policy that:
+organization-level, mission/business process-level, and/or system-level incident response policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the incident response policy and the associated incident response controls;
 
-Designate an {{ insert: param, ir-01_odp.04 }} to manage the development, documentation, and dissemination of the incident response policy and procedures; and
+Designate an an official to manage the incident response policy and procedures is defined; to manage the development, documentation, and dissemination of the incident response policy and procedures; and
 
 Review and update the current incident response:
 
-Policy {{ insert: param, ir-01_odp.05 }} and following {{ insert: param, ir-01_odp.06 }} ; and
+Policy the frequency at which the current incident response policy is reviewed and updated is defined; and following events that would require the current incident response policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, ir-01_odp.07 }} and following {{ insert: param, ir-01_odp.08 }}.
+Procedures the frequency at which the current incident response procedures are reviewed and updated is defined; and following events that would require the incident response procedures to be reviewed and updated are defined;.
 
 Incident response policy and procedures address the controls in the IR family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of incident response policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to incident response policy and procedures include assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 an incident response policy is developed and documented;
 
-the incident response policy is disseminated to {{ insert: param, ir-01_odp.01 }};
+the incident response policy is disseminated to personnel or roles to whom the incident response policy is to be disseminated is/are defined;;
 
 incident response procedures to facilitate the implementation of the incident response policy and associated incident response controls are developed and documented;
 
-the incident response procedures are disseminated to {{ insert: param, ir-01_odp.02 }};
+the incident response procedures are disseminated to personnel or roles to whom the incident response procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, ir-01_odp.03 }} incident response policy addresses purpose;
+the organization-level, mission/business process-level, and/or system-level incident response policy addresses purpose;
 
-the {{ insert: param, ir-01_odp.03 }} incident response policy addresses scope;
+the organization-level, mission/business process-level, and/or system-level incident response policy addresses scope;
 
-the {{ insert: param, ir-01_odp.03 }} incident response policy addresses roles;
+the organization-level, mission/business process-level, and/or system-level incident response policy addresses roles;
 
-the {{ insert: param, ir-01_odp.03 }} incident response policy addresses responsibilities;
+the organization-level, mission/business process-level, and/or system-level incident response policy addresses responsibilities;
 
-the {{ insert: param, ir-01_odp.03 }} incident response policy addresses management commitment;
+the organization-level, mission/business process-level, and/or system-level incident response policy addresses management commitment;
 
-the {{ insert: param, ir-01_odp.03 }} incident response policy addresses coordination among organizational entities;
+the organization-level, mission/business process-level, and/or system-level incident response policy addresses coordination among organizational entities;
 
-the {{ insert: param, ir-01_odp.03 }} incident response policy addresses compliance;
+the organization-level, mission/business process-level, and/or system-level incident response policy addresses compliance;
 
-the {{ insert: param, ir-01_odp.03 }} incident response policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
+the organization-level, mission/business process-level, and/or system-level incident response policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, ir-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the incident response policy and procedures;
+the an official to manage the incident response policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the incident response policy and procedures;
 
-the current incident response policy is reviewed and updated {{ insert: param, ir-01_odp.05 }};
+the current incident response policy is reviewed and updated the frequency at which the current incident response policy is reviewed and updated is defined;;
 
-the current incident response policy is reviewed and updated following {{ insert: param, ir-01_odp.06 }};
+the current incident response policy is reviewed and updated following events that would require the current incident response policy to be reviewed and updated are defined;;
 
-the current incident response procedures are reviewed and updated {{ insert: param, ir-01_odp.07 }};
+the current incident response procedures are reviewed and updated the frequency at which the current incident response procedures are reviewed and updated is defined;;
 
-the current incident response procedures are reviewed and updated following {{ insert: param, ir-01_odp.08 }}.
+the current incident response procedures are reviewed and updated following events that would require the incident response procedures to be reviewed and updated are defined;.
 
 Incident response policy and procedures
 
@@ -76,25 +76,25 @@ organizational personnel with information security and privacy responsibilities
 
 Provide incident response training to system users consistent with assigned roles and responsibilities:
 
-Within {{ insert: param, ir-02_odp.01 }} of assuming an incident response role or responsibility or acquiring system access;
+Within a time period within which incident response training is to be provided to system users assuming an incident response role or responsibility is defined; of assuming an incident response role or responsibility or acquiring system access;
 
 When required by system changes; and
 
- {{ insert: param, ir-02_odp.02 }} thereafter; and
+ frequency at which to provide incident response training to users is defined; thereafter; and
 
-Review and update incident response training content {{ insert: param, ir-02_odp.03 }} and following {{ insert: param, ir-02_odp.04 }}.
+Review and update incident response training content frequency at which to review and update incident response training content is defined; and following events that initiate a review of the incident response training content are defined;.
 
 Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of [AT-2](#at-2) or [AT-3](#at-3) . Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
 
-incident response training is provided to system users consistent with assigned roles and responsibilities within {{ insert: param, ir-02_odp.01 }} of assuming an incident response role or responsibility or acquiring system access;
+incident response training is provided to system users consistent with assigned roles and responsibilities within a time period within which incident response training is to be provided to system users assuming an incident response role or responsibility is defined; of assuming an incident response role or responsibility or acquiring system access;
 
 incident response training is provided to system users consistent with assigned roles and responsibilities when required by system changes;
 
-incident response training is provided to system users consistent with assigned roles and responsibilities {{ insert: param, ir-02_odp.02 }} thereafter;
+incident response training is provided to system users consistent with assigned roles and responsibilities frequency at which to provide incident response training to users is defined; thereafter;
 
-incident response training content is reviewed and updated {{ insert: param, ir-02_odp.03 }};
+incident response training content is reviewed and updated frequency at which to review and update incident response training content is defined;;
 
-incident response training content is reviewed and updated following {{ insert: param, ir-02_odp.04 }}.
+incident response training content is reviewed and updated following events that initiate a review of the incident response training content are defined;.
 
 Incident response policy
 
@@ -216,15 +216,15 @@ mechanisms supporting and/or implementing the tracking and documenting of system
 
 ### IR-6: Incident Reporting
 
-Require personnel to report suspected incidents to the organizational incident response capability within {{ insert: param, ir-06_odp.01 }} ; and
+Require personnel to report suspected incidents to the organizational incident response capability within time period for personnel to report suspected incidents to the organizational incident response capability is defined; ; and
 
-Report incident information to {{ insert: param, ir-06_odp.02 }}.
+Report incident information to authorities to whom incident information is to be reported are defined;.
 
 The types of incidents reported, the content and timeliness of the reports, and the designated reporting authorities reflect applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Incident information can inform risk assessments, control effectiveness assessments, security requirements for acquisitions, and selection criteria for technology products.
 
-personnel is/are required to report suspected incidents to the organizational incident response capability within {{ insert: param, ir-06_odp.01 }};
+personnel is/are required to report suspected incidents to the organizational incident response capability within time period for personnel to report suspected incidents to the organizational incident response capability is defined;;
 
-incident information is reported to {{ insert: param, ir-06_odp.02 }}.
+incident information is reported to authorities to whom incident information is to be reported are defined;.
 
 Incident response policy
 
@@ -306,15 +306,15 @@ Defines the resources and management support needed to effectively maintain and 
 
 Addresses the sharing of incident information;
 
-Is reviewed and approved by {{ insert: param, ir-08_odp.01 }} {{ insert: param, ir-08_odp.02 }} ; and
+Is reviewed and approved by personnel or roles that review and approve the incident response plan is/are identified; the frequency at which to review and approve the incident response plan is defined; ; and
 
-Explicitly designates responsibility for incident response to {{ insert: param, ir-08_odp.03 }}.
+Explicitly designates responsibility for incident response to entities, personnel, or roles with designated responsibility for incident response are defined;.
 
-Distribute copies of the incident response plan to {{ insert: param, ir-08_odp.04 }};
+Distribute copies of the incident response plan to incident response personnel (identified by name and/or by role) to whom copies of the incident response plan are to be distributed is/are defined;;
 
 Update the incident response plan to address system and organizational changes or problems encountered during plan implementation, execution, or testing;
 
-Communicate incident response plan changes to {{ insert: param, ir-8_prm_5 }} ; and
+Communicate incident response plan changes to organization-defined incident response personnel (identified by name and/or by role) and organizational elements ; and
 
 Protect the incident response plan from unauthorized disclosure and modification.
 
@@ -336,19 +336,19 @@ an incident response plan is developed that defines the resources and management
 
 an incident response plan is developed that addresses the sharing of incident information;
 
-an incident response plan is developed that is reviewed and approved by {{ insert: param, ir-08_odp.01 }} {{ insert: param, ir-08_odp.02 }};
+an incident response plan is developed that is reviewed and approved by personnel or roles that review and approve the incident response plan is/are identified; the frequency at which to review and approve the incident response plan is defined;;
 
-an incident response plan is developed that explicitly designates responsibility for incident response to {{ insert: param, ir-08_odp.03 }}.
+an incident response plan is developed that explicitly designates responsibility for incident response to entities, personnel, or roles with designated responsibility for incident response are defined;.
 
-copies of the incident response plan are distributed to {{ insert: param, ir-08_odp.04 }};
+copies of the incident response plan are distributed to incident response personnel (identified by name and/or by role) to whom copies of the incident response plan are to be distributed is/are defined;;
 
-copies of the incident response plan are distributed to {{ insert: param, ir-08_odp.05 }};
+copies of the incident response plan are distributed to organizational elements to which copies of the incident response plan are to be distributed are defined;;
 
 the incident response plan is updated to address system and organizational changes or problems encountered during plan implementation, execution, or testing;
 
-incident response plan changes are communicated to {{ insert: param, ir-08_odp.06 }};
+incident response plan changes are communicated to incident response personnel (identified by name and/or by role) to whom changes to the incident response plan is/are communicated are defined;;
 
-incident response plan changes are communicated to {{ insert: param, ir-08_odp.07 }};
+incident response plan changes are communicated to organizational elements to which changes to the incident response plan are communicated are defined;;
 
 the incident response plan is protected from unauthorized disclosure;
 

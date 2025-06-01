@@ -6,9 +6,9 @@
 
 ### SA-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, sa-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, sa-01_odp.03 }} system and services acquisition policy that:
+organization-level, mission/business process-level, and/or system-level system and services acquisition policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the system and services acquisition policy and the associated system and services acquisition controls;
 
-Designate an {{ insert: param, sa-01_odp.04 }} to manage the development, documentation, and dissemination of the system and services acquisition policy and procedures; and
+Designate an an official to manage the system and services acquisition policy and procedures is defined; to manage the development, documentation, and dissemination of the system and services acquisition policy and procedures; and
 
 Review and update the current system and services acquisition:
 
-Policy {{ insert: param, sa-01_odp.05 }} and following {{ insert: param, sa-01_odp.06 }} ; and
+Policy the frequency at which the current system and services acquisition policy is reviewed and updated is defined; and following events that would require the current system and services acquisition policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, sa-01_odp.07 }} and following {{ insert: param, sa-01_odp.08 }}.
+Procedures the frequency at which the current system and services acquisition procedures are reviewed and updated is defined; and following events that would require the system and services acquisition procedures to be reviewed and updated are defined;.
 
 System and services acquisition policy and procedures address the controls in the SA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of system and services acquisition policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to system and services acquisition policy and procedures include assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 a system and services acquisition policy is developed and documented;
 
-the system and services acquisition policy is disseminated to {{ insert: param, sa-01_odp.01 }};
+the system and services acquisition policy is disseminated to personnel or roles to whom the system and services acquisition policy is to be disseminated is/are defined;;
 
 system and services acquisition procedures to facilitate the implementation of the system and services acquisition policy and associated system and services acquisition controls are developed and documented;
 
-the system and services acquisition procedures are disseminated to {{ insert: param, sa-01_odp.02 }};
+the system and services acquisition procedures are disseminated to personnel or roles to whom the system and services acquisition procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses purpose;
+the organization-level, mission/business process-level, and/or system-level system and services acquisition policy addresses purpose;
 
-the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses scope;
+the organization-level, mission/business process-level, and/or system-level system and services acquisition policy addresses scope;
 
-the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses roles;
+the organization-level, mission/business process-level, and/or system-level system and services acquisition policy addresses roles;
 
-the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses responsibilities;
+the organization-level, mission/business process-level, and/or system-level system and services acquisition policy addresses responsibilities;
 
-the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses management commitment;
+the organization-level, mission/business process-level, and/or system-level system and services acquisition policy addresses management commitment;
 
-the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses coordination among organizational entities;
+the organization-level, mission/business process-level, and/or system-level system and services acquisition policy addresses coordination among organizational entities;
 
-the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy addresses compliance;
+the organization-level, mission/business process-level, and/or system-level system and services acquisition policy addresses compliance;
 
-the {{ insert: param, sa-01_odp.03 }} system and services acquisition policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
+the organization-level, mission/business process-level, and/or system-level system and services acquisition policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, sa-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the system and services acquisition policy and procedures;
+the an official to manage the system and services acquisition policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the system and services acquisition policy and procedures;
 
-the system and services acquisition policy is reviewed and updated {{ insert: param, sa-01_odp.05 }};
+the system and services acquisition policy is reviewed and updated the frequency at which the current system and services acquisition policy is reviewed and updated is defined;;
 
-the current system and services acquisition policy is reviewed and updated following {{ insert: param, sa-01_odp.06 }};
+the current system and services acquisition policy is reviewed and updated following events that would require the current system and services acquisition policy to be reviewed and updated are defined;;
 
-the current system and services acquisition procedures are reviewed and updated {{ insert: param, sa-01_odp.07 }};
+the current system and services acquisition procedures are reviewed and updated the frequency at which the current system and services acquisition procedures are reviewed and updated is defined;;
 
-the current system and services acquisition procedures are reviewed and updated following {{ insert: param, sa-01_odp.08 }}.
+the current system and services acquisition procedures are reviewed and updated following events that would require the system and services acquisition procedures to be reviewed and updated are defined;.
 
 System and services acquisition policy
 
@@ -138,7 +138,7 @@ mechanisms supporting and/or implementing organizational capital planning, progr
 
 ### SA-3: System Development Life Cycle
 
-Acquire, develop, and manage the system using {{ insert: param, sa-03_odp }} that incorporates information security and privacy considerations;
+Acquire, develop, and manage the system using system development life cycle is defined; that incorporates information security and privacy considerations;
 
 Define and document information security and privacy roles and responsibilities throughout the system development life cycle;
 
@@ -150,9 +150,9 @@ A system development life cycle process provides the foundation for the successf
 
 The effective integration of security and privacy requirements into enterprise architecture also helps to ensure that important security and privacy considerations are addressed throughout the system life cycle and that those considerations are directly related to organizational mission and business processes. This process also facilitates the integration of the information security and privacy architectures into the enterprise architecture, consistent with the risk management strategy of the organization. Because the system development life cycle involves multiple organizations, (e.g., external suppliers, developers, integrators, service providers), acquisition and supply chain risk management functions and controls play significant roles in the effective management of the system during the life cycle.
 
-the system is acquired, developed, and managed using {{ insert: param, sa-03_odp }} that incorporates information security considerations;
+the system is acquired, developed, and managed using system development life cycle is defined; that incorporates information security considerations;
 
-the system is acquired, developed, and managed using {{ insert: param, sa-03_odp }} that incorporates privacy considerations;
+the system is acquired, developed, and managed using system development life cycle is defined; that incorporates privacy considerations;
 
 information security roles and responsibilities are defined and documented throughout the system development life cycle;
 
@@ -208,7 +208,7 @@ mechanisms supporting and/or implementing the system development life cycle
 
 ### SA-4: Acquisition Process
 
-Include the following requirements, descriptions, and criteria, explicitly or by reference, using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service:
+Include the following requirements, descriptions, and criteria, explicitly or by reference, using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service:
 
 Security and privacy functional requirements;
 
@@ -234,37 +234,37 @@ Controls can be viewed as descriptions of the safeguards and protection capabili
 
 Security and privacy documentation requirements address all stages of the system development life cycle. Documentation provides user and administrator guidance for the implementation and operation of controls. The level of detail required in such documentation is based on the security categorization or classification level of the system and the degree to which organizations depend on the capabilities, functions, or mechanisms to meet risk response expectations. Requirements can include mandated configuration settings that specify allowed functions, ports, protocols, and services. Acceptance criteria for systems, system components, and system services are defined in the same manner as the criteria for any organizational acquisition or procurement.
 
-security functional requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+security functional requirements, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-privacy functional requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+privacy functional requirements, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-strength of mechanism requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+strength of mechanism requirements, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-security assurance requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+security assurance requirements, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-privacy assurance requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+privacy assurance requirements, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-controls needed to satisfy the security requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+controls needed to satisfy the security requirements, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-controls needed to satisfy the privacy requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+controls needed to satisfy the privacy requirements, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-security documentation requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+security documentation requirements, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-privacy documentation requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+privacy documentation requirements, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-requirements for protecting security documentation, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+requirements for protecting security documentation, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-requirements for protecting privacy documentation, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+requirements for protecting privacy documentation, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-the description of the system development environment and environment in which the system is intended to operate, requirements, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+the description of the system development environment and environment in which the system is intended to operate, requirements, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-the allocation of responsibility or identification of parties responsible for information security requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service;
+the allocation of responsibility or identification of parties responsible for information security requirements, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service;
 
-the allocation of responsibility or identification of parties responsible for privacy requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }};
+the allocation of responsibility or identification of parties responsible for privacy requirements, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected);;
 
-the allocation of responsibility or identification of parties responsible for supply chain risk management requirements, descriptions, and criteria are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }};
+the allocation of responsibility or identification of parties responsible for supply chain risk management requirements, descriptions, and criteria are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected);;
 
-acceptance criteria requirements and descriptions are included explicitly or by reference using {{ insert: param, sa-04_odp.01 }} in the acquisition contract for the system, system component, or system service.
+acceptance criteria requirements and descriptions are included explicitly or by reference using standardized contract languageand/or contract language is defined (if selected); in the acquisition contract for the system, system component, or system service.
 
 System and services acquisition policy
 
@@ -356,9 +356,9 @@ Methods for user interaction, which enables individuals to use the system, compo
 
 User responsibilities in maintaining the security of the system, component, or service and privacy of individuals;
 
-Document attempts to obtain system, system component, or system service documentation when such documentation is either unavailable or nonexistent and take {{ insert: param, sa-05_odp.01 }} in response; and
+Document attempts to obtain system, system component, or system service documentation when such documentation is either unavailable or nonexistent and take actions to take when system, system component, or system service documentation is either unavailable or nonexistent are defined; in response; and
 
-Distribute documentation to {{ insert: param, sa-05_odp.02 }}.
+Distribute documentation to personnel or roles to distribute system documentation to is/are defined;.
 
 System documentation helps personnel understand the implementation and operation of controls. Organizations consider establishing specific measures to determine the quality and completeness of the content provided. System documentation may be used to support the management of supply chain risk, incident response, and other functions. Personnel or roles that require documentation include system owners, system security officers, and system administrators. Attempts to obtain documentation include contacting manufacturers or suppliers and conducting web-based searches. The inability to obtain documentation may occur due to the age of the system or component or the lack of support from developers and contractors. When documentation cannot be obtained, organizations may need to recreate the documentation if it is essential to the implementation or operation of the controls. The protection provided for the documentation is commensurate with the security category or classification of the system. Documentation that addresses system vulnerabilities may require an increased level of protection. Secure operation of the system includes initially starting the system and resuming secure system operation after a lapse in system operation.
 
@@ -398,9 +398,9 @@ user documentation for the system, system component, or system service that desc
 
 attempts to obtain system, system component, or system service documentation when such documentation is either unavailable or nonexistent is documented;
 
-after attempts to obtain system, system component, or system service documentation when such documentation is either unavailable or nonexistent, {{ insert: param, sa-05_odp.01 }} are taken in response;
+after attempts to obtain system, system component, or system service documentation when such documentation is either unavailable or nonexistent, actions to take when system, system component, or system service documentation is either unavailable or nonexistent are defined; are taken in response;
 
-documentation is distributed to {{ insert: param, sa-05_odp.02 }}.
+documentation is distributed to personnel or roles to distribute system documentation to is/are defined;.
 
 System and services acquisition policy
 
@@ -442,7 +442,7 @@ Organizational processes for obtaining, protecting, and distributing system admi
 
 ### SA-8: Security and Privacy Engineering Principles
 
-Apply the following systems security and privacy engineering principles in the specification, design, development, implementation, and modification of the system and system components: {{ insert: param, sa-8_prm_1 }}.
+Apply the following systems security and privacy engineering principles in the specification, design, development, implementation, and modification of the system and system components: organization-defined systems security and privacy engineering principles.
 
 Systems security and privacy engineering principles are closely related to and implemented throughout the system development life cycle (see [SA-3](#sa-3) ). Organizations can apply systems security and privacy engineering principles to new systems under development or to systems undergoing upgrades. For existing systems, organizations apply systems security and privacy engineering principles to system upgrades and modifications to the extent feasible, given the current state of hardware, software, and firmware components within those systems.
 
@@ -450,25 +450,25 @@ The application of systems security and privacy engineering principles helps org
 
 Organizations that apply systems security and privacy engineering concepts and principles can facilitate the development of trustworthy, secure systems, system components, and system services; reduce risk to acceptable levels; and make informed risk management decisions. System security engineering principles can also be used to protect against certain supply chain risks, including incorporating tamper-resistant hardware into a design.
 
- {{ insert: param, sa-08_odp.01 }} are applied in the specification of the system and system components;
+systems security engineering principles are defined; are applied in the specification of the system and system components;
 
- {{ insert: param, sa-08_odp.01 }} are applied in the design of the system and system components;
+ systems security engineering principles are defined; are applied in the design of the system and system components;
 
- {{ insert: param, sa-08_odp.01 }} are applied in the development of the system and system components;
+ systems security engineering principles are defined; are applied in the development of the system and system components;
 
- {{ insert: param, sa-08_odp.01 }} are applied in the implementation of the system and system components;
+ systems security engineering principles are defined; are applied in the implementation of the system and system components;
 
- {{ insert: param, sa-08_odp.01 }} are applied in the modification of the system and system components;
+ systems security engineering principles are defined; are applied in the modification of the system and system components;
 
- {{ insert: param, sa-08_odp.02 }} are applied in the specification of the system and system components;
+ privacy engineering principles are defined; are applied in the specification of the system and system components;
 
- {{ insert: param, sa-08_odp.02 }} are applied in the design of the system and system components;
+ privacy engineering principles are defined; are applied in the design of the system and system components;
 
- {{ insert: param, sa-08_odp.02 }} are applied in the development of the system and system components;
+ privacy engineering principles are defined; are applied in the development of the system and system components;
 
- {{ insert: param, sa-08_odp.02 }} are applied in the implementation of the system and system components;
+ privacy engineering principles are defined; are applied in the implementation of the system and system components;
 
- {{ insert: param, sa-08_odp.02 }} are applied in the modification of the system and system components.
+ privacy engineering principles are defined; are applied in the modification of the system and system components.
 
 System and services acquisition policy
 
@@ -506,11 +506,11 @@ mechanisms supporting the application of security and privacy engineering princi
 
 ### SA-9: External System Services
 
-Require that providers of external system services comply with organizational security and privacy requirements and employ the following controls: {{ insert: param, sa-09_odp.01 }};
+Require that providers of external system services comply with organizational security and privacy requirements and employ the following controls: controls to be employed by external system service providers are defined;;
 
 Define and document organizational oversight and user roles and responsibilities with regard to external system services; and
 
-Employ the following processes, methods, and techniques to monitor control compliance by external service providers on an ongoing basis: {{ insert: param, sa-09_odp.02 }}.
+Employ the following processes, methods, and techniques to monitor control compliance by external service providers on an ongoing basis: processes, methods, and techniques employed to monitor control compliance by external service providers are defined;.
 
 External system services are provided by an external provider, and the organization has no direct control over the implementation of the required controls or the assessment of control effectiveness. Organizations establish relationships with external service providers in a variety of ways, including through business partnerships, contracts, interagency agreements, lines of business arrangements, licensing agreements, joint ventures, and supply chain exchanges. The responsibility for managing risks from the use of external system services remains with authorizing officials. For services external to organizations, a chain of trust requires that organizations establish and retain a certain level of confidence that each provider in the consumer-provider relationship provides adequate protection for the services rendered. The extent and nature of this chain of trust vary based on relationships between organizations and the external providers. Organizations document the basis for the trust relationships so that the relationships can be monitored. External system services documentation includes government, service providers, end user security roles and responsibilities, and service-level agreements. Service-level agreements define the expectations of performance for implemented controls, describe measurable outcomes, and identify remedies and response requirements for identified instances of noncompliance.
 
@@ -518,13 +518,13 @@ providers of external system services comply with organizational security requir
 
 providers of external system services comply with organizational privacy requirements;
 
-providers of external system services employ {{ insert: param, sa-09_odp.01 }};
+providers of external system services employ controls to be employed by external system service providers are defined;;
 
 organizational oversight with regard to external system services are defined and documented;
 
 user roles and responsibilities with regard to external system services are defined and documented;
 
- {{ insert: param, sa-09_odp.02 }} are employed to monitor control compliance by external service providers on an ongoing basis.
+ processes, methods, and techniques employed to monitor control compliance by external service providers are defined; are employed to monitor control compliance by external service providers on an ongoing basis.
 
 System and services acquisition policy
 
@@ -570,7 +570,7 @@ mechanisms for monitoring security and privacy control compliance by external se
 
 Replace system components when support for the components is no longer available from the developer, vendor, or manufacturer; or
 
-Provide the following options for alternative sources for continued support for unsupported components {{ insert: param, sa-22_odp.01 }}.
+Provide the following options for alternative sources for continued support for unsupported components in-house supportand/or support from external providers is defined (if selected);.
 
 Support for system components includes software patches, firmware updates, replacement parts, and maintenance contracts. An example of unsupported components includes when vendors no longer provide critical software patches or product updates, which can result in an opportunity for adversaries to exploit weaknesses in the installed components. Exceptions to replacing unsupported system components include systems that provide critical mission or business capabilities where newer technologies are not available or where the systems are so isolated that installing replacement components is not an option.
 
@@ -578,7 +578,7 @@ Alternative sources for support address the need to provide continued support fo
 
 system components are replaced when support for the components is no longer available from the developer, vendor, or manufacturer;
 
- {{ insert: param, sa-22_odp.01 }} provide options for alternative sources for continued support for unsupported components.
+ in-house supportand/or support from external providers is defined (if selected); provide options for alternative sources for continued support for unsupported components.
 
 System and services acquisition policy
 

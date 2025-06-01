@@ -6,9 +6,9 @@
 
 ### AC-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, ac-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, ac-01_odp.03 }} access control policy that:
+organization-level, mission/business process-level, and/or system-level access control policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the access control policy and the associated access controls;
 
-Designate an {{ insert: param, ac-01_odp.04 }} to manage the development, documentation, and dissemination of the access control policy and procedures; and
+Designate an an official to manage the access control policy and procedures is defined; to manage the development, documentation, and dissemination of the access control policy and procedures; and
 
 Review and update the current access control:
 
-Policy {{ insert: param, ac-01_odp.05 }} and following {{ insert: param, ac-01_odp.06 }} ; and
+Policy the frequency at which the current access control policy is reviewed and updated is defined; and following events that would require the current access control policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, ac-01_odp.07 }} and following {{ insert: param, ac-01_odp.08 }}.
+Procedures the frequency at which the current access control procedures are reviewed and updated is defined; and following events that would require procedures to be reviewed and updated are defined;.
 
 Access control policy and procedures address the controls in the AC family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of access control policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies reflecting the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to access control policy and procedures include assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 an access control policy is developed and documented;
 
-the access control policy is disseminated to {{ insert: param, ac-01_odp.01 }};
+the access control policy is disseminated to personnel or roles to whom the access control policy is to be disseminated is/are defined;;
 
 access control procedures to facilitate the implementation of the access control policy and associated controls are developed and documented;
 
-the access control procedures are disseminated to {{ insert: param, ac-01_odp.02 }};
+the access control procedures are disseminated to personnel or roles to whom the access control procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, ac-01_odp.03 }} access control policy addresses purpose;
+the organization-level, mission/business process-level, and/or system-level access control policy addresses purpose;
 
-the {{ insert: param, ac-01_odp.03 }} access control policy addresses scope;
+the organization-level, mission/business process-level, and/or system-level access control policy addresses scope;
 
-the {{ insert: param, ac-01_odp.03 }} access control policy addresses roles;
+the organization-level, mission/business process-level, and/or system-level access control policy addresses roles;
 
-the {{ insert: param, ac-01_odp.03 }} access control policy addresses responsibilities;
+the organization-level, mission/business process-level, and/or system-level access control policy addresses responsibilities;
 
-the {{ insert: param, ac-01_odp.03 }} access control policy addresses management commitment;
+the organization-level, mission/business process-level, and/or system-level access control policy addresses management commitment;
 
-the {{ insert: param, ac-01_odp.03 }} access control policy addresses coordination among organizational entities;
+the organization-level, mission/business process-level, and/or system-level access control policy addresses coordination among organizational entities;
 
-the {{ insert: param, ac-01_odp.03 }} access control policy addresses compliance;
+the organization-level, mission/business process-level, and/or system-level access control policy addresses compliance;
 
-the {{ insert: param, ac-01_odp.03 }} access control policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
+the organization-level, mission/business process-level, and/or system-level access control policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, ac-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the access control policy and procedures;
+the an official to manage the access control policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the access control policy and procedures;
 
-the current access control policy is reviewed and updated {{ insert: param, ac-01_odp.05 }};
+the current access control policy is reviewed and updated the frequency at which the current access control policy is reviewed and updated is defined;;
 
-the current access control policy is reviewed and updated following {{ insert: param, ac-01_odp.06 }};
+the current access control policy is reviewed and updated following events that would require the current access control policy to be reviewed and updated are defined;;
 
-the current access control procedures are reviewed and updated {{ insert: param, ac-01_odp.07 }};
+the current access control procedures are reviewed and updated the frequency at which the current access control procedures are reviewed and updated is defined;;
 
-the current access control procedures are reviewed and updated following {{ insert: param, ac-01_odp.08 }}.
+the current access control procedures are reviewed and updated following events that would require procedures to be reviewed and updated are defined;.
 
 Access control policy and procedures
 
@@ -78,7 +78,7 @@ Define and document the types of accounts allowed and specifically prohibited fo
 
 Assign account managers;
 
-Require {{ insert: param, ac-02_odp.01 }} for group and role membership;
+Require prerequisites and criteria for group and role membership are defined; for group and role membership;
 
 Specify:
 
@@ -86,21 +86,21 @@ Authorized users of the system;
 
 Group and role membership; and
 
-Access authorizations (i.e., privileges) and {{ insert: param, ac-02_odp.02 }} for each account;
+Access authorizations (i.e., privileges) and attributes (as required) for each account are defined; for each account;
 
-Require approvals by {{ insert: param, ac-02_odp.03 }} for requests to create accounts;
+Require approvals by personnel or roles required to approve requests to create accounts is/are defined; for requests to create accounts;
 
-Create, enable, modify, disable, and remove accounts in accordance with {{ insert: param, ac-02_odp.04 }};
+Create, enable, modify, disable, and remove accounts in accordance with policy, procedures, prerequisites, and criteria for account creation, enabling, modification, disabling, and removal are defined;;
 
 Monitor the use of accounts;
 
-Notify account managers and {{ insert: param, ac-02_odp.05 }} within:
+Notify account managers and personnel or roles to be notified is/are defined; within:
 
- {{ insert: param, ac-02_odp.06 }} when accounts are no longer required;
+time period within which to notify account managers when accounts are no longer required is defined; when accounts are no longer required;
 
- {{ insert: param, ac-02_odp.07 }} when users are terminated or transferred; and
+ time period within which to notify account managers when users are terminated or transferred is defined; when users are terminated or transferred; and
 
- {{ insert: param, ac-02_odp.08 }} when system usage or need-to-know changes for an individual;
+ time period within which to notify account managers when system usage or the need to know changes for an individual is defined; when system usage or need-to-know changes for an individual;
 
 Authorize access to the system based on:
 
@@ -108,9 +108,9 @@ A valid access authorization;
 
 Intended system usage; and
 
- {{ insert: param, ac-02_odp.09 }};
+ attributes needed to authorize system access (as required) are defined;;
 
-Review accounts for compliance with account management requirements {{ insert: param, ac-02_odp.10 }};
+Review accounts for compliance with account management requirements the frequency of account review is defined;;
 
 Establish and implement a process for changing shared or group account authenticators (if deployed) when individuals are removed from the group; and
 
@@ -128,7 +128,7 @@ account types specifically prohibited for use within the system are defined and 
 
 account managers are assigned;
 
- {{ insert: param, ac-02_odp.01 }} for group and role membership are required;
+ prerequisites and criteria for group and role membership are defined; for group and role membership are required;
 
 authorized users of the system are specified;
 
@@ -136,35 +136,35 @@ group and role membership are specified;
 
 access authorizations (i.e., privileges) are specified for each account;
 
- {{ insert: param, ac-02_odp.02 }} are specified for each account;
+ attributes (as required) for each account are defined; are specified for each account;
 
-approvals are required by {{ insert: param, ac-02_odp.03 }} for requests to create accounts;
+approvals are required by personnel or roles required to approve requests to create accounts is/are defined; for requests to create accounts;
 
-accounts are created in accordance with {{ insert: param, ac-02_odp.04 }};
+accounts are created in accordance with policy, procedures, prerequisites, and criteria for account creation, enabling, modification, disabling, and removal are defined;;
 
-accounts are enabled in accordance with {{ insert: param, ac-02_odp.04 }};
+accounts are enabled in accordance with policy, procedures, prerequisites, and criteria for account creation, enabling, modification, disabling, and removal are defined;;
 
-accounts are modified in accordance with {{ insert: param, ac-02_odp.04 }};
+accounts are modified in accordance with policy, procedures, prerequisites, and criteria for account creation, enabling, modification, disabling, and removal are defined;;
 
-accounts are disabled in accordance with {{ insert: param, ac-02_odp.04 }};
+accounts are disabled in accordance with policy, procedures, prerequisites, and criteria for account creation, enabling, modification, disabling, and removal are defined;;
 
-accounts are removed in accordance with {{ insert: param, ac-02_odp.04 }};
+accounts are removed in accordance with policy, procedures, prerequisites, and criteria for account creation, enabling, modification, disabling, and removal are defined;;
 
 the use of accounts is monitored; 
 
-account managers and {{ insert: param, ac-02_odp.05 }} are notified within {{ insert: param, ac-02_odp.06 }} when accounts are no longer required;
+account managers and personnel or roles to be notified is/are defined; are notified within time period within which to notify account managers when accounts are no longer required is defined; when accounts are no longer required;
 
-account managers and {{ insert: param, ac-02_odp.05 }} are notified within {{ insert: param, ac-02_odp.07 }} when users are terminated or transferred;
+account managers and personnel or roles to be notified is/are defined; are notified within time period within which to notify account managers when users are terminated or transferred is defined; when users are terminated or transferred;
 
-account managers and {{ insert: param, ac-02_odp.05 }} are notified within {{ insert: param, ac-02_odp.08 }} when system usage or the need to know changes for an individual;
+account managers and personnel or roles to be notified is/are defined; are notified within time period within which to notify account managers when system usage or the need to know changes for an individual is defined; when system usage or the need to know changes for an individual;
 
 access to the system is authorized based on a valid access authorization;
 
 access to the system is authorized based on intended system usage;
 
-access to the system is authorized based on {{ insert: param, ac-02_odp.09 }};
+access to the system is authorized based on attributes needed to authorize system access (as required) are defined;;
 
-accounts are reviewed for compliance with account management requirements {{ insert: param, ac-02_odp.10 }};
+accounts are reviewed for compliance with account management requirements the frequency of account review is defined;;
 
 a process is established for changing shared or group account authenticators (if deployed) when individuals are removed from the group;
 
@@ -256,15 +256,15 @@ Mechanisms implementing access control policy
 
 ### AC-7: Unsuccessful Logon Attempts
 
-Enforce a limit of {{ insert: param, ac-07_odp.01 }} consecutive invalid logon attempts by a user during a {{ insert: param, ac-07_odp.02 }} ; and
+Enforce a limit of the number of consecutive invalid logon attempts by a user allowed during a time period is defined; consecutive invalid logon attempts by a user during a the time period to which the number of consecutive invalid logon attempts by a user is limited is defined; ; and
 
-Automatically {{ insert: param, ac-07_odp.03 }} when the maximum number of unsuccessful attempts is exceeded.
+Automatically lock the account or node for time period for an account or node to be locked is defined (if selected); , lock the account or node until released by an administrator, delay next logon prompt per delay algorithm for the next logon prompt is defined (if selected); , notify system administrator, and/or take other other action to be taken when the maximum number of unsuccessful attempts is exceeded is defined (if selected); when the maximum number of unsuccessful attempts is exceeded.
 
 The need to limit unsuccessful logon attempts and take subsequent action when the maximum number of attempts is exceeded applies regardless of whether the logon occurs via a local or network connection. Due to the potential for denial of service, automatic lockouts initiated by systems are usually temporary and automatically release after a predetermined, organization-defined time period. If a delay algorithm is selected, organizations may employ different algorithms for different components of the system based on the capabilities of those components. Responses to unsuccessful logon attempts may be implemented at the operating system and the application levels. Organization-defined actions that may be taken when the number of allowed consecutive invalid logon attempts is exceeded include prompting the user to answer a secret question in addition to the username and password, invoking a lockdown mode with limited user capabilities (instead of full lockout), allowing users to only logon from specified Internet Protocol (IP) addresses, requiring a CAPTCHA to prevent automated attacks, or applying user profiles such as location, time of day, IP address, device, or Media Access Control (MAC) address. If automatic system lockout or execution of a delay algorithm is not implemented in support of the availability objective, organizations consider a combination of other actions to help prevent brute force attacks. In addition to the above, organizations can prompt users to respond to a secret question before the number of allowed unsuccessful logon attempts is exceeded. Automatically unlocking an account after a specified period of time is generally not permitted. However, exceptions may be required based on operational mission or need.
 
-a limit of {{ insert: param, ac-07_odp.01 }} consecutive invalid logon attempts by a user during {{ insert: param, ac-07_odp.02 }} is enforced;
+a limit of the number of consecutive invalid logon attempts by a user allowed during a time period is defined; consecutive invalid logon attempts by a user during the time period to which the number of consecutive invalid logon attempts by a user is limited is defined; is enforced;
 
-automatically {{ insert: param, ac-07_odp.03 }} when the maximum number of unsuccessful attempts is exceeded.
+automatically lock the account or node for time period for an account or node to be locked is defined (if selected); , lock the account or node until released by an administrator, delay next logon prompt per delay algorithm for the next logon prompt is defined (if selected); , notify system administrator, and/or take other other action to be taken when the maximum number of unsuccessful attempts is exceeded is defined (if selected); when the maximum number of unsuccessful attempts is exceeded.
 
 Access control policy
 
@@ -290,7 +290,7 @@ Mechanisms implementing access control policy for unsuccessful logon attempts
 
 ### AC-8: System Use Notification
 
-Display {{ insert: param, ac-08_odp.01 }} to users before granting access to the system that provides privacy and security notices consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines and state that:
+Display system use notification message or banner to be displayed by the system to users before granting access to the system is defined; to users before granting access to the system that provides privacy and security notices consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines and state that:
 
 Users are accessing a U.S. Government system;
 
@@ -304,7 +304,7 @@ Retain the notification message or banner on the screen until users acknowledge 
 
 For publicly accessible systems:
 
-Display system use information {{ insert: param, ac-08_odp.02 }} , before granting further access to the publicly accessible system;
+Display system use information conditions for system use to be displayed by the system before granting further access are defined; , before granting further access to the publicly accessible system;
 
 Display references, if any, to monitoring, recording, or auditing that are consistent with privacy accommodations for such systems that generally prohibit those activities; and
 
@@ -312,7 +312,7 @@ Include a description of the authorized uses of the system.
 
 System use notifications can be implemented using messages or warning banners displayed before individuals log in to systems. System use notifications are used only for access via logon interfaces with human users. Notifications are not required when human interfaces do not exist. Based on an assessment of risk, organizations consider whether or not a secondary system use notification is needed to access applications or other system resources after the initial network logon. Organizations consider system use notification messages or banners displayed in multiple languages based on organizational needs and the demographics of system users. Organizations consult with the privacy office for input regarding privacy messaging and the Office of the General Counsel or organizational equivalent for legal review and approval of warning banner content.
 
- {{ insert: param, ac-08_odp.01 }} is displayed to users before granting access to the system that provides privacy and security notices consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
+system use notification message or banner to be displayed by the system to users before granting access to the system is defined; is displayed to users before granting access to the system that provides privacy and security notices consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
 
 the system use notification states that users are accessing a U.S. Government system;
 
@@ -324,7 +324,7 @@ the system use notification states that use of the system indicates consent to m
 
 the notification message or banner is retained on the screen until users acknowledge the usage conditions and take explicit actions to log on to or further access the system;
 
-for publicly accessible systems, system use information {{ insert: param, ac-08_odp.02 }} is displayed before granting further access to the publicly accessible system;
+for publicly accessible systems, system use information conditions for system use to be displayed by the system before granting further access are defined; is displayed before granting further access to the publicly accessible system;
 
 for publicly accessible systems, any references to monitoring, recording, or auditing that are consistent with privacy accommodations for such systems that generally prohibit those activities are displayed;
 
@@ -368,13 +368,13 @@ Mechanisms implementing system use notification
 
 ### AC-14: Permitted Actions Without Identification or Authentication
 
-Identify {{ insert: param, ac-14_odp }} that can be performed on the system without identification or authentication consistent with organizational mission and business functions; and
+Identify user actions that can be performed on the system without identification or authentication are defined; that can be performed on the system without identification or authentication consistent with organizational mission and business functions; and
 
 Document and provide supporting rationale in the security plan for the system, user actions not requiring identification or authentication.
 
 Specific user actions may be permitted without identification or authentication if organizations determine that identification and authentication are not required for the specified user actions. Organizations may allow a limited number of user actions without identification or authentication, including when individuals access public websites or other publicly accessible federal systems, when individuals use mobile phones to receive calls, or when facsimiles are received. Organizations identify actions that normally require identification or authentication but may, under certain circumstances, allow identification or authentication mechanisms to be bypassed. Such bypasses may occur, for example, via a software-readable physical switch that commands bypass of the logon functionality and is protected from accidental or unmonitored use. Permitting actions without identification or authentication does not apply to situations where identification and authentication have already occurred and are not repeated but rather to situations where identification and authentication have not yet occurred. Organizations may decide that there are no user actions that can be performed on organizational systems without identification and authentication, and therefore, the value for the assignment operation can be "none." 
 
- {{ insert: param, ac-14_odp }} that can be performed on the system without identification or authentication consistent with organizational mission and business functions are identified;
+user actions that can be performed on the system without identification or authentication are defined; that can be performed on the system without identification or authentication consistent with organizational mission and business functions are identified;
 
 user actions not requiring identification or authentication are documented in the security plan for the system;
 
@@ -530,13 +530,13 @@ configurations of mobile devices
 
 ### AC-20: Use of External Systems
 
- {{ insert: param, ac-20_odp.01 }} , consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems, allowing authorized individuals to:
+establish terms and conditions consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems are defined (if selected); and/oridentify controls asserted to be implemented on external systems consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems are defined (if selected); , consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems, allowing authorized individuals to:
 
 Access the system from external systems; and
 
 Process, store, or transmit organization-controlled information using external systems; or
 
-Prohibit the use of {{ insert: param, ac-20_odp.04 }}.
+Prohibit the use of types of external systems prohibited from use are defined;.
 
 External systems are systems that are used by but not part of organizational systems, and for which the organization has no direct control over the implementation of required controls or the assessment of control effectiveness. External systems include personally owned systems, components, or devices; privately owned computing and communications devices in commercial or public facilities; systems owned or controlled by nonfederal organizations; systems managed by contractors; and federal information systems that are not owned by, operated by, or under the direct supervision or authority of the organization. External systems also include systems owned or operated by other components within the same organization and systems within the organization with different authorization boundaries. Organizations have the option to prohibit the use of any type of external system or prohibit the use of specified types of external systems, (e.g., prohibit the use of any external system that is not organizationally owned or prohibit the use of personally-owned systems).
 
@@ -544,11 +544,11 @@ For some external systems (i.e., systems operated by other organizations), the t
 
 External systems used to access public interfaces to organizational systems are outside the scope of [AC-20](#ac-20) . Organizations establish specific terms and conditions for the use of external systems in accordance with organizational security policies and procedures. At a minimum, terms and conditions address the specific types of applications that can be accessed on organizational systems from external systems and the highest security category of information that can be processed, stored, or transmitted on external systems. If the terms and conditions with the owners of the external systems cannot be established, organizations may impose restrictions on organizational personnel using those external systems.
 
- {{ insert: param, ac-20_odp.01 }} is/are consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems, allowing authorized individuals to access the system from external systems (if applicable);
+establish terms and conditions consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems are defined (if selected); and/oridentify controls asserted to be implemented on external systems consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems are defined (if selected); is/are consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems, allowing authorized individuals to access the system from external systems (if applicable);
 
- {{ insert: param, ac-20_odp.01 }} is/are consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems, allowing authorized individuals to process, store, or transmit organization-controlled information using external systems (if applicable);
+ establish terms and conditions consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems are defined (if selected); and/oridentify controls asserted to be implemented on external systems consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems are defined (if selected); is/are consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems, allowing authorized individuals to process, store, or transmit organization-controlled information using external systems (if applicable);
 
-the use of {{ insert: param, ac-20_odp.04 }} is prohibited (if applicable).
+the use of types of external systems prohibited from use are defined; is prohibited (if applicable).
 
 Access control policy
 
@@ -582,7 +582,7 @@ Train authorized individuals to ensure that publicly accessible information does
 
 Review the proposed content of information prior to posting onto the publicly accessible system to ensure that nonpublic information is not included; and
 
-Review the content on the publicly accessible system for nonpublic information {{ insert: param, ac-22_odp }} and remove such information, if discovered.
+Review the content on the publicly accessible system for nonpublic information the frequency at which to review the content on the publicly accessible system for non-public information is defined; and remove such information, if discovered.
 
 In accordance with applicable laws, executive orders, directives, policies, regulations, standards, and guidelines, the public is not authorized to have access to nonpublic information, including information protected under the [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) and proprietary information. Publicly accessible content addresses systems that are controlled by the organization and accessible to the public, typically without identification or authentication. Posting information on non-organizational systems (e.g., non-organizational public websites, forums, and social media) is covered by organizational policy. While organizations may have individuals who are responsible for developing and implementing policies about the information that can be made publicly accessible, publicly accessible content addresses the management of the individuals who make such information publicly accessible.
 
@@ -592,7 +592,7 @@ authorized individuals are trained to ensure that publicly accessible informatio
 
 the proposed content of information is reviewed prior to posting onto the publicly accessible system to ensure that non-public information is not included;
 
-the content on the publicly accessible system is reviewed for non-public information {{ insert: param, ac-22_odp }};
+the content on the publicly accessible system is reviewed for non-public information the frequency at which to review the content on the publicly accessible system for non-public information is defined;;
 
 non-public information is removed from the publicly accessible system, if discovered.
 

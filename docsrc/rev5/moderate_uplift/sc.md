@@ -114,7 +114,7 @@ Protect the confidentiality and integrity of the information being transmitted a
 
 Document each exception to the traffic flow policy with a supporting mission or business need and duration of that need;
 
-Review exceptions to the traffic flow policy {{ insert: param, sc-07.04_odp }} and remove exceptions that are no longer supported by an explicit mission or business need;
+Review exceptions to the traffic flow policy the frequency at which to review exceptions to traffic flow policy is defined; and remove exceptions that are no longer supported by an explicit mission or business need;
 
 Prevent unauthorized exchange of control plane traffic with external networks;
 
@@ -134,7 +134,7 @@ the integrity of the information being transmitted across each interface is prot
 
 each exception to the traffic flow policy is documented with a supporting mission or business need and duration of that need;
 
-exceptions to the traffic flow policy are reviewed {{ insert: param, sc-07.04_odp }};
+exceptions to the traffic flow policy are reviewed the frequency at which to review exceptions to traffic flow policy is defined;;
 
 exceptions to the traffic flow policy that are no longer supported by an explicit mission or business need are removed;
 
@@ -186,13 +186,13 @@ managed interfaces implementing traffic flow policy
 
 ### SC-7 (5): Deny by Default — Allow by Exception
 
-Deny network communications traffic by default and allow network communications traffic by exception {{ insert: param, sc-07.05_odp.01 }}.
+Deny network communications traffic by default and allow network communications traffic by exception at managed interfacesand/orfor systems for which network communications traffic is denied by default and network communications traffic is allowed by exception are defined (if selected)..
 
 Denying by default and allowing by exception applies to inbound and outbound network communications traffic. A deny-all, permit-by-exception network communications traffic policy ensures that only those system connections that are essential and approved are allowed. Deny by default, allow by exception also applies to a system that is connected to an external system.
 
-network communications traffic is denied by default {{ insert: param, sc-07.05_odp.01 }};
+network communications traffic is denied by default at managed interfacesand/orfor systems for which network communications traffic is denied by default and network communications traffic is allowed by exception are defined (if selected).;
 
-network communications traffic is allowed by exception {{ insert: param, sc-07.05_odp.01 }}.
+network communications traffic is allowed by exception at managed interfacesand/orfor systems for which network communications traffic is denied by default and network communications traffic is allowed by exception are defined (if selected)..
 
 System and communications protection policy
 
@@ -220,11 +220,11 @@ Mechanisms implementing traffic management at managed interfaces
 
 ### SC-7 (7): Split Tunneling for Remote Devices
 
-Prevent split tunneling for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using {{ insert: param, sc-07.07_odp }}.
+Prevent split tunneling for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using safeguards to securely provision split tunneling are defined;.
 
 Split tunneling is the process of allowing a remote user or device to establish a non-remote connection with a system and simultaneously communicate via some other connection to a resource in an external network. This method of network access enables a user to access remote devices and simultaneously, access uncontrolled networks. Split tunneling might be desirable by remote users to communicate with local system resources, such as printers or file servers. However, split tunneling can facilitate unauthorized external connections, making the system vulnerable to attack and to exfiltration of organizational information. Split tunneling can be prevented by disabling configuration settings that allow such capability in remote devices and by preventing those configuration settings from being configurable by users. Prevention can also be achieved by the detection of split tunneling (or of configuration settings that allow split tunneling) in the remote device, and by prohibiting the connection if the remote device is using split tunneling. A virtual private network (VPN) can be used to securely provision a split tunnel. A securely provisioned VPN includes locking connectivity to exclusive, managed, and named environments, or to a specific set of pre-approved addresses, without user control.
 
-split tunneling is prevented for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using {{ insert: param, sc-07.07_odp }}.
+split tunneling is prevented for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using safeguards to securely provision split tunneling are defined;.
 
 System and communications protection policy
 
@@ -258,11 +258,11 @@ mechanisms supporting/restricting non-remote connections
 
 ### SC-7 (8): Route Traffic to Authenticated Proxy Servers
 
-Route {{ insert: param, sc-07.08_odp.01 }} to {{ insert: param, sc-07.08_odp.02 }} through authenticated proxy servers at managed interfaces.
+Route internal communications traffic to be routed to external networks is defined; to external networks to which internal communications traffic is to be routed are defined; through authenticated proxy servers at managed interfaces.
 
 External networks are networks outside of organizational control. A proxy server is a server (i.e., system or application) that acts as an intermediary for clients requesting system resources from non-organizational or other organizational servers. System resources that may be requested include files, connections, web pages, or services. Client requests established through a connection to a proxy server are assessed to manage complexity and provide additional protection by limiting direct connectivity. Web content filtering devices are one of the most common proxy servers that provide access to the Internet. Proxy servers can support the logging of Transmission Control Protocol sessions and the blocking of specific Uniform Resource Locators, Internet Protocol addresses, and domain names. Web proxies can be configured with organization-defined lists of authorized and unauthorized websites. Note that proxy servers may inhibit the use of virtual private networks (VPNs) and create the potential for "man-in-the-middle" attacks (depending on the implementation).
 
- {{ insert: param, sc-07.08_odp.01 }} is routed to {{ insert: param, sc-07.08_odp.02 }} through authenticated proxy servers at managed interfaces.
+ internal communications traffic to be routed to external networks is defined; is routed to external networks to which internal communications traffic is to be routed are defined; through authenticated proxy servers at managed interfaces.
 
 System and communications protection policy
 
@@ -294,13 +294,13 @@ Mechanisms implementing traffic management through authenticated proxy servers a
 
 ### SC-8: Transmission Confidentiality and Integrity
 
-Protect the {{ insert: param, sc-08_odp }} of transmitted information.
+Protect the confidentialityand/orintegrity of transmitted information.
 
 Protecting the confidentiality and integrity of transmitted information applies to internal and external networks as well as any system components that can transmit information, including servers, notebook computers, desktop computers, mobile devices, printers, copiers, scanners, facsimile machines, and radios. Unprotected communication paths are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of information can be accomplished by physical or logical means. Physical protection can be achieved by using protected distribution systems. A protected distribution system is a wireline or fiber-optics telecommunications system that includes terminals and adequate electromagnetic, acoustical, electrical, and physical controls to permit its use for the unencrypted transmission of classified information. Logical protection can be achieved by employing encryption techniques.
 
 Organizations that rely on commercial providers who offer transmission services as commodity services rather than as fully dedicated services may find it difficult to obtain the necessary assurances regarding the implementation of needed controls for transmission confidentiality and integrity. In such situations, organizations determine what types of confidentiality or integrity services are available in standard, commercial telecommunications service packages. If it is not feasible to obtain the necessary controls and assurances of control effectiveness through appropriate contracting vehicles, organizations can implement appropriate compensating controls.
 
-the {{ insert: param, sc-08_odp }} of transmitted information is/are protected.
+the confidentialityand/orintegrity of transmitted information is/are protected.
 
 System and communications protection policy
 
@@ -326,11 +326,11 @@ Mechanisms supporting and/or implementing transmission confidentiality and/or in
 
 ### SC-8 (1): Cryptographic Protection
 
-Implement cryptographic mechanisms to {{ insert: param, sc-08.01_odp }} during transmission.
+Implement cryptographic mechanisms to prevent unauthorized disclosure of informationand/ordetect changes to information during transmission.
 
 Encryption protects information from unauthorized disclosure and modification during transmission. Cryptographic mechanisms that protect the confidentiality and integrity of information during transmission include TLS and IPSec. Cryptographic mechanisms used to protect information integrity include cryptographic hash functions that have applications in digital signatures, checksums, and message authentication codes.
 
-cryptographic mechanisms are implemented to {{ insert: param, sc-08.01_odp }} during transmission.
+cryptographic mechanisms are implemented to prevent unauthorized disclosure of informationand/ordetect changes to information during transmission.
 
 System and communications protection policy
 
@@ -360,11 +360,11 @@ organizational processes for defining and implementing alternative physical safe
 
 ### SC-10: Network Disconnect
 
-Terminate the network connection associated with a communications session at the end of the session or after {{ insert: param, sc-10_odp }} of inactivity.
+Terminate the network connection associated with a communications session at the end of the session or after a time period of inactivity after which the system terminates a network connection associated with a communication session is defined; of inactivity.
 
 Network disconnect applies to internal and external networks. Terminating network connections associated with specific communications sessions includes de-allocating TCP/IP address or port pairs at the operating system level and de-allocating the networking assignments at the application level if multiple application sessions are using a single operating system-level network connection. Periods of inactivity may be established by organizations and include time periods by type of network access or for specific network accesses.
 
-the network connection associated with a communication session is terminated at the end of the session or after {{ insert: param, sc-10_odp }} of inactivity.
+the network connection associated with a communication session is terminated at the end of the session or after a time period of inactivity after which the system terminates a network connection associated with a communication session is defined; of inactivity.
 
 System and communications protection policy
 
@@ -392,13 +392,13 @@ Mechanisms supporting and/or implementing a network disconnect capability
 
 ### SC-17: Public Key Infrastructure Certificates
 
-Issue public key certificates under an {{ insert: param, sc-17_odp }} or obtain public key certificates from an approved service provider; and
+Issue public key certificates under an a certificate policy for issuing public key certificates is defined; or obtain public key certificates from an approved service provider; and
 
 Include only approved trust anchors in trust stores or certificate stores managed by the organization.
 
 Public key infrastructure (PKI) certificates are certificates with visibility external to organizational systems and certificates related to the internal operations of systems, such as application-specific time services. In cryptographic systems with a hierarchical structure, a trust anchor is an authoritative source (i.e., a certificate authority) for which trust is assumed and not derived. A root certificate for a PKI system is an example of a trust anchor. A trust store or certificate store maintains a list of trusted root certificates.
 
-public key certificates are issued under {{ insert: param, sc-17_odp }} , or public key certificates are obtained from an approved service provider;
+public key certificates are issued under a certificate policy for issuing public key certificates is defined; , or public key certificates are obtained from an approved service provider;
 
 only approved trust anchors are included in trust stores or certificate stores managed by the organization.
 
@@ -508,11 +508,11 @@ Mechanisms supporting and/or implementing session authenticity
 
 ### SC-28: Protection of Information at Rest
 
-Protect the {{ insert: param, sc-28_odp.01 }} of the following information at rest: {{ insert: param, sc-28_odp.02 }}.
+Protect the confidentialityand/orintegrity of the following information at rest: information at rest requiring protection is defined;.
 
 Information at rest refers to the state of information when it is not in process or in transit and is located on system components. Such components include internal or external hard disk drives, storage area network devices, or databases. However, the focus of protecting information at rest is not on the type of storage device or frequency of access but rather on the state of the information. Information at rest addresses the confidentiality and integrity of information and covers user information and system information. System-related information that requires protection includes configurations or rule sets for firewalls, intrusion detection and prevention systems, filtering routers, and authentication information. Organizations may employ different mechanisms to achieve confidentiality and integrity protections, including the use of cryptographic mechanisms and file share scanning. Integrity protection can be achieved, for example, by implementing write-once-read-many (WORM) technologies. When adequate protection of information at rest cannot otherwise be achieved, organizations may employ other controls, including frequent scanning to identify malicious code at rest and secure offline storage in lieu of online storage.
 
-the {{ insert: param, sc-28_odp.01 }} of {{ insert: param, sc-28_odp.02 }} is/are protected.
+the confidentialityand/orintegrity of information at rest requiring protection is defined; is/are protected.
 
 System and communications protection policy
 
@@ -540,13 +540,13 @@ Mechanisms supporting and/or implementing confidentiality and integrity protecti
 
 ### SC-28 (1): Cryptographic Protection
 
-Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of the following information at rest on {{ insert: param, sc-28.01_odp.02 }}: {{ insert: param, sc-28.01_odp.01 }}.
+Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of the following information at rest on system components or media requiring cryptographic protection is/are defined;: information requiring cryptographic protection is defined;.
 
 The selection of cryptographic mechanisms is based on the need to protect the confidentiality and integrity of organizational information. The strength of mechanism is commensurate with the security category or classification of the information. Organizations have the flexibility to encrypt information on system components or media or encrypt data structures, including files, records, or fields.
 
-cryptographic mechanisms are implemented to prevent unauthorized disclosure of {{ insert: param, sc-28.01_odp.01 }} at rest on {{ insert: param, sc-28.01_odp.02 }};
+cryptographic mechanisms are implemented to prevent unauthorized disclosure of information requiring cryptographic protection is defined; at rest on system components or media requiring cryptographic protection is/are defined;;
 
-cryptographic mechanisms are implemented to prevent unauthorized modification of {{ insert: param, sc-28.01_odp.01 }} at rest on {{ insert: param, sc-28.01_odp.02 }}.
+cryptographic mechanisms are implemented to prevent unauthorized modification of information requiring cryptographic protection is defined; at rest on system components or media requiring cryptographic protection is/are defined;.
 
 System and communications protection policy
 

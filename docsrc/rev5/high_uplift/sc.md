@@ -72,11 +72,11 @@ Mechanisms supporting and/or implementing secure failure
 
 ### SC-7 (21): Isolation of System Components
 
-Employ boundary protection mechanisms to isolate {{ insert: param, sc-07.21_odp.01 }} supporting {{ insert: param, sc-07.21_odp.02 }}.
+Employ boundary protection mechanisms to isolate system components to be isolated by boundary protection mechanisms are defined; supporting missions and/or business functions to be supported by system components isolated by boundary protection mechanisms are defined;.
 
 Organizations can isolate system components that perform different mission or business functions. Such isolation limits unauthorized information flows among system components and provides the opportunity to deploy greater levels of protection for selected system components. Isolating system components with boundary protection mechanisms provides the capability for increased protection of individual system components and to more effectively control information flows between those components. Isolating system components provides enhanced protection that limits the potential harm from hostile cyber-attacks and errors. The degree of isolation varies depending upon the mechanisms chosen. Boundary protection mechanisms include routers, gateways, and firewalls that separate system components into physically separate networks or subnetworks; cross-domain devices that separate subnetworks; virtualization techniques; and the encryption of information flows among system components using distinct encryption keys.
 
-boundary protection mechanisms are employed to isolate {{ insert: param, sc-07.21_odp.01 }} supporting {{ insert: param, sc-07.21_odp.02 }}.
+boundary protection mechanisms are employed to isolate system components to be isolated by boundary protection mechanisms are defined; supporting missions and/or business functions to be supported by system components isolated by boundary protection mechanisms are defined;.
 
 System and communications protection policy
 
@@ -138,11 +138,11 @@ Mechanisms supporting and/or implementing cryptographic key establishment and ma
 
 ### SC-24: Fail in Known State
 
-Fail to a {{ insert: param, sc-24_odp.02 }} for the following failures on the indicated components while preserving {{ insert: param, sc-24_odp.03 }} in failure: {{ insert: param, sc-24_odp.01 }}.
+Fail to a known system state to which system components fail in the event of a system failure is defined; for the following failures on the indicated components while preserving system state information to be preserved in the event of a system failure is defined; in failure: types of system failures for which the system components fail to a known state are defined;.
 
 Failure in a known state addresses security concerns in accordance with the mission and business needs of organizations. Failure in a known state prevents the loss of confidentiality, integrity, or availability of information in the event of failures of organizational systems or system components. Failure in a known safe state helps to prevent systems from failing to a state that may cause injury to individuals or destruction to property. Preserving system state information facilitates system restart and return to the operational mode with less disruption of mission and business processes.
 
- {{ insert: param, sc-24_odp.01 }} fail to a {{ insert: param, sc-24_odp.02 }} while preserving {{ insert: param, sc-24_odp.03 }} in failure.
+ types of system failures for which the system components fail to a known state are defined; fail to a known system state to which system components fail in the event of a system failure is defined; while preserving system state information to be preserved in the event of a system failure is defined; in failure.
 
 System and communications protection policy
 

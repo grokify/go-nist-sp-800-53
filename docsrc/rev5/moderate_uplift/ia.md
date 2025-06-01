@@ -6,11 +6,11 @@
 
 ### IA-3: Device Identification and Authentication
 
-Uniquely identify and authenticate {{ insert: param, ia-03_odp.01 }} before establishing a {{ insert: param, ia-03_odp.02 }} connection.
+Uniquely identify and authenticate devices and/or types of devices to be uniquely identified and authenticated before establishing a connection are defined; before establishing a local, remote, and/or network connection.
 
 Devices that require unique device-to-device identification and authentication are defined by type, device, or a combination of type and device. Organization-defined device types include devices that are not owned by the organization. Systems use shared known information (e.g., Media Access Control [MAC], Transmission Control Protocol/Internet Protocol [TCP/IP] addresses) for device identification or organizational authentication solutions (e.g., Institute of Electrical and Electronics Engineers (IEEE) 802.1x and Extensible Authentication Protocol [EAP], RADIUS server with EAP-Transport Layer Security [TLS] authentication, Kerberos) to identify and authenticate devices on local and wide area networks. Organizations determine the required strength of authentication mechanisms based on the security categories of systems and mission or business requirements. Because of the challenges of implementing device authentication on a large scale, organizations can restrict the application of the control to a limited number/type of devices based on mission or business needs.
 
- {{ insert: param, ia-03_odp.01 }} are uniquely identified and authenticated before establishing a {{ insert: param, ia-03_odp.02 }} connection.
+ devices and/or types of devices to be uniquely identified and authenticated before establishing a connection are defined; are uniquely identified and authenticated before establishing a local, remote, and/or network connection.
 
 Identification and authentication policy
 
@@ -40,11 +40,11 @@ Mechanisms supporting and/or implementing device identification and authenticati
 
 ### IA-4 (4): Identify User Status
 
-Manage individual identifiers by uniquely identifying each individual as {{ insert: param, ia-04.04_odp }}.
+Manage individual identifiers by uniquely identifying each individual as characteristics used to identify individual status is defined;.
 
 Characteristics that identify the status of individuals include contractors, foreign nationals, and non-organizational users. Identifying the status of individuals by these characteristics provides additional information about the people with whom organizational personnel are communicating. For example, it might be useful for a government employee to know that one of the individuals on an email message is a contractor.
 
-individual identifiers are managed by uniquely identifying each individual as {{ insert: param, ia-04.04_odp }}.
+individual identifiers are managed by uniquely identifying each individual as characteristics used to identify individual status is defined;.
 
 Identification and authentication policy
 
@@ -224,11 +224,11 @@ Mechanisms supporting and/or implementing identification and authentication capa
 
 ### IA-12 (3): Identity Evidence Validation and Verification
 
-Require that the presented identity evidence be validated and verified through {{ insert: param, ia-12.03_odp }}.
+Require that the presented identity evidence be validated and verified through methods of validation and verification of identity evidence are defined;.
 
 Validation and verification of identity evidence increases the assurance that accounts and identifiers are being established for the correct user and authenticators are being bound to that user. Validation refers to the process of confirming that the evidence is genuine and authentic, and the data contained in the evidence is correct, current, and related to an individual. Verification confirms and establishes a linkage between the claimed identity and the actual existence of the user presenting the evidence. Acceptable methods for validating and verifying identity evidence are consistent with the risks to the systems, roles, and privileges associated with the users account.
 
-the presented identity evidence is validated and verified through {{ insert: param, ia-12.03_odp }}.
+the presented identity evidence is validated and verified through methods of validation and verification of identity evidence are defined;.
 
 Identification and authentication policy
 
@@ -252,11 +252,11 @@ Mechanisms supporting and/or implementing identification and authentication capa
 
 ### IA-12 (5): Address Confirmation
 
-Require that a {{ insert: param, ia-12.05_odp }} be delivered through an out-of-band channel to verify the users address (physical or digital) of record.
+Require that a registration codeornotice of proofing be delivered through an out-of-band channel to verify the users address (physical or digital) of record.
 
 To make it more difficult for adversaries to pose as legitimate users during the identity proofing process, organizations can use out-of-band methods to ensure that the individual associated with an address of record is the same individual that participated in the registration. Confirmation can take the form of a temporary enrollment code or a notice of proofing. The delivery address for these artifacts is obtained from records and not self-asserted by the user. The address can include a physical or digital address. A home address is an example of a physical address. Email addresses and telephone numbers are examples of digital addresses.
 
-a {{ insert: param, ia-12.05_odp }} is delivered through an out-of-band channel to verify the user’s address (physical or digital) of record.
+a registration codeornotice of proofing is delivered through an out-of-band channel to verify the user’s address (physical or digital) of record.
 
 Identification and authentication policy
 

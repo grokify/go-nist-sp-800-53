@@ -6,9 +6,9 @@
 
 ### CM-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, cm-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, cm-01_odp.03 }} configuration management policy that:
+organization-level, mission/business process-level, and/or system-level configuration management policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the configuration management policy and the associated configuration management controls;
 
-Designate an {{ insert: param, cm-01_odp.04 }} to manage the development, documentation, and dissemination of the configuration management policy and procedures; and
+Designate an an official to manage the configuration management policy and procedures is defined; to manage the development, documentation, and dissemination of the configuration management policy and procedures; and
 
 Review and update the current configuration management:
 
-Policy {{ insert: param, cm-01_odp.05 }} and following {{ insert: param, cm-01_odp.06 }} ; and
+Policy the frequency at which the current configuration management policy is reviewed and updated is defined; and following events that would require the current configuration management policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, cm-01_odp.07 }} and following {{ insert: param, cm-01_odp.08 }}.
+Procedures the frequency at which the current configuration management procedures are reviewed and updated is defined; and following events that would require configuration management procedures to be reviewed and updated are defined;.
 
 Configuration management policy and procedures address the controls in the CM family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of configuration management policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission/business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to configuration management policy and procedures include, but are not limited to, assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 a configuration management policy is developed and documented;
 
-the configuration management policy is disseminated to {{ insert: param, cm-01_odp.01 }};
+the configuration management policy is disseminated to personnel or roles to whom the configuration management policy is to be disseminated is/are defined;;
 
 configuration management procedures to facilitate the implementation of the configuration management policy and associated configuration management controls are developed and documented;
 
-the configuration management procedures are disseminated to {{ insert: param, cm-01_odp.02 }};
+the configuration management procedures are disseminated to personnel or roles to whom the configuration management procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses purpose;
+the organization-level, mission/business process-level, and/or system-level of the configuration management policy addresses purpose;
 
-the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses scope;
+the organization-level, mission/business process-level, and/or system-level of the configuration management policy addresses scope;
 
-the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses roles;
+the organization-level, mission/business process-level, and/or system-level of the configuration management policy addresses roles;
 
-the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses responsibilities;
+the organization-level, mission/business process-level, and/or system-level of the configuration management policy addresses responsibilities;
 
-the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses management commitment;
+the organization-level, mission/business process-level, and/or system-level of the configuration management policy addresses management commitment;
 
-the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses coordination among organizational entities;
+the organization-level, mission/business process-level, and/or system-level of the configuration management policy addresses coordination among organizational entities;
 
-the {{ insert: param, cm-01_odp.03 }} of the configuration management policy addresses compliance;
+the organization-level, mission/business process-level, and/or system-level of the configuration management policy addresses compliance;
 
 the configuration management policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, cm-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the configuration management policy and procedures;
+the an official to manage the configuration management policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the configuration management policy and procedures;
 
-the current configuration management policy is reviewed and updated {{ insert: param, cm-01_odp.05 }}; 
+the current configuration management policy is reviewed and updated the frequency at which the current configuration management policy is reviewed and updated is defined;; 
 
-the current configuration management policy is reviewed and updated following {{ insert: param, cm-01_odp.06 }};
+the current configuration management policy is reviewed and updated following events that would require the current configuration management policy to be reviewed and updated are defined;;
 
-the current configuration management procedures are reviewed and updated {{ insert: param, cm-01_odp.07 }}; 
+the current configuration management procedures are reviewed and updated the frequency at which the current configuration management procedures are reviewed and updated is defined;; 
 
-the current configuration management procedures are reviewed and updated following {{ insert: param, cm-01_odp.08 }}.
+the current configuration management procedures are reviewed and updated following events that would require configuration management procedures to be reviewed and updated are defined;.
 
 Configuration management policy and procedures
 
@@ -86,9 +86,9 @@ Develop, document, and maintain under configuration control, a current baseline 
 
 Review and update the baseline configuration of the system:
 
- {{ insert: param, cm-02_odp.01 }};
+the frequency of baseline configuration review and update is defined;;
 
-When required due to {{ insert: param, cm-02_odp.02 }} ; and
+When required due to the circumstances requiring baseline configuration review and update are defined; ; and
 
 When system components are installed or upgraded.
 
@@ -98,9 +98,9 @@ a current baseline configuration of the system is developed and documented;
 
 a current baseline configuration of the system is maintained under configuration control;
 
-the baseline configuration of the system is reviewed and updated {{ insert: param, cm-02_odp.01 }};
+the baseline configuration of the system is reviewed and updated the frequency of baseline configuration review and update is defined;;
 
-the baseline configuration of the system is reviewed and updated when required due to {{ insert: param, cm-02_odp.02 }};
+the baseline configuration of the system is reviewed and updated when required due to the circumstances requiring baseline configuration review and update are defined;;
 
 the baseline configuration of the system is reviewed and updated when system components are installed or upgraded.
 
@@ -140,17 +140,17 @@ mechanisms supporting configuration control of the baseline configuration
 
 ### CM-2 (2): Automation Support for Accuracy and Currency
 
-Maintain the currency, completeness, accuracy, and availability of the baseline configuration of the system using {{ insert: param, cm-02.02_odp }}.
+Maintain the currency, completeness, accuracy, and availability of the baseline configuration of the system using automated mechanisms for maintaining baseline configuration of the system are defined;.
 
 Automated mechanisms that help organizations maintain consistent baseline configurations for systems include configuration management tools, hardware, software, firmware inventory tools, and network management tools. Automated tools can be used at the organization level, mission and business process level, or system level on workstations, servers, notebook computers, network components, or mobile devices. Tools can be used to track version numbers on operating systems, applications, types of software installed, and current patch levels. Automation support for accuracy and currency can be satisfied by the implementation of [CM-8(2)](#cm-8.2) for organizations that combine system component inventory and baseline configuration activities.
 
-the currency of the baseline configuration of the system is maintained using {{ insert: param, cm-02.02_odp }};
+the currency of the baseline configuration of the system is maintained using automated mechanisms for maintaining baseline configuration of the system are defined;;
 
-the completeness of the baseline configuration of the system is maintained using {{ insert: param, cm-02.02_odp }};
+the completeness of the baseline configuration of the system is maintained using automated mechanisms for maintaining baseline configuration of the system are defined;;
 
-the accuracy of the baseline configuration of the system is maintained using {{ insert: param, cm-02.02_odp }};
+the accuracy of the baseline configuration of the system is maintained using automated mechanisms for maintaining baseline configuration of the system are defined;;
 
-the availability of the baseline configuration of the system is maintained using {{ insert: param, cm-02.02_odp }}.
+the availability of the baseline configuration of the system is maintained using automated mechanisms for maintaining baseline configuration of the system are defined;.
 
 Configuration management policy
 
@@ -184,11 +184,11 @@ automated mechanisms implementing baseline configuration maintenance
 
 ### CM-2 (3): Retention of Previous Configurations
 
-Retain {{ insert: param, cm-02.03_odp }} of previous versions of baseline configurations of the system to support rollback.
+Retain the number of previous baseline configuration versions to be retained is defined; of previous versions of baseline configurations of the system to support rollback.
 
 Retaining previous versions of baseline configurations to support rollback include hardware, software, firmware, configuration files, configuration records, and associated documentation.
 
- {{ insert: param, cm-02.03_odp }} of previous baseline configuration version(s) of the system is/are retained to support rollback.
+ the number of previous baseline configuration versions to be retained is defined; of previous baseline configuration version(s) of the system is/are retained to support rollback.
 
 Configuration management policy
 
@@ -216,15 +216,15 @@ Organizational processes for managing baseline configurations
 
 ### CM-2 (7): Configure Systems and Components for High-risk Areas
 
-Issue {{ insert: param, cm-02.07_odp.01 }} with {{ insert: param, cm-02.07_odp.02 }} to individuals traveling to locations that the organization deems to be of significant risk; and
+Issue the systems or system components to be issued when individuals travel to high-risk areas are defined; with configurations for systems or system components to be issued when individuals travel to high-risk areas are defined; to individuals traveling to locations that the organization deems to be of significant risk; and
 
-Apply the following controls to the systems or components when the individuals return from travel: {{ insert: param, cm-02.07_odp.03 }}.
+Apply the following controls to the systems or components when the individuals return from travel: the controls to be applied when the individuals return from travel are defined;.
 
 When it is known that systems or system components will be in high-risk areas external to the organization, additional controls may be implemented to counter the increased threat in such areas. For example, organizations can take actions for notebook computers used by individuals departing on and returning from travel. Actions include determining the locations that are of concern, defining the required configurations for the components, ensuring that components are configured as intended before travel is initiated, and applying controls to the components after travel is completed. Specially configured notebook computers include computers with sanitized hard drives, limited applications, and more stringent configuration settings. Controls applied to mobile devices upon return from travel include examining the mobile device for signs of physical tampering and purging and reimaging disk drives. Protecting information that resides on mobile devices is addressed in the [MP](#mp) (Media Protection) family.
 
- {{ insert: param, cm-02.07_odp.01 }} with {{ insert: param, cm-02.07_odp.02 }} are issued to individuals traveling to locations that the organization deems to be of significant risk;
+the systems or system components to be issued when individuals travel to high-risk areas are defined; with configurations for systems or system components to be issued when individuals travel to high-risk areas are defined; are issued to individuals traveling to locations that the organization deems to be of significant risk;
 
- {{ insert: param, cm-02.07_odp.03 }} are applied to the systems or system components when the individuals return from travel.
+ the controls to be applied when the individuals return from travel are defined; are applied to the systems or system components when the individuals return from travel.
 
 Configuration management policy
 
@@ -268,11 +268,11 @@ Document configuration change decisions associated with the system;
 
 Implement approved configuration-controlled changes to the system;
 
-Retain records of configuration-controlled changes to the system for {{ insert: param, cm-03_odp.01 }};
+Retain records of configuration-controlled changes to the system for the time period to retain records of configuration-controlled changes is defined;;
 
 Monitor and review activities associated with configuration-controlled changes to the system; and
 
-Coordinate and provide oversight for configuration change control activities through {{ insert: param, cm-03_odp.02 }} that convenes {{ insert: param, cm-03_odp.03 }}.
+Coordinate and provide oversight for configuration change control activities through the configuration change control element responsible for coordinating and overseeing change control activities is defined; that convenes the frequency at which the configuration control element convenes is defined (if selected); and/orwhen configuration change conditions that prompt the configuration control element to convene are defined (if selected);.
 
 Configuration change control for organizational systems involves the systematic proposal, justification, implementation, testing, review, and disposition of system changes, including system upgrades and modifications. Configuration change control includes changes to baseline configurations, configuration items of systems, operational procedures, configuration settings for system components, remediate vulnerabilities, and unscheduled or unauthorized changes. Processes for managing configuration changes to systems include Configuration Control Boards or Change Advisory Boards that review and approve proposed changes. For changes that impact privacy risk, the senior agency official for privacy updates privacy impact assessments and system of records notices. For new systems or major upgrades, organizations consider including representatives from the development organizations on the Configuration Control Boards or Change Advisory Boards. Auditing of changes includes activities before and after changes are made to systems and the auditing activities required to implement such changes. See also [SA-10](#sa-10).
 
@@ -286,15 +286,15 @@ configuration change decisions associated with the system are documented;
 
 approved configuration-controlled changes to the system are implemented;
 
-records of configuration-controlled changes to the system are retained for {{ insert: param, cm-03_odp.01 }};
+records of configuration-controlled changes to the system are retained for the time period to retain records of configuration-controlled changes is defined;;
 
 activities associated with configuration-controlled changes to the system are monitored;
 
 activities associated with configuration-controlled changes to the system are reviewed;
 
-configuration change control activities are coordinated and overseen by {{ insert: param, cm-03_odp.02 }};
+configuration change control activities are coordinated and overseen by the configuration change control element responsible for coordinating and overseeing change control activities is defined;;
 
-the configuration control element convenes {{ insert: param, cm-03_odp.03 }}.
+the configuration control element convenes the frequency at which the configuration control element convenes is defined (if selected); and/orwhen configuration change conditions that prompt the configuration control element to convene are defined (if selected);.
 
 Configuration management policy
 
@@ -336,33 +336,33 @@ mechanisms that implement configuration change control
 
 ### CM-3 (1): Automated Documentation, Notification, and Prohibition of Changes
 
-Use {{ insert: param, cm-03.01_odp.01 }} to:
+Use mechanisms used to automate configuration change control are defined; to:
 
 Document proposed changes to the system;
 
-Notify {{ insert: param, cm-03.01_odp.02 }} of proposed changes to the system and request change approval;
+Notify approval authorities to be notified of and request approval for proposed changes to the system are defined; of proposed changes to the system and request change approval;
 
-Highlight proposed changes to the system that have not been approved or disapproved within {{ insert: param, cm-03.01_odp.03 }};
+Highlight proposed changes to the system that have not been approved or disapproved within the time period after which to highlight changes that have not been approved or disapproved is defined;;
 
 Prohibit changes to the system until designated approvals are received;
 
 Document all changes to the system; and
 
-Notify {{ insert: param, cm-03.01_odp.04 }} when approved changes to the system are completed.
+Notify personnel to be notified when approved changes are complete is/are defined; when approved changes to the system are completed.
 
 None.
 
- {{ insert: param, cm-03.01_odp.01 }} are used to document proposed changes to the system;
+mechanisms used to automate configuration change control are defined; are used to document proposed changes to the system;
 
- {{ insert: param, cm-03.01_odp.01 }} are used to notify {{ insert: param, cm-03.01_odp.02 }} of proposed changes to the system and request change approval;
+ mechanisms used to automate configuration change control are defined; are used to notify approval authorities to be notified of and request approval for proposed changes to the system are defined; of proposed changes to the system and request change approval;
 
- {{ insert: param, cm-03.01_odp.01 }} are used to highlight proposed changes to the system that have not been approved or disapproved within {{ insert: param, cm-03.01_odp.03 }};
+ mechanisms used to automate configuration change control are defined; are used to highlight proposed changes to the system that have not been approved or disapproved within the time period after which to highlight changes that have not been approved or disapproved is defined;;
 
- {{ insert: param, cm-03.01_odp.01 }} are used to prohibit changes to the system until designated approvals are received;
+ mechanisms used to automate configuration change control are defined; are used to prohibit changes to the system until designated approvals are received;
 
- {{ insert: param, cm-03.01_odp.01 }} are used to document all changes to the system;
+ mechanisms used to automate configuration change control are defined; are used to document all changes to the system;
 
- {{ insert: param, cm-03.01_odp.01 }} are used to notify {{ insert: param, cm-03.01_odp.04 }} when approved changes to the system are completed.
+ mechanisms used to automate configuration change control are defined; are used to notify personnel to be notified when approved changes are complete is/are defined; when approved changes to the system are completed.
 
 Configuration management policy
 
@@ -456,13 +456,13 @@ mechanisms supporting and/or implementing, testing, validating, and documenting 
 
 ### CM-3 (4): Security and Privacy Representatives
 
-Require {{ insert: param, cm-3.4_prm_1 }} to be members of the {{ insert: param, cm-03.04_odp.03 }}.
+Require organization-defined security and privacy representatives to be members of the the configuration change control element of which the security and privacy representatives are to be members is defined;.
 
 Information security and privacy representatives include system security officers, senior agency information security officers, senior agency officials for privacy, or system privacy officers. Representation by personnel with information security and privacy expertise is important because changes to system configurations can have unintended side effects, some of which may be security- or privacy-relevant. Detecting such changes early in the process can help avoid unintended, negative consequences that could ultimately affect the security and privacy posture of systems. The configuration change control element referred to in the second organization-defined parameter reflects the change control elements defined by organizations in [CM-3g](#cm-3_smt.g).
 
- {{ insert: param, cm-03.04_odp.01 }} are required to be members of the {{ insert: param, cm-03.04_odp.03 }};
+security representatives required to be members of the change control element are defined; are required to be members of the the configuration change control element of which the security and privacy representatives are to be members is defined;;
 
- {{ insert: param, cm-03.04_odp.02 }} are required to be members of the {{ insert: param, cm-03.04_odp.03 }}.
+ privacy representatives required to be members of the change control element are defined; are required to be members of the the configuration change control element of which the security and privacy representatives are to be members is defined;.
 
 Configuration management policy
 
@@ -486,11 +486,11 @@ Organizational processes for configuration change control
 
 ### CM-3 (6): Cryptography Management
 
-Ensure that cryptographic mechanisms used to provide the following controls are under configuration management: {{ insert: param, cm-03.06_odp }}.
+Ensure that cryptographic mechanisms used to provide the following controls are under configuration management: controls provided by cryptographic mechanisms that are to be under configuration management are defined;.
 
 The controls referenced in the control enhancement refer to security and privacy controls from the control catalog. Regardless of the cryptographic mechanisms employed, processes and procedures are in place to manage those mechanisms. For example, if system components use certificates for identification and authentication, a process is implemented to address the expiration of those certificates.
 
-cryptographic mechanisms used to provide {{ insert: param, cm-03.06_odp }} are under configuration management.
+cryptographic mechanisms used to provide controls provided by cryptographic mechanisms that are to be under configuration management are defined; are under configuration management.
 
 Configuration management policy
 
@@ -764,13 +764,13 @@ mechanisms supporting, implementing, or enforcing access restrictions associated
 
 ### CM-5 (1): Automated Access Enforcement and Audit Records
 
-Enforce access restrictions using {{ insert: param, cm-05.01_odp }} ; and
+Enforce access restrictions using mechanisms used to automate the enforcement of access restrictions are defined; ; and
 
 Automatically generate audit records of the enforcement actions.
 
 Organizations log system accesses associated with applying configuration changes to ensure that configuration change control is implemented and to support after-the-fact actions should organizations discover any unauthorized changes.
 
-access restrictions for change are enforced using {{ insert: param, cm-05.01_odp }};
+access restrictions for change are enforced using mechanisms used to automate the enforcement of access restrictions are defined;;
 
 audit records of enforcement actions are automatically generated.
 
@@ -808,11 +808,11 @@ automated mechanisms supporting auditing of enforcement actions
 
 ### CM-6: Configuration Settings
 
-Establish and document configuration settings for components employed within the system that reflect the most restrictive mode consistent with operational requirements using {{ insert: param, cm-06_odp.01 }};
+Establish and document configuration settings for components employed within the system that reflect the most restrictive mode consistent with operational requirements using common secure configurations to establish and document configuration settings for components employed within the system are defined;;
 
 Implement the configuration settings;
 
-Identify, document, and approve any deviations from established configuration settings for {{ insert: param, cm-06_odp.02 }} based on {{ insert: param, cm-06_odp.03 }} ; and
+Identify, document, and approve any deviations from established configuration settings for system components for which approval of deviations is needed are defined; based on operational requirements necessitating approval of deviations are defined; ; and
 
 Monitor and control changes to the configuration settings in accordance with organizational policies and procedures.
 
@@ -822,13 +822,13 @@ Common secure configurations (also known as security configuration checklists, l
 
 Implementation of a common secure configuration may be mandated at the organization level, mission and business process level, system level, or at a higher level, including by a regulatory agency. Common secure configurations include the United States Government Configuration Baseline [USGCB](#98498928-3ca3-44b3-8b1e-f48685373087) and security technical implementation guides (STIGs), which affect the implementation of [CM-6](#cm-6) and other controls such as [AC-19](#ac-19) and [CM-7](#cm-7) . The Security Content Automation Protocol (SCAP) and the defined standards within the protocol provide an effective method to uniquely identify, track, and control configuration settings.
 
-configuration settings that reflect the most restrictive mode consistent with operational requirements are established and documented for components employed within the system using {{ insert: param, cm-06_odp.01 }};
+configuration settings that reflect the most restrictive mode consistent with operational requirements are established and documented for components employed within the system using common secure configurations to establish and document configuration settings for components employed within the system are defined;;
 
 the configuration settings documented in CM-06a are implemented;
 
-any deviations from established configuration settings for {{ insert: param, cm-06_odp.02 }} are identified and documented based on {{ insert: param, cm-06_odp.03 }};
+any deviations from established configuration settings for system components for which approval of deviations is needed are defined; are identified and documented based on operational requirements necessitating approval of deviations are defined;;
 
-any deviations from established configuration settings for {{ insert: param, cm-06_odp.02 }} are approved;
+any deviations from established configuration settings for system components for which approval of deviations is needed are defined; are approved;
 
 changes to the configuration settings are monitored in accordance with organizational policies and procedures;
 
@@ -878,15 +878,15 @@ mechanisms that identify and/or document deviations from established configurati
 
 ### CM-6 (1): Automated Management, Application, and Verification
 
-Manage, apply, and verify configuration settings for {{ insert: param, cm-06.01_odp.01 }} using {{ insert: param, cm-6.1_prm_2 }}.
+Manage, apply, and verify configuration settings for system components for which to manage, apply, and verify configuration settings are defined; using organization-defined automated mechanisms.
 
 Automated tools (e.g., hardening tools, baseline configuration tools) can improve the accuracy, consistency, and availability of configuration settings information. Automation can also provide data aggregation and data correlation capabilities, alerting mechanisms, and dashboards to support risk-based decision-making within the organization.
 
-configuration settings for {{ insert: param, cm-06.01_odp.01 }} are managed using {{ insert: param, cm-06.01_odp.02 }};
+configuration settings for system components for which to manage, apply, and verify configuration settings are defined; are managed using automated mechanisms to manage configuration settings are defined;;
 
-configuration settings for {{ insert: param, cm-06.01_odp.01 }} are applied using {{ insert: param, cm-06.01_odp.03 }};
+configuration settings for system components for which to manage, apply, and verify configuration settings are defined; are applied using automated mechanisms to apply configuration settings are defined;;
 
-configuration settings for {{ insert: param, cm-06.01_odp.01 }} are verified using {{ insert: param, cm-06.01_odp.04 }}.
+configuration settings for system components for which to manage, apply, and verify configuration settings are defined; are verified using automated mechanisms to verify configuration settings are defined;.
 
 Configuration management policy
 
@@ -926,11 +926,11 @@ automated mechanisms implemented to manage, apply, and verify system configurati
 
 ### CM-6 (2): Respond to Unauthorized Changes
 
-Take the following actions in response to unauthorized changes to {{ insert: param, cm-06.02_odp.02 }}: {{ insert: param, cm-06.02_odp.01 }}.
+Take the following actions in response to unauthorized changes to configuration settings requiring action upon an unauthorized change are defined;: actions to be taken upon an unauthorized change are defined;.
 
 Responses to unauthorized changes to configuration settings include alerting designated organizational personnel, restoring established configuration settings, or—in extreme cases—halting affected system processing.
 
- {{ insert: param, cm-06.02_odp.01 }} are taken in response to unauthorized changes to {{ insert: param, cm-06.02_odp.02 }}.
+ actions to be taken upon an unauthorized change are defined; are taken in response to unauthorized changes to configuration settings requiring action upon an unauthorized change are defined;.
 
 System security plan
 
@@ -970,23 +970,23 @@ mechanisms supporting and/or implementing actions in response to unauthorized ch
 
 ### CM-7: Least Functionality
 
-Configure the system to provide only {{ insert: param, cm-07_odp.01 }} ; and
+Configure the system to provide only mission-essential capabilities for the system are defined; ; and
 
-Prohibit or restrict the use of the following functions, ports, protocols, software, and/or services: {{ insert: param, cm-7_prm_2 }}.
+Prohibit or restrict the use of the following functions, ports, protocols, software, and/or services: organization-defined prohibited or restricted functions, system ports, protocols, software, and/or services.
 
 Systems provide a wide variety of functions and services. Some of the functions and services routinely provided by default may not be necessary to support essential organizational missions, functions, or operations. Additionally, it is sometimes convenient to provide multiple services from a single system component, but doing so increases risk over limiting the services provided by that single component. Where feasible, organizations limit component functionality to a single function per component. Organizations consider removing unused or unnecessary software and disabling unused or unnecessary physical and logical ports and protocols to prevent unauthorized connection of components, transfer of information, and tunneling. Organizations employ network scanning tools, intrusion detection and prevention systems, and end-point protection technologies, such as firewalls and host-based intrusion detection systems, to identify and prevent the use of prohibited functions, protocols, ports, and services. Least functionality can also be achieved as part of the fundamental design and development of the system (see [SA-8](#sa-8), [SC-2](#sc-2) , and [SC-3](#sc-3)).
 
-the system is configured to provide only {{ insert: param, cm-07_odp.01 }};
+the system is configured to provide only mission-essential capabilities for the system are defined;;
 
-the use of {{ insert: param, cm-07_odp.02 }} is prohibited or restricted;
+the use of functions to be prohibited or restricted are defined; is prohibited or restricted;
 
-the use of {{ insert: param, cm-07_odp.03 }} is prohibited or restricted;
+the use of ports to be prohibited or restricted are defined; is prohibited or restricted;
 
-the use of {{ insert: param, cm-07_odp.04 }} is prohibited or restricted;
+the use of protocols to be prohibited or restricted are defined; is prohibited or restricted;
 
-the use of {{ insert: param, cm-07_odp.05 }} is prohibited or restricted;
+the use of software to be prohibited or restricted is defined; is prohibited or restricted;
 
-the use of {{ insert: param, cm-07_odp.06 }} is prohibited or restricted.
+the use of services to be prohibited or restricted are defined; is prohibited or restricted.
 
 Configuration management policy
 
@@ -1020,23 +1020,23 @@ mechanisms implementing restrictions or prohibition of functions, ports, protoco
 
 ### CM-7 (1): Periodic Review
 
-Review the system {{ insert: param, cm-07.01_odp.01 }} to identify unnecessary and/or nonsecure functions, ports, protocols, software, and services; and
+Review the system the frequency at which to review the system to identify unnecessary and/or non-secure functions, ports, protocols, software, and/or services is defined; to identify unnecessary and/or nonsecure functions, ports, protocols, software, and services; and
 
-Disable or remove {{ insert: param, cm-7.1_prm_2 }}.
+Disable or remove organization-defined functions, ports, protocols, software, and services within the system deemed to be unnecessary and/or nonsecure.
 
 Organizations review functions, ports, protocols, and services provided by systems or system components to determine the functions and services that are candidates for elimination. Such reviews are especially important during transition periods from older technologies to newer technologies (e.g., transition from IPv4 to IPv6). These technology transitions may require implementing the older and newer technologies simultaneously during the transition period and returning to minimum essential functions, ports, protocols, and services at the earliest opportunity. Organizations can either decide the relative security of the function, port, protocol, and/or service or base the security decision on the assessment of other entities. Unsecure protocols include Bluetooth, FTP, and peer-to-peer networking.
 
-the system is reviewed {{ insert: param, cm-07.01_odp.01 }} to identify unnecessary and/or non-secure functions, ports, protocols, software, and services:
+the system is reviewed the frequency at which to review the system to identify unnecessary and/or non-secure functions, ports, protocols, software, and/or services is defined; to identify unnecessary and/or non-secure functions, ports, protocols, software, and services:
 
- {{ insert: param, cm-07.01_odp.02 }} deemed to be unnecessary and/or non-secure are disabled or removed;
+functions to be disabled or removed when deemed unnecessary or non-secure are defined; deemed to be unnecessary and/or non-secure are disabled or removed;
 
- {{ insert: param, cm-07.01_odp.03 }} deemed to be unnecessary and/or non-secure are disabled or removed;
+ ports to be disabled or removed when deemed unnecessary or non-secure are defined; deemed to be unnecessary and/or non-secure are disabled or removed;
 
- {{ insert: param, cm-07.01_odp.04 }} deemed to be unnecessary and/or non-secure are disabled or removed;
+ protocols to be disabled or removed when deemed unnecessary or non-secure are defined; deemed to be unnecessary and/or non-secure are disabled or removed;
 
- {{ insert: param, cm-07.01_odp.05 }} deemed to be unnecessary and/or non-secure is disabled or removed;
+ software to be disabled or removed when deemed unnecessary or non-secure is defined; deemed to be unnecessary and/or non-secure is disabled or removed;
 
- {{ insert: param, cm-07.01_odp.06 }} deemed to be unnecessary and/or non-secure are disabled or removed.
+ services to be disabled or removed when deemed unnecessary or non-secure are defined; deemed to be unnecessary and/or non-secure are disabled or removed.
 
 Configuration management policy
 
@@ -1074,11 +1074,11 @@ mechanisms implementing review and disabling of functions, ports, protocols, and
 
 ### CM-7 (2): Prevent Program Execution
 
-Prevent program execution in accordance with {{ insert: param, cm-07.02_odp.01 }}.
+Prevent program execution in accordance with policies, rules of behavior, and/or access agreements regarding software program usage and restrictions are defined (if selected); and/orrules authorizing the terms and conditions of software program usage.
 
 Prevention of program execution addresses organizational policies, rules of behavior, and/or access agreements that restrict software usage and the terms and conditions imposed by the developer or manufacturer, including software licensing and copyrights. Restrictions include prohibiting auto-execute features, restricting roles allowed to approve program execution, permitting or prohibiting specific software programs, or restricting the number of program instances executed at the same time.
 
-program execution is prevented in accordance with {{ insert: param, cm-07.02_odp.01 }}.
+program execution is prevented in accordance with policies, rules of behavior, and/or access agreements regarding software program usage and restrictions are defined (if selected); and/orrules authorizing the terms and conditions of software program usage.
 
 Configuration management policy
 
@@ -1120,19 +1120,19 @@ mechanisms supporting and/or implementing software program usage and restriction
 
 ### CM-7 (5): Authorized Software — Allow-by-exception
 
-Identify {{ insert: param, cm-07.05_odp.01 }};
+Identify software programs authorized to execute on the system are defined;;
 
 Employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs on the system; and
 
-Review and update the list of authorized software programs {{ insert: param, cm-07.05_odp.02 }}.
+Review and update the list of authorized software programs frequency at which to review and update the list of authorized software programs is defined;.
 
 Authorized software programs can be limited to specific versions or from a specific source. To facilitate a comprehensive authorized software process and increase the strength of protection for attacks that bypass application level authorized software, software programs may be decomposed into and monitored at different levels of detail. These levels include applications, application programming interfaces, application modules, scripts, system processes, system services, kernel functions, registries, drivers, and dynamic link libraries. The concept of permitting the execution of authorized software may also be applied to user actions, system ports and protocols, IP addresses/ranges, websites, and MAC addresses. Organizations consider verifying the integrity of authorized software programs using digital signatures, cryptographic checksums, or hash functions. Verification of authorized software can occur either prior to execution or at system startup. The identification of authorized URLs for websites is addressed in [CA-3(5)](#ca-3.5) and [SC-7](#sc-7).
 
- {{ insert: param, cm-07.05_odp.01 }} are identified;
+software programs authorized to execute on the system are defined; are identified;
 
 a deny-all, permit-by-exception policy to allow the execution of authorized software programs on the system is employed;
 
-the list of authorized software programs is reviewed and updated {{ insert: param, cm-07.05_odp.02 }}.
+the list of authorized software programs is reviewed and updated frequency at which to review and update the list of authorized software programs is defined;.
 
 Configuration management policy
 
@@ -1184,9 +1184,9 @@ Does not include duplicate accounting of components or components assigned to an
 
 Is at the level of granularity deemed necessary for tracking and reporting; and
 
-Includes the following information to achieve system component accountability: {{ insert: param, cm-08_odp.01 }} ; and
+Includes the following information to achieve system component accountability: information deemed necessary to achieve effective system component accountability is defined; ; and
 
-Review and update the system component inventory {{ insert: param, cm-08_odp.02 }}.
+Review and update the system component inventory frequency at which to review and update the system component inventory is defined;.
 
 System components are discrete, identifiable information technology assets that include hardware, software, and firmware. Organizations may choose to implement centralized system component inventories that include components from all organizational systems. In such situations, organizations ensure that the inventories include system-specific information required for component accountability. The information necessary for effective accountability of system components includes the system name, software owners, software version numbers, hardware inventory specifications, software license information, and for networked components, the machine names and network addresses across all implemented protocols (e.g., IPv4, IPv6). Inventory specifications include date of receipt, cost, model, serial number, manufacturer, supplier information, component type, and physical location.
 
@@ -1200,9 +1200,9 @@ an inventory of system components that does not include duplicate accounting of 
 
 an inventory of system components that is at the level of granularity deemed necessary for tracking and reporting is developed and documented;
 
-an inventory of system components that includes {{ insert: param, cm-08_odp.01 }} is developed and documented;
+an inventory of system components that includes information deemed necessary to achieve effective system component accountability is defined; is developed and documented;
 
-the system component inventory is reviewed and updated {{ insert: param, cm-08_odp.02 }}.
+the system component inventory is reviewed and updated frequency at which to review and update the system component inventory is defined;.
 
 Configuration management policy
 
@@ -1278,17 +1278,17 @@ mechanisms supporting and/or implementing system component inventory updates
 
 ### CM-8 (2): Automated Maintenance
 
-Maintain the currency, completeness, accuracy, and availability of the inventory of system components using {{ insert: param, cm-8.2_prm_1 }}.
+Maintain the currency, completeness, accuracy, and availability of the inventory of system components using organization-defined automated mechanisms.
 
 Organizations maintain system inventories to the extent feasible. For example, virtual machines can be difficult to monitor because such machines are not visible to the network when not in use. In such cases, organizations maintain as up-to-date, complete, and accurate an inventory as is deemed reasonable. Automated maintenance can be achieved by the implementation of [CM-2(2)](#cm-2.2) for organizations that combine system component inventory and baseline configuration activities.
 
- {{ insert: param, cm-08.02_odp.01 }} are used to maintain the currency of the system component inventory;
+automated mechanisms used to maintain the currency of the system component inventory are defined; are used to maintain the currency of the system component inventory;
 
- {{ insert: param, cm-08.02_odp.02 }} are used to maintain the completeness of the system component inventory;
+ automated mechanisms used to maintain the completeness of the system component inventory are defined; are used to maintain the completeness of the system component inventory;
 
- {{ insert: param, cm-08.02_odp.03 }} are used to maintain the accuracy of the system component inventory;
+ automated mechanisms used to maintain the accuracy of the system component inventory are defined; are used to maintain the accuracy of the system component inventory;
 
- {{ insert: param, cm-08.02_odp.04 }} are used to maintain the availability of the system component inventory.
+ automated mechanisms used to maintain the availability of the system component inventory are defined; are used to maintain the availability of the system component inventory.
 
 Configuration management policy
 
@@ -1326,23 +1326,23 @@ automated mechanisms supporting and/or implementing the system component invento
 
 ### CM-8 (3): Automated Unauthorized Component Detection
 
-Detect the presence of unauthorized hardware, software, and firmware components within the system using {{ insert: param, cm-8.3_prm_1 }} {{ insert: param, cm-08.03_odp.04 }} ; and
+Detect the presence of unauthorized hardware, software, and firmware components within the system using organization-defined automated mechanisms frequency at which automated mechanisms are used to detect the presence of unauthorized system components within the system is defined; ; and
 
-Take the following actions when unauthorized components are detected: {{ insert: param, cm-08.03_odp.05 }}.
+Take the following actions when unauthorized components are detected: disable network access by unauthorized components, isolate unauthorized components, and/or notify personnel or roles to be notified when unauthorized components are detected is/are defined (if selected);.
 
 Automated unauthorized component detection is applied in addition to the monitoring for unauthorized remote connections and mobile devices. Monitoring for unauthorized system components may be accomplished on an ongoing basis or by the periodic scanning of systems for that purpose. Automated mechanisms may also be used to prevent the connection of unauthorized components (see [CM-7(9)](#cm-7.9) ). Automated mechanisms can be implemented in systems or in separate system components. When acquiring and implementing automated mechanisms, organizations consider whether such mechanisms depend on the ability of the system component to support an agent or supplicant in order to be detected since some types of components do not have or cannot support agents (e.g., IoT devices, sensors). Isolation can be achieved , for example, by placing unauthorized system components in separate domains or subnets or quarantining such components. This type of component isolation is commonly referred to as "sandboxing." 
 
-the presence of unauthorized hardware within the system is detected using {{ insert: param, cm-08.03_odp.01 }} {{ insert: param, cm-08.03_odp.04 }};
+the presence of unauthorized hardware within the system is detected using automated mechanisms used to detect the presence of unauthorized hardware within the system are defined; frequency at which automated mechanisms are used to detect the presence of unauthorized system components within the system is defined;;
 
-the presence of unauthorized software within the system is detected using {{ insert: param, cm-08.03_odp.02 }} {{ insert: param, cm-08.03_odp.04 }};
+the presence of unauthorized software within the system is detected using automated mechanisms used to detect the presence of unauthorized software within the system are defined; frequency at which automated mechanisms are used to detect the presence of unauthorized system components within the system is defined;;
 
-the presence of unauthorized firmware within the system is detected using {{ insert: param, cm-08.03_odp.03 }} {{ insert: param, cm-08.03_odp.04 }};
+the presence of unauthorized firmware within the system is detected using automated mechanisms used to detect the presence of unauthorized firmware within the system are defined; frequency at which automated mechanisms are used to detect the presence of unauthorized system components within the system is defined;;
 
- {{ insert: param, cm-08.03_odp.05 }} are taken when unauthorized hardware is detected;
+disable network access by unauthorized components, isolate unauthorized components, and/or notify personnel or roles to be notified when unauthorized components are detected is/are defined (if selected); are taken when unauthorized hardware is detected;
 
- {{ insert: param, cm-08.03_odp.05 }} are taken when unauthorized software is detected;
+ disable network access by unauthorized components, isolate unauthorized components, and/or notify personnel or roles to be notified when unauthorized components are detected is/are defined (if selected); are taken when unauthorized software is detected;
 
- {{ insert: param, cm-08.03_odp.05 }} are taken when unauthorized firmware is detected.
+ disable network access by unauthorized components, isolate unauthorized components, and/or notify personnel or roles to be notified when unauthorized components are detected is/are defined (if selected); are taken when unauthorized firmware is detected.
 
 Configuration management policy
 
@@ -1390,11 +1390,11 @@ automated mechanisms supporting and/or implementing actions taken when unauthori
 
 ### CM-8 (4): Accountability Information
 
-Include in the system component inventory information, a means for identifying by {{ insert: param, cm-08.04_odp }} , individuals responsible and accountable for administering those components.
+Include in the system component inventory information, a means for identifying by name, position, and/or role , individuals responsible and accountable for administering those components.
 
 Identifying individuals who are responsible and accountable for administering system components ensures that the assigned components are properly administered and that organizations can contact those individuals if some action is required (e.g., when the component is determined to be the source of a breach, needs to be recalled or replaced, or needs to be relocated).
 
-individuals responsible and accountable for administering system components are identified by {{ insert: param, cm-08.04_odp }} in the system component inventory.
+individuals responsible and accountable for administering system components are identified by name, position, and/or role in the system component inventory.
 
 Configuration management policy
 
@@ -1430,7 +1430,7 @@ Establishes a process for identifying configuration items throughout the system 
 
 Defines the configuration items for the system and places the configuration items under configuration management;
 
-Is reviewed and approved by {{ insert: param, cm-09_odp }} ; and
+Is reviewed and approved by personnel or roles to review and approve the configuration management plan is/are defined; ; and
 
 Protects the configuration management plan from unauthorized disclosure and modification.
 
@@ -1458,7 +1458,7 @@ the configuration management plan defines the configuration items for the system
 
 the configuration management plan places the configuration items under configuration management;
 
-the configuration management plan is reviewed and approved by {{ insert: param, cm-09_odp }};
+the configuration management plan is reviewed and approved by personnel or roles to review and approve the configuration management plan is/are defined;;
 
 the configuration management plan is protected from unauthorized disclosure;
 
@@ -1554,19 +1554,19 @@ mechanisms implementing and controlling the use of peer-to-peer files sharing te
 
 ### CM-11: User-installed Software
 
-Establish {{ insert: param, cm-11_odp.01 }} governing the installation of software by users;
+Establish policies governing the installation of software by users are defined; governing the installation of software by users;
 
-Enforce software installation policies through the following methods: {{ insert: param, cm-11_odp.02 }} ; and
+Enforce software installation policies through the following methods: methods used to enforce software installation policies are defined; ; and
 
-Monitor policy compliance {{ insert: param, cm-11_odp.03 }}.
+Monitor policy compliance frequency with which to monitor compliance is defined;.
 
 If provided the necessary privileges, users can install software in organizational systems. To maintain control over the software installed, organizations identify permitted and prohibited actions regarding software installation. Permitted software installations include updates and security patches to existing software and downloading new applications from organization-approved "app stores." Prohibited software installations include software with unknown or suspect pedigrees or software that organizations consider potentially malicious. Policies selected for governing user-installed software are organization-developed or provided by some external entity. Policy enforcement methods can include procedural methods and automated methods.
 
- {{ insert: param, cm-11_odp.01 }} governing the installation of software by users are established;
+policies governing the installation of software by users are defined; governing the installation of software by users are established;
 
-software installation policies are enforced through {{ insert: param, cm-11_odp.02 }};
+software installation policies are enforced through methods used to enforce software installation policies are defined;;
 
-compliance with {{ insert: param, cm-11_odp.01 }} is monitored {{ insert: param, cm-11_odp.03 }}.
+compliance with policies governing the installation of software by users are defined; is monitored frequency with which to monitor compliance is defined;.
 
 Configuration management policy
 
@@ -1610,7 +1610,7 @@ mechanisms monitoring policy compliance
 
 ### CM-12: Information Location
 
-Identify and document the location of {{ insert: param, cm-12_odp }} and the specific system components on which the information is processed and stored;
+Identify and document the location of information for which the location is to be identified and documented is defined; and the specific system components on which the information is processed and stored;
 
 Identify and document the users who have access to the system and system components where the information is processed and stored; and
 
@@ -1618,19 +1618,19 @@ Document changes to the location (i.e., system or system components) where the i
 
 Information location addresses the need to understand where information is being processed and stored. Information location includes identifying where specific information types and information reside in system components and how information is being processed so that information flow can be understood and adequate protection and policy management provided for such information and system components. The security category of the information is also a factor in determining the controls necessary to protect the information and the system component where the information resides (see [FIPS 199](#628d22a1-6a11-4784-bc59-5cd9497b5445) ). The location of the information and system components is also a factor in the architecture and design of the system (see [SA-4](#sa-4), [SA-8](#sa-8), [SA-17](#sa-17)).
 
-the location of {{ insert: param, cm-12_odp }} is identified and documented;
+the location of information for which the location is to be identified and documented is defined; is identified and documented;
 
-the specific system components on which {{ insert: param, cm-12_odp }} is processed are identified and documented;
+the specific system components on which information for which the location is to be identified and documented is defined; is processed are identified and documented;
 
-the specific system components on which {{ insert: param, cm-12_odp }} is stored are identified and documented;
+the specific system components on which information for which the location is to be identified and documented is defined; is stored are identified and documented;
 
-the users who have access to the system and system components where {{ insert: param, cm-12_odp }} is processed are identified and documented;
+the users who have access to the system and system components where information for which the location is to be identified and documented is defined; is processed are identified and documented;
 
-the users who have access to the system and system components where {{ insert: param, cm-12_odp }} is stored are identified and documented;
+the users who have access to the system and system components where information for which the location is to be identified and documented is defined; is stored are identified and documented;
 
-changes to the location (i.e., system or system components) where {{ insert: param, cm-12_odp }} is processed are documented;
+changes to the location (i.e., system or system components) where information for which the location is to be identified and documented is defined; is processed are documented;
 
-changes to the location (i.e., system or system components) where {{ insert: param, cm-12_odp }} is stored are documented.
+changes to the location (i.e., system or system components) where information for which the location is to be identified and documented is defined; is stored are documented.
 
 Configuration management policy
 
@@ -1676,11 +1676,11 @@ mechanisms enforcing policies and methods for governing information location
 
 ### CM-12 (1): Automated Tools to Support Information Location
 
-Use automated tools to identify {{ insert: param, cm-12.01_odp.01 }} on {{ insert: param, cm-12.01_odp.02 }} to ensure controls are in place to protect organizational information and individual privacy.
+Use automated tools to identify information to be protected is defined by information type; on system components where the information is located are defined; to ensure controls are in place to protect organizational information and individual privacy.
 
 The use of automated tools helps to increase the effectiveness and efficiency of the information location capability implemented within the system. Automation also helps organizations manage the data produced during information location activities and share such information across the organization. The output of automated information location tools can be used to guide and inform system architecture and design decisions.
 
-automated tools are used to identify {{ insert: param, cm-12.01_odp.01 }} on {{ insert: param, cm-12.01_odp.02 }} to ensure that controls are in place to protect organizational information and individual privacy.
+automated tools are used to identify information to be protected is defined by information type; on system components where the information is located are defined; to ensure that controls are in place to protect organizational information and individual privacy.
 
 Configuration management policy
 

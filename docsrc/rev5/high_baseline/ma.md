@@ -6,9 +6,9 @@
 
 ### MA-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, ma-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, ma-01_odp.03 }} maintenance policy that:
+organization-level, mission/business process-level, and/or system-level maintenance policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the maintenance policy and the associated maintenance controls;
 
-Designate an {{ insert: param, ma-01_odp.04 }} to manage the development, documentation, and dissemination of the maintenance policy and procedures; and
+Designate an an official to manage the maintenance policy and procedures is defined; to manage the development, documentation, and dissemination of the maintenance policy and procedures; and
 
 Review and update the current maintenance:
 
-Policy {{ insert: param, ma-01_odp.05 }} and following {{ insert: param, ma-01_odp.06 }} ; and
+Policy the frequency with which the current maintenance policy is reviewed and updated is defined; and following events that would require the current maintenance policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, ma-01_odp.07 }} and following {{ insert: param, ma-01_odp.08 }}.
+Procedures the frequency with which the current maintenance procedures are reviewed and updated is defined; and following events that would require the maintenance procedures to be reviewed and updated are defined;.
 
 Maintenance policy and procedures address the controls in the MA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of maintenance policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to maintenance policy and procedures assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 a maintenance policy is developed and documented;
 
-the maintenance policy is disseminated to {{ insert: param, ma-01_odp.01 }};
+the maintenance policy is disseminated to personnel or roles to whom the maintenance policy is to be disseminated is/are defined;;
 
 maintenance procedures to facilitate the implementation of the maintenance policy and associated maintenance controls are developed and documented;
 
-the maintenance procedures are disseminated to {{ insert: param, ma-01_odp.02 }};
+the maintenance procedures are disseminated to personnel or roles to whom the maintenance procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, ma-01_odp.03 }} maintenance policy addresses purpose;
+the organization-level, mission/business process-level, and/or system-level maintenance policy addresses purpose;
 
-the {{ insert: param, ma-01_odp.03 }} maintenance policy addresses scope;
+the organization-level, mission/business process-level, and/or system-level maintenance policy addresses scope;
 
-the {{ insert: param, ma-01_odp.03 }} maintenance policy addresses roles;
+the organization-level, mission/business process-level, and/or system-level maintenance policy addresses roles;
 
-the {{ insert: param, ma-01_odp.03 }} maintenance policy addresses responsibilities;
+the organization-level, mission/business process-level, and/or system-level maintenance policy addresses responsibilities;
 
-the {{ insert: param, ma-01_odp.03 }} maintenance policy addresses management commitment;
+the organization-level, mission/business process-level, and/or system-level maintenance policy addresses management commitment;
 
-the {{ insert: param, ma-01_odp.03 }} maintenance policy addresses coordination among organizational entities;
+the organization-level, mission/business process-level, and/or system-level maintenance policy addresses coordination among organizational entities;
 
-the {{ insert: param, ma-01_odp.03 }} maintenance policy addresses compliance;
+the organization-level, mission/business process-level, and/or system-level maintenance policy addresses compliance;
 
-the {{ insert: param, ma-01_odp.03 }} maintenance policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
+the organization-level, mission/business process-level, and/or system-level maintenance policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, ma-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the maintenance policy and procedures;
+the an official to manage the maintenance policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the maintenance policy and procedures;
 
-the current maintenance policy is reviewed and updated {{ insert: param, ma-01_odp.05 }};
+the current maintenance policy is reviewed and updated the frequency with which the current maintenance policy is reviewed and updated is defined;;
 
-the current maintenance policy is reviewed and updated following {{ insert: param, ma-01_odp.06 }};
+the current maintenance policy is reviewed and updated following events that would require the current maintenance policy to be reviewed and updated are defined;;
 
-the current maintenance procedures are reviewed and updated {{ insert: param, ma-01_odp.07 }};
+the current maintenance procedures are reviewed and updated the frequency with which the current maintenance procedures are reviewed and updated is defined;;
 
-the current maintenance procedures are reviewed and updated following {{ insert: param, ma-01_odp.08 }}.
+the current maintenance procedures are reviewed and updated following events that would require the maintenance procedures to be reviewed and updated are defined;.
 
 Maintenance policy and procedures
 
@@ -80,13 +80,13 @@ Schedule, document, and review records of maintenance, repair, and replacement o
 
 Approve and monitor all maintenance activities, whether performed on site or remotely and whether the system or system components are serviced on site or removed to another location;
 
-Require that {{ insert: param, ma-02_odp.01 }} explicitly approve the removal of the system or system components from organizational facilities for off-site maintenance, repair, or replacement;
+Require that personnel or roles required to explicitly approve the removal of the system or system components from organizational facilities for off-site maintenance or repairs is/are defined; explicitly approve the removal of the system or system components from organizational facilities for off-site maintenance, repair, or replacement;
 
-Sanitize equipment to remove the following information from associated media prior to removal from organizational facilities for off-site maintenance, repair, or replacement: {{ insert: param, ma-02_odp.02 }};
+Sanitize equipment to remove the following information from associated media prior to removal from organizational facilities for off-site maintenance, repair, or replacement: information to be removed from associated media prior to removal from organizational facilities for off-site maintenance, repair, or replacement is defined;;
 
 Check all potentially impacted controls to verify that the controls are still functioning properly following maintenance, repair, or replacement actions; and
 
-Include the following information in organizational maintenance records: {{ insert: param, ma-02_odp.03 }}.
+Include the following information in organizational maintenance records: information to be included in organizational maintenance records is defined;.
 
 Controlling system maintenance addresses the information security aspects of the system maintenance program and applies to all types of maintenance to system components conducted by local or nonlocal entities. Maintenance includes peripherals such as scanners, copiers, and printers. Information necessary for creating effective maintenance records includes the date and time of maintenance, a description of the maintenance performed, names of the individuals or group performing the maintenance, name of the escort, and system components or equipment that are removed or replaced. Organizations consider supply chain-related risks associated with replacement components for systems.
 
@@ -100,13 +100,13 @@ all maintenance activities, whether performed on site or remotely and whether th
 
 all maintenance activities, whether performed on site or remotely and whether the system or system components are serviced on site or removed to another location, are monitored;
 
- {{ insert: param, ma-02_odp.01 }} is/are required to explicitly approve the removal of the system or system components from organizational facilities for off-site maintenance, repair, or replacement;
+ personnel or roles required to explicitly approve the removal of the system or system components from organizational facilities for off-site maintenance or repairs is/are defined; is/are required to explicitly approve the removal of the system or system components from organizational facilities for off-site maintenance, repair, or replacement;
 
-equipment is sanitized to remove {{ insert: param, ma-02_odp.02 }} from associated media prior to removal from organizational facilities for off-site maintenance, repair, or replacement;
+equipment is sanitized to remove information to be removed from associated media prior to removal from organizational facilities for off-site maintenance, repair, or replacement is defined; from associated media prior to removal from organizational facilities for off-site maintenance, repair, or replacement;
 
 all potentially impacted controls are checked to verify that the controls are still functioning properly following maintenance, repair, or replacement actions;
 
- {{ insert: param, ma-02_odp.03 }} is included in organizational maintenance records.
+ information to be included in organizational maintenance records is defined; is included in organizational maintenance records.
 
 Maintenance policy
 
@@ -142,17 +142,17 @@ mechanisms implementing the sanitization of system components
 
 ### MA-2 (2): Automated Maintenance Activities
 
-Schedule, conduct, and document maintenance, repair, and replacement actions for the system using {{ insert: param, ma-2.2_prm_1 }} ; and
+Schedule, conduct, and document maintenance, repair, and replacement actions for the system using organization-defined automated mechanisms ; and
 
 Produce up-to date, accurate, and complete records of all maintenance, repair, and replacement actions requested, scheduled, in process, and completed.
 
 The use of automated mechanisms to manage and control system maintenance programs and activities helps to ensure the generation of timely, accurate, complete, and consistent maintenance records.
 
- {{ insert: param, ma-02.02_odp.01 }} are used to schedule maintenance, repair, and replacement actions for the system;
+automated mechanisms used to schedule maintenance, repair, and replacement actions for the system are defined; are used to schedule maintenance, repair, and replacement actions for the system;
 
- {{ insert: param, ma-02.02_odp.02 }} are used to conduct maintenance, repair, and replacement actions for the system;
+ automated mechanisms used to conduct maintenance, repair, and replacement actions for the system are defined; are used to conduct maintenance, repair, and replacement actions for the system;
 
- {{ insert: param, ma-02.02_odp.03 }} are used to document maintenance, repair, and replacement actions for the system;
+ automated mechanisms used to document maintenance, repair, and replacement actions for the system are defined; are used to document maintenance, repair, and replacement actions for the system;
 
 up-to date, accurate, and complete records of all maintenance actions requested, scheduled, in process, and completed are produced.
 
@@ -188,7 +188,7 @@ automated mechanisms supporting and/or implementing the production of records of
 
 Approve, control, and monitor the use of system maintenance tools; and
 
-Review previously approved system maintenance tools {{ insert: param, ma-03_odp }}.
+Review previously approved system maintenance tools frequency at which to review previously approved system maintenance tools is defined;.
 
 Approving, controlling, monitoring, and reviewing maintenance tools address security-related issues associated with maintenance tools that are not within system authorization boundaries and are used specifically for diagnostic and repair actions on organizational systems. Organizations have flexibility in determining roles for the approval of maintenance tools and how that approval is documented. A periodic review of maintenance tools facilitates the withdrawal of approval for outdated, unsupported, irrelevant, or no-longer-used tools. Maintenance tools can include hardware, software, and firmware items and may be pre-installed, brought in with maintenance personnel on media, cloud-based, or downloaded from a website. Such tools can be vehicles for transporting malicious code, either intentionally or unintentionally, into a facility and subsequently into systems. Maintenance tools can include hardware and software diagnostic test equipment and packet sniffers. The hardware and software components that support maintenance and are a part of the system (including the software implementing utilities such as "ping," "ls," "ipconfig," or the hardware and software implementing the monitoring port of an Ethernet switch) are not addressed by maintenance tools.
 
@@ -198,7 +198,7 @@ the use of system maintenance tools is controlled;
 
 the use of system maintenance tools is monitored;
 
-previously approved system maintenance tools are reviewed {{ insert: param, ma-03_odp }}.
+previously approved system maintenance tools are reviewed frequency at which to review previously approved system maintenance tools is defined;.
 
 Maintenance policy
 
@@ -288,7 +288,7 @@ Sanitizing or destroying the equipment;
 
 Retaining the equipment within the facility; or
 
-Obtaining an exemption from {{ insert: param, ma-03.03_odp }} explicitly authorizing removal of the equipment from the facility.
+Obtaining an exemption from personnel or roles who can authorize removal of equipment from the facility is/are defined; explicitly authorizing removal of the equipment from the facility.
 
 Organizational information includes all information owned by organizations and any information provided to organizations for which the organizations serve as information stewards.
 
@@ -298,7 +298,7 @@ the removal of maintenance equipment containing organizational information is pr
 
 the removal of maintenance equipment containing organizational information is prevented by retaining the equipment within the facility; or
 
-the removal of maintenance equipment containing organizational information is prevented by obtaining an exemption from {{ insert: param, ma-03.03_odp }} explicitly authorizing removal of the equipment from the facility.
+the removal of maintenance equipment containing organizational information is prevented by obtaining an exemption from personnel or roles who can authorize removal of equipment from the facility is/are defined; explicitly authorizing removal of the equipment from the facility.
 
 Maintenance policy
 
@@ -502,7 +502,7 @@ Maintenance personnel who do not have needed access authorizations, clearances, 
 
 Prior to initiating maintenance or diagnostic activities by personnel who do not have needed access authorizations, clearances or formal access approvals, all volatile information storage components within the system are sanitized and all nonvolatile storage media are removed or physically disconnected from the system and secured; and
 
-Develop and implement {{ insert: param, ma-05.01_odp }} in the event a system component cannot be sanitized, removed, or disconnected from the system.
+Develop and implement alternate controls to be developed and implemented in the event that a system component cannot be sanitized, removed, or disconnected from the system are defined; in the event a system component cannot be sanitized, removed, or disconnected from the system.
 
 Procedures for individuals who lack appropriate security clearances or who are not U.S. citizens are intended to deny visual and electronic access to classified or controlled unclassified information contained on organizational systems. Procedures for the use of maintenance personnel can be documented in security plans for the systems.
 
@@ -510,7 +510,7 @@ procedures for the use of maintenance personnel who lack appropriate security cl
 
 procedures for the use of maintenance personnel who lack appropriate security clearances or are not U.S. citizens are implemented and include all volatile information storage components within the system being sanitized and all non-volatile storage media being removed or physically disconnected from the system and secured prior to initiating maintenance or diagnostic activities;
 
- {{ insert: param, ma-05.01_odp }} are developed and implemented in the event that a system cannot be sanitized, removed, or disconnected from the system.
+ alternate controls to be developed and implemented in the event that a system component cannot be sanitized, removed, or disconnected from the system are defined; are developed and implemented in the event that a system cannot be sanitized, removed, or disconnected from the system.
 
 Maintenance policy
 
@@ -550,11 +550,11 @@ mechanisms supporting and/or implementing information storage component sanitiza
 
 ### MA-6: Timely Maintenance
 
-Obtain maintenance support and/or spare parts for {{ insert: param, ma-06_odp.01 }} within {{ insert: param, ma-06_odp.02 }} of failure.
+Obtain maintenance support and/or spare parts for system components for which maintenance support and/or spare parts are obtained are defined; within time period within which maintenance support and/or spare parts are to be obtained after a failure are defined; of failure.
 
 Organizations specify the system components that result in increased risk to organizational operations and assets, individuals, other organizations, or the Nation when the functionality provided by those components is not operational. Organizational actions to obtain maintenance support include having appropriate contracts in place.
 
-maintenance support and/or spare parts are obtained for {{ insert: param, ma-06_odp.01 }} within {{ insert: param, ma-06_odp.02 }} of failure.
+maintenance support and/or spare parts are obtained for system components for which maintenance support and/or spare parts are obtained are defined; within time period within which maintenance support and/or spare parts are to be obtained after a failure are defined; of failure.
 
 Maintenance policy
 

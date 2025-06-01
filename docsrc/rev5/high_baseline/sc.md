@@ -6,9 +6,9 @@
 
 ### SC-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, sc-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, sc-01_odp.03 }} system and communications protection policy that:
+organization-level, mission/business-process-level, and/or system-level system and communications protection policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the system and communications protection policy and the associated system and communications protection controls;
 
-Designate an {{ insert: param, sc-01_odp.04 }} to manage the development, documentation, and dissemination of the system and communications protection policy and procedures; and
+Designate an an official to manage the system and communications protection policy and procedures is defined; to manage the development, documentation, and dissemination of the system and communications protection policy and procedures; and
 
 Review and update the current system and communications protection:
 
-Policy {{ insert: param, sc-01_odp.05 }} and following {{ insert: param, sc-01_odp.06 }} ; and
+Policy the frequency at which the current system and communications protection policy is reviewed and updated is defined; and following events that would require the current system and communications protection policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, sc-01_odp.07 }} and following {{ insert: param, sc-01_odp.08 }}.
+Procedures the frequency at which the current system and communications protection procedures are reviewed and updated is defined; and following events that would require the system and communications protection procedures to be reviewed and updated are defined;.
 
 System and communications protection policy and procedures address the controls in the SC family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of system and communications protection policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to system and communications protection policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 a system and communications protection policy is developed and documented;
 
-the system and communications protection policy is disseminated to {{ insert: param, sc-01_odp.01 }};
+the system and communications protection policy is disseminated to personnel or roles to whom the system and communications protection policy is to be disseminated is/are defined;;
 
 system and communications protection procedures to facilitate the implementation of the system and communications protection policy and associated system and communications protection controls are developed and documented;
 
-the system and communications protection procedures are disseminated to {{ insert: param, sc-01_odp.02 }};
+the system and communications protection procedures are disseminated to personnel or roles to whom the system and communications protection procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses purpose;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses purpose;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses scope;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses scope;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses roles;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses roles;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses responsibilities;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses responsibilities;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses management commitment;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses management commitment;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses coordination among organizational entities;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses coordination among organizational entities;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses compliance;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses compliance;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, sc-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the system and communications protection policy and procedures;
+the an official to manage the system and communications protection policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the system and communications protection policy and procedures;
 
-the current system and communications protection policy is reviewed and updated {{ insert: param, sc-01_odp.05 }};
+the current system and communications protection policy is reviewed and updated the frequency at which the current system and communications protection policy is reviewed and updated is defined;;
 
-the current system and communications protection policy is reviewed and updated following {{ insert: param, sc-01_odp.06 }};
+the current system and communications protection policy is reviewed and updated following events that would require the current system and communications protection policy to be reviewed and updated are defined;;
 
-the current system and communications protection procedures are reviewed and updated {{ insert: param, sc-01_odp.07 }};
+the current system and communications protection procedures are reviewed and updated the frequency at which the current system and communications protection procedures are reviewed and updated is defined;;
 
-the current system and communications protection procedures are reviewed and updated following {{ insert: param, sc-01_odp.08 }}.
+the current system and communications protection procedures are reviewed and updated following events that would require the system and communications protection procedures to be reviewed and updated are defined;.
 
 System and communications protection policy
 
@@ -174,15 +174,15 @@ Mechanisms preventing the unauthorized and unintended transfer of information vi
 
 ### SC-5: Denial-of-service Protection
 
- {{ insert: param, sc-05_odp.02 }} the effects of the following types of denial-of-service events: {{ insert: param, sc-05_odp.01 }} ; and
+protect againstorlimit the effects of the following types of denial-of-service events: types of denial-of-service events to be protected against or limited are defined; ; and
 
-Employ the following controls to achieve the denial-of-service objective: {{ insert: param, sc-05_odp.03 }}.
+Employ the following controls to achieve the denial-of-service objective: controls to achieve the denial-of-service objective by type of denial-of-service event are defined;.
 
 Denial-of-service events may occur due to a variety of internal and external causes, such as an attack by an adversary or a lack of planning to support organizational needs with respect to capacity and bandwidth. Such attacks can occur across a wide range of network protocols (e.g., IPv4, IPv6). A variety of technologies are available to limit or eliminate the origination and effects of denial-of-service events. For example, boundary protection devices can filter certain types of packets to protect system components on internal networks from being directly affected by or the source of denial-of-service attacks. Employing increased network capacity and bandwidth combined with service redundancy also reduces the susceptibility to denial-of-service events.
 
-the effects of {{ insert: param, sc-05_odp.01 }} are {{ insert: param, sc-05_odp.02 }};
+the effects of types of denial-of-service events to be protected against or limited are defined; are protect againstorlimit;
 
- {{ insert: param, sc-05_odp.03 }} are employed to achieve the denial-of-service protection objective.
+ controls to achieve the denial-of-service objective by type of denial-of-service event are defined; are employed to achieve the denial-of-service protection objective.
 
 System and communications protection policy
 
@@ -216,7 +216,7 @@ Mechanisms protecting against or limiting the effects of denial-of-service attac
 
 Monitor and control communications at the external managed interfaces to the system and at key internal managed interfaces within the system;
 
-Implement subnetworks for publicly accessible system components that are {{ insert: param, sc-07_odp }} separated from internal organizational networks; and
+Implement subnetworks for publicly accessible system components that are physicallyorlogically separated from internal organizational networks; and
 
 Connect to external networks or systems only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security and privacy architecture.
 
@@ -230,7 +230,7 @@ communications at key internal managed interfaces within the system are monitore
 
 communications at key internal managed interfaces within the system are controlled;
 
-subnetworks for publicly accessible system components are {{ insert: param, sc-07_odp }} separated from internal organizational networks;
+subnetworks for publicly accessible system components are physicallyorlogically separated from internal organizational networks;
 
 external networks or systems are only connected to through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security and privacy architecture.
 
@@ -312,7 +312,7 @@ Protect the confidentiality and integrity of the information being transmitted a
 
 Document each exception to the traffic flow policy with a supporting mission or business need and duration of that need;
 
-Review exceptions to the traffic flow policy {{ insert: param, sc-07.04_odp }} and remove exceptions that are no longer supported by an explicit mission or business need;
+Review exceptions to the traffic flow policy the frequency at which to review exceptions to traffic flow policy is defined; and remove exceptions that are no longer supported by an explicit mission or business need;
 
 Prevent unauthorized exchange of control plane traffic with external networks;
 
@@ -332,7 +332,7 @@ the integrity of the information being transmitted across each interface is prot
 
 each exception to the traffic flow policy is documented with a supporting mission or business need and duration of that need;
 
-exceptions to the traffic flow policy are reviewed {{ insert: param, sc-07.04_odp }};
+exceptions to the traffic flow policy are reviewed the frequency at which to review exceptions to traffic flow policy is defined;;
 
 exceptions to the traffic flow policy that are no longer supported by an explicit mission or business need are removed;
 
@@ -384,13 +384,13 @@ managed interfaces implementing traffic flow policy
 
 ### SC-7 (5): Deny by Default — Allow by Exception
 
-Deny network communications traffic by default and allow network communications traffic by exception {{ insert: param, sc-07.05_odp.01 }}.
+Deny network communications traffic by default and allow network communications traffic by exception at managed interfacesand/orfor systems for which network communications traffic is denied by default and network communications traffic is allowed by exception are defined (if selected)..
 
 Denying by default and allowing by exception applies to inbound and outbound network communications traffic. A deny-all, permit-by-exception network communications traffic policy ensures that only those system connections that are essential and approved are allowed. Deny by default, allow by exception also applies to a system that is connected to an external system.
 
-network communications traffic is denied by default {{ insert: param, sc-07.05_odp.01 }};
+network communications traffic is denied by default at managed interfacesand/orfor systems for which network communications traffic is denied by default and network communications traffic is allowed by exception are defined (if selected).;
 
-network communications traffic is allowed by exception {{ insert: param, sc-07.05_odp.01 }}.
+network communications traffic is allowed by exception at managed interfacesand/orfor systems for which network communications traffic is denied by default and network communications traffic is allowed by exception are defined (if selected)..
 
 System and communications protection policy
 
@@ -418,11 +418,11 @@ Mechanisms implementing traffic management at managed interfaces
 
 ### SC-7 (7): Split Tunneling for Remote Devices
 
-Prevent split tunneling for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using {{ insert: param, sc-07.07_odp }}.
+Prevent split tunneling for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using safeguards to securely provision split tunneling are defined;.
 
 Split tunneling is the process of allowing a remote user or device to establish a non-remote connection with a system and simultaneously communicate via some other connection to a resource in an external network. This method of network access enables a user to access remote devices and simultaneously, access uncontrolled networks. Split tunneling might be desirable by remote users to communicate with local system resources, such as printers or file servers. However, split tunneling can facilitate unauthorized external connections, making the system vulnerable to attack and to exfiltration of organizational information. Split tunneling can be prevented by disabling configuration settings that allow such capability in remote devices and by preventing those configuration settings from being configurable by users. Prevention can also be achieved by the detection of split tunneling (or of configuration settings that allow split tunneling) in the remote device, and by prohibiting the connection if the remote device is using split tunneling. A virtual private network (VPN) can be used to securely provision a split tunnel. A securely provisioned VPN includes locking connectivity to exclusive, managed, and named environments, or to a specific set of pre-approved addresses, without user control.
 
-split tunneling is prevented for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using {{ insert: param, sc-07.07_odp }}.
+split tunneling is prevented for remote devices connecting to organizational systems unless the split tunnel is securely provisioned using safeguards to securely provision split tunneling are defined;.
 
 System and communications protection policy
 
@@ -456,11 +456,11 @@ mechanisms supporting/restricting non-remote connections
 
 ### SC-7 (8): Route Traffic to Authenticated Proxy Servers
 
-Route {{ insert: param, sc-07.08_odp.01 }} to {{ insert: param, sc-07.08_odp.02 }} through authenticated proxy servers at managed interfaces.
+Route internal communications traffic to be routed to external networks is defined; to external networks to which internal communications traffic is to be routed are defined; through authenticated proxy servers at managed interfaces.
 
 External networks are networks outside of organizational control. A proxy server is a server (i.e., system or application) that acts as an intermediary for clients requesting system resources from non-organizational or other organizational servers. System resources that may be requested include files, connections, web pages, or services. Client requests established through a connection to a proxy server are assessed to manage complexity and provide additional protection by limiting direct connectivity. Web content filtering devices are one of the most common proxy servers that provide access to the Internet. Proxy servers can support the logging of Transmission Control Protocol sessions and the blocking of specific Uniform Resource Locators, Internet Protocol addresses, and domain names. Web proxies can be configured with organization-defined lists of authorized and unauthorized websites. Note that proxy servers may inhibit the use of virtual private networks (VPNs) and create the potential for "man-in-the-middle" attacks (depending on the implementation).
 
- {{ insert: param, sc-07.08_odp.01 }} is routed to {{ insert: param, sc-07.08_odp.02 }} through authenticated proxy servers at managed interfaces.
+ internal communications traffic to be routed to external networks is defined; is routed to external networks to which internal communications traffic is to be routed are defined; through authenticated proxy servers at managed interfaces.
 
 System and communications protection policy
 
@@ -526,11 +526,11 @@ Mechanisms supporting and/or implementing secure failure
 
 ### SC-7 (21): Isolation of System Components
 
-Employ boundary protection mechanisms to isolate {{ insert: param, sc-07.21_odp.01 }} supporting {{ insert: param, sc-07.21_odp.02 }}.
+Employ boundary protection mechanisms to isolate system components to be isolated by boundary protection mechanisms are defined; supporting missions and/or business functions to be supported by system components isolated by boundary protection mechanisms are defined;.
 
 Organizations can isolate system components that perform different mission or business functions. Such isolation limits unauthorized information flows among system components and provides the opportunity to deploy greater levels of protection for selected system components. Isolating system components with boundary protection mechanisms provides the capability for increased protection of individual system components and to more effectively control information flows between those components. Isolating system components provides enhanced protection that limits the potential harm from hostile cyber-attacks and errors. The degree of isolation varies depending upon the mechanisms chosen. Boundary protection mechanisms include routers, gateways, and firewalls that separate system components into physically separate networks or subnetworks; cross-domain devices that separate subnetworks; virtualization techniques; and the encryption of information flows among system components using distinct encryption keys.
 
-boundary protection mechanisms are employed to isolate {{ insert: param, sc-07.21_odp.01 }} supporting {{ insert: param, sc-07.21_odp.02 }}.
+boundary protection mechanisms are employed to isolate system components to be isolated by boundary protection mechanisms are defined; supporting missions and/or business functions to be supported by system components isolated by boundary protection mechanisms are defined;.
 
 System and communications protection policy
 
@@ -562,13 +562,13 @@ Mechanisms supporting and/or implementing the capability to separate system comp
 
 ### SC-8: Transmission Confidentiality and Integrity
 
-Protect the {{ insert: param, sc-08_odp }} of transmitted information.
+Protect the confidentialityand/orintegrity of transmitted information.
 
 Protecting the confidentiality and integrity of transmitted information applies to internal and external networks as well as any system components that can transmit information, including servers, notebook computers, desktop computers, mobile devices, printers, copiers, scanners, facsimile machines, and radios. Unprotected communication paths are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of information can be accomplished by physical or logical means. Physical protection can be achieved by using protected distribution systems. A protected distribution system is a wireline or fiber-optics telecommunications system that includes terminals and adequate electromagnetic, acoustical, electrical, and physical controls to permit its use for the unencrypted transmission of classified information. Logical protection can be achieved by employing encryption techniques.
 
 Organizations that rely on commercial providers who offer transmission services as commodity services rather than as fully dedicated services may find it difficult to obtain the necessary assurances regarding the implementation of needed controls for transmission confidentiality and integrity. In such situations, organizations determine what types of confidentiality or integrity services are available in standard, commercial telecommunications service packages. If it is not feasible to obtain the necessary controls and assurances of control effectiveness through appropriate contracting vehicles, organizations can implement appropriate compensating controls.
 
-the {{ insert: param, sc-08_odp }} of transmitted information is/are protected.
+the confidentialityand/orintegrity of transmitted information is/are protected.
 
 System and communications protection policy
 
@@ -594,11 +594,11 @@ Mechanisms supporting and/or implementing transmission confidentiality and/or in
 
 ### SC-8 (1): Cryptographic Protection
 
-Implement cryptographic mechanisms to {{ insert: param, sc-08.01_odp }} during transmission.
+Implement cryptographic mechanisms to prevent unauthorized disclosure of informationand/ordetect changes to information during transmission.
 
 Encryption protects information from unauthorized disclosure and modification during transmission. Cryptographic mechanisms that protect the confidentiality and integrity of information during transmission include TLS and IPSec. Cryptographic mechanisms used to protect information integrity include cryptographic hash functions that have applications in digital signatures, checksums, and message authentication codes.
 
-cryptographic mechanisms are implemented to {{ insert: param, sc-08.01_odp }} during transmission.
+cryptographic mechanisms are implemented to prevent unauthorized disclosure of informationand/ordetect changes to information during transmission.
 
 System and communications protection policy
 
@@ -628,11 +628,11 @@ organizational processes for defining and implementing alternative physical safe
 
 ### SC-10: Network Disconnect
 
-Terminate the network connection associated with a communications session at the end of the session or after {{ insert: param, sc-10_odp }} of inactivity.
+Terminate the network connection associated with a communications session at the end of the session or after a time period of inactivity after which the system terminates a network connection associated with a communication session is defined; of inactivity.
 
 Network disconnect applies to internal and external networks. Terminating network connections associated with specific communications sessions includes de-allocating TCP/IP address or port pairs at the operating system level and de-allocating the networking assignments at the application level if multiple application sessions are using a single operating system-level network connection. Periods of inactivity may be established by organizations and include time periods by type of network access or for specific network accesses.
 
-the network connection associated with a communication session is terminated at the end of the session or after {{ insert: param, sc-10_odp }} of inactivity.
+the network connection associated with a communication session is terminated at the end of the session or after a time period of inactivity after which the system terminates a network connection associated with a communication session is defined; of inactivity.
 
 System and communications protection policy
 
@@ -660,13 +660,13 @@ Mechanisms supporting and/or implementing a network disconnect capability
 
 ### SC-12: Cryptographic Key Establishment and Management
 
-Establish and manage cryptographic keys when cryptography is employed within the system in accordance with the following key management requirements: {{ insert: param, sc-12_odp }}.
+Establish and manage cryptographic keys when cryptography is employed within the system in accordance with the following key management requirements: requirements for key generation, distribution, storage, access, and destruction are defined;.
 
 Cryptographic key management and establishment can be performed using manual procedures or automated mechanisms with supporting manual procedures. Organizations define key management requirements in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines and specify appropriate options, parameters, and levels. Organizations manage trust stores to ensure that only approved trust anchors are part of such trust stores. This includes certificates with visibility external to organizational systems and certificates related to the internal operations of systems. [NIST CMVP](#1acdc775-aafb-4d11-9341-dc6a822e9d38) and [NIST CAVP](#84dc1b0c-acb7-4269-84c4-00dbabacd78c) provide additional information on validated cryptographic modules and algorithms that can be used in cryptographic key management and establishment.
 
-cryptographic keys are established when cryptography is employed within the system in accordance with {{ insert: param, sc-12_odp }};
+cryptographic keys are established when cryptography is employed within the system in accordance with requirements for key generation, distribution, storage, access, and destruction are defined;;
 
-cryptographic keys are managed when cryptography is employed within the system in accordance with {{ insert: param, sc-12_odp }}.
+cryptographic keys are managed when cryptography is employed within the system in accordance with requirements for key generation, distribution, storage, access, and destruction are defined;.
 
 System and communications protection policy
 
@@ -724,15 +724,15 @@ Mechanisms supporting and/or implementing cryptographic key establishment and ma
 
 ### SC-13: Cryptographic Protection
 
-Determine the {{ insert: param, sc-13_odp.01 }} ; and
+Determine the cryptographic uses are defined; ; and
 
-Implement the following types of cryptography required for each specified cryptographic use: {{ insert: param, sc-13_odp.02 }}.
+Implement the following types of cryptography required for each specified cryptographic use: types of cryptography for each specified cryptographic use are defined;.
 
 Cryptography can be employed to support a variety of security solutions, including the protection of classified information and controlled unclassified information, the provision and implementation of digital signatures, and the enforcement of information separation when authorized individuals have the necessary clearances but lack the necessary formal access approvals. Cryptography can also be used to support random number and hash generation. Generally applicable cryptographic standards include FIPS-validated cryptography and NSA-approved cryptography. For example, organizations that need to protect classified information may specify the use of NSA-approved cryptography. Organizations that need to provision and implement digital signatures may specify the use of FIPS-validated cryptography. Cryptography is implemented in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
 
- {{ insert: param, sc-13_odp.01 }} are identified;
+cryptographic uses are defined; are identified;
 
- {{ insert: param, sc-13_odp.02 }} for each specified cryptographic use (defined in SC-13_ODP[01]) are implemented.
+ types of cryptography for each specified cryptographic use are defined; for each specified cryptographic use (defined in SC-13_ODP[01]) are implemented.
 
 System and communications protection policy
 
@@ -764,13 +764,13 @@ Mechanisms supporting and/or implementing cryptographic protection
 
 ### SC-15: Collaborative Computing Devices and Applications
 
-Prohibit remote activation of collaborative computing devices and applications with the following exceptions: {{ insert: param, sc-15_odp }} ; and
+Prohibit remote activation of collaborative computing devices and applications with the following exceptions: exceptions where remote activation is to be allowed are defined; ; and
 
 Provide an explicit indication of use to users physically present at the devices.
 
 Collaborative computing devices and applications include remote meeting devices and applications, networked white boards, cameras, and microphones. The explicit indication of use includes signals to users when collaborative computing devices and applications are activated.
 
-remote activation of collaborative computing devices and applications is prohibited except {{ insert: param, sc-15_odp }};
+remote activation of collaborative computing devices and applications is prohibited except exceptions where remote activation is to be allowed are defined;;
 
 an explicit indication of use is provided to users physically present at the devices.
 
@@ -804,13 +804,13 @@ mechanisms providing an indication of use of collaborative computing devices
 
 ### SC-17: Public Key Infrastructure Certificates
 
-Issue public key certificates under an {{ insert: param, sc-17_odp }} or obtain public key certificates from an approved service provider; and
+Issue public key certificates under an a certificate policy for issuing public key certificates is defined; or obtain public key certificates from an approved service provider; and
 
 Include only approved trust anchors in trust stores or certificate stores managed by the organization.
 
 Public key infrastructure (PKI) certificates are certificates with visibility external to organizational systems and certificates related to the internal operations of systems, such as application-specific time services. In cryptographic systems with a hierarchical structure, a trust anchor is an authoritative source (i.e., a certificate authority) for which trust is assumed and not derived. A root certificate for a PKI system is an example of a trust anchor. A trust store or certificate store maintains a list of trusted root certificates.
 
-public key certificates are issued under {{ insert: param, sc-17_odp }} , or public key certificates are obtained from an approved service provider;
+public key certificates are issued under a certificate policy for issuing public key certificates is defined; , or public key certificates are obtained from an approved service provider;
 
 only approved trust anchors are included in trust stores or certificate stores managed by the organization.
 
@@ -1030,11 +1030,11 @@ Mechanisms supporting and/or implementing session authenticity
 
 ### SC-24: Fail in Known State
 
-Fail to a {{ insert: param, sc-24_odp.02 }} for the following failures on the indicated components while preserving {{ insert: param, sc-24_odp.03 }} in failure: {{ insert: param, sc-24_odp.01 }}.
+Fail to a known system state to which system components fail in the event of a system failure is defined; for the following failures on the indicated components while preserving system state information to be preserved in the event of a system failure is defined; in failure: types of system failures for which the system components fail to a known state are defined;.
 
 Failure in a known state addresses security concerns in accordance with the mission and business needs of organizations. Failure in a known state prevents the loss of confidentiality, integrity, or availability of information in the event of failures of organizational systems or system components. Failure in a known safe state helps to prevent systems from failing to a state that may cause injury to individuals or destruction to property. Preserving system state information facilitates system restart and return to the operational mode with less disruption of mission and business processes.
 
- {{ insert: param, sc-24_odp.01 }} fail to a {{ insert: param, sc-24_odp.02 }} while preserving {{ insert: param, sc-24_odp.03 }} in failure.
+ types of system failures for which the system components fail to a known state are defined; fail to a known system state to which system components fail in the event of a system failure is defined; while preserving system state information to be preserved in the event of a system failure is defined; in failure.
 
 System and communications protection policy
 
@@ -1066,11 +1066,11 @@ mechanisms preserving system state information in the event of a system failure
 
 ### SC-28: Protection of Information at Rest
 
-Protect the {{ insert: param, sc-28_odp.01 }} of the following information at rest: {{ insert: param, sc-28_odp.02 }}.
+Protect the confidentialityand/orintegrity of the following information at rest: information at rest requiring protection is defined;.
 
 Information at rest refers to the state of information when it is not in process or in transit and is located on system components. Such components include internal or external hard disk drives, storage area network devices, or databases. However, the focus of protecting information at rest is not on the type of storage device or frequency of access but rather on the state of the information. Information at rest addresses the confidentiality and integrity of information and covers user information and system information. System-related information that requires protection includes configurations or rule sets for firewalls, intrusion detection and prevention systems, filtering routers, and authentication information. Organizations may employ different mechanisms to achieve confidentiality and integrity protections, including the use of cryptographic mechanisms and file share scanning. Integrity protection can be achieved, for example, by implementing write-once-read-many (WORM) technologies. When adequate protection of information at rest cannot otherwise be achieved, organizations may employ other controls, including frequent scanning to identify malicious code at rest and secure offline storage in lieu of online storage.
 
-the {{ insert: param, sc-28_odp.01 }} of {{ insert: param, sc-28_odp.02 }} is/are protected.
+the confidentialityand/orintegrity of information at rest requiring protection is defined; is/are protected.
 
 System and communications protection policy
 
@@ -1098,13 +1098,13 @@ Mechanisms supporting and/or implementing confidentiality and integrity protecti
 
 ### SC-28 (1): Cryptographic Protection
 
-Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of the following information at rest on {{ insert: param, sc-28.01_odp.02 }}: {{ insert: param, sc-28.01_odp.01 }}.
+Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of the following information at rest on system components or media requiring cryptographic protection is/are defined;: information requiring cryptographic protection is defined;.
 
 The selection of cryptographic mechanisms is based on the need to protect the confidentiality and integrity of organizational information. The strength of mechanism is commensurate with the security category or classification of the information. Organizations have the flexibility to encrypt information on system components or media or encrypt data structures, including files, records, or fields.
 
-cryptographic mechanisms are implemented to prevent unauthorized disclosure of {{ insert: param, sc-28.01_odp.01 }} at rest on {{ insert: param, sc-28.01_odp.02 }};
+cryptographic mechanisms are implemented to prevent unauthorized disclosure of information requiring cryptographic protection is defined; at rest on system components or media requiring cryptographic protection is/are defined;;
 
-cryptographic mechanisms are implemented to prevent unauthorized modification of {{ insert: param, sc-28.01_odp.01 }} at rest on {{ insert: param, sc-28.01_odp.02 }}.
+cryptographic mechanisms are implemented to prevent unauthorized modification of information requiring cryptographic protection is defined; at rest on system components or media requiring cryptographic protection is/are defined;.
 
 System and communications protection policy
 

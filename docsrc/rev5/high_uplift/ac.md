@@ -6,11 +6,11 @@
 
 ### AC-2 (11): Usage Conditions
 
-Enforce {{ insert: param, ac-02.11_odp.01 }} for {{ insert: param, ac-02.11_odp.02 }}.
+Enforce circumstances and/or usage conditions to be enforced for system accounts are defined; for system accounts subject to enforcement of circumstances and/or usage conditions are defined;.
 
 Specifying and enforcing usage conditions helps to enforce the principle of least privilege, increase user accountability, and enable effective account monitoring. Account monitoring includes alerts generated if the account is used in violation of organizational parameters. Organizations can describe specific conditions or circumstances under which system accounts can be used, such as by restricting usage to certain days of the week, time of day, or specific durations of time.
 
- {{ insert: param, ac-02.11_odp.01 }} for {{ insert: param, ac-02.11_odp.02 }} are enforced.
+ circumstances and/or usage conditions to be enforced for system accounts are defined; for system accounts subject to enforcement of circumstances and/or usage conditions are defined; are enforced.
 
 Access control policy
 
@@ -40,15 +40,15 @@ Mechanisms implementing account management functions
 
 ### AC-2 (12): Account Monitoring for Atypical Usage
 
-Monitor system accounts for {{ insert: param, ac-02.12_odp.01 }} ; and
+Monitor system accounts for atypical usage for which to monitor system accounts is defined; ; and
 
-Report atypical usage of system accounts to {{ insert: param, ac-02.12_odp.02 }}.
+Report atypical usage of system accounts to personnel or roles to report atypical usage is/are defined;.
 
 Atypical usage includes accessing systems at certain times of the day or from locations that are not consistent with the normal usage patterns of individuals. Monitoring for atypical usage may reveal rogue behavior by individuals or an attack in progress. Account monitoring may inadvertently create privacy risks since data collected to identify atypical usage may reveal previously unknown information about the behavior of individuals. Organizations assess and document privacy risks from monitoring accounts for atypical usage in their privacy impact assessment and make determinations that are in alignment with their privacy program plan.
 
-system accounts are monitored for {{ insert: param, ac-02.12_odp.01 }}; 
+system accounts are monitored for atypical usage for which to monitor system accounts is defined;; 
 
-atypical usage of system accounts is reported to {{ insert: param, ac-02.12_odp.02 }}.
+atypical usage of system accounts is reported to personnel or roles to report atypical usage is/are defined;.
 
 Access control policy
 
@@ -82,11 +82,11 @@ Mechanisms implementing account management functions
 
 ### AC-4 (4): Flow Control of Encrypted Information
 
-Prevent encrypted information from bypassing {{ insert: param, ac-04.04_odp.01 }} by {{ insert: param, ac-04.04_odp.02 }}.
+Prevent encrypted information from bypassing information flow control mechanisms that encrypted information is prevented from bypassing are defined; by decrypting the information, blocking the flow of the encrypted information, terminating communications sessions attempting to pass encrypted information, and/or  the organization-defined procedure or method used to prevent encrypted information from bypassing information flow control mechanisms is defined (if selected);.
 
 Flow control mechanisms include content checking, security policy filters, and data type identifiers. The term encryption is extended to cover encoded data not recognized by filtering mechanisms.
 
-encrypted information is prevented from bypassing {{ insert: param, ac-04.04_odp.01 }} by {{ insert: param, ac-04.04_odp.02 }}.
+encrypted information is prevented from bypassing information flow control mechanisms that encrypted information is prevented from bypassing are defined; by decrypting the information, blocking the flow of the encrypted information, terminating communications sessions attempting to pass encrypted information, and/or  the organization-defined procedure or method used to prevent encrypted information from bypassing information flow control mechanisms is defined (if selected);.
 
 Access control policy
 
@@ -114,11 +114,11 @@ Mechanisms implementing information flow enforcement policy
 
 ### AC-6 (3): Network Access to Privileged Commands
 
-Authorize network access to {{ insert: param, ac-06.03_odp.01 }} only for {{ insert: param, ac-06.03_odp.02 }} and document the rationale for such access in the security plan for the system.
+Authorize network access to privileged commands to which network access is to be authorized only for compelling operational needs are defined; only for compelling operational needs necessitating network access to privileged commands are defined; and document the rationale for such access in the security plan for the system.
 
 Network access is any access across a network connection in lieu of local access (i.e., user being physically present at the device).
 
-network access to {{ insert: param, ac-06.03_odp.01 }} is authorized only for {{ insert: param, ac-06.03_odp.02 }};
+network access to privileged commands to which network access is to be authorized only for compelling operational needs are defined; is authorized only for compelling operational needs necessitating network access to privileged commands are defined;;
 
 the rationale for authorizing network access to privileged commands is documented in the security plan for the system.
 
@@ -144,11 +144,11 @@ Mechanisms implementing least privilege functions
 
 ### AC-10: Concurrent Session Control
 
-Limit the number of concurrent sessions for each {{ insert: param, ac-10_odp.01 }} to {{ insert: param, ac-10_odp.02 }}.
+Limit the number of concurrent sessions for each accounts and/or account types for which to limit the number of concurrent sessions is defined; to the number of concurrent sessions to be allowed for each account and/or account type is defined;.
 
 Organizations may define the maximum number of concurrent sessions for system accounts globally, by account type, by account, or any combination thereof. For example, organizations may limit the number of concurrent sessions for system administrators or other individuals working in particularly sensitive domains or mission-critical applications. Concurrent session control addresses concurrent sessions for system accounts. It does not, however, address concurrent sessions by single users via multiple system accounts.
 
-the number of concurrent sessions for each {{ insert: param, ac-10_odp.01 }} is limited to {{ insert: param, ac-10_odp.02 }}.
+the number of concurrent sessions for each accounts and/or account types for which to limit the number of concurrent sessions is defined; is limited to the number of concurrent sessions to be allowed for each account and/or account type is defined;.
 
 Access control policy
 

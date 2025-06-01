@@ -46,11 +46,11 @@ personnel with responsibility for related plans
 
 ### CP-2 (3): Resume Mission and Business Functions
 
-Plan for the resumption of {{ insert: param, cp-02.03_odp.01 }} mission and business functions within {{ insert: param, cp-02.03_odp.02 }} of contingency plan activation.
+Plan for the resumption of alloressential mission and business functions within the contingency plan activation time period within which to resume mission and business functions is defined; of contingency plan activation.
 
 Organizations may choose to conduct contingency planning activities to resume mission and business functions as part of business continuity planning or as part of business impact analyses. Organizations prioritize the resumption of mission and business functions. The time period for resuming mission and business functions may be dependent on the severity and extent of the disruptions to the system and its supporting infrastructure.
 
-the resumption of {{ insert: param, cp-02.03_odp.01 }} mission and business functions are planned for within {{ insert: param, cp-02.03_odp.02 }} of contingency plan activation.
+the resumption of alloressential mission and business functions are planned for within the contingency plan activation time period within which to resume mission and business functions is defined; of contingency plan activation.
 
 Contingency planning policy
 
@@ -80,11 +80,11 @@ Organizational processes for resumption of missions and business functions
 
 ### CP-2 (8): Identify Critical Assets
 
-Identify critical system assets supporting {{ insert: param, cp-02.08_odp }} mission and business functions.
+Identify critical system assets supporting alloressential mission and business functions.
 
 Organizations may choose to identify critical assets as part of criticality analysis, business continuity planning, or business impact analyses. Organizations identify critical system assets so that additional controls can be employed (beyond the controls routinely implemented) to help ensure that organizational mission and business functions can continue to be conducted during contingency operations. The identification of critical information assets also facilitates the prioritization of organizational resources. Critical system assets include technical and operational aspects. Technical aspects include system components, information technology services, information technology products, and mechanisms. Operational aspects include procedures (i.e., manually executed operations) and personnel (i.e., individuals operating technical controls and/or executing manual procedures). Organizational program protection plans can assist in identifying critical assets. If critical assets are resident within or supported by external service providers, organizations consider implementing [CP-2(7)](#cp-2.7) as a control enhancement.
 
-critical system assets supporting {{ insert: param, cp-02.08_odp }} mission and business functions are identified.
+critical system assets supporting alloressential mission and business functions are identified.
 
 Contingency planning policy
 
@@ -250,7 +250,7 @@ organizational personnel with information security responsibilities
 
 ### CP-7: Alternate Processing Site
 
-Establish an alternate processing site, including necessary agreements to permit the transfer and resumption of {{ insert: param, cp-07_odp.01 }} for essential mission and business functions within {{ insert: param, cp-07_odp.02 }} when the primary processing capabilities are unavailable;
+Establish an alternate processing site, including necessary agreements to permit the transfer and resumption of system operations for essential mission and business functions are defined; for essential mission and business functions within time period consistent with recovery time and recovery point objectives is defined; when the primary processing capabilities are unavailable;
 
 Make available at the alternate processing site, the equipment and supplies required to transfer and resume operations or put contracts in place to support delivery to the site within the organization-defined time period for transfer and resumption; and
 
@@ -258,11 +258,11 @@ Provide controls at the alternate processing site that are equivalent to those a
 
 Alternate processing sites are geographically distinct from primary processing sites and provide processing capability if the primary processing site is not available. The alternate processing capability may be addressed using a physical processing site or other alternatives, such as failover to a cloud-based service provider or other internally or externally provided processing service. Geographically distributed architectures that support contingency requirements may also be considered alternate processing sites. Controls that are covered by alternate processing site agreements include the environmental conditions at alternate sites, access rules, physical and environmental protection requirements, and the coordination for the transfer and assignment of personnel. Requirements are allocated to alternate processing sites that reflect the requirements in contingency plans to maintain essential mission and business functions despite disruption, compromise, or failure in organizational systems.
 
-an alternate processing site, including necessary agreements to permit the transfer and resumption of {{ insert: param, cp-07_odp.01 }} for essential mission and business functions, is established within {{ insert: param, cp-07_odp.02 }} when the primary processing capabilities are unavailable;
+an alternate processing site, including necessary agreements to permit the transfer and resumption of system operations for essential mission and business functions are defined; for essential mission and business functions, is established within time period consistent with recovery time and recovery point objectives is defined; when the primary processing capabilities are unavailable;
 
-the equipment and supplies required to transfer operations are made available at the alternate processing site or if contracts are in place to support delivery to the site within {{ insert: param, cp-07_odp.02 }} for transfer;
+the equipment and supplies required to transfer operations are made available at the alternate processing site or if contracts are in place to support delivery to the site within time period consistent with recovery time and recovery point objectives is defined; for transfer;
 
-the equipment and supplies required to resume operations are made available at the alternate processing site or if contracts are in place to support delivery to the site within {{ insert: param, cp-07_odp.02 }} for resumption;
+the equipment and supplies required to resume operations are made available at the alternate processing site or if contracts are in place to support delivery to the site within time period consistent with recovery time and recovery point objectives is defined; for resumption;
 
 controls provided at the alternate processing site are equivalent to those at the primary site.
 
@@ -388,11 +388,11 @@ organizational personnel with responsibility for acquisitions/contractual agreem
 
 ### CP-8: Telecommunications Services
 
-Establish alternate telecommunications services, including necessary agreements to permit the resumption of {{ insert: param, cp-08_odp.01 }} for essential mission and business functions within {{ insert: param, cp-08_odp.02 }} when the primary telecommunications capabilities are unavailable at either the primary or alternate processing or storage sites.
+Establish alternate telecommunications services, including necessary agreements to permit the resumption of system operations to be resumed for essential mission and business functions are defined; for essential mission and business functions within time period within which to resume essential mission and business functions when the primary telecommunications capabilities are unavailable is defined; when the primary telecommunications capabilities are unavailable at either the primary or alternate processing or storage sites.
 
 Telecommunications services (for data and voice) for primary and alternate processing and storage sites are in scope for [CP-8](#cp-8) . Alternate telecommunications services reflect the continuity requirements in contingency plans to maintain essential mission and business functions despite the loss of primary telecommunications services. Organizations may specify different time periods for primary or alternate sites. Alternate telecommunications services include additional organizational or commercial ground-based circuits or lines, network-based approaches to telecommunications, or the use of satellites. Organizations consider factors such as availability, quality of service, and access when entering into alternate telecommunications agreements.
 
-alternate telecommunications services, including necessary agreements to permit the resumption of {{ insert: param, cp-08_odp.01 }} , are established for essential mission and business functions within {{ insert: param, cp-08_odp.02 }} when the primary telecommunications capabilities are unavailable at either the primary or alternate processing or storage sites.
+alternate telecommunications services, including necessary agreements to permit the resumption of system operations to be resumed for essential mission and business functions are defined; , are established for essential mission and business functions within time period within which to resume essential mission and business functions when the primary telecommunications capabilities are unavailable is defined; when the primary telecommunications capabilities are unavailable at either the primary or alternate processing or storage sites.
 
 Contingency planning policy
 
@@ -486,13 +486,13 @@ organizational personnel with information security responsibilities
 
 ### CP-9 (1): Testing for Reliability and Integrity
 
-Test backup information {{ insert: param, cp-9.1_prm_1 }} to verify media reliability and information integrity.
+Test backup information organization-defined frequency to verify media reliability and information integrity.
 
 Organizations need assurance that backup information can be reliably retrieved. Reliability pertains to the systems and system components where the backup information is stored, the operations used to retrieve the information, and the integrity of the information being retrieved. Independent and specialized tests can be used for each of the aspects of reliability. For example, decrypting and transporting (or transmitting) a random sample of backup files from the alternate storage or backup site and comparing the information to the same information at the primary processing site can provide such assurance.
 
-backup information is tested {{ insert: param, cp-09.01_odp.01 }} to verify media reliability;
+backup information is tested frequency at which to test backup information for media reliability is defined; to verify media reliability;
 
-backup information is tested {{ insert: param, cp-09.01_odp.02 }} to verify information integrity.
+backup information is tested frequency at which to test backup information for information integrity is defined; to verify information integrity.
 
 Contingency planning policy
 
@@ -520,11 +520,11 @@ mechanisms supporting and/or implementing system backups
 
 ### CP-9 (8): Cryptographic Protection
 
-Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of {{ insert: param, cp-09.08_odp }}.
+Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of backup information to protect against unauthorized disclosure and modification is defined;.
 
 The selection of cryptographic mechanisms is based on the need to protect the confidentiality and integrity of backup information. The strength of mechanisms selected is commensurate with the security category or classification of the information. Cryptographic protection applies to system backup information in storage at both primary and alternate locations. Organizations that implement cryptographic mechanisms to protect information at rest also consider cryptographic key management solutions.
 
-cryptographic mechanisms are implemented to prevent unauthorized disclosure and modification of {{ insert: param, cp-09.08_odp }}.
+cryptographic mechanisms are implemented to prevent unauthorized disclosure and modification of backup information to protect against unauthorized disclosure and modification is defined;.
 
 Contingency planning policy
 

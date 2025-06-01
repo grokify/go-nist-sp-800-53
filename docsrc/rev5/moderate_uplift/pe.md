@@ -6,11 +6,11 @@
 
 ### PE-4: Access Control for Transmission
 
-Control physical access to {{ insert: param, pe-04_odp.01 }} within organizational facilities using {{ insert: param, pe-04_odp.02 }}.
+Control physical access to system distribution and transmission lines requiring physical access controls are defined; within organizational facilities using security controls to be implemented to control physical access to system distribution and transmission lines within the organizational facility are defined;.
 
 Security controls applied to system distribution and transmission lines prevent accidental damage, disruption, and physical tampering. Such controls may also be necessary to prevent eavesdropping or modification of unencrypted transmissions. Security controls used to control physical access to system distribution and transmission lines include disconnected or locked spare jacks, locked wiring closets, protection of cabling by conduit or cable trays, and wiretapping sensors.
 
-physical access to {{ insert: param, pe-04_odp.01 }} within organizational facilities is controlled using {{ insert: param, pe-04_odp.02 }}.
+physical access to system distribution and transmission lines requiring physical access controls are defined; within organizational facilities is controlled using security controls to be implemented to control physical access to system distribution and transmission lines within the organizational facility are defined;.
 
 Physical and environmental protection policy
 
@@ -36,11 +36,11 @@ mechanisms/security safeguards supporting and/or implementing access control to 
 
 ### PE-5: Access Control for Output Devices
 
-Control physical access to output from {{ insert: param, pe-05_odp }} to prevent unauthorized individuals from obtaining the output.
+Control physical access to output from output devices that require physical access control to output are defined; to prevent unauthorized individuals from obtaining the output.
 
 Controlling physical access to output devices includes placing output devices in locked rooms or other secured areas with keypad or card reader access controls and allowing access to authorized individuals only, placing output devices in locations that can be monitored by personnel, installing monitor or screen filters, and using headphones. Examples of output devices include monitors, printers, scanners, audio devices, facsimile machines, and copiers.
 
-physical access to output from {{ insert: param, pe-05_odp }} is controlled to prevent unauthorized individuals from obtaining the output.
+physical access to output from output devices that require physical access control to output are defined; is controlled to prevent unauthorized individuals from obtaining the output.
 
 Physical and environmental protection policy
 
@@ -136,17 +136,17 @@ Mechanisms supporting and/or implementing the protection of power equipment/cabl
 
 ### PE-10: Emergency Shutoff
 
-Provide the capability of shutting off power to {{ insert: param, pe-10_odp.01 }} in emergency situations;
+Provide the capability of shutting off power to system or individual system components that require the capability to shut off power in emergency situations is/are defined; in emergency situations;
 
-Place emergency shutoff switches or devices in {{ insert: param, pe-10_odp.02 }} to facilitate access for authorized personnel; and
+Place emergency shutoff switches or devices in location of emergency shutoff switches or devices by system or system component is defined; to facilitate access for authorized personnel; and
 
 Protect emergency power shutoff capability from unauthorized activation.
 
 Emergency power shutoff primarily applies to organizational facilities that contain concentrations of system resources, including data centers, mainframe computer rooms, server rooms, and areas with computer-controlled machinery.
 
-the capability to shut off power to {{ insert: param, pe-10_odp.01 }} in emergency situations is provided;
+the capability to shut off power to system or individual system components that require the capability to shut off power in emergency situations is/are defined; in emergency situations is provided;
 
-emergency shutoff switches or devices are placed in {{ insert: param, pe-10_odp.02 }} to facilitate access for authorized personnel;
+emergency shutoff switches or devices are placed in location of emergency shutoff switches or devices by system or system component is defined; to facilitate access for authorized personnel;
 
 the emergency power shutoff capability is protected from unauthorized activation.
 
@@ -172,11 +172,11 @@ Mechanisms supporting and/or implementing emergency power shutoff
 
 ### PE-11: Emergency Power
 
-Provide an uninterruptible power supply to facilitate {{ insert: param, pe-11_odp }} in the event of a primary power source loss.
+Provide an uninterruptible power supply to facilitate an orderly shutdown of the systemortransition of the system to long-term alternate power in the event of a primary power source loss.
 
 An uninterruptible power supply (UPS) is an electrical system or mechanism that provides emergency power when there is a failure of the main power source. A UPS is typically used to protect computers, data centers, telecommunication equipment, or other electrical equipment where an unexpected power disruption could cause injuries, fatalities, serious mission or business disruption, or loss of data or information. A UPS differs from an emergency power system or backup generator in that the UPS provides near-instantaneous protection from unanticipated power interruptions from the main power source by providing energy stored in batteries, supercapacitors, or flywheels. The battery duration of a UPS is relatively short but provides sufficient time to start a standby power source, such as a backup generator, or properly shut down the system.
 
-an uninterruptible power supply is provided to facilitate {{ insert: param, pe-11_odp }} in the event of a primary power source loss.
+an uninterruptible power supply is provided to facilitate an orderly shutdown of the systemortransition of the system to long-term alternate power in the event of a primary power source loss.
 
 Physical and environmental protection policy
 
@@ -202,15 +202,15 @@ the uninterruptable power supply
 
 ### PE-13 (1): Detection Systems — Automatic Activation and Notification
 
-Employ fire detection systems that activate automatically and notify {{ insert: param, pe-13.01_odp.01 }} and {{ insert: param, pe-13.01_odp.02 }} in the event of a fire.
+Employ fire detection systems that activate automatically and notify personnel or roles to be notified in the event of a fire is/are defined; and emergency responders to be notified in the event of a fire are defined; in the event of a fire.
 
 Organizations can identify personnel, roles, and emergency responders if individuals on the notification list need to have access authorizations or clearances (e.g., to enter to facilities where access is restricted due to the classification or impact level of information within the facility). Notification mechanisms may require independent energy sources to ensure that the notification capability is not adversely affected by the fire.
 
 fire detection systems that activate automatically are employed in the event of a fire;
 
-fire detection systems that notify {{ insert: param, pe-13.01_odp.01 }} automatically are employed in the event of a fire;
+fire detection systems that notify personnel or roles to be notified in the event of a fire is/are defined; automatically are employed in the event of a fire;
 
-fire detection systems that notify {{ insert: param, pe-13.01_odp.02 }} automatically are employed in the event of a fire.
+fire detection systems that notify emergency responders to be notified in the event of a fire are defined; automatically are employed in the event of a fire.
 
 Physical and environmental protection policy
 
@@ -244,9 +244,9 @@ automated notifications
 
 ### PE-17: Alternate Work Site
 
-Determine and document the {{ insert: param, pe-17_odp.01 }} allowed for use by employees;
+Determine and document the alternate work sites allowed for use by employees are defined; allowed for use by employees;
 
-Employ the following controls at alternate work sites: {{ insert: param, pe-17_odp.02 }};
+Employ the following controls at alternate work sites: controls to be employed at alternate work sites are defined;;
 
 Assess the effectiveness of controls at alternate work sites; and
 
@@ -254,9 +254,9 @@ Provide a means for employees to communicate with information security and priva
 
 Alternate work sites include government facilities or the private residences of employees. While distinct from alternative processing sites, alternate work sites can provide readily available alternate locations during contingency operations. Organizations can define different sets of controls for specific alternate work sites or types of sites depending on the work-related activities conducted at the sites. Implementing and assessing the effectiveness of organization-defined controls and providing a means to communicate incidents at alternate work sites supports the contingency planning activities of organizations.
 
- {{ insert: param, pe-17_odp.01 }} are determined and documented;
+alternate work sites allowed for use by employees are defined; are determined and documented;
 
- {{ insert: param, pe-17_odp.02 }} are employed at alternate work sites;
+ controls to be employed at alternate work sites are defined; are employed at alternate work sites;
 
 the effectiveness of controls at alternate work sites is assessed;
 

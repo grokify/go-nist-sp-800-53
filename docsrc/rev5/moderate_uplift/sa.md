@@ -44,11 +44,11 @@ mechanisms supporting and/or implementing acquisitions and the inclusion of secu
 
 ### SA-4 (2): Design and Implementation Information for Controls
 
-Require the developer of the system, system component, or system service to provide design and implementation information for the controls that includes: {{ insert: param, sa-04.02_odp.01 }} at {{ insert: param, sa-04.02_odp.03 }}.
+Require the developer of the system, system component, or system service to provide design and implementation information for the controls that includes: security-relevant external system interfaces, high-level design, low-level design, source code or hardware schematics, and/or  design and implementation information is defined (if selected); at level of detail is defined;.
 
 Organizations may require different levels of detail in the documentation for the design and implementation of controls in organizational systems, system components, or system services based on mission and business requirements, requirements for resiliency and trustworthiness, and requirements for analysis and testing. Systems can be partitioned into multiple subsystems. Each subsystem within the system can contain one or more modules. The high-level design for the system is expressed in terms of subsystems and the interfaces between subsystems providing security-relevant functionality. The low-level design for the system is expressed in terms of modules and the interfaces between modules providing security-relevant functionality. Design and implementation documentation can include manufacturer, version, serial number, verification hash signature, software libraries used, date of purchase or download, and the vendor or download source. Source code and hardware schematics are referred to as the implementation representation of the system.
 
-the developer of the system, system component, or system service is required to provide design and implementation information for the controls that includes using {{ insert: param, sa-04.02_odp.01 }} at {{ insert: param, sa-04.02_odp.03 }}.
+the developer of the system, system component, or system service is required to provide design and implementation information for the controls that includes using security-relevant external system interfaces, high-level design, low-level design, source code or hardware schematics, and/or  design and implementation information is defined (if selected); at level of detail is defined;.
 
 System and services acquisition policy
 
@@ -132,11 +132,11 @@ organizational personnel with information security responsibilities
 
 ### SA-9 (2): Identification of Functions, Ports, Protocols, and Services
 
-Require providers of the following external system services to identify the functions, ports, protocols, and other services required for the use of such services: {{ insert: param, sa-09.02_odp }}.
+Require providers of the following external system services to identify the functions, ports, protocols, and other services required for the use of such services: external system services that require the identification of functions, ports, protocols, and other services are defined;.
 
 Information from external service providers regarding the specific functions, ports, protocols, and services used in the provision of such services can be useful when the need arises to understand the trade-offs involved in restricting certain functions and services or blocking certain ports and protocols.
 
-providers of {{ insert: param, sa-09.02_odp }} are required to identify the functions, ports, protocols, and other services required for the use of such services.
+providers of external system services that require the identification of functions, ports, protocols, and other services are defined; are required to identify the functions, ports, protocols, and other services required for the use of such services.
 
 System and services acquisition policy
 
@@ -172,27 +172,27 @@ external providers of system services
 
 Require the developer of the system, system component, or system service to:
 
-Perform configuration management during system, component, or service {{ insert: param, sa-10_odp.01 }};
+Perform configuration management during system, component, or service design, development, implementation, operation, and/or disposal;
 
-Document, manage, and control the integrity of changes to {{ insert: param, sa-10_odp.02 }};
+Document, manage, and control the integrity of changes to configuration items under configuration management are defined;;
 
 Implement only organization-approved changes to the system, component, or service;
 
 Document approved changes to the system, component, or service and the potential security and privacy impacts of such changes; and
 
-Track security flaws and flaw resolution within the system, component, or service and report findings to {{ insert: param, sa-10_odp.03 }}.
+Track security flaws and flaw resolution within the system, component, or service and report findings to personnel to whom security flaws and flaw resolutions within the system, component, or service are reported is/are defined;.
 
 Organizations consider the quality and completeness of configuration management activities conducted by developers as direct evidence of applying effective security controls. Controls include protecting the master copies of material used to generate security-relevant portions of the system hardware, software, and firmware from unauthorized modification or destruction. Maintaining the integrity of changes to the system, system component, or system service requires strict configuration control throughout the system development life cycle to track authorized changes and prevent unauthorized changes.
 
 The configuration items that are placed under configuration management include the formal model; the functional, high-level, and low-level design specifications; other design data; implementation documentation; source code and hardware schematics; the current running version of the object code; tools for comparing new versions of security-relevant hardware descriptions and source code with previous versions; and test fixtures and documentation. Depending on the mission and business needs of organizations and the nature of the contractual relationships in place, developers may provide configuration management support during the operations and maintenance stage of the system development life cycle.
 
-the developer of the system, system component, or system service is required to perform configuration management during system, component, or service {{ insert: param, sa-10_odp.01 }};
+the developer of the system, system component, or system service is required to perform configuration management during system, component, or service design, development, implementation, operation, and/or disposal;
 
-the developer of the system, system component, or system service is required to document the integrity of changes to {{ insert: param, sa-10_odp.02 }};
+the developer of the system, system component, or system service is required to document the integrity of changes to configuration items under configuration management are defined;;
 
-the developer of the system, system component, or system service is required to manage the integrity of changes to {{ insert: param, sa-10_odp.02 }};
+the developer of the system, system component, or system service is required to manage the integrity of changes to configuration items under configuration management are defined;;
 
-the developer of the system, system component, or system service is required to control the integrity of changes to {{ insert: param, sa-10_odp.02 }};
+the developer of the system, system component, or system service is required to control the integrity of changes to configuration items under configuration management are defined;;
 
 the developer of the system, system component, or system service is required to implement only organization-approved changes to the system, component, or service;
 
@@ -206,7 +206,7 @@ the developer of the system, system component, or system service is required to 
 
 the developer of the system, system component, or system service is required to track security flaw resolutions within the system, component, or service;
 
-the developer of the system, system component, or system service is required to report findings to {{ insert: param, sa-10_odp.03 }}.
+the developer of the system, system component, or system service is required to report findings to personnel to whom security flaws and flaw resolutions within the system, component, or service are reported is/are defined;.
 
 System and services acquisition policy
 
@@ -252,7 +252,7 @@ Require the developer of the system, system component, or system service, at all
 
 Develop and implement a plan for ongoing security and privacy control assessments;
 
-Perform {{ insert: param, sa-11_odp.01 }} testing/evaluation {{ insert: param, sa-11_odp.02 }} at {{ insert: param, sa-11_odp.03 }};
+Perform unit, integration, system, and/or regression testing/evaluation frequency at which to conduct unit, integration, system, and/or regression testing/evaluation is defined; at depth and coverage of unit, integration, system, and/or regression testing/evaluation is defined;;
 
 Produce evidence of the execution of the assessment plan and the results of the testing and evaluation;
 
@@ -272,7 +272,7 @@ the developer of the system, system component, or system service is required at 
 
 the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to implement a plan for ongoing privacy assessments;
 
-the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to perform {{ insert: param, sa-11_odp.01 }} testing/evaluation {{ insert: param, sa-11_odp.02 }} at {{ insert: param, sa-11_odp.03 }};
+the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to perform unit, integration, system, and/or regression testing/evaluation frequency at which to conduct unit, integration, system, and/or regression testing/evaluation is defined; at depth and coverage of unit, integration, system, and/or regression testing/evaluation is defined;;
 
 the developer of the system, system component, or system service is required at all post-design stages of the system development life cycle to produce evidence of the execution of the assessment plan;
 
@@ -342,7 +342,7 @@ Documents the specific tool options and tool configurations used in the developm
 
 Documents, manages, and ensures the integrity of changes to the process and/or tools used in development; and
 
-Review the development process, standards, tools, tool options, and tool configurations {{ insert: param, sa-15_odp.01 }} to determine if the process, standards, tools, tool options and tool configurations selected and employed can satisfy the following security and privacy requirements: {{ insert: param, sa-15_prm_2 }}.
+Review the development process, standards, tools, tool options, and tool configurations frequency at which to review the development process, standards, tools, tool options, and tool configurations is defined; to determine if the process, standards, tools, tool options and tool configurations selected and employed can satisfy the following security and privacy requirements: organization-defined security and privacy requirements.
 
 Development tools include programming languages and computer-aided design systems. Reviews of development processes include the use of maturity models to determine the potential effectiveness of such processes. Maintaining the integrity of changes to tools and processes facilitates effective supply chain risk assessment and mitigation. Such integrity requires configuration control throughout the system development life cycle to track authorized changes and prevent unauthorized changes.
 
@@ -360,9 +360,9 @@ the developer of the system, system component, or system service is required to 
 
 the developer of the system, system component, or system service is required to follow a documented development process that documents, manages, and ensures the integrity of changes to the process and/or tools used in development;
 
-the developer of the system, system component, or system service is required to follow a documented development process in which the development process, standards, tools, tool options, and tool configurations are reviewed {{ insert: param, sa-15_odp.01 }} to determine that the process, standards, tools, tool options, and tool configurations selected and employed satisfy {{ insert: param, sa-15_odp.02 }};
+the developer of the system, system component, or system service is required to follow a documented development process in which the development process, standards, tools, tool options, and tool configurations are reviewed frequency at which to review the development process, standards, tools, tool options, and tool configurations is defined; to determine that the process, standards, tools, tool options, and tool configurations selected and employed satisfy security requirements to be satisfied by the process, standards, tools, tool options, and tool configurations are defined;;
 
-the developer of the system, system component, or system service is required to follow a documented development process in which the development process, standards, tools, tool options, and tool configurations are reviewed {{ insert: param, sa-15_odp.01 }} to determine that the process, standards, tools, tool options, and tool configurations selected and employed satisfy {{ insert: param, sa-15_odp.03 }}.
+the developer of the system, system component, or system service is required to follow a documented development process in which the development process, standards, tools, tool options, and tool configurations are reviewed frequency at which to review the development process, standards, tools, tool options, and tool configurations is defined; to determine that the process, standards, tools, tool options, and tool configurations selected and employed satisfy privacy requirements to be satisfied by the process, standards, tools, tool options, and tool configurations are defined;.
 
 System and services acquisition policy
 
@@ -416,17 +416,17 @@ system developer
 
 Require the developer of the system, system component, or system service to perform a criticality analysis:
 
-At the following decision points in the system development life cycle: {{ insert: param, sa-15.03_odp.01 }} ; and
+At the following decision points in the system development life cycle: decision points in the system development life cycle are defined; ; and
 
-At the following level of rigor: {{ insert: param, sa-15.3_prm_2 }}.
+At the following level of rigor: organization-defined breadth and depth of criticality analysis.
 
 Criticality analysis performed by the developer provides input to the criticality analysis performed by organizations. Developer input is essential to organizational criticality analysis because organizations may not have access to detailed design documentation for system components that are developed as commercial off-the-shelf products. Such design documentation includes functional specifications, high-level designs, low-level designs, source code, and hardware schematics. Criticality analysis is important for organizational systems that are designated as high value assets. High value assets can be moderate- or high-impact systems due to heightened adversarial interest or potential adverse effects on the federal enterprise. Developer input is especially important when organizations conduct supply chain criticality analyses.
 
-the developer of the system, system component, or system service is required to perform a criticality analysis at {{ insert: param, sa-15.03_odp.01 }} in the system development life cycle;
+the developer of the system, system component, or system service is required to perform a criticality analysis at decision points in the system development life cycle are defined; in the system development life cycle;
 
-the developer of the system, system component, or system service is required to perform a criticality analysis at the following rigor level: {{ insert: param, sa-15.03_odp.02 }};
+the developer of the system, system component, or system service is required to perform a criticality analysis at the following rigor level: the breadth of criticality analysis is defined;;
 
-the developer of the system, system component, or system service is required to perform a criticality analysis at the following rigor level: {{ insert: param, sa-15.03_odp.03 }} .
+the developer of the system, system component, or system service is required to perform a criticality analysis at the following rigor level: the depth of criticality analysis is defined; .
 
 Supply chain risk management plan
 

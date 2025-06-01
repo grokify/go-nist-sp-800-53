@@ -6,9 +6,9 @@
 
 ### RA-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, ra-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, ra-01_odp.03 }} risk assessment policy that:
+organization-level, mission/business process-level, and/or system-level risk assessment policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the risk assessment policy and the associated risk assessment controls;
 
-Designate an {{ insert: param, ra-01_odp.04 }} to manage the development, documentation, and dissemination of the risk assessment policy and procedures; and
+Designate an an official to manage the risk assessment policy and procedures is defined; to manage the development, documentation, and dissemination of the risk assessment policy and procedures; and
 
 Review and update the current risk assessment:
 
-Policy {{ insert: param, ra-01_odp.05 }} and following {{ insert: param, ra-01_odp.06 }} ; and
+Policy the frequency at which the current risk assessment policy is reviewed and updated is defined; and following events that would require the current risk assessment policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, ra-01_odp.07 }} and following {{ insert: param, ra-01_odp.08 }}.
+Procedures the frequency at which the current risk assessment procedures are reviewed and updated is defined; and following events that would require risk assessment procedures to be reviewed and updated are defined;.
 
 Risk assessment policy and procedures address the controls in the RA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of risk assessment policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies reflecting the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to risk assessment policy and procedures include assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 a risk assessment policy is developed and documented;
 
-the risk assessment policy is disseminated to {{ insert: param, ra-01_odp.01 }};
+the risk assessment policy is disseminated to personnel or roles to whom the risk assessment policy is to be disseminated is/are defined;;
 
 risk assessment procedures to facilitate the implementation of the risk assessment policy and associated risk assessment controls are developed and documented;
 
-the risk assessment procedures are disseminated to {{ insert: param, ra-01_odp.02 }};
+the risk assessment procedures are disseminated to personnel or roles to whom the risk assessment procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses purpose;
+the organization-level, mission/business process-level, and/or system-level risk assessment policy addresses purpose;
 
-the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses scope;
+the organization-level, mission/business process-level, and/or system-level risk assessment policy addresses scope;
 
-the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses roles;
+the organization-level, mission/business process-level, and/or system-level risk assessment policy addresses roles;
 
-the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses responsibilities;
+the organization-level, mission/business process-level, and/or system-level risk assessment policy addresses responsibilities;
 
-the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses management commitment;
+the organization-level, mission/business process-level, and/or system-level risk assessment policy addresses management commitment;
 
-the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses coordination among organizational entities;
+the organization-level, mission/business process-level, and/or system-level risk assessment policy addresses coordination among organizational entities;
 
-the {{ insert: param, ra-01_odp.03 }} risk assessment policy addresses compliance;
+the organization-level, mission/business process-level, and/or system-level risk assessment policy addresses compliance;
 
-the {{ insert: param, ra-01_odp.03 }} risk assessment policy is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines;
+the organization-level, mission/business process-level, and/or system-level risk assessment policy is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, ra-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the risk assessment policy and procedures;
+the an official to manage the risk assessment policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the risk assessment policy and procedures;
 
-the current risk assessment policy is reviewed and updated {{ insert: param, ra-01_odp.05 }};
+the current risk assessment policy is reviewed and updated the frequency at which the current risk assessment policy is reviewed and updated is defined;;
 
-the current risk assessment policy is reviewed and updated following {{ insert: param, ra-01_odp.06 }};
+the current risk assessment policy is reviewed and updated following events that would require the current risk assessment policy to be reviewed and updated are defined;;
 
-the current risk assessment procedures are reviewed and updated {{ insert: param, ra-01_odp.07 }};
+the current risk assessment procedures are reviewed and updated the frequency at which the current risk assessment procedures are reviewed and updated is defined;;
 
-the current risk assessment procedures are reviewed and updated following {{ insert: param, ra-01_odp.08 }}.
+the current risk assessment procedures are reviewed and updated following events that would require risk assessment procedures to be reviewed and updated are defined;.
 
 Risk assessment policy and procedures
 
@@ -124,13 +124,13 @@ Determining the likelihood and impact of adverse effects on individuals arising 
 
 Integrate risk assessment results and risk management decisions from the organization and mission or business process perspectives with system-level risk assessments;
 
-Document risk assessment results in {{ insert: param, ra-03_odp.01 }};
+Document risk assessment results in security and privacy plans, risk assessment report, or  a document in which risk assessment results are to be documented (if not documented in the security and privacy plans or risk assessment report) is defined (if selected);;
 
-Review risk assessment results {{ insert: param, ra-03_odp.03 }};
+Review risk assessment results the frequency to review risk assessment results is defined;;
 
-Disseminate risk assessment results to {{ insert: param, ra-03_odp.04 }} ; and
+Disseminate risk assessment results to personnel or roles to whom risk assessment results are to be disseminated is/are defined; ; and
 
-Update the risk assessment {{ insert: param, ra-03_odp.05 }} or when there are significant changes to the system, its environment of operation, or other conditions that may impact the security or privacy state of the system.
+Update the risk assessment the frequency to update the risk assessment is defined; or when there are significant changes to the system, its environment of operation, or other conditions that may impact the security or privacy state of the system.
 
 Risk assessments consider threats, vulnerabilities, likelihood, and impact to organizational operations and assets, individuals, other organizations, and the Nation. Risk assessments also consider risk from external parties, including contractors who operate systems on behalf of the organization, individuals who access organizational systems, service providers, and outsourcing entities.
 
@@ -146,13 +146,13 @@ a risk assessment is conducted to determine the likelihood and impact of adverse
 
 risk assessment results and risk management decisions from the organization and mission or business process perspectives are integrated with system-level risk assessments;
 
-risk assessment results are documented in {{ insert: param, ra-03_odp.01 }};
+risk assessment results are documented in security and privacy plans, risk assessment report, or  a document in which risk assessment results are to be documented (if not documented in the security and privacy plans or risk assessment report) is defined (if selected);;
 
-risk assessment results are reviewed {{ insert: param, ra-03_odp.03 }};
+risk assessment results are reviewed the frequency to review risk assessment results is defined;;
 
-risk assessment results are disseminated to {{ insert: param, ra-03_odp.04 }};
+risk assessment results are disseminated to personnel or roles to whom risk assessment results are to be disseminated is/are defined;;
 
-the risk assessment is updated {{ insert: param, ra-03_odp.05 }} or when there are significant changes to the system, its environment of operation, or other conditions that may impact the security or privacy state of the system.
+the risk assessment is updated the frequency to update the risk assessment is defined; or when there are significant changes to the system, its environment of operation, or other conditions that may impact the security or privacy state of the system.
 
 Risk assessment policy
 
@@ -186,15 +186,15 @@ mechanisms supporting and/or conducting, documenting, reviewing, disseminating, 
 
 ### RA-3 (1): Supply Chain Risk Assessment
 
-Assess supply chain risks associated with {{ insert: param, ra-03.01_odp.01 }} ; and
+Assess supply chain risks associated with systems, system components, and system services to assess supply chain risks are defined; ; and
 
-Update the supply chain risk assessment {{ insert: param, ra-03.01_odp.02 }} , when there are significant changes to the relevant supply chain, or when changes to the system, environments of operation, or other conditions may necessitate a change in the supply chain.
+Update the supply chain risk assessment the frequency at which to update the supply chain risk assessment is defined; , when there are significant changes to the relevant supply chain, or when changes to the system, environments of operation, or other conditions may necessitate a change in the supply chain.
 
 Supply chain-related events include disruption, use of defective components, insertion of counterfeits, theft, malicious development practices, improper delivery practices, and insertion of malicious code. These events can have a significant impact on the confidentiality, integrity, or availability of a system and its information and, therefore, can also adversely impact organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, other organizations, and the Nation. The supply chain-related events may be unintentional or malicious and can occur at any point during the system life cycle. An analysis of supply chain risk can help an organization identify systems or components for which additional supply chain risk mitigations are required.
 
-supply chain risks associated with {{ insert: param, ra-03.01_odp.01 }} are assessed;
+supply chain risks associated with systems, system components, and system services to assess supply chain risks are defined; are assessed;
 
-the supply chain risk assessment is updated {{ insert: param, ra-03.01_odp.02 }} , when there are significant changes to the relevant supply chain, or when changes to the system, environments of operation, or other conditions may necessitate a change in the supply chain.
+the supply chain risk assessment is updated the frequency at which to update the supply chain risk assessment is defined; , when there are significant changes to the relevant supply chain, or when changes to the system, environments of operation, or other conditions may necessitate a change in the supply chain.
 
 Supply chain risk management policy
 
@@ -234,7 +234,7 @@ mechanisms supporting and/or conducting, documenting, reviewing, disseminating, 
 
 ### RA-5: Vulnerability Monitoring and Scanning
 
-Monitor and scan for vulnerabilities in the system and hosted applications {{ insert: param, ra-5_prm_1 }} and when new vulnerabilities potentially affecting the system are identified and reported;
+Monitor and scan for vulnerabilities in the system and hosted applications organization-defined frequency and/or randomly in accordance with organization-defined process and when new vulnerabilities potentially affecting the system are identified and reported;
 
 Employ vulnerability monitoring tools and techniques that facilitate interoperability among tools and automate parts of the vulnerability management process by using standards for:
 
@@ -246,9 +246,9 @@ Measuring vulnerability impact;
 
 Analyze vulnerability scan reports and results from vulnerability monitoring;
 
-Remediate legitimate vulnerabilities {{ insert: param, ra-05_odp.03 }} in accordance with an organizational assessment of risk;
+Remediate legitimate vulnerabilities response times to remediate legitimate vulnerabilities in accordance with an organizational assessment of risk are defined; in accordance with an organizational assessment of risk;
 
-Share information obtained from the vulnerability monitoring process and control assessments with {{ insert: param, ra-05_odp.04 }} to help eliminate similar vulnerabilities in other systems; and
+Share information obtained from the vulnerability monitoring process and control assessments with personnel or roles with whom information obtained from the vulnerability scanning process and control assessments is to be shared; to help eliminate similar vulnerabilities in other systems; and
 
 Employ vulnerability monitoring tools that include the capability to readily update the vulnerabilities to be scanned.
 
@@ -260,9 +260,9 @@ Vulnerability monitoring includes a channel and process for receiving reports of
 
 Organizations may also employ the use of financial incentives (also known as "bug bounties" ) to further encourage external security researchers to report discovered vulnerabilities. Bug bounty programs can be tailored to the organization’s needs. Bounties can be operated indefinitely or over a defined period of time and can be offered to the general public or to a curated group. Organizations may run public and private bounties simultaneously and could choose to offer partially credentialed access to certain participants in order to evaluate security vulnerabilities from privileged vantage points.
 
-systems and hosted applications are monitored for vulnerabilities {{ insert: param, ra-05_odp.01 }} and when new vulnerabilities potentially affecting the system are identified and reported;
+systems and hosted applications are monitored for vulnerabilities frequency for monitoring systems and hosted applications for vulnerabilities is defined; and when new vulnerabilities potentially affecting the system are identified and reported;
 
-systems and hosted applications are scanned for vulnerabilities {{ insert: param, ra-05_odp.02 }} and when new vulnerabilities potentially affecting the system are identified and reported;
+systems and hosted applications are scanned for vulnerabilities frequency for scanning systems and hosted applications for vulnerabilities is defined; and when new vulnerabilities potentially affecting the system are identified and reported;
 
 vulnerability monitoring tools and techniques are employed to facilitate interoperability among tools;
 
@@ -274,9 +274,9 @@ vulnerability monitoring tools and techniques are employed to facilitate interop
 
 vulnerability scan reports and results from vulnerability monitoring are analyzed;
 
-legitimate vulnerabilities are remediated {{ insert: param, ra-05_odp.03 }} in accordance with an organizational assessment of risk;
+legitimate vulnerabilities are remediated response times to remediate legitimate vulnerabilities in accordance with an organizational assessment of risk are defined; in accordance with an organizational assessment of risk;
 
-information obtained from the vulnerability monitoring process and control assessments is shared with {{ insert: param, ra-05_odp.04 }} to help eliminate similar vulnerabilities in other systems;
+information obtained from the vulnerability monitoring process and control assessments is shared with personnel or roles with whom information obtained from the vulnerability scanning process and control assessments is to be shared; to help eliminate similar vulnerabilities in other systems;
 
 vulnerability monitoring tools that include the capability to readily update the vulnerabilities to be scanned are employed.
 
@@ -314,11 +314,11 @@ mechanisms supporting and/or implementing vulnerability scanning, analysis, reme
 
 ### RA-5 (2): Update Vulnerabilities to Be Scanned
 
-Update the system vulnerabilities to be scanned {{ insert: param, ra-05.02_odp.01 }}.
+Update the system vulnerabilities to be scanned the frequency for updating the system vulnerabilities to be scanned is defined (if selected); , prior to a new scan, and/or when new vulnerabilities are identified and reported.
 
 Due to the complexity of modern software, systems, and other factors, new vulnerabilities are discovered on a regular basis. It is important that newly discovered vulnerabilities are added to the list of vulnerabilities to be scanned to ensure that the organization can take steps to mitigate those vulnerabilities in a timely manner.
 
-the system vulnerabilities to be scanned are updated {{ insert: param, ra-05.02_odp.01 }}.
+the system vulnerabilities to be scanned are updated the frequency for updating the system vulnerabilities to be scanned is defined (if selected); , prior to a new scan, and/or when new vulnerabilities are identified and reported.
 
 Procedures addressing vulnerability scanning
 
@@ -348,13 +348,13 @@ mechanisms/tools supporting and/or implementing vulnerability scanning
 
 ### RA-5 (4): Discoverable Information
 
-Determine information about the system that is discoverable and take {{ insert: param, ra-05.04_odp }}.
+Determine information about the system that is discoverable and take corrective actions to be taken if information about the system is discoverable are defined;.
 
 Discoverable information includes information that adversaries could obtain without compromising or breaching the system, such as by collecting information that the system is exposing or by conducting extensive web searches. Corrective actions include notifying appropriate organizational personnel, removing designated information, or changing the system to make the designated information less relevant or attractive to adversaries. This enhancement excludes intentionally discoverable information that may be part of a decoy capability (e.g., honeypots, honeynets, or deception nets) deployed by the organization.
 
 information about the system is discoverable;
 
- {{ insert: param, ra-05.04_odp }} are taken when information about the system is confirmed as discoverable.
+ corrective actions to be taken if information about the system is discoverable are defined; are taken when information about the system is confirmed as discoverable.
 
 Procedures addressing vulnerability scanning
 
@@ -400,11 +400,11 @@ mechanisms supporting and/or implementing incident management and response
 
 ### RA-5 (5): Privileged Access
 
-Implement privileged access authorization to {{ insert: param, ra-05.05_odp.01 }} for {{ insert: param, ra-05.05_odp.02 }}.
+Implement privileged access authorization to system components to which privileged access is authorized for selected vulnerability scanning activities are defined; for vulnerability scanning activities selected for privileged access authorization to system components are defined;.
 
 In certain situations, the nature of the vulnerability scanning may be more intrusive, or the system component that is the subject of the scanning may contain classified or controlled unclassified information, such as personally identifiable information. Privileged access authorization to selected system components facilitates more thorough vulnerability scanning and protects the sensitive nature of such scanning.
 
-privileged access authorization is implemented to {{ insert: param, ra-05.05_odp.01 }} for {{ insert: param, ra-05.05_odp.02 }}.
+privileged access authorization is implemented to system components to which privileged access is authorized for selected vulnerability scanning activities are defined; for vulnerability scanning activities selected for privileged access authorization to system components are defined;.
 
 Risk assessment policy
 
@@ -524,7 +524,7 @@ mechanisms/tools supporting and/or implementing assessments and auditing
 
 ### RA-9: Criticality Analysis
 
-Identify critical system components and functions by performing a criticality analysis for {{ insert: param, ra-09_odp.01 }} at {{ insert: param, ra-09_odp.02 }}.
+Identify critical system components and functions by performing a criticality analysis for systems, system components, or system services to be analyzed for criticality are defined; at decision points in the system development life cycle when a criticality analysis is to be performed are defined;.
 
 Not all system components, functions, or services necessarily require significant protections. For example, criticality analysis is a key tenet of supply chain risk management and informs the prioritization of protection activities. The identification of critical system components and functions considers applicable laws, executive orders, regulations, directives, policies, standards, system functionality requirements, system and component interfaces, and system and component dependencies. Systems engineers conduct a functional decomposition of a system to identify mission-critical functions and components. The functional decomposition includes the identification of organizational missions supported by the system, decomposition into the specific functions to perform those missions, and traceability to the hardware, software, and firmware components that implement those functions, including when the functions are shared by many components within and external to the system.
 
@@ -532,7 +532,7 @@ The operational environment of a system or a system component may impact the cri
 
 Criticality analysis is performed when an architecture or design is being developed, modified, or upgraded. If such analysis is performed early in the system development life cycle, organizations may be able to modify the system design to reduce the critical nature of these components and functions, such as by adding redundancy or alternate paths into the system design. Criticality analysis can also influence the protection measures required by development contractors. In addition to criticality analysis for systems, system components, and system services, criticality analysis of information is an important consideration. Such analysis is conducted as part of security categorization in [RA-2](#ra-2).
 
-critical system components and functions are identified by performing a criticality analysis for {{ insert: param, ra-09_odp.01 }} at {{ insert: param, ra-09_odp.02 }}.
+critical system components and functions are identified by performing a criticality analysis for systems, system components, or system services to be analyzed for criticality are defined; at decision points in the system development life cycle when a criticality analysis is to be performed are defined;.
 
 Risk assessment policy
 

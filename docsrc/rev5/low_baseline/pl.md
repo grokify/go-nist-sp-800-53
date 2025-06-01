@@ -6,9 +6,9 @@
 
 ### PL-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, pl-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, pl-01_odp.03 }} planning policy that:
+organization-level, mission/business process-level, and/or system-level planning policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the planning policy and the associated planning controls;
 
-Designate an {{ insert: param, pl-01_odp.04 }} to manage the development, documentation, and dissemination of the planning policy and procedures; and
+Designate an an official to manage the planning policy and procedures is defined; to manage the development, documentation, and dissemination of the planning policy and procedures; and
 
 Review and update the current planning:
 
-Policy {{ insert: param, pl-01_odp.05 }} and following {{ insert: param, pl-01_odp.06 }} ; and
+Policy the frequency with which the current planning policy is reviewed and updated is defined; and following events that would require the current planning policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, pl-01_odp.07 }} and following {{ insert: param, pl-01_odp.08 }}.
+Procedures the frequency with which the current planning procedures are reviewed and updated is defined; and following events that would require procedures to be reviewed and updated are defined;.
 
 Planning policy and procedures for the controls in the PL family implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on their development. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission level or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission/business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to planning policy and procedures include, but are not limited to, assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 a planning policy is developed and documented.
 
-the planning policy is disseminated to {{ insert: param, pl-01_odp.01 }};
+the planning policy is disseminated to personnel or roles to whom the planning policy is to be disseminated is/are defined;;
 
 planning procedures to facilitate the implementation of the planning policy and associated planning controls are developed and documented;
 
-the planning procedures are disseminated to {{ insert: param, pl-01_odp.02 }};
+the planning procedures are disseminated to personnel or roles to whom the planning procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, pl-01_odp.03 }} planning policy addresses purpose;
+the organization-level, mission/business process-level, and/or system-level planning policy addresses purpose;
 
-the {{ insert: param, pl-01_odp.03 }} planning policy addresses scope;
+the organization-level, mission/business process-level, and/or system-level planning policy addresses scope;
 
-the {{ insert: param, pl-01_odp.03 }} planning policy addresses roles;
+the organization-level, mission/business process-level, and/or system-level planning policy addresses roles;
 
-the {{ insert: param, pl-01_odp.03 }} planning policy addresses responsibilities;
+the organization-level, mission/business process-level, and/or system-level planning policy addresses responsibilities;
 
-the {{ insert: param, pl-01_odp.03 }} planning policy addresses management commitment;
+the organization-level, mission/business process-level, and/or system-level planning policy addresses management commitment;
 
-the {{ insert: param, pl-01_odp.03 }} planning policy addresses coordination among organizational entities;
+the organization-level, mission/business process-level, and/or system-level planning policy addresses coordination among organizational entities;
 
-the {{ insert: param, pl-01_odp.03 }} planning policy addresses compliance;
+the organization-level, mission/business process-level, and/or system-level planning policy addresses compliance;
 
-the {{ insert: param, pl-01_odp.03 }} planning policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
+the organization-level, mission/business process-level, and/or system-level planning policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, pl-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the planning policy and procedures;
+the an official to manage the planning policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the planning policy and procedures;
 
-the current planning policy is reviewed and updated {{ insert: param, pl-01_odp.05 }};
+the current planning policy is reviewed and updated the frequency with which the current planning policy is reviewed and updated is defined;;
 
-the current planning policy is reviewed and updated following {{ insert: param, pl-01_odp.06 }};
+the current planning policy is reviewed and updated following events that would require the current planning policy to be reviewed and updated are defined;;
 
-the current planning procedures are reviewed and updated {{ insert: param, pl-01_odp.07 }};
+the current planning procedures are reviewed and updated the frequency with which the current planning procedures are reviewed and updated is defined;;
 
-the current planning procedures are reviewed and updated following {{ insert: param, pl-01_odp.08 }}.
+the current planning procedures are reviewed and updated following events that would require procedures to be reviewed and updated are defined;.
 
 Planning policy and procedures
 
@@ -102,13 +102,13 @@ Describe the controls in place or planned for meeting the security and privacy r
 
 Include risk determinations for security and privacy architecture and design decisions;
 
-Include security- and privacy-related activities affecting the system that require planning and coordination with {{ insert: param, pl-02_odp.01 }} ; and
+Include security- and privacy-related activities affecting the system that require planning and coordination with individuals or groups with whom security and privacy-related activities affecting the system that require planning and coordination is/are assigned; ; and
 
 Are reviewed and approved by the authorizing official or designated representative prior to plan implementation.
 
-Distribute copies of the plans and communicate subsequent changes to the plans to {{ insert: param, pl-02_odp.02 }};
+Distribute copies of the plans and communicate subsequent changes to the plans to personnel or roles to receive distributed copies of the system security and privacy plans is/are assigned;;
 
-Review the plans {{ insert: param, pl-02_odp.03 }};
+Review the plans frequency to review system security and privacy plans is defined;;
 
 Update the plans to address changes to the system and environment of operation or problems identified during plan implementation or control assessments; and
 
@@ -174,19 +174,19 @@ a security plan for the system is developed that includes risk determinations fo
 
 a privacy plan for the system is developed that includes risk determinations for privacy architecture and design decisions;
 
-a security plan for the system is developed that includes security-related activities affecting the system that require planning and coordination with {{ insert: param, pl-02_odp.01 }};
+a security plan for the system is developed that includes security-related activities affecting the system that require planning and coordination with individuals or groups with whom security and privacy-related activities affecting the system that require planning and coordination is/are assigned;;
 
-a privacy plan for the system is developed that includes privacy-related activities affecting the system that require planning and coordination with {{ insert: param, pl-02_odp.01 }};
+a privacy plan for the system is developed that includes privacy-related activities affecting the system that require planning and coordination with individuals or groups with whom security and privacy-related activities affecting the system that require planning and coordination is/are assigned;;
 
 a security plan for the system is developed that is reviewed and approved by the authorizing official or designated representative prior to plan implementation;
 
 a privacy plan for the system is developed that is reviewed and approved by the authorizing official or designated representative prior to plan implementation.
 
-copies of the plans are distributed to {{ insert: param, pl-02_odp.02 }};
+copies of the plans are distributed to personnel or roles to receive distributed copies of the system security and privacy plans is/are assigned;;
 
-subsequent changes to the plans are communicated to {{ insert: param, pl-02_odp.02 }};
+subsequent changes to the plans are communicated to personnel or roles to receive distributed copies of the system security and privacy plans is/are assigned;;
 
-plans are reviewed {{ insert: param, pl-02_odp.03 }};
+plans are reviewed frequency to review system security and privacy plans is defined;;
 
 plans are updated to address changes to the system and environment of operations;
 
@@ -238,9 +238,9 @@ Establish and provide to individuals requiring access to the system, the rules t
 
 Receive a documented acknowledgment from such individuals, indicating that they have read, understand, and agree to abide by the rules of behavior, before authorizing access to information and the system;
 
-Review and update the rules of behavior {{ insert: param, pl-04_odp.01 }} ; and
+Review and update the rules of behavior frequency for reviewing and updating the rules of behavior is defined; ; and
 
-Require individuals who have acknowledged a previous version of the rules of behavior to read and re-acknowledge {{ insert: param, pl-04_odp.02 }}.
+Require individuals who have acknowledged a previous version of the rules of behavior to read and re-acknowledge frequency for individuals to read and re-acknowledge the rules of behavior is defined (if selected); and/orwhen the rules are revised or updated.
 
 Rules of behavior represent a type of access agreement for organizational users. Other types of access agreements include nondisclosure agreements, conflict-of-interest agreements, and acceptable use agreements (see [PS-6](#ps-6) ). Organizations consider rules of behavior based on individual user roles and responsibilities and differentiate between rules that apply to privileged users and rules that apply to general users. Establishing rules of behavior for some types of non-organizational users, including individuals who receive information from federal systems, is often not feasible given the large number of such users and the limited nature of their interactions with the systems. Rules of behavior for organizational and non-organizational users can also be established in [AC-8](#ac-8) . The related controls section provides a list of controls that are relevant to organizational rules of behavior. [PL-4b](#pl-4_smt.b) , the documented acknowledgment portion of the control, may be satisfied by the literacy training and awareness and role-based training programs conducted by organizations if such training includes rules of behavior. Documented acknowledgements for rules of behavior include electronic or physical signatures and electronic agreement check boxes or radio buttons.
 
@@ -250,9 +250,9 @@ rules that describe responsibilities and expected behavior for information and s
 
 before authorizing access to information and the system, a documented acknowledgement from such individuals indicating that they have read, understand, and agree to abide by the rules of behavior is received;
 
-rules of behavior are reviewed and updated {{ insert: param, pl-04_odp.01 }};
+rules of behavior are reviewed and updated frequency for reviewing and updating the rules of behavior is defined;;
 
-individuals who have acknowledged a previous version of the rules of behavior are required to read and reacknowledge {{ insert: param, pl-04_odp.02 }}.
+individuals who have acknowledged a previous version of the rules of behavior are required to read and reacknowledge frequency for individuals to read and re-acknowledge the rules of behavior is defined (if selected); and/orwhen the rules are revised or updated.
 
 Security and privacy planning policy
 

@@ -6,33 +6,33 @@
 
 ### CM-3 (1): Automated Documentation, Notification, and Prohibition of Changes
 
-Use {{ insert: param, cm-03.01_odp.01 }} to:
+Use mechanisms used to automate configuration change control are defined; to:
 
 Document proposed changes to the system;
 
-Notify {{ insert: param, cm-03.01_odp.02 }} of proposed changes to the system and request change approval;
+Notify approval authorities to be notified of and request approval for proposed changes to the system are defined; of proposed changes to the system and request change approval;
 
-Highlight proposed changes to the system that have not been approved or disapproved within {{ insert: param, cm-03.01_odp.03 }};
+Highlight proposed changes to the system that have not been approved or disapproved within the time period after which to highlight changes that have not been approved or disapproved is defined;;
 
 Prohibit changes to the system until designated approvals are received;
 
 Document all changes to the system; and
 
-Notify {{ insert: param, cm-03.01_odp.04 }} when approved changes to the system are completed.
+Notify personnel to be notified when approved changes are complete is/are defined; when approved changes to the system are completed.
 
 None.
 
- {{ insert: param, cm-03.01_odp.01 }} are used to document proposed changes to the system;
+mechanisms used to automate configuration change control are defined; are used to document proposed changes to the system;
 
- {{ insert: param, cm-03.01_odp.01 }} are used to notify {{ insert: param, cm-03.01_odp.02 }} of proposed changes to the system and request change approval;
+ mechanisms used to automate configuration change control are defined; are used to notify approval authorities to be notified of and request approval for proposed changes to the system are defined; of proposed changes to the system and request change approval;
 
- {{ insert: param, cm-03.01_odp.01 }} are used to highlight proposed changes to the system that have not been approved or disapproved within {{ insert: param, cm-03.01_odp.03 }};
+ mechanisms used to automate configuration change control are defined; are used to highlight proposed changes to the system that have not been approved or disapproved within the time period after which to highlight changes that have not been approved or disapproved is defined;;
 
- {{ insert: param, cm-03.01_odp.01 }} are used to prohibit changes to the system until designated approvals are received;
+ mechanisms used to automate configuration change control are defined; are used to prohibit changes to the system until designated approvals are received;
 
- {{ insert: param, cm-03.01_odp.01 }} are used to document all changes to the system;
+ mechanisms used to automate configuration change control are defined; are used to document all changes to the system;
 
- {{ insert: param, cm-03.01_odp.01 }} are used to notify {{ insert: param, cm-03.01_odp.04 }} when approved changes to the system are completed.
+ mechanisms used to automate configuration change control are defined; are used to notify personnel to be notified when approved changes are complete is/are defined; when approved changes to the system are completed.
 
 Configuration management policy
 
@@ -76,11 +76,11 @@ automated mechanisms implementing configuration change control activities
 
 ### CM-3 (6): Cryptography Management
 
-Ensure that cryptographic mechanisms used to provide the following controls are under configuration management: {{ insert: param, cm-03.06_odp }}.
+Ensure that cryptographic mechanisms used to provide the following controls are under configuration management: controls provided by cryptographic mechanisms that are to be under configuration management are defined;.
 
 The controls referenced in the control enhancement refer to security and privacy controls from the control catalog. Regardless of the cryptographic mechanisms employed, processes and procedures are in place to manage those mechanisms. For example, if system components use certificates for identification and authentication, a process is implemented to address the expiration of those certificates.
 
-cryptographic mechanisms used to provide {{ insert: param, cm-03.06_odp }} are under configuration management.
+cryptographic mechanisms used to provide controls provided by cryptographic mechanisms that are to be under configuration management are defined; are under configuration management.
 
 Configuration management policy
 
@@ -184,13 +184,13 @@ mechanisms supporting and/or implementing security and privacy impact analyses o
 
 ### CM-5 (1): Automated Access Enforcement and Audit Records
 
-Enforce access restrictions using {{ insert: param, cm-05.01_odp }} ; and
+Enforce access restrictions using mechanisms used to automate the enforcement of access restrictions are defined; ; and
 
 Automatically generate audit records of the enforcement actions.
 
 Organizations log system accesses associated with applying configuration changes to ensure that configuration change control is implemented and to support after-the-fact actions should organizations discover any unauthorized changes.
 
-access restrictions for change are enforced using {{ insert: param, cm-05.01_odp }};
+access restrictions for change are enforced using mechanisms used to automate the enforcement of access restrictions are defined;;
 
 audit records of enforcement actions are automatically generated.
 
@@ -228,15 +228,15 @@ automated mechanisms supporting auditing of enforcement actions
 
 ### CM-6 (1): Automated Management, Application, and Verification
 
-Manage, apply, and verify configuration settings for {{ insert: param, cm-06.01_odp.01 }} using {{ insert: param, cm-6.1_prm_2 }}.
+Manage, apply, and verify configuration settings for system components for which to manage, apply, and verify configuration settings are defined; using organization-defined automated mechanisms.
 
 Automated tools (e.g., hardening tools, baseline configuration tools) can improve the accuracy, consistency, and availability of configuration settings information. Automation can also provide data aggregation and data correlation capabilities, alerting mechanisms, and dashboards to support risk-based decision-making within the organization.
 
-configuration settings for {{ insert: param, cm-06.01_odp.01 }} are managed using {{ insert: param, cm-06.01_odp.02 }};
+configuration settings for system components for which to manage, apply, and verify configuration settings are defined; are managed using automated mechanisms to manage configuration settings are defined;;
 
-configuration settings for {{ insert: param, cm-06.01_odp.01 }} are applied using {{ insert: param, cm-06.01_odp.03 }};
+configuration settings for system components for which to manage, apply, and verify configuration settings are defined; are applied using automated mechanisms to apply configuration settings are defined;;
 
-configuration settings for {{ insert: param, cm-06.01_odp.01 }} are verified using {{ insert: param, cm-06.01_odp.04 }}.
+configuration settings for system components for which to manage, apply, and verify configuration settings are defined; are verified using automated mechanisms to verify configuration settings are defined;.
 
 Configuration management policy
 
@@ -276,11 +276,11 @@ automated mechanisms implemented to manage, apply, and verify system configurati
 
 ### CM-6 (2): Respond to Unauthorized Changes
 
-Take the following actions in response to unauthorized changes to {{ insert: param, cm-06.02_odp.02 }}: {{ insert: param, cm-06.02_odp.01 }}.
+Take the following actions in response to unauthorized changes to configuration settings requiring action upon an unauthorized change are defined;: actions to be taken upon an unauthorized change are defined;.
 
 Responses to unauthorized changes to configuration settings include alerting designated organizational personnel, restoring established configuration settings, or—in extreme cases—halting affected system processing.
 
- {{ insert: param, cm-06.02_odp.01 }} are taken in response to unauthorized changes to {{ insert: param, cm-06.02_odp.02 }}.
+ actions to be taken upon an unauthorized change are defined; are taken in response to unauthorized changes to configuration settings requiring action upon an unauthorized change are defined;.
 
 System security plan
 
@@ -320,17 +320,17 @@ mechanisms supporting and/or implementing actions in response to unauthorized ch
 
 ### CM-8 (2): Automated Maintenance
 
-Maintain the currency, completeness, accuracy, and availability of the inventory of system components using {{ insert: param, cm-8.2_prm_1 }}.
+Maintain the currency, completeness, accuracy, and availability of the inventory of system components using organization-defined automated mechanisms.
 
 Organizations maintain system inventories to the extent feasible. For example, virtual machines can be difficult to monitor because such machines are not visible to the network when not in use. In such cases, organizations maintain as up-to-date, complete, and accurate an inventory as is deemed reasonable. Automated maintenance can be achieved by the implementation of [CM-2(2)](#cm-2.2) for organizations that combine system component inventory and baseline configuration activities.
 
- {{ insert: param, cm-08.02_odp.01 }} are used to maintain the currency of the system component inventory;
+automated mechanisms used to maintain the currency of the system component inventory are defined; are used to maintain the currency of the system component inventory;
 
- {{ insert: param, cm-08.02_odp.02 }} are used to maintain the completeness of the system component inventory;
+ automated mechanisms used to maintain the completeness of the system component inventory are defined; are used to maintain the completeness of the system component inventory;
 
- {{ insert: param, cm-08.02_odp.03 }} are used to maintain the accuracy of the system component inventory;
+ automated mechanisms used to maintain the accuracy of the system component inventory are defined; are used to maintain the accuracy of the system component inventory;
 
- {{ insert: param, cm-08.02_odp.04 }} are used to maintain the availability of the system component inventory.
+ automated mechanisms used to maintain the availability of the system component inventory are defined; are used to maintain the availability of the system component inventory.
 
 Configuration management policy
 
@@ -368,11 +368,11 @@ automated mechanisms supporting and/or implementing the system component invento
 
 ### CM-8 (4): Accountability Information
 
-Include in the system component inventory information, a means for identifying by {{ insert: param, cm-08.04_odp }} , individuals responsible and accountable for administering those components.
+Include in the system component inventory information, a means for identifying by name, position, and/or role , individuals responsible and accountable for administering those components.
 
 Identifying individuals who are responsible and accountable for administering system components ensures that the assigned components are properly administered and that organizations can contact those individuals if some action is required (e.g., when the component is determined to be the source of a breach, needs to be recalled or replaced, or needs to be relocated).
 
-individuals responsible and accountable for administering system components are identified by {{ insert: param, cm-08.04_odp }} in the system component inventory.
+individuals responsible and accountable for administering system components are identified by name, position, and/or role in the system component inventory.
 
 Configuration management policy
 

@@ -8,13 +8,13 @@
 
 Require the developer of the system, system component, or system service to:
 
-Deliver the system, component, or service with {{ insert: param, sa-04.05_odp }} implemented; and
+Deliver the system, component, or service with security configurations for the system, component, or service are defined; implemented; and
 
 Use the configurations as the default for any subsequent system, component, or service reinstallation or upgrade.
 
 Examples of security configurations include the U.S. Government Configuration Baseline (USGCB), Security Technical Implementation Guides (STIGs), and any limitations on functions, ports, protocols, and services. Security characteristics can include requiring that default passwords have been changed.
 
-the developer of the system, system component, or system service is required to deliver the system, component, or service with {{ insert: param, sa-04.05_odp }} implemented;
+the developer of the system, system component, or system service is required to deliver the system, component, or service with security configurations for the system, component, or service are defined; implemented;
 
 the configurations are used as the default for any subsequent system, component, or service reinstallation or upgrade.
 
@@ -48,11 +48,11 @@ Mechanisms used to verify that the configuration of the system, component, or se
 
 ### SA-16: Developer-provided Training
 
-Require the developer of the system, system component, or system service to provide the following training on the correct use and operation of the implemented security and privacy functions, controls, and/or mechanisms: {{ insert: param, sa-16_odp }}.
+Require the developer of the system, system component, or system service to provide the following training on the correct use and operation of the implemented security and privacy functions, controls, and/or mechanisms: training on the correct use and operation of the implemented security and privacy functions, controls, and/or mechanisms provided by the developer of the system, system component, or system service is defined;.
 
 Developer-provided training applies to external and internal (in-house) developers. Training personnel is essential to ensuring the effectiveness of the controls implemented within organizational systems. Types of training include web-based and computer-based training, classroom-style training, and hands-on training (including micro-training). Organizations can also request training materials from developers to conduct in-house training or offer self-training to organizational personnel. Organizations determine the type of training necessary and may require different types of training for different security and privacy functions, controls, and mechanisms.
 
-the developer of the system, system component, or system service is required to provide {{ insert: param, sa-16_odp }} on the correct use and operation of the implemented security and privacy functions, controls, and/or mechanisms.
+the developer of the system, system component, or system service is required to provide training on the correct use and operation of the implemented security and privacy functions, controls, and/or mechanisms provided by the developer of the system, system component, or system service is defined; on the correct use and operation of the implemented security and privacy functions, controls, and/or mechanisms.
 
 System and services acquisition policy
 
@@ -152,17 +152,17 @@ system developer
 
 ### SA-21: Developer Screening
 
-Require that the developer of {{ insert: param, sa-21_odp.01 }}:
+Require that the developer of the system, systems component, or system service that the developer has access to is/are defined;:
 
-Has appropriate access authorizations as determined by assigned {{ insert: param, sa-21_odp.02 }} ; and
+Has appropriate access authorizations as determined by assigned official government duties assigned to the developer are defined; ; and
 
-Satisfies the following additional personnel screening criteria: {{ insert: param, sa-21_odp.03 }}.
+Satisfies the following additional personnel screening criteria: additional personnel screening criteria for the developer are defined;.
 
 Developer screening is directed at external developers. Internal developer screening is addressed by [PS-3](#ps-3) . Because the system, system component, or system service may be used in critical activities essential to the national or economic security interests of the United States, organizations have a strong interest in ensuring that developers are trustworthy. The degree of trust required of developers may need to be consistent with that of the individuals who access the systems, system components, or system services once deployed. Authorization and personnel screening criteria include clearances, background checks, citizenship, and nationality. Developer trustworthiness may also include a review and analysis of company ownership and relationships that the company has with entities that may potentially affect the quality and reliability of the systems, components, or services being developed. Satisfying the required access authorizations and personnel screening criteria includes providing a list of all individuals who are authorized to perform development activities on the selected system, system component, or system service so that organizations can validate that the developer has satisfied the authorization and screening requirements.
 
-the developer of {{ insert: param, sa-21_odp.01 }} is required to have appropriate access authorizations as determined by assigned {{ insert: param, sa-21_odp.02 }};
+the developer of the system, systems component, or system service that the developer has access to is/are defined; is required to have appropriate access authorizations as determined by assigned official government duties assigned to the developer are defined;;
 
-the developer of {{ insert: param, sa-21_odp.01 }} is required to satisfy {{ insert: param, sa-21_odp.03 }}.
+the developer of the system, systems component, or system service that the developer has access to is/are defined; is required to satisfy additional personnel screening criteria for the developer are defined;.
 
 System and services acquisition policy
 

@@ -6,9 +6,9 @@
 
 ### IA-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, ia-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, ia-01_odp.03 }} identification and authentication policy that:
+organization-level, mission/business process-level, and/or system-level identification and authentication policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the identification and authentication policy and the associated identification and authentication controls;
 
-Designate an {{ insert: param, ia-01_odp.04 }} to manage the development, documentation, and dissemination of the identification and authentication policy and procedures; and
+Designate an an official to manage the identification and authentication policy and procedures is defined; to manage the development, documentation, and dissemination of the identification and authentication policy and procedures; and
 
 Review and update the current identification and authentication:
 
-Policy {{ insert: param, ia-01_odp.05 }} and following {{ insert: param, ia-01_odp.06 }} ; and
+Policy the frequency at which the current identification and authentication policy is reviewed and updated is defined; and following events that would require the current identification and authentication policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, ia-01_odp.07 }} and following {{ insert: param, ia-01_odp.08 }}.
+Procedures the frequency at which the current identification and authentication procedures are reviewed and updated is defined; and following events that would require identification and authentication procedures to be reviewed and updated are defined;.
 
 Identification and authentication policy and procedures address the controls in the IA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of identification and authentication policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to identification and authentication policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 an identification and authentication policy is developed and documented;
 
-the identification and authentication policy is disseminated to {{ insert: param, ia-01_odp.01 }};
+the identification and authentication policy is disseminated to personnel or roles to whom the identification and authentication policy is to be disseminated are defined;;
 
 identification and authentication procedures to facilitate the implementation of the identification and authentication policy and associated identification and authentication controls are developed and documented;
 
-the identification and authentication procedures are disseminated to {{ insert: param, ia-01_odp.02 }};
+the identification and authentication procedures are disseminated to personnel or roles to whom the identification and authentication procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses purpose;
+the organization-level, mission/business process-level, and/or system-level identification and authentication policy addresses purpose;
 
-the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses scope;
+the organization-level, mission/business process-level, and/or system-level identification and authentication policy addresses scope;
 
-the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses roles;
+the organization-level, mission/business process-level, and/or system-level identification and authentication policy addresses roles;
 
-the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses responsibilities;
+the organization-level, mission/business process-level, and/or system-level identification and authentication policy addresses responsibilities;
 
-the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses management commitment;
+the organization-level, mission/business process-level, and/or system-level identification and authentication policy addresses management commitment;
 
-the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses coordination among organizational entities;
+the organization-level, mission/business process-level, and/or system-level identification and authentication policy addresses coordination among organizational entities;
 
-the {{ insert: param, ia-01_odp.03 }} identification and authentication policy addresses compliance;
+the organization-level, mission/business process-level, and/or system-level identification and authentication policy addresses compliance;
 
-the {{ insert: param, ia-01_odp.03 }} identification and authentication policy is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines;
+the organization-level, mission/business process-level, and/or system-level identification and authentication policy is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, ia-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the identification and authentication policy and procedures;
+the an official to manage the identification and authentication policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the identification and authentication policy and procedures;
 
-the current identification and authentication policy is reviewed and updated {{ insert: param, ia-01_odp.05 }};
+the current identification and authentication policy is reviewed and updated the frequency at which the current identification and authentication policy is reviewed and updated is defined;;
 
-the current identification and authentication policy is reviewed and updated following {{ insert: param, ia-01_odp.06 }};
+the current identification and authentication policy is reviewed and updated following events that would require the current identification and authentication policy to be reviewed and updated are defined;;
 
-the current identification and authentication procedures are reviewed and updated {{ insert: param, ia-01_odp.07 }};
+the current identification and authentication procedures are reviewed and updated the frequency at which the current identification and authentication procedures are reviewed and updated is defined;;
 
-the current identification and authentication procedures are reviewed and updated following {{ insert: param, ia-01_odp.08 }}.
+the current identification and authentication procedures are reviewed and updated following events that would require identification and authentication procedures to be reviewed and updated are defined;.
 
 Identification and authentication policy and procedures
 
@@ -192,11 +192,11 @@ Mechanisms supporting and/or implementing a multi-factor authentication capabili
 
 ### IA-2 (8): Access to Accounts — Replay Resistant
 
-Implement replay-resistant authentication mechanisms for access to {{ insert: param, ia-02.08_odp }}.
+Implement replay-resistant authentication mechanisms for access to privileged accountsand/ornon-privileged accounts.
 
 Authentication processes resist replay attacks if it is impractical to achieve successful authentications by replaying previous authentication messages. Replay-resistant techniques include protocols that use nonces or challenges such as time synchronous or cryptographic authenticators.
 
-replay-resistant authentication mechanisms for access to {{ insert: param, ia-02.08_odp }} are implemented.
+replay-resistant authentication mechanisms for access to privileged accountsand/ornon-privileged accounts are implemented.
 
 Identification and authentication policy
 
@@ -270,11 +270,11 @@ Mechanisms supporting and/or implementing acceptance and verification of PIV cre
 
 ### IA-3: Device Identification and Authentication
 
-Uniquely identify and authenticate {{ insert: param, ia-03_odp.01 }} before establishing a {{ insert: param, ia-03_odp.02 }} connection.
+Uniquely identify and authenticate devices and/or types of devices to be uniquely identified and authenticated before establishing a connection are defined; before establishing a local, remote, and/or network connection.
 
 Devices that require unique device-to-device identification and authentication are defined by type, device, or a combination of type and device. Organization-defined device types include devices that are not owned by the organization. Systems use shared known information (e.g., Media Access Control [MAC], Transmission Control Protocol/Internet Protocol [TCP/IP] addresses) for device identification or organizational authentication solutions (e.g., Institute of Electrical and Electronics Engineers (IEEE) 802.1x and Extensible Authentication Protocol [EAP], RADIUS server with EAP-Transport Layer Security [TLS] authentication, Kerberos) to identify and authenticate devices on local and wide area networks. Organizations determine the required strength of authentication mechanisms based on the security categories of systems and mission or business requirements. Because of the challenges of implementing device authentication on a large scale, organizations can restrict the application of the control to a limited number/type of devices based on mission or business needs.
 
- {{ insert: param, ia-03_odp.01 }} are uniquely identified and authenticated before establishing a {{ insert: param, ia-03_odp.02 }} connection.
+ devices and/or types of devices to be uniquely identified and authenticated before establishing a connection are defined; are uniquely identified and authenticated before establishing a local, remote, and/or network connection.
 
 Identification and authentication policy
 
@@ -306,23 +306,23 @@ Mechanisms supporting and/or implementing device identification and authenticati
 
 Manage system identifiers by:
 
-Receiving authorization from {{ insert: param, ia-04_odp.01 }} to assign an individual, group, role, service, or device identifier;
+Receiving authorization from personnel or roles from whom authorization must be received to assign an identifier are defined; to assign an individual, group, role, service, or device identifier;
 
 Selecting an identifier that identifies an individual, group, role, service, or device;
 
 Assigning the identifier to the intended individual, group, role, service, or device; and
 
-Preventing reuse of identifiers for {{ insert: param, ia-04_odp.02 }}.
+Preventing reuse of identifiers for a time period for preventing reuse of identifiers is defined;.
 
 Common device identifiers include Media Access Control (MAC) addresses, Internet Protocol (IP) addresses, or device-unique token identifiers. The management of individual identifiers is not applicable to shared system accounts. Typically, individual identifiers are the usernames of the system accounts assigned to those individuals. In such instances, the account management activities of [AC-2](#ac-2) use account names provided by [IA-4](#ia-4) . Identifier management also addresses individual identifiers not necessarily associated with system accounts. Preventing the reuse of identifiers implies preventing the assignment of previously used individual, group, role, service, or device identifiers to different individuals, groups, roles, services, or devices.
 
-system identifiers are managed by receiving authorization from {{ insert: param, ia-04_odp.01 }} to assign to an individual, group, role, or device identifier;
+system identifiers are managed by receiving authorization from personnel or roles from whom authorization must be received to assign an identifier are defined; to assign to an individual, group, role, or device identifier;
 
 system identifiers are managed by selecting an identifier that identifies an individual, group, role, service, or device;
 
 system identifiers are managed by assigning the identifier to the intended individual, group, role, service, or device;
 
-system identifiers are managed by preventing reuse of identifiers for {{ insert: param, ia-04_odp.02 }}.
+system identifiers are managed by preventing reuse of identifiers for a time period for preventing reuse of identifiers is defined;.
 
 Identification and authentication policy
 
@@ -354,11 +354,11 @@ Mechanisms supporting and/or implementing identifier management
 
 ### IA-4 (4): Identify User Status
 
-Manage individual identifiers by uniquely identifying each individual as {{ insert: param, ia-04.04_odp }}.
+Manage individual identifiers by uniquely identifying each individual as characteristics used to identify individual status is defined;.
 
 Characteristics that identify the status of individuals include contractors, foreign nationals, and non-organizational users. Identifying the status of individuals by these characteristics provides additional information about the people with whom organizational personnel are communicating. For example, it might be useful for a government employee to know that one of the individuals on an email message is a contractor.
 
-individual identifiers are managed by uniquely identifying each individual as {{ insert: param, ia-04.04_odp }}.
+individual identifiers are managed by uniquely identifying each individual as characteristics used to identify individual status is defined;.
 
 Identification and authentication policy
 
@@ -394,7 +394,7 @@ Establishing and implementing administrative procedures for initial authenticato
 
 Changing default authenticators prior to first use;
 
-Changing or refreshing authenticators {{ insert: param, ia-05_odp.01 }} or when {{ insert: param, ia-05_odp.02 }} occur;
+Changing or refreshing authenticators a time period for changing or refreshing authenticators by authenticator type is defined; or when events that trigger the change or refreshment of authenticators are defined; occur;
 
 Protecting authenticator content from unauthorized disclosure and modification;
 
@@ -416,7 +416,7 @@ system authenticators are managed through the establishment and implementation o
 
 system authenticators are managed through the change of default authenticators prior to first use;
 
-system authenticators are managed through the change or refreshment of authenticators {{ insert: param, ia-05_odp.01 }} or when {{ insert: param, ia-05_odp.02 }} occur;
+system authenticators are managed through the change or refreshment of authenticators a time period for changing or refreshing authenticators by authenticator type is defined; or when events that trigger the change or refreshment of authenticators are defined; occur;
 
 system authenticators are managed through the protection of authenticator content from unauthorized disclosure and modification;
 
@@ -456,7 +456,7 @@ Mechanisms supporting and/or implementing authenticator management capability
 
 For password-based authentication:
 
-Maintain a list of commonly-used, expected, or compromised passwords and update the list {{ insert: param, ia-05.01_odp.01 }} and when organizational passwords are suspected to have been compromised directly or indirectly;
+Maintain a list of commonly-used, expected, or compromised passwords and update the list the frequency at which to update the list of commonly used, expected, or compromised passwords is defined; and when organizational passwords are suspected to have been compromised directly or indirectly;
 
 Verify, when users create or update passwords, that the passwords are not found on the list of commonly-used, expected, or compromised passwords in IA-5(1)(a);
 
@@ -470,11 +470,11 @@ Allow user selection of long passwords and passphrases, including spaces and all
 
 Employ automated tools to assist the user in selecting strong password authenticators; and
 
-Enforce the following composition and complexity rules: {{ insert: param, ia-05.01_odp.02 }}.
+Enforce the following composition and complexity rules: authenticator composition and complexity rules are defined;.
 
 Password-based authentication applies to passwords regardless of whether they are used in single-factor or multi-factor authentication. Long passwords or passphrases are preferable over shorter passwords. Enforced composition rules provide marginal security benefits while decreasing usability. However, organizations may choose to establish certain rules for password generation (e.g., minimum character length for long passwords) under certain circumstances and can enforce this requirement in IA-5(1)(h). Account recovery can occur, for example, in situations when a password is forgotten. Cryptographically protected passwords include salted one-way cryptographic hashes of passwords. The list of commonly used, compromised, or expected passwords includes passwords obtained from previous breach corpuses, dictionary words, and repetitive or sequential characters. The list includes context-specific words, such as the name of the service, username, and derivatives thereof.
 
-for password-based authentication, a list of commonly used, expected, or compromised passwords is maintained and updated {{ insert: param, ia-05.01_odp.01 }} and when organizational passwords are suspected to have been compromised directly or indirectly;
+for password-based authentication, a list of commonly used, expected, or compromised passwords is maintained and updated the frequency at which to update the list of commonly used, expected, or compromised passwords is defined; and when organizational passwords are suspected to have been compromised directly or indirectly;
 
 for password-based authentication when passwords are created or updated by users, the passwords are verified not to be found on the list of commonly used, expected, or compromised passwords in IA-05(01)(a);
 
@@ -488,7 +488,7 @@ for password-based authentication, user selection of long passwords and passphra
 
 for password-based authentication, automated tools are employed to assist the user in selecting strong password authenticators;
 
-for password-based authentication, {{ insert: param, ia-05.01_odp.02 }} are enforced.
+for password-based authentication, authenticator composition and complexity rules are defined; are enforced.
 
 Identification and authentication policy
 
@@ -794,11 +794,11 @@ mechanisms that accept external credentials
 
 ### IA-8 (4): Use of Defined Profiles
 
-Conform to the following profiles for identity management {{ insert: param, ia-08.04_odp }}.
+Conform to the following profiles for identity management identity management profiles are defined;.
 
 Organizations define profiles for identity management based on open identity management standards. To ensure that open identity management standards are viable, robust, reliable, sustainable, and interoperable as documented, the Federal Government assesses and scopes the standards and technology implementations against applicable laws, executive orders, directives, policies, regulations, standards, and guidelines.
 
-there is conformance with {{ insert: param, ia-08.04_odp }} for identity management.
+there is conformance with identity management profiles are defined; for identity management.
 
 Identification and authentication policy
 
@@ -828,11 +828,11 @@ mechanisms supporting and/or implementing conformance with profiles
 
 ### IA-11: Re-authentication
 
-Require users to re-authenticate when {{ insert: param, ia-11_odp }}.
+Require users to re-authenticate when circumstances or situations requiring re-authentication are defined;.
 
 In addition to the re-authentication requirements associated with device locks, organizations may require re-authentication of individuals in certain situations, including when roles, authenticators or credentials change, when security categories of systems change, when the execution of privileged functions occurs, after a fixed time period, or periodically.
 
-users are required to re-authenticate when {{ insert: param, ia-11_odp }}.
+users are required to re-authenticate when circumstances or situations requiring re-authentication are defined;.
 
 Identification and authentication policy
 
@@ -936,11 +936,11 @@ Mechanisms supporting and/or implementing identification and authentication capa
 
 ### IA-12 (3): Identity Evidence Validation and Verification
 
-Require that the presented identity evidence be validated and verified through {{ insert: param, ia-12.03_odp }}.
+Require that the presented identity evidence be validated and verified through methods of validation and verification of identity evidence are defined;.
 
 Validation and verification of identity evidence increases the assurance that accounts and identifiers are being established for the correct user and authenticators are being bound to that user. Validation refers to the process of confirming that the evidence is genuine and authentic, and the data contained in the evidence is correct, current, and related to an individual. Verification confirms and establishes a linkage between the claimed identity and the actual existence of the user presenting the evidence. Acceptable methods for validating and verifying identity evidence are consistent with the risks to the systems, roles, and privileges associated with the users account.
 
-the presented identity evidence is validated and verified through {{ insert: param, ia-12.03_odp }}.
+the presented identity evidence is validated and verified through methods of validation and verification of identity evidence are defined;.
 
 Identification and authentication policy
 
@@ -964,11 +964,11 @@ Mechanisms supporting and/or implementing identification and authentication capa
 
 ### IA-12 (5): Address Confirmation
 
-Require that a {{ insert: param, ia-12.05_odp }} be delivered through an out-of-band channel to verify the users address (physical or digital) of record.
+Require that a registration codeornotice of proofing be delivered through an out-of-band channel to verify the users address (physical or digital) of record.
 
 To make it more difficult for adversaries to pose as legitimate users during the identity proofing process, organizations can use out-of-band methods to ensure that the individual associated with an address of record is the same individual that participated in the registration. Confirmation can take the form of a temporary enrollment code or a notice of proofing. The delivery address for these artifacts is obtained from records and not self-asserted by the user. The address can include a physical or digital address. A home address is an example of a physical address. Email addresses and telephone numbers are examples of digital addresses.
 
-a {{ insert: param, ia-12.05_odp }} is delivered through an out-of-band channel to verify the user’s address (physical or digital) of record.
+a registration codeornotice of proofing is delivered through an out-of-band channel to verify the user’s address (physical or digital) of record.
 
 Identification and authentication policy
 

@@ -6,9 +6,9 @@
 
 ### CA-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, ca-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy that:
+organization-level, mission/business process-level, and/or system-level assessment, authorization, and monitoring policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the assessment, authorization, and monitoring policy and the associated assessment, authorization, and monitoring controls;
 
-Designate an {{ insert: param, ca-01_odp.04 }} to manage the development, documentation, and dissemination of the assessment, authorization, and monitoring policy and procedures; and
+Designate an an official to manage the assessment, authorization, and monitoring policy and procedures is defined; to manage the development, documentation, and dissemination of the assessment, authorization, and monitoring policy and procedures; and
 
 Review and update the current assessment, authorization, and monitoring:
 
-Policy {{ insert: param, ca-01_odp.05 }} and following {{ insert: param, ca-01_odp.06 }} ; and
+Policy the frequency at which the current assessment, authorization, and monitoring policy is reviewed and updated is defined; and following events that would require the current assessment, authorization, and monitoring policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, ca-01_odp.07 }} and following {{ insert: param, ca-01_odp.08 }}.
+Procedures the frequency at which the current assessment, authorization, and monitoring procedures are reviewed and updated is defined; and following events that would require assessment, authorization, and monitoring procedures to be reviewed and updated are defined;.
 
 Assessment, authorization, and monitoring policy and procedures address the controls in the CA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of assessment, authorization, and monitoring policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to assessment, authorization, and monitoring policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 an assessment, authorization, and monitoring policy is developed and documented;
 
-the assessment, authorization, and monitoring policy is disseminated to {{ insert: param, ca-01_odp.01 }};
+the assessment, authorization, and monitoring policy is disseminated to personnel or roles to whom the assessment, authorization, and monitoring policy is to be disseminated is/are defined;;
 
 assessment, authorization, and monitoring procedures to facilitate the implementation of the assessment, authorization, and monitoring policy and associated assessment, authorization, and monitoring controls are developed and documented;
 
-the assessment, authorization, and monitoring procedures are disseminated to {{ insert: param, ca-01_odp.02 }};
+the assessment, authorization, and monitoring procedures are disseminated to personnel or roles to whom the assessment, authorization, and monitoring procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses purpose;
+the organization-level, mission/business process-level, and/or system-level assessment, authorization, and monitoring policy addresses purpose;
 
-the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses scope;
+the organization-level, mission/business process-level, and/or system-level assessment, authorization, and monitoring policy addresses scope;
 
-the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses roles;
+the organization-level, mission/business process-level, and/or system-level assessment, authorization, and monitoring policy addresses roles;
 
-the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses responsibilities;
+the organization-level, mission/business process-level, and/or system-level assessment, authorization, and monitoring policy addresses responsibilities;
 
-the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses management commitment;
+the organization-level, mission/business process-level, and/or system-level assessment, authorization, and monitoring policy addresses management commitment;
 
-the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses coordination among organizational entities;
+the organization-level, mission/business process-level, and/or system-level assessment, authorization, and monitoring policy addresses coordination among organizational entities;
 
-the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy addresses compliance;
+the organization-level, mission/business process-level, and/or system-level assessment, authorization, and monitoring policy addresses compliance;
 
-the {{ insert: param, ca-01_odp.03 }} assessment, authorization, and monitoring policy is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines;
+the organization-level, mission/business process-level, and/or system-level assessment, authorization, and monitoring policy is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, ca-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the assessment, authorization, and monitoring policy and procedures;
+the an official to manage the assessment, authorization, and monitoring policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the assessment, authorization, and monitoring policy and procedures;
 
-the current assessment, authorization, and monitoring policy is reviewed and updated {{ insert: param, ca-01_odp.05 }}; 
+the current assessment, authorization, and monitoring policy is reviewed and updated the frequency at which the current assessment, authorization, and monitoring policy is reviewed and updated is defined;; 
 
-the current assessment, authorization, and monitoring policy is reviewed and updated following {{ insert: param, ca-01_odp.06 }};
+the current assessment, authorization, and monitoring policy is reviewed and updated following events that would require the current assessment, authorization, and monitoring policy to be reviewed and updated are defined;;
 
-the current assessment, authorization, and monitoring procedures are reviewed and updated {{ insert: param, ca-01_odp.07 }}; 
+the current assessment, authorization, and monitoring procedures are reviewed and updated the frequency at which the current assessment, authorization, and monitoring procedures are reviewed and updated is defined;; 
 
-the current assessment, authorization, and monitoring procedures are reviewed and updated following {{ insert: param, ca-01_odp.08 }}.
+the current assessment, authorization, and monitoring procedures are reviewed and updated following events that would require assessment, authorization, and monitoring procedures to be reviewed and updated are defined;.
 
 Assessment, authorization, and monitoring policy and procedures
 
@@ -86,11 +86,11 @@ Assessment environment, assessment team, and assessment roles and responsibiliti
 
 Ensure the control assessment plan is reviewed and approved by the authorizing official or designated representative prior to conducting the assessment;
 
-Assess the controls in the system and its environment of operation {{ insert: param, ca-02_odp.01 }} to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security and privacy requirements;
+Assess the controls in the system and its environment of operation the frequency at which to assess controls in the system and its environment of operation is defined; to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security and privacy requirements;
 
 Produce a control assessment report that document the results of the assessment; and
 
-Provide the results of the control assessment to {{ insert: param, ca-02_odp.02 }}.
+Provide the results of the control assessment to individuals or roles to whom control assessment results are to be provided are defined;.
 
 Organizations ensure that control assessors possess the required skills and technical expertise to develop effective assessment plans and to conduct assessments of system-specific, hybrid, common, and program management controls, as appropriate. The required skills include general knowledge of risk management concepts and approaches as well as comprehensive knowledge of and experience with the hardware, software, and firmware system components implemented.
 
@@ -116,13 +116,13 @@ a control assessment plan is developed that describes the scope of the assessmen
 
 the control assessment plan is reviewed and approved by the authorizing official or designated representative prior to conducting the assessment;
 
-controls are assessed in the system and its environment of operation {{ insert: param, ca-02_odp.01 }} to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements;
+controls are assessed in the system and its environment of operation the frequency at which to assess controls in the system and its environment of operation is defined; to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements;
 
-controls are assessed in the system and its environment of operation {{ insert: param, ca-02_odp.01 }} to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established privacy requirements;
+controls are assessed in the system and its environment of operation the frequency at which to assess controls in the system and its environment of operation is defined; to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established privacy requirements;
 
 a control assessment report is produced that documents the results of the assessment;
 
-the results of the control assessment are provided to {{ insert: param, ca-02_odp.02 }}.
+the results of the control assessment are provided to individuals or roles to whom control assessment results are to be provided are defined;.
 
 Assessment, authorization, and monitoring policy
 
@@ -148,17 +148,17 @@ Mechanisms supporting control assessment, control assessment plan development, a
 
 ### CA-3: Information Exchange
 
-Approve and manage the exchange of information between the system and other systems using {{ insert: param, ca-03_odp.01 }};
+Approve and manage the exchange of information between the system and other systems using interconnection security agreements, information exchange security agreements, memoranda of understanding or agreement, service level agreements, user agreements, non-disclosure agreements, and/or  the type of agreement used to approve and manage the exchange of information is defined (if selected);;
 
 Document, as part of each exchange agreement, the interface characteristics, security and privacy requirements, controls, and responsibilities for each system, and the impact level of the information communicated; and
 
-Review and update the agreements {{ insert: param, ca-03_odp.03 }}.
+Review and update the agreements the frequency at which to review and update agreements is defined;.
 
 System information exchange requirements apply to information exchanges between two or more systems. System information exchanges include connections via leased lines or virtual private networks, connections to internet service providers, database sharing or exchanges of database transaction information, connections and exchanges with cloud services, exchanges via web-based services, or exchanges of files via file transfer protocols, network protocols (e.g., IPv4, IPv6), email, or other organization-to-organization communications. Organizations consider the risk related to new or increased threats that may be introduced when systems exchange information with other systems that may have different security and privacy requirements and controls. This includes systems within the same organization and systems that are external to the organization. A joint authorization of the systems exchanging information, as described in [CA-6(1)](#ca-6.1) or [CA-6(2)](#ca-6.2) , may help to communicate and reduce risk.
 
 Authorizing officials determine the risk associated with system information exchange and the controls needed for appropriate risk mitigation. The types of agreements selected are based on factors such as the impact level of the information being exchanged, the relationship between the organizations exchanging information (e.g., government to government, government to business, business to business, government or business to service provider, government or business to individual), or the level of access to the organizational system by users of the other system. If systems that exchange information have the same authorizing official, organizations need not develop agreements. Instead, the interface characteristics between the systems (e.g., how the information is being exchanged. how the information is protected) are described in the respective security and privacy plans. If the systems that exchange information have different authorizing officials within the same organization, the organizations can develop agreements or provide the same information that would be provided in the appropriate agreement type from [CA-3a](#ca-3_smt.a) in the respective security and privacy plans for the systems. Organizations may incorporate agreement information into formal contracts, especially for information exchanges established between federal agencies and nonfederal organizations (including service providers, contractors, system developers, and system integrators). Risk considerations include systems that share the same networks.
 
-the exchange of information between the system and other systems is approved and managed using {{ insert: param, ca-03_odp.01 }};
+the exchange of information between the system and other systems is approved and managed using interconnection security agreements, information exchange security agreements, memoranda of understanding or agreement, service level agreements, user agreements, non-disclosure agreements, and/or  the type of agreement used to approve and manage the exchange of information is defined (if selected);;
 
 the interface characteristics are documented as part of each exchange agreement;
 
@@ -172,7 +172,7 @@ responsibilities for each system are documented as part of each exchange agreeme
 
 the impact level of the information communicated is documented as part of each exchange agreement;
 
-agreements are reviewed and updated {{ insert: param, ca-03_odp.03 }}.
+agreements are reviewed and updated the frequency at which to review and update agreements is defined;.
 
 Access control policy
 
@@ -214,13 +214,13 @@ personnel managing the system(s) to which the interconnection security agreement
 
 Develop a plan of action and milestones for the system to document the planned remediation actions of the organization to correct weaknesses or deficiencies noted during the assessment of the controls and to reduce or eliminate known vulnerabilities in the system; and
 
-Update existing plan of action and milestones {{ insert: param, ca-05_odp }} based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities.
+Update existing plan of action and milestones the frequency at which to update an existing plan of action and milestones based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities is defined; based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities.
 
 Plans of action and milestones are useful for any type of organization to track planned remedial actions. Plans of action and milestones are required in authorization packages and subject to federal reporting requirements established by OMB.
 
 a plan of action and milestones for the system is developed to document the planned remediation actions of the organization to correct weaknesses or deficiencies noted during the assessment of the controls and to reduce or eliminate known vulnerabilities in the system;
 
-existing plan of action and milestones are updated {{ insert: param, ca-05_odp }} based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities.
+existing plan of action and milestones are updated the frequency at which to update an existing plan of action and milestones based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities is defined; based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities.
 
 Assessment, authorization, and monitoring policy
 
@@ -260,7 +260,7 @@ Authorizes the system to operate;
 
 Ensure that the authorizing official for common controls authorizes the use of those controls for inheritance by organizational systems;
 
-Update the authorizations {{ insert: param, ca-06_odp }}.
+Update the authorizations frequency at which to update the authorizations is defined;.
 
 Authorizations are official management decisions by senior officials to authorize operation of systems, authorize the use of common controls for inheritance by organizational systems, and explicitly accept the risk to organizational operations and assets, individuals, other organizations, and the Nation based on the implementation of agreed-upon controls. Authorizing officials provide budgetary oversight for organizational systems and common controls or assume responsibility for the mission and business functions supported by those systems or common controls. The authorization process is a federal responsibility, and therefore, authorizing officials must be federal employees. Authorizing officials are both responsible and accountable for security and privacy risks associated with the operation and use of organizational systems. Nonfederal organizations may have similar processes to authorize systems and senior officials that assume the authorization role and associated responsibilities.
 
@@ -276,7 +276,7 @@ before commencing operations, the authorizing official for the system authorizes
 
 the authorizing official for common controls authorizes the use of those controls for inheritance by organizational systems;
 
-the authorizations are updated {{ insert: param, ca-06_odp }}.
+the authorizations are updated frequency at which to update the authorizations is defined;.
 
 Assessment, authorization, and monitoring policy
 
@@ -298,9 +298,9 @@ Mechanisms that facilitate authorizations and updates
 
 Develop a system-level continuous monitoring strategy and implement continuous monitoring in accordance with the organization-level continuous monitoring strategy that includes:
 
-Establishing the following system-level metrics to be monitored: {{ insert: param, ca-07_odp.01 }};
+Establishing the following system-level metrics to be monitored: system-level metrics to be monitored are defined;;
 
-Establishing {{ insert: param, ca-07_odp.02 }} for monitoring and {{ insert: param, ca-07_odp.03 }} for assessment of control effectiveness;
+Establishing frequencies at which to monitor control effectiveness are defined; for monitoring and frequencies at which to assess control effectiveness are defined; for assessment of control effectiveness;
 
 Ongoing control assessments in accordance with the continuous monitoring strategy;
 
@@ -310,7 +310,7 @@ Correlation and analysis of information generated by control assessments and mon
 
 Response actions to address results of the analysis of control assessment and monitoring information; and
 
-Reporting the security and privacy status of the system to {{ insert: param, ca-7_prm_4 }} {{ insert: param, ca-7_prm_5 }}.
+Reporting the security and privacy status of the system to organization-defined personnel or roles organization-defined frequency.
 
 Continuous monitoring at the system level facilitates ongoing awareness of the system security and privacy posture to support organizational risk management decisions. The terms "continuous" and "ongoing" imply that organizations assess and monitor their controls and risks at a frequency sufficient to support risk-based decisions. Different types of controls may require different monitoring frequencies. The results of continuous monitoring generate risk response actions by organizations. When monitoring the effectiveness of multiple controls that have been grouped into capabilities, a root-cause analysis may be needed to determine the specific control that has failed. Continuous monitoring programs allow organizations to maintain the authorizations of systems and common controls in highly dynamic environments of operation with changing mission and business needs, threats, vulnerabilities, and technologies. Having access to security and privacy information on a continuing basis through reports and dashboards gives organizational officials the ability to make effective and timely risk management decisions, including ongoing authorization decisions.
 
@@ -320,11 +320,11 @@ a system-level continuous monitoring strategy is developed;
 
 system-level continuous monitoring is implemented in accordance with the organization-level continuous monitoring strategy;
 
-system-level continuous monitoring includes establishment of the following system-level metrics to be monitored: {{ insert: param, ca-07_odp.01 }};
+system-level continuous monitoring includes establishment of the following system-level metrics to be monitored: system-level metrics to be monitored are defined;;
 
-system-level continuous monitoring includes established {{ insert: param, ca-07_odp.02 }} for monitoring;
+system-level continuous monitoring includes established frequencies at which to monitor control effectiveness are defined; for monitoring;
 
-system-level continuous monitoring includes established {{ insert: param, ca-07_odp.03 }} for assessment of control effectiveness;
+system-level continuous monitoring includes established frequencies at which to assess control effectiveness are defined; for assessment of control effectiveness;
 
 system-level continuous monitoring includes ongoing control assessments in accordance with the continuous monitoring strategy;
 
@@ -334,9 +334,9 @@ system-level continuous monitoring includes correlation and analysis of informat
 
 system-level continuous monitoring includes response actions to address the results of the analysis of control assessment and monitoring information;
 
-system-level continuous monitoring includes reporting the security status of the system to {{ insert: param, ca-07_odp.04 }} {{ insert: param, ca-07_odp.05 }};
+system-level continuous monitoring includes reporting the security status of the system to personnel or roles to whom the security status of the system is reported are defined; frequency at which the security status of the system is reported is defined;;
 
-system-level continuous monitoring includes reporting the privacy status of the system to {{ insert: param, ca-07_odp.06 }} {{ insert: param, ca-07_odp.07 }}.
+system-level continuous monitoring includes reporting the privacy status of the system to personnel or roles to whom the privacy status of the system is reported are defined; frequency at which the privacy status of the system is reported is defined;.
 
 Assessment, authorization, and monitoring policy
 
@@ -430,17 +430,17 @@ Mechanisms supporting risk monitoring
 
 ### CA-9: Internal System Connections
 
-Authorize internal connections of {{ insert: param, ca-09_odp.01 }} to the system;
+Authorize internal connections of system components or classes of components requiring internal connections to the system are defined; to the system;
 
 Document, for each internal connection, the interface characteristics, security and privacy requirements, and the nature of the information communicated;
 
-Terminate internal system connections after {{ insert: param, ca-09_odp.02 }} ; and
+Terminate internal system connections after conditions requiring termination of internal connections are defined; ; and
 
-Review {{ insert: param, ca-09_odp.03 }} the continued need for each internal connection.
+Review frequency at which to review the continued need for each internal connection is defined; the continued need for each internal connection.
 
 Internal system connections are connections between organizational systems and separate constituent system components (i.e., connections between components that are part of the same system) including components used for system development. Intra-system connections include connections with mobile devices, notebook and desktop computers, tablets, printers, copiers, facsimile machines, scanners, sensors, and servers. Instead of authorizing each internal system connection individually, organizations can authorize internal connections for a class of system components with common characteristics and/or configurations, including printers, scanners, and copiers with a specified processing, transmission, and storage capability or smart phones and tablets with a specific baseline configuration. The continued need for an internal system connection is reviewed from the perspective of whether it provides support for organizational missions or business functions.
 
-internal connections of {{ insert: param, ca-09_odp.01 }} to the system are authorized;
+internal connections of system components or classes of components requiring internal connections to the system are defined; to the system are authorized;
 
 for each internal connection, the interface characteristics are documented;
 
@@ -450,9 +450,9 @@ for each internal connection, the privacy requirements are documented;
 
 for each internal connection, the nature of the information communicated is documented;
 
-internal system connections are terminated after {{ insert: param, ca-09_odp.02 }};
+internal system connections are terminated after conditions requiring termination of internal connections are defined;;
 
-the continued need for each internal connection is reviewed {{ insert: param, ca-09_odp.03 }}.
+the continued need for each internal connection is reviewed frequency at which to review the continued need for each internal connection is defined;.
 
 Assessment, authorization, and monitoring policy
 

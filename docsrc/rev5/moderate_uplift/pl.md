@@ -16,7 +16,7 @@ Describe how the architectures are integrated into and support the enterprise ar
 
 Describe any assumptions about, and dependencies on, external systems and services;
 
-Review and update the architectures {{ insert: param, pl-08_odp }} to reflect changes in the enterprise architecture; and
+Review and update the architectures frequency for review and update to reflect changes in the enterprise architecture; to reflect changes in the enterprise architecture; and
 
 Reflect planned architecture changes in security and privacy plans, Concept of Operations (CONOPS), criticality analysis, organizational procedures, and procurements and acquisitions.
 
@@ -40,7 +40,7 @@ a security architecture for the system describes any assumptions about and depen
 
 a privacy architecture for the system describes any assumptions about and dependencies on external systems and services;
 
-changes in the enterprise architecture are reviewed and updated {{ insert: param, pl-08_odp }} to reflect changes in the enterprise architecture;
+changes in the enterprise architecture are reviewed and updated frequency for review and update to reflect changes in the enterprise architecture; to reflect changes in the enterprise architecture;
 
 planned architecture changes are reflected in the security plan;
 

@@ -6,9 +6,9 @@
 
 ### SC-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, sc-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, sc-01_odp.03 }} system and communications protection policy that:
+organization-level, mission/business-process-level, and/or system-level system and communications protection policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the system and communications protection policy and the associated system and communications protection controls;
 
-Designate an {{ insert: param, sc-01_odp.04 }} to manage the development, documentation, and dissemination of the system and communications protection policy and procedures; and
+Designate an an official to manage the system and communications protection policy and procedures is defined; to manage the development, documentation, and dissemination of the system and communications protection policy and procedures; and
 
 Review and update the current system and communications protection:
 
-Policy {{ insert: param, sc-01_odp.05 }} and following {{ insert: param, sc-01_odp.06 }} ; and
+Policy the frequency at which the current system and communications protection policy is reviewed and updated is defined; and following events that would require the current system and communications protection policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, sc-01_odp.07 }} and following {{ insert: param, sc-01_odp.08 }}.
+Procedures the frequency at which the current system and communications protection procedures are reviewed and updated is defined; and following events that would require the system and communications protection procedures to be reviewed and updated are defined;.
 
 System and communications protection policy and procedures address the controls in the SC family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of system and communications protection policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to system and communications protection policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 a system and communications protection policy is developed and documented;
 
-the system and communications protection policy is disseminated to {{ insert: param, sc-01_odp.01 }};
+the system and communications protection policy is disseminated to personnel or roles to whom the system and communications protection policy is to be disseminated is/are defined;;
 
 system and communications protection procedures to facilitate the implementation of the system and communications protection policy and associated system and communications protection controls are developed and documented;
 
-the system and communications protection procedures are disseminated to {{ insert: param, sc-01_odp.02 }};
+the system and communications protection procedures are disseminated to personnel or roles to whom the system and communications protection procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses purpose;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses purpose;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses scope;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses scope;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses roles;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses roles;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses responsibilities;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses responsibilities;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses management commitment;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses management commitment;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses coordination among organizational entities;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses coordination among organizational entities;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy addresses compliance;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy addresses compliance;
 
-the {{ insert: param, sc-01_odp.03 }} system and communications protection policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
+the organization-level, mission/business-process-level, and/or system-level system and communications protection policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, sc-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the system and communications protection policy and procedures;
+the an official to manage the system and communications protection policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the system and communications protection policy and procedures;
 
-the current system and communications protection policy is reviewed and updated {{ insert: param, sc-01_odp.05 }};
+the current system and communications protection policy is reviewed and updated the frequency at which the current system and communications protection policy is reviewed and updated is defined;;
 
-the current system and communications protection policy is reviewed and updated following {{ insert: param, sc-01_odp.06 }};
+the current system and communications protection policy is reviewed and updated following events that would require the current system and communications protection policy to be reviewed and updated are defined;;
 
-the current system and communications protection procedures are reviewed and updated {{ insert: param, sc-01_odp.07 }};
+the current system and communications protection procedures are reviewed and updated the frequency at which the current system and communications protection procedures are reviewed and updated is defined;;
 
-the current system and communications protection procedures are reviewed and updated following {{ insert: param, sc-01_odp.08 }}.
+the current system and communications protection procedures are reviewed and updated following events that would require the system and communications protection procedures to be reviewed and updated are defined;.
 
 System and communications protection policy
 
@@ -80,15 +80,15 @@ organizational personnel with information security and privacy responsibilities
 
 ### SC-5: Denial-of-service Protection
 
- {{ insert: param, sc-05_odp.02 }} the effects of the following types of denial-of-service events: {{ insert: param, sc-05_odp.01 }} ; and
+protect againstorlimit the effects of the following types of denial-of-service events: types of denial-of-service events to be protected against or limited are defined; ; and
 
-Employ the following controls to achieve the denial-of-service objective: {{ insert: param, sc-05_odp.03 }}.
+Employ the following controls to achieve the denial-of-service objective: controls to achieve the denial-of-service objective by type of denial-of-service event are defined;.
 
 Denial-of-service events may occur due to a variety of internal and external causes, such as an attack by an adversary or a lack of planning to support organizational needs with respect to capacity and bandwidth. Such attacks can occur across a wide range of network protocols (e.g., IPv4, IPv6). A variety of technologies are available to limit or eliminate the origination and effects of denial-of-service events. For example, boundary protection devices can filter certain types of packets to protect system components on internal networks from being directly affected by or the source of denial-of-service attacks. Employing increased network capacity and bandwidth combined with service redundancy also reduces the susceptibility to denial-of-service events.
 
-the effects of {{ insert: param, sc-05_odp.01 }} are {{ insert: param, sc-05_odp.02 }};
+the effects of types of denial-of-service events to be protected against or limited are defined; are protect againstorlimit;
 
- {{ insert: param, sc-05_odp.03 }} are employed to achieve the denial-of-service protection objective.
+ controls to achieve the denial-of-service objective by type of denial-of-service event are defined; are employed to achieve the denial-of-service protection objective.
 
 System and communications protection policy
 
@@ -122,7 +122,7 @@ Mechanisms protecting against or limiting the effects of denial-of-service attac
 
 Monitor and control communications at the external managed interfaces to the system and at key internal managed interfaces within the system;
 
-Implement subnetworks for publicly accessible system components that are {{ insert: param, sc-07_odp }} separated from internal organizational networks; and
+Implement subnetworks for publicly accessible system components that are physicallyorlogically separated from internal organizational networks; and
 
 Connect to external networks or systems only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security and privacy architecture.
 
@@ -136,7 +136,7 @@ communications at key internal managed interfaces within the system are monitore
 
 communications at key internal managed interfaces within the system are controlled;
 
-subnetworks for publicly accessible system components are {{ insert: param, sc-07_odp }} separated from internal organizational networks;
+subnetworks for publicly accessible system components are physicallyorlogically separated from internal organizational networks;
 
 external networks or systems are only connected to through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security and privacy architecture.
 
@@ -172,13 +172,13 @@ Mechanisms implementing boundary protection capabilities
 
 ### SC-12: Cryptographic Key Establishment and Management
 
-Establish and manage cryptographic keys when cryptography is employed within the system in accordance with the following key management requirements: {{ insert: param, sc-12_odp }}.
+Establish and manage cryptographic keys when cryptography is employed within the system in accordance with the following key management requirements: requirements for key generation, distribution, storage, access, and destruction are defined;.
 
 Cryptographic key management and establishment can be performed using manual procedures or automated mechanisms with supporting manual procedures. Organizations define key management requirements in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines and specify appropriate options, parameters, and levels. Organizations manage trust stores to ensure that only approved trust anchors are part of such trust stores. This includes certificates with visibility external to organizational systems and certificates related to the internal operations of systems. [NIST CMVP](#1acdc775-aafb-4d11-9341-dc6a822e9d38) and [NIST CAVP](#84dc1b0c-acb7-4269-84c4-00dbabacd78c) provide additional information on validated cryptographic modules and algorithms that can be used in cryptographic key management and establishment.
 
-cryptographic keys are established when cryptography is employed within the system in accordance with {{ insert: param, sc-12_odp }};
+cryptographic keys are established when cryptography is employed within the system in accordance with requirements for key generation, distribution, storage, access, and destruction are defined;;
 
-cryptographic keys are managed when cryptography is employed within the system in accordance with {{ insert: param, sc-12_odp }}.
+cryptographic keys are managed when cryptography is employed within the system in accordance with requirements for key generation, distribution, storage, access, and destruction are defined;.
 
 System and communications protection policy
 
@@ -206,15 +206,15 @@ Mechanisms supporting and/or implementing cryptographic key establishment and ma
 
 ### SC-13: Cryptographic Protection
 
-Determine the {{ insert: param, sc-13_odp.01 }} ; and
+Determine the cryptographic uses are defined; ; and
 
-Implement the following types of cryptography required for each specified cryptographic use: {{ insert: param, sc-13_odp.02 }}.
+Implement the following types of cryptography required for each specified cryptographic use: types of cryptography for each specified cryptographic use are defined;.
 
 Cryptography can be employed to support a variety of security solutions, including the protection of classified information and controlled unclassified information, the provision and implementation of digital signatures, and the enforcement of information separation when authorized individuals have the necessary clearances but lack the necessary formal access approvals. Cryptography can also be used to support random number and hash generation. Generally applicable cryptographic standards include FIPS-validated cryptography and NSA-approved cryptography. For example, organizations that need to protect classified information may specify the use of NSA-approved cryptography. Organizations that need to provision and implement digital signatures may specify the use of FIPS-validated cryptography. Cryptography is implemented in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
 
- {{ insert: param, sc-13_odp.01 }} are identified;
+cryptographic uses are defined; are identified;
 
- {{ insert: param, sc-13_odp.02 }} for each specified cryptographic use (defined in SC-13_ODP[01]) are implemented.
+ types of cryptography for each specified cryptographic use are defined; for each specified cryptographic use (defined in SC-13_ODP[01]) are implemented.
 
 System and communications protection policy
 
@@ -246,13 +246,13 @@ Mechanisms supporting and/or implementing cryptographic protection
 
 ### SC-15: Collaborative Computing Devices and Applications
 
-Prohibit remote activation of collaborative computing devices and applications with the following exceptions: {{ insert: param, sc-15_odp }} ; and
+Prohibit remote activation of collaborative computing devices and applications with the following exceptions: exceptions where remote activation is to be allowed are defined; ; and
 
 Provide an explicit indication of use to users physically present at the devices.
 
 Collaborative computing devices and applications include remote meeting devices and applications, networked white boards, cameras, and microphones. The explicit indication of use includes signals to users when collaborative computing devices and applications are activated.
 
-remote activation of collaborative computing devices and applications is prohibited except {{ insert: param, sc-15_odp }};
+remote activation of collaborative computing devices and applications is prohibited except exceptions where remote activation is to be allowed are defined;;
 
 an explicit indication of use is provided to users physically present at the devices.
 

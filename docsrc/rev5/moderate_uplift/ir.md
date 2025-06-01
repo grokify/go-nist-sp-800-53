@@ -6,11 +6,11 @@
 
 ### IR-3: Incident Response Testing
 
-Test the effectiveness of the incident response capability for the system {{ insert: param, ir-03_odp.01 }} using the following tests: {{ insert: param, ir-03_odp.02 }}.
+Test the effectiveness of the incident response capability for the system frequency at which to test the effectiveness of the incident response capability for the system is defined; using the following tests: tests used to test the effectiveness of the incident response capability for the system are defined;.
 
 Organizations test incident response capabilities to determine their effectiveness and identify potential weaknesses or deficiencies. Incident response testing includes the use of checklists, walk-through or tabletop exercises, and simulations (parallel or full interrupt). Incident response testing can include a determination of the effects on organizational operations and assets and individuals due to incident response. The use of qualitative and quantitative data aids in determining the effectiveness of incident response processes.
 
-the effectiveness of the incident response capability for the system is tested {{ insert: param, ir-03_odp.01 }} using {{ insert: param, ir-03_odp.02 }}.
+the effectiveness of the incident response capability for the system is tested frequency at which to test the effectiveness of the incident response capability for the system is defined; using tests used to test the effectiveness of the incident response capability for the system are defined;.
 
 Incident response policy
 
@@ -86,11 +86,11 @@ organizational personnel with information security and privacy responsibilities
 
 ### IR-4 (1): Automated Incident Handling Processes
 
-Support the incident handling process using {{ insert: param, ir-04.01_odp }}.
+Support the incident handling process using automated mechanisms used to support the incident handling process are defined;.
 
 Automated mechanisms that support incident handling processes include online incident management systems and tools that support the collection of live response data, full network packet capture, and forensic analysis.
 
-the incident handling process is supported using {{ insert: param, ir-04.01_odp }}.
+the incident handling process is supported using automated mechanisms used to support the incident handling process are defined;.
 
 Incident response policy
 
@@ -118,11 +118,11 @@ Automated mechanisms that support and/or implement the incident handling process
 
 ### IR-6 (1): Automated Reporting
 
-Report incidents using {{ insert: param, ir-06.01_odp }}.
+Report incidents using automated mechanisms used for reporting incidents are defined;.
 
 The recipients of incident reports are specified in [IR-6b](#ir-6_smt.b) . Automated reporting mechanisms include email, posting on websites (with automatic updates), and automated incident response tools and programs.
 
-incidents are reported using {{ insert: param, ir-06.01_odp }}.
+incidents are reported using automated mechanisms used for reporting incidents are defined;.
 
 Incident response policy
 
@@ -192,11 +192,11 @@ mechanisms supporting and/or implementing the reporting of incident information 
 
 ### IR-7 (1): Automation Support for Availability of Information and Support
 
-Increase the availability of incident response information and support using {{ insert: param, ir-07.01_odp }}.
+Increase the availability of incident response information and support using automated mechanisms used to increase the availability of incident response information and support are defined;.
 
 Automated mechanisms can provide a push or pull capability for users to obtain incident response assistance. For example, individuals may have access to a website to query the assistance capability, or the assistance capability can proactively send incident response information to users (general distribution or targeted) as part of increasing understanding of current response capabilities and support.
 
-the availability of incident response information and support is increased using {{ insert: param, ir-07.01_odp }}.
+the availability of incident response information and support is increased using automated mechanisms used to increase the availability of incident response information and support are defined;.
 
 Incident response policy
 

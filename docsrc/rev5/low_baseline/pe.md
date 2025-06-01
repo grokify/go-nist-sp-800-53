@@ -6,9 +6,9 @@
 
 ### PE-1: Policy and Procedures
 
-Develop, document, and disseminate to {{ insert: param, pe-1_prm_1 }}:
+Develop, document, and disseminate to organization-defined personnel or roles:
 
- {{ insert: param, pe-01_odp.03 }} physical and environmental protection policy that:
+organization-level, mission/business process-level, and/or system-level physical and environmental protection policy that:
 
 Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 
@@ -16,49 +16,49 @@ Is consistent with applicable laws, executive orders, directives, regulations, p
 
 Procedures to facilitate the implementation of the physical and environmental protection policy and the associated physical and environmental protection controls;
 
-Designate an {{ insert: param, pe-01_odp.04 }} to manage the development, documentation, and dissemination of the physical and environmental protection policy and procedures; and
+Designate an an official to manage the physical and environmental protection policy and procedures is defined; to manage the development, documentation, and dissemination of the physical and environmental protection policy and procedures; and
 
 Review and update the current physical and environmental protection:
 
-Policy {{ insert: param, pe-01_odp.05 }} and following {{ insert: param, pe-01_odp.06 }} ; and
+Policy the frequency at which the current physical and environmental protection policy is reviewed and updated is defined; and following events that would require the current physical and environmental protection policy to be reviewed and updated are defined; ; and
 
-Procedures {{ insert: param, pe-01_odp.07 }} and following {{ insert: param, pe-01_odp.08 }}.
+Procedures the frequency at which the current physical and environmental protection procedures are reviewed and updated is defined; and following events that would require the physical and environmental protection procedures to be reviewed and updated are defined;.
 
 Physical and environmental protection policy and procedures address the controls in the PE family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of physical and environmental protection policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to physical and environmental protection policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
 
 a physical and environmental protection policy is developed and documented;
 
-the physical and environmental protection policy is disseminated to {{ insert: param, pe-01_odp.01 }};
+the physical and environmental protection policy is disseminated to personnel or roles to whom the physical and environmental protection policy is to be disseminated is/are defined;;
 
 physical and environmental protection procedures to facilitate the implementation of the physical and environmental protection policy and associated physical and environmental protection controls are developed and documented;
 
-the physical and environmental protection procedures are disseminated to {{ insert: param, pe-01_odp.02 }};
+the physical and environmental protection procedures are disseminated to personnel or roles to whom the physical and environmental protection procedures are to be disseminated is/are defined;;
 
-the {{ insert: param, pe-01_odp.03 }} physical and environmental protection policy addresses purpose;
+the organization-level, mission/business process-level, and/or system-level physical and environmental protection policy addresses purpose;
 
-the {{ insert: param, pe-01_odp.03 }} physical and environmental protection policy addresses scope;
+the organization-level, mission/business process-level, and/or system-level physical and environmental protection policy addresses scope;
 
-the {{ insert: param, pe-01_odp.03 }} physical and environmental protection policy addresses roles;
+the organization-level, mission/business process-level, and/or system-level physical and environmental protection policy addresses roles;
 
-the {{ insert: param, pe-01_odp.03 }} physical and environmental protection policy addresses responsibilities;
+the organization-level, mission/business process-level, and/or system-level physical and environmental protection policy addresses responsibilities;
 
-the {{ insert: param, pe-01_odp.03 }} physical and environmental protection policy addresses management commitment;
+the organization-level, mission/business process-level, and/or system-level physical and environmental protection policy addresses management commitment;
 
-the {{ insert: param, pe-01_odp.03 }} physical and environmental protection policy addresses coordination among organizational entities;
+the organization-level, mission/business process-level, and/or system-level physical and environmental protection policy addresses coordination among organizational entities;
 
-the {{ insert: param, pe-01_odp.03 }} physical and environmental protection policy addresses compliance;
+the organization-level, mission/business process-level, and/or system-level physical and environmental protection policy addresses compliance;
 
-the {{ insert: param, pe-01_odp.03 }} physical and environmental protection policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
+the organization-level, mission/business process-level, and/or system-level physical and environmental protection policy is consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines;
 
-the {{ insert: param, pe-01_odp.04 }} is designated to manage the development, documentation, and dissemination of the physical and environmental protection policy and procedures;
+the an official to manage the physical and environmental protection policy and procedures is defined; is designated to manage the development, documentation, and dissemination of the physical and environmental protection policy and procedures;
 
-the current physical and environmental protection policy is reviewed and updated {{ insert: param, pe-01_odp.05 }};
+the current physical and environmental protection policy is reviewed and updated the frequency at which the current physical and environmental protection policy is reviewed and updated is defined;;
 
-the current physical and environmental protection policy is reviewed and updated following {{ insert: param, pe-01_odp.06 }};
+the current physical and environmental protection policy is reviewed and updated following events that would require the current physical and environmental protection policy to be reviewed and updated are defined;;
 
-the current physical and environmental protection procedures are reviewed and updated {{ insert: param, pe-01_odp.07 }};
+the current physical and environmental protection procedures are reviewed and updated the frequency at which the current physical and environmental protection procedures are reviewed and updated is defined;;
 
-the current physical and environmental protection procedures are reviewed and updated following {{ insert: param, pe-01_odp.08 }}.
+the current physical and environmental protection procedures are reviewed and updated following events that would require the physical and environmental protection procedures to be reviewed and updated are defined;.
 
 Physical and environmental protection policy and procedures
 
@@ -80,7 +80,7 @@ Develop, approve, and maintain a list of individuals with authorized access to t
 
 Issue authorization credentials for facility access;
 
-Review the access list detailing authorized facility access by individuals {{ insert: param, pe-02_odp }} ; and
+Review the access list detailing authorized facility access by individuals frequency at which to review the access list detailing authorized facility access by individuals is defined; ; and
 
 Remove individuals from the facility access list when access is no longer required.
 
@@ -94,7 +94,7 @@ the list of individuals with authorized access to the facility where the system 
 
 authorization credentials are issued for facility access;
 
-the access list detailing authorized facility access by individuals is reviewed {{ insert: param, pe-02_odp }};
+the access list detailing authorized facility access by individuals is reviewed frequency at which to review the access list detailing authorized facility access by individuals is defined;;
 
 individuals are removed from the facility access list when access is no longer required.
 
@@ -126,37 +126,37 @@ mechanisms supporting and/or implementing physical access authorizations
 
 ### PE-3: Physical Access Control
 
-Enforce physical access authorizations at {{ insert: param, pe-03_odp.01 }} by:
+Enforce physical access authorizations at entry and exit points to the facility in which the system resides are defined; by:
 
 Verifying individual access authorizations before granting access to the facility; and
 
-Controlling ingress and egress to the facility using {{ insert: param, pe-03_odp.02 }};
+Controlling ingress and egress to the facility using physical access control systems or devices used to control ingress and egress to the facility are defined (if selected); and/orguards;
 
-Maintain physical access audit logs for {{ insert: param, pe-03_odp.04 }};
+Maintain physical access audit logs for entry or exit points for which physical access logs are maintained are defined;;
 
-Control access to areas within the facility designated as publicly accessible by implementing the following controls: {{ insert: param, pe-03_odp.05 }};
+Control access to areas within the facility designated as publicly accessible by implementing the following controls: physical access controls to control access to areas within the facility designated as publicly accessible are defined;;
 
-Escort visitors and control visitor activity {{ insert: param, pe-03_odp.06 }};
+Escort visitors and control visitor activity circumstances requiring visitor escorts and control of visitor activity are defined;;
 
 Secure keys, combinations, and other physical access devices;
 
-Inventory {{ insert: param, pe-03_odp.07 }} every {{ insert: param, pe-03_odp.08 }} ; and
+Inventory physical access devices to be inventoried are defined; every frequency at which to inventory physical access devices is defined; ; and
 
-Change combinations and keys {{ insert: param, pe-3_prm_9 }} and/or when keys are lost, combinations are compromised, or when individuals possessing the keys or combinations are transferred or terminated.
+Change combinations and keys organization-defined frequency and/or when keys are lost, combinations are compromised, or when individuals possessing the keys or combinations are transferred or terminated.
 
 Physical access control applies to employees and visitors. Individuals with permanent physical access authorizations are not considered visitors. Physical access controls for publicly accessible areas may include physical access control logs/records, guards, or physical access devices and barriers to prevent movement from publicly accessible areas to non-public areas. Organizations determine the types of guards needed, including professional security staff, system users, or administrative staff. Physical access devices include keys, locks, combinations, biometric readers, and card readers. Physical access control systems comply with applicable laws, executive orders, directives, policies, regulations, standards, and guidelines. Organizations have flexibility in the types of audit logs employed. Audit logs can be procedural, automated, or some combination thereof. Physical access points can include facility access points, interior access points to systems that require supplemental access controls, or both. Components of systems may be in areas designated as publicly accessible with organizations controlling access to the components.
 
-physical access authorizations are enforced at {{ insert: param, pe-03_odp.01 }} by verifying individual access authorizations before granting access to the facility;
+physical access authorizations are enforced at entry and exit points to the facility in which the system resides are defined; by verifying individual access authorizations before granting access to the facility;
 
-physical access authorizations are enforced at {{ insert: param, pe-03_odp.01 }} by controlling ingress and egress to the facility using {{ insert: param, pe-03_odp.02 }};
+physical access authorizations are enforced at entry and exit points to the facility in which the system resides are defined; by controlling ingress and egress to the facility using physical access control systems or devices used to control ingress and egress to the facility are defined (if selected); and/orguards;
 
-physical access audit logs are maintained for {{ insert: param, pe-03_odp.04 }};
+physical access audit logs are maintained for entry or exit points for which physical access logs are maintained are defined;;
 
-access to areas within the facility designated as publicly accessible are maintained by implementing {{ insert: param, pe-03_odp.05 }};
+access to areas within the facility designated as publicly accessible are maintained by implementing physical access controls to control access to areas within the facility designated as publicly accessible are defined;;
 
 visitors are escorted;
 
-visitor activity is controlled {{ insert: param, pe-03_odp.06 }};
+visitor activity is controlled circumstances requiring visitor escorts and control of visitor activity are defined;;
 
 keys are secured;
 
@@ -164,11 +164,11 @@ combinations are secured;
 
 other physical access devices are secured;
 
- {{ insert: param, pe-03_odp.07 }} are inventoried {{ insert: param, pe-03_odp.08 }};
+ physical access devices to be inventoried are defined; are inventoried frequency at which to inventory physical access devices is defined;;
 
-combinations are changed {{ insert: param, pe-03_odp.09 }} , when combinations are compromised, or when individuals possessing the combinations are transferred or terminated;
+combinations are changed frequency at which to change combinations is defined; , when combinations are compromised, or when individuals possessing the combinations are transferred or terminated;
 
-keys are changed {{ insert: param, pe-03_odp.10 }} , when keys are lost, or when individuals possessing the keys are transferred or terminated.
+keys are changed frequency at which to change keys is defined; , when keys are lost, or when individuals possessing the keys are transferred or terminated.
 
 Physical and environmental protection policy
 
@@ -206,7 +206,7 @@ physical access control devices
 
 Monitor physical access to the facility where the system resides to detect and respond to physical security incidents;
 
-Review physical access logs {{ insert: param, pe-06_odp.01 }} and upon occurrence of {{ insert: param, pe-06_odp.02 }} ; and
+Review physical access logs the frequency at which to review physical access logs is defined; and upon occurrence of events or potential indication of events requiring physical access logs to be reviewed are defined; ; and
 
 Coordinate results of reviews and investigations with the organizational incident response capability.
 
@@ -214,9 +214,9 @@ Physical access monitoring includes publicly accessible areas within organizatio
 
 physical access to the facility where the system resides is monitored to detect and respond to physical security incidents;
 
-physical access logs are reviewed {{ insert: param, pe-06_odp.01 }};
+physical access logs are reviewed the frequency at which to review physical access logs is defined;;
 
-physical access logs are reviewed upon occurrence of {{ insert: param, pe-06_odp.02 }};
+physical access logs are reviewed upon occurrence of events or potential indication of events requiring physical access logs to be reviewed are defined;;
 
 results of reviews are coordinated with organizational incident response capabilities;
 
@@ -250,19 +250,19 @@ mechanisms supporting and/or implementing the review of physical access logs
 
 ### PE-8: Visitor Access Records
 
-Maintain visitor access records to the facility where the system resides for {{ insert: param, pe-08_odp.01 }};
+Maintain visitor access records to the facility where the system resides for time period for which to maintain visitor access records for the facility where the system resides is defined;;
 
-Review visitor access records {{ insert: param, pe-08_odp.02 }} ; and
+Review visitor access records the frequency at which to review visitor access records is defined; ; and
 
-Report anomalies in visitor access records to {{ insert: param, pe-08_odp.03 }}.
+Report anomalies in visitor access records to personnel to whom visitor access records anomalies are reported to is/are defined;.
 
 Visitor access records include the names and organizations of individuals visiting, visitor signatures, forms of identification, dates of access, entry and departure times, purpose of visits, and the names and organizations of individuals visited. Access record reviews determine if access authorizations are current and are still required to support organizational mission and business functions. Access records are not required for publicly accessible areas.
 
-visitor access records for the facility where the system resides are maintained for {{ insert: param, pe-08_odp.01 }};
+visitor access records for the facility where the system resides are maintained for time period for which to maintain visitor access records for the facility where the system resides is defined;;
 
-visitor access records are reviewed {{ insert: param, pe-08_odp.02 }};
+visitor access records are reviewed the frequency at which to review visitor access records is defined;;
 
-visitor access records anomalies are reported to {{ insert: param, pe-08_odp.03 }}.
+visitor access records anomalies are reported to personnel to whom visitor access records anomalies are reported to is/are defined;.
 
 Physical and environmental protection policy
 
@@ -364,15 +364,15 @@ Mechanisms supporting and/or implementing fire suppression/detection devices/sys
 
 ### PE-14: Environmental Controls
 
-Maintain {{ insert: param, pe-14_odp.01 }} levels within the facility where the system resides at {{ insert: param, pe-14_odp.03 }} ; and
+Maintain temperature, humidity, pressure, radiation, and/or  environmental control(s) for which to maintain a specified level in the facility where the system resides are defined (if selected); levels within the facility where the system resides at acceptable levels for environmental controls are defined; ; and
 
-Monitor environmental control levels {{ insert: param, pe-14_odp.04 }}.
+Monitor environmental control levels frequency at which to monitor environmental control levels is defined;.
 
 The provision of environmental controls applies primarily to organizational facilities that contain concentrations of system resources (e.g., data centers, mainframe computer rooms, and server rooms). Insufficient environmental controls, especially in very harsh environments, can have a significant adverse impact on the availability of systems and system components that are needed to support organizational mission and business functions.
 
- {{ insert: param, pe-14_odp.01 }} levels are maintained at {{ insert: param, pe-14_odp.03 }} within the facility where the system resides;
+temperature, humidity, pressure, radiation, and/or  environmental control(s) for which to maintain a specified level in the facility where the system resides are defined (if selected); levels are maintained at acceptable levels for environmental controls are defined; within the facility where the system resides;
 
-environmental control levels are monitored {{ insert: param, pe-14_odp.04 }}.
+environmental control levels are monitored frequency at which to monitor environmental control levels is defined;.
 
 Physical and environmental protection policy
 
@@ -436,19 +436,19 @@ organizational process for activating master water shutoff
 
 ### PE-16: Delivery and Removal
 
-Authorize and control {{ insert: param, pe-16_prm_1 }} entering and exiting the facility; and
+Authorize and control organization-defined types of system components entering and exiting the facility; and
 
 Maintain records of the system components.
 
 Enforcing authorizations for entry and exit of system components may require restricting access to delivery areas and isolating the areas from the system and media libraries.
 
- {{ insert: param, pe-16_odp.01 }} are authorized when entering the facility;
+types of system components to be authorized and controlled when entering the facility are defined; are authorized when entering the facility;
 
- {{ insert: param, pe-16_odp.01 }} are controlled when entering the facility;
+ types of system components to be authorized and controlled when entering the facility are defined; are controlled when entering the facility;
 
- {{ insert: param, pe-16_odp.02 }} are authorized when exiting the facility;
+ types of system components to be authorized and controlled when exiting the facility are defined; are authorized when exiting the facility;
 
- {{ insert: param, pe-16_odp.02 }} are controlled when exiting the facility;
+ types of system components to be authorized and controlled when exiting the facility are defined; are controlled when exiting the facility;
 
 records of the system components are maintained.
 

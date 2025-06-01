@@ -36,11 +36,11 @@ Mechanisms that support and/or implement simulated events for incident response 
 
 ### IR-2 (2): Automated Training Environments
 
-Provide an incident response training environment using {{ insert: param, ir-02.02_odp }}.
+Provide an incident response training environment using automated mechanisms used in an incident response training environment are defined;.
 
 Automated mechanisms can provide a more thorough and realistic incident response training environment. This can be accomplished, for example, by providing more complete coverage of incident response issues, selecting more realistic training scenarios and environments, and stressing the response capability.
 
-an incident response training environment is provided using {{ insert: param, ir-02.02_odp }}.
+an incident response training environment is provided using automated mechanisms used in an incident response training environment are defined;.
 
 Incident response policy
 
@@ -120,7 +120,7 @@ mechanisms that support and or implement the correlation of incident response in
 
 ### IR-4 (11): Integrated Incident Response Team
 
-Establish and maintain an integrated incident response team that can be deployed to any location identified by the organization in {{ insert: param, ir-04.11_odp }}.
+Establish and maintain an integrated incident response team that can be deployed to any location identified by the organization in the time period within which an integrated incident response team can be deployed is defined;.
 
 An integrated incident response team is a team of experts that assesses, documents, and responds to incidents so that organizational systems and networks can recover quickly and implement the necessary controls to avoid future incidents. Incident response team personnel include forensic and malicious code analysts, tool developers, systems security and privacy engineers, and real-time operations personnel. The incident handling capability includes performing rapid forensic preservation of evidence and analysis of and response to intrusions. For some organizations, the incident response team can be a cross-organizational entity.
 
@@ -128,7 +128,7 @@ An integrated incident response team facilitates information sharing and allows 
 
 an integrated incident response team is established and maintained;
 
-the integrated incident response team can be deployed to any location identified by the organization in {{ insert: param, ir-04.11_odp }}.
+the integrated incident response team can be deployed to any location identified by the organization in the time period within which an integrated incident response team can be deployed is defined;.
 
 Incident response policy
 
@@ -152,15 +152,15 @@ members of the integrated incident response team
 
 ### IR-5 (1): Automated Tracking, Data Collection, and Analysis
 
-Track incidents and collect and analyze incident information using {{ insert: param, ir-5.1_prm_1 }}.
+Track incidents and collect and analyze incident information using organization-defined automated mechanisms.
 
 Automated mechanisms for tracking incidents and collecting and analyzing incident information include Computer Incident Response Centers or other electronic databases of incidents and network monitoring devices.
 
-incidents are tracked using {{ insert: param, ir-05.01_odp.01 }};
+incidents are tracked using automated mechanisms used to track incidents are defined;;
 
-incident information is collected using {{ insert: param, ir-05.01_odp.02 }};
+incident information is collected using automated mechanisms used to collect incident information are defined;;
 
-incident information is analyzed using {{ insert: param, ir-05.01_odp.03 }}.
+incident information is analyzed using automated mechanisms used to analyze incident information are defined;.
 
 Incident response policy
 

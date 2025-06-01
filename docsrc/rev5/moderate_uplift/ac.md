@@ -6,11 +6,11 @@
 
 ### AC-2 (1): Automated System Account Management
 
-Support the management of system accounts using {{ insert: param, ac-02.01_odp }}.
+Support the management of system accounts using automated mechanisms used to support the management of system accounts are defined;.
 
 Automated system account management includes using automated mechanisms to create, enable, modify, disable, and remove accounts; notify account managers when an account is created, enabled, modified, disabled, or removed, or when users are terminated or transferred; monitor system account usage; and report atypical system account usage. Automated mechanisms can include internal system functions and email, telephonic, and text messaging notifications.
 
-the management of system accounts is supported using {{ insert: param, ac-02.01_odp }}.
+the management of system accounts is supported using automated mechanisms used to support the management of system accounts are defined;.
 
 Access control policy
 
@@ -38,11 +38,11 @@ Automated mechanisms for implementing account management functions
 
 ### AC-2 (2): Automated Temporary and Emergency Account Management
 
-Automatically {{ insert: param, ac-02.02_odp.01 }} temporary and emergency accounts after {{ insert: param, ac-02.02_odp.02 }}.
+Automatically removeordisable temporary and emergency accounts after the time period after which to automatically remove or disable temporary or emergency accounts is defined;.
 
 Management of temporary and emergency accounts includes the removal or disabling of such accounts automatically after a predefined time period rather than at the convenience of the system administrator. Automatic removal or disabling of accounts provides a more consistent implementation.
 
-temporary and emergency accounts are automatically {{ insert: param, ac-02.02_odp.01 }} after {{ insert: param, ac-02.02_odp.02 }}.
+temporary and emergency accounts are automatically removeordisable after the time period after which to automatically remove or disable temporary or emergency accounts is defined;.
 
 Access control policy
 
@@ -74,7 +74,7 @@ Automated mechanisms for implementing account management functions
 
 ### AC-2 (3): Disable Accounts
 
-Disable accounts within {{ insert: param, ac-02.03_odp.01 }} when the accounts:
+Disable accounts within time period within which to disable accounts is defined; when the accounts:
 
 Have expired;
 
@@ -82,17 +82,17 @@ Are no longer associated with a user or individual;
 
 Are in violation of organizational policy; or
 
-Have been inactive for {{ insert: param, ac-02.03_odp.02 }}.
+Have been inactive for time period for account inactivity before disabling is defined;.
 
 Disabling expired, inactive, or otherwise anomalous accounts supports the concepts of least privilege and least functionality which reduce the attack surface of the system.
 
-accounts are disabled within {{ insert: param, ac-02.03_odp.01 }} when the accounts have expired;
+accounts are disabled within time period within which to disable accounts is defined; when the accounts have expired;
 
-accounts are disabled within {{ insert: param, ac-02.03_odp.01 }} when the accounts are no longer associated with a user or individual;
+accounts are disabled within time period within which to disable accounts is defined; when the accounts are no longer associated with a user or individual;
 
-accounts are disabled within {{ insert: param, ac-02.03_odp.01 }} when the accounts are in violation of organizational policy;
+accounts are disabled within time period within which to disable accounts is defined; when the accounts are in violation of organizational policy;
 
-accounts are disabled within {{ insert: param, ac-02.03_odp.01 }} when the accounts have been inactive for {{ insert: param, ac-02.03_odp.02 }}.
+accounts are disabled within time period within which to disable accounts is defined; when the accounts have been inactive for time period for account inactivity before disabling is defined;.
 
 Access control policy
 
@@ -166,11 +166,11 @@ Automated mechanisms implementing account management functions
 
 ### AC-2 (5): Inactivity Logout
 
-Require that users log out when {{ insert: param, ac-02.05_odp }}.
+Require that users log out when the time period of expected inactivity or description of when to log out is defined;.
 
 Inactivity logout is behavior- or policy-based and requires users to take physical action to log out when they are expecting inactivity longer than the defined period. Automatic enforcement of inactivity logout is addressed by [AC-11](#ac-11).
 
-users are required to log out when {{ insert: param, ac-02.05_odp }}.
+users are required to log out when the time period of expected inactivity or description of when to log out is defined;.
 
 Access control policy
 
@@ -198,11 +198,11 @@ users that must comply with inactivity logout policy
 
 ### AC-2 (13): Disable Accounts for High-risk Individuals
 
-Disable accounts of individuals within {{ insert: param, ac-02.13_odp.01 }} of discovery of {{ insert: param, ac-02.13_odp.02 }}.
+Disable accounts of individuals within time period within which to disable accounts of individuals who are discovered to pose significant risk is defined; of discovery of significant risks leading to disabling accounts are defined;.
 
 Users who pose a significant security and/or privacy risk include individuals for whom reliable evidence indicates either the intention to use authorized access to systems to cause harm or through whom adversaries will cause harm. Such harm includes adverse impacts to organizational operations, organizational assets, individuals, other organizations, or the Nation. Close coordination among system administrators, legal staff, human resource managers, and authorizing officials is essential when disabling system accounts for high-risk individuals.
 
-accounts of individuals are disabled within {{ insert: param, ac-02.13_odp.01 }} of discovery of {{ insert: param, ac-02.13_odp.02 }}.
+accounts of individuals are disabled within time period within which to disable accounts of individuals who are discovered to pose significant risk is defined; of discovery of significant risks leading to disabling accounts are defined;.
 
 Access control policy
 
@@ -232,13 +232,13 @@ Mechanisms implementing account management functions
 
 ### AC-4: Information Flow Enforcement
 
-Enforce approved authorizations for controlling the flow of information within the system and between connected systems based on {{ insert: param, ac-04_odp }}.
+Enforce approved authorizations for controlling the flow of information within the system and between connected systems based on information flow control policies within the system and between connected systems are defined;.
 
 Information flow control regulates where information can travel within a system and between systems (in contrast to who is allowed to access the information) and without regard to subsequent accesses to that information. Flow control restrictions include blocking external traffic that claims to be from within the organization, keeping export-controlled information from being transmitted in the clear to the Internet, restricting web requests that are not from the internal web proxy server, and limiting information transfers between organizations based on data structures and content. Transferring information between organizations may require an agreement specifying how the information flow is enforced (see [CA-3](#ca-3) ). Transferring information between systems in different security or privacy domains with different security or privacy policies introduces the risk that such transfers violate one or more domain security or privacy policies. In such situations, information owners/stewards provide guidance at designated policy enforcement points between connected systems. Organizations consider mandating specific architectural solutions to enforce specific security and privacy policies. Enforcement includes prohibiting information transfers between connected systems (i.e., allowing access only), verifying write permissions before accepting information from another security or privacy domain or connected system, employing hardware mechanisms to enforce one-way information flows, and implementing trustworthy regrading mechanisms to reassign security or privacy attributes and labels.
 
 Organizations commonly employ information flow control policies and enforcement mechanisms to control the flow of information between designated sources and destinations within systems and between connected systems. Flow control is based on the characteristics of the information and/or the information path. Enforcement occurs, for example, in boundary protection devices that employ rule sets or establish configuration settings that restrict system services, provide a packet-filtering capability based on header information, or provide a message-filtering capability based on message content. Organizations also consider the trustworthiness of filtering and/or inspection mechanisms (i.e., hardware, firmware, and software components) that are critical to information flow enforcement. Control enhancements 3 through 32 primarily address cross-domain solution needs that focus on more advanced filtering techniques, in-depth analysis, and stronger flow enforcement mechanisms implemented in cross-domain products, such as high-assurance guards. Such capabilities are generally not available in commercial off-the-shelf products. Information flow enforcement also applies to control plane traffic (e.g., routing and DNS).
 
-approved authorizations are enforced for controlling the flow of information within the system and between connected systems based on {{ insert: param, ac-04_odp }}.
+approved authorizations are enforced for controlling the flow of information within the system and between connected systems based on information flow control policies within the system and between connected systems are defined;.
 
 Access control policy
 
@@ -278,13 +278,13 @@ Mechanisms implementing information flow enforcement policy
 
 ### AC-5: Separation of Duties
 
-Identify and document {{ insert: param, ac-05_odp }} ; and
+Identify and document duties of individuals requiring separation are defined; ; and
 
 Define system access authorizations to support separation of duties.
 
 Separation of duties addresses the potential for abuse of authorized privileges and helps to reduce the risk of malevolent activity without collusion. Separation of duties includes dividing mission or business functions and support functions among different individuals or roles, conducting system support functions with different individuals, and ensuring that security personnel who administer access control functions do not also administer audit functions. Because separation of duty violations can span systems and application domains, organizations consider the entirety of systems and system components when developing policy on separation of duties. Separation of duties is enforced through the account management activities in [AC-2](#ac-2) , access control mechanisms in [AC-3](#ac-3) , and identity management activities in [IA-2](#ia-2), [IA-4](#ia-4) , and [IA-12](#ia-12).
 
- {{ insert: param, ac-05_odp }} are identified and documented;
+duties of individuals requiring separation are defined; are identified and documented;
 
 system access authorizations to support separation of duties are defined.
 
@@ -344,21 +344,21 @@ Mechanisms implementing least privilege functions
 
 ### AC-6 (1): Authorize Access to Security Functions
 
-Authorize access for {{ insert: param, ac-06.01_odp.01 }} to:
+Authorize access for individuals and roles with authorized access to security functions and security-relevant information are defined; to:
 
- {{ insert: param, ac-6.1_prm_2 }} ; and
+organization-defined security functions (deployed in hardware, software, and firmware) ; and
 
- {{ insert: param, ac-06.01_odp.05 }}.
+ security-relevant information for authorized access is defined;.
 
 Security functions include establishing system accounts, configuring access authorizations (i.e., permissions, privileges), configuring settings for events to be audited, and establishing intrusion detection parameters. Security-relevant information includes filtering rules for routers or firewalls, configuration parameters for security services, cryptographic key management information, and access control lists. Authorized personnel include security administrators, system administrators, system security officers, system programmers, and other privileged users.
 
-access is authorized for {{ insert: param, ac-06.01_odp.01 }} to {{ insert: param, ac-06.01_odp.02 }};
+access is authorized for individuals and roles with authorized access to security functions and security-relevant information are defined; to security functions (deployed in hardware) for authorized access are defined;;
 
-access is authorized for {{ insert: param, ac-06.01_odp.01 }} to {{ insert: param, ac-06.01_odp.03 }};
+access is authorized for individuals and roles with authorized access to security functions and security-relevant information are defined; to security functions (deployed in software) for authorized access are defined;;
 
-access is authorized for {{ insert: param, ac-06.01_odp.01 }} to {{ insert: param, ac-06.01_odp.04 }};
+access is authorized for individuals and roles with authorized access to security functions and security-relevant information are defined; to security functions (deployed in firmware) for authorized access are defined;;
 
-access is authorized for {{ insert: param, ac-06.01_odp.01 }} to {{ insert: param, ac-06.01_odp.05 }}.
+access is authorized for individuals and roles with authorized access to security functions and security-relevant information are defined; to security-relevant information for authorized access is defined;.
 
 Access control policy
 
@@ -384,11 +384,11 @@ Mechanisms implementing least privilege functions
 
 ### AC-6 (2): Non-privileged Access for Nonsecurity Functions
 
-Require that users of system accounts (or roles) with access to {{ insert: param, ac-06.02_odp }} use non-privileged accounts or roles, when accessing nonsecurity functions.
+Require that users of system accounts (or roles) with access to security functions or security-relevant information, the access to which requires users to use non-privileged accounts to access non-security functions, are defined; use non-privileged accounts or roles, when accessing nonsecurity functions.
 
 Requiring the use of non-privileged accounts when accessing nonsecurity functions limits exposure when operating from within privileged accounts or roles. The inclusion of roles addresses situations where organizations implement access control policies, such as role-based access control, and where a change of role provides the same degree of assurance in the change of access authorizations for the user and the processes acting on behalf of the user as would be provided by a change between a privileged and non-privileged account.
 
-users of system accounts (or roles) with access to {{ insert: param, ac-06.02_odp }} are required to use non-privileged accounts or roles when accessing non-security functions.
+users of system accounts (or roles) with access to security functions or security-relevant information, the access to which requires users to use non-privileged accounts to access non-security functions, are defined; are required to use non-privileged accounts or roles when accessing non-security functions.
 
 Access control policy
 
@@ -414,11 +414,11 @@ Mechanisms implementing least privilege functions
 
 ### AC-6 (5): Privileged Accounts
 
-Restrict privileged accounts on the system to {{ insert: param, ac-06.05_odp }}.
+Restrict privileged accounts on the system to personnel or roles to which privileged accounts on the system are to be restricted is/are defined;.
 
 Privileged accounts, including super user accounts, are typically described as system administrator for various types of commercial off-the-shelf operating systems. Restricting privileged accounts to specific personnel or roles prevents day-to-day users from accessing privileged information or privileged functions. Organizations may differentiate in the application of restricting privileged accounts between allowed privileges for local accounts and for domain accounts provided that they retain the ability to control system configurations for key parameters and as otherwise necessary to sufficiently mitigate risk.
 
-privileged accounts on the system are restricted to {{ insert: param, ac-06.05_odp }}.
+privileged accounts on the system are restricted to personnel or roles to which privileged accounts on the system are to be restricted is/are defined;.
 
 Access control policy
 
@@ -446,13 +446,13 @@ Mechanisms implementing least privilege functions
 
 ### AC-6 (7): Review of User Privileges
 
-Review {{ insert: param, ac-06.07_odp.01 }} the privileges assigned to {{ insert: param, ac-06.07_odp.02 }} to validate the need for such privileges; and
+Review the frequency at which to review the privileges assigned to roles or classes of users is defined; the privileges assigned to roles or classes of users to which privileges are assigned are defined; to validate the need for such privileges; and
 
 Reassign or remove privileges, if necessary, to correctly reflect organizational mission and business needs.
 
 The need for certain assigned user privileges may change over time to reflect changes in organizational mission and business functions, environments of operation, technologies, or threats. A periodic review of assigned user privileges is necessary to determine if the rationale for assigning such privileges remains valid. If the need cannot be revalidated, organizations take appropriate corrective actions.
 
-privileges assigned to {{ insert: param, ac-06.07_odp.02 }} are reviewed {{ insert: param, ac-06.07_odp.01 }} to validate the need for such privileges;
+privileges assigned to roles or classes of users to which privileges are assigned are defined; are reviewed the frequency at which to review the privileges assigned to roles or classes of users is defined; to validate the need for such privileges;
 
 privileges are reassigned or removed, if necessary, to correctly reflect organizational mission and business needs.
 
@@ -554,13 +554,13 @@ Mechanisms implementing least privilege functions for non-privileged users
 
 ### AC-11: Device Lock
 
-Prevent further access to the system by {{ insert: param, ac-11_odp.01 }} ; and
+Prevent further access to the system by initiating a device lock after time period of inactivity after which a device lock is initiated is defined (if selected); of inactivityand/orrequiring the user to initiate a device lock before leaving the system unattended ; and
 
 Retain the device lock until the user reestablishes access using established identification and authentication procedures.
 
 Device locks are temporary actions taken to prevent logical access to organizational systems when users stop work and move away from the immediate vicinity of those systems but do not want to log out because of the temporary nature of their absences. Device locks can be implemented at the operating system level or at the application level. A proximity lock may be used to initiate the device lock (e.g., via a Bluetooth-enabled device or dongle). User-initiated device locking is behavior or policy-based and, as such, requires users to take physical action to initiate the device lock. Device locks are not an acceptable substitute for logging out of systems, such as when organizations require users to log out at the end of workdays.
 
-further access to the system is prevented by {{ insert: param, ac-11_odp.01 }};
+further access to the system is prevented by initiating a device lock after time period of inactivity after which a device lock is initiated is defined (if selected); of inactivityand/orrequiring the user to initiate a device lock before leaving the system unattended;
 
 device lock is retained until the user re-establishes access using established identification and authentication procedures.
 
@@ -620,11 +620,11 @@ System session lock mechanisms
 
 ### AC-12: Session Termination
 
-Automatically terminate a user session after {{ insert: param, ac-12_odp }}.
+Automatically terminate a user session after conditions or trigger events requiring session disconnect are defined;.
 
 Session termination addresses the termination of user-initiated logical sessions (in contrast to [SC-10](#sc-10) , which addresses the termination of network connections associated with communications sessions (i.e., network disconnect)). A logical session (for local, network, and remote access) is initiated whenever a user (or process acting on behalf of a user) accesses an organizational system. Such user sessions can be terminated without terminating network sessions. Session termination ends all processes associated with a user’s logical session except for those processes that are specifically created by the user (i.e., session owner) to continue after the session is terminated. Conditions or trigger events that require automatic termination of the session include organization-defined periods of user inactivity, targeted responses to certain types of incidents, or time-of-day restrictions on system use.
 
-a user session is automatically terminated after {{ insert: param, ac-12_odp }}.
+a user session is automatically terminated after conditions or trigger events requiring session disconnect are defined;.
 
 Access control policy
 
@@ -748,7 +748,7 @@ Mechanisms routing all remote accesses through managed network access control po
 
 ### AC-17 (4): Privileged Commands and Access
 
-Authorize the execution of privileged commands and access to security-relevant information via remote access only in a format that provides assessable evidence and for the following needs: {{ insert: param, ac-17.4_prm_1 }} ; and
+Authorize the execution of privileged commands and access to security-relevant information via remote access only in a format that provides assessable evidence and for the following needs: organization-defined needs ; and
 
 Document the rationale for remote access in the security plan for the system.
 
@@ -758,9 +758,9 @@ the execution of privileged commands via remote access is authorized only in a f
 
 access to security-relevant information via remote access is authorized only in a format that provides assessable evidence;
 
-the execution of privileged commands via remote access is authorized only for the following needs: {{ insert: param, ac-17.04_odp.01 }};
+the execution of privileged commands via remote access is authorized only for the following needs: needs requiring execution of privileged commands via remote access are defined;;
 
-access to security-relevant information via remote access is authorized only for the following needs: {{ insert: param, ac-17.04_odp.02 }};
+access to security-relevant information via remote access is authorized only for the following needs: needs requiring access to security-relevant information via remote access are defined;;
 
 the rationale for remote access is documented in the security plan for the system.
 
@@ -786,11 +786,11 @@ Mechanisms implementing remote access management
 
 ### AC-18 (1): Authentication and Encryption
 
-Protect wireless access to the system using authentication of {{ insert: param, ac-18.01_odp }} and encryption.
+Protect wireless access to the system using authentication of usersand/ordevices and encryption.
 
 Wireless networking capabilities represent a significant potential vulnerability that can be exploited by adversaries. To protect systems with wireless access points, strong authentication of users and devices along with strong encryption can reduce susceptibility to threats by adversaries involving wireless technologies.
 
-wireless access to the system is protected using authentication of {{ insert: param, ac-18.01_odp }};
+wireless access to the system is protected using authentication of usersand/ordevices;
 
 wireless access to the system is protected using encryption.
 
@@ -846,11 +846,11 @@ Mechanisms managing the disabling of wireless networking capabilities internally
 
 ### AC-19 (5): Full Device or Container-based Encryption
 
-Employ {{ insert: param, ac-19.05_odp.01 }} to protect the confidentiality and integrity of information on {{ insert: param, ac-19.05_odp.02 }}.
+Employ full-device encryptionorcontainer-based encryption to protect the confidentiality and integrity of information on mobile devices on which to employ encryption are defined;.
 
 Container-based encryption provides a more fine-grained approach to data and information encryption on mobile devices, including encrypting selected data structures such as files, records, or fields.
 
- {{ insert: param, ac-19.05_odp.01 }} is employed to protect the confidentiality and integrity of information on {{ insert: param, ac-19.05_odp.02 }}.
+ full-device encryptionorcontainer-based encryption is employed to protect the confidentiality and integrity of information on mobile devices on which to employ encryption are defined;.
 
 Access control policy
 
@@ -910,11 +910,11 @@ Mechanisms implementing limits on use of external systems
 
 ### AC-20 (2): Portable Storage Devices — Restricted Use
 
-Restrict the use of organization-controlled portable storage devices by authorized individuals on external systems using {{ insert: param, ac-20.02_odp }}.
+Restrict the use of organization-controlled portable storage devices by authorized individuals on external systems using restrictions on the use of organization-controlled portable storage devices by authorized individuals on external systems are defined;.
 
 Limits on the use of organization-controlled portable storage devices in external systems include restrictions on how the devices may be used and under what conditions the devices may be used.
 
-the use of organization-controlled portable storage devices by authorized individuals is restricted on external systems using {{ insert: param, ac-20.02_odp }}.
+the use of organization-controlled portable storage devices by authorized individuals is restricted on external systems using restrictions on the use of organization-controlled portable storage devices by authorized individuals on external systems are defined;.
 
 Access control policy
 
@@ -940,15 +940,15 @@ Mechanisms implementing restrictions on the use of portable storage devices
 
 ### AC-21: Information Sharing
 
-Enable authorized users to determine whether access authorizations assigned to a sharing partner match the information’s access and use restrictions for {{ insert: param, ac-21_odp.01 }} ; and
+Enable authorized users to determine whether access authorizations assigned to a sharing partner match the information’s access and use restrictions for information-sharing circumstances where user discretion is required to determine whether access authorizations assigned to a sharing partner match the information’s access and use restrictions are defined; ; and
 
-Employ {{ insert: param, ac-21_odp.02 }} to assist users in making information sharing and collaboration decisions.
+Employ automated mechanisms or manual processes that assist users in making information-sharing and collaboration decisions are defined; to assist users in making information sharing and collaboration decisions.
 
 Information sharing applies to information that may be restricted in some manner based on some formal or administrative determination. Examples of such information include, contract-sensitive information, classified information related to special access programs or compartments, privileged information, proprietary information, and personally identifiable information. Security and privacy risk assessments as well as applicable laws, regulations, and policies can provide useful inputs to these determinations. Depending on the circumstances, sharing partners may be defined at the individual, group, or organizational level. Information may be defined by content, type, security category, or special access program or compartment. Access restrictions may include non-disclosure agreements (NDA). Information flow techniques and security attributes may be used to provide automated assistance to users making sharing and collaboration decisions.
 
-authorized users are enabled to determine whether access authorizations assigned to a sharing partner match the information’s access and use restrictions for {{ insert: param, ac-21_odp.01 }};
+authorized users are enabled to determine whether access authorizations assigned to a sharing partner match the information’s access and use restrictions for information-sharing circumstances where user discretion is required to determine whether access authorizations assigned to a sharing partner match the information’s access and use restrictions are defined;;
 
- {{ insert: param, ac-21_odp.02 }} are employed to assist users in making information-sharing and collaboration decisions.
+ automated mechanisms or manual processes that assist users in making information-sharing and collaboration decisions are defined; are employed to assist users in making information-sharing and collaboration decisions.
 
 Access control policy
 

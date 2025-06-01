@@ -36,11 +36,11 @@ organizational personnel with information security responsibilities
 
 ### CP-2 (5): Continue Mission and Business Functions
 
-Plan for the continuance of {{ insert: param, cp-02.05_odp }} mission and business functions with minimal or no loss of operational continuity and sustains that continuity until full system restoration at primary processing and/or storage sites.
+Plan for the continuance of alloressential mission and business functions with minimal or no loss of operational continuity and sustains that continuity until full system restoration at primary processing and/or storage sites.
 
 Organizations may choose to conduct the contingency planning activities to continue mission and business functions as part of business continuity planning or business impact analyses. Primary processing and/or storage sites defined by organizations as part of contingency planning may change depending on the circumstances associated with the contingency.
 
-the continuance of {{ insert: param, cp-02.05_odp }} mission and business functions with minimal or no loss of operational continuity is planned for;
+the continuance of alloressential mission and business functions with minimal or no loss of operational continuity is planned for;
 
 continuity is sustained until full system restoration at primary processing and/or storage sites.
 
@@ -250,7 +250,7 @@ Require primary and alternate telecommunications service providers to have conti
 
 Review provider contingency plans to ensure that the plans meet organizational contingency requirements; and
 
-Obtain evidence of contingency testing and training by providers {{ insert: param, cp-8.4_prm_1 }}.
+Obtain evidence of contingency testing and training by providers organization-defined frequency.
 
 Reviews of provider contingency plans consider the proprietary nature of such plans. In some situations, a summary of provider contingency plans may be sufficient evidence for organizations to satisfy the review requirement. Telecommunications service providers may also participate in ongoing disaster recovery exercises in coordination with the Department of Homeland Security and state and local governments. Organizations may use these types of activities to satisfy evidentiary requirements related to service provider contingency plan reviews, testing, and training.
 
@@ -260,9 +260,9 @@ alternate telecommunications service providers are required to have contingency 
 
 provider contingency plans are reviewed to ensure that the plans meet organizational contingency requirements;
 
-evidence of contingency testing by providers is obtained {{ insert: param, cp-08.04_odp.01 }}.
+evidence of contingency testing by providers is obtained frequency at which to obtain evidence of contingency testing by providers is defined;.
 
-evidence of contingency training by providers is obtained {{ insert: param, cp-08.04_odp.02 }}.
+evidence of contingency training by providers is obtained frequency at which to obtain evidence of contingency training by providers is defined;.
 
 Contingency planning policy
 
@@ -324,11 +324,11 @@ mechanisms supporting and/or implementing system backups
 
 ### CP-9 (3): Separate Storage for Critical Information
 
-Store backup copies of {{ insert: param, cp-09.03_odp }} in a separate facility or in a fire rated container that is not collocated with the operational system.
+Store backup copies of critical system software and other security-related information backups to be stored in a separate facility are defined; in a separate facility or in a fire rated container that is not collocated with the operational system.
 
 Separate storage for critical information applies to all critical information regardless of the type of backup storage media. Critical system software includes operating systems, middleware, cryptographic key management systems, and intrusion detection systems. Security-related information includes inventories of system hardware, software, and firmware components. Alternate storage sites, including geographically distributed architectures, serve as separate storage facilities for organizations. Organizations may provide separate storage by implementing automated backup processes at alternative storage sites (e.g., data centers). The General Services Administration (GSA) establishes standards and specifications for security and fire rated containers.
 
-backup copies of {{ insert: param, cp-09.03_odp }} are stored in a separate facility or in a fire rated container that is not collocated with the operational system.
+backup copies of critical system software and other security-related information backups to be stored in a separate facility are defined; are stored in a separate facility or in a fire rated container that is not collocated with the operational system.
 
 Contingency planning policy
 
@@ -354,13 +354,13 @@ organizational personnel with information security responsibilities
 
 ### CP-9 (5): Transfer to Alternate Storage Site
 
-Transfer system backup information to the alternate storage site {{ insert: param, cp-9.5_prm_1 }}.
+Transfer system backup information to the alternate storage site organization-defined time period and transfer rate consistent with the recovery time and recovery point objectives.
 
 System backup information can be transferred to alternate storage sites either electronically or by the physical shipment of storage media.
 
-system backup information is transferred to the alternate storage site for {{ insert: param, cp-09.05_odp.01 }};
+system backup information is transferred to the alternate storage site for time period consistent with recovery time and recovery point objectives is defined;;
 
-system backup information is transferred to the alternate storage site {{ insert: param, cp-09.05_odp.02 }}.
+system backup information is transferred to the alternate storage site transfer rate consistent with recovery time and recovery point objectives is defined;.
 
 Contingency planning policy
 
@@ -390,11 +390,11 @@ mechanisms supporting and/or implementing information transfer to the alternate 
 
 ### CP-10 (4): Restore Within Time Period
 
-Provide the capability to restore system components within {{ insert: param, cp-10.04_odp }} from configuration-controlled and integrity-protected information representing a known, operational state for the components.
+Provide the capability to restore system components within restoration time period within which to restore system components to a known, operational state is defined; from configuration-controlled and integrity-protected information representing a known, operational state for the components.
 
 Restoration of system components includes reimaging, which restores the components to known, operational states.
 
-the capability to restore system components within {{ insert: param, cp-10.04_odp }} from configuration-controlled and integrity-protected information representing a known, operational state for the components is provided.
+the capability to restore system components within restoration time period within which to restore system components to a known, operational state is defined; from configuration-controlled and integrity-protected information representing a known, operational state for the components is provided.
 
 Contingency planning policy
 
