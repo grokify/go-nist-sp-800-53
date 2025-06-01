@@ -6,7 +6,6 @@ import (
 	"strings"
 
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
-	"github.com/grokify/mogo/fmt/fmtutil"
 )
 
 type Parameter oscalTypes.Parameter
@@ -52,7 +51,7 @@ func (p Parameter) SelectString() string {
 	case ParamHowManyOneOrMore:
 		conj = "and/or"
 	default:
-		fmtutil.PrintJSON(p)
+		fmt.Printf("%v\n", p)
 		panic(fmt.Sprintf("parameter.SelectString(): unknown how many (%s)", p.Select.HowMany))
 	}
 
@@ -79,7 +78,7 @@ func (p Parameter) ValueString() string {
 	} else if v := strings.TrimSpace(p.Label); v != "" {
 		return v
 	} else {
-		fmtutil.PrintJSON(p)
+		fmt.Printf("%v\n", p)
 		panic("parameter display value string not found")
 	}
 }
