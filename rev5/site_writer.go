@@ -12,7 +12,7 @@ import (
 
 type SiteWriter struct{}
 
-func (sw SiteWriter) WriteMarkdownPagesTiers(baseDir string) error {
+func (sw SiteWriter) WriteMarkdownPages(baseDir string) error {
 	tiers := []string{
 		TierHighBaseline,
 		TierHighUplift,
@@ -23,7 +23,7 @@ func (sw SiteWriter) WriteMarkdownPagesTiers(baseDir string) error {
 	mkdocsTexts := mkdocs.Texts{}
 
 	for _, tierName := range tiers {
-		if tierMkdocsTexts, err := sw.WriteMarkdownPagesTier(baseDir, tierName); err != nil {
+		if tierMkdocsTexts, err := sw.writeMarkdownPagesTier(baseDir, tierName); err != nil {
 			return err
 		} else {
 			mkdocsTexts = append(mkdocsTexts, mkdocs.Text{
@@ -32,10 +32,10 @@ func (sw SiteWriter) WriteMarkdownPagesTiers(baseDir string) error {
 			})
 		}
 	}
-	return sw.mkdocsWriteTOC(filepath.Join(baseDir, mkdocs.FilenameTOC), mkdocsTexts)
+	return sw.writeMkdocsTOC(filepath.Join(baseDir, mkdocs.FilenameTOC), mkdocsTexts)
 }
 
-func (sw SiteWriter) WriteMarkdownPagesTier(baseDir string, tierName string) (mkdocs.Texts, error) {
+func (sw SiteWriter) writeMarkdownPagesTier(baseDir string, tierName string) (mkdocs.Texts, error) {
 	dirTierWrite := filepath.Join(baseDir, "docsrc/rev5", tierName)
 	dirTierMkdocs := filepath.Join("rev5", tierName)
 	var cat *Catalog

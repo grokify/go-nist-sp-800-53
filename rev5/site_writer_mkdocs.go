@@ -16,7 +16,7 @@ func (sw SiteWriter) mkdocsConfigDefault() mkdocs.Config {
 		}}
 }
 
-func (sw SiteWriter) mkdocsWriteTOC(filename string, navTexts mkdocs.Texts) error {
+func (sw SiteWriter) writeMkdocsTOC(filename string, navTexts mkdocs.Texts) error {
 	cfg := sw.mkdocsConfigDefault()
 	cfg.Nav = append(cfg.Nav, navTexts...)
 	return cfg.WriteFileYAML(filename, 0600)
