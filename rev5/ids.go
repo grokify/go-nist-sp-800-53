@@ -3,7 +3,6 @@ package rev5
 import (
 	"errors"
 	"slices"
-	"sort"
 )
 
 var ErrIDTypeNotSupported = errors.New("idtype not supported")
@@ -121,7 +120,5 @@ func (ids IDs) formatFunc(fn func(id ID) (string, error)) ([]string, error) {
 			out = append(out, val)
 		}
 	}
-	out = sliceDedupe(out)
-	sort.Strings(out)
-	return out, nil
+	return sliceDedupe(out), nil
 }
