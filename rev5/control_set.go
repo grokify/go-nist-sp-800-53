@@ -55,6 +55,18 @@ func (cs *ControlSet) GetAll() []Control {
 	return ctrls
 }
 
+func (cs *ControlSet) IDsSet() (*IDSet, error) {
+	is := NewIDSet()
+	for _, ctr := range cs.Data {
+		if id, err := ctr.ControlID(); err != nil {
+			return nil, err
+		} else if err := is.Add(id); err != nil {
+			return nil, err
+		}
+	}
+	return is, nil
+}
+
 func (cs *ControlSet) Len() int {
 	return len(cs.Data)
 }
