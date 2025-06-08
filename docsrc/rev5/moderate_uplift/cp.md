@@ -1,7 +1,7 @@
 # CP - Contingency Planning
 
 * Controls Count: 17
-* Controls IDs: CP-10 (2), CP-2 (1), CP-2 (3), CP-2 (8), CP-4 (1), CP-6, CP-6 (1), CP-6 (3), CP-7, CP-7 (1), CP-7 (2), CP-7 (3), CP-8, CP-8 (1), CP-8 (2), CP-9 (1), CP-9 (8)
+* Controls IDs: CP-2 (1), CP-2 (3), CP-2 (8), CP-4 (1), CP-6, CP-6 (1), CP-6 (3), CP-7, CP-7 (1), CP-7 (2), CP-7 (3), CP-8, CP-8 (1), CP-8 (2), CP-9 (1), CP-9 (8), CP-10 (2)
 
 ## Controls
 

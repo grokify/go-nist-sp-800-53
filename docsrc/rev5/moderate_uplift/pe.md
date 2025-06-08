@@ -1,7 +1,7 @@
 # PE - Physical and Environmental Protection
 
 * Controls Count: 8
-* Controls IDs: PE-10, PE-11, PE-13 (1), PE-17, PE-4, PE-5, PE-6 (1), PE-9
+* Controls IDs: PE-4, PE-5, PE-6 (1), PE-9, PE-10, PE-11, PE-13 (1), PE-17
 
 ## Controls
 

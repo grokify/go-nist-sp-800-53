@@ -1,7 +1,7 @@
 # PL - Planning
 
 * Controls Count: 6
-* Controls IDs: PL-1, PL-10, PL-11, PL-2, PL-4, PL-4 (1)
+* Controls IDs: PL-1, PL-2, PL-4, PL-4 (1), PL-10, PL-11
 
 ## Controls
 

@@ -1,7 +1,7 @@
 # IA - Identification and Authentication
 
 * Controls Count: 16
-* Controls IDs: IA-1, IA-11, IA-2, IA-2 (1), IA-2 (12), IA-2 (2), IA-2 (8), IA-4, IA-5, IA-5 (1), IA-6, IA-7, IA-8, IA-8 (1), IA-8 (2), IA-8 (4)
+* Controls IDs: IA-1, IA-2, IA-2 (1), IA-2 (2), IA-2 (8), IA-2 (12), IA-4, IA-5, IA-5 (1), IA-6, IA-7, IA-8, IA-8 (1), IA-8 (2), IA-8 (4), IA-11
 
 ## Controls
 

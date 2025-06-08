@@ -1,7 +1,7 @@
 # SC - System and Communications Protection
 
 * Controls Count: 15
-* Controls IDs: SC-10, SC-17, SC-18, SC-2, SC-23, SC-28, SC-28 (1), SC-4, SC-7 (3), SC-7 (4), SC-7 (5), SC-7 (7), SC-7 (8), SC-8, SC-8 (1)
+* Controls IDs: SC-2, SC-4, SC-7 (3), SC-7 (4), SC-7 (5), SC-7 (7), SC-7 (8), SC-8, SC-8 (1), SC-10, SC-17, SC-18, SC-23, SC-28, SC-28 (1)
 
 ## Controls
 
