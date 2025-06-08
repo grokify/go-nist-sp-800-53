@@ -164,7 +164,22 @@ func (sw SiteWriter) groupToStringsBuilder(group oscalTypes.Group, idOSCALFilter
 	// Create Markdown content
 	var mdContent strings.Builder
 	mdContent.WriteString(fmt.Sprintf("# %s - %s\n\n", strings.ToUpper(familyID), familyTitle))
-	mdContent.WriteString(fmt.Sprintf("* Controls: %d\n\n", len(mdAllControls)))
+
+	if len(mdAllControls) == 0 {
+		mdContent.WriteString(fmt.Sprintf("* Controls Count: %d\n\n", len(mdAllControls)))
+	} else {
+		if ids, err := controlsFlattened.IDs(); err != nil {
+			return nil, "", err
+		} else {
+			ids.Sort()
+			if idsNIST, err := ids.FormatNIST(); err != nil {
+				return nil, "", err
+			} else {
+				mdContent.WriteString(fmt.Sprintf("* Controls Count: %d\n", len(mdAllControls)))
+				mdContent.WriteString(fmt.Sprintf("* Controls IDs: %s\n\n", strings.Join(idsNIST, ", ")))
+			}
+		}
+	}
 
 	/*
 			mdContent.WriteString(fmt.Sprintf("* Base Controls: %d\n\n", len(mdBaseControls)))
