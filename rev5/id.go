@@ -191,3 +191,15 @@ func (id ID) FormatType(idType IDType) (string, error) {
 		return "", fmt.Errorf("idtype not known (%s)", string(idType))
 	}
 }
+
+func (id ID) IDBase() (ID, error) {
+	out := ID{
+		FamilyAbbreviation: id.FamilyAbbreviation,
+		BaseControlNumber:  id.BaseControlNumber}
+	if oscalSortID, err := out.FormatOSCALSort(); err != nil {
+		return id, err
+	} else {
+		out.OSCALSortID = oscalSortID
+		return out, nil
+	}
+}
