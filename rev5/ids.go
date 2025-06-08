@@ -3,6 +3,7 @@ package rev5
 import (
 	"errors"
 	"slices"
+	"strings"
 )
 
 var ErrIDTypeNotSupported = errors.New("idtype not supported")
@@ -13,8 +14,9 @@ func ParseIDs(s []string) (IDs, error) {
 	ids := IDs{}
 	seen := map[string]int{}
 	for _, si := range s {
-		id, err := ParseID(si)
-		if err != nil {
+		if si = strings.TrimSpace(si); si == "" {
+			continue
+		} else if id, err := ParseID(si); err != nil {
 			return ids, err
 		} else if oscalID, err := id.FormatOSCALSort(); err != nil {
 			return ids, err
