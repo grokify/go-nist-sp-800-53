@@ -1,6 +1,7 @@
 # SI - System and Information Integrity
 
-* Controls: 6
+* Controls Count: 6
+* Controls IDs: SI-1, SI-12, SI-2, SI-3, SI-4, SI-5
 
 ## Controls
 

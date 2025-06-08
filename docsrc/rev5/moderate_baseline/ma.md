@@ -1,6 +1,7 @@
 # MA - Maintenance
 
-* Controls: 9
+* Controls Count: 9
+* Controls IDs: MA-1, MA-2, MA-3, MA-3 (1), MA-3 (2), MA-3 (3), MA-4, MA-5, MA-6
 
 ## Controls
 

@@ -1,6 +1,7 @@
 # AT - Awareness and Training
 
-* Controls: 6
+* Controls Count: 6
+* Controls IDs: AT-1, AT-2, AT-2 (2), AT-2 (3), AT-3, AT-4
 
 ## Controls
 

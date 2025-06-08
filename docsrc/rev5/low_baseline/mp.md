@@ -1,6 +1,7 @@
 # MP - Media Protection
 
-* Controls: 4
+* Controls Count: 4
+* Controls IDs: MP-1, MP-2, MP-6, MP-7
 
 ## Controls
 

@@ -1,6 +1,6 @@
 # PS - Personnel Security
 
-* Controls: 0
+* Controls Count: 0
 
 ## Controls
 

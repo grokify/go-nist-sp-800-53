@@ -1,6 +1,7 @@
 # AC - Access Control
 
-* Controls: 7
+* Controls Count: 7
+* Controls IDs: AC-10, AC-18 (4), AC-18 (5), AC-2 (11), AC-2 (12), AC-4 (4), AC-6 (3)
 
 ## Controls
 

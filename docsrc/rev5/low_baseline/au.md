@@ -1,6 +1,7 @@
 # AU - Audit and Accountability
 
-* Controls: 10
+* Controls Count: 10
+* Controls IDs: AU-1, AU-11, AU-12, AU-2, AU-3, AU-4, AU-5, AU-6, AU-8, AU-9
 
 ## Controls
 

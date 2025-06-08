@@ -1,6 +1,6 @@
 # PL - Planning
 
-* Controls: 0
+* Controls Count: 0
 
 ## Controls
 

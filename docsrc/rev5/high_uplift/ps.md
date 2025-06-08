@@ -1,6 +1,7 @@
 # PS - Personnel Security
 
-* Controls: 1
+* Controls Count: 1
+* Controls IDs: PS-4 (2)
 
 ## Controls
 

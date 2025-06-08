@@ -1,6 +1,7 @@
 # CA - Assessment, Authorization, and Monitoring
 
-* Controls: 10
+* Controls Count: 10
+* Controls IDs: CA-1, CA-2, CA-2 (1), CA-3, CA-5, CA-6, CA-7, CA-7 (1), CA-7 (4), CA-9
 
 ## Controls
 

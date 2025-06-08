@@ -1,6 +1,7 @@
 # CM - Configuration Management
 
-* Controls: 15
+* Controls Count: 15
+* Controls IDs: CM-12, CM-12 (1), CM-2 (2), CM-2 (3), CM-2 (7), CM-3, CM-3 (2), CM-3 (4), CM-4 (2), CM-7 (1), CM-7 (2), CM-7 (5), CM-8 (1), CM-8 (3), CM-9
 
 ## Controls
 

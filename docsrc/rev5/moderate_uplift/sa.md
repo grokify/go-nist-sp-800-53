@@ -1,6 +1,7 @@
 # SA - System and Services Acquisition
 
-* Controls: 8
+* Controls Count: 8
+* Controls IDs: SA-10, SA-11, SA-15, SA-15 (3), SA-4 (1), SA-4 (2), SA-4 (9), SA-9 (2)
 
 ## Controls
 

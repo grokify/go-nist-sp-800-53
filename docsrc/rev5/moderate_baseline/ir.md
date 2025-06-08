@@ -1,6 +1,7 @@
 # IR - Incident Response
 
-* Controls: 13
+* Controls Count: 13
+* Controls IDs: IR-1, IR-2, IR-3, IR-3 (2), IR-4, IR-4 (1), IR-5, IR-6, IR-6 (1), IR-6 (3), IR-7, IR-7 (1), IR-8
 
 ## Controls
 

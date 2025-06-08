@@ -1,6 +1,7 @@
 # RA - Risk Assessment
 
-* Controls: 2
+* Controls Count: 2
+* Controls IDs: RA-5 (5), RA-9
 
 ## Controls
 

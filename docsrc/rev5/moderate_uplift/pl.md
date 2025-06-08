@@ -1,6 +1,7 @@
 # PL - Planning
 
-* Controls: 1
+* Controls Count: 1
+* Controls IDs: PL-8
 
 ## Controls
 

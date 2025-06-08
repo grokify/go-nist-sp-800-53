@@ -1,6 +1,7 @@
 # IA - Identification and Authentication
 
-* Controls: 2
+* Controls Count: 2
+* Controls IDs: IA-12 (4), IA-2 (5)
 
 ## Controls
 

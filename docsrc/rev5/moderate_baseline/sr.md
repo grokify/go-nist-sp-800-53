@@ -1,6 +1,7 @@
 # SR - Supply Chain Risk Management
 
-* Controls: 12
+* Controls Count: 12
+* Controls IDs: SR-1, SR-10, SR-11, SR-11 (1), SR-11 (2), SR-12, SR-2, SR-2 (1), SR-3, SR-5, SR-6, SR-8
 
 ## Controls
 
