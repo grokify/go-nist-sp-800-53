@@ -43,3 +43,16 @@ func (ctrs Controls) Flatten() Controls {
 	}
 	return out
 }
+
+func (ctrs Controls) IDs() (IDs, error) {
+	ids := IDs{}
+	for _, ctr := range ctrs {
+		ctr2 := Control(ctr)
+		if id, err := ctr2.ControlID(); err != nil {
+			return ids, err
+		} else {
+			ids = append(ids, id)
+		}
+	}
+	return ids, nil
+}
