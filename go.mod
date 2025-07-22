@@ -8,7 +8,7 @@ require (
 )
 
 require (
-	github.com/grokify/mogo v0.70.11 // indirect
+	github.com/grokify/mogo v0.70.13 // indirect
 	golang.org/x/text v0.27.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
