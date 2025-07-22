@@ -4,7 +4,11 @@ go 1.24.1
 
 require (
 	github.com/defenseunicorns/go-oscal v0.6.2
-	github.com/grokify/go-mkdocs v0.2.3
+	github.com/grokify/go-mkdocs v0.3.1
 )
 
-require gopkg.in/yaml.v3 v3.0.1 // indirect
+require (
+	github.com/grokify/mogo v0.70.11 // indirect
+	golang.org/x/text v0.27.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
+)
