@@ -19,6 +19,10 @@ func (ids ControlIDs) HighUplift() []string {
 	return uplift(ids.HighBaseline(), ids.ModerateBaseline())
 }
 
+func (ids ControlIDs) HighUpliftIDs() (IDs, error) {
+	return ParseIDs(ids.HighUplift())
+}
+
 func (ids ControlIDs) ModerateUplift() []string {
 	return uplift(ids.ModerateBaseline(), ids.LowBaseline())
 }
@@ -82,6 +86,14 @@ func (ids ControlIDs) Tier(tierName string) ([]string, error) {
 		return ids.LowBaseline(), nil
 	default:
 		return []string{}, fmt.Errorf("tier not found (%s)", tierName)
+	}
+}
+
+func (ids ControlIDs) TierIDs(tierName string) (IDs, error) {
+	if rawIDs, err := ids.Tier(tierName); err != nil {
+		return IDs{}, err
+	} else {
+		return ParseIDs(rawIDs)
 	}
 }
 

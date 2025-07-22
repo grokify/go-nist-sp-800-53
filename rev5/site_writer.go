@@ -69,16 +69,27 @@ func (sw SiteWriter) writeMarkdownPageTierIndex(filename string, tierName string
 	var mdContent strings.Builder
 	tierDisplayname := TierDisplayOrDefault(tierName, tierName)
 	ids := NewControlIDs()
-	tierControls, err := ids.Tier(tierName)
+	tierControls, err := ids.TierIDs(tierName)
 	if err != nil {
 		return err
 	}
 	mdContent.WriteString(fmt.Sprintf("# %s (%d)\n\n", tierDisplayname, len(tierControls)))
+	mdContent.WriteString("## Controls List\n\n")
+
 	for _, mktext := range mkTexts {
 		u := mktext.Val
 		_, filenameonly := filepath.Split(u)
 		mdContent.WriteString(fmt.Sprintf("1. [%s](%s)\n", mktext.Key, filenameonly))
 	}
+
+	mdContent.WriteString("\n## Controls IDs\n\n")
+
+	if idsNIST, err := tierControls.FormatNIST(); err != nil {
+		return err
+	} else {
+		mdContent.WriteString(fmt.Sprintf("\n* %s\n\n", strings.Join(idsNIST, ", ")))
+	}
+
 	return os.WriteFile(filename, []byte(mdContent.String()), 0600)
 }
 
