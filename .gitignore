@@ -1,0 +1,8 @@
+.DS_Store
+~$*
+*.out
+/site/
+
+# Scratch output, never committed
+z/
+tmp/
