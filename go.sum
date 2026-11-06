@@ -1,5 +1,5 @@
-github.com/defenseunicorns/go-oscal v0.6.3 h1:3j5aBobVX+Fy2GEIRCeg9MhsAgCKceOagVEDQPMuzZc=
-github.com/defenseunicorns/go-oscal v0.6.3/go.mod h1:m55Ny/RTh4xWuxVSOD/poCZs9V9GOjNtjT0NujoxI6I=
+github.com/defenseunicorns/go-oscal v0.7.0 h1:Ji9Yw3zEkbUfKZ8Gotoi9ExjUV/h3jmFLJBCYWkDN3E=
+github.com/defenseunicorns/go-oscal v0.7.0/go.mod h1:OPuLRz6v7qhSaKIUgr+bK6ykhYq7FpZozSn2cVZJhMs=
 github.com/grokify/go-mkdocs v0.3.1 h1:YLezyEwNOYkATcaB1V+8vY6YjnsnPqRKZWESroM5tQs=
 github.com/grokify/go-mkdocs v0.3.1/go.mod h1:OfCDn2fyjUB2ibv+MwpE/tmiHPFkPuBa0Jb1t2QL7Oc=
 github.com/grokify/mogo v0.70.13 h1:JSJ9wmQcWPoaobMFDG1IDHN1QxSIP5+2ef56uitlMek=
