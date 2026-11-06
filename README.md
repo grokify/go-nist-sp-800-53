@@ -4,8 +4,26 @@
 [![Go Lint][go-lint-svg]][go-lint-url]
 [![Go SAST][go-sast-svg]][go-sast-url]
 [![Docs][docs-godoc-svg]][docs-godoc-url]
-[![Coverage][coverage-svg]][coverage-url]
+[![Docs][docs-mkdoc-svg]][docs-mkdoc-url]
+[![Visualization][viz-svg]][viz-url]
 [![License][license-svg]][license-url]
+
+ [go-ci-svg]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-ci.yaml/badge.svg?branch=main
+ [go-ci-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-ci.yaml
+ [go-lint-svg]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-lint.yaml/badge.svg?branch=main
+ [go-lint-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-lint.yaml
+ [go-sast-svg]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-sast-codeql.yaml/badge.svg?branch=main
+ [go-sast-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-sast-codeql.yaml
+ [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/opensecurity-dev/nist-sp-800-53-go
+ [docs-godoc-url]: https://pkg.go.dev/github.com/opensecurity-dev/nist-sp-800-53-go
+ [docs-mkdoc-svg]: https://img.shields.io/badge/Go-dev%20guide-blue.svg
+ [docs-mkdoc-url]: https://productbuildershq.com/visionstudio
+ [viz-svg]: https://img.shields.io/badge/Go-visualizaton-blue.svg
+ [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=opensecurity-dev%2Fnist-sp-800-53-go
+ [loc-svg]: https://tokei.rs/b1/github/opensecurity-dev/nist-sp-800-53-go
+ [repo-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go
+ [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
+ [license-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go/blob/main/LICENSE
 
 Go SDK and CLI for NIST SP 800-53 Rev. 5, built on the OSCAL catalog and baselines published by NIST.
 
@@ -77,16 +95,3 @@ mkdocs serve                          # preview locally
 
 1. Data is sourced from [`github.com/usnistgov/oscal-content`](https://github.com/usnistgov/oscal-content).
 2. OSCAL types come from [`github.com/defenseunicorns/go-oscal`](https://github.com/defenseunicorns/go-oscal).
-
- [go-ci-svg]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-ci.yaml/badge.svg?branch=main
- [go-ci-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-ci.yaml
- [go-lint-svg]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-lint.yaml/badge.svg?branch=main
- [go-lint-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-lint.yaml
- [go-sast-svg]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-sast-codeql.yaml/badge.svg?branch=main
- [go-sast-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-sast-codeql.yaml
- [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/opensecurity-dev/nist-sp-800-53-go
- [docs-godoc-url]: https://pkg.go.dev/github.com/opensecurity-dev/nist-sp-800-53-go
- [coverage-svg]: https://img.shields.io/badge/coverage-43.8%25-red
- [coverage-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go
- [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go/blob/main/LICENSE
