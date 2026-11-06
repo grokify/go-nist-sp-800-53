@@ -15,13 +15,13 @@ It:
 2. looks up controls by baseline, family and implementation level (organization or system)
 3. converts control IDs between NIST (`AC-2 (1)`) and OSCAL (`ac-2.1`) forms, with and without sort padding
 4. checks that control IDs name real, non-withdrawn controls
-5. renders a control reference site, published at [opensecurity-dev.github.io/go-nist-sp-800-53](https://opensecurity-dev.github.io/go-nist-sp-800-53)
+5. renders a control reference site, published at [opensecurity-dev.github.io/nist-sp-800-53-go](https://opensecurity-dev.github.io/nist-sp-800-53-go)
 
 ## Install
 
 ```bash
-go get github.com/opensecurity-dev/go-nist-sp-800-53
-go install github.com/opensecurity-dev/go-nist-sp-800-53/cmd/sp80053@latest
+go get github.com/opensecurity-dev/nist-sp-800-53-go
+go install github.com/opensecurity-dev/nist-sp-800-53-go/cmd/sp80053@latest
 ```
 
 ## CLI
@@ -44,7 +44,7 @@ as policies and procedures.
 ## Library
 
 ```go
-import "github.com/opensecurity-dev/go-nist-sp-800-53/rev5"
+import "github.com/opensecurity-dev/nist-sp-800-53-go/rev5"
 
 cat := rev5.CatalogAll()
 
@@ -78,15 +78,15 @@ mkdocs serve                          # preview locally
 1. Data is sourced from [`github.com/usnistgov/oscal-content`](https://github.com/usnistgov/oscal-content).
 2. OSCAL types come from [`github.com/defenseunicorns/go-oscal`](https://github.com/defenseunicorns/go-oscal).
 
- [go-ci-svg]: https://github.com/opensecurity-dev/go-nist-sp-800-53/actions/workflows/go-ci.yaml/badge.svg?branch=main
- [go-ci-url]: https://github.com/opensecurity-dev/go-nist-sp-800-53/actions/workflows/go-ci.yaml
- [go-lint-svg]: https://github.com/opensecurity-dev/go-nist-sp-800-53/actions/workflows/go-lint.yaml/badge.svg?branch=main
- [go-lint-url]: https://github.com/opensecurity-dev/go-nist-sp-800-53/actions/workflows/go-lint.yaml
- [go-sast-svg]: https://github.com/opensecurity-dev/go-nist-sp-800-53/actions/workflows/go-sast-codeql.yaml/badge.svg?branch=main
- [go-sast-url]: https://github.com/opensecurity-dev/go-nist-sp-800-53/actions/workflows/go-sast-codeql.yaml
- [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/opensecurity-dev/go-nist-sp-800-53
- [docs-godoc-url]: https://pkg.go.dev/github.com/opensecurity-dev/go-nist-sp-800-53
+ [go-ci-svg]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-ci.yaml/badge.svg?branch=main
+ [go-ci-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-ci.yaml
+ [go-lint-svg]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-lint.yaml/badge.svg?branch=main
+ [go-lint-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-lint.yaml
+ [go-sast-svg]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-sast-codeql.yaml/badge.svg?branch=main
+ [go-sast-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go/actions/workflows/go-sast-codeql.yaml
+ [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/opensecurity-dev/nist-sp-800-53-go
+ [docs-godoc-url]: https://pkg.go.dev/github.com/opensecurity-dev/nist-sp-800-53-go
  [coverage-svg]: https://img.shields.io/badge/coverage-43.8%25-red
- [coverage-url]: https://github.com/opensecurity-dev/go-nist-sp-800-53
+ [coverage-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-url]: https://github.com/opensecurity-dev/go-nist-sp-800-53/blob/main/LICENSE
+ [license-url]: https://github.com/opensecurity-dev/nist-sp-800-53-go/blob/main/LICENSE

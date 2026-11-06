@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/opensecurity-dev/go-nist-sp-800-53/rev5"
+	"github.com/opensecurity-dev/nist-sp-800-53-go/rev5"
 	"github.com/spf13/cobra"
 )
 

@@ -1,5 +1,5 @@
 site_name: NIST SP 800-53 Control Reference Site
-site_url: https://opensecurity-dev.github.io/go-nist-sp-800-53
+site_url: https://opensecurity-dev.github.io/nist-sp-800-53-go
 docs_dir: docs
 theme: readthedocs
 nav:

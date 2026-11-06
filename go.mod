@@ -1,4 +1,4 @@
-module github.com/opensecurity-dev/go-nist-sp-800-53
+module github.com/opensecurity-dev/nist-sp-800-53-go
 
 go 1.26.0
 
