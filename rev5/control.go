@@ -3,6 +3,7 @@ package rev5
 import (
 	"errors"
 	"fmt"
+	"slices"
 	"strings"
 
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
@@ -91,6 +92,31 @@ func (ctr Control) IDForType(idtype IDType) (string, error) {
 		}
 	}
 	return "", fmt.Errorf("no key found for found idtype (%s)", string(idtype))
+}
+
+func (ctr Control) HasImplementationLevelOrganization() bool {
+	lvls := ctr.ImplementationLevels()
+	return slices.Contains(lvls, PropImplementationLevelValueOrganization)
+}
+
+func (ctr Control) HasImplementationLevelSystem() bool {
+	lvls := ctr.ImplementationLevels()
+	return slices.Contains(lvls, PropImplementationLevelValueSystem)
+}
+
+func (ctr Control) ImplementationLevels() []string {
+	var out []string
+	if ctr.Props != nil {
+		for _, prop := range *ctr.Props {
+			if prop.Name == PropNameImplementationLevel {
+				if v := strings.TrimSpace(prop.Value); v != "" {
+					out = append(out, strings.ToLower(v)) // should all be lowercase already
+				}
+			}
+		}
+	}
+	slices.Sort(out)
+	return slices.Compact(out)
 }
 
 func (ctr Control) ParameterSet() (*ParameterSet, error) {

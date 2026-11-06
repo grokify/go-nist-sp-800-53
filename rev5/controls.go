@@ -56,3 +56,29 @@ func (ctrs Controls) IDs() (IDs, error) {
 	}
 	return ids, nil
 }
+
+func (ctrs Controls) IDsImplementationLevelOrganization() (IDs, error) {
+	ids := IDs{}
+	for _, ctr := range ctrs {
+		ctr2 := Control(ctr)
+		if id, err := ctr2.ControlID(); err != nil {
+			return ids, err
+		} else if ctr2.HasImplementationLevelOrganization() {
+			ids = append(ids, id)
+		}
+	}
+	return ids, nil
+}
+
+func (ctrs Controls) IDsImplementationLevelSystem() (IDs, error) {
+	ids := IDs{}
+	for _, ctr := range ctrs {
+		ctr2 := Control(ctr)
+		if id, err := ctr2.ControlID(); err != nil {
+			return ids, err
+		} else if ctr2.HasImplementationLevelSystem() {
+			ids = append(ids, id)
+		}
+	}
+	return ids, nil
+}

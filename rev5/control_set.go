@@ -9,6 +9,10 @@ type ControlSet struct {
 	Data map[string]Control
 }
 
+func NewControlSet() *ControlSet {
+	return &ControlSet{Data: map[string]Control{}}
+}
+
 func (cs *ControlSet) Add(ctr Control) error {
 	if cs.Data == nil {
 		cs.Data = map[string]Control{}
@@ -40,6 +44,26 @@ func (cs *ControlSet) FamilySet(addZeros bool) (*FamilySet, error) {
 	set.UpdateCounts()
 
 	return set, nil
+}
+
+// FilterImplementationLevel returns a new ControlSet containing the controls
+// whose implementation level matches one of the requested levels. A control is
+// included when inclOrganization is true and it has organization-level
+// implementation, or inclSystem is true and it has system-level implementation.
+// If both flags are false, the result is empty. It returns an error if a
+// control cannot be added (e.g. an empty control ID), matching the
+// error-returning style of FamilySet and IDsSet.
+func (cs *ControlSet) FilterImplementationLevel(inclOrganization, inclSystem bool) (*ControlSet, error) {
+	out := NewControlSet()
+	for _, ctr := range cs.Data {
+		if (inclOrganization && ctr.HasImplementationLevelOrganization()) ||
+			(inclSystem && ctr.HasImplementationLevelSystem()) {
+			if err := out.Add(ctr); err != nil {
+				return nil, err
+			}
+		}
+	}
+	return out, nil
 }
 
 func (cs *ControlSet) Get(id string) (Control, bool) {

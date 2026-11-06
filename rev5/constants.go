@@ -7,10 +7,14 @@ const (
 
 	ParamHowManyOneOrMore = "one-or-more"
 
-	PropNameAltIdentifier = "alt-identifier"
-	PropNameClass         = "class"
-	PropNameLabel         = "label"
-	PropClassSP80053      = "sp800-53a"
+	PropNameAltIdentifier                    = "alt-identifier"
+	PropNameClass                            = "class"
+	PropNameLabel                            = "label"
+	PropClassSP80053                         = "sp800-53a"
+	PropNameImplementationLevel              = "implementation-level"
+	PropImplementationLevelNS                = "http://csrc.nist.gov/ns/rmf"
+	PropImplementationLevelValueOrganization = "organization"
+	PropImplementationLevelValueSystem       = "system"
 
 	// Risk Impact Tiers
 	TierHighBaseline     = "high_baseline"
