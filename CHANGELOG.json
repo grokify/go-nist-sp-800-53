@@ -1,7 +1,7 @@
 {
   "irVersion": "1.0",
-  "project": "go-nist-sp-800-53",
-  "repository": "https://github.com/opensecurity-dev/go-nist-sp-800-53",
+  "project": "nist-sp-800-53-go",
+  "repository": "https://github.com/opensecurity-dev/nist-sp-800-53-go",
   "versioning": "semver",
   "commitConvention": "conventional",
   "maintainers": [
@@ -9,6 +9,28 @@
     "johncwang@gmail.com"
   ],
   "releases": [
+    {
+      "version": "v0.12.0",
+      "date": "2026-11-05",
+      "highlights": [
+        {
+          "description": "Module renamed to `github.com/opensecurity-dev/nist-sp-800-53-go`; update imports from `github.com/opensecurity-dev/go-nist-sp-800-53`",
+          "commit": "4e6f059"
+        }
+      ],
+      "breaking": [
+        {
+          "description": "Module path is now `github.com/opensecurity-dev/nist-sp-800-53-go`; v0.11.0 remains available at `github.com/opensecurity-dev/go-nist-sp-800-53`",
+          "commit": "4e6f059"
+        }
+      ],
+      "changed": [
+        {
+          "description": "Docs site moved to `opensecurity-dev.github.io/nist-sp-800-53-go`",
+          "commit": "4e6f059"
+        }
+      ]
+    },
     {
       "version": "v0.11.0",
       "date": "2026-11-05",
