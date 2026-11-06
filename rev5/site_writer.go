@@ -36,7 +36,7 @@ func (sw SiteWriter) WriteMarkdownPages(baseDir string) error {
 }
 
 func (sw SiteWriter) writeMarkdownPagesTier(baseDir string, tierName string) (mkdocs.Texts, error) {
-	dirTierWrite := filepath.Join(baseDir, "docsrc/rev5", tierName)
+	dirTierWrite := filepath.Join(baseDir, "docs/rev5", tierName)
 	dirTierMkdocs := filepath.Join("rev5", tierName)
 	var cat *Catalog
 	var idOSCALFilterIncl []string

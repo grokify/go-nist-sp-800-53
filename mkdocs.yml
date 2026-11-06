@@ -1,6 +1,6 @@
 site_name: NIST SP 800-53 Control Reference Site
 site_url: https://grokify.github.io/go-nist-sp-800-53
-docs_dir: docsrc
+docs_dir: docs
 theme: readthedocs
 nav:
     - 'Home': 'index.md'
