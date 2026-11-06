@@ -5,7 +5,7 @@ import mkdocs "github.com/grokify/go-mkdocs"
 func (sw SiteWriter) mkdocsConfigDefault() mkdocs.Config {
 	return mkdocs.Config{
 		SiteName: "NIST SP 800-53 Control Reference Site",
-		SiteURL:  "https://grokify.github.io/go-nist-sp-800-53",
+		SiteURL:  "https://opensecurity-dev.github.io/go-nist-sp-800-53",
 		DocsDir:  "docs",
 		Theme:    "readthedocs",
 		Nav: mkdocs.Texts{

@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
-	"github.com/grokify/go-nist-sp-800-53/rev5/rev5tmpl"
+	"github.com/opensecurity-dev/go-nist-sp-800-53/rev5/rev5tmpl"
 )
 
 type ParameterSet struct {

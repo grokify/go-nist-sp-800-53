@@ -10,7 +10,7 @@ import (
 	"flag"
 	"log"
 
-	"github.com/grokify/go-nist-sp-800-53/rev5"
+	"github.com/opensecurity-dev/go-nist-sp-800-53/rev5"
 )
 
 func main() {

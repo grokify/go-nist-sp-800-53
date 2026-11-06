@@ -1,4 +1,4 @@
-module github.com/grokify/go-nist-sp-800-53
+module github.com/opensecurity-dev/go-nist-sp-800-53
 
 go 1.26.0
 
