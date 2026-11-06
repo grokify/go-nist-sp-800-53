@@ -3,7 +3,7 @@ module github.com/grokify/go-nist-sp-800-53
 go 1.24.1
 
 require (
-	github.com/defenseunicorns/go-oscal v0.7.0
+	github.com/defenseunicorns/go-oscal v0.7.2
 	github.com/grokify/go-mkdocs v0.3.1
 )
 
