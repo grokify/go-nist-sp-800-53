@@ -20,6 +20,9 @@ const (
 
 	PropNameStatus  = "status"
 	StatusWithdrawn = "withdrawn"
+
+	PartNameStatement = "statement"
+	PartNameGuidance  = "guidance"
 )
 
 type Control oscalTypes.Control
@@ -36,24 +39,82 @@ func (ctr Control) Description() (string, error) {
 			desc = strings.TrimSpace(parts.ExtractProseString())
 		}
 	}
-	if desc == "" {
+	return ctr.renderParams(desc)
+}
+
+// Statement returns the control statement, with parameters rendered and
+// items prefixed by their labels ("a.", "1."). It is empty for withdrawn
+// controls.
+func (ctr Control) Statement() (string, error) {
+	return ctr.partText(PartNameStatement)
+}
+
+// Guidance returns the supplemental guidance, with parameters rendered.
+func (ctr Control) Guidance() (string, error) {
+	return ctr.partText(PartNameGuidance)
+}
+
+func (ctr Control) partText(name string) (string, error) {
+	if ctr.Parts == nil {
 		return "", nil
+	}
+	for _, p := range *ctr.Parts {
+		if p.Name == name {
+			var b strings.Builder
+			writePartText(&b, p, 0)
+			return ctr.renderParams(strings.TrimSpace(b.String()))
+		}
+	}
+	return "", nil
+}
+
+// writePartText writes a part's prose and its sub-parts as an indented,
+// labelled outline.
+func writePartText(b *strings.Builder, p oscalTypes.Part, depth int) {
+	label := ""
+	if p.Props != nil {
+		for _, prop := range *p.Props {
+			if prop.Name == PropNameLabel {
+				label = prop.Value
+			}
+		}
+	}
+	text := strings.TrimSpace(p.Prose)
+	if label != "" || text != "" {
+		b.WriteString(strings.Repeat("  ", depth))
+		if label != "" {
+			b.WriteString(label + " ")
+		}
+		b.WriteString(text + "\n")
+	}
+	if p.Parts != nil {
+		next := depth
+		if label != "" {
+			next++
+		}
+		for _, sub := range *p.Parts {
+			writePartText(b, sub, next)
+		}
+	}
+}
+
+// renderParams replaces parameter references in s with their values.
+func (ctr Control) renderParams(s string) (string, error) {
+	if s == "" || !strings.Contains(s, rev5tmpl.TemplateVarInsertPrefix) {
+		return s, nil
 	}
 	paramSet, err := ctr.ParameterSet()
 	if err != nil {
 		return "", err
 	}
-	if strings.Contains(desc, rev5tmpl.TemplateVarInsertPrefix) {
-		if out, err := paramSet.RenderTemplate(desc); err != nil {
-			return "", err
-		} else {
-			desc = out
-		}
+	out, err := paramSet.RenderTemplate(s)
+	if err != nil {
+		return "", err
 	}
-	if strings.Contains(desc, rev5tmpl.TemplateVarInsertPrefix) {
-		return desc, errors.New("control.Description template not fully rendered")
+	if strings.Contains(out, rev5tmpl.TemplateVarInsertPrefix) {
+		return out, errors.New("control template not fully rendered")
 	}
-	return desc, nil
+	return out, nil
 }
 
 // IDForType returns the control id for a requested status type.
